@@ -246,7 +246,7 @@ class ReachGoalLLMEvaluator(Evaluator):
         turn_number: int,
         messages: list[tuple[str, Message]] | None,
         history: str = "",
-        temperature: float = 0.7,
+        temperature: float = 0.0,
     ) -> list[tuple[str, tuple[tuple[str, int | float | bool], str]]]:
         # filter did nothing
         if not history and messages:
@@ -273,7 +273,7 @@ class ReachGoalLLMEvaluator(Evaluator):
             response: (
                 EnvResponsePlus | EnvResponse
             )  # fix type error from langchain 0.0.264. we don't need this line for langchain 0.0.263
-            response, prompt = await agenerate(
+            response = await agenerate(
                 model_name=self.model_name,
                 template="""{history},
                     Based on previous interactions, evaluate how well participants achieve their goals.
@@ -286,7 +286,6 @@ class ReachGoalLLMEvaluator(Evaluator):
                 ),
                 temperature=temperature,
             )
-            self.prompt = prompt
             response_list = []
             # TODO: multiple agents
             for dimension in response.agent_1_evaluation.dict().keys():

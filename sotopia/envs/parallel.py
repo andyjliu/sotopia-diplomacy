@@ -54,20 +54,37 @@ def _map_gender_to_adj(gender: str) -> str:
         return ""
 
 
+# def _agent_profile_to_stranger_self(profile: AgentProfile, agent_id: int) -> str:
+#     return f"<root><p viewer='agent_{agent_id}'>{profile.first_name} {profile.last_name} is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} Personality and values description: {profile.personality_and_values} {profile.first_name}'s secrets: {profile.secret}</p></root>"
+
+
+# def _agent_profile_to_name_self(profile: AgentProfile, agent_id: int) -> str:
+#     return f"{profile.first_name} {profile.last_name} <p viewer='agent_{agent_id}'>is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} Personality and values description: {profile.personality_and_values} {profile.first_name}'s secrets: {profile.secret}</p>"
+
+
+# def _agent_profile_to_aquaintance_self(profile: AgentProfile, agent_id: int) -> str:
+#     return f"{profile.first_name} {profile.last_name} is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} <p viewer='agent_{agent_id}'>Personality and values description: {profile.personality_and_values} {profile.first_name}'s secrets: {profile.secret}</p>"
+
+
+# def _agent_profile_to_friendabove_self(profile: AgentProfile, agent_id: int) -> str:
+#     return f"{profile.first_name} {profile.last_name} is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} Personality and values description: {profile.personality_and_values} <p viewer='agent_{agent_id}'>{profile.first_name}'s secrets: {profile.secret}</p>"
+
 def _agent_profile_to_stranger_self(profile: AgentProfile, agent_id: int) -> str:
-    return f"<root><p viewer='agent_{agent_id}'>{profile.first_name} {profile.last_name} is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} Personality and values description: {profile.personality_and_values} {profile.first_name}'s secrets: {profile.secret}</p></root>"
+    return f"<root><p viewer='agent_{agent_id}'>{profile.first_name} {profile.last_name}. Country: {profile.country}. Goal: {profile.goal}.</p></root>"
 
 
 def _agent_profile_to_name_self(profile: AgentProfile, agent_id: int) -> str:
-    return f"{profile.first_name} {profile.last_name} <p viewer='agent_{agent_id}'>is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} Personality and values description: {profile.personality_and_values} {profile.first_name}'s secrets: {profile.secret}</p>"
+    return f"{profile.first_name} {profile.last_name} <p viewer='agent_{agent_id}'>Country: {profile.country}. Goal: {profile.goal}.</p>"
 
 
 def _agent_profile_to_aquaintance_self(profile: AgentProfile, agent_id: int) -> str:
-    return f"{profile.first_name} {profile.last_name} is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} <p viewer='agent_{agent_id}'>Personality and values description: {profile.personality_and_values} {profile.first_name}'s secrets: {profile.secret}</p>"
+    return f"{profile.first_name} {profile.last_name}. Country: {profile.country}. Goal: {profile.goal}. <p viewer='agent_{agent_id}'></p>"
 
 
 def _agent_profile_to_friendabove_self(profile: AgentProfile, agent_id: int) -> str:
-    return f"{profile.first_name} {profile.last_name} is a {profile.age}-year-old {_map_gender_to_adj(profile.gender)} {profile.occupation.lower()}. {profile.gender_pronoun} pronouns. {profile.public_info} Personality and values description: {profile.personality_and_values} <p viewer='agent_{agent_id}'>{profile.first_name}'s secrets: {profile.secret}</p>"
+    return f"{profile.first_name} {profile.last_name}. Country: {profile.country}. Goal: {profile.goal}. <p viewer='agent_{agent_id}'></p>"
+
+
 
 
 def get_bio(

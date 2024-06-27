@@ -2,6 +2,7 @@ from enum import IntEnum
 from typing import Any
 
 from pydantic import root_validator
+
 from redis_om import JsonModel
 from redis_om.model.model import Field
 
@@ -18,19 +19,25 @@ class RelationshipType(IntEnum):
 class AgentProfile(JsonModel):
     first_name: str = Field(index=True)
     last_name: str = Field(index=True)
-    age: int = Field(index=True, default_factory=lambda: 0)
-    occupation: str = Field(index=True, default_factory=lambda: "")
-    gender: str = Field(index=True, default_factory=lambda: "")
-    gender_pronoun: str = Field(index=True, default_factory=lambda: "")
-    public_info: str = Field(index=True, default_factory=lambda: "")
-    big_five: str = Field(index=True, default_factory=lambda: "")
-    moral_values: list[str] = Field(index=False, default_factory=lambda: [])
-    schwartz_personal_values: list[str] = Field(index=False, default_factory=lambda: [])
-    personality_and_values: str = Field(index=True, default_factory=lambda: "")
-    decision_making_style: str = Field(index=True, default_factory=lambda: "")
-    secret: str = Field(default_factory=lambda: "")
-    model_id: str = Field(default_factory=lambda: "")
-    mbti: str = Field(default_factory=lambda: "")
+    # age: int = Field(index=True, default_factory=lambda: 0)
+    # occupation: str = Field(index=True, default_factory=lambda: "")
+    # gender: str = Field(index=True, default_factory=lambda: "")
+    # gender_pronoun: str = Field(index=True, default_factory=lambda: "")
+    # public_info: str = Field(index=True, default_factory=lambda: "")
+    # big_five: str = Field(index=True, default_factory=lambda: "")
+    # moral_values: list[str] = Field(index=False, default_factory=lambda: [])
+    # schwartz_personal_values: list[str] = Field(index=False, default_factory=lambda: [])
+    # personality_and_values: str = Field(index=True, default_factory=lambda: "")
+    # decision_making_style: str = Field(index=True, default_factory=lambda: "")
+    # secret: str = Field(default_factory=lambda: "")
+    # model_id: str = Field(default_factory=lambda: "")
+    # mbti: str = Field(default_factory=lambda: "")
+    # TODO: Contains countries, goals 
+    country: str = Field(index=True, default_factory=lambda: "")
+    goal: str = Field(index=True, default_factory=lambda: "")
+
+    # TODO: Prompt LLM to generate orders
+    # TODO: First step is to just considering the collaborate relationship
 
 
 class EnvironmentProfile(JsonModel):
@@ -38,6 +45,16 @@ class EnvironmentProfile(JsonModel):
         index=True,
         default_factory=lambda: "",
         description="The codename of the environment",
+    )
+    phase_name: str = Field(
+        index=True,
+        default_factory=lambda: "",
+        description="The phase id of this phase",
+    )
+    game_id: str = Field(
+        index=True,
+        default_factory=lambda: "",
+        description="The game id of this game",
     )
     source: str = Field(
         index=True,
@@ -88,7 +105,7 @@ class EnvironmentList(JsonModel):
 
     # validate the length of agent_index should be same as environments
     @root_validator
-    def the_length_agent_index_matches_environments(cls, values: Any) -> Any:
+    def the_length_agent_index_matches_environments(cls, values) -> Any:
         environments, agent_index = (
             values.get("environments"),
             values.get("agent_index"),

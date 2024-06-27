@@ -107,7 +107,7 @@ async def arun_one_episode(
     env: ParallelSotopiaEnv,
     agent_list: Sequence[BaseAgent[Observation, AgentAction]],
     model_dict: dict[str, LLM_Name],
-    omniscient: bool = False,
+    omniscient: bool = True,
     script_like: bool = False,
     json_in_script: bool = False,
     tag: str | None = None,
@@ -238,7 +238,7 @@ async def run_async_server(
     script_like: bool = False,
     json_in_script: bool = False,
     tag: str | None = None,
-    push_to_db: bool = False,
+    push_to_db: bool = True,
     using_async: bool = True,
 ) -> list[list[tuple[str, str, Message]]]:
     """
@@ -252,7 +252,6 @@ async def run_async_server(
     Note: env_agent_combo_list is optional. When it defaults to [], sampler is used
     else the sampler is not used. Please pass in BaseSampler or simply not specify it when using this option.
     """
-
     assert not (push_to_db and tag is None), "please provide a tag when push to db"
 
     # Create Environment and agents

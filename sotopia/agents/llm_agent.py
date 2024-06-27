@@ -235,3 +235,4 @@ class Agents(dict[str, BaseAgent[Observation, AgentAction]]):
         return {
             agent_name: agent.act(obs[agent_name]) for agent_name, agent in self.items()
         }
+

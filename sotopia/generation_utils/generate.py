@@ -18,7 +18,7 @@ from langchain_openai import ChatOpenAI
 from pydantic import BaseModel, Field
 from rich import print
 from typing_extensions import Literal
-
+from typing import Any, Dict, List
 from sotopia.database import EnvironmentProfile, RelationshipProfile
 from sotopia.messages import ActionType, AgentAction, ScriptBackground
 from sotopia.messages.message_classes import (
@@ -31,7 +31,29 @@ from .langchain_callback_handler import LoggingCallbackHandler
 
 log = logging.getLogger("generate")
 logging_handler = LoggingCallbackHandler("langchain")
+class ChatVLLMOpenAI(ChatOpenAI):
+    """vLLM OpenAI-compatible API chat client"""
+    
+    @property
+    def _invocation_params(self) -> Dict[str, Any]:
+        """Get the parameters used to invoke the model."""
+        openai_creds: Dict[str, Any] = {
+            "api_key": self.openai_api_key,
+            "api_base": self.openai_api_base,
+        }
 
+        return {
+            "model": self.model_name,
+            **openai_creds,
+            **self._default_params,
+            "logit_bias": None,
+        }
+
+    @property
+    def _llm_type(self) -> str:
+        """Return type of llm."""
+        return "chat-vllm-openai"
+    
 LLM_Name = Literal[
     "together_ai/meta-llama/Llama-2-7b-chat-hf",
     "together_ai/meta-llama/Llama-2-70b-chat-hf",
@@ -335,6 +357,21 @@ def obtain_chain(
             openai_api_key=os.environ.get("GROQ_API_KEY"),
         )
         chain = LLMChain(llm=chat_openai, prompt=chat_prompt_template)
+        return chain
+    elif "llama" in model_name:
+        chat = ChatVLLMOpenAI(
+            openai_api_key = "EMPTY",
+            openai_api_base = "http://127.0.0.1:3636/v1",
+            model_name = "/data/user_data/wenkail/.cache/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/e1945c40cd546c78e41f1151f4db032b271faeaa",
+            temperature=temperature,
+            max_retries=max_retries,
+        )
+        
+        human_message_prompt = HumanMessagePromptTemplate(
+            prompt=PromptTemplate(template=template, input_variables=input_variables)
+        )
+        chat_prompt_template = ChatPromptTemplate.from_messages([human_message_prompt])
+        chain = LLMChain(llm=chat, prompt=chat_prompt_template)
         return chain
     else:
         chat = ChatOpenAI(

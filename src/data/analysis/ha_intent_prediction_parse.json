@@ -1,0 +1,1104 @@
+[
+    {
+        "game": 53480,
+        "phase": "S1901M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A VIE - GAL, A WAR - GAL",
+        "predict_order_p1": "A BUD SER; A VIE GAL; F TRI ALB",
+        "predict_order_p2": "A MOS UKR; A WAR GAL; F SEV BLA; F STP/SC BOT",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1901M",
+        "power1": "E",
+        "power2": "G",
+        "actual_order": "F LON - ENG, F EDI - NTH, A MUN - BUR",
+        "predict_order_p1": "A LVP YOR; F EDI NTH; F LON ENG",
+        "predict_order_p2": "A BER KIE; A MUN RUH; F KIE DEN; F SWE BOT",
+        "parse_predict_order_p1": [
+            "F LON - ENG"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1901M",
+        "power1": "F",
+        "power2": "I",
+        "actual_order": "DMZ PIE",
+        "predict_order_p1": "A MAR SPA; A PAR PIC; F BRE MAO",
+        "predict_order_p2": "A ROM APU; A VEN H; F NAP ION",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1901M",
+        "power1": "G",
+        "power2": "I",
+        "actual_order": "A MAR - PIE",
+        "predict_order_p1": "A BER KIE; A MUN RUH; F KIE DEN",
+        "predict_order_p2": "A ROM VEN; A VEN PIE; F NAP TYS",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1901M",
+        "power1": "R",
+        "power2": "T",
+        "actual_order": "F ANK - BLA, F SEV - BLA",
+        "predict_order_p1": "A MOS UKR; A WAR GAL; F SEV BLA; F STP/SC BOT",
+        "predict_order_p2": "A CON BUL; A SMY CON; F ANK BLA",
+        "parse_predict_order_p1": [
+            "A WAR - GAL",
+            "F SEV - BLA"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1901M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "F ALB - GRE, A SER S ALB - GRE, A VIE - GAL, A WAR - GAL, F SEV - RUM",
+        "predict_order_p1": "A BUD SER; A VIE GAL; F ALB GRE",
+        "predict_order_p2": "A MOS UKR; A UKR RUM; A WAR GAL; F BOT SWE; F SEV BLA",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1901M",
+        "power1": "E",
+        "power2": "G",
+        "actual_order": "F ENG - BRE, A YOR - NWY, F NTH C YOR - NWY, A MUN - BUR, F DEN - SWE",
+        "predict_order_p1": "A YOR NWY VIA; F ENG MAO; F NTH C A YOR NWY",
+        "predict_order_p2": "A KIE HOL; A MUN BUR; F DEN SWE",
+        "parse_predict_order_p1": [
+            "F NTH C A YOR - NWY"
+        ],
+        "parse_predict_order_p2": [
+            "A KIE - HOL"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1901M",
+        "power1": "F",
+        "power2": "I",
+        "actual_order": "A PIE - MAR, A BUR - MAR",
+        "predict_order_p1": "A MAR SPA; A BUR MAR; F MAO BRE",
+        "predict_order_p2": "A APU TUN VIA; A PIE MAR; F ION C A APU TUN; F NAP TYS",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1901M",
+        "power1": "G",
+        "power2": "I",
+        "actual_order": "A KIE - HOL, A MUN - BUR, A PIE - MAR",
+        "predict_order_p1": "A KIE HOL; A MUN BUR; F DEN SWE",
+        "predict_order_p2": "A APU TUN VIA; A PIE MAR; F ION C A APU TUN; F NAP TYS",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1901M",
+        "power1": "G",
+        "power2": "R",
+        "actual_order": "F DEN H",
+        "predict_order_p1": "A KIE HOL; A MUN BUR; F DEN SWE; F KIE BAL",
+        "predict_order_p2": "A UKR RUM; A WAR GAL; A UKR S A WAR GAL; F BOT SWE; F SEV S A UKR RUM",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1901M",
+        "power1": "R",
+        "power2": "T",
+        "actual_order": "DMZ BLA, A UKR - RUM",
+        "predict_order_p1": "A UKR GAL; A WAR PRU; A UKR RUM; F BOT BAL; F SEV S A UKR RUM",
+        "predict_order_p2": "A BUL RUM; A CON BUL; F ANK CON; F SMY AEG",
+        "parse_predict_order_p1": [
+            "A WAR - PRU",
+            "F SEV S A UKR - RUM"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "A TRI - SER, A VEN - PIE",
+        "predict_order_p1": "A VIE GAL; A SER S F ALB GRE; A TRI S A SER; F GRE AEG",
+        "predict_order_p2": "A PIE MAR; A APU VEN; A VEN TUS; F NAP TYS; F TUN WES",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": [
+            "A PIE - MAR"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "DMZ GAL, F RUM - BLA, A SER - BUL",
+        "predict_order_p1": "A BUD S A VIE GAL; A SER BUL; A TRI SER; A VIE GAL; F GRE S A SER BUL; F GRE S A SER BUL",
+        "predict_order_p2": "A MOS STP; A UKR S F RUM; A WAR GAL; F BOT SWE; F RUM S A SER BUL; F RUM S A SER BUL",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "A",
+        "power2": "T",
+        "actual_order": "A VIE - GAL, F ANK - BLA, A SER - RUM, A BUL S SER - RUM",
+        "predict_order_p1": "A BUD S A VIE GAL; A SER RUM; A TRI SER; A VIE GAL; F GRE AEG; F GRE AEG",
+        "predict_order_p2": "A BUL S A SER RUM; A SMY ARM; F ANK BLA; F CON S A BUL",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": [
+            "A BUL S A SER - RUM"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "A BUR - BEL, A PAR - BUR, F BRE - ENG, F LVP - NAO",
+        "predict_order_p1": "A NWY SWE; F BRE ENG; F LON NTH; F LVP NAO",
+        "predict_order_p2": "A BUR BEL; A PAR BUR; A SPA MAR; F POR MAO",
+        "parse_predict_order_p1": [
+            "F LON - NTH"
+        ],
+        "parse_predict_order_p2": [
+            "A BUR - BEL"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "E",
+        "power2": "G",
+        "actual_order": "F DEN - SWE, F KIE - BAL, A NWY - FIN",
+        "predict_order_p1": "A NWY SWE; F BRE MAO; F LON NTH; F LVP NAO; F NTH NWY; F LON ENG",
+        "predict_order_p2": "A BER SIL; A HOL RUH; A MUN S A HOL RUH; F DEN SWE; F KIE BAL",
+        "parse_predict_order_p1": [
+            "F LON - ENG",
+            "F NTH - NWY"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A NWY - SWE, F BOT S NWY - SWE",
+        "predict_order_p1": "A NWY SWE; F BRE MAO; F LON NTH; F LVP NAO; F NTH SKA; F WAL ENG",
+        "predict_order_p2": "A MOS STP; A UKR S F RUM; A WAR SIL; F BOT S A NWY SWE; F RUM S A BUL; F RUM S A BUL",
+        "parse_predict_order_p1": [
+            "F LON - NTH",
+            "F NTH - SKA"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1902M",
+        "power1": "F",
+        "power2": "I",
+        "actual_order": "A PIE - VEN",
+        "predict_order_p1": "A BUR BEL; A SPA GAS; A PAR PIC; F POR MAO",
+        "predict_order_p2": "A PIE TYR; A VEN S A PIE TYR; F NAP APU; F TUN ION",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "A VEN - TUS",
+        "predict_order_p1": "A BUD RUM; A SER BUL; A TRI H; A VIE S A TRI; F GRE S A SER BUL",
+        "predict_order_p2": "A PIE MAR; A VEN TUS; F NAP ION; F TUN WES; F TYS LYO",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": [
+            "F TYS - LYO",
+            "A PIE - MAR"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "DMZ GAL",
+        "predict_order_p1": "A BUD S A SER RUM; A BUL S A SER RUM; A SER RUM; A VIE TRI; F GRE S A BUL; F WES TYS",
+        "predict_order_p2": "A MOS WAR; A PRU BER; A UKR S F RUM SEV; F BOT BAL; F RUM SEV; F SEV BLA",
+        "parse_predict_order_p1": [
+            "A BUL S A SER - RUM"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "F ENG - BEL, F NAO - MAO",
+        "predict_order_p1": "A SWE S F NTH DEN; F ENG NTH; F HEL S F NTH DEN; F NAO NWG; F NTH DEN",
+        "predict_order_p2": "A PAR BUR; A BEL S A PAR BUR; A SPA MAR; F MAO SPA/SC",
+        "parse_predict_order_p1": [
+            "F NTH - DEN",
+            "F HEL S F NTH - DEN"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "F NAO - MAO, F TYS - GOL, F WES - SPA (SC)",
+        "predict_order_p1": "A SWE S F NTH DEN; A SWE S F NTH DEN; F ENG NTH; F HEL S F NTH DEN; F NAO NWG; F NTH DEN; F NWG BAR",
+        "predict_order_p2": "A PIE H; A VEN H; F TYS LYO; F WES S F NAO MAO",
+        "parse_predict_order_p1": [
+            "F NTH - DEN",
+            "F HEL S F NTH - DEN"
+        ],
+        "parse_predict_order_p2": [
+            "F WES S F NAO - MAO"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A SWE - DEN, F BOT - SWE",
+        "predict_order_p1": "A LON HOL VIA; A SWE S F HEL DEN; F ENG BRE; F HEL DEN; F NAO NWG; F NTH C A LON HOL; F NWG NWY",
+        "predict_order_p2": "A UKR S F RUM SEV; A MOS WAR; A PRU BER; F BOT SWE; F RUM SEV; F SWE DEN",
+        "parse_predict_order_p1": [
+            "F NTH C A LON - HOL",
+            "F HEL - DEN"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "F",
+        "power2": "G",
+        "actual_order": "A BEL - BUR",
+        "predict_order_p1": "A PAR S F MAO BRE; A BEL BUR; A SPA MAR; F MAO BRE",
+        "predict_order_p2": "A MUN KIE; A RUH HOL; A SIL BER; F DEN S A MUN KIE; F BAL S F DEN",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1902M",
+        "power1": "R",
+        "power2": "T",
+        "actual_order": "A ARM - ANK, F CON - AEG, A MOS - SEV",
+        "predict_order_p1": "A UKR RUM; A MOS SEV; A PRU WAR; F BOT SWE; F RUM BUL/EC",
+        "predict_order_p2": "A ARM ANK; F CON S F RUM BUL; F BLA S F RUM BUL",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1903M",
+        "power1": "E",
+        "power2": "G",
+        "actual_order": "A DEN S BOT - SWE, F NTH C EDI - NWY, A EDI - NWY, F LON - ENG, A BEL - HOL",
+        "predict_order_p1": "A DEN SWE; A SWE FIN; A EDI NWY VIA; F ENG MAO; F HEL HOL; F LON ENG; F MAO POR; F NTH C A EDI NWY",
+        "predict_order_p2": "A BER PRU; A KIE HOL; A BER PRU; F BAL S A BER PRU; F SKA S A DEN SWE",
+        "parse_predict_order_p1": [
+            "F LON - ENG",
+            "F NTH C A EDI - NWY",
+            "F HEL - HOL"
+        ],
+        "parse_predict_order_p2": [
+            "F SKA S A DEN - SWE",
+            "A KIE - HOL"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1903M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "F MAO S A TUS - POR, A TUS - POR",
+        "predict_order_p1": "A DEN KIE; A EDI NWY VIA; A DEN KIE; F HEL S A DEN KIE; F BEL HOL; F LON ENG; F MAO C A TUS POR; F NTH C A EDI NWY; F SKA S A EDI NWY",
+        "predict_order_p2": "A PIE MAR; A TUS SPA VIA; F LYO C A TUS SPA; F WES S A TUS SPA",
+        "parse_predict_order_p1": [
+            "F LON - ENG",
+            "F NTH C A EDI - NWY",
+            "F HEL S A DEN - KIE",
+            "F SKA S A EDI - NWY"
+        ],
+        "parse_predict_order_p2": [
+            "F WES S A TUS - SPA"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1903M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "F HEL S DEN H, A DEN S BOT - SWE, F BOT - SWE",
+        "predict_order_p1": "A DEN KIE; A EDI NWY VIA; F HEL S A DEN KIE; F BEL HOL; F LON ENG; F MAO POR; F NTH C A EDI NWY; F SKA S A EDI NWY",
+        "predict_order_p2": "A PRU BER; A SEV ARM; A WAR SIL; F BOT SWE; F RUM BLA; F STP/SC LVN",
+        "parse_predict_order_p1": [
+            "F LON - ENG",
+            "F NTH C A EDI - NWY",
+            "F HEL S A DEN - KIE",
+            "F SKA S A EDI - NWY"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1903M",
+        "power1": "F",
+        "power2": "G",
+        "actual_order": "A KIE - MUN",
+        "predict_order_p1": "A GAS S A MAR; A BUR MUN; F SPA/SC POR",
+        "predict_order_p2": "A BER MUN; A KIE DEN; A BER MUN; F BAL SWE; F SKA S F BAL SWE",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1903M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "F ALB - ION",
+        "predict_order_p1": "A BUD S A SER RUM; A BUL S A SER RUM; A BER S A KIE; A MUN S A KIE; F BAL S A BER; F GRE S A BUL; F SKA DEN",
+        "predict_order_p2": "A PIE MAR; A TUS SPA VIA; F LYO C A TUS SPA; F WES S A TUS SPA; F WES S A TUS SPA",
+        "parse_predict_order_p1": [
+            "A MUN S A KIE",
+            "A BUL S A SER - RUM"
+        ],
+        "parse_predict_order_p2": [
+            "A PIE - MAR",
+            "A TUS - SPA VIA"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1903M",
+        "power1": "E",
+        "power2": "G",
+        "actual_order": "F SKA - SWE, A DEN S SKA - SWE, A HOL - BEL, DMZ KIE",
+        "predict_order_p1": "A DEN S F SKA SWE; A NWY STP; F HEL S A DEN; F HOL BEL; F MAO S F SPA; F ENG S F MAO; F NTH NWY",
+        "predict_order_p2": "A BER SIL; A MUN S A BER SIL; F BAL S F SKA SWE; F SKA SWE; F SWE BOT",
+        "parse_predict_order_p1": [
+            "F NTH - NWY",
+            "F HEL S A DEN"
+        ],
+        "parse_predict_order_p2": [
+            "F SKA - SWE"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1903M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "F MAO - POR, A POR - SPA, F GOL S POR - SPA, F WES S POR - SPA",
+        "predict_order_p1": "A DEN KIE; A DEN KIE; A LON BRE VIA; A NWY STP; F HEL S A DEN KIE; F HOL S A DEN KIE; F MAO S A LON BRE; F ENG C A LON BRE; F HEL S A DEN KIE; F HOL S A DEN KIE; F MAO S A LON BRE",
+        "predict_order_p2": "A PIE MAR; A POR SPA; F LYO S A POR SPA; F NAP ION; F WES S A POR SPA",
+        "parse_predict_order_p1": [
+            "F HEL S A DEN - KIE"
+        ],
+        "parse_predict_order_p2": [
+            "F WES S A POR - SPA"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1903M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A DEN S SWE H",
+        "predict_order_p1": "A DEN S F SWE; A NWY STP; F HEL S A DEN; F HOL BEL; F MAO BRE; F HEL S F HOL KIE; F ENG BRE; F HOL KIE; F NTH NWY",
+        "predict_order_p2": "A SEV S F RUM; A SIL MUN; A WAR PRU; F RUM S A SEV; F SWE S A DEN",
+        "parse_predict_order_p1": [
+            "F NTH - NWY",
+            "F HEL S F HOL - KIE"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1904M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "F ION - AEG",
+        "predict_order_p1": "A BUD GAL; A BUL S F RUM; A SER S A BUL; A VIE BOH; F GRE AEG; F ION EAS",
+        "predict_order_p2": "A PIE MAR; A POR S F SPA; F LYO S A PIE MAR; F NAP ION; F ROM TYS; F WES MAO",
+        "parse_predict_order_p1": [
+            "F ION - EAS",
+            "A BUL S F RUM"
+        ],
+        "parse_predict_order_p2": [
+            "A PIE - MAR",
+            "F ROM - TYS"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1904M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A BUD - GAL, A BOH - MUN",
+        "predict_order_p1": "A BOH MUN; A BUD GAL; A BUL S F RUM; A SER S A BUL; A BOH S A BUD GAL; F GRE AEG; F ION EAS",
+        "predict_order_p2": "A MOS SEV; A PRU S A WAR SIL; A SEV ARM; A WAR SIL; F RUM BLA; F SWE BAL; F SWE BAL",
+        "parse_predict_order_p1": [
+            "A BOH S A BUD - GAL",
+            "F ION - EAS",
+            "A BUL S F RUM"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1904M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "F NAO - MAO, F SPA (SC) H",
+        "predict_order_p1": "A DEN S F HOL KIE; A NWY STP; A LON PIC VIA; F ENG C A LON PIC; F HOL KIE; F BEL HOL; F NAO MAO; F SWE BAL",
+        "predict_order_p2": "A PIE MAR; A POR S F SPA; F NAP ION; F ROM TYS; F SPA/SC S A PIE MAR; F WES NAF",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": [
+            "F SPA/SC S A PIE - MAR",
+            "F WES - NAF"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1904M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A DEN S HOL - KIE, A WAR S PRU _ SIL, A PRU - SIL, A HOL - KIE",
+        "predict_order_p1": "A DEN S F HOL KIE; A LON PIC VIA; A NWY STP; F BEL HOL; F ENG C A LON PIC; F HOL KIE; F BEL HOL; F NAO MAO; F SWE BAL",
+        "predict_order_p2": "A MOS STP; A PRU S A WAR SIL; A SEV ARM; A WAR SIL; F RUM BLA; F SWE BAL",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1904M",
+        "power1": "F",
+        "power2": "I",
+        "actual_order": "A GAS - PAR, F MAO - BRE, F SPA (SC) - MAO, F WES S SPA (SC). -MAO, A POR - SPA, A PIE - MAR",
+        "predict_order_p1": "A GAS PAR; F MAO BRE",
+        "predict_order_p2": "A PIE MAR; A POR SPA; F NAP TYS; F ROM TUS; F SPA/SC MAO; F WES S F SPA/SC MAO",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1904M",
+        "power1": "R",
+        "power2": "T",
+        "actual_order": "A MOS - SEV, A SEV - BUL, F BLA C SEV - BUL",
+        "predict_order_p1": "A SEV BUL VIA; A MOS UKR; A PRU BER; A WAR SIL; F RUM S A SEV BUL; F SWE BAL; F SWE BAL",
+        "predict_order_p2": "A SMY CON; F BLA C A SEV BUL; F CON AEG; F BLA C A SEV BUL",
+        "parse_predict_order_p1": [
+            "A WAR - SIL"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1904M",
+        "power1": "A",
+        "power2": "E",
+        "actual_order": "A KIE S PRU - BER, A MUN S PRU - BER",
+        "predict_order_p1": "A BUD S A BUL RUM; A BUL RUM; A GAL S A BUL RUM; A SER S A BUL RUM; A MUN S A PRU BER; F GRE BUL/SC; F ION EAS",
+        "predict_order_p2": "A DEN SWE; A NWY S A DEN SWE; A PIC BRE; A YOR DEN VIA; F ENG S A PIC BRE; F HOL S F KIE; F KIE S A YOR DEN; F NAO MAO; F NTH C A YOR DEN; F WES SPA/SC",
+        "parse_predict_order_p1": [
+            "A MUN S A PRU - BER",
+            "F ION - EAS",
+            "A GAL S A BUL - RUM",
+            "A BUL - RUM"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1904M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A PRU - BER, A WAR - SIL, A MUN S PRU - BER, F RUM - BLA, A ARM - SMY, A SER - BUL, A BUL - CON, F AEG S BUL - CON",
+        "predict_order_p1": "A BUD S A SER RUM; A BUL S A SER RUM; A GAL S A SER RUM; A MUN S A PRU BER; A SER RUM; F GRE S A BUL; F AEG S A BUL",
+        "predict_order_p2": "A MOS STP; A PRU BER; A WAR SIL; A ARM SMY; F RUM BLA; F SWE NWY",
+        "parse_predict_order_p1": [
+            "A MUN S A PRU - BER",
+            "A GAL S A SER - RUM",
+            "F AEG S A BUL",
+            "A BUL S A SER - RUM"
+        ],
+        "parse_predict_order_p2": [
+            "A ARM - SMY"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1904M",
+        "power1": "F",
+        "power2": "I",
+        "actual_order": "A MAR - BUR, A SPA - MAR",
+        "predict_order_p1": "A PAR S F BRE; F BRE S F WES MAO",
+        "predict_order_p2": "A MAR BUR; A SPA MAR; F ION H; F MAO IRI; F TYS WES; F WES MAO",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1905M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A SEV - ARM, A BUL S CON H, A SEV - ARM",
+        "predict_order_p1": "A BUL CON; A GAL SIL; A MUN S A GAL SIL; A SER BUL; A VIE BOH; F AEG S A BUL CON; F GRE S A SER BUL; F TRI H",
+        "predict_order_p2": "A ARM SMY; A PRU S A WAR SIL; A WAR SIL; A MOS SEV; A SEV ARM; F RUM BLA; F SWE BAL; F SWE BAL",
+        "parse_predict_order_p1": [
+            "A MUN S A GAL - SIL",
+            "A GAL - SIL",
+            "F AEG S A BUL - CON",
+            "A BUL - CON"
+        ],
+        "parse_predict_order_p2": [
+            "A ARM - SMY"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1905M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "A PIC - PAR, A BUR S PIC - PAR",
+        "predict_order_p1": "A DEN S F KIE; A PIC PAR; A LON BRE VIA; F KIE S A PRU BER; F ENG C A LON BRE; F IRI S F ENG; F BEL S F ENG",
+        "predict_order_p2": "A BUR PAR; A MAR PIE; A BUR PAR; A VEN H; F ION H; F MAO POR; F SPA/SC H; F WES TYS; F WES TYS",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": [
+            "A BUR - PAR",
+            "F SPA/SC H",
+            "F WES - TYS",
+            "A MAR - PIE"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1905M",
+        "power1": "F",
+        "power2": "I",
+        "actual_order": "A BUR - PIC, A PAR S BUR - PIC, F BRE S BUR - PIC",
+        "predict_order_p1": "A PAR S A BUR PIC; F BRE S A BUR PIC",
+        "predict_order_p2": "A BUR S F BRE PIC; A MAR PIE; A BUR S F BRE PIC; A VEN H; F ION H; F MAO H; F SPA/SC S F MAO; F WES S F MAO; F VEN H",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1905M",
+        "power1": "G",
+        "power2": "R",
+        "actual_order": "F SWE S BAL - DEN, F BAL - DEN",
+        "predict_order_p1": "F BAL DEN",
+        "predict_order_p2": "A ARM SMY; A PRU BER; A SEV S F RUM; A WAR GAL; F RUM H; F SWE DEN; F WES S F MAO",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1905M",
+        "power1": "A",
+        "power2": "E",
+        "actual_order": "A BEL - BUR, A MUN S BEL - BUR",
+        "predict_order_p1": "A BUD SER; A BUL S A CON; A CON S A ARM SMY; A MUN S A PRU BER; A VIE BUD; F AEG S A ARM SMY; F GRE S A BUL; F TRI H",
+        "predict_order_p2": "A DEN H; A LON PIC VIA; A PIC PAR; F KIE S A PRU BER; F ENG C A LON PIC; F IRI S F ENG; F KIE S A PRU BER; F NAO MAO; F BEL S A LON PIC",
+        "parse_predict_order_p1": [
+            "A MUN S A PRU - BER",
+            "F AEG S A ARM - SMY",
+            "A BUL S A CON"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1905M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "F RUM - BLA, A SMY S CON - ANK, A BUL - CON, A CON - ANK",
+        "predict_order_p1": "A BUD SER; A BUL S A CON; A CON S A ARM ANK; A MUN S A PRU BER; A BUD SER; A VIE BUD; F AEG S A CON; F GRE S A BUL; F TRI H; F VEN H",
+        "predict_order_p2": "A ARM SMY; A PRU BER; A WAR SIL; A SEV ARM; F RUM BLA; F SWE NWY; F SWE NWY",
+        "parse_predict_order_p1": [
+            "A MUN S A PRU - BER",
+            "F AEG S A CON",
+            "A BUL S A CON"
+        ],
+        "parse_predict_order_p2": [
+            "A ARM - SMY"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1905M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "A PAR S BEL - BUR, F ENG - BRE, F IRI S BRE - MAO, F BRE - MAO",
+        "predict_order_p1": "A KIE S F HEL DEN; A BEL BUR; A PAR BRE; F ENG BRE; F HEL DEN; F IRI S F BRE MAO; F NTH NWY",
+        "predict_order_p2": "F BRE MAO",
+        "parse_predict_order_p1": [
+            "F NTH - NWY",
+            "F HEL - DEN",
+            "A KIE S F HEL - DEN"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1905M",
+        "power1": "E",
+        "power2": "A",
+        "actual_order": "A GAS - BRE, A PAR S GAS - BRE, F NAO - NWG, A BUR - MUN",
+        "predict_order_p1": "A BEL BUR; A KIE S F HEL DEN; A PAR S F ENG BRE; A BEL BUR; F ENG BRE; F HEL DEN; F IRI MAO; F IRI S F IRI MAO; F NTH NWY; F WES SPA/SC",
+        "predict_order_p2": "A BUD RUM; A BUL S A BUD RUM; A CON S A SMY ANK; A MUN S A KIE BER; A BUD RUM; A BUL S A BUD RUM; A TYR S F TRI VEN; F GRE AEG; F ION NAP; F TRI VEN; F TYS S F ION NAP",
+        "parse_predict_order_p1": [
+            "F NTH - NWY",
+            "F HEL - DEN",
+            "A KIE S F HEL - DEN",
+            "F WES - SPA/SC"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1905M",
+        "power1": "G",
+        "power2": "R",
+        "actual_order": "F SWE - NWY, A BER - KIE, F DEN S A BER - KIE",
+        "predict_order_p1": "F DEN KIE",
+        "predict_order_p2": "A BER S F DEN KIE; A MOS UKR; A SEV S F RUM; A SMY CON; A WAR GAL; F RUM S F BLA BUL; F SWE NWY; F SWE NWY",
+        "parse_predict_order_p1": [],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1906M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A SEV - UKR, F RUM S BUL H",
+        "predict_order_p1": "A BUL S A CON; A CON S A BUL; A MUN TYR; A BUD S A VIE GAL; A TRI S A MUN TYR; A VIE GAL; F GRE S F ION; F ALB S F ION; F ION H",
+        "predict_order_p2": "A BER S A WAR SIL; A MOS UKR; A SEV S F RUM; A SMY ARM; A STP NWY; A SMY ARM; A WAR SIL; F RUM H; F SWE S A STP NWY; F WES SPA/SC",
+        "parse_predict_order_p1": [
+            "A MUN - TYR",
+            "F ION H",
+            "A BUL S A CON"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1906M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "F ENG - BRE",
+        "predict_order_p1": "A KIE S A MUN; A PAR BUR; A LON BEL VIA; F ENG BRE; F IRI MAO; F NTH C A LON BEL; F NWG NWY; F DEN S A KIE",
+        "predict_order_p2": "F MAO POR",
+        "parse_predict_order_p1": [
+            "F NTH C A LON - BEL",
+            "A KIE S A MUN"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1906M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "A GAS - SPA, A BUR - RUH",
+        "predict_order_p1": "A BUR RUH; A KIE S A BUR RUH; A LON BEL VIA; A PAR BUR; A BUR RUH; F ENG S F IRI MAO; F IRI MAO; F NTH C A LON BEL; F NWG NWY; F DEN S A KIE; F IRI MAO; F SWE S F NWG NWY",
+        "predict_order_p2": "A ROM TUS; A TYR BOH; A VEN S A TYR; F GAS SPA/NC; F NAP TYS; F TUN TYS; F TYS LYO; F WES S F GAS SPA",
+        "parse_predict_order_p1": [
+            "F NTH C A LON - BEL",
+            "A BUR - RUH",
+            "A KIE S A BUR - RUH"
+        ],
+        "parse_predict_order_p2": [
+            "F WES S F GAS - SPA",
+            "F TUN - TYS"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1906M",
+        "power1": "A",
+        "power2": "E",
+        "actual_order": "A TYR - MUN",
+        "predict_order_p1": "A ANK CON; A BOH S A MUN; A BUL CON; A MUN S A BER; A TRI S A TYR; A TYR S A MUN; A VIE S A TYR; F ADR S A TRI; F ALB S F ION; F GRE S F ION",
+        "predict_order_p2": "A KIE S A RUH; A PAR GAS; A RUH S A KIE; A VEN ROM; F BRE S A PAR GAS; F IRI MAO; F NTH S F NWY; F NWY S F SWE; F BAL S A DEN SWE; F NAP S A VEN ROM; F NTH S F NWY",
+        "parse_predict_order_p1": [
+            "A MUN S A BER",
+            "A BOH S A MUN",
+            "A TYR S A MUN",
+            "A BUL - CON"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1906M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "A TYR - MUN, F ION - TYS",
+        "predict_order_p1": "A ANK CON; A BOH S A MUN; A BUL CON; A ANK CON; A TRI S A TYR; A TYR S A MUN; A VIE S A TYR; F ADR S A TRI; F AEG S F ION; F ALB S F ION",
+        "predict_order_p2": "A APU ROM; A VEN PIE; A PIE MAR; F GAS SPA/NC; F NAP TYS; F ION TUN; F TUN NAF; F TYS LYO",
+        "parse_predict_order_p1": [
+            "A BOH S A MUN",
+            "A TYR S A MUN",
+            "F AEG S F ION",
+            "A BUL - CON"
+        ],
+        "parse_predict_order_p2": [
+            "F TYS - LYO",
+            "A PIE - MAR",
+            "F ION - TUN"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1906M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "A GAS-SPA, A PAR-BUR",
+        "predict_order_p1": "A KIE S A RUH; A PAR BUR; A RUH S A KIE; A DEN S A KIE; F BAL S A KIE; F BRE S F IRI MAO; F IRI MAO; F NTH S F NWY; F NWY S F SWE; F SWE S F NWY",
+        "predict_order_p2": "A APU ROM; A VEN PIE; A PIE MAR; F GAS SPA/NC; F NAP TYS; F ION TUN; F TUN NAF; F ION TUN",
+        "parse_predict_order_p1": [
+            "F NTH S F NWY",
+            "A RUH S A KIE",
+            "A KIE S A RUH"
+        ],
+        "parse_predict_order_p2": [
+            "F TUN - NAF"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1906M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "F MAO-POR",
+        "predict_order_p1": "A DEN S A KIE; A KIE S A RUH; A PAR S F BRE; A RUH S A KIE; A VEN PIE; F BAL S A KIE; F BRE S F IRI MAO; F IRI MAO; F NTH S F NWY; F NWY S F SWE; F SWE S F NWY",
+        "predict_order_p2": "F MAO POR",
+        "parse_predict_order_p1": [
+            "F NTH S F NWY",
+            "A RUH S A KIE",
+            "A KIE S A RUH"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1906M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "F SWE - NWY, A FIN S F SWE - NWY, A STP S F SWE - NWY, F BAL - SWE, F NTH S F NWY",
+        "predict_order_p1": "A DEN S F BAL SWE; A KIE S A RUH; A PAR S F BRE; A RUH S A KIE; F BRE S F IRI MAO; F IRI MAO; F NTH S F NWY; F NWY S F BAL SWE; F BAL SWE; F SWE SKA",
+        "predict_order_p2": "A BER S A SIL; A SMY CON; A STP S F SWE NWY; A UKR RUM; A FIN S F SWE NWY; A SIL S A BER; F RUM BLA; F SWE NWY",
+        "parse_predict_order_p1": [
+            "F NTH S F NWY",
+            "A RUH S A KIE",
+            "A KIE S A RUH"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1907M",
+        "power1": "A",
+        "power2": "E",
+        "actual_order": "A VIE - TYR",
+        "predict_order_p1": "A ANK CON; A BOH S A MUN; A BUL SER; A TRI S A VIE TYR; A TYR PIE; A VIE TYR; F ADR ION; F AEG S F ADR ION; F GRE S F ADR ION",
+        "predict_order_p2": "A BUR MAR; A KIE S A MUN; A LON NWY VIA; A PAR BUR; A RUH S A KIE; A BUR MAR; F BRE MAO; F MAO POR; F NTH C A LON NWY; F SKA S A LON NWY; F SWE S A LON NWY; F SKA S A LON NWY",
+        "parse_predict_order_p1": [
+            "A BOH S A MUN",
+            "A TYR - PIE",
+            "F AEG S F ADR - ION",
+            "A BUL - SER"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1907M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "F ADR - ALB",
+        "predict_order_p1": "A ANK CON; A BOH S A MUN; A BUL SER; A ANK CON; A TRI S A VIE TYR; A VIE TYR; F ADR S F AEG ION; F AEG ION; F GRE S F AEG ION",
+        "predict_order_p2": "A VEN ROM; A PIE MAR; F NAP ROM; F SPA/NC S F MAO POR; F TUN WES; F TYS WES",
+        "parse_predict_order_p1": [
+            "A BOH S A MUN",
+            "F AEG - ION",
+            "A BUL - SER"
+        ],
+        "parse_predict_order_p2": [
+            "F TYS - WES",
+            "A PIE - MAR"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1907M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A ANK - SMY, F AEG S A ANK - SMY",
+        "predict_order_p1": "A ANK CON; A BUL SER; A ANK CON; A BOH S A MUN; A TRI S A VIE TYR; A VIE TYR; F ADR ALB; F AEG ION; F GRE S F AEG ION; F MAR SPA/SC",
+        "predict_order_p2": "A BER S A MUN; A FIN S F NWY; A SMY H; A SIL S A MUN; A STP S F NWY; A WAR PRU; F BLA H; F NWY H; F SPA/NC S F MAO POR",
+        "parse_predict_order_p1": [
+            "A BOH S A MUN",
+            "F AEG - ION",
+            "A BUL - SER"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1907M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "F POR - SPA(SC), F MAO S F POR - SPA(SC)",
+        "predict_order_p1": "A BUR MAR; A GAS S A BUR MAR; A KIE S A BER; A LON BEL VIA; A RUH S A KIE; F BRE MAO; F MAO POR; F NTH C A LON BEL; F SKA S F SWE; F SWE S F NWY",
+        "predict_order_p2": "F POR S F MAO SPA",
+        "parse_predict_order_p1": [
+            "F NTH C A LON - BEL",
+            "F SKA S F SWE",
+            "A BUR - MAR",
+            "A RUH S A KIE",
+            "A KIE S A BER",
+            "A GAS S A BUR - MAR"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1907M",
+        "power1": "E",
+        "power2": "I",
+        "actual_order": "F SPA/NC S MAO - POR, F MAO - POR",
+        "predict_order_p1": "A BUR S A GAS MAR; A GAS MAR; A KIE S A BER; A LON DEN VIA; A RUH S A KIE; A BUR S A GAS MAR; F BRE MAO; F MAO WES; F NTH C A LON DEN; F SKA S F SWE; F SWE S F NWY; F SKA S F SWE",
+        "predict_order_p2": "A VEN H; A PIE S A VEN; F NAP S F TUN ION; F SPA/NC POR; F TUN ION; F TYS S F TUN ION",
+        "parse_predict_order_p1": [
+            "F NTH C A LON - DEN",
+            "F SKA S F SWE",
+            "A BUR S A GAS - MAR",
+            "A RUH S A KIE",
+            "A KIE S A BER",
+            "A GAS - MAR"
+        ],
+        "parse_predict_order_p2": [
+            "F TUN - ION"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1907M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A RUM - SEV, A BER S A MUN H, A SIL S A MUN H",
+        "predict_order_p1": "A BOH S A MUN; A BUL CON; A MUN H; A TRI VEN; A TYR S A TRI VEN; A VIE TRI; F ADR S A TRI VEN; F AEG ION; F ION APU",
+        "predict_order_p2": "A BER S A MUN; A SIL S A MUN; A STP S F NWY; A SWE S F NWY; A SWE S F NWY; A PRU S A BER; F NWY S A SWE; F RUM SEV; F RUM SEV",
+        "parse_predict_order_p1": [
+            "A MUN H",
+            "A BOH S A MUN",
+            "A TYR S A TRI - VEN",
+            "F ION - APU",
+            "F AEG - ION",
+            "A BUL - CON"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1907M",
+        "power1": "E",
+        "power2": "F",
+        "actual_order": "A SPA H, F MAO - NAF",
+        "predict_order_p1": "A BUR S A MAR; A GAS SPA; A KIE S A SIL MUN; A MAR S A GAS SPA; A BEL RUH; F BRE MAO; F MAO POR; F DEN S A KIE; F SKA S F DEN; F WES TYS",
+        "predict_order_p2": "F SPA/SC WES",
+        "parse_predict_order_p1": [
+            "F SKA S F DEN",
+            "A BUR S A MAR",
+            "A KIE S A SIL - MUN",
+            "A GAS - SPA",
+            "F WES - TYS",
+            "A MAR S A GAS - SPA"
+        ],
+        "parse_predict_order_p2": [
+            "F SPA/SC - WES"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1908M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "A NAP - ROM, F TYS S F WES H",
+        "predict_order_p1": "A BOH S A MUN; A MUN S A BER KIE; A NAP ROM; A SMY H; A TYR S A MUN; A VEN S A NAP ROM; A VIE H; F ADR ION; F AEG S F ADR ION; F ION NAP; F TRI ADR",
+        "predict_order_p2": "F TYS S F WES; F WES S F TUN",
+        "parse_predict_order_p1": [
+            "A MUN S A BER - KIE",
+            "A BOH S A MUN",
+            "A TYR S A MUN",
+            "F ION - NAP",
+            "F AEG S F ADR - ION"
+        ],
+        "parse_predict_order_p2": [
+            "F TYS S F WES"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1908M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "A MUN H, A SIL S A MUN H",
+        "predict_order_p1": "A BOH S A MUN; A MUN S A BER KIE; A NAP ROM; A SMY H; A TYR S A MUN; A VEN S A NAP ROM; A SMY H; A VIE H; F ADR APU; F AEG S F ION; F ION S F TYS TUN; F TRI ADR; F VEN PIE",
+        "predict_order_p2": "A BER KIE; A SIL S A MUN; A STP FIN; A SWE S F NWY; A PRU BER; A SWE S F NWY; A MOS H; F NWY S A SWE; F SEV H; F SKA S A SWE",
+        "parse_predict_order_p1": [
+            "A MUN S A BER - KIE",
+            "A BOH S A MUN",
+            "A TYR S A MUN",
+            "F ION S F TYS - TUN",
+            "F AEG S F ION"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "S1908M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A BUR - MAR",
+        "predict_order_p1": "A KIE S A BER MUN; A BUR S A BER MUN; A MAR S A SPA; A RUH S A KIE; A SPA S A MAR; F DEN HEL; F ENG MAO; F MAO WES; F NAF S F MAO WES; F EDI NTH",
+        "predict_order_p2": "A BER S A MUN; A PRU S A BER; A SIL S A MUN; A STP FIN; A SWE S F NWY; A MOS H; A SWE S F NWY; F NWY S A SWE; F SEV H; F SKA DEN",
+        "parse_predict_order_p1": [
+            "A BUR S A BER - MUN",
+            "A RUH S A KIE",
+            "A KIE S A BER - MUN",
+            "A MAR S A SPA"
+        ],
+        "parse_predict_order_p2": [
+            "F SKA - DEN"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "F1908M",
+        "power1": "A",
+        "power2": "E",
+        "actual_order": "F NAF - TUN, F ION S F NAF - TUN",
+        "predict_order_p1": "A BOH S A MUN; A MUN H; A NAP ROM; A TYR S A MUN; A ARM H; A VEN S A NAP ROM; A VIE GAL; F ADR ION; F AEG S F ADR ION; F APU NAP; F TRI ADR",
+        "predict_order_p2": "A KIE S A BER MUN; A BUR S A MAR; A MAR S A SPA; A RUH S A KIE; A SPA S A MAR; F ENG MAO; F HEL S A KIE; F MAO POR; F NAF S F ION TUN; F HEL S A KIE; F NTH S F NWY; F WES S F ION TUN",
+        "parse_predict_order_p1": [
+            "A MUN H",
+            "A BOH S A MUN",
+            "A TYR S A MUN",
+            "A ARM H",
+            "F AEG S F ADR - ION"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1908M",
+        "power1": "A",
+        "power2": "I",
+        "actual_order": "F WES S F ION - TUN, F ION - TUN, F TYS - LYO",
+        "predict_order_p1": "A BOH S A MUN; A BUD RUM; A MUN H; A ARM SEV; A BUD RUM; A TYR S A MUN; A VEN PIE; A ROM TUS; A GAL WAR; A ROM TUS; F AEG CON; F APU NAP; F ADR APU; F ION TUN; F ADR APU",
+        "predict_order_p2": "F TYS LYO; F WES TUN",
+        "parse_predict_order_p1": [
+            "A MUN H",
+            "A BOH S A MUN",
+            "A TYR S A MUN",
+            "F ION - TUN",
+            "A GAL - WAR",
+            "A ARM - SEV",
+            "F AEG - CON"
+        ],
+        "parse_predict_order_p2": [
+            "F TYS - LYO"
+        ]
+    },
+    {
+        "game": 53480,
+        "phase": "S1909M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A RUH S A SIL - MUN, A SIL - MUN",
+        "predict_order_p1": "A KIE S A SIL MUN; A BUR S A SIL MUN; A MAR H; A RUH S A SIL MUN; A SPA S A MAR; F ENG MAO; F MAO WES; F NAF S F MAO WES; F HEL S A KIE; F NTH H; F WES LYO",
+        "predict_order_p2": "A BER S A SIL MUN; A FIN STP; A SIL MUN; A SWE S F NWY; A UKR SEV; A WAR GAL; F NWY S A SWE; F RUM BLA",
+        "parse_predict_order_p1": [
+            "F NTH H",
+            "F HEL S A KIE",
+            "A BUR S A SIL - MUN",
+            "A RUH S A SIL - MUN",
+            "A KIE S A SIL - MUN",
+            "F WES - LYO",
+            "A MAR H"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1909M",
+        "power1": "A",
+        "power2": "R",
+        "actual_order": "F RUM - SEV, A GAL - RUM",
+        "predict_order_p1": "A BOH S A MUN; A MUN H; A PIE MAR; A ROM VEN; A SER RUM; A SYR ARM; A TUS PIE; A VIE GAL; F AEG CON; F APU NAP; F ION S F TUN; F NAP ROM; F TYS LYO",
+        "predict_order_p2": "A BER S A SIL MUN; A FIN STP; A SIL MUN; A STP MOS; A SWE S F NWY; A UKR SEV; A WAR GAL; F NWY S A SWE; F RUM BLA; F STP/NC BAR",
+        "parse_predict_order_p1": [
+            "A MUN H",
+            "F TYS - LYO",
+            "A PIE - MAR",
+            "A BOH S A MUN",
+            "F ION S F TUN",
+            "A TUS - PIE",
+            "F AEG - CON"
+        ],
+        "parse_predict_order_p2": []
+    },
+    {
+        "game": 53480,
+        "phase": "F1909M",
+        "power1": "E",
+        "power2": "R",
+        "actual_order": "A SIL - MUN, A BUR S A SIL - MUN, A RUH S A SIL - MUN, A KIE S A SIL - MUN",
+        "predict_order_p1": "A KIE S A SIL MUN; A BUR S A SIL MUN; A RUH S A SIL MUN; A SPA GAS; F HEL S A KIE; F NAF S F TUN; F MAO SPA/SC; F NTH S F NWY; F WES LYO; F SKA S F NWY",
+        "predict_order_p2": "A BER S A SIL MUN; A FIN STP; A GAL RUM; A SIL MUN; A STP MOS; A SWE S F NWY; A WAR GAL; F NWY S A SWE; F RUM SEV; F SEV BLA",
+        "parse_predict_order_p1": [
+            "F NTH S F NWY",
+            "F HEL S A KIE",
+            "F SKA S F NWY",
+            "A BUR S A SIL - MUN",
+            "A RUH S A SIL - MUN",
+            "A KIE S A SIL - MUN",
+            "F WES - LYO"
+        ],
+        "parse_predict_order_p2": []
+    }
+]

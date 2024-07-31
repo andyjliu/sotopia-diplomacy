@@ -1,0 +1,975 @@
+[
+    {
+        "game_id": "115738",
+        "phase_name": "F1903M",
+        "env_uuid": "01J1V5P5FQXQRZD4B6JMGH07BP",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.012724623084068298
+                ],
+                [
+                    "GERMANY",
+                    0.059248682111501694
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.016622256487607956
+                ],
+                [
+                    "GERMANY",
+                    0.09030789136886597
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.03748827800154686
+                ],
+                [
+                    "ENGLAND",
+                    0.016875658184289932
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.09030789136886597
+                ],
+                [
+                    "ENGLAND",
+                    0.016622256487607956
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "F1904M",
+        "env_uuid": "01J1V5P5S0ZJQ0BH2RZP6WXG8R",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "F1904M",
+        "env_uuid": "01J1V5P5GKABHTDAB29GMH8GTA",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.0005533338990062475
+                ],
+                [
+                    "GERMANY",
+                    0.0070845140144228935
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.00046644877875223756
+                ],
+                [
+                    "GERMANY",
+                    0.007419529836624861
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.008784051984548569
+                ],
+                [
+                    "ENGLAND",
+                    0.00040170527063310146
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.007419529836624861
+                ],
+                [
+                    "ENGLAND",
+                    0.00046644877875223756
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "116643",
+        "phase_name": "S1904M",
+        "env_uuid": "01J1V5P5QNAHDE3YRSHTJ81SJ0",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "F1903M",
+        "env_uuid": "01J1V5P599EJ82ZBVBNPGP6JC9",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "116643",
+        "phase_name": "F1903M",
+        "env_uuid": "01J1V5P5Q4MJRC6JHYD1KMPPBD",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "S1904M",
+        "env_uuid": "01J1V5P5G7J3M3EHPSZ16V6760",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.000485116703202948
+                ],
+                [
+                    "GERMANY",
+                    0.008048763498663902
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.0002029606548603624
+                ],
+                [
+                    "GERMANY",
+                    0.0032572895288467407
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.006539449095726013
+                ],
+                [
+                    "ENGLAND",
+                    0.00042404336272738874
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0032572895288467407
+                ],
+                [
+                    "ENGLAND",
+                    0.0002029606548603624
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "F1905M",
+        "env_uuid": "01J1V5P5HHN7CBTAT427NEZ8JC",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.00044118432560935616
+                ],
+                [
+                    "GERMANY",
+                    0.003587220562621951
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.00037851461092941463
+                ],
+                [
+                    "GERMANY",
+                    0.0036593663971871138
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.0035381403286010027
+                ],
+                [
+                    "ENGLAND",
+                    0.00029718090081587434
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0036593663971871138
+                ],
+                [
+                    "ENGLAND",
+                    0.00037851461092941463
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "S1906M",
+        "env_uuid": "01J1V5P5EHF3WWHD81KH5MF399",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.0005404945695772767
+                ],
+                [
+                    "GERMANY",
+                    0.002868273761123419
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.0008366256370209157
+                ],
+                [
+                    "GERMANY",
+                    0.0031094257719814777
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.0029551309999078512
+                ],
+                [
+                    "ENGLAND",
+                    0.0005367669509723783
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0031094257719814777
+                ],
+                [
+                    "ENGLAND",
+                    0.0008366256370209157
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "F1903M",
+        "env_uuid": "01J1V5P5CJTNK4PFHY1EPS86PQ",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.05313573405146599
+                ],
+                [
+                    "GERMANY",
+                    0.0888705849647522
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.07412780821323395
+                ],
+                [
+                    "GERMANY",
+                    0.10731900483369827
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.10074446350336075
+                ],
+                [
+                    "ENGLAND",
+                    0.05408880487084389
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.10731900483369827
+                ],
+                [
+                    "ENGLAND",
+                    0.07412780821323395
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "F1905M",
+        "env_uuid": "01J1V5P5SQ9MKHSS90VYRVNY54",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "F1905M",
+        "env_uuid": "01J1V5P5AZZ1C9H0CQY6NS34V6",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "F1906M",
+        "env_uuid": "01J1V5P5BSAVASNN9GD56XPAZP",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "F1906M",
+        "env_uuid": "01J1V5P5ESBKWDG05T06DMZ6N6",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.0006905515328980982
+                ],
+                [
+                    "GERMANY",
+                    0.0023891297169029713
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.0007502249791286886
+                ],
+                [
+                    "GERMANY",
+                    0.0033027315512299538
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.002788551151752472
+                ],
+                [
+                    "ENGLAND",
+                    0.0007822139887139201
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0033027315512299538
+                ],
+                [
+                    "ENGLAND",
+                    0.0007502249791286886
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "S1905M",
+        "env_uuid": "01J1V5P5MVQCWZZ97JDBS3QFQE",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "S1906M",
+        "env_uuid": "01J1V5P5NMKVPMWX94QXEQG6VE",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "S1904M",
+        "env_uuid": "01J1V5P59RWMX2THMP931QKWWW",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "S1905M",
+        "env_uuid": "01J1V5P5SEYZT82YH1ZXHXT6D5",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "S1903M",
+        "env_uuid": "01J1V5P58XCZYKHCXVT6BZZGRJ",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "S1903M",
+        "env_uuid": "01J1V5P5C9R7FNWK7ZT77ZMHDD",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.05675765499472618
+                ],
+                [
+                    "GERMANY",
+                    0.14355476200580597
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.06431131809949875
+                ],
+                [
+                    "GERMANY",
+                    0.21291029453277588
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.11266191303730011
+                ],
+                [
+                    "ENGLAND",
+                    0.0712018683552742
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.21291029453277588
+                ],
+                [
+                    "ENGLAND",
+                    0.06431131809949875
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "S1903M",
+        "env_uuid": "01J1V5P5QVYXAACMX0PW8PWNVB",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "S1906M",
+        "env_uuid": "01J1V5P5HZX7S6QJYNSWVGTFWG",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.00016817195864859968
+                ],
+                [
+                    "GERMANY",
+                    0.004609440919011831
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.000225786046939902
+                ],
+                [
+                    "GERMANY",
+                    0.002996578346937895
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.006820023525506258
+                ],
+                [
+                    "ENGLAND",
+                    0.00021276345069054514
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.002996578346937895
+                ],
+                [
+                    "ENGLAND",
+                    0.000225786046939902
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "F1904M",
+        "env_uuid": "01J1V5P5D6ZHASWX60B3ZBTPBE",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.0003669329744298011
+                ],
+                [
+                    "GERMANY",
+                    0.00833099614828825
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.0003058522706851363
+                ],
+                [
+                    "GERMANY",
+                    0.019652480259537697
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.005167482420802116
+                ],
+                [
+                    "ENGLAND",
+                    0.0005792084848508239
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.019652480259537697
+                ],
+                [
+                    "ENGLAND",
+                    0.0003058522706851363
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "S1905M",
+        "env_uuid": "01J1V5P5DMS9PQ4NVE2JKYMC5X",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.0004257117980159819
+                ],
+                [
+                    "GERMANY",
+                    0.0019566481932997704
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.00046771118650212884
+                ],
+                [
+                    "GERMANY",
+                    0.0025150624569505453
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.002883273409679532
+                ],
+                [
+                    "ENGLAND",
+                    0.0007969369762577116
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0025150624569505453
+                ],
+                [
+                    "ENGLAND",
+                    0.00046771118650212884
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "S1904M",
+        "env_uuid": "01J1V5P5RPHKRN62X8AA3GRJCK",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "F1903M",
+        "env_uuid": "01J1V5P5K9KPDME9AZ5XYMXVG1",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "S1905M",
+        "env_uuid": "01J1V5P5H6W2556RQ85PXRAGN7",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.0005130610661581159
+                ],
+                [
+                    "GERMANY",
+                    0.0045048752799630165
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.0007156045758165419
+                ],
+                [
+                    "GERMANY",
+                    0.0064232018776237965
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.002711449284106493
+                ],
+                [
+                    "ENGLAND",
+                    0.00029845518292859197
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0064232018776237965
+                ],
+                [
+                    "ENGLAND",
+                    0.0007156045758165419
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "F1904M",
+        "env_uuid": "01J1V5P5A13GTDFK3S49T8FAM2",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "S1903M",
+        "env_uuid": "01J1V5P5F986QXYE0G2MVRC6ED",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.017276739701628685
+                ],
+                [
+                    "GERMANY",
+                    0.10865938663482666
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.041041214019060135
+                ],
+                [
+                    "GERMANY",
+                    0.19955182075500488
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.10112655162811279
+                ],
+                [
+                    "ENGLAND",
+                    0.017298255115747452
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.19955182075500488
+                ],
+                [
+                    "ENGLAND",
+                    0.041041214019060135
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "S1906M",
+        "env_uuid": "01J1V5P5T7BKNS9K9V7EHQ02RH",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "S1906M",
+        "env_uuid": "01J1V5P5BG3D453AD91JFYK64Z",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "F1905M",
+        "env_uuid": "01J1V5P5E04QQBGEA2NJN3SA1P",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.000693528214469552
+                ],
+                [
+                    "GERMANY",
+                    0.0030228113755583763
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.000486865290440619
+                ],
+                [
+                    "GERMANY",
+                    0.0023536239750683308
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.005063866730779409
+                ],
+                [
+                    "ENGLAND",
+                    0.0007051408756524324
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.0023536239750683308
+                ],
+                [
+                    "ENGLAND",
+                    0.000486865290440619
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "S1904M",
+        "env_uuid": "01J1V5P5KTZEFBZS7DZ2VFCCP1",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "F1904M",
+        "env_uuid": "01J1V5P5M5858Q6K5E1XD74FH7",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "1828",
+        "phase_name": "S1904M",
+        "env_uuid": "01J1V5P5D2X5VB85YHQNHPGN31",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.00034676308860071003
+                ],
+                [
+                    "GERMANY",
+                    0.020748190581798553
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.00023234989203047007
+                ],
+                [
+                    "GERMANY",
+                    0.023179098963737488
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.04882488772273064
+                ],
+                [
+                    "ENGLAND",
+                    0.00032727120560593903
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.023179098963737488
+                ],
+                [
+                    "ENGLAND",
+                    0.00023234989203047007
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "S1903M",
+        "env_uuid": "01J1V5P5JRN7BAM9EH517XTBHQ",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "115738",
+        "phase_name": "F1906M",
+        "env_uuid": "01J1V5P5J7ZT8GSN1Z1VZQ332Q",
+        "England": {
+            "predict": [
+                [
+                    "ENGLAND",
+                    0.00018295753397978842
+                ],
+                [
+                    "GERMANY",
+                    0.00439037149772048
+                ]
+            ],
+            "actual": [
+                [
+                    "ENGLAND",
+                    0.0002996118855662644
+                ],
+                [
+                    "GERMANY",
+                    0.007532802876085043
+                ]
+            ]
+        },
+        "Germany": {
+            "predict": [
+                [
+                    "GERMANY",
+                    0.005442533176392317
+                ],
+                [
+                    "ENGLAND",
+                    0.00020038550428580493
+                ]
+            ],
+            "actual": [
+                [
+                    "GERMANY",
+                    0.007532802876085043
+                ],
+                [
+                    "ENGLAND",
+                    0.0002996118855662644
+                ]
+            ]
+        }
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "F1903M",
+        "env_uuid": "01J1V5P5R6T7QTK9XKR2CMWXQJ",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "74466",
+        "phase_name": "F1906M",
+        "env_uuid": "01J1V5P5TJQH99AEAPDJYTEPFA",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "F1905M",
+        "env_uuid": "01J1V5P5N48QAFA1FXPQ2206GG",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "116643",
+        "phase_name": "S1903M",
+        "env_uuid": "01J1V5P5PVQ9HHD1Z8AAPSQ1SW",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "97576",
+        "phase_name": "F1906M",
+        "env_uuid": "01J1V5P5NX8A35P881V73EQDBN",
+        "England": null,
+        "Germany": null
+    },
+    {
+        "game_id": "13818",
+        "phase_name": "S1905M",
+        "env_uuid": "01J1V5P5AJZJ7B23H1WNYFDPQ9",
+        "England": null,
+        "Germany": null
+    }
+]

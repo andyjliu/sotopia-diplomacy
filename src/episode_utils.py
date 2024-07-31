@@ -14,6 +14,16 @@ def get_game_phase_env_from_episode(episodelog):
     env = EnvironmentProfile.get(episodelog.environment)
     return env
 
+
+def get_countries_from_agent(agents):
+    countries = []
+    pks = list(AgentProfile.all_pks())
+    for agent in agents:
+        for pk in pks:
+            if agent == pk:
+                countries.append(AgentProfile.get(pk).country)
+    return countries
+
 def process_conversation(data):
     # Here the data should be episodelog.messages
     formatted_messages = []

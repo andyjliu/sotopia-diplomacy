@@ -1,77 +1,160 @@
 import asyncio
 from concurrent.futures import ThreadPoolExecutor
-from typing import cast, Literal
-
+from typing import cast, Literal, List, Tuple
 from sotopia.agents import Agents, LLMAgent, HumanAgent, RedisAgent, ScriptWritingAgent, BaseAgent
 from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
 from sotopia.envs import ParallelSotopiaEnv
-from sotopia.envs.evaluators import RuleBasedTerminatedEvaluator
 from sotopia.messages import AgentAction, Observation
 from sotopia.messages.message_classes import ScriptBackground
 from sotopia.generation_utils.generate import LLM_Name, agenerate_action, agenerate_goal, agenerate_script
-from profile_utils import adjacency_selection, get_env_pks
+from sotopia.samplers import EnvAgentCombo
+from profile_utils import adjacency_selection, get_env_pks, random_country_adjacency_selection, get_env_pk, get_env_pks_by_tag
 from tqdm import tqdm
 import argparse
+from sotopia.server import run_async_server
+import logging
+from logging.handlers import RotatingFileHandler
+from sotopia.envs.evaluators import (
+    ReachGoalLLMEvaluator,
+    RuleBasedTerminatedEvaluator,
+    unweighted_aggregate_evaluate,
+)
+import os
+import pdb
+import random
 
-async def episode_generation(env_model, agent_model, agents_dict, env_uuid, action_order: Literal["simutaneous", "round-robin", "random"] = "round-robin"):
-    model_dict = {
-        "env": env_model,
-        "agent1": agent_model,
-        "agent2": agent_model,
-    }
-    env = ParallelSotopiaEnv(
-        model_name=model_dict["env"],
-        action_order=action_order,
-        evaluators=[
-            RuleBasedTerminatedEvaluator(),
-        ],
-        uuid_str=env_uuid,
-    )
-
-    # Reset the environment
-    environment_messages = env.reset(agents=agents_dict, omniscient=False)
-    agents_dict.reset()
+# def pick_two_adjacent_countries(adjacency):
+#     country = random.choice(list(adjacency.keys()))
+#     adjacent_country = random.choice(adjacency[country])
+#     return country, adjacent_country
+def int_or_none(value):
+    if value == 'None':
+        return None
     try:
-        message = await run_async_server(
-            # model_dict = model_dict,
-            env_agent_combo_list,
-            omniscient=False,
-            script_like=False,
-            json_in_script=False,
-            tag="simple",
-            push_to_db=True
-        )
-        print(message)
-    except Exception as e:
-        print(f"An error occurred: {e}")
+        return int(value)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"Invalid int value: '{value}'")
 
-async def main():
-    parser = argparse.ArgumentParser()
-    parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/filter_games", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
-    parser.add_argument("--env_model", default="together_ai/meta-llama/Llama-3-8b-chat-hf", type=str, required=False, help="Choose the env model")
-    parser.add_argument("--agent_model", default="together_ai/meta-llama/Llama-3-8b-chat-hf", type=str, required=False, help="Choose the agent model")
-    args = parser.parse_args()
-
+def get_agents(args,countries):
     agents_list = []
-
-    countries = ["England", "Germany"]
     all_character_pks = list(AgentProfile.all_pks())
     for pk in all_character_pks:
         profile = AgentProfile.get(pk)
         if profile.country in countries:
-            agents_list.append(LLMAgent(agent_name=profile.first_name, model_name=args.agent_model))
+            agent = LLMAgent(
+                agent_name=profile.first_name,
+                agent_profile=profile,
+                # TODO: After testing, change to args.agent_model
+                model_name=args.model
+            )
+            agents_list.append(agent)
             if len(agents_list) == 2:  # Ensure we only get two agents
                 break
 
     if len(agents_list) != 2:
         raise ValueError("Two agents are required.")
+    return agents_list
 
-    agents_dict = Agents({agent.agent_name: agent for agent in agents_list})  # Convert list to Agents instance
+def create_env_agent_combo(env_model: str, agent_model: str, env_uuid: str, agents: List[BaseAgent[Observation, AgentAction]],
+                           action_order: Literal["simutaneous", "round-robin", "random"] = "round-robin") -> EnvAgentCombo[Observation, AgentAction]:
+    env = ParallelSotopiaEnv(
+        model_name=env_model,
+        action_order=action_order,
+        evaluators=[
+            RuleBasedTerminatedEvaluator()
+        ],
+        terminal_evaluators=[
+            ReachGoalLLMEvaluator(env_model),
+        ],
+        uuid_str=env_uuid,
+    )
+    return (env, agents)
 
-    game_phases = adjacency_selection(args.games_dir, countries)
-    uuid_list = get_env_pks(game_phases)
-    for uuid in tqdm(uuid_list, desc="Generating Episode: "):
-        await episode_generation(args.env_model, args.agent_model, agents_dict, uuid)
+async def episode_generation(tag, env_agent_combo_list: List[EnvAgentCombo[Observation, AgentAction]]):
+    for env_agent_combo in tqdm(env_agent_combo_list, desc = "Processing Eposide Generation: "):
+        try:
+            logging.info("Starting episode generation")
+            messages = await run_async_server(
+                env_agent_combo_list=[env_agent_combo],
+                omniscient=False,
+                script_like=False,
+                json_in_script=False,
+                # tag="whole", # First generation results
+                tag=tag,
+                push_to_db=True,
+                using_async=True
+            )
+            logging.info(f"Finished a run_async_server")
+            # for episode_messages in messages:
+            #     for message in episode_messages:
+            #         logging.debug(f"Message: {message}")
+        except Exception as e:
+            logging.exception(f"An error occurred: {e}")
+
+async def main():
+
+    
+    logging.info("Starting the program")
+    
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/clean_global_sub_sample", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
+    parser.add_argument("--model", default="llama3_70b", type=str, required=False, help="Choose the env model")
+    parser.add_argument("--env_model", default="llama3_70b", type=str, required=False, help="Choose the env model")
+    parser.add_argument("--agent_model", default="llama3_70b", type=str, required=False, help="Choose the agent model")
+    parser.add_argument("--env_tag", type=str, required=True, help="Choose a environment tag for getting the choosen environment")
+    parser.add_argument("--epi_tag", type=str, required=True, help = "Choose a tag for access the database")
+    parser.add_argument("--split_begin", type=int, required=True, help="The begin index of the sub samples")
+    parser.add_argument("--split_end", type=int_or_none, required=True, help="The end index of the sub samples")
+    args = parser.parse_args()
+
+    valid_countries = ['Austria', 'England', 'France', 'Germany', 'Italy', 'Russia', 'Turkey']
+    # adjacency = {
+    #     'Austria': ['Italy', 'Germany', 'Turkey', 'Russia'],
+    #     'England': ['France', 'Germany'],
+    #     'France': ['England', 'Germany', 'Italy'],
+    #     'Germany': ['France', 'England', 'Russia'],
+    #     'Italy': ['Austria', 'France'],
+    #     'Russia': ['Austria', 'Turkey', 'Germany'],
+    #     'Turkey': ['Austria', 'Russia']
+    # }
+
+    # countries = [c1, c2] 
+    # random.seed(42)
+    # game_phases = None
+    # while game_phases is None:
+    #     sampled_countries = random.sample(valid_countries, 2)
+    #     # Try to select game phases based on the sampled countries
+    #     # game_phases = adjacency_selection(args.games_dir, sampled_countries)
+    #     game_phases = random_country_adjacency_selection(args.games_dir, valid_countries)
+    
+    # TODO: Change to loading from environment profile database with tags
+    uuid_dict_list = get_env_pks_by_tag(args.env_tag)
+    uuid_list = [uuid_dict['uuid'] for uuid_dict in uuid_dict_list][args.split_begin: args.split_end]
+    agents_list = [get_agents(args,uuid_dict['countries']) for uuid_dict in uuid_dict_list][args.split_begin: args.split_end]
+    # pdb.set_trace()
+
+    # uuid_list = [get_env_pk(i) for i in game_phases]
+
+
+    # uuid_list = [pk for pk in get_env_pks(game_phases)]
+    # if len(uuid_list) > args.sample_size:
+    #     indices = list(range(len(uuid_list)))
+    #     sampled_indices = random.sample(indices, args.sample_size)
+    #     sample_uuid = [uuid_list[i] for i in sampled_indices]
+    #     sample_agents_list = [agents_list[i] for i in sampled_indices]
+    # else:
+    #     sample_uuid = uuid_list
+    
+    env_agent_combo_list = []
+
+    # "llama3_70b"
+    model = args.model    
+    for i in range(len(uuid_list)):
+        # TODO: Later can change to different models to see the comparision between different models
+        env_agent_combo_list.append(create_env_agent_combo(model, model, uuid_list[i], agents_list[i]))
+
+    await episode_generation(args.epi_tag, env_agent_combo_list)
 
 if __name__ == "__main__":
     asyncio.run(main())
+    # main()

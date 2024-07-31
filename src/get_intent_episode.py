@@ -13,14 +13,17 @@ from episode_utils import (
     process_conversation_to_intent
 )
 import json
+import pdb
 
-def get_episodes():
+def get_episodes(tag):
     all_task_pks = list(EpisodeLog.all_pks())
     episodelogs = []
     for pk in all_task_pks:
         episo = EpisodeLog.get(pk)
-        env = get_game_phase_env_from_episode(episo)
-        episodelogs.append({"game_id": env.game_id, "phase_name": env.phase_name, "env_uuid": env.pk, "env": env, "episode": episo})
+        if episo.tag == tag:
+            # pdb.set_trace()
+            env = get_game_phase_env_from_episode(episo)
+            episodelogs.append({"game_id": env.game_id, "agents": episo.agents, "phase_name": env.phase_name, "env_uuid": env.pk, "env": env, "episode": episo})
     return episodelogs
 
 def format_episode(episodes):
@@ -40,23 +43,31 @@ def format_episode(episodes):
     
 
 def main():
+    valid_countries = ['Austria', 'England', 'France', 'Germany', 'Italy', 'Russia', 'Turkey']
+
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir_path", default="/data/user_data/wenkail/", type=str, required=False, help="Choose the value model dir")
     parser.add_argument("--intent_model_path", default="/data/user_data/wenkail/models/imitation_intent.opt", type=str, required=False, help="Choose the env model")
-
+    # parser.add_argument("--c1", type = str, choices = valid_countries, required=True, help="Choose the first country")
+    # parser.add_argument("--c2", type = str, choices = valid_countries, required=True, help="Choose the second country")
+    parser.add_argument("--tag", type=str, required=True, help = "Choose a tag for access the database")
+    parser.add_argument("--tgt_dir", default="data/formatted_episodes/", type=str, required=False, help="Choose the env model")
     args = parser.parse_args()
-    countries = ["England", "Germany"]
 
-    episodes = get_episodes()
+    # TODO: replace c1 and c2 into the episode content into the real angent by getting its index
+    # countries = [c1, c2]
+
+    episodes = get_episodes(args.tag)
     formatted_episodes = format_episode(episodes)
     intent_episodes = []
+    # pdb.set_trace()
     for formatted_episode in formatted_episodes:
         formatted_episode.pop('episode')
         formatted_episode.pop('env')
         intent_episodes.append(formatted_episode)
-    with open('data/formatted_episodes_for_intent.json', 'w') as f:
+    with open(f'{args.tgt_dir}formatted_episodes_for_{args.tag}.json', 'w') as f:
         json.dump(formatted_episodes, f)
 
-    
+
 if __name__ == "__main__":
     main()

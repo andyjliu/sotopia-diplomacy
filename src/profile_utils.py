@@ -37,6 +37,17 @@ def store_env_profile(game_id, game_phase, countries, tag):
         env_tag = tag
     )
 
+def store_env_profile_with_previous(game_id, game_phase, countries, tag, game_dir):
+    scenario, agent_goals = Template.get_previous_scenario_fewshot(game_phase, countries, game_id, game_dir)
+    add_env_profile(
+        game_id = game_id,
+        phase_name = game_phase['name'],
+        scenario=scenario,
+        agent_goals = [social_goal for social_goal in agent_goals],
+        agent_powers = countries,
+        env_tag = tag
+    )
+
 def read_games_from_folder(game_folder):
     games = []
     for root, dirs, files in os.walk(game_folder):
@@ -145,7 +156,6 @@ def get_env_pk(game_phase):
 def get_env_pks_by_tag(tag):
     all_task_pks = list(EnvironmentProfile.all_pks())
     pks_list = []
-    # pdb.set_trace()
     for pk in tqdm(all_task_pks, desc = "Processing env profile dictionary"):
         env = EnvironmentProfile.get(pk)
         if env.env_tag == tag:
@@ -154,3 +164,37 @@ def get_env_pks_by_tag(tag):
             pk_with_countries['countries'] = env.agent_powers
             pks_list.append(pk_with_countries)
     return pks_list
+
+
+def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries):
+
+    upper_countries = [c.upper() for c in countries]
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)
+    
+    previous_phase = []
+
+    for phase in game['phases']:
+        if phase['name'] == phase_name:
+            print(phase)
+        else:
+            previous_phase.append(phase)
+
+    dialogue_unit = ""
+    for phase in previous_phase:
+        dialogue_unit += f"{phase['name']}: \n"
+        dialogue_unit += f"Dialogue Between Two Countries: \n"
+        for message in phase['messages']:
+            if message['sender'] in countries and message['recipient'] in countries:
+                clean_message = message['message'].replace("\n", " ")
+                dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
+
+        dialogue_unit += f"Countries' Center in This Phase: \n"
+        dialogue_unit += str(phase['state']['centers']) + "\n"
+        dialogue_unit += f"Countries' Units in This Phase: \n"
+        dialogue_unit += str(phase['state']['units']) + "\n"
+        dialogue_unit += f"Countires' Order in This Phase: \n"
+        dialogue_unit += str(phase['orders'])
+
+    return dialogue_unit
+            

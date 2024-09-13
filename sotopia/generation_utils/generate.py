@@ -359,13 +359,24 @@ def obtain_chain(
         chain = LLMChain(llm=chat_openai, prompt=chat_prompt_template)
         return chain
     elif "llama" in model_name:
-        chat = ChatVLLMOpenAI(
-            openai_api_key = "EMPTY",
-            openai_api_base = "http://127.0.0.1:3636/v1",
-            model_name = "/data/user_data/wenkail/.cache/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/e1945c40cd546c78e41f1151f4db032b271faeaa",
-            temperature=temperature,
-            max_retries=max_retries,
-        )
+
+        if model_name == "llama3_8b":
+            chat = ChatVLLMOpenAI(
+                openai_api_key = "EMPTY",
+                openai_api_base = "http://127.0.0.1:3639/v1",
+                model_name = "/data/user_data/wenkail/.cache/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/e1945c40cd546c78e41f1151f4db032b271faeaa",
+                temperature=temperature,
+                max_retries=max_retries,
+            )
+        elif model_name == "llama3_70b":
+            chat = ChatVLLMOpenAI(
+                openai_api_key = "EMPTY",
+                openai_api_base = "http://127.0.0.1:9570/v1",
+                model_name = "/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/",
+                # model_name = "/compute/babel-9-3/wenkail/.cache/models--meta-llama--Meta-Llama-3-70B-Instruct/snapshots/7129260dd854a80eb10ace5f61c20324b472b31c",
+                temperature=temperature,
+                max_retries=max_retries,
+            )
         
         human_message_prompt = HumanMessagePromptTemplate(
             prompt=PromptTemplate(template=template, input_variables=input_variables)

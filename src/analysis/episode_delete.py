@@ -7,6 +7,7 @@ from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
 import argparse
 
 def delete_episode(tag):
+    num = 0
     all_pks = list(EpisodeLog.all_pks())
     pks = []
     for pk in all_pks:
@@ -16,9 +17,10 @@ def delete_episode(tag):
     episode_index = ":sotopia.database.logs.EpisodeLog:"
     with r.pipeline() as pipe:
         for key in pks:
+            num += 1
             pipe.delete(episode_index + key)
         pipe.execute()
-
+    print(f"Delete Episode Num: {num}")
 
 def main():
     parser = argparse.ArgumentParser()

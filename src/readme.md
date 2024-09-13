@@ -35,7 +35,26 @@ python intent_value_evaluate.py \
 
 <!-- Store EnvironmentProfile Tags -->
 1. random_sample_100_games: This is the stored environment profile for 100 randomly picked samples, with cleaning the whole global message and only contains 1903-1906 phases without non Movement phases.
+2. ntaske
+3. taskeval_n
 
 <!-- Store EpisodeLog Tags -->
 1. random_sample_100_games: Generate 775 episodes from the 'random_sample_100_games' environment profiles.
 (On going: Finished 0-400 (Llama-3-70B), rest of them are 400 - 775)
+2. ntaske
+3. taskeval_n
+
+
+
+
+Message num correlation with phases
+{2: 3350,
+ 3: 2506,
+ 4: 1826,
+ 5: 1361,
+ 6: 1011,
+ 7: 749,
+ 8: 551,
+ 9: 425,
+ 10: 334,
+ 11: 260}

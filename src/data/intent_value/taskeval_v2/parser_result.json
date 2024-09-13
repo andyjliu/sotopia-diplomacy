@@ -1,0 +1,1384 @@
+[
+    {
+        "game_id": "42968",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT5Y584SX2ZS0BM9N88J1",
+        "Russia_original_predict": "",
+        "France_original_predict": "",
+        "Russia_parse_predict": [
+            "F NWY - SWE",
+            "A GAL - VIE",
+            "F BLA - CON"
+        ],
+        "Russia_actual_movement": [
+            "A WAR S A SIL",
+            "A GAL - VIE",
+            "F BLA - CON",
+            "A MOS S A WAR",
+            "A SWE - DEN",
+            "F RUM S F GRE - BUL",
+            "F NWG - EDI",
+            "F NWY - SWE",
+            "A BUD S A TRI - VIE"
+        ],
+        "France_parse_predict": [
+            "F ENG - LON"
+        ],
+        "France_actual_movement": [
+            "F IRI - NAO",
+            "A BEL - HOL",
+            "F MAO S F IRI - NAO",
+            "A BRE - PIC",
+            "F ENG - LON",
+            "A LVP S F NWG - EDI"
+        ]
+    },
+    {
+        "game_id": "6685",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT50KYZAHGN06N712JMWE",
+        "Germany_original_predict": "",
+        "England_original_predict": "F ENG MAO; F NTH DEN",
+        "Germany_parse_predict": [
+            "A BER - KIE"
+        ],
+        "Germany_actual_movement": [
+            "A BER - KIE",
+            "A RUH - BUR",
+            "A MUN S A RUH - BUR",
+            "F DEN H",
+            "A BEL S A RUH - BUR"
+        ],
+        "England_parse_predict": [
+            "F NTH - DEN",
+            "F ENG - MAO"
+        ],
+        "England_actual_movement": [
+            "F BAR - NWG",
+            "A SWE - FIN",
+            "F LON - ENG",
+            "F STP/NC - BAR",
+            "F NTH S F LON - ENG",
+            "A EDI H"
+        ]
+    },
+    {
+        "game_id": "50922",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT3TWRCV0VY8847Z80FKV",
+        "Italy_original_predict": "A ROM VEN; F NAP ION",
+        "Germany_original_predict": "A BUR MAR; F HOL H",
+        "Italy_parse_predict": [
+            "A VEN - TYR"
+        ],
+        "Italy_actual_movement": [
+            "A VIE S A VEN - TYR",
+            "A VEN - TYR",
+            "F ION - EAS",
+            "F APU - ADR",
+            "A ROM - VEN"
+        ],
+        "Germany_parse_predict": [],
+        "Germany_actual_movement": [
+            "F NTH C A DEN - YOR",
+            "A DEN - YOR VIA",
+            "A BEL H",
+            "A TYR - MUN",
+            "A RUH S A TYR - MUN",
+            "F KIE - DEN"
+        ]
+    },
+    {
+        "game_id": "7785",
+        "phase_name": "F1906M",
+        "env_uuid": "01J60BT65JDCC8SYRBDXWPX47Q",
+        "France_original_predict": "A PAR PIC; F BRE ENG",
+        "Germany_original_predict": "A HOL S A BEL; A KIE DEN",
+        "France_parse_predict": [
+            "F ENG - MAO",
+            "F BEL - ENG",
+            "A PIC - BEL",
+            "A BUR - MAR",
+            "A PAR - PIC",
+            "F SPA/SC S F ENG - MAO"
+        ],
+        "France_actual_movement": [
+            "F BEL - ENG",
+            "A BUR - MAR",
+            "A PIC - BEL",
+            "F SPA/SC S F ENG - MAO",
+            "F ENG - MAO",
+            "A PAR - GAS"
+        ],
+        "Germany_parse_predict": [
+            "F NWG S A NWY",
+            "A DEN - SWE",
+            "A NWY S A DEN - SWE",
+            "F BAL S A DEN - SWE",
+            "A KIE - DEN",
+            "A MUN - RUH"
+        ],
+        "Germany_actual_movement": [
+            "F NWG S A NWY",
+            "A KIE - HOL",
+            "A DEN - SWE",
+            "A NWY S A DEN - SWE",
+            "A MUN - RUH",
+            "F BAL S A DEN - SWE"
+        ]
+    },
+    {
+        "game_id": "38101",
+        "phase_name": "S1905M",
+        "env_uuid": "01J60BT3S9SKQKKDJY7KZVY22P",
+        "France_original_predict": "A BEL H; A MAR PIE; F ENG NTH",
+        "Turkey_original_predict": "",
+        "France_parse_predict": [
+            "F ENG - NTH",
+            "A BEL H",
+            "A BUR S A PIC"
+        ],
+        "France_actual_movement": [
+            "F BRE - ENG",
+            "A PIC S A BUR",
+            "A TYR S A VEN - TRI",
+            "F SPA/SC - MAO",
+            "A BUR S A PIC"
+        ],
+        "Turkey_parse_predict": [
+            "A SEV - MOS",
+            "A SMY - ARM"
+        ],
+        "Turkey_actual_movement": [
+            "A SMY - ARM",
+            "F CON - SMY",
+            "A SEV - MOS",
+            "F GRE - ION",
+            "A ANK S F CON - SMY"
+        ]
+    },
+    {
+        "game_id": "637",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT6QF4G38SCGXSBCV18TF",
+        "France_original_predict": "A BEL H; A MAR SPA; F NWY H",
+        "Austria_original_predict": "",
+        "France_parse_predict": [
+            "F ENG - BEL",
+            "A BEL H",
+            "A BUR - RUH"
+        ],
+        "France_actual_movement": [
+            "F LYO - WES",
+            "A PIC S F ENG - BEL",
+            "A BUR - RUH",
+            "F WAL - ENG",
+            "A SPA - MAR",
+            "A LVP S F YOR - EDI",
+            "F ENG - BEL"
+        ],
+        "Austria_parse_predict": [
+            "F NAP H",
+            "A ROM S F NAP",
+            "A TRI - BUD"
+        ],
+        "Austria_actual_movement": [
+            "A TRI - BUD",
+            "A VIE - GAL",
+            "A ROM S F NAP",
+            "F NAP H",
+            "A VEN H"
+        ]
+    },
+    {
+        "game_id": "43830",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT56MT3VP2NS4V8P8JNG2",
+        "Russia_original_predict": "A SEV RUM; F SEV RUM",
+        "Austria_original_predict": "A BUD SER; A SER BUL",
+        "Russia_parse_predict": [
+            "F NWY S F SKA - NTH",
+            "A SWE H",
+            "F ANK S A BUL - CON"
+        ],
+        "Russia_actual_movement": [
+            "A SWE H",
+            "F SKA - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK S A BUL - CON",
+            "F NWY S F SKA - NTH",
+            "A PRU - WAR"
+        ],
+        "Austria_parse_predict": [
+            "A GAL - BOH",
+            "A VIE - TYR",
+            "A BUD - SER",
+            "A BUL H"
+        ],
+        "Austria_actual_movement": [
+            "A VIE - TYR",
+            "A BUD - VIE",
+            "F TRI S A TYR - VEN",
+            "A GAL - BOH",
+            "A RUM - BUD",
+            "F GRE - AEG",
+            "A BUL H"
+        ]
+    },
+    {
+        "game_id": "109742",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT381DW64XPKGB8X6J980",
+        "Turkey_original_predict": "A ANK CON; F CON AEG",
+        "Germany_original_predict": "A SIL WAR; F BAL SWE",
+        "Turkey_parse_predict": [
+            "A SEV - MOS",
+            "A RUM S A BUD",
+            "F EAS - ION"
+        ],
+        "Turkey_actual_movement": [
+            "A SEV - MOS",
+            "A CON - SEV VIA",
+            "F SMY - AEG",
+            "F EAS - ION",
+            "A RUM S A BUD",
+            "F BLA C A CON - SEV"
+        ],
+        "Germany_parse_predict": [
+            "A RUH - HOL",
+            "A MUN S A TYR",
+            "A PRU - LVN",
+            "A SIL - WAR",
+            "A WAR S A GAL"
+        ],
+        "Germany_actual_movement": [
+            "A WAR S A GAL",
+            "A PRU - LVN",
+            "F SWE S F DEN - SKA",
+            "A BEL S A PIC",
+            "A RUH - HOL",
+            "F DEN - SKA",
+            "A MUN S A TYR",
+            "F KIE - DEN"
+        ]
+    },
+    {
+        "game_id": "114931",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT5KDHV7W6X36VZCP2RXP",
+        "Italy_original_predict": "",
+        "Russia_original_predict": "",
+        "Italy_parse_predict": [
+            "F ION - GRE",
+            "F AEG - CON"
+        ],
+        "Italy_actual_movement": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F AEG - CON"
+        ],
+        "Russia_parse_predict": [
+            "A MOS S A UKR - WAR"
+        ],
+        "Russia_actual_movement": [
+            "A BUD S A TRI",
+            "A UKR - WAR",
+            "F RUM - SEV",
+            "A MOS S A UKR - WAR",
+            "A TRI S A ALB - SER"
+        ]
+    },
+    {
+        "game_id": "61001",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT52N3Q0DK5C6K2Q8S41G",
+        "Russia_original_predict": "",
+        "Turkey_original_predict": "A CON BUL; F AEG GRE",
+        "Russia_parse_predict": [
+            "F NTH - EDI",
+            "A PRU - SIL",
+            "A BUD S A SER - TRI"
+        ],
+        "Russia_actual_movement": [
+            "F SEV H",
+            "A BUD S A SER - TRI",
+            "F NTH - EDI",
+            "A RUM - GAL",
+            "A PRU - SIL",
+            "F NWG S F NTH - EDI",
+            "A SWE H",
+            "A GAL - BOH"
+        ],
+        "Turkey_parse_predict": [
+            "A SER - TRI",
+            "A BUL - SER"
+        ],
+        "Turkey_actual_movement": [
+            "F EAS - ION",
+            "A BUL - SER",
+            "A GRE S A BUL - SER",
+            "F AEG S F EAS - ION",
+            "A SER - TRI",
+            "F ANK H"
+        ]
+    },
+    {
+        "game_id": "1119",
+        "phase_name": "F1905M",
+        "env_uuid": "01J60BT6WX0FYR2QNMABEDRD6M",
+        "Italy_original_predict": "",
+        "France_original_predict": "",
+        "Italy_parse_predict": [
+            "A TYR - VIE",
+            "A VEN - TRI",
+            "F GRE - BUL/SC",
+            "F SMY H"
+        ],
+        "Italy_actual_movement": [
+            "A TYR - VIE",
+            "A BUL - SER",
+            "F GRE - BUL/SC",
+            "F SMY H",
+            "F ALB S A VEN - TRI",
+            "A VEN - TRI",
+            "A ROM - VEN"
+        ],
+        "France_parse_predict": [
+            "F BRE - MAO",
+            "A PIC S A BUR",
+            "A BUR S A MUN"
+        ],
+        "France_actual_movement": [
+            "F BRE - MAO",
+            "A PIC S A BUR",
+            "A BUR S A MUN",
+            "A GAS - SPA",
+            "F NAO - MAO"
+        ]
+    },
+    {
+        "game_id": "5604",
+        "phase_name": "F1906M",
+        "env_uuid": "01J60BT3Q1P8R3CC1ZA16AHEF4",
+        "Turkey_original_predict": "",
+        "Germany_original_predict": "A BER SIL; A TYR VIE; F DEN H",
+        "Turkey_parse_predict": [
+            "A MOS S A GAL - WAR",
+            "A BOH - VIE",
+            "A SEV S A MOS",
+            "F ION - NAP",
+            "A GAL - WAR",
+            "F BLA H",
+            "A RUM - SER",
+            "F AEG - ION",
+            "A BUD S A BOH - VIE"
+        ],
+        "Turkey_actual_movement": [
+            "F ION - NAP",
+            "A GAL - WAR",
+            "F BLA H",
+            "A BOH - VIE",
+            "A SEV S A MOS",
+            "F AEG - ION",
+            "A RUM - SER",
+            "A MOS S A GAL - WAR",
+            "A BUD S A BOH - VIE"
+        ],
+        "Germany_parse_predict": [
+            "A BER - SIL"
+        ],
+        "Germany_actual_movement": [
+            "A BER - PRU"
+        ]
+    },
+    {
+        "game_id": "9963",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT4W2ZX80FV6ZGRC0A1A0",
+        "France_original_predict": "A PAR BUR; F BRE PIC",
+        "England_original_predict": "A LON HOL VIA; F NTH C A LON HOL",
+        "France_parse_predict": [
+            "F SPA/SC - POR"
+        ],
+        "France_actual_movement": [
+            "F SPA/SC - POR",
+            "A MAR H",
+            "A PAR H",
+            "F BRE - ENG"
+        ],
+        "England_parse_predict": [
+            "F NTH C A LON - HOL",
+            "F ENG - BRE"
+        ],
+        "England_actual_movement": [
+            "F NTH S F SKA - DEN",
+            "F ENG - BRE",
+            "A SWE S F SKA - DEN",
+            "F SKA - DEN",
+            "F NWG - NWY"
+        ]
+    },
+    {
+        "game_id": "7785",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT645J4RS90CD9E79NMDZ",
+        "France_original_predict": "A MUN H; F BRE MAO",
+        "England_original_predict": "A EDI H; A HOL KIE; F LON NTH; F STP/SC BOT",
+        "France_parse_predict": [
+            "F ENG - PIC",
+            "A PAR S A GAS - BUR"
+        ],
+        "France_actual_movement": [
+            "A GAS - BUR",
+            "F MAO - ENG",
+            "F ENG - PIC",
+            "F MAR H",
+            "A PAR S A GAS - BUR"
+        ],
+        "England_parse_predict": [
+            "A EDI H",
+            "F LON - NTH",
+            "F NTH - NWY"
+        ],
+        "England_actual_movement": [
+            "F NTH - NWY",
+            "F YOR - NTH",
+            "F LON S F YOR - NTH"
+        ]
+    },
+    {
+        "game_id": "132667",
+        "phase_name": "S1905M",
+        "env_uuid": "01J60BT5S88WJ4T576543XKZ5P",
+        "Italy_original_predict": "",
+        "Germany_original_predict": "A KIE HOL; F BER KIE",
+        "Italy_parse_predict": [
+            "F ION - GRE",
+            "F NAP - ION",
+            "F APU S F NAP - ION"
+        ],
+        "Italy_actual_movement": [
+            "F ION - GRE",
+            "A MAR - GAS",
+            "A ALB S F ION - GRE",
+            "F SPA/SC - MAO",
+            "F NAP - ION",
+            "F APU S F NAP - ION"
+        ],
+        "Germany_parse_predict": [
+            "A HOL - BEL",
+            "A MUN - BER",
+            "A BER S A MUN"
+        ],
+        "Germany_actual_movement": [
+            "A HOL - BEL",
+            "A KIE S A BER",
+            "F HEL - DEN",
+            "A MUN - BER",
+            "A BER S A MUN",
+            "A BUR - PAR"
+        ]
+    },
+    {
+        "game_id": "15072",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT372TYC7SJE8N0DZ0V5T",
+        "Russia_original_predict": "A SEV ARM; F SEV BLA",
+        "Austria_original_predict": "A SER BUL; F ALB GRE",
+        "Russia_parse_predict": [
+            "F SEV - BLA",
+            "A GAL - BUD",
+            "A RUM S A GRE - SER"
+        ],
+        "Russia_actual_movement": [
+            "F SEV S A RUM",
+            "A RUM S A GRE - SER",
+            "F SWE - BAL",
+            "A CLY - LVP",
+            "A BER S A MUN - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG S F STP/NC - NWY"
+        ],
+        "Austria_parse_predict": [],
+        "Austria_actual_movement": [
+            "A SER S A BUD"
+        ]
+    },
+    {
+        "game_id": "12271",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT3G760F6DCYJM9KNVNDJ",
+        "Austria_original_predict": "A BUL SER; F GRE BUL/SC",
+        "Germany_original_predict": "A TYR S A BUD TRI; F DEN SWE",
+        "Austria_parse_predict": [],
+        "Austria_actual_movement": [
+            "A TRI S A TYR - VEN",
+            "A TYR - VEN",
+            "A BUD S A GAL - RUM"
+        ],
+        "Germany_parse_predict": [],
+        "Germany_actual_movement": [
+            "F BER - BAL",
+            "A KIE S F DEN",
+            "F HEL - NTH",
+            "A HOL S A BEL",
+            "F DEN H"
+        ]
+    },
+    {
+        "game_id": "83979",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT4HY0NKYVSQ6Q1MVR39C",
+        "Italy_original_predict": "A NAP APU; F NAP ION",
+        "France_original_predict": "A MAR SPA; F AEG S F ION GRE",
+        "Italy_parse_predict": [
+            "F AEG S F EAS - SMY"
+        ],
+        "Italy_actual_movement": [
+            "F NAP - TYS",
+            "A PIE - MAR",
+            "A GRE S A SER - BUL",
+            "F EAS - SMY",
+            "F AEG S F EAS - SMY"
+        ],
+        "France_parse_predict": [
+            "F MAO - SPA/SC"
+        ],
+        "France_actual_movement": [
+            "F MAO - SPA/SC",
+            "A PAR S F BRE",
+            "A GAS S A PIE - MAR",
+            "F BRE S F ENG"
+        ]
+    },
+    {
+        "game_id": "76146",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT4PPRTWJ277Q8E9X3HJW",
+        "France_original_predict": "A MAR SPA; F AEG BUL/SC",
+        "England_original_predict": "",
+        "France_parse_predict": [
+            "A BEL S F HEL - HOL"
+        ],
+        "France_actual_movement": [
+            "A BEL S F HEL - HOL",
+            "A BUR - MAR",
+            "A POR - SPA",
+            "A PAR - GAS"
+        ],
+        "England_parse_predict": [
+            "F NTH S F HEL - HOL",
+            "F ENG S F MAO",
+            "F HEL - HOL",
+            "F MAO S A POR - SPA"
+        ],
+        "England_actual_movement": [
+            "F ENG S F MAO",
+            "F HEL - HOL",
+            "F MAO S A POR - SPA",
+            "A PIC - BRE",
+            "F NTH S F HEL - HOL"
+        ]
+    },
+    {
+        "game_id": "50922",
+        "phase_name": "S1905M",
+        "env_uuid": "01J60BT3W4A7BVJ9ZCE2EN93B9",
+        "Italy_original_predict": "",
+        "France_original_predict": "A MAR SPA; A POR H; F BUL/SC H",
+        "Italy_parse_predict": [
+            "F AEG - BUL/SC"
+        ],
+        "Italy_actual_movement": [
+            "F AEG - BUL/SC",
+            "A TRI - SER",
+            "A VIE - TRI",
+            "F TUN - TYS",
+            "F NAP - TYS",
+            "A ALB S A TRI - SER"
+        ],
+        "France_parse_predict": [
+            "A PIC S A BUR - BEL",
+            "A BUR - BEL"
+        ],
+        "France_actual_movement": [
+            "A PAR S A MAR - BUR",
+            "F BEL - NTH",
+            "F BRE - ENG",
+            "A MAR - BUR",
+            "F LVP H",
+            "A PIC S A BUR - BEL",
+            "A BUR - BEL"
+        ]
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "F1905M",
+        "env_uuid": "01J60BT6FXVSGMZW1AV4V65H5K",
+        "Italy_original_predict": "A VEN TRI; F BUL/SC GRE",
+        "France_original_predict": "A MAR SPA; A POR H; F GRE AEG",
+        "Italy_parse_predict": [
+            "A VEN - TRI"
+        ],
+        "Italy_actual_movement": [
+            "A ALB - TRI",
+            "A GRE S A BUL",
+            "A VEN S A ALB - TRI",
+            "F ION - NAP",
+            "F ADR S A ALB - TRI"
+        ],
+        "France_parse_predict": [
+            "F MAO - IRI",
+            "A KIE - BER",
+            "A MUN S A KIE - BER",
+            "F TUN S F LYO - TYS",
+            "F LYO - TYS",
+            "F ROM S F TYS - NAP"
+        ],
+        "France_actual_movement": [
+            "F TYS - NAP",
+            "A KIE - BER",
+            "A TYR - VIE",
+            "A RUH - KIE",
+            "F MAO - IRI",
+            "A MUN S A KIE - BER",
+            "F ROM S F TYS - NAP",
+            "F TUN S F LYO - TYS",
+            "F LYO - TYS"
+        ]
+    },
+    {
+        "game_id": "49729",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT341G0MDH8BW7BTKX51S",
+        "France_original_predict": "A MAR BUR; A POR SPA; F AEG GRE",
+        "England_original_predict": "",
+        "France_parse_predict": [
+            "A BEL S A BUR - RUH",
+            "A BUR - RUH"
+        ],
+        "France_actual_movement": [
+            "F LYO H",
+            "A BEL S A BUR - RUH",
+            "F BRE - MAO",
+            "A MAR - BUR",
+            "F WES - TUN",
+            "A BUR - RUH"
+        ],
+        "England_parse_predict": [
+            "F NTH C A LON - DEN"
+        ],
+        "England_actual_movement": [
+            "F NWY H",
+            "A HOL - KIE",
+            "F HEL S A LON - DEN",
+            "F NTH C A LON - DEN",
+            "A LON - DEN VIA"
+        ]
+    },
+    {
+        "game_id": "3516",
+        "phase_name": "F1903M",
+        "env_uuid": "01J60BT6MFH941Z28FB20FR620",
+        "Russia_original_predict": "",
+        "Austria_original_predict": "A BOH MUN",
+        "Russia_parse_predict": [
+            "A WAR - UKR",
+            "F SEV H"
+        ],
+        "Russia_actual_movement": [
+            "A WAR - UKR",
+            "F BOT - SWE",
+            "F SEV H",
+            "A MOS - STP"
+        ],
+        "Austria_parse_predict": [
+            "A BUD S A RUM",
+            "A SER S A RUM"
+        ],
+        "Austria_actual_movement": [
+            "A RUM S A BUL",
+            "F GRE S A BUL",
+            "A SER S A RUM",
+            "A BUL S A RUM",
+            "A TRI - VEN",
+            "A BUD S A RUM"
+        ]
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "S1905M",
+        "env_uuid": "01J60BT6FJQQ9Q3QSVE400MZSN",
+        "Russia_original_predict": "A RUM S A SEV; A SEV S A RUM; A WAR PRU",
+        "Austria_original_predict": "A TRI VEN; F BLA RUM",
+        "Russia_parse_predict": [
+            "A WAR - PRU",
+            "A UKR - GAL",
+            "A RUM S A SEV"
+        ],
+        "Russia_actual_movement": [
+            "A RUM - BUL",
+            "A BER S A DEN - KIE",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Austria_parse_predict": [
+            "A BUD - RUM",
+            "A SER S A RUM - BUL"
+        ],
+        "Austria_actual_movement": [
+            "A SER S A RUM - BUL",
+            "A BUD - RUM",
+            "F TRI - ALB",
+            "A BOH - TYR"
+        ]
+    },
+    {
+        "game_id": "106342",
+        "phase_name": "F1905M",
+        "env_uuid": "01J60BT72D755K8K84A3KFW3ZZ",
+        "France_original_predict": "A PAR BUR",
+        "Germany_original_predict": "A HOL S A BUR BEL; A MUN RUH; F KIE DEN",
+        "France_parse_predict": [
+            "A YOR H",
+            "F NTH S F NWG - NWY",
+            "F NWG - NWY",
+            "A BUR S A MUN",
+            "F TYS S F WES - TUN"
+        ],
+        "France_actual_movement": [
+            "A YOR H",
+            "F NWG - NWY",
+            "A MAR - PIE",
+            "A BUR S A MUN",
+            "F SPA/SC - WES",
+            "F TYS S F WES - TUN",
+            "F ENG S F NTH",
+            "F NTH S F NWG - NWY"
+        ],
+        "Germany_parse_predict": [
+            "A RUH S A MUN",
+            "A MUN - RUH"
+        ],
+        "Germany_actual_movement": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ]
+    },
+    {
+        "game_id": "78680",
+        "phase_name": "S1905M",
+        "env_uuid": "01J60BT66P9M63ER4ERER85X8S",
+        "Russia_original_predict": "",
+        "Turkey_original_predict": "A GRE SER; F SMY AEG",
+        "Russia_parse_predict": [
+            "A WAR H",
+            "A VIE H",
+            "F RUM S A BUL"
+        ],
+        "Russia_actual_movement": [
+            "A LVN S F STP/NC",
+            "A WAR H",
+            "F STP/NC H",
+            "F BLA H",
+            "F RUM S A BUL",
+            "A VIE H",
+            "A MOS - UKR"
+        ],
+        "Turkey_parse_predict": [
+            "F ION - TUN",
+            "F AEG - ION",
+            "F EAS S F AEG - ION",
+            "A GRE - SER"
+        ],
+        "Turkey_actual_movement": [
+            "F EAS S F AEG - ION",
+            "F ION - TUN",
+            "F GRE S F AEG - ION",
+            "F AEG - ION",
+            "A BUL - SER"
+        ]
+    },
+    {
+        "game_id": "83979",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT4HVMWQ4PSEA9S6PSB2T",
+        "Italy_original_predict": "A NAP GRE VIA; F GRE BUL/SC",
+        "Austria_original_predict": "A BUD SER; F GRE BUL/SC",
+        "Italy_parse_predict": [
+            "F AEG S F EAS - SMY"
+        ],
+        "Italy_actual_movement": [
+            "F NAP - TYS",
+            "A PIE - MAR",
+            "A GRE S A SER - BUL",
+            "F EAS - SMY",
+            "F AEG S F EAS - SMY"
+        ],
+        "Austria_parse_predict": [
+            "A VIE - GAL",
+            "A RUM S F BLA - SEV",
+            "A SER - BUL"
+        ],
+        "Austria_actual_movement": [
+            "A UKR - WAR",
+            "F BUL/SC - CON",
+            "A RUM S F BLA - SEV",
+            "A BUD S A RUM",
+            "A SER - BUL",
+            "A VIE - GAL"
+        ]
+    },
+    {
+        "game_id": "637",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT6QJPD0A63X50N30ZBS9",
+        "France_original_predict": "F SMY AEG",
+        "Turkey_original_predict": "A CON BUL; F SMY AEG",
+        "France_parse_predict": [
+            "F ENG - BEL",
+            "A BUR - RUH"
+        ],
+        "France_actual_movement": [
+            "F LYO - WES",
+            "A PIC S F ENG - BEL",
+            "A BUR - RUH",
+            "F WAL - ENG",
+            "A SPA - MAR",
+            "A LVP S F YOR - EDI",
+            "F ENG - BEL"
+        ],
+        "Turkey_parse_predict": [
+            "F BLA S A ARM - SEV",
+            "F AEG - GRE"
+        ],
+        "Turkey_actual_movement": [
+            "A ARM - SEV",
+            "F AEG - GRE",
+            "A SER - RUM",
+            "F BLA S A ARM - SEV",
+            "A BUL S A SER - RUM"
+        ]
+    },
+    {
+        "game_id": "5604",
+        "phase_name": "F1906M",
+        "env_uuid": "01J60BT3PZRGKC19VKNJ7533P0",
+        "Turkey_original_predict": "A BUL RUM; A CON BUL; F AEG GRE; F SMY AEG",
+        "Austria_original_predict": "",
+        "Turkey_parse_predict": [
+            "A MOS S A GAL - WAR",
+            "A BOH - VIE",
+            "A SEV S A MOS",
+            "F ION - NAP",
+            "A GAL - WAR",
+            "F BLA H",
+            "A RUM - SER",
+            "F AEG - GRE",
+            "A BUD S A BOH - VIE"
+        ],
+        "Turkey_actual_movement": [
+            "F ION - NAP",
+            "A GAL - WAR",
+            "F BLA H",
+            "A BOH - VIE",
+            "A SEV S A MOS",
+            "F AEG - ION",
+            "A RUM - SER",
+            "A MOS S A GAL - WAR",
+            "A BUD S A BOH - VIE"
+        ],
+        "Austria_parse_predict": [
+            "A SIL S A GAL - WAR",
+            "A TYR H"
+        ],
+        "Austria_actual_movement": [
+            "A TYR H",
+            "A SIL S A GAL - WAR"
+        ]
+    },
+    {
+        "game_id": "54464",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT364VMFXRPDJKPB8VPZD",
+        "Turkey_original_predict": "A BUL RUM; A CON BUL; A SER TRI; F AEG ION; F SMY AEG",
+        "Germany_original_predict": "A LVN MOS; F BAL SWE",
+        "Turkey_parse_predict": [
+            "F AEG - ION",
+            "A BUL - RUM"
+        ],
+        "Turkey_actual_movement": [
+            "A SMY - CON",
+            "F BUL/SC - GRE",
+            "A CON - BUL",
+            "F ANK - BLA"
+        ],
+        "Germany_parse_predict": [
+            "A BER - KIE",
+            "A SIL S A BUR - MUN"
+        ],
+        "Germany_actual_movement": [
+            "A RUH S A BUR - MUN",
+            "A SIL S A BUR - MUN",
+            "A BER - KIE",
+            "A BUR - MUN",
+            "F KIE - DEN"
+        ]
+    },
+    {
+        "game_id": "74152",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT5AYD2RK4CS6EEY0GG2V",
+        "Turkey_original_predict": "A SER BUL; F AEG GRE; F GRE ALB",
+        "Germany_original_predict": "",
+        "Turkey_parse_predict": [
+            "A MOS - SEV",
+            "F AEG - GRE",
+            "A SER - BUL"
+        ],
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Germany_parse_predict": [
+            "A SIL - WAR"
+        ],
+        "Germany_actual_movement": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ]
+    },
+    {
+        "game_id": "26100",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT6054JX3VR73X16HVXSQ",
+        "France_original_predict": "",
+        "Germany_original_predict": "",
+        "France_parse_predict": [],
+        "France_actual_movement": [
+            "F PIC - ENG",
+            "A CLY - LVP",
+            "F NAO S A CLY - LVP",
+            "F MAO - SPA/SC",
+            "F ENG - IRI"
+        ],
+        "Germany_parse_predict": [
+            "F HOL - NTH",
+            "A SIL - BOH"
+        ],
+        "Germany_actual_movement": [
+            "F SWE - NWY",
+            "F HOL - NTH",
+            "A BER - SIL",
+            "F DEN S F HOL - NTH",
+            "A SIL - BOH",
+            "A BEL H",
+            "A MUN - TYR"
+        ]
+    },
+    {
+        "game_id": "3846",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT41ASQ0C16FTQ5VVMD0N",
+        "Germany_original_predict": "A KIE RUH; F BER BAL",
+        "England_original_predict": "A LON YOR; F EDI NTH",
+        "Germany_parse_predict": [],
+        "Germany_actual_movement": [
+            "A PRU S A BER - SIL",
+            "F SWE H",
+            "A BER - SIL",
+            "A RUH - MUN",
+            "A HOL H",
+            "F DEN S F SWE"
+        ],
+        "England_parse_predict": [
+            "F NTH S F LON - ENG"
+        ],
+        "England_actual_movement": [
+            "F NTH S F LON - ENG",
+            "F BAR - NWY",
+            "A STP H",
+            "F WAL S F LON - ENG",
+            "F LON - ENG"
+        ]
+    },
+    {
+        "game_id": "76146",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT4MGQT9BZST65FCFTJXG",
+        "Russia_original_predict": "",
+        "France_original_predict": "",
+        "Russia_parse_predict": [
+            "A UKR - RUM"
+        ],
+        "Russia_actual_movement": [
+            "A UKR - RUM",
+            "F SWE S F NWY - SKA",
+            "A WAR - GAL",
+            "F SEV S A UKR - RUM",
+            "A STP - MOS"
+        ],
+        "France_parse_predict": [
+            "A GAS S A SPA",
+            "A SPA S A GAS"
+        ],
+        "France_actual_movement": [
+            "A GAS S A SPA",
+            "A SPA S A GAS",
+            "A BUR S A PIC - BEL"
+        ]
+    },
+    {
+        "game_id": "82362",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT38N2W7ZJ5FKWYJ0D7V1",
+        "Italy_original_predict": "A VEN TRI; F NAP ION",
+        "Austria_original_predict": "A BUD RUM; F AEG BUL/SC",
+        "Italy_parse_predict": [
+            "A TYR - TRI",
+            "A VIE S A TRI - BUD",
+            "A TRI - BUD"
+        ],
+        "Italy_actual_movement": [
+            "A TRI - BUD",
+            "F ADR C A VEN - ALB",
+            "F ION S A VEN - ALB",
+            "A VEN - ALB VIA",
+            "A VIE S A TRI - BUD",
+            "A TYR - TRI"
+        ],
+        "Austria_parse_predict": [],
+        "Austria_actual_movement": [
+            "A SER H"
+        ]
+    },
+    {
+        "game_id": "114931",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT5KBTQS3Z1RKTKK6A4KW",
+        "Italy_original_predict": "A SER S F BUL; F EAS SMY",
+        "Austria_original_predict": "A BUD RUM; F BUL/SC H",
+        "Italy_parse_predict": [
+            "F ION - GRE",
+            "F AEG - CON",
+            "A SER S F BUL"
+        ],
+        "Italy_actual_movement": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F AEG - CON"
+        ],
+        "Austria_parse_predict": [
+            "A VIE S A GAL - BUD"
+        ],
+        "Austria_actual_movement": [
+            "A VIE S A GAL - BUD",
+            "A GAL - BUD",
+            "A SER S A GAL - BUD",
+            "F GRE H"
+        ]
+    },
+    {
+        "game_id": "103509",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT76HQ9QJ40FBTG6QR8ZS",
+        "France_original_predict": "",
+        "Germany_original_predict": "A SIL BER; F SKA SWE",
+        "France_parse_predict": [
+            "A GAS - MAR"
+        ],
+        "France_actual_movement": [
+            "F MAR - SPA/SC",
+            "A GAS - MAR",
+            "A POR S F MAR - SPA",
+            "A PAR S F BRE",
+            "F BRE H"
+        ],
+        "Germany_parse_predict": [
+            "A BEL - PIC",
+            "F SKA - SWE",
+            "A KIE - DEN"
+        ],
+        "Germany_actual_movement": [
+            "A KIE - DEN",
+            "A SWE - DEN",
+            "F FIN S A NWY - STP",
+            "A HOL - BEL",
+            "A BEL - PIC",
+            "A BUR S A BEL - PIC",
+            "A MUN S A BUR"
+        ]
+    },
+    {
+        "game_id": "22828",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT5G4AVRAQ1KYRAD2CPEJ",
+        "Italy_original_predict": "A ROM VEN; F NAP ION",
+        "Turkey_original_predict": "F BLA BUL/EC",
+        "Italy_parse_predict": [
+            "A VEN S A PIE - TYR",
+            "F ADR C A APU - ALB"
+        ],
+        "Italy_actual_movement": [
+            "A APU - ALB VIA",
+            "F ADR C A APU - ALB",
+            "A PIE - TYR",
+            "A VEN S A PIE - TYR"
+        ],
+        "Turkey_parse_predict": [
+            "A SEV S A RUM",
+            "A ARM S A SEV",
+            "F BLA - BUL/EC"
+        ],
+        "Turkey_actual_movement": [
+            "A ARM S A SEV",
+            "F BLA - BUL/EC",
+            "A SEV S A RUM",
+            "F CON S F BLA - BUL"
+        ]
+    },
+    {
+        "game_id": "13353",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT3158E6535Z2Q0AXG2W9",
+        "Russia_original_predict": "",
+        "Turkey_original_predict": "F BUL/EC S A RUM",
+        "Russia_parse_predict": [
+            "A BOH - VIE",
+            "A UKR - MOS",
+            "A GAL S A BOH - VIE"
+        ],
+        "Russia_actual_movement": [
+            "A UKR - MOS",
+            "F SWE - BAL",
+            "A BOH - VIE",
+            "F NWY S F HEL - NTH",
+            "A GAL S A BOH - VIE"
+        ],
+        "Turkey_parse_predict": [
+            "F BLA S A SEV",
+            "A RUM S A BUL"
+        ],
+        "Turkey_actual_movement": [
+            "A CON S A BUL",
+            "F SMY - AEG",
+            "A BUL S A SER - GRE",
+            "A RUM S A BUL",
+            "A SEV S A RUM",
+            "F BLA S A SEV"
+        ]
+    },
+    {
+        "game_id": "52118",
+        "phase_name": "S1904M",
+        "env_uuid": "01J60BT5MFCZN7T748QXZ008SG",
+        "France_original_predict": "F BRE ENG",
+        "England_original_predict": "A YOR LON; F LON ENG",
+        "France_parse_predict": [
+            "F NAO - MAO",
+            "F MAO - SPA/SC",
+            "A RUH - KIE",
+            "A MUN S A RUH - KIE"
+        ],
+        "France_actual_movement": [
+            "F NAO - MAO",
+            "A BEL S A HOL",
+            "A MUN S A RUH - KIE",
+            "F BRE S F NAO - MAO",
+            "A BUR S A BEL",
+            "F MAO - SPA/SC",
+            "A HOL S A RUH - KIE",
+            "A RUH - KIE"
+        ],
+        "England_parse_predict": [
+            "F NTH - DEN",
+            "F ENG - NTH"
+        ],
+        "England_actual_movement": [
+            "F STP/NC H",
+            "A EDI - LVP",
+            "F NTH - DEN",
+            "F ENG - NTH",
+            "F IRI - LVP",
+            "A DEN - PRU VIA",
+            "F BAL C A DEN - PRU"
+        ]
+    },
+    {
+        "game_id": "100238",
+        "phase_name": "S1903M",
+        "env_uuid": "01J60BT6HTRN5V8H2PCTMCRE9X",
+        "Turkey_original_predict": "",
+        "Germany_original_predict": "",
+        "Turkey_parse_predict": [
+            "A RUM - SEV"
+        ],
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "F BLA - CON",
+            "A RUM - SEV",
+            "A SEV - MOS",
+            "F ARM - ANK",
+            "A BUL - RUM"
+        ],
+        "Germany_parse_predict": [
+            "A MUN - TYR",
+            "A SIL - WAR",
+            "A WAR - LVN"
+        ],
+        "Germany_actual_movement": [
+            "A BER - KIE",
+            "A MUN - TYR",
+            "A WAR - LVN",
+            "F DEN - NTH",
+            "A SIL - WAR",
+            "A HOL H",
+            "F SWE H"
+        ]
+    },
+    {
+        "game_id": "132667",
+        "phase_name": "F1905M",
+        "env_uuid": "01J60BT5SNXCN3MABS210PP4JA",
+        "Russia_original_predict": "",
+        "Turkey_original_predict": "",
+        "Russia_parse_predict": [
+            "A GAL - BOH"
+        ],
+        "Russia_actual_movement": [
+            "A LVN - STP",
+            "A UKR - GAL",
+            "A GAL - BOH",
+            "A RUM S A UKR - GAL"
+        ],
+        "Turkey_parse_predict": [
+            "F AEG C A CON - GRE",
+            "F EAS - ION",
+            "A SER S F GRE - ALB",
+            "A BUL S A SER"
+        ],
+        "Turkey_actual_movement": [
+            "F GRE - ALB",
+            "F EAS - ION",
+            "A SER S F GRE - ALB",
+            "F AEG C A CON - GRE",
+            "A BUL S A SER",
+            "A CON - GRE VIA"
+        ]
+    },
+    {
+        "game_id": "97379",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT57YHV5XNBR0X4CVG0PE",
+        "France_original_predict": "",
+        "England_original_predict": "A LON BEL VIA; A YOR LON",
+        "France_parse_predict": [],
+        "France_actual_movement": [
+            "F NTH S F BEL - HOL",
+            "F MAR - LYO",
+            "A BUR - BEL",
+            "F BEL - HOL"
+        ],
+        "England_parse_predict": [],
+        "England_actual_movement": [
+            "F NWY - STP/NC",
+            "A PAR - BRE",
+            "F YOR - NTH",
+            "F DEN - KIE",
+            "F WAL - ENG",
+            "F POR - SPA/SC"
+        ]
+    },
+    {
+        "game_id": "42968",
+        "phase_name": "F1904M",
+        "env_uuid": "01J60BT5Y584SX2ZS0BM9N88J1",
+        "Russia_original_predict": "",
+        "France_original_predict": "",
+        "Russia_parse_predict": [
+            "F NWY - SWE",
+            "A GAL - VIE",
+            "F BLA - CON"
+        ],
+        "Russia_actual_movement": [
+            "A WAR S A SIL",
+            "A GAL - VIE",
+            "F BLA - CON",
+            "A MOS S A WAR",
+            "A SWE - DEN",
+            "F RUM S F GRE - BUL",
+            "F NWG - EDI",
+            "F NWY - SWE",
+            "A BUD S A TRI - VIE"
+        ],
+        "France_parse_predict": [
+            "F ENG - LON"
+        ],
+        "France_actual_movement": [
+            "F IRI - NAO",
+            "A BEL - HOL",
+            "F MAO S F IRI - NAO",
+            "A BRE - PIC",
+            "F ENG - LON",
+            "A LVP S F NWG - EDI"
+        ]
+    },
+    {
+        "game_id": "7785",
+        "phase_name": "F1906M",
+        "env_uuid": "01J60BT6686J0EAJWCV3WCEFRB",
+        "Germany_original_predict": "",
+        "England_original_predict": "A LVP YOR; A YOR LON",
+        "Germany_parse_predict": [
+            "F NWG S A NWY",
+            "A DEN - SWE",
+            "A NWY S A DEN - SWE",
+            "F BAL S A DEN - SWE",
+            "A KIE - HOL",
+            "A MUN - RUH"
+        ],
+        "Germany_actual_movement": [
+            "F NWG S A NWY",
+            "A KIE - HOL",
+            "A DEN - SWE",
+            "A NWY S A DEN - SWE",
+            "A MUN - RUH",
+            "F BAL S A DEN - SWE"
+        ],
+        "England_parse_predict": [
+            "A EDI H",
+            "F LON H",
+            "F NTH H",
+            "F HEL H",
+            "F SKA H"
+        ],
+        "England_actual_movement": [
+            "F NTH H",
+            "F HEL H",
+            "A EDI H",
+            "F SKA H",
+            "F LON H"
+        ]
+    }
+]

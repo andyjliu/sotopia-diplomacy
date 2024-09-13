@@ -1,0 +1,827 @@
+[
+    {
+        "game_id": "38207",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W28QV4CSC67Y5NRBYKQG",
+        "intent_dialogue": "0 FRANCE -> GERMANY: I'm taking London.\nTake Norway and Edi.\n\nUse Prussia to support hold Livornia.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "1119",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01J3X2W2R2SE71ZAF4ZNP623MV",
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: Do you &actually& want my support this turn?\r\n1 AUSTRIA -> RUSSIA: No need, sir.\r\n2 RUSSIA -> AUSTRIA: What's going on? Do you still want Bulgaria?\r\n3 AUSTRIA -> RUSSIA: Well, after your growth, I am beginning to wonder when I will be attacked, as I am quite small. So, I am staying put for the moment.\r\n4 RUSSIA -> AUSTRIA: My growth consists of Northern fleets, not really any threat to you, but alright, feel free to stay at 4 Scs if that's what you want.\r\n5 AUSTRIA -> RUSSIA: Not risking it.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "22659",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W2R0M6M2JZX81AAXXYKZ",
+        "intent_dialogue": "0 ITALY -> TURKEY: And the person who wins\r\n1 TURKEY -> ITALY: You've just lost your hold on the med.\r\n2 ITALY -> TURKEY: Hahaha well now you are just wrong.\r\n3 TURKEY -> ITALY: Slowly but surely, you will. Perhaps you will frustrate me for a couple years, but after that...we'll just have to see now, won't we?\r\n4 ITALY -> TURKEY: Actually I feel pretty secure. But even if you can attack me eventually. Whats the point? Even a mild break through for you doesn't equate massive centre gains. Best case scenairio for you is you play second fiddle to Russia.\r\n5 TURKEY -> ITALY: Yeah. Your French buddie has asked me and Russia for help against Germany. Help which we are willing to give, provided he support us into Venice.\r\n6 ITALY -> TURKEY: First of all, you probably shouldn't have told me that.\n\nSecond, its not in France's interest to take that deal, because Russia is either going to attack you or Germany anyway, so France has nothing to lose by waiting it out.\n\nThird, I don't understand how that makes much of a difference. Don't you see how minor gains in Italy don't stack up to major ones and a massive increase in security to your north. This is all I've ever said.\r\n7 TURKEY -> ITALY: I am out of position to mount a successful attack against Russia even if I wanted to. You should've been more persuasive when I had a fleet in Black Sea. At least you are doing you're best to hold us back a little bit. That's about all you can do right now.\r\n8 ITALY -> TURKEY: Its true that you were better positioned to take him then, but you aren't better positioned to attack me. You should just take Budapest and be on your merry way I think.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "66264",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W257V38DHVP72YCBH4VR",
+        "intent_dialogue": "0 FRANCE -> ITALY: All this shuffling around is fun, wouldn't you agree? Now I keep Rome another turn hehehe.\r\n1 ITALY -> FRANCE: greece\r\n2 ITALY -> FRANCE: lol im kinda laughing at how i cant bottle you up becuase of that fleet lol\r\n3 FRANCE -> ITALY: Haha\r\n4 FRANCE -> ITALY: I'll just keep playing around until Austria and Germany get fed up and stab ya.\r\n5 ITALY -> FRANCE: austria wont stab me lol but youll die soon :P\r\n6 FRANCE -> ITALY: But you may stab Austria ;)\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "637",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2QDS4WNQVM4DFN8DHHY",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: It seems I've got your answer. :)\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "40628",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2NN2J7Y2W17RVX4D4RK",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: okay, i think we should: ~N~ adriatic s serbia - trieste ~N~ rumania - bud to cut support ~N~ bulgaria s black sea - rumania ~N~ ~N~ we're risking serbia, but it is important that trieste gets destroyed. what do you think?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "3516",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2Q5VZ5WH0B7YXAKB2G6",
+        "intent_dialogue": "0 RUSSIA -> ENGLAND: so remind me what happens now.\nnwy s gob-swe and swe-den with nts support?\r\n1 ENGLAND -> RUSSIA: Correct.\r\n2 RUSSIA -> ENGLAND: ok moving to swe\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "149658",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W2P5NNAT5BD3ZG1A5P4F",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: Ill move mainly on France this year, when my armies reach the mainland, Ill help you move on the remains of germany.\r\n1 RUSSIA -> ENGLAND: Thank you so much. We should be able to end this within a few years with a couple more good pushes and we should be good to go :)\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "83979",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W298WV10DS0PK3JMXC2B",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: Well, I'm not so sure about it being your last turn. Italy sure threw a wrench in things, didn't he?\r\n1 RUSSIA -> AUSTRIA: It's hard to tell what is going on in this game. I still expect to be eliminated this turn. I just hope Germany doesn't solo. Good luck!\r\n2 RUSSIA -> AUSTRIA: The more I look at it, the more it doesn't look like a real stab. But who knows?\nThe main player I don't understand is England.\r\n3 RUSSIA -> AUSTRIA: And I expect that this game will probably end in a three way draw. Its been a good learning experience for me at least. I think Italy supported himself to Con only so that you could then get into Ankara faster.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "69529",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2FGYT6NGJ57HH9WXWQX",
+        "intent_dialogue": "0 ITALY -> RUSSIA: except that they are nothing. go for the solo, which would mean stabbing turkey before they got to big\r\n1 RUSSIA -> ITALY: not now dude\r\n2 ITALY -> RUSSIA: oh next week? ok sure\r\n3 RUSSIA -> ITALY: lol\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "37855",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W20XARRJKV0WNC1TN77W",
+        "intent_dialogue": "0 GERMANY -> RUSSIA: I was support holding holland. cant support hold if it has move orders.\r\n1 RUSSIA -> GERMANY: You didn't support hold Holland though, you moved to Ruhr.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "73100",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W26ZP3QAG9FE6XNSE149",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: Ready to talk again? With your build this year, you should have good security against an Austrian stab, if you so stab. As for me, I don't mind stabs as much as I get annoyed by allies that miss key turns. ~N~ ~N~ I still need to see Germany out of this one, and the less help you give him, the better. I understand your concerns with my units in the north. I've been trying to figure out how we can keep ourselves safe without inflating the units. Would the following work: ~N~ ~N~ St. Pete back to Moscow, Finland to St. Pete, Gulf of Bothnia holds. ~N~ ~N~ Sweden holds, Norway holds. Kiel takes Berlin (or perhaps we work it out so you get Berlin), I move the rest of my fleets back. We can then bounce in Finland if we feel the need. ~N~ ~N~ The problem I see is that if you remained allied with Austria, that is a bigger problem for me that my alliance with France is for you. France doesn't really factor in it for you, since you by association have Italy on your side with no southern threat. If you build Warsaw, you can move that back to Moscow easily, or to Purssia, while Austria moves to Boh. It's a tough position for me. ~N~ ~N~ Of course, Austria could still be fake stabbing, like he pretended he would years ago. Who am I to tell? ~N~ ~N~ Thoughts?\r\n1 RUSSIA -> ENGLAND: OK, two things. Firstly, I stand by my need to maintain Germany in Berlin. I don't think you eliminating Germany as a power is as important to you as the opportunity of providing a land outlet to Russia. I am skeptical. ~N~ ~N~ Secondly, I am in favor of demilitarization of Scandinavia; however, not to your prescription, which includes me retreating and you holding. Let's continue talking on that. If we are to demilitarize Scand, those units must go somewhere... ~N~ ~N~ So, here's a thought we might want to begin kicking around... You really want me to stab Austria, eh? Well, I think you should stab France. Would you be interested in a complete double shift? North vs. South? I think we would have an advantage, especially if Italy continues its anti-FRENCH moves.\r\n2 ENGLAND -> RUSSIA: I am interested, but the problem is if you maintain Germany, and Italy is still fighting, France falls quickly while you and Austria potentially gain crucial ground. Ideally we both shift at the same time, but it is very dangerous for me to stab my only ally when you have three. Hence why I need Germany out of this, one way or the other.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "3641",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01J3X2W20F3YBZZYZBA70AYG44",
+        "intent_dialogue": "0 ITALY -> RUSSIA: He's built fleets. That is worrying... Chances are he's going to push me out of the Ionian Sea next season, if he doesn't try for the Black Sea of course. ~N~ ~N~ I'll need to be supported into Serbia before that happens though, which will set me up to take Greece, if I have your support.\r\n1 ITALY -> RUSSIA: Then you hit Bulgaria, we let him send a fleet back into Con to protect it while I take the Aegean and you send your fleet south for an attack on Ankara to prevent him from supporting Con.\r\n2 RUSSIA -> ITALY: What you've said sounds good, good luck, hope it works!\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "65732",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W1ZTQ231K76HNR9FDNAQ",
+        "intent_dialogue": "0 ENGLAND -> ITALY: True, but you know why\r\n1 ITALY -> ENGLAND: I suppose I could get you in on the 2-way draw.\r\n2 ENGLAND -> ITALY: 2-way draw?\r\n3 ITALY -> ENGLAND: Which would make it a 3-way draw. So as long as you don't stop us from moving. Your good.\r\n4 ITALY -> ENGLAND: I screwed up the number. xD 3-way draw. But yes, your good, as long as yo ucan hold off France that is.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "20302",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2FYR1NPYPTCXYN4EV44",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Hey man, how do you want to work the assault on Belgium this turn? ~N~ I think you should take it, I'll probably need to use my fleet to defend the Autumn turn, but if you want to move this season, it should work. ~N~ Just let me know which army you want me to support to Belgium. ~N~\r\n1 ENGLAND -> GERMANY: ps. Man, I hope that Baltic Sea fleet isn't doing what I think it might be.\r\n2 GERMANY -> ENGLAND: :) The baltic sea was some idea for St.p. - but you took it too fast :). Not going to attack you - it's somehow not a very good situation for me - cannot attack anyone. ~N~ Unfortunately, I don't think we can take Belguim :( - FRA has enough armies to protect it - it doesn't matter if you or I attack. ~N~ You have to somehow push FRA out of ENG soon - as he has more fleets coming.\r\n3 ENGLAND -> GERMANY: Yeah, he has enough armies to cover, but I figured that he'd try to move an army to the island in the Spring, in the hopes of being able to re-take Belgium in the fall. It's either that, or stay stalemated indefinitely. ~N~ I should be able to push him off with one more army, which I should get by getting Moscow from Russia (who I guess isn't going to show up). ~N~ ~N~ In any case, I'd still say we should keep the pressure on France in Belgium, so that if he DOES manage to move an army to the island, he pays for it with Belgium.\r\n4 GERMANY -> ENGLAND: Ok, sounds reasonable, what is the plan?\r\n5 ENGLAND -> GERMANY: Just let me know which army to support into Belgium from North Sea!\r\n6 ENGLAND -> GERMANY: I'm trying to guess, I'm hoping that you're sending Ruhr. I think it'd probably be smarter to send Holland, but you probably don't want to leave Holland exposed. ~N~ I hope I'm guessing right!\r\n7 ENGLAND -> GERMANY: Ooof. ~N~ Could have had Belgium!\r\n8 ENGLAND -> GERMANY: It'll be okay, though, I [293724] be able to push him off the island by next year.\r\n9 GERMANY -> ENGLAND: Hi, I wanted to take Warsaw - and moved the other way. Good that you took Moscow - you will need this additional army in Edinburg.\r\n10 ENGLAND -> GERMANY: This is going to be a weird game; everyone is really minding their own busines except for me and France, and Austria and Turkey. ~N~ ~N~ Everyone is so defensive!\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "74560",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01J3X2W2E2G333PEFAZ49F5QXM",
+        "intent_dialogue": "0 RUSSIA -> GERMANY: Take London Edi will be mine\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "22488",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2F9WDP83DFVE8FVDT91",
+        "intent_dialogue": "0 ENGLAND -> ENGLAND: Russia destroyed their unit in Sweden, but I'm going to have to let Germany move in - I need to destroy that army in Yorkshire while I can\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "103509",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2T59KGMQYJE494V870Z",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: Pls move on towards the ION!\nI will support AEG-ION now, and I dont mind if you rearrange so that you have two fleets on ION. It could be beneficial for us if you dislodged me from ION even - then I could choose my retreat to the most benefical spot for us...\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "7785",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2MQSW1D3SB1MMFR7N9T",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: Didn't think so. So what's your next move?\r\n1 ENGLAND -> GERMANY: I didn't think so either.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W2S78SBWTMDP64Q2G2R4",
+        "intent_dialogue": "0 GERMANY -> FRANCE: Thoughts for this next turn?\r\n1 FRANCE -> GERMANY: Yes, I have a big smile on my face this AM and now with the destroyed units from Russia, things look great.\nI think you need to take MUN to SIL and RUHR to MUN and or Berlin to SIL with Kiel to Berlin, DEN to Kiel and HAL to DEN. I will move the Nor to Barents and North Sea to Nor SEA with the EC to the North Sea, only if you support that move to the North Sea. Let me know your thoughts?\r\n2 GERMANY -> FRANCE: OK. I will move Mun - Sil and Ruh - Mun, can you support the Ruh - Mun portion? I can support your move back into Nth in the Fall.\r\n3 FRANCE -> GERMANY: I will support you into MUN from RUHR.\r\n4 FRANCE -> GERMANY: Russia tells me he's falling back, I just laughed at him. Not sure he will screw up 3 turns in a row (last turn, his destroys, and this turn). We need to get your fleets positioned to take out the Baltic Sea. Not sure when, but he will loose at least 1-2 Sc's and hopefully he destroys a fleet up here. At least we can hope he does.\r\n5 GERMANY -> FRANCE: He tells me the same thing, \"folding\" back...like you I have been surprised with his decisions. Agree that I need to get into the Baltic and push through into the center.\r\n6 GERMANY -> FRANCE: Cancel the support into Mun. I am going to try and rotate things a bit more up north, so Berlin will move to Sil.\r\n7 FRANCE -> GERMANY: OK, I will change that to a support MUN instead.\r\n8 GERMANY -> FRANCE: Thanks!\r\n9 FRANCE -> GERMANY: NP, this has been fun thus far.\r\n10 GERMANY -> FRANCE: Absolutely. No Cds to speak of and your negotitations which led to a game altering stab--just what a games supposed to be. OK, Russia's bonehead taking of Ven to stop Turkey cold may have played into it as well, but I have to admit that I sometimes find myself getting lazy about writing the \"bad guys\" once alliances have become so public and obvious. I generally make a commitment to the end and figure the other side will as well. This one just goes to show me...\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "119638",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W2HCR290M1C3JB08W97X",
+        "intent_dialogue": "0 ITALY -> ENGLAND: England, it looks as if Germany has backstabbed you. Why not team up together?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "82712",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2KGTZ3R1SPHBG748ZM3",
+        "intent_dialogue": "0 GERMANY -> FRANCE: So what do you suggest? You get your army off Britain and I retreat from Burgundy?\r\n1 GERMANY -> FRANCE: I'll take that deal.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "34856",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W222EPRYJAGB5NYZYRQJ",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: I hadn't realized it's been more than 3 years since we last communicated. There appears to be a swarm of Turkish fleets headed our way. I just wanted to let you know I'm interested in you holding on to Spain and Marseilles and I'll do what I can to support you there. ~N~ ~N~ In addition, Germany has been taking some liberties with our agreements. If you want to chance moving against him, I might be able to help you retake some territory. (Please don't think I'm definitely promising help against Germany right away, I can't afford to let Turkey and Austria crush him right now.)\r\n1 FRANCE -> ENGLAND: Austria and Turkey are allied to move over here, and there is not much way to move against Germany for me\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "59685",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2EE1PB68QQ5C3Z5R86Q",
+        "intent_dialogue": "0 ITALY -> TURKEY: ok lets move up north!\r\n1 ITALY -> TURKEY: Also I will move into Ionian to cut Austria's possible move to Tunis\r\n2 TURKEY -> ITALY: More Vienna-bohemia. I will be moving to Prussia and Silesia.\r\n3 ITALY -> TURKEY: Done!\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W2S5123ETW84WHPM2WGV",
+        "intent_dialogue": "0 FRANCE -> GERMANY: HOL to the NS with support from EC and LON. CLY going to NOR SEA, Baltic Sea to Sweden with Support from DEN, Bel to RUHR and Berlin to MUN with Support from BUR. That set's us up nicely and if Russia doesn't get a build, we have him in serious trouble.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "3641",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W20MTXSV07TSPX0N7DXA",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Would you like Budapest to do anything?\r\n1 TURKEY -> RUSSIA: No, thank you.\r\n2 RUSSIA -> TURKEY: All right then.\r\n3 TURKEY -> RUSSIA: Do you have any information about France. I mean, is he there to help Italy or to take his slice?\r\n4 RUSSIA -> TURKEY: France and I have been talking, on and off. His last communication wanted me to make peace with Italy. I'm not sure what he exactly meant by that. He said that Autumn '04.\r\n5 TURKEY -> RUSSIA: Thanks.\r\n6 RUSSIA -> TURKEY: For sure.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "71594",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W27AETRKHC2Z33DVKMFC",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: Eh? I think you should move out of the English Channel\r\n1 ENGLAND -> FRANCE: that's fine I need to go to the North sea.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "66264",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2510TK2RCPSCRVB2SMD",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: Interesting move\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "73100",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W26VEP4MBF8X54JAK2C3",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: Would you be so kind as to support me to Kiel from Munich, and move Bur to Munich to cover? It's yours if I can caputure Kiel.\r\n1 FRANCE -> ENGLAND: Yep, I'm on it\r\n2 FRANCE -> ENGLAND: I'd like to this time to point out that [383187] would rather win with [187712] than you. So although I may be a little open, it would be a bad call.\r\n3 FRANCE -> ENGLAND: to take& this time\r\n4 ENGLAND -> FRANCE: I'm not moving on you, no worries.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "27465",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2SBJGKD14JJK5ZPKV4S",
+        "intent_dialogue": "0 FRANCE -> GERMANY: We did it...we managed to outplay them :)\r\n1 FRANCE -> GERMANY: Do you think I should help Austria against Italy? Austria and you can cooperate against Warsaw on the east while I can move to Marseilles-piedmont and help Austria to defeat Italy.\r\n2 GERMANY -> FRANCE: Yes! How good does that look :-)\nI think it would be great for you to start working with Austria as well. The three of us could hook up and take this game now I'm sure.\r\n3 FRANCE -> GERMANY: We have two options regarding west. Channel can convoy to Wales army from Picardie, or support Hel to north sea. You need to be careful not to lose Denmark this turn. I will help Austria in the south then, three of us will be enough to control the game, you are right.\r\n4 GERMANY -> FRANCE: You must take Wales this time. I did think of moving Bal to Den might I might move Kiel with Bal supp. My concern right now is still Russia and that he might gain the Baltic Sea, which will put pressure on my Scs next year.\r\n5 FRANCE -> GERMANY: I will convoy to British island with Channel in that case. I hope that pressure on England will be sufficient enough so he turn all units toward me and leave only Russian units for you to worry about. I looked at some diplomacy articles about strategy and you are correct, Baltic sea should stay in German hand at all costs. You could use Austrian help in dealing with Russia, so only country that can be influenced to help Austria is Turkey. I will try to talk to Turkey, he may exploit Italian and Russian weak garrison in the south and help Austria a bit. Austria is maybe beginner player so he could use your tactical advice.\r\n6 GERMANY -> FRANCE: I've heard from Turkey and he is not happy with Russia now (that fleet in Black Sea did it!) so I think is interested in working with Austria.\r\n7 FRANCE -> GERMANY: he supported Sevastopol to Romania so he must have known that only place for Romania fleet to move is the Black sea.\r\n8 GERMANY -> FRANCE: Good spot - hadn't noticed that!\r\n9 GERMANY -> FRANCE: I think I will move Kie to Den with two supports.\nIf Russia attacks Bal with both units I can retreat to Ber (or potentially Liv if he shifts Gob and no units in Stp neighbours!).\nSil is supporting austrian attack on War.\r\n10 FRANCE -> GERMANY: I think attack is best way of defense so in your place I would play:\nHel-north sea\nKiel-denmark\nBaltic-sweden\n\nThat way you will defend Denmark, and stop them from repositioning their forces. That would prove valuable next year, because they have numerical superiority in fleets, and only way they can use this superiority is to shift units around.\r\n11 GERMANY -> FRANCE: That's an interesting spin on what I was going to - use the supports to attack.\nI like it and will give it a try, as you say, may prevent Eng/Rus gaining control in the water.\r\n12 GERMANY -> FRANCE: Wt least England will have to disband something at the end of the year when you gain Lvp, which will help...\r\n13 FRANCE -> GERMANY: I hope we will have some luck in next years. The worst thing that could happen to us is eastern triple (Turkey, Italy, Russia) before we kill England. With Liverpool in my control I plan to build new fleet to swing north and try to brake through to Norwegian sea and tie up considerable English forces there.\n\nI think that in the next year if pressure on your borders remain strong we could pull little trick. Holland could move to Belgium in the fall and get yourself new army in Berlin to fight with Russia. If things are becoming really serious we might even consider moving Burgundy to Bohemia, but that would be last resort I guess. You have strong defensive position that is hard to crack, so our prime concern is Austria. He is in the middle of 3 way attack. It would be great if he could take Warsaw this turn, but that is unlikely.\r\n14 GERMANY -> FRANCE: Austria gone a little quiet this turn, but I know he has Gal-war in place, which I am supporting.\nTurkey still making friendly noises - will be interesting to see how he moves this time.\r\n15 FRANCE -> GERMANY: I am thinking about convoy to Britain, or supporting your fleet to north sea from Hel. They would both be great moves if they succeed. England can stop only one of those, so there is 50-50 chance of success. For now I have convoy in place.\r\n16 FRANCE -> GERMANY: I think best is to leave Marseilles open for build...if Austria is in problems I could build fleet there. If not I will move army there in spring.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W29QZY3SD9YHPEVA7NKZ",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: You don't even need my support to take tun . . .\nHow about:\nrum s vie-gal\nbla s sev\ncon-bul\nsmy-aeg\ngre-ion\nion-tun\nvie-gal\nbud s vie-gal\nser s rum\n?\nYou'll pick up tun this year, and we'll be in a very strong position in both Russia and the med.\r\n1 AUSTRIA -> TURKEY: You there?\r\n2 TURKEY -> AUSTRIA: I'm sorry, I was travelling yesterday. I agree with all your moves.\r\n3 AUSTRIA -> TURKEY: Thank you very much, and I hope you enjoyed your travels.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "38101",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W24HPK0JJRK33ARXPHM2",
+        "intent_dialogue": "0 FRANCE -> ITALY: Do you want support to Trieste this turn?\r\n1 ITALY -> FRANCE: If you're not using it for anything else, I am moving Venice to Trieste. I'm going to try Serbia with Albania though.\r\n2 ITALY -> FRANCE: If you need it for something else though, go ahead with that.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "64711",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W2EXZF0GBN2CZES9GGAS",
+        "intent_dialogue": "0 ITALY -> FRANCE: I built the fleet in Naples to support u in Ionian sea. But I need the adritic sea fleet to get my army back into Trieste. Eventually it would be nice for you to plant a ship in. Apulia so you could hold Ionian on your own. We can't do it this round but we can do it next round\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "47399",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W283MA28M9F9AW6RVJ7T",
+        "intent_dialogue": "0 RUSSIA -> FRANCE: Sorry, missed a turn :( Let's try again!\r\n1 FRANCE -> RUSSIA: All right, I've re-issued the order.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "26100",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2M8K6Z6HVC4HFNQR91H",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: This is touch and go, but we can survive.\n\nI am moving:\n\nSmy > Syr\nCon > Smy\nAnk S Con > Smy\n\nWhatever Italy does, it will bounce (I THINK) although Bla > Bul would be VERY reassuring. If he goes for the convoy, it all bounces, and if he goes for Smyrna, the supported move should bounce it. My theory is that the supported move would likewise bounce the attack on Con....but this is untested logic.\n\nWhere does Bla come in? Autumn. I may well have A Syria in Autumn. It would need to support Ank > Smy while Bla supported Con's hold.\n\nTo make any of this work, you need Sev S War > Ukr, Pru > War, which - I am assuming - is your plan. Austrian army in Ukraine is Game Over.\n\nIf you're willing to go with the above, we can ride out this year and - Germany favourable - see Austria get a nice stab in the back. Once the German armies roll in (Tyrolia is key) Aus/Ita will be streaming back from our stalemate line and we will roll them up.\n\nI have been trying my best to get Germany onside; but your relationship with him is the key one.\n\nBy the way, you're very low profile, please could you at least say hello?\n\nThis one is not lost at all.....it's SO saveable.... come on!\r\n1 RUSSIA -> TURKEY: Very sorry about my low press levels, I have an uni interview tomorrow.\r\n2 TURKEY -> RUSSIA: Ok GOOD LUCK with that, it actually matters!\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "1928",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W28CYMHECKKBV2BZG3GH",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: At this point, Austria is dead. If we continue to fight each other, France has the game won. Let's go through Austria together so we can stop France.\r\n1 TURKEY -> RUSSIA: Ok. I can work with that. I WILL NOT. attack you in Sev this turn. We both know that you are being logical and that any stab we might make would not result in a victory for either of us. I will go from Armenia to Rumania (convoy). Rumania to Budapest. Please move Ukraine off of my border (keep sev if you want insurance) and use Galicia to support me to Budapest.)\r\n2 RUSSIA -> TURKEY: How about you support Rum to Ser this turn? That allows me to take Vie.\r\n3 TURKEY -> RUSSIA: ok. that can work too.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "1119",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2R772TND3JP9HA9B2JA",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: So England, Russia is trying to convince me to help him win. Is there any kind of agreement we can come to so we can weaken him before its too late\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "7785",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2MN1QRHTC7D522GWHP8",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Are you stopping attacks on the Russian?\r\n1 GERMANY -> ENGLAND: No, but his disband is convenient. I'm traveling now, but I will have time tonight to write. Ttys.\r\n2 GERMANY -> ENGLAND: OK, the Russian hasn't even responded to me. I think we have a good plan: I move Fin to St. Pete with support from Norway while NWG moves to NAO and London supports Belgium to ENG. With that plan you get a build by taking Sweden in the fall (thus the disband in Ska) and I don't lose anything because I've managed to take St. Pete. Also, since I have the army in Prussia, I can more readily support myself south while you use your additional build to get another fleet with which to fight France. Actually, it's fairly simple and I'm confident it will work. If I lose Belgium it'll be because France has compromised Brest and MAO, and in the long run that will be more disastrous for him. In the end you'd be set up against France and Russia. What do you think?\r\n3 ENGLAND -> GERMANY: I'm not thrilled about the move to NAO, but I see the potential in the move against France. This sounds like a fair plan.\r\n4 GERMANY -> ENGLAND: OK, my moves are entered. Please support Fin to St. Pete; NWG moves to NAO. Belgium moves to ENG. Thanks!\r\n5 GERMANY -> ENGLAND: Hello, and I hope you've had a merry Christmas. While I am still on the road, I'd like to take a moment to reaffirm our alliance. I bet it is tempting to side with France against me, but I am very sincere about our plan. If you have any misgivings, please let me know. I want to make it work, I want you to grow, and I think I've demonstrated my goodwill. Please just let me know if you would prefer to do things differently; I am confident that I have more to offer you than France could.\n\nRegards,\nGermany\r\n6 GERMANY -> ENGLAND: Hello again. I hope you've enjoyed the holidays and I hope to hear from you soon.\r\n7 GERMANY -> ENGLAND: I hope you're OK, and have just been busy. Not sure how you feel about upausing, and I won't presume. However, if you would rather cancel, I'd back you up. No rush either way.\r\n8 ENGLAND -> GERMANY: Sorry, back -- been traveling like a fiend.\r\n9 ENGLAND -> GERMANY: Things still on track, Let's roll ahead.\r\n10 GERMANY -> ENGLAND: OK, cool. Fin is set to move to St. Pete.\r\n11 GERMANY -> ENGLAND: Actually, maybe you want St. Pete instead? Would you rather take it yourself?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "6685",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2D6CSK2T3JEPNX0B2F5",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Hi turkey!\nI talked with the austrian to see the chance of retreat his armies to the west, but he is thinking about it...\nSo, if there is not another message, from him, I will support hold sevas with moscow.\nYou can go to const from bulgaria with two supports, and, if he retreats to smyrna, you can attack him at autumn. What do you think?\r\n1 TURKEY -> RUSSIA: I was debating using BS or Bulgaria, but I will get back to you soon\nWhat were you thinking for moves in Russia?\r\n2 RUSSIA -> TURKEY: if you uses black sea, bulgaria will be destroyed, const will go to smyrna, and you won&t be able to get into smyrna at autumn, or you will lost const.\nI will hold sevas.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "54464",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2132PXZR3CE6GYYXCNR",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: Hi Ben! How do you want to handle the North? I can help you take Sweden or I can take Sweden and you can head to St. Petersburg?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "109742",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W21MY8NW4FX4XHPDGQX3",
+        "intent_dialogue": "0 TURKEY -> FRANCE: [1527586], time to draw. They're defeated officially.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "114931",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2H6PK80SXFE29JW3FFG",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: What the hell? Why do you always do everything agnst what we discussed? The idea was to destroy Holland, and move Burgudny to Paris, supported by Picardy and Brest.\n/sigh\nOh well, it was your loss this time.\n\nTo remedy this, I will be convoying to Belgium this. In autumn, you'll support me in with Picardy and Munich, while I use Ruhr. That way, we get Burgundy back, so we'll be back where we should've been...\r\n1 GERMANY -> ENGLAND: Take the mid Atlantic and convoy to somewhere on Iberia, I'm not putting off taking Belgium any longer. Though in hindsight, I could've moved Burgundy>Belgium, but I'll put that up to stupidity on my part.\nNext turn: Kiel to Munich, supported by Ruhr, Picardy and Brest to Paris (Just in case we get lucky).\nThen next turn, Ruhr to Burgundy, so we can take Paris.\r\n2 ENGLAND -> GERMANY: /sigh\nI'm not trying like instate a totalitarian dictatorship in this alliance. My ranking isn't this high for nothing...I know what I'm doing. Every time you've gone against what I've told you, the plan resulted in disaster, and you know that. If you begin to start listening to me, we might actually be able to end this game in a 17-17 draw like I originally planned. You see, I'm trying to balance out my wins, defeats, and draws at 6. So far the former are at 6, and draws are at 4. I am about to draw my other game. So all I need to do is to draw this game to achieve my goal.\nSo, if you could do both of a favor, could please stop putting SC obtainment as your primary goal? We are going for logic, and most effective plan here. France shouldn't take this long to defeat... So, let me explain you my logics so you know I'm not randomly throwing around crap to get me Sc's. This is the plan, as I see it. Picardy and Brest support hold each other, allowing Irish Sea to get to MAO safely. Getting a fleet to MAO gurantees a succesful move from Belgium to Burgundy, still allowing you Belgium. So, end result is, you still get Belgium by the build cycle, and we're in a stronger position, etc.. If you need me to re-explain any of this, I'd be happy to. But, do you see where my exsasperation lies? We are allies, I am doing stuff on the agenda of both of us, whereas you are looking at yourself. If we are to be strong allies, we need to be communicating well, and in complete understanding of each others logics. At this point, your moves seem very illogical to me... Sorry to be so forceful in this message, but I've been trying to get this point across to you in the past messages, and I don't think I'm explaining myself clear enough for you to understand.\r\n3 GERMANY -> ENGLAND: Well look at it from my point of view, I have an eastern border that is 100% undefended. If Russia, Austria OR Italy decide to attack me, there's little I can do (And I don't want to think about what would happen if 2 of them joined forces.)\nNow, join that with the fact that you seem to be doing all that is possible to hold Sc's from me (No point dancing around that topic, that's just how it seems), and I get more than a bit worried.\n\nNow, I do see logic in your plan, so I'll go with it. To clarify the plan on my end: Holland holds, Picardy supports Brest, Kiel moves to Munich with support from Ruhr.\n\nHowever, I do have a suggestion. If you keep the army in London this turn (Not an attempt to keep it out of Belgium, just bear with me!) and move Ruhr to Burgundy after we take Munich, that means we have an army in Burgundy at the same time, /and/ we have an army in London which can be convoyed to France's rear. And that means we wont have an army sitting in Ruhr doing a whole lot of nothing.\r\n4 GERMANY -> ENGLAND: And I do apologise for frustrating you, that's never been my intention!\r\n5 ENGLAND -> GERMANY: That wouldn't work it; there wouldn't be enough units to get into Burgundy. Taking Belgium in the Spring of Fall will still result in the same outcome; you'll get a build. Plus, you're going to need that build anyways, so I need to make sure you get it. Munich will be retreating to Berlin, so to completely get the French out of your territory. you'll have to be building in either Kiel or Brest. Basically, you're going to get Belgium anyways, its just the matter when; in spring, or fall. Secondally, Picardy support holds Brest, and Brest supports Picardy; we're not going to go for Paris this turn.\r\n6 GERMANY -> ENGLAND: I'm not too worried at this point as to whether I got Belgium in Spring or Autumn, I just thought it'd be better than just having your army sitting in Ruhr without doing anything. If we attack Gascony and Paris (No chance of taking them, but just to make sure they don't support) then you could move into Burgundy with support from Munich.\nAs you say, it's all about getting the most units possible in France.\r\n7 ENGLAND -> GERMANY: Well, Ruhr is needed to gurantee Belgium to Burgundy; there's not enough supports to make it into Burgundy as it stands. Does that make sense? Also, the probability of convoying units into Iberia isn't very high, the outcome could very well end up having that army still in London, back where we started. If London goes through Belgium, that puts an extra unit in the French territory, no matter what. I think we've been taking too many gambles; it'd be best to stick with what'll work for sure, so we can finish up France ASAP, and pursue other people like Austria and Russia...\r\n8 GERMANY -> ENGLAND: Well, if we attack Paris and Gascony, there will only be the unit in Burgundy to defend it, so we can take it with Ruhr/Munich. Belgium wont be threatened at all, as it'll be behind the front lines. So we'll have 3 units directly able to attack France (As we would with the other plan) /and/ we have a unit that can actually do something against France instead of sitting in the rear.\r\n9 GERMANY -> ENGLAND: Though if we do that, I wont be able to take Berlin back.\nI guess your plan wins!\r\n10 ENGLAND -> GERMANY: Okay, confirmed, dont forget to support hold Brest from Picardy.\r\n11 GERMANY -> ENGLAND: And don't forget to support attack Munich from Kiel ;)\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "82362",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W21WYS85D74KWN5C4Y8M",
+        "intent_dialogue": "0 ITALY -> TURKEY: Bingo. Make your move on Ukraine, I'm almost positive you're going to get in. ;)\r\n1 TURKEY -> ITALY: Okay. Moving to Ukr from Gal.\r\n2 ITALY -> TURKEY: I would suggest from Rumania so you can backfill and have attacks (with German help) on Warsaw and Moscow simultaneously.\r\n3 TURKEY -> ITALY: Fair enough. I guess I can do that then.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "100238",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2PTR323KEV4SPNYAVNW",
+        "intent_dialogue": "0 GERMANY -> TURKEY: well, could you support me into St.petersburg now?\r\n1 TURKEY -> GERMANY: Sure, you got it.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "22828",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2GNVYJTGS9CPW1NKNSW",
+        "intent_dialogue": "0 GERMANY -> FRANCE: Unfortunately he decided to support from North sea into Denmark instead of supporting the unit in Holland... But at least there is no longer an english army at the continent!\n\nI will build a fleet to put even more pressure on england! Together we can do it!\r\n1 FRANCE -> GERMANY: cool.\notherwise englnad and i are at a stale point\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "24133",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2JZ15H9ASBQ9VJJYPA3",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: Danke, supporting you into Ankara.\r\n1 RUSSIA -> AUSTRIA: Thanks.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "637",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2QFVQT86DDQE13W6Q56",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: okay, here's is your chance for a convoy shift and Sevastopol is yours and the Russian navy gone forever.\r\n1 TURKEY -> AUSTRIA: May I humbly request passage through Serbia in the spring? If not, no worries.\r\n2 AUSTRIA -> TURKEY: passage to where?\r\n3 AUSTRIA -> TURKEY: and from where?\r\n4 AUSTRIA -> TURKEY: i would like a few more details please.\r\n5 TURKEY -> AUSTRIA: To Rumania. Only viable if Serbia is heading north\r\n6 AUSTRIA -> TURKEY: okay, so go to Serbia from Greece, convoy to Armenia from con, then in the fall, Bulgaria supports Serbia to Rumania? is that the plan? If so, yes, you can do that, no problem.\r\n7 AUSTRIA -> TURKEY: you will likely get Sevastopol and Rumania if you do that, because hopefully I an cut whatever support he has in position in the fall.\r\n8 AUSTRIA -> TURKEY: i can cut\r\n9 AUSTRIA -> TURKEY: for the naval part, you can go to Ionian, but I doubt any support I give will work. But you might slip in depends on what he does I guess.\r\n10 TURKEY -> AUSTRIA: Very well. Let's make it so!\r\n11 AUSTRIA -> TURKEY: Great!\r\n12 TURKEY -> AUSTRIA: At the end of the day you may be a bit of a bastard, but at least you're fun. I can't stand boring players. If you want to be bored, you might as well go to work.\r\n13 AUSTRIA -> TURKEY: well, it's never good to be boring, better to be an asshole than boring. I am, in fact, only a bastard in this game, in real life I am very kind to all humans, I do eat animals, well, because they taste good, oh well. It's like in a video game, I shoot people's heads off, well, because obviously don't do that in real life! so diplomacy is my outlet for being an asshole ! LOL\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "3516",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01J3X2W2Q47RKCTSMASQMGYF8M",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: supporting me into rum won't work. austria would be able to get it right back in autumn. I need another deal. I don't want to further support austrian growth but your actions so far force me to.\r\n1 TURKEY -> RUSSIA: what else would you have in mind?\r\n2 RUSSIA -> TURKEY: I don't have the slightest clue at this point. maybe supporting bul-rum since you are about to lose bul but then I could be facing a new aus/tur alliance. so until I see something that I don't see now I think my best option (also considering my situation north) is to be austria's bitch.\r\n3 TURKEY -> RUSSIA: nah, that's not going to happen. I will move armenia to symrna. I will support you to rumania from sevestapol. (unless you decide you want to support me to rumania) I'll likely lose bulgaria either way, so it would be best if you at least get Rumania this turn.\r\n4 RUSSIA -> TURKEY: arm-smy is a perfect start for new relationships. I ll let you know soon what I would like to happen with rum.\r\n5 RUSSIA -> TURKEY: I cannot risk moving sev this turn. let's everything open to be [36670] in autumn. I m holding my position for now and expect to see arm-smy.\r\n6 TURKEY -> RUSSIA: can i get a support to rumania?\r\n7 TURKEY -> RUSSIA: without a cut on rumania or support to it, I will lose bul and then its just a matter of time before you are run over as well.\r\n8 TURKEY -> RUSSIA: we got a Central Triple going strong.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "26100",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2M7X0RN5BWJ8NN19R20",
+        "intent_dialogue": "0 RUSSIA -> ITALY: That isn't good enough, I'm afraid. You can't count on my continued support, on the contrary, you can count on my hostility.\n\nTurkey is a dead man walking. you can kill him either way with very little by way of concerted effort. Austria is your only threat, and one who you can take on head on at the moment. Why not do so?\r\n1 ITALY -> RUSSIA: Because I fear that if I attack Austria, then I lose my only ally, to be faced by an angry Turkey who I've attacked, coupled with a relatively angry Russia...\r\n2 RUSSIA -> ITALY: But at the same time a rational Russia, who realises that he himself has a pretty pissed off Turkey.\n\nMy intention in this game is simply to try to get a share in the draw. An alliance with Italy therefore makes alot of sense, because we are next to the stalemate, whilst Turkey is a long way away and so getting the stalemate will be difficult, or require supporting a half dead Italy anyway.\n\nRemember, all I want is what I was saying from the start. I still want it now, because anger has no part in my diplomacy.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "97254",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01J3X2W25KYKVV3M0QJV4Y7Z5P",
+        "intent_dialogue": "0 ITALY -> RUSSIA: Ok. But Shall I support you to rum Next turn. If I support you to rum this phase it will be of not use as Bulgaria will be support holding it as he told m. So this turn I am supporting Triestie to Serbia and Than a double support to you to Rum. Is that fine?\nAnd I am going to Turkey territory ...\r\n1 RUSSIA -> ITALY: perfect\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "637",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01J3X2W2QCNX2TCE6M2Y6CHN6Y",
+        "intent_dialogue": "0 GERMANY -> FRANCE: True\r\n1 GERMANY -> FRANCE: There is a second option. We use England as a bunker buster against Russia. Help him get Norway\r\n2 FRANCE -> GERMANY: I am following your preference here? Who do you prefer to attack first? Russia or England? As long as we stick together I will follow.\r\n3 GERMANY -> FRANCE: It is a difficult question.\r\n4 GERMANY -> FRANCE: Hello. Let get Russia. Then we get England. As long as we are carful. I think we can keep England Weak enough to become the next target.\r\n5 GERMANY -> FRANCE: Im thinkin the fall\r\n6 FRANCE -> GERMANY: Hi Germany,\nThat is fine. I thought you taking Nth and me trying to get across to the island. That would pressure him and allow us to take Russia at the same time.\nFeel free to act as you wish. I would try nonetheless. What do you think?\nFrance\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "6685",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W2D9BZB65YKP7ZMHT1E7",
+        "intent_dialogue": "0 ENGLAND -> ITALY: i thought you weren't heading at me? I moved back and you tried to take mid?\r\n1 ITALY -> ENGLAND: I thought you weren't heading at me - taking on Spain isn't a friendly move, is it?\r\n2 ENGLAND -> ITALY: port to spain wasn't to take spain, it was to dealy your taking Mar. Ididn't head at you.\r\n3 ITALY -> ENGLAND: To delay me taking Marseilles isn't a friendly move as well, is it? :)\r\n4 ENGLAND -> ITALY: Not going at you, just [114391] you can't come at me. I guess I failed. You obviously aren't interestted in peace.\r\n5 ITALY -> ENGLAND: I am securing my borders. You have too many fleets that can come only one way - my way.\n\nHow do you see this game ending?\r\n6 ENGLAND -> ITALY: You don't notice the attack on Gerrmany?\r\n7 ITALY -> ENGLAND: I do, but you are big enough to handle me as well - you have 3 spare fleets.\r\n8 ENGLAND -> ITALY: Nothing spare right now. Not really wanting to fight you, but i will defend myself. good luck in the east.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "7785",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2MJRBYNHJM5VES7Q18W",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Did I read wrong that you were building an army?\r\n1 GERMANY -> ENGLAND: No, you didn't read wrong, that was my intention. I can use this fleet, though, although I'd rather have had an army, especially with Italy building his army in Venice. Can the fleet help you in any way?\r\n2 ENGLAND -> GERMANY: No the fleet can't help me in any way. We're looking at the same map, and there only so many fleets can be useful against France. Your build says you are coming at me. I cannot interpret it any other way. Are you implying I should heed France and Russia's request for me to ally with them? I've been playing cat and mouse with them so far, since you've had a knife to my throat with all of the fleets, but now I feel as though I should stick to them instead since your attack on me is inevitable. Please clear my head if my logic is flawed. I'd much rather ride your coattails, but I don't want to be a fool here.\r\n3 GERMANY -> ENGLAND: There's a lot to talk about, and I'm writing up a response. I hope to have it to you in an hour or so.\r\n4 GERMANY -> ENGLAND: I think you're being fairly reasonable, but you may have overlooked Burgundy; nonetheless, I respect your concern. I'm sure Russia and France would love to use you; you're in a commanding position against France and Russia doesn't have anything to lose, but he's upset I took Norway. I suppose it's unfortunate he Nmrd.\n\nYou have the opportunity to grab Denmark, Holland, or Belgium, or even Norway if you can get Russia's help. I trust you, but I know it must be tempting. I'm willing to work around this in a way that is profitable to both of us.\n\nKiel at the moment can protect Holland and Denmark. I have to think long-term, where I can expand, and what the end-game will look like. I've already explained why I won't assault England; I'd leave myself wide open for Austria and Italy, and even Russia and France. I would have preferred Italy to have built a fleet against France instead of that stupid army against me, and I wish I had built an army instead. Again, sorry. Let's look forward.\n\nI'm pretty sure that Russia's going to support himself into Norway. I know you're nervous about me taking NTH; but if I wanted to, wouldn't I have done it already?\n\nI'd like to make a plan that guarantees you at least one SC by the end of the year--even if it's one of mine--and also keeps us on solid footing against France and Russia. Would you like to draft a plan like that?\r\n5 ENGLAND -> GERMANY: I'll only consider a plan with you if you guarantee only 2 fleets bordering the North Sea. Keeping a fleet in Kiel is not a threat to me, and I understand how comforting it can be to Germany... but 4 fleets is a bit overkill.\r\n6 GERMANY -> ENGLAND: That's perfect for me. Here's my proposal:\n\nSwe to Fin. Norway hold. Ska to Swe. Kiel & Belgium bounce in Holland. Wal & Lon S NTH to ENG.\n\nThis leaves only Norway and Belgium bordering NTH, puts you on the offensive against France, and allows you to protect all your home centers. If you can commit to leaving NTH empty, I can commit to pulling my fleets away.\n\nIf you like this plan, I will enter my orders.\r\n7 ENGLAND -> GERMANY: Clever. I offered the 2 border fleets as a first step to dmz north sea. I'd rather not give you the option of a juicy retreat. How about nths support hold norway, and london takes EC with wales and belgium support?\r\n8 ENGLAND -> GERMANY: Clever. I offered the 2 border fleets as a first step to dmz north sea. I'd rather not give you the option of a juicy retreat. How about nths support hold norway, and london takes EC with wales and belgium support?\r\n9 GERMANY -> ENGLAND: That would be fine too.\r\n10 GERMANY -> ENGLAND: France is likely to cut Belgium's support, though. Not really a big deal, just something to keep in mind.\r\n11 GERMANY -> ENGLAND: I'm going to enter my moves as described.\r\n12 ENGLAND -> GERMANY: kk\r\n13 ENGLAND -> GERMANY: I'm going to hold norway, and position to cover EDI. I will attack France when you're in a less aggressive stance against me.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "40628",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W2NQJ4JVQK3QESBT17RJ",
+        "intent_dialogue": "0 AUSTRIA -> GERMANY: I can&t move without help, so i&m going to still defending myself, can i count again with your support at Trieste?\r\n1 GERMANY -> AUSTRIA: No problem.\r\n2 AUSTRIA -> GERMANY: Thanks again!!\r\n3 GERMANY -> AUSTRIA: Since this is point per SC game, I will do my best to make sure you survive with as many SC as possible. France is already talking about attacking you when Italy is taken care but I will not do that. Can I count on your units to win the game?\r\n4 AUSTRIA -> GERMANY: Depends. ~N~ Attacking France?\r\n5 GERMANY -> AUSTRIA: Not until Russia is neutralized\r\n6 AUSTRIA -> GERMANY: But you have it! ~N~ Have you speaked about with Turkey? Maybe the Sultan will be interested in\r\n7 AUSTRIA -> GERMANY: I can&t move my units out by the way\r\n8 GERMANY -> AUSTRIA: I will talk to Turkey too. He does sound interested.\r\n9 AUSTRIA -> GERMANY: Tell me what he says\r\n10 AUSTRIA -> GERMANY: What do you want that i move? ~N~ I would like taking Serbia first ~N~\r\n11 GERMANY -> AUSTRIA: I am supporting Tri hold so I would suggest moving Bud-ser with Tri support.\r\n12 AUSTRIA -> GERMANY: Ok\r\n13 GERMANY -> AUSTRIA: Use Vie-bud to make sure Bud is not free. I am moving Sil-gal and will be coming in to help very soon\r\n14 AUSTRIA -> GERMANY: Ok\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "9963",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2A4F24MX2F7V9H5V13S",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: That was some nice diplomacy getting out of bind you were in with Austria and England.\r\n1 RUSSIA -> TURKEY: Thank you very much. Would you like to reconsider your own actions here. You are in a war against me which will yeild nothing to you. If you leave the Black sea I shall consider peace made.\r\n2 TURKEY -> RUSSIA: Sorry. I'm going to maintain my presence in the black sea for the immediate future.\r\n3 RUSSIA -> TURKEY: To what end?\r\n4 TURKEY -> RUSSIA: You may not be inclined to agree, but from my point of view our conflict is over. ~N~ ~N~ England is on the verge of steamrolling western Europe. We might want to figure out a way to slow that process.\r\n5 TURKEY -> RUSSIA: Just to reiterate, I have a fleet in Sevas, I am no threat to Warsaw or Moscow. However, an undefended St. Pete is a hugely tempting target for England.\r\n6 RUSSIA -> TURKEY: Then again, and I repeat this to Austria, an army in St. Petersburg if very aggressive against England. For now I am exceedingly concerned by a strong Turkey.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "22659",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01J3X2W2QWE0D8NN38JNGDWY05",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: so what is the plan this turn?\r\n1 RUSSIA -> ENGLAND: nothing really\nMainly, I'm going to stick where I am for the time being.\r\n2 ENGLAND -> RUSSIA: are you sure you dont want to crush germany between you and france with my help?\r\n3 RUSSIA -> ENGLAND: I would like that but I can't do it this turn so I just have to support myself to hold.\nI ll be in position to attack G next year so if you can hold till then...\r\n4 ENGLAND -> RUSSIA: i am trying.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "106019",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W233FGQTS71W5SXKCEWD",
+        "intent_dialogue": "0 ITALY -> AUSTRIA: what about this? Ven will bounce with Vie in trieste, serbia support gal to bud, greece support hold bul, aegean support move smyrna to con....or we can bounce in trieste but serbia can attack to bul supported by aegean and greece, while smyrna attacks con..\n\ni prefer the first option...what do you think?\r\n1 AUSTRIA -> ITALY: first option sounds best. i think smy-con is a must maybe bul needs to be poked, though, unless you think russia will do that\r\n2 ITALY -> AUSTRIA: ok, lets do the first\r\n3 AUSTRIA -> ITALY: is germany on board with it? i think we should move ser-bul and gre supports it\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "107354",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W27HV3MEQ1K6PG2QZ053",
+        "intent_dialogue": "0 ITALY -> FRANCE: i think i missed the turn? im sorry, i had an awful night and went to bed really early.\r\n1 FRANCE -> ITALY: please support kiel - berlin and set your order when you confirm... my position is compromised since i moved against england but germany is still not out of picture, but i hope we can work something out.\r\n2 FRANCE -> ITALY: please reply, i put my trust in our alliance, if you're not reliable i would like to work with england again\r\n3 ITALY -> FRANCE: oh i got it - kiel to berlin\r\n4 FRANCE -> ITALY: thanks! any news about turkey / austria? if they stay allied, it would be very hard to defend your Scs even with my help\r\n5 ITALY -> FRANCE: no see here is the thing, i had a pact with one to attack the other when it was necessary, but now i sense a bit of hedging. as much as i hate to invite foreigners onto my soil, if you can spare a unit from marseilles in piedmont in case i need to defend venice, that would be lovely...\r\n6 ITALY -> FRANCE: you know what, never mind that.\r\n7 FRANCE -> ITALY: sorry, i didn't see your message and mars ended up in bur. you were lucky that austria missed a phase again. if you could wait for a year we could arrange another SC for you in germany? because i would like to build a fleet now\r\n8 FRANCE -> ITALY: i will build a fleet in mars only to fool england... and i don't want you to turn to the other side of course!\r\n9 FRANCE -> ITALY: is this ok?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "66264",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W252XVWYCSTWBHZ489FG",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: are you talking to me?\r\n1 GERMANY -> ENGLAND: Hmm don't know about that one. But it's all good. I'm still not sure if you tried to screw me or not. I\r\n2 ENGLAND -> GERMANY: I swear I didn't...please support me to Pic from Edin\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "61001",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W2DCSQQYMXTJYRECMJMM",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: well done on the [74197] of greece. ~N~ Where do we go from here? ~N~ ~N~ I was thinking a combination of R/T/F vs G/I ~N~ ~N~ Our DMZ is working fairly well, and I think it should stay in place. We need to discuss the Vie/Tri/Alb problem. I can always offer support, from Budapest if it is needed. ~N~ K\r\n1 TURKEY -> RUSSIA: Sounds good - G/I is in the way of both of us, but France isn't in a position to attack Italy right now (and doesn't look to be going after Germany either, unless he suddenly moves Belgium to Holland, Picardy to Belgium, Burgandy to Ruhr, and Marseilles to Burgandy and gets you to hit Berlin to break support of Munich for him). Suggesting to France that he could pick up two centers this turn might get him to bite, and F Mar built at the end of the year would help against Italy. ~N~ ~N~ I think Italy will hold both Trieste and Vienna this turn, so if you support Serbia into Trieste, I'm sure Venice will be holding it so Italy will keep it - is there any way you can move around to occupy Bohemia, Galicia, and Budapest? This would put you in a good position to take Vienna if I hit Trieste with Serbia. I am considering moving Greece to Albania, and Aegean to Greece, forcing Albania to retreat to Adriatic. I'm also considering moving Smyrna out to Eastern Med and hopefully getting into Ionian soon. Not sure if it's worth risking losing Greece and getting it back again next turn, though, since Italy might anticipate and use Ionian to bounce me out of Eastern Med.\r\n2 RUSSIA -> TURKEY: France has been hectoring me since the begining of this game to attack germany, now that I have made the first moves I am pretty sure that he'll jump on the chance to prosper from the fall of germany. I will suggest to him however that he also considers moving A Bur - Ruh to place pressure on Munich. ~N~ ~N~ I to am pretty sure Italy will place support on both Vie & Tri this season. I was already considering moving a Gal - Sil, but am thinking seriously about amending this to Gal - Boh. regarding Serbia I would be grateful if you would consider supporting my army budapest - hold. this is just in case Germany's A Vie decides to support A Tri - Bud.\r\n3 TURKEY -> RUSSIA: I can hold Budapest. I think you're probably right, although I also wouldn't be surprised if Trieste hits Serbia in order to break support of Greece. But Aegean will support Greece, so Serbia will be free to support the hold.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "3516",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2Q9RAD28BS3Y1D8XYHP",
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: Your game is slipping friend. Are you interested in discussing a different route?\r\n1 AUSTRIA -> TURKEY: Always. I can see you in Sev easily\r\n2 TURKEY -> AUSTRIA: Sure I could be, of course I won't be moving against anyone but you until I see that you will actually back off me and focus elsewhere. That will mean conceding Rumania, Bulgaria, Constantinople, and Symrna. Then we can talk about options after that. Where should I expect to see you move this turn?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "31376",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W2732Q1NMNWWD6RT46JX",
+        "intent_dialogue": "0 ITALY -> FRANCE: Hey France - just joined as Italy. I know Venice looks to be a pretty sure thing for you, but obviously I would appreciate it if you didn't take a shot at it. I'd love to work with you - let me know if you think I could help you out. Thanks\r\n1 FRANCE -> ITALY: You want to work with me so much that you incite others to attack me? You thought it wouldn't get back to me?\r\n2 ITALY -> FRANCE: I figured it probably would, but wanted to throw it out to England just in case they wanted to take a stab to get the win. I have my back against the wall by just joining (not that I'm complaining - I love the challenge!), just have to play all of my options.\n\nI've gone over all of the turns to try and get reads on everyone, and you've done a great job so far, so kudos to you. The \"can I move to Tyrolia\" question was a great move.\n\nGood luck. You're in the driver's seat, so you probably won't need it.\r\n3 FRANCE -> ITALY: Not really - this match is far from won. If we were to work together what would you suggest?\r\n4 ITALY -> FRANCE: That's the tough part - for this turn, there's not a whole lot I can offer you other than just being a pest to Austria and Russia in the south.\n\nA potential plan could be for you to move Munich to Silesia and Bur to Munich so you can slowly hack away at Austria. I can move Ionian to Adr and use Venice and Adr to help you into Trieste eventually (although you'd need to get into Vienna first to make a difference). It would be an arduous battle, but at least would let you keep your troops consolidated rather than having to chase me around in the Mediterranean oceans.\n\nUp to you, though. I certainly wouldn't blame you for refusing the plan, but I do think that I can help you out here (and stay alive myself).\r\n5 FRANCE -> ITALY: I have no intention of attacking Ven this turn as I am sure you would have some assurances regarding support or bounces. The game is entering the interesting phase, and provided you do not move your Ionian West I am content to see what opportunities arise over the next turn or so\r\n6 FRANCE -> ITALY: England is the one in the box seat - not me :)\r\n7 ITALY -> FRANCE: I can agree to not moving Ionian west. We shall see what opportunities come up for us.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W2S8N0XEVVRKG34AV2RN",
+        "intent_dialogue": "0 RUSSIA -> FRANCE: Why cut off the support from Venice? If you don't want to grow Turkey to quick You can better not do that (in my opinion). OK if you could win it but that's not the case (for the moment).\nIf you think you can trust Turkey, dream on ...\r\n1 FRANCE -> RUSSIA: Understood, but just one turn ago, you were the beast.\r\n2 FRANCE -> RUSSIA: He's hitting Ven from Rome.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "9963",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W2A7SYHT9HRPWAG1H2P5",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: serbia supports galica back to rumania this turn i think, triest seems semi safe for now. i guess livonia will move to warsaw..so you have a good chance to put that armenian army into sevas.\r\n1 TURKEY -> AUSTRIA: I'll also try to rotate my army from cons to Armenia so I'll have a little more defense when Russia tries to recapture Sevas. ~N~ ~N~ That army is more useful in Galicia or Ukraine than Rumania. Is there anything I can do to make you more comfortable leaving it open. Probably not but I thought I'd ask.\r\n2 AUSTRIA -> TURKEY: you could move bulgaria to cons, leave bulg open ...and then every turn i move serbia into bularia and you move cons into bulgaria. ~N~ ~N~ but the soon to be fleeet in the black sea needs to move to the med right? so we can set up some safe but using less units border system after the fleet has moved away.\r\n3 AUSTRIA -> TURKEY: england and russia have a much better system that us, look at norway and st petes, free of units. can we work towrds that?. if you have one unit in cons and i have one unit in either serbia or rumania(but not both) then we will both free up a unit to do other stuff\r\n4 TURKEY -> AUSTRIA: I would like to move the fleet from Greece at some point, so it might make sense to leave Serbia, Bulgaria, Greece free of units. You have a unit in Rumania and I have units in Seva and Con. ~N~ ~N~ I'm withdrawing from Con. this turn. Next turn I should (baring something unforseen) withdraw from Bulgaria.\r\n5 AUSTRIA -> TURKEY: if you move the army to sevas, next turn you could make a move on moscow, i will help if you help me with warsaw\r\n6 AUSTRIA -> TURKEY: I want to discuss with you end game scenarios. a 2 way draw is impossible for all players, draws cannot be 2 way, it is too easy for one player, especially a stabber like england to simply grab an extra sc and win the game, ~N~ now the way the league points are set up if for example you and england go for a 2 way draw and england grabs that one extra sc to give him 18 to your 16 sc then he will get ALL the points and you will be on zero points, same with poor germnay. at the end of the 5 games IF you are on the same number of points as another player then the league will calculate your SC gained in the 5 games. so in that limited sense having lots of Sc and surviving is good. but it is in a very limited way . ~N~ ~N~ england is going for the win, he will crush france this year and next, russia and germany are on the way out. that leaves you, me england and italy. italy will try to talk you into a 2 way draw but i would be VERY careful about that, 2 way draws are next to impossible, it would be very much in his interest to ask you for that then go for the win. however 3 way draws are much easier to make. i propose we use our alliance to finish off russia and italy and present england with a strong united front that he cannot break into. then give him the chance for a 3 way draw. 4 way if [151052] is to be included in it. ~N~ ~N~ If you stab me i think england will win the game and if i stab you then i think england will win the game.\r\n7 TURKEY -> AUSTRIA: Nice job taking Munich. ~N~ ~N~ I completely agree on all points. If nothing else Russia and England have (at least temporarily) a strong relationship so we'd be at serious disadvantage if we each tried to go at it alone. ~N~ ~N~ I'm moving my black sea fleet to Con this next turn. I know that it is somewhat of a risk on your part, but if you could move the army from Rumania to Ukraine that would be huge. I'm sure me and Russia will bounce in Moscow this next turn we could take (I think) warsaw or moscow next year if there is any army in Ukraine. ~N~ ~N~\r\n8 TURKEY -> AUSTRIA: Should we call off hostilities with [151052] and try to get him to fight England? Should we continue to keep pressure on him?\r\n9 AUSTRIA -> TURKEY: keep pressure maybe. i cant see [151052] fighting england just yet, they are too far away and also you will have all these fleets, best use for them is in the med sea. i hope you plan to build fleets from now on. if you take moscow and i warsaw this year or next will you build another fleet and i will build an army in vienna?\r\n10 AUSTRIA -> TURKEY: [151052] wants (well according to him) to make a deal with england. i dont know if this is a lie or not. he told me england was quite hostile and pushy a few years ago. but i think there is a lot of reasons for england and italy to become partners. england would be glad that italy can stop your navies and they also can team up to take france out. we may ne dup with a four way draw- italy and england and austria and turkey. russia will be stabbed by england when we take moscow i think. england wont want turkish armies near his safe swedish and norway provinces.\r\n11 AUSTRIA -> TURKEY: end up\r\n12 AUSTRIA -> TURKEY: i will need to think about rumania. might be better off for me to use galica. i get a build this year due to munich so i will build in either budapest or vienna\r\n13 TURKEY -> AUSTRIA: I will build primarily fleets from now one (I can't guarantee that I will never build an army again.) ~N~ ~N~ It would be very useful if you would move to Ukraine, although I understand why you wouldn't. I'm not sure if I would do it if I was in position.\r\n14 AUSTRIA -> TURKEY: you will move black sea to cons and smyna to armenia and sevas to moscow? then i will build in [246553] and move to galica. galica to move to ukraine. ~N~ ~N~ my rumania can support my own unit into ukraine. that way if he builds in moscow or warsaw then he cannot block my advance into ukraine. i am aiming to get warsaw this year if possible.\r\n15 TURKEY -> AUSTRIA: Yes A(SEV) ->MOS, F(BLA)-> CON, A(SMY)->ARM. ~N~ ~N~ I was thinking about moving F(ION)->APU and F(GRE)->ION but since Italy and England are probably working together my guess is that Italy will try to retake the Ionian this next turn. I will hold off any advances in the med until the third fleet gets down there.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "47399",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W281HJQ543AMQY7HN269",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Dammit. France is going to be annoying. This turn I'm taking Spain, ferrying my belgian tank to Edinburgh and swearing loudly at France. Hoping that france doesn't have the ear of Russia.\r\n1 ENGLAND -> GERMANY: Would hate to be Russia right now. Turkey looks like it's going to roll right through their homeland.\r\n2 GERMANY -> ENGLAND: Obviously, Russia was going for a solo without any ally. Or nobody wanted to ally with it.\nSo I suppose we are stick to our plan. You are attacking Norway and I support my move to Sweden?\r\n3 ENGLAND -> GERMANY: Correct.\r\n4 ENGLAND -> GERMANY: That is, yes, I'm going to send North Sea to Norway for more headaches for Russia\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "64711",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2EWF8C0D47NH85TDRKC",
+        "intent_dialogue": "0 ITALY -> GERMANY: Any chance you could help me take Budapest with support from Vienna I'd move in from Trieste thanks\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "153046",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W2S0P2YJ8F1ZEA1695TD",
+        "intent_dialogue": "0 ITALY -> TURKEY: Did you have any preferences on how to go about things from here on out?\nFrance does think that I am allied with him; of course, I would rather work with an ally that I've had since the start of the game. Just to placate concerns there. I would like to catch France off guard still but open to any suggestions/thoughts you have.\r\n1 TURKEY -> ITALY: From my perspective, we've worked well together since the beginning. I have no intention of stabbing you and I hope we can take this partnership all the way. I'm not going to attack you unless you decide to pick France and come after me, in which case I'll be very sad but just try to weather the storm.\n\nIf you want to attack France, I'm perfectly happy to help you do that. If you want me to pull my LYO fleet back somewhere, I could do that too.\r\n2 TURKEY -> ITALY: Let me know what you want to do!\r\n3 ITALY -> TURKEY: Initially, my concern stemmed from if you started taking over Russia & I'm more vulnerable to you anyhow, and it wouldn't be difficult to take my Scs after, resulting in a rather natural solo.\n\nBut I recognize your loyalty and would like to continue. I don't mind your fleets that much & you haven't turned them on me before.\n\nSeeing as France thinks I'm working with them, a support into Mars from Pie and one from Tyrr into Tunis would work, I believe, and be rather effective. If you're down for it.\r\n4 ITALY -> TURKEY: Russia is asking for help from me but I won't be extending it in this case. Would you mind if I don't extend support moves into Russian territory?\r\n5 ITALY -> TURKEY: You have quite a few units to be able to tackle rather effectively, I think!\r\n6 TURKEY -> ITALY: Sounds good to me. While a solo is always nice, I'm not one of those players who thinks anything short of that is a loss. To me making IT work successfully is a win.\n\nYou have my support into Mar and Tun.\r\n7 ITALY -> TURKEY: That's wonderful to hear :) let's do it. I've never had it fully pan out before either, so it's quite exciting, aha.\nHoping the busy-ness over the weekend is dying down so you can catch your breath.\r\n8 ITALY -> TURKEY: It's fine to move my land units away then, yes? Or did you want me to do anything with them?\r\n9 TURKEY -> ITALY: Just too many diplomacy games to juggle haha\n\nI'm happy for your land units to move away. I'll do the same as space opens up East.\r\n10 ITALY -> TURKEY: Oh lmao, juggling multiple games is difficult! Idk how you manage. I was in 4 when I started this and had to back out of a few because I was dying, haha.\n\nAwesome! Lovely to hear :)\r\n11 TURKEY -> ITALY: I'm playing in...6\n\n3 of which are going okay, 3 not so much\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "49729",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W2030Q2XQR3XHE0X5JR7",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: If you are willing, I would be happy to have a peace treaty with you. With Austria's collapse there is no reason for you to continue to work with him, and with France and England taking out Germany, we need to unite in order to have a chance to stop them. Let me know what you think.\r\n1 TURKEY -> RUSSIA: Italy has made too many aggressive advances towards me, as long as the two of you are allies, peace will be difficult.\r\n2 RUSSIA -> TURKEY: Ok, if you move out of black sea this turn, and show me you are serious about being friends, I will form a juggernaut with you we can move through Italy and present a strong front against France and Britain. Let me know if this works for you.\r\n3 RUSSIA -> TURKEY: to show my seriousness I will not support Italy into Serbia this turn like he asks if you agree to my terms.\r\n4 RUSSIA -> TURKEY: still bounce in Armenia just to make sure there is no funny business on either side\r\n5 TURKEY -> RUSSIA: Well, here is my counter offer. I'm not going to move out of the Black Sea, and here is why. Right now, the only strategic advantage it gives is to hold my unit in Rumania. I can't threaten Sevastopol with it.\nAdditionally, in order for me to trust you, I'll need support into Serbia from Bulgaria. I would also have the contingency that Ukraine not move to Galicia, but instead into Warsaw, if it were to move.\nWe would of course keep the existing bounce in Armenia.\r\n6 RUSSIA -> TURKEY: I will support you into Serbia, but I need to move to galacia in order to be in a good position to take on Italy in Vienna. You can keep black sea this turn if you commit to moving it next turn. Let me know if this works.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01J3X2W29S54TQ9DRT111EJ65Y",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: Alright, that went well! Will Austria support Gas to Mar? Would Bel support hold at Holl? I'm glad Russia stayed out of Norwegian, but not sure how things will go this fall. Do you want MAO to support hold at Spain? Any other initial thoughts?\r\n1 FRANCE -> ENGLAND: Mao support holds Spa is great. Also, Bel support hold Holl seems really necessary so you can try to attack Kiel. Germany have to defend both Kiel and Ber, so I hope Pic could move to Bur this turn.\nAbout Mars, I will move Gas with Spa support, so if Austria support me or cut Pie support it can work, but I am not that sure about Austria real intentions, so that&s why a support for Spa will come on good time.....\r\n2 ENGLAND -> FRANCE: Sounds good. MAO will support hold at Spain and I'll try to take Kiel while you try to take Mar. I'm unsure of Austria's intentions as well, but hopefully one of us gets a build this year even though I have a bad feeling neither of us will. :(\r\n3 ENGLAND -> FRANCE: The Russian is really pissing me off. Russia is nearly demanding I help him get a German center this year, this after stealing Norway from me. I'm going to shift units on him just as soon as we are a bit more stable, which should be soon with Italy losing a unit this year. You should be able to take Mar next year, I'd imagine, can't wait for both of us to break out and join Turkey (and maybe Austria) in wrapping this game up, it's been pretty slow and frustrating, but it will all be worth it in the end! :)\r\n4 FRANCE -> ENGLAND: I hope so, we have been in the defense for a long time.\nAbout Russia, I try to get something from him, but he just answered that he don&t have nothing to talk about with me. Not a good sign I think. Hope A/T crush him first and then start to fight....\r\n5 ENGLAND -> FRANCE: I'm not a big fan of the Russian lately either, I have a very bad feeling about him as well...\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "26472",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01J3X2W200JJWR3RSGB4RB20JN",
+        "intent_dialogue": "0 TURKEY -> ITALY: Why didn't you support hold at rome?\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "106019",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01J3X2W23553C8KS29E3T7Y1P1",
+        "intent_dialogue": "0 FRANCE -> GERMANY: Well, you'd have to ahve a pretty silver tongue... ;)\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2S7B34VD0AMPTMHDXYS",
+        "intent_dialogue": "0 TURKEY -> FRANCE: Could you support me into Tunis?\r\n1 FRANCE -> TURKEY: Are you going for Trieste and BUD this turn?\r\n2 FRANCE -> TURKEY: If you want to be a player in this game, we need you to hit him and hard. he will get Berlin for sure, but your position is huge. You should get 3 builds this year, NAP, Tunis, Trieste and BUD. That would cripple Russia and the next year, you can count on SEV and RUM. That put's you at 12 Sc's and now your in control of this game. The other alternative is he strikes you in Bulgaria before you hit him. I'd like to see you be the player you are and make this a real game and not just a wait and hope to survive. Just saying, but the opportunity is there for the taking.\r\n3 TURKEY -> FRANCE: Don't worry I am not opting out of the winners circle so I can pick up a survive!\r\n4 TURKEY -> FRANCE: So I take it you are supporting me into tunis?\r\n5 FRANCE -> TURKEY: I have the order in, but my concern is after Italy, it's either me or Russia and since I don't get a warm and fuzzy that you will turn on your Allie, it's probably me. You have a golden opportunity to reduce him to beg and grovel to your utter dominance and I'm not sure your going to take the chance. He has no clue what you can do and he wont protect. By the time he realizes your invasion, he will be destroyed.\r\n6 TURKEY -> FRANCE: This turn should tell all.\r\n7 FRANCE -> TURKEY: I agree, I'm just wishing I was you.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "79127",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01J3X2W28VSXYXB1Z9QK8RGJB7",
+        "intent_dialogue": "0 RUSSIA -> ENGLAND: yo double heligoland from north sea and go to ska, then you'll have 3 on denmark!\r\n1 ENGLAND -> RUSSIA: Autumn 1904 give me Denmark, tell Vance I'm going for [19949].\r\n2 RUSSIA -> ENGLAND: what are you actually going to do...\r\n3 ENGLAND -> RUSSIA: convoy to belgium. I need north sea to do that.\r\n4 RUSSIA -> ENGLAND: lol you're going to english channel? YOU CAN BS [560175] =D\nand ediburgh... hold?\nHOLD or go to clyde <_<\r\n5 ENGLAND -> RUSSIA: I\"M NOT GOING TO NORWEGIAN. That's all you need to know!\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "26472",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01J3X2W1ZV493QWE6M1A9PFN1Q",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: Hmmm, well, Munich is mine. Now, I should be able to distract Germany enough for you to take Denmark. This is what I predict: Germany, Italy, and Austria-hungary will all fall down, since they're in the middle. I'm worried about Russia and Turkey. We can either focus on Germany, and flood down to Italy and Austria, or you can attack Russia and Germany and we flood down and deal with Turkey in the end. ~N~ ~N~ What do you think?\r\n1 ENGLAND -> FRANCE: Germany and Russia will be down to two units. I left Russia alive to slow Turkey a bit. Have you heard from Italy? ~N~ ~N~ I'm confused by the multi-colored arrows around Trieste. Who is Italy with? A build of a fleet in Marseilles would be prudent in any case. My inclination is for me to hit Germany and Austria/Warsaw. I can use all of my fleets then against St Pete's. ~N~ ~N~ Waiting for the board to clear... maybe that will make the decision easier. If you choose a way I'll follow suite.\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    },
+    {
+        "game_id": "22659",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01J3X2W2QYA9YAGE8TTV6HQS0M",
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: great\nvie and bud s tri to hold\ntri will have to support either gre-alb or ser-alb\nI will ask Turkey and let you know\r\n1 RUSSIA -> AUSTRIA: ok, Turkey wants you to support ser-alb from tri\nVie and bud support you to hold in case F/I try a combined attack\r\n2 AUSTRIA -> RUSSIA: ok\r\n",
+        "unit_center": "units: AUSTRIA: A BUL, A GAL, A GRE, A SEV, F NAP, A MOS, A TRI, A WAR, F APU, A RUM, A TYR; ENGLAND: F NWY, F SKA, A LVN, A STP; FRANCE: F WES, A MUN, F TUN, F NAF, A RUH, A PIE, F TYS, F ENG; GERMANY: F SWE, A PRU, A KIE, F NTH, F DEN, F EDI; ITALY: F ROM; RUSSIA: ; TURKEY: F BLA, A CON, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM, SEV, NAP, VEN, MOS; ENGLAND: EDI, LON, LVP, NWY, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, TUN, MUN; GERMANY: BER, KIE, DEN, WAR, HOL, SWE; ITALY: ROM; RUSSIA: ; TURKEY: ANK, CON, SMY"
+    }
+]

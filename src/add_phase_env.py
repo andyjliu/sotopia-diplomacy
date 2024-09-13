@@ -51,7 +51,7 @@ def main():
         # game_phases = adjacency_selection(args.games_dir, sampled_countries)
         games_phases = random_country_adjacency_selection(args.games_dir, valid_countries)
         # game_phases example: {'game_id': '3516', 'country': ['Italy', 'Austria'], 'phase': 'S1901M'}
-    # pdb.set_trace()
+    pdb.set_trace()
     add_env_profiles(args.games_dir, games_phases, args.tag)
 
 

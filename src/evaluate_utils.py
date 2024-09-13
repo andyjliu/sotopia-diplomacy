@@ -7,7 +7,8 @@ from parlai.core.agents import create_agent
 import re
 
 from fairdiplomacy.agents.base_strategy_model_wrapper import BaseStrategyModelWrapper
-from fairdiplomacy import pydipcc 
+from fairdiplomacy import pydipcc
+from diplomacy.engine.renderer import Renderer
 import json
 import inspect
 import rich
@@ -56,24 +57,14 @@ def get_orders(data, phase_name, country_name):
     
     return ''
 
-def parse_predicted_moves(game, country, pred, act):
-    '''
-    game: pydipcc game object
-    country: string containing power
-    pred: string containing model predictions
-    act: list containing strings that correspond to actual moves
-    return: list containing strings that correspond to predicted moves
-    backfill missing moves in pred from act
-    '''
-    units = game.get_phase_data().state['units'][country]
+def parse_predicted_moves(pred, act):
+    units = [' '.join(x.split()[:2]) for x in act]
     pred = pred.split('; ')
     pred_dict = {}
     for move in pred:
         unit = ' '.join(move.split(' ')[:2])
         pred_dict[unit] = move.split(' ')[2:]
     pred_list = []
-    # rich.print(f"Predict Dictionary: {pred_dict}")
-    # rich.print(f"Units: {units}")
     for unit in units:
         if unit in pred_dict:
             pred_move = pred_dict[unit]
@@ -93,7 +84,7 @@ def parse_predicted_moves(game, country, pred, act):
             elif pred_move[0] == 'C': # convoy
                 convoyed = " ".join(pred_move[1:-1])
                 destination = pred_move[-1]
-                pred_list.append(f"{unit} C {convoyed} - {destination}") 
+                pred_list.append(f"{unit} C {convoyed} - {destination}")
 
             elif len(pred_move) == 1 or pred_move[-1] == 'VIA': # move
                 destination = " ".join(pred_move)
@@ -133,7 +124,7 @@ def get_phase(game_file_path, phase_name):
 
 def get_country_value(values, country, countries_list, with_index = False):
     if with_index == False:
-        return (country, values.tolist()[0][countries_list.index(country)])
+        return (country, values[countries_list.index(country)])
     else:
         pdb.set_trace()
         return (country, values.tolist()[countries_list.index(country)])
@@ -216,22 +207,22 @@ def get_one_predict_value(game_file_path, phase_name, c1, c2, c1_predicted_moves
         value_model = get_value_model()
         if move:
             pred_values = value_model.forward_values([c1_predicted_cf], has_press=True, agent_power=c1)
+            pred_values = pred_values.tolist()[0]
         else:
             prev_pydipcc_game = get_pydipcc_game(game_file_path).rolled_back_to_phase_end(prev_phase_name)
             # This is using the previous values from the previous phase
             pred_values = value_model.get_values(prev_pydipcc_game, has_press=True, agent_power=c1)
-
-        # # Here compare with country_list, this is the alive powers
-        # Init
+            pred_values = pred_values.tolist()
+        # Here compare with country_list, this is the alive powers
         countries_value = {}
         countries_value['whole_predict'] = []
         # countries_value['predict'] = []
-        countries_value['whole_predict'].append(pred_values.tolist())
-
+        countries_value['whole_predict'].append(pred_values)
+        
         for country in [c1,c2]:
-            countries_value[country] = get_country_value(pred_values, country, country_list, with_index=not move)
-        return countries_value
-    return None
+            countries_value[country] = get_country_value(pred_values, country, country_list, with_index=False)
+        return new_c1_predicted_moves, countries_value
+    return None, None
 
 def get_prev_state_value(game_file_path, phase_name, c1, c2, c1_predicted_moves):
     c1 = c1.upper()
@@ -274,7 +265,7 @@ def get_prev_state_value(game_file_path, phase_name, c1, c2, c1_predicted_moves)
         return countries_value
     return None
 
-def get_real_value(game_file_path, phase_name, c1, c2, c1_predicted_moves):
+def get_actual_value(game_file_path, phase_name, c1, c2):
     c1 = c1.upper()
     c2 = c2.upper()
     # Here this game should be pydipcc
@@ -283,21 +274,68 @@ def get_real_value(game_file_path, phase_name, c1, c2, c1_predicted_moves):
     current_phase = phase['name']
     if get_pydipcc_game(game_file_path) is not None:
         pydipcc_game = get_pydipcc_game(game_file_path)
-        c1_predicted_cf = pydipcc_game.extract_first_stage_results(current_phase)
-
+        # c1_predicted_cf = pydipcc_game.extract_first_stage_results(current_phase)
+        c1_predicted_cf = pydipcc_game.rolled_back_to_phase_start(current_phase)
         for power in country_list:
             c1_predicted_cf.set_orders(power, phase['orders'][power])
 
         c1_predicted_cf.process()
         value_model = get_value_model()
         pred_values = value_model.forward_values([c1_predicted_cf], has_press=True, agent_power=c1)
-
         # Here compare with country_list, this is the alive powers
         countries_value = {}
         countries_value['whole_predict'] = []
         countries_value['whole_predict'].append(pred_values.tolist())
-
+        pred_values = pred_values.tolist()[0]
         for country in [c1,c2]:
             countries_value[country] = get_country_value(pred_values, country, country_list, with_index=False)
         return countries_value
     return None
+
+
+# TODO: Finished Task Eval by tonight
+def get_task_eval(game_file_path, phase_name, c1, c2, c1_predicted_moves, move):
+    c1 = c1.upper()
+    c2 = c2.upper()
+    country_list = ['AUSTRIA', 'ENGLAND', 'FRANCE', 'GERMANY', 'ITALY', 'RUSSIA', 'TURKEY']
+    phase = get_phase(game_file_path, phase_name)
+    current_phase_name = phase['name']
+    if get_pydipcc_game(game_file_path) is not None:
+        value_model = get_value_model()
+        pydipcc_game = get_pydipcc_game(game_file_path)
+        c1_predicted_cf = pydipcc_game.rolled_back_to_phase_start(current_phase_name)
+        actual_movement = phase['orders'][c1]
+        new_c1_predicted_moves = parse_predicted_moves(c1_predicted_moves, actual_movement)
+        prev_values = value_model.get_values(c1_predicted_cf, has_press=True, agent_power=c1)
+        if move:
+            c1_predicted_cf.set_orders(c1, new_c1_predicted_moves)
+            for power in country_list:
+                if power not in [c1]:
+                    c1_predicted_cf.set_orders(power, phase['orders'][power])
+            c1_predicted_cf.process()
+            # render = Renderer(c1_predicted_cf)
+            # render.render(output_path = '/home/wenkail/diplomacy/sotopia-diplomacy/src/map.xml')
+            pred_values = value_model.forward_values([c1_predicted_cf], has_press=True, agent_power=c1)
+            prev_values = prev_values.tolist()
+            pred_values = pred_values.tolist()[0]
+        else:
+            c1_predicted_cf.set_orders(c1, new_c1_predicted_moves)
+            for power in country_list:
+                c1_predicted_cf.set_orders(power, phase['orders'][power])
+            c1_predicted_cf.process()
+            pred_values = value_model.forward_values([c1_predicted_cf], has_press=True, agent_power=c1)
+            prev_values = prev_values.tolist()
+            pred_values = pred_values.tolist()[0]
+        task_eval_values = [pred_values[i] - prev_values[i] for i in range(len(pred_values))]
+        countries_value = {}
+        countries_value['whole_task_eval'] = task_eval_values
+            
+        for country in [c1,c2]:
+            countries_value[country] = get_country_value(task_eval_values, country, country_list, with_index=False)
+            
+        return actual_movement, new_c1_predicted_moves, countries_value
+    return None, None, None
+        
+        
+        
+        

@@ -1,0 +1,411 @@
+[
+    {
+        "game_id": "65732",
+        "phase_name": "S1903M",
+        "env_uuid": "01J59BRY4F3Y8BWT31W2P24RHM",
+        "Germany_original_predict": "A BOH SIL; A GAL RUM; A SIL PRU; F HOL HEL",
+        "England_original_predict": "F BAR S F NTH NWY; F BEL NTH; F BOT SWE; F EDI NWG",
+        "Germany_units": "A BOH, F HOL, A SIL, A GAL",
+        "England_units": "F BAR, F NTH, F BOT, F BEL, F EDI",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: Good day, England. As we both navigate this complex diplomatic landscape, I believe it would be in our best interests to discuss potential collaborative strategies that could fortify our positions. I'm particularly focused on securing Germany's borders and expanding strategically. Given England's impressive naval presence, there may be opportunities for us to support each other's movements. For instance, your fleet in the North Sea could prove quite pivotal. What are your thoughts on the current state of affairs, and how might we align our efforts this turn?\n1 ENGLAND -> GERMANY: Good day, Germany. It's a pleasure to discuss our potential cooperation. I am indeed interested in optimizing our naval and ground strengths. Given my fleet's position, I see a valuable opportunity for mutual benefit. Specifically, England could use support in securing more centers in the north, while Germany could benefit from my fleets' support against any potential threats from the east or west. A well-coordinated move could include my fleet in the North Sea supporting an advance into Scandinavia or assisting in the defense of your coastal territories. What do you envision for Germany's immediate moves, and how might England's fleets aid in that strategy?\n2 GERMANY -> ENGLAND: England, your proposal for support in Scandinavia aligns well with my plans. I'm considering moving to secure Denmark, which is currently vulnerable and a strategic position for both of us. If your North Sea fleet could support my move from Kiel to Denmark, it would greatly enhance our defensive capabilities in the region. In return, I could ensure the security of the Low Countries and provide support against any French advances. We could also consider a long-term strategy where I support an English move into Norway, further solidifying our control in the north. Does this plan align with your strategy for England's growth?\n3 ENGLAND -> GERMANY: Germany, your foresight in securing Denmark is commendable, and I agree that our combined efforts there could be quite advantageous. I will commit my North Sea fleet to support your move from Kiel to Denmark, which should help us establish a stronger hold in Scandinavia. In turn, I trust Germany will guard the Low Countries and keep a watchful eye on French movements. Once Denmark is secured, we could indeed turn our attention to Norway. This cooperative approach seems to align perfectly with England's aspirations for growth and stability in the region.\n4 GERMANY -> ENGLAND: Excellent cooperation, England. With your support for the move from Kiel to Denmark, we're setting a solid foundation for our alliance. Let's proceed with our agreed actions this turn. Additionally, I'll keep a vigilant eye towards the west and ensure the Low Countries are secure. Once Denmark is under our influence, I propose we immediately start planning our coordinated strategy for Norway. Keeping our mutual interests in mind, our alliance can lead to a formidable presence in the north. I look forward to seeing our strategies come to fruition.\n5 ENGLAND -> GERMANY: I'm pleased we're in agreement, Germany. With our move to Denmark underway, let's maintain open communication to swiftly adapt to any changes. I'll be ready to support the push into Norway following our success in Denmark. Our collaboration has indeed been productive. I'll ensure that my fleets and armies are positioned to complement our strategy and to respond to any threats that may arise. Looking forward to our continued alliance and shared success in the turns to come.\n6 GERMANY -> ENGLAND: Thank you, England. Your readiness to support our initiative gives me great confidence in our alliance. As we execute the move to Denmark, let's not forget to look ahead and anticipate any potential counter-moves by our opponents. It's essential that we stay one step ahead. I suggest we review our positions after the resolution of this turn to fine-tune our strategy and ensure that our moves into Norway and beyond are well-planned and supported. Together, we can create a dominant force in the north and secure our futures. I am eager to continue this partnership and achieve our mutual goals.\n7 ENGLAND -> GERMANY: Your strategic mindset is appreciated, Germany. As Denmark's fate unfolds, we'll indeed need to anticipate our adversaries' responses. I share your eagerness to reassess our positions post-turn to ensure our strategy for Norway is robust. By working closely, not only do we secure the north, but we also pave the way for a broader domination of the board. I am committed to our alliance and confident that together we will achieve a significant advantage. Let's remain vigilant and adaptive as we progress.\n8 GERMANY -> ENGLAND: I wholeheartedly concur, England. Our alliance has been exemplary in its foresight and execution thus far. After we consolidate our hold on Denmark, our next phase towards Norway will be crucial. I propose after this turn, we conduct a detailed analysis of the board to identify any vulnerabilities and opportunities. This way, we can adjust our tactics accordingly and maintain the upper hand. Our unity and strategic harmony have set a strong precedent, and I am optimistic that our continued collaboration will lead us both towards a prosperous outcome on the board.\n9 ENGLAND -> GERMANY: Agreed, Germany. After securing Denmark, a thorough analysis will be vital for our continued success. We'll identify where we can press our advantage and where to fortify our defenses. I trust that our concerted efforts will keep us ahead of the game. I am as optimistic as you are about the potential of our alliance to lead us towards victory. Let us proceed with our plan and reconvene after this turn's developments to adapt and strategize for Norway and beyond.\n10 GERMANY -> ENGLAND: Indeed, England, after we establish control over Denmark, consolidating our efforts towards Norway will be our next strategic priority. Our alliance has proven to be a source of strength and I'm confident that we will be able to leverage our combined forces to not only secure Norway but also to continue expanding our influence across the board. Let us move forward with our current plan and, once this turn's actions have been resolved, we will reconvene to analyze the outcomes and plan our subsequent moves. I believe that through meticulous planning and mutual support, we are on the path to a significant victory.\n11 ENGLAND -> GERMANY: Your assurances are well received, Germany. I am confident that our joint control over Denmark will be a significant step towards our broader objectives. Once we have a foothold in Norway, our alliance will indeed be an imposing force. I am fully committed to our strategy and believe our cooperation will be the cornerstone of success. After this turn, we will have a clearer picture and can adjust our tactics for the Norwegian endeavor. Let's keep this momentum going and turn our plans into a decisive advantage.\n12 GERMANY -> ENGLAND: England, our concerted effort in controlling Denmark has laid the groundwork for a strong northern alliance. I am committed to supporting the move into Norway and look forward to reinforcing our strategy. After this turn's adjustments, let us reconvene to fine-tune our tactics, ensuring we maintain a solid front against any opposition. Our collaboration has been nothing short of exemplary, and I am confident that it will continue to yield the results we aim for. Let's proceed with determination and adaptability.\n13 ENGLAND -> GERMANY: Germany, our collaboration has indeed set the stage for a strong northern alliance. As we look beyond Denmark, I am ready to support the move into Norway, ensuring we continue to build upon our strategic partnership. After this turn, we will analyze the board together, refine our strategy, and address any new developments. I'm confident in our alliance's ability to adapt and succeed. Let's maintain our focus and work towards our mutual victory.\n14 GERMANY -> ENGLAND: Thank you, England, for the reassurance. Our united front in Denmark is a testament to our successful collaboration. As we prepare for the move into Norway, I am confident that our alliance is both strong and adaptable. Post-turn, let us review the board and strategize accordingly. Our shared vision for growth and stability in the region is within reach, and I am excited to continue this journey with you. Together, we will strive for dominance on the board and secure a lasting victory.\n15 ENGLAND -> GERMANY: It is with great anticipation that I look forward to our next phase of strategy, Germany. Our alliance has proven formidable, and as we prepare our move into Norway, our shared objectives seem more attainable than ever. Post-turn analysis will be crucial to adapt our strategy and ensure continued success. I value your partnership, and together, I am confident we will achieve dominance on the board. Let us advance with unity and strategic precision.\n16 GERMANY -> ENGLAND: I am equally enthusiastic about our collaboration, England. As we advance with our strategies, I will ensure Germany's forces are positioned to complement our joint objective for Norway. Following our turn's activities, we will reconvene to strategically analyze the board and continue our path to a shared triumph. Our alliance has indeed been a testament to strategic partnership and I am eager to see our plans lead us to a dominant position on the board.\n17 ENGLAND -> GERMANY: Germany, as we position ourselves for the move into Norway, I will align England's naval strength to support our joint military efforts. After the resolution of this turn, we will meet to analyze the board's landscape and orchestrate our next moves. Our alliance's cohesion has been instrumental, and I am committed to ensuring it remains so as we aim for a commanding presence on the board. I look forward to our continued partnership and the strategic progress we will make together.\n18 GERMANY -> ENGLAND: Your strategic alignment with our plans for Norway is encouraging, England. As we await the outcome of this turn, I am confident that our coordinated approach will serve us well. I look forward to our meeting to analyze the board and refine our strategy, ensuring that our alliance remains a driving force. With our shared vision and collaborative spirit, there's no doubt that we will continue to strengthen our positions on the board. Until we reconvene, let us remain vigilant and proactive.\n19 ENGLAND -> GERMANY: Thank you, Germany. Your commitment to our shared strategies assures me of the strength of our alliance. As we wait for the outcomes of this turn, I am poised to analyze and strategize for our continued advancement into Norway. Our alliance has indeed been a cornerstone of effective collaboration, and I am confident that it will guide us to a strong position on the board. I look forward to our next meeting to further refine our tactics and ensure our dominance in the region. Until then, let's stay alert and ready to act.\n20 GERMANY -> ENGLAND: I appreciate the mutual confidence in our strategic partnership, England. As this turn concludes, I am prepared to assess the developments and work closely with you to refine our approach towards Norway. Our alliance has indeed been the bedrock of our progress, and I am certain that our combined efforts will lead us to a commanding position on the board. Until our next discussion, let us stay sharp and ready to adapt to any challenges that may arise.",
+        "Germany_parse_predict": [
+            "A GAL - RUM"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.001771640731021762,
+                0.214076429605484,
+                -0.09984759241342545,
+                0.025556307286024094,
+                0.0577709786593914,
+                -0.16668422147631645,
+                -0.029100269079208374
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.025556307286024094
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.214076429605484
+            ]
+        },
+        "England_parse_predict": [
+            "F NTH - NWY",
+            "F BEL - NTH"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.0026642915327101946,
+                0.16424837708473206,
+                -0.1173890233039856,
+                0.02645764872431755,
+                0.1054840199649334,
+                -0.17317810514941812,
+                -0.00295865535736084
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.16424837708473206
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.02645764872431755
+            ]
+        }
+    },
+    {
+        "game_id": "50922",
+        "phase_name": "S1903M",
+        "env_uuid": "01J59BRYJKH6QPCXQSP8FPAME4",
+        "Austria_original_predict": "A BUD H; A BOH GAL; A ALB SER",
+        "Italy_original_predict": "A VEN TRI; A ROM APU; A VIE S A BUD; F APU ADR; F ION GRE",
+        "Austria_units": null,
+        "Italy_units": "A VEN, F ION, F APU, A VIE, A ROM",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: Good day. I've been considering our positions on the board, and I think there could be some beneficial moves we could discuss. Specifically, I'm looking at the strategic value of the Balkans and how we might ensure stability in the region. What are your thoughts on the current distribution of forces?\n1 ITALY -> AUSTRIA: Buongiorno, Austria. I appreciate your initiative to discuss strategy. Stability in the Balkans is crucial, indeed. My current forces are positioned in Venice, Vienna, and the surrounding seas. I believe a joint effort to control and defend this area could be mutually beneficial. Perhaps we can support each other's moves to ensure a stronger hold on the region. Do you have any specific moves in mind that could serve our interests?\n2 AUSTRIA -> ITALY: Ciao Italy, I'm pleased we're on the same page regarding the Balkans. For Austria, a move from Albania to support an advance into Serbia could be advantageous. Meanwhile, my army in Budapest is in a prime position to support hold Vienna from any aggression. Your control over Venice and the adjacent seas provides us both with a defensive perimeter while we consolidate power in the region. How do you feel about coordinating our efforts in such a way? And do you have any concerns or additional ideas?\n3 ITALY -> AUSTRIA: Your proposal aligns well with my strategic interests, Austria. The support from Albania to Serbia is a sensible move, strengthening our presence in the Balkans. As for Vienna, your support is invaluable. In return, I can commit my fleets to maintain our security from the seas, ensuring no external forces can easily penetrate our perimeter. We should also consider future expansions and how to protect our newly gained territories. Do you have any contingencies in mind for the next phases of our expansion?\n4 AUSTRIA -> ITALY: Italy, I'm glad to hear we're aligned. For the next phase, it's essential to keep an eye on potential threats from neighboring powers. A contingency plan should include securing support from allies and potentially outmaneuvering any hostile advances. Specifically, we need to consider the movements of Russian and Turkish forces. Strengthening our position in the Balkans now can provide us with a springboard for future expansions. Perhaps we can discuss a non-aggression pact with one of our neighbors to ensure we can focus on growth without immediate threats. What are your thoughts on initiating such diplomatic relations?\n5 ITALY -> AUSTRIA: A non-aggression pact could indeed be a strategic safeguard, Austria. Diplomatic relations with either Russia or Turkey could afford us the space needed to focus on the Balkans and beyond. My inclination is towards opening a dialogue with Turkey, as their position could directly influence our movements in the Balkans. However, this must be a carefully balanced approach to avoid tipping the scale of power. What are your thoughts on approaching Turkey with this proposition? We should also consider a contingency in case talks do not proceed as desired. It's pivotal to maintain flexibility in our strategies.\n6 AUSTRIA -> ITALY: Reaching out to Turkey seems like a prudent choice, Italy. I concur that their geographical position and potential influence in the Balkans make them an ideal candidate for a non-aggression pact. Let's proceed with caution and extend a diplomatic offer to Turkey. Meanwhile, we should also prepare for the scenario where Turkey might decline our proposal. In that case, fortifying our defenses and possibly seeking support from another neighbor such as Russia could be our fallback strategy. We must stay vigilant and adapt as the situation evolves. Shall we finalize our movements for this turn and set the groundwork for our diplomatic outreach to Turkey?\n7 ITALY -> AUSTRIA: Austria, our plans are coming together smoothly. Let's finalize our moves for this turn: I'll move from Albania to support Serbia, and ensure our fleets solidify our defense from the seas. Meanwhile, we'll extend a careful diplomatic offer to Turkey. Should our offer be declined, we'll turn to Russia for a possible alliance and continue to fortify our positions. It's a delicate balance, but I'm confident in our strategic approach. When you're ready, let's communicate our decisions and prepare for the next phase of the game.\n8 AUSTRIA -> ITALY: Italy, our coordination is key to our success. I'll move from Albania to support Serbia as discussed. I'll also ensure Budapest and Vienna are well-defended. I agree to reach out to Turkey with our diplomatic offer. Let's remain in close communication to swiftly adjust our strategy in response to any new developments. It's time to implement our plans and I'm ready to proceed with the next phase. Are we in agreement on all points?\n9 ITALY -> AUSTRIA: Yes, Austria, we are in full agreement. I'll proceed with supporting Serbia from Albania and keeping our naval defenses strong. Your moves to secure Budapest and Vienna will be crucial. I'm ready to move forward with our diplomatic approach to Turkey, and we'll stay alert to adapt our strategy as needed. Let's stay in close contact to effectively respond to the unfolding events. Buona fortuna to us both as we move into the next phase.\n10 AUSTRIA -> ITALY: Grazie, Italy. We're set for this turn. I'll proceed with the support in Serbia and secure our defenses. I'll also initiate the dialogue with Turkey. Let's keep our lines open for quick adjustments and be ready for any potential responses. Together, we'll navigate the board effectively. Let's move forward with our agreed strategy.\n11 ITALY -> AUSTRIA: Perfetto, Austria. With our strategy set and our moves coordinated, I believe we're well-prepared for this turn. I'll make sure our naval forces are positioned effectively, and I'm on standby to manage our diplomatic efforts with Turkey. As we've planned, let's remain vigilant and ready to adapt. I look forward to seeing how our strategy unfolds and to our continued collaboration. A presto.\n12 AUSTRIA -> ITALY: A presto, Italy. With our moves and strategies in place, I am optimistic about our prospects. Remember, flexibility and communication are key. I'll keep you updated on the discussions with Turkey and any strategic changes we might need to consider. Until our next move, let's stay prepared and proactive.\n13 ITALY -> AUSTRIA: Grazie, Austria. Communication and adaptability are indeed our pillars of strength. I'll stay ready to adjust our plans as necessary and will await updates on the dialogue with Turkey. Until our next discussion, let's keep our focus sharp and our tactics dynamic. Buona fortuna, and speak soon.\n14 AUSTRIA -> ITALY: Grazie, Italy. I'm confident our strategic collaboration will yield positive results. I'll ensure our moves are executed as planned and keep an attentive eye on the broader board dynamics. We'll touch base after the moves have been made to reassess and plan our next steps. Buona fortuna to us, and until our next conversation, let's maintain our strategic edge.\n15 ITALY -> AUSTRIA: Grazie, Austria. Our strategy is well-planned, and I'm eager to see how it plays out. I will proceed with our naval positioning and monitor the situation closely. Post-movement, we'll reconvene to analyze the outcomes and determine our future course of action. Until then, let's keep a steady hand on the game. Buona fortuna, and I'll be in touch soon.\n16 AUSTRIA -> ITALY: Buona fortuna to you as well, Italy. Our meticulous planning will surely guide us well. I'll move forward with the agreed actions and keep vigilant. I'll be in touch after we've seen the results of this turn to discuss our next moves. Until then, let's play with precision and foresight.\n17 ITALY -> AUSTRIA: Certainly, Austria. I look forward to our strategic collaboration bearing fruit. As we both execute our planned actions, we will remain observant and ready to adapt to the evolving game board. After the turn's outcomes are clear, we'll reconvene to discuss our forthcoming strategies. Until then, let's play with insight and determination.\n18 AUSTRIA -> ITALY: Absolutely, Italy. Once we've implemented our current strategies and assessed the results, we'll have a clearer picture to inform our next decisions. I'm ready to adapt to any new developments and continue our collaborative efforts. I'll reach out after the turn to discuss our situation and plan accordingly. Until then, let's remain strategically engaged and proactive.\n19 ITALY -> AUSTRIA: I concur, Austria. After we see the results of our current strategies, we can make well-informed decisions for our next steps. I'm prepared to adapt to the evolving dynamics and continue our successful partnership. I'll be ready for our discussion post-turn to refine our strategy and maintain our momentum. Until our next conversation, let's remain focused and strategic.\n20 AUSTRIA -> ITALY: Thank you, Italy. With our strategies set and our adaptability at the ready, I am confident in our direction. I'll closely monitor the board as our plans unfold and will contact you post-turn to refine our future plays. Until then, let's keep our strategies sharp and our alliance strong.",
+        "Austria_parse_predict": [],
+        "Austria": {
+            "whole_task_eval": [
+                -0.0015378333628177643,
+                -0.014500421355478466,
+                -0.15728239342570305,
+                0.17723801732063293,
+                0.2123868465423584,
+                -0.04661351442337036,
+                -0.16969071328639984
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.0015378333628177643
+            ],
+            "ITALY": [
+                "ITALY",
+                0.2123868465423584
+            ]
+        },
+        "Italy_parse_predict": [
+            "A VEN - TRI"
+        ],
+        "Italy": {
+            "whole_task_eval": [
+                0.00634186714887619,
+                -0.01437831250950694,
+                -0.14785191789269447,
+                0.22186121344566345,
+                0.07874880731105804,
+                -0.11346353590488434,
+                -0.03125810623168945
+            ],
+            "ITALY": [
+                "ITALY",
+                0.07874880731105804
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.00634186714887619
+            ]
+        }
+    },
+    {
+        "game_id": "114931",
+        "phase_name": "F1904M",
+        "env_uuid": "01J59BRZMX5H6G94MPRA4XF58T",
+        "Austria_original_predict": "A SER BUL; A GAL WAR; A VIE GAL; F GRE S A SER BUL",
+        "Italy_original_predict": "A ALB H; A SMY H; F AEG S A SER BUL; F EAS S A SMY; F ION H",
+        "Austria_units": null,
+        "Italy_units": "F EAS, A SMY, A ALB, F AEG, F ION",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: Italy, it's crucial for us to discuss our strategies moving forward. With my units positioned in Serbia, Greece, Vienna, and Galicia, I'm considering a move to secure more centers. For instance, I might push from Serbia to Bulgaria to gain a strategic position there. However, I'm open to suggestions that could benefit us both. Do you have any proposals or preferences for moves this turn that we should consider?\n1 ITALY -> AUSTRIA: Austria, I appreciate the opportunity to collaborate. A move from Serbia to Bulgaria could indeed strengthen your position. However, I'm looking at the bigger picture and considering Italy's future moves. I have a fleet in the Eastern Mediterranean and Ionian Sea, and an army in Smyrna, which puts me in a good position to support an advance into the Balkans. If you move into Bulgaria, I could support that action from Greece, solidifying our hold there. In return, I would be interested in discussing how we can work together to counterbalance the growing influence of other powers, particularly in the west. Perhaps there's a way we can coordinate to ensure mutual growth and security. What are your thoughts on this?\n2 AUSTRIA -> ITALY: Italy, your proposal to support my advance into Bulgaria from Greece aligns well with my strategy. In return, I understand the importance of countering other powers together. I'm particularly concerned about Russia's movements. We could benefit from an alliance. If you're interested, we might also consider a joint effort against Italy's southward expansion, provided it does not interfere with our immediate goals. How do you feel about creating a united front on these matters?\n3 ITALY -> AUSTRIA: I'm glad we're on the same page about supporting your move into Bulgaria, Austria. As Italy, I must clarify that I have no intention of expanding southward at this time. My focus is on securing a strong position in the Mediterranean and protecting my interests there. A united front against external threats makes sense. We could consider a coordinated move where my fleets in the Eastern Mediterranean and Ionian Sea could cut off any potential for interference from Turkey, while you secure Bulgaria. This would help us both to solidify our influence in the region. Let's continue to communicate openly to ensure our strategies align and to adapt to the changing dynamics of the game as needed.\n4 AUSTRIA -> ITALY: Italy, your insight is invaluable, and I respect your focus in the Mediterranean. It's clear that our interests are aligned for the moment. I'll move to secure Bulgaria with your support. In addition, I'll keep an eye on Russia and the surrounding areas to ensure we're both shielded from any potential threats. It's imperative that we maintain this line of communication to react swiftly to any changes. Together, I believe we can create a significant advantage for ourselves in the Balkans and beyond.\n5 ITALY -> AUSTRIA: Thank you, Austria. I appreciate your willingness to coordinate and keep a watchful eye on Russia. The support for the move into Bulgaria is ready, and I'll ensure my fleets are positioned to prevent any interference from Turkey as planned. It's crucial that we each strengthen our positions to ensure long-term stability. I'll be sure to keep you updated on any movements in the Mediterranean that could affect our strategy. Let's touch base again next turn to review our progress and plan our next steps.\n6 AUSTRIA -> ITALY: Italy, I'm pleased with our collaboration thus far. The support into Bulgaria is crucial for our growth. I'll proceed as planned and I trust you'll do the same with your fleets. Let's ensure our actions this turn are executed flawlessly. I'll reach out next turn so we can assess the situation and strategize further. Until then, let's stay vigilant and proactive.\n7 ITALY -> AUSTRIA: Austria, I'm committed to our plan and will proceed with the fleet movements as we discussed. It's encouraging to see our strategy taking shape. I'll be waiting for your update after this turn's actions to discuss any new developments and potential adjustments for our future moves. Together, we'll stay ahead of the game. Best of luck with the move into Bulgaria.\n8 AUSTRIA -> ITALY: Italy, your commitment to our strategy is reassuring. As we move into the next phase, our successful coordination will be key. I'll be making the move into Bulgaria, and I'm looking forward to seeing our plan in action. I'll contact you after the move to debrief and discuss our subsequent strategies. Let's keep up the momentum and work towards our mutual advantage.\n9 ITALY -> AUSTRIA: Austria, the anticipation of seeing our strategy unfold is quite exhilarating. I'm confident that our coordinated efforts will pave the way for a strong alliance and a powerful presence in the region. Once the move into Bulgaria is complete, we'll have a solid foundation to build upon. I'll await your update and am ready to discuss future strategies. Let's ensure our mutual success and keep our eyes on the ultimate goal of controlling key supply centers.\n10 AUSTRIA -> ITALY: Italy, the stage is set for our strategy to come to fruition, and I share in the excitement of our joint efforts. Once we've secured Bulgaria, we can leverage this position to further our influence. I'll be in touch after the move to share any new intelligence and to refine our tactics. Here's to a successful turn and the ongoing strength of our alliance.\n11 ITALY -> AUSTRIA: Austria, I'm looking forward to consolidating our positions with the successful move into Bulgaria. I'm fully prepared for the next phase of our alliance and eager to discuss how we can continue to support each other. After the turn, let's analyze the board and consider our options to extend our influence. Here's to our combined efforts and a strong turn ahead.\n12 AUSTRIA -> ITALY: Italy, your readiness for the next phase is matched by my own determination. After we complete the move into Bulgaria, our attention must turn towards safeguarding our gains and considering potential expansions. I'll reach out post-movement to strategize based on the updated board state. Our alliance has proven to be a formidable force, and I'm optimistic about our future maneuvers. Here's to a successful turn and the continued success of our strategy.\n13 ITALY -> AUSTRIA: Austria, as we secure Bulgaria, it's essential to stay mindful of our surroundings. After this turn, we need to review the board and determine our next moves carefully. Our alliance has been fruitful, and I'm certain we can maintain this momentum. I'll await your post-movement update with great interest, ready to strategize for the longevity and expansion of our influence. Here's to a promising future for our coalition.\n14 AUSTRIA -> ITALY: Italy, as our plans for Bulgaria come to fruition, I'll ensure we review our progress and strategize for continued expansion. Your partnership has been instrumental, and I anticipate furthering our alliance with the same level of trust and cooperation. I'll be in touch after the turn to share our next steps. Until then, let's secure our current objectives and prepare for the opportunities ahead.\n15 ITALY -> AUSTRIA: Austria, with our plans moving forward smoothly, it's crucial that we maintain our focus on solidifying our positions. Once I've received your update post-Bulgaria move, we can fine-tune our strategy. It's important that we keep an eye on any shifts in power balance and remain adaptable. I'm ready to engage in thorough planning for our next steps to ensure the longevity of our alliance. Here's to a successful move and a strong partnership.\n16 AUSTRIA -> ITALY: Italy, your commitment to strategic planning is commendable. As we proceed with the move into Bulgaria, the success of our current plan will pave the way for further collaboration. Post-move, we will explore our next steps to ensure the stability and growth of our positions. I anticipate our continued cooperation will be a cornerstone of our strategy. Here's to a triumphant turn and a fortifying alliance.\n17 ITALY -> AUSTRIA: Austria, as we approach the execution of our strategy with the move into Bulgaria, my fleets and armies are positioned as discussed. I'll execute our agreed-upon plans to ensure we both benefit from this turn's actions. Once the move is completed, I'm keen to review the board and discuss our next strategic steps. It's clear that our alliance has the potential to significantly influence the balance of power on the board. I'm looking forward to our continued collaboration. Here's to a successful turn and a durable alliance.\n18 AUSTRIA -> ITALY: Italy, the dedication to our shared goals is the driving force behind our current success. As we execute our move into Bulgaria, I'll make sure to carefully analyze the outcomes and potential developments. I look forward to our post-move discussion to consider our future strategies and maintain our strong alliance. Here's to a well-coordinated turn and the resilience of our partnership.\n19 ITALY -> AUSTRIA: Austria, I share your dedication to our strategic success. As we finalize our move into Bulgaria, I will be vigilant in ensuring our plans are carried out effectively. Post-move, I am eager to analyze our position and strategize for the next steps. Our collaboration has been pivotal, and I am optimistic about the future of our alliance. I look forward to our next discussion to refine our tactics and strengthen our partnership. Here's to a well-executed turn and a robust alliance.\n20 AUSTRIA -> ITALY: Italy, your strategic acumen is as clear as ever. As we finalize our Bulgaria move, I'll make certain our plans are executed flawlessly. Post-move, let's deliberate on our positions and identify the most advantageous routes to expand our influence. Our alliance has indeed been a bedrock of our success, and I eagerly await our next strategy session. Here's to a flawless turn and the continued strength of our partnership.",
+        "Austria_parse_predict": [
+            "A VIE - GAL"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                -0.04452658235095441,
+                -0.20005512237548828,
+                0.01068410323932767,
+                -0.08858461678028107,
+                0.2653929442167282,
+                0.05963139981031418,
+                -0.0025421069003641605
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.04452658235095441
+            ],
+            "ITALY": [
+                "ITALY",
+                0.2653929442167282
+            ]
+        },
+        "Italy_parse_predict": [
+            "F ION H",
+            "F AEG S A SER - BUL"
+        ],
+        "Italy": {
+            "whole_task_eval": [
+                0.13345381245017052,
+                -0.02399584650993347,
+                0.017511286307126284,
+                -0.07010314241051674,
+                -0.035541340708732605,
+                -0.024034127593040466,
+                0.0027092662639915943
+            ],
+            "ITALY": [
+                "ITALY",
+                -0.035541340708732605
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.13345381245017052
+            ]
+        }
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "F1905M",
+        "env_uuid": "01J59BS084GNA6C2HKMTR6YZXR",
+        "France_original_predict": "A MUN BER; A KIE S A MUN BER; A RUH S A KIE; A TYR MUN; F MAO S F IRI; F TUN H; F ROM NAP; F TYS S F ROM NAP",
+        "England_original_predict": "A DEN LVN VIA; A STP MOS; F BAL C A DEN LVN; F BAR NWY; F IRI H; F NTH S F BAR NWY",
+        "France_units": "A MUN, A RUH, A KIE, F MAO, F TYS, A TYR, F TUN, F ROM, F LYO",
+        "England_units": "F NTH, A DEN, F BAR, A STP, F BAL, A BEL, F IRI",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: Hello England, it's a pleasure to strategize with you. I've been observing the board and considering our current positions, I believe there might be an opportunity for us to both benefit from a little cooperation. What are your thoughts on orchestrating some moves that could strengthen our holds in the north? I'm open to suggestions and am particularly interested in how we might support each other against other threats.\n1 ENGLAND -> FRANCE: Hello France, the pleasure is mutual. I'm glad to hear you're interested in a cooperative approach. Given the current distribution of power, a strong Anglo-French alliance could indeed be quite influential in the north. I'm considering a move to bolster our defenses around the North Sea. Perhaps your fleets could provide support from the Mid-Atlantic Ocean? This could be a solid deterrent against any northern advances and help us both secure key territories. Additionally, I have my eye on Norway, and I'd appreciate your insight on how we might collaborate to ensure its safety and potentially use it as a stepping stone for further expansion.\n2 FRANCE -> ENGLAND: England, I appreciate your strategic mindset. Strengthening our defenses around the North Sea is a smart move. I can indeed provide support from the Mid-Atlantic Ocean; my fleet there could move to support an English fleet in the North Sea, which would fortify our position. As for Norway, I suggest we could arrange a supported attack on it with your forces from Sweden, while I could offer support from Norway's neighboring territories. This could ensure that Norway remains under our influence and doesn't fall to Russian expansion. What do you think of this plan?\n3 ENGLAND -> FRANCE: Your plan aligns well with our shared interests, France. I agree that a supported move into Norway with your assistance from adjacent territories would be highly beneficial. Let's proceed with the support move from the Mid-Atlantic Ocean to the North Sea as well, to solidify our defenses. It's crucial, however, to keep a keen eye on the Russians and be prepared to adjust if they make any unpredictable moves. Perhaps we should also consider a contingency to support Denmark from potential aggression, utilizing your presence in Ruhr. This could prove advantageous in maintaining balance and ensuring our combined strength in the region.\n4 FRANCE -> ENGLAND: I'm fully on board with the plan to support Denmark from potential aggression, England. It's a wise precaution. My forces in Ruhr are prepared to provide the necessary support to Denmark. This will indeed help us to secure our positions and contain any possible threats. As we continue with these moves, let's maintain open lines of communication to adapt to any Russian maneuvers that could alter the strategic landscape. Are there any other areas on the board where you foresee the need for joint action or support this turn?\n5 ENGLAND -> FRANCE: I believe we've set a solid course for our immediate moves, France. Given the potential volatility further east, I'd suggest we also monitor the situation in Belgium. It's a valuable center and could become a flashpoint. If you're in a position to reinforce Belgium from Ruhr, it could serve as both a shield against eastern threats and a springboard for future joint operations. Additionally, I'll ensure that my fleet in the Irish Sea remains vigilant, ready to respond to any changes in the balance of power along the coast. Shall we consider these additional measures as part of our strategic overview for the turn?\n6 FRANCE -> ENGLAND: Monitoring Belgium is a prudent suggestion, England. I'll ensure that my forces in Ruhr are ready to reinforce Belgium if necessary. This move, coupled with your fleet's vigilance in the Irish Sea, creates a robust defense and offers us a strategic advantage. We should indeed incorporate these measures into our strategy for the turn. Let's keep a close watch on the eastern front and be ready to support each other as the situation evolves. Our alliance is shaping up to be a formidable force.\n7 ENGLAND -> FRANCE: France, our collaborative efforts are indeed forming a powerful alliance. With our current strategy in place, we should be able to effectively counter any developments from our eastern neighbors. As we fortify Belgium and control the seas, let's also not overlook the value of diplomatic relations with other powers. It might be beneficial to open dialogues with other countries to further secure our position. For now, let's execute our agreed moves and remain adaptable to the changing dynamics of the board. I'm confident in our alliance and look forward to seeing our strategy come to fruition.\n8 FRANCE -> ENGLAND: Absolutely, England. Establishing diplomatic relations with the other countries could provide us with a strategic cushion and might even open up new avenues for expansion. I will reach out to our neighbors and gauge their interests in supporting our agenda, without compromising our current plans. As we move forward with our agreed-upon strategy, let's remain vigilant and responsive to any unexpected shifts. With our combined military acumen and the strength of our alliance, I am optimistic about our prospects. Let's touch base after the moves are made to assess the outcomes and plan our next steps.\n9 ENGLAND -> FRANCE: France, I concur with your approach to diplomatic outreach. A well-rounded strategy includes not only military coordination but also the art of negotiation with the broader field. After we make our moves, assessing their impact will be crucial in planning our subsequent actions. I'll keep a close watch on the North Sea and adjacent territories to ensure our hold remains firm. Let's debrief post-move to discuss future possibilities and maintain the momentum of our alliance.\n10 FRANCE -> ENGLAND: England, your vigilance in the north is commendable. After our moves are made, a debrief will be essential to ensure we are aligned and ready for the next phase. I'll also be monitoring the board closely and will be prepared to adapt our strategy as needed. Our alliance is indeed proving to be a pivotal element of this game. Let's proceed with our plans and connect after the moves to solidify our subsequent strategy.\n11 ENGLAND -> FRANCE: Thank you, France. I'm glad we're in agreement and have a clear path forward. I'll make the necessary preparations and look forward to connecting after our moves to further discuss our strategy. Together, we'll work towards a dominant position on the board. Until then, let's stay focused and proactive.\n12 FRANCE -> ENGLAND: Excellent, England. Preparations are underway on my end as well. Your partnership has been invaluable in this endeavor. Let's both stay sharp as the game unfolds. I'll reach out after our moves to continue our discussion on securing a dominant position for our alliance. Until then, good luck and speak soon.\n13 ENGLAND -> FRANCE: Likewise, France. Your strategic insight has greatly contributed to our collaboration. I'll be ready to discuss and adapt our strategy after we've seen the results of our moves. Until our next conversation, I wish you the best on the board. Speak soon.\n14 FRANCE -> ENGLAND: Thank you, England. Your commitment to our strategy is clear, and I am equally ready for the next steps. We'll reconvene after our moves to refine our tactics and continue our push for a dominant position. Until our next exchange, may our moves be successful. Speak soon.\n15 ENGLAND -> FRANCE: Thank you, France. I look forward to our next strategic session. May our moves pave the way for a strong and lasting alliance. Speak soon.\n16 FRANCE -> ENGLAND: I'm looking forward to it as well, England. Our strategic alliance is set to make a significant impact on the board. Speak soon, and let's aim for that strong and lasting presence. Good luck!",
+        "France_parse_predict": [
+            "F MAO S F IRI",
+            "A KIE S A MUN - BER",
+            "A MUN - BER",
+            "F TUN H",
+            "F LYO - TYS",
+            "F ROM - NAP"
+        ],
+        "France": {
+            "whole_task_eval": [
+                0.01568778231739998,
+                -0.018984824419021606,
+                0.29057562351226807,
+                -0.002187440055422485,
+                -0.016813774593174458,
+                -0.19984422251582146,
+                -0.06843314971774817
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.29057562351226807
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                -0.018984824419021606
+            ]
+        },
+        "England_parse_predict": [
+            "F NTH S F BAR - NWY",
+            "F IRI H",
+            "A BEL H",
+            "F BAL C A DEN - LVN"
+        ],
+        "England": {
+            "whole_task_eval": [
+                0.055195894092321396,
+                -0.07840943336486816,
+                0.23940789699554443,
+                -0.0014307200908660889,
+                -0.01644690101966262,
+                -0.12443094700574875,
+                -0.07388571696355939
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                -0.07840943336486816
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.23940789699554443
+            ]
+        }
+    },
+    {
+        "game_id": "43830",
+        "phase_name": "S1904M",
+        "env_uuid": "01J59BRZEZM7F91EWQYG8NPYPX",
+        "Austria_original_predict": "A BUD TRI; A BUL S F BLA CON; A GAL WAR; A RUM SER; A VIE S A BUD TRI; F GRE AEG; F TRI ADR",
+        "Russia_original_predict": "A PRU LVN; A SWE DEN; A UKR SEV; F BLA CON; F NWY SWE; F ANK S F BLA CON; F SKA S A SWE DEN",
+        "Austria_units": null,
+        "Russia_units": "F BLA, A SWE, F SKA, A PRU, F NWY, F ANK, A UKR",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: Hey Russia, I've been looking at the board and I think we might have some common interests to discuss. For my part, I'm focusing on strengthening Austria's position and I'm considering a few strategic moves. What's your perspective on the current situation?\n1 RUSSIA -> AUSTRIA: Hello Austria, I appreciate you reaching out. Strengthening Austria is certainly an interesting move. I believe we can find mutual benefits in our strategies. For Russia, maintaining a strong front in both the north and south is key. I'm considering advancing in Scandinavia and possibly securing Turkey's centers. What specific moves did you have in mind, and how do you see our forces aligning in this context?\n2 AUSTRIA -> RUSSIA: It's good to hear we might align, Russia. My immediate concern is securing the Balkans and potentially pushing northwards. I'm looking at moving A BUL to CON to disrupt any potential threats from that direction, and perhaps supporting A GAL to WAR to strengthen our northern border. Meanwhile, F GRE could move to AEG to establish naval control. Do you have any moves that could complement these, or perhaps require support from my side?\n3 RUSSIA -> AUSTRIA: Austria, your plans for the Balkans and the northern border sound well-considered. I could potentially move F BLA to CON to assist your A BUL, ensuring we disrupt any threats effectively. Meanwhile, A SWE could move to DEN to strengthen our position in Scandinavia. If you're moving F GRE to AEG, it would be beneficial if we can coordinate to hold off any fleets attempting to enter BLACK SEA. What are your thoughts on this collaboration?\n4 AUSTRIA -> RUSSIA: Russia, I believe our coordinated efforts can indeed be very effective. Your move of F BLA to CON aligns perfectly with my intentions, and I appreciate your initiative there. With A SWE moving to DEN, I see a solid front forming in Scandinavia as well. As for the AEG and BLACK SEA area, I agree that mutual support is essential. I propose we plan to prevent any foreign fleets from entering BLACK SEA, creating a strong defensive line. Let's solidify these moves and consider how we can further support each other in the long run. Are there any other areas where you anticipate needing support or where you see an opportunity for a joint strategy?\n5 RUSSIA -> AUSTRIA: I'm glad we're on the same page, Austria. Your support with F BLA to CON and the coordination in the BLACK SEA will be critical. Beyond this, I'm also looking at the potential to secure Norway and expand Russia's influence further west. If you could support a move from NWY to SWE in the future, that would be beneficial for both of us, creating a stronger buffer against any Western powers looking to advance eastward. Additionally, we should keep an eye on the Mediterranean; if Italy's fleet becomes too strong, it might be wise to consider a combined effort to counterbalance their naval power. Let's continue discussing our strategies and ensure we each reach a favorable position as the game progresses.\n6 AUSTRIA -> RUSSIA: Russia, your forward-thinking approach is something I can definitely get behind. Supporting NWY to SWE could indeed fortify our positions against the Western powers, and I'm open to that in the upcoming turns. As for the Mediterranean, I share your concerns about Italy. We should monitor their fleet movements closely and be ready to act in concert if needed. Let's keep this line of communication open and adapt our strategies as the game unfolds. Together, we can ensure stability and strengthen our holds across the board.\n7 RUSSIA -> AUSTRIA: Absolutely, Austria. Maintaining open communication will be key to adapting our strategies effectively. I look forward to supporting each other's positions and reacting dynamically to any shifts in the balance of power. Let's stay vigilant and proactive in our moves. For now, we seem to have a solid plan for the immediate future. I'll make sure to coordinate my units accordingly and keep you updated on any changes or new opportunities that may arise.\n8 AUSTRIA -> RUSSIA: Thank you, Russia. I'm reassured by our collaboration and the shared vision we have for our strategic moves. I'll proceed with the agreed-upon actions and remain vigilant for any shifts in the game dynamics. We'll touch base next move to reassess and plan further. Good luck with your upcoming maneuvers.\n9 RUSSIA -> AUSTRIA: Thanks, Austria. I'm looking forward to seeing how our plans unfold and will be ready to adapt as necessary. We'll debrief after the next move to fine-tune our strategy. Until then, let's execute our moves and watch the board closely. Best of luck on your side as well.\n10 AUSTRIA -> RUSSIA: I appreciate the mutual support, Russia. Let's proceed with our plans and adjust as the situation evolves. After the next set of moves, we can review the board and continue our discussion to further our goals. Until then, let's keep our eyes on the game and play smart. Take care.\n11 RUSSIA -> AUSTRIA: Agreed, Austria. We'll both proceed cautiously and with strategic foresight. I'll be in touch after the next phase to continue our dialogue. Until then, may our moves be as strong as our alliance. Farewell for now.",
+        "Austria_parse_predict": [
+            "A GAL - WAR",
+            "A VIE S A BUD - TRI",
+            "A BUD - TRI",
+            "A BUL S F BLA - CON"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                -0.03939235210418701,
+                -0.005144607275724411,
+                0.010349366813898087,
+                0.08504195511341095,
+                -0.053997546434402466,
+                0.002863498404622078,
+                0.00027971138479188085
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.03939235210418701
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.002863498404622078
+            ]
+        },
+        "Russia_parse_predict": [
+            "F NWY - SWE",
+            "A SWE - DEN",
+            "F ANK S F BLA - CON"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.08996409177780151,
+                -0.004470210522413254,
+                0.02062062919139862,
+                -0.16173039376735687,
+                -0.2443234920501709,
+                0.47970285825431347,
+                0.00016459880862385035
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.47970285825431347
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.08996409177780151
+            ]
+        }
+    },
+    {
+        "game_id": "7785",
+        "phase_name": "F1906M",
+        "env_uuid": "01J59BS04EFCX6BGK0C9AQH3WW",
+        "Germany_original_predict": "A DEN S F SKA SWE; A KIE BER; A MUN H; A NWY STP; F NWG S F NTH NWY",
+        "England_original_predict": "A EDI H; F SKA S F NTH NWY; F LON NTH; F NTH NWY",
+        "Germany_units": "F NWG, A KIE, A DEN, A MUN, A NWY, F BAL",
+        "England_units": "A EDI, F SKA, F NTH, F LON, F HEL",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: Hello England, I can see we both have a vested interest in maintaining a strong presence in Northern Europe. I've been considering how we might assist each other in securing our positions. If you're open to it, I'd like to propose a collaborative effort this turn. Perhaps we can arrange for some of our units to support each other's movements. For instance, your fleet in the North Sea could help by moving to Norway, which would be mutually beneficial. What do you think?\n1 ENGLAND -> GERMANY: Hello Germany, your proposal for collaboration is intriguing. I agree that our fleets could work in tandem to strengthen our hold in Northern Europe. If your fleet in Norway supports a move from my fleet in the North Sea to Norway, it could indeed be beneficial to us both. Additionally, I'd appreciate support from your army in Denmark to assist my army in Edinburgh to move into Norway. This would help solidify our positions against any northern threats. What are your thoughts on this arrangement?\n2 GERMANY -> ENGLAND: I appreciate your willingness to cooperate, England. Supporting your fleet's move into Norway with my fleet from NWG is a sound strategy. I can also agree to use my army in Denmark to support your army from Edinburgh into Norway. However, I would need assurance that your fleet in the North Sea will not move into Denmark or the Baltic Sea in the next turn. This would help maintain our trust and provide me with the security I need to plan future moves that could be beneficial for us both. Does that seem fair to you?\n3 ENGLAND -> GERMANY: Germany, I understand your concerns and I can assure you that my fleet in the North Sea will not move towards Denmark or the Baltic Sea next turn. I value the trust we are building, and I see it as a cornerstone for our ongoing cooperation. With your support into Norway this turn, we'll be able to establish a stronger defensive line, which is in both our interests. In return, I will support any actions that enhance our mutual security in the region. Shall we proceed with finalizing our plans for this turn?\n4 GERMANY -> ENGLAND: It's settled then, England. I'll support your move into Norway with my fleet from NWG and my army in Denmark. I trust you'll hold to your word regarding the North Sea fleet's movements. Let's finalize these moves and look forward to a productive turn. We should also consider our future strategies to ensure our continued success in the region.\n5 ENGLAND -> GERMANY: Thank you, Germany. I'm glad we've reached an agreement. I'll move my fleet from the North Sea to Norway with your support, and I'll ensure it poses no threat to Denmark or the Baltic Sea on the following turn. Looking ahead, we should keep an open dialogue to adapt our strategies as the board evolves. Your cooperation is greatly valued, and I believe it will lead us both towards a stronger position in the game.\n6 GERMANY -> ENGLAND: Absolutely, England. Communication will be key as we advance. It's reassuring to have such a reliable ally. Let's keep our lines open and be ready to support each other in the coming turns. Our collaboration could indeed be the deciding factor in the balance of power in Northern Europe.\n7 ENGLAND -> GERMANY: Certainly, Germany. It will be crucial to monitor the board and adjust our strategy as needed. I believe our coordinated efforts can indeed shape the dynamics in Northern Europe. I'll be ready to discuss our next moves after this turn's moves are revealed. Let's maintain our alliance and work towards our mutual benefit. Good luck this turn.\n8 GERMANY -> ENGLAND: Thank you, England. I'm looking forward to seeing our plans come to fruition this turn. After we've seen the results, let's reconvene to discuss the next phase of our strategy. Wishing us both a favorable outcome. Good luck!\n9 ENGLAND -> GERMANY: Thank you, Germany. I'll await the outcome of this turn with anticipation. Once we have the results, we can reconvene to analyze the situation and plan our next moves. Our alliance has been fortuitous thus far, and I am keen to continue our profitable cooperation. Best of luck.\n10 GERMANY -> ENGLAND: Likewise, England. I'll be in touch after this turn to continue our discussions. Together, we will navigate the developments on the board and plan accordingly. Until then, best of luck.\n11 ENGLAND -> GERMANY: I appreciate the sentiment, Germany. I'll reach out after the turn to continue our strategic dialogue. Until then, take care.",
+        "Germany_parse_predict": [
+            "F NWG S F NTH - NWY",
+            "A DEN S F SKA - SWE",
+            "A NWY - STP",
+            "F BAL S A DEN - SWE",
+            "A KIE - BER",
+            "A MUN H"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.050088703632354736,
+                0.054526187479496,
+                -0.009652957320213318,
+                0.010971426963806152,
+                -0.007132932543754578,
+                0.0010886907111853361,
+                0.000288259529042989
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.010971426963806152
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.054526187479496
+            ]
+        },
+        "England_parse_predict": [
+            "A EDI H",
+            "F LON - NTH",
+            "F NTH - NWY",
+            "F HEL H",
+            "F SKA S F NTH - NWY"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.0755029022693634,
+                -0.0685096513479948,
+                -0.02520579844713211,
+                0.20483846962451935,
+                -0.035554349422454834,
+                -0.0002608028007671237,
+                0.00019509426783770323
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                -0.0685096513479948
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.20483846962451935
+            ]
+        }
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "F1905M",
+        "env_uuid": "01J59BS084GNA6C2HKMTR6YZXR",
+        "France_original_predict": "A BUR MUN; A KIE S A BUR MUN; A PIC BUR; A TYR S A BUR MUN; F BEL S F NTH HOL; F MAO WES; F SPA/SC MAR; F TUN S F MAO WES",
+        "England_original_predict": "",
+        "France_units": "A MUN, A RUH, A KIE, F MAO, F TYS, A TYR, F TUN, F ROM, F LYO",
+        "England_units": "F NTH, A DEN, F BAR, A STP, F BAL, A BEL, F IRI",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: England, it's a pleasure to strategize with you. Given the current landscape, I think it could be mutually beneficial if we coordinate our efforts. I am looking at the situation in Belgium and the North Sea, and I'm considering how we could support each other's positions. What do you say we discuss potential moves that could strengthen our holds in the region?\n1 ENGLAND -> FRANCE: France, I agree that collaboration could be key in bolstering our positions. For England, maintaining control of the North Sea is critical to my naval strategy. If France could support a move into Holland from Belgium, it would enable me to further secure the northern front and potentially aid in your endeavors in Central Europe. Additionally, I can offer support for any French fleets moving into the Mid-Atlantic Ocean, which could be beneficial for your influence over the seas. Let's find a way to create a win-win situation for both our nations.\n2 FRANCE -> ENGLAND: I appreciate your forthright approach, England. Supporting your move into Holland from Belgium aligns well with my strategy, and I'm glad to offer that assistance. In return, your support in the Mid-Atlantic Ocean would certainly enhance my maritime capabilities. Let's proceed with these moves for this turn, and we can reassess and plan further support for each other in the upcoming turns. This alliance could indeed be the cornerstone of a strong presence in Europe for both France and England.\n3 ENGLAND -> FRANCE: That sounds like a plan, France. With your support for the move into Holland and my support in the Mid-Atlantic, we are setting a strong foundation for our alliance. I look forward to seeing how our coordinated efforts will play out this turn, and I'm optimistic about our continued cooperation. Shall we finalize these moves and then reconvene to plot out our next steps after we've seen the results?\n4 FRANCE -> ENGLAND: Absolutely, England. Let's finalize these moves and keep a keen eye on the developments. After the turn, we should analyze the new board state and plan our subsequent moves accordingly. Our combined strength is proving to be an excellent strategy. I'll send orders for support to Holland and await your fleet's move into the Mid-Atlantic. Here's to a fruitful alliance.\n5 ENGLAND -> FRANCE: I'm pleased to hear it, France. With our moves set, let's advance with confidence. We'll touch base after the turn to discuss further strategies. It's reassuring to have such a reliable ally in this game. Best of luck this turn.\n6 FRANCE -> ENGLAND: Thank you, England. I'm confident our strategic alliance will yield strong results. Once the turn is complete, let's reconnect to consider our positions and possible next moves. Our teamwork has the potential to be a decisive factor in the balance of power across the board.\n7 ENGLAND -> FRANCE: I'm looking forward to our next discussion, France. Our strategic partnership is shaping up to be quite effective. See you after the turn to continue our collaboration.\n8 FRANCE -> ENGLAND: See you after the turn, England. Our collaboration is indeed proving to be a significant advantage. I'll be ready to discuss our future strategies and how we can continue to support each other.\n9 ENGLAND -> FRANCE: Until then, France. Our alliance is off to a good start, and I'm eager to continue building on this momentum. I'll be ready with fresh insights for our next round of strategy.\n10 FRANCE -> ENGLAND: Until then, England. I'm looking forward to building on what we've started and discussing our next strategic moves. Take care.",
+        "France_parse_predict": [
+            "F MAO - WES",
+            "A BUR - MUN",
+            "A KIE S A BUR - MUN",
+            "A MUN S A KIE - BER",
+            "F TUN S F MAO - WES",
+            "F LYO - TYS",
+            "F ROM S F TYS - NAP"
+        ],
+        "France": {
+            "whole_task_eval": [
+                0.03462587669491768,
+                0.010286152362823486,
+                0.2440168261528015,
+                -0.0020749997347593307,
+                -0.017070685513317585,
+                -0.19708201754838228,
+                -0.07270109932869673
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.2440168261528015
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.010286152362823486
+            ]
+        },
+        "England_parse_predict": [
+            "F NTH H",
+            "F IRI H",
+            "A BEL H",
+            "F BAL C A DEN - LVN"
+        ],
+        "England": {
+            "whole_task_eval": [
+                0.05670933797955513,
+                -0.07734623551368713,
+                0.23431074619293213,
+                -0.001404451671987772,
+                -0.016404869500547647,
+                -0.12192010134458542,
+                -0.07394438097253442
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                -0.07734623551368713
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.23431074619293213
+            ]
+        }
+    }
+]

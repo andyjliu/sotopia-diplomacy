@@ -1,8 +1,9 @@
 from enum import IntEnum
 from typing import Any
 
-from pydantic import root_validator
+from pydantic import root_validator, BaseModel, Field
 
+from typing import Any, List, Optional
 from redis_om import JsonModel
 from redis_om.model.model import Field
 
@@ -66,6 +67,16 @@ class EnvironmentProfile(JsonModel):
         default_factory=lambda: "",
         description="A concrete scenario of where the social interaction takes place, the scenario should have two agents (agent1 and agent2), and you should illustrate the relationship between the two agents, and for what purpose agent1 is interacting with agent2. Please avoid mentioning specific names and occupations in the scenario and keep all the mentions gender-neutral. Also avoid generating scenarios that requires childrend (below 18) or elderly (above 70) to be involved.",
     )
+    # Two added parameters for sotopia diplomacy
+    env_tag: str = Field(
+        index=True,
+        default_factory=lambda: "",
+        description="Tag for environment profiles"
+    )
+    agent_powers: list[str] = Field(
+        default_factory=lambda: [],
+        description="The county of each power"
+    )
     agent_goals: list[str] = Field(
         default_factory=lambda: [],
         description="The social goals of each agent, which could include <extra_info>...</extra_info>, <clarification_hint>...</clarification_hint>, and <strategy_hint>...</strategy_hint> to help the agent achieve the goal. Avoid providing too specific strategy hint, try to be as abstract as possible. For example, use 'you can provide financial benefits to achieve your goal' instead of 'you can buy him a boba tea to achieve your goal.'",
@@ -104,6 +115,8 @@ class EnvironmentList(JsonModel):
     agent_index: list[str] | None = Field(default_factory=lambda: None)
 
     # validate the length of agent_index should be same as environments
+    # @model_validator(mode='before')
+
     @root_validator
     def the_length_agent_index_matches_environments(cls, values) -> Any:
         environments, agent_index = (
@@ -116,3 +129,23 @@ class EnvironmentList(JsonModel):
             len(environments) == len(agent_index)
         ), f"Number of environments {len(environments)} and agent_index {len(agent_index)} do not match"
         return values
+
+
+# class EnvironmentList(JsonModel):
+#     name: str = Field(index=True)
+#     environments: List[str] = Field(default_factory=list)
+#     agent_index: Optional[List[str]] = Field(default_factory=lambda: None)
+
+#     # validate the length of agent_index should be same as environments
+#     @model_validator(mode='before')
+#     def the_length_agent_index_matches_environments(cls, values) -> Any:
+#         environments, agent_index = (
+#             values.get("environments"),
+#             values.get("agent_index"),
+#         )
+#         if agent_index is None:
+#             return values
+#         assert (
+#             len(environments) == len(agent_index)
+#         ), f"Number of environments {len(environments)} and agent_index {len(agent_index)} do not match"
+#         return values

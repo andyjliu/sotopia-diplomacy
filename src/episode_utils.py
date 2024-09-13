@@ -8,6 +8,8 @@ from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
 # rich.print(sys.path)
 # from diplomacy_cicero.fairdiplomacy import pydipcc
 import json
+from tqdm import tqdm
+import pdb
 import inspect
 
 def get_game_phase_env_from_episode(episodelog):
@@ -71,6 +73,8 @@ def process_conversation_to_intent(text):
     
     return "\n".join(formatted_messages)
 
+import re
+
 def get_country_from_name(name, profiles):
     for profile in profiles:
         if name in [profile.first_name, profile.last_name, f"{profile.first_name} {profile.last_name}"]:
@@ -81,13 +85,24 @@ def replace_names_with_countries(text, profiles):
     def replace_name(match):
         full_name = match.group(0)
         return get_country_from_name(full_name, profiles)
-    name_pattern = '|'.join([f"{p.first_name}|{p.last_name}|{p.first_name} {p.last_name}" for p in profiles])
+    
+    # Generate the regex pattern for full names to be replaced
+    name_pattern = '|'.join([re.escape(f"{p.first_name} {p.last_name}") for p in profiles] + 
+                            [re.escape(p.first_name) for p in profiles] +
+                            [re.escape(p.last_name) for p in profiles])
+    
+    # Replace names with country equivalents
     replaced_text = re.sub(name_pattern, replace_name, text)
-    replaced_text = re.sub(r'(\w+)\s+\1', r'\1', replaced_text)
+
+    # Correctly replace duplicate words that exactly match and are separated by space
+    replaced_text = re.sub(r'\b(\w+)\s+\1\b', r'\1', replaced_text)
+
     return replaced_text
+
 
 # TODO: Should be modified after can gain the real data from redis
 def format_diplomacy_data(scenario):
+    # pdb.set_trace()
     centers_match = re.search(r"centers: (\{.*?\})", scenario)
     units_match = re.search(r"units: (\{.*?\})", scenario)
     if not centers_match or not units_match:
@@ -99,3 +114,36 @@ def format_diplomacy_data(scenario):
     units_formatted = format_country_data(units, ', ')
     centers_formatted = format_country_data(centers, ', ')
     return f"units: {units_formatted}\ncenters: {centers_formatted}"
+
+def get_phases_from_envs(games_dir, envs):
+    file_paths = []
+    games = []
+    phases = []
+    for root, dirs, files in os.walk(games_dir):
+        for file in files:
+            file_path = os.path.join(root, file)
+            file_paths.append(file_path)
+
+    for file_path in file_paths:
+        with open(file_path, 'r') as f:
+            games.append(json.load(f))
+
+    for env in tqdm(envs):
+        for game in games:
+            if game['id'] == env.game_id:
+                for phase in game['phases']:
+                    if phase['name'] == env.phase_name:
+                        phases.append(phase)
+    
+    return phases
+
+
+def get_actual_dialogue(env, phase):
+    countries = [c.upper() for c in env.agent_powers]
+    store_message = []
+    for message in phase['messages']:
+        if message['sender'] in countries and message['recipient'] in countries:
+            store_message.append(message)
+        
+    return store_message
+

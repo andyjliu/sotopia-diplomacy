@@ -9,8 +9,18 @@ from episode_utils import get_countries_from_agent
 from parlai.core.opt import Opt
 from parlai.core.agents import create_agent
 import json
+import re
+import os
 import pdb
+import rich
 
+def int_or_none(value):
+    if value == 'None':
+        return None
+    try:
+        return int(value)
+    except ValueError:
+        raise argparse.ArgumentTypeError(f"Invalid int value: '{value}'")
 
 def get_intent_agent(dir_path, intent_model_path):
     intent_model_opt = Opt.load_init(intent_model_path)
@@ -19,18 +29,19 @@ def get_intent_agent(dir_path, intent_model_path):
     intent_agent = create_agent(intent_model_opt)
     return intent_agent
 
+def cutoff_dialogue(dialogue, end_turn):
+    pattern = r'(\d+)\s+([A-Z]+)\s+->\s+([A-Z]+):\s+(.*?)(?=\n\d+\s+[A-Z]+\s+->\s+[A-Z]+:|$)'
+    matches = re.findall(pattern, dialogue, re.DOTALL)
+    filtered_turns = [match for match in matches if 0 <= int(match[0]) <= end_turn]
+    result = '\n'.join([f"{turn[0]} {turn[1]} -> {turn[2]}: {turn[3].strip()}" for turn in filtered_turns])
+    return result
 
-def get_intent_agent(dir_path, intent_model_path):
-    intent_model_opt = Opt.load_init(intent_model_path)
-    intent_model_opt['model_file'] = dir_path + intent_model_opt['model_file']
-    intent_model_opt['dict_file'] = dir_path + intent_model_opt['dict_file']
-    intent_agent = create_agent(intent_model_opt)
-    return intent_agent
-
-def generate_whole_prompt(episode, country1, country2):
+def generate_whole_prompt(episode, country1, country2, end_turn):
     prompt = ""
     prompt += f"{episode['phase_name']}\n"
-    prompt += f"{episode['intent_dialogue']}\n"
+    cuttoffed_dialogue = cutoff_dialogue(episode['intent_dialogue'], end_turn)
+    prompt += f"{cuttoffed_dialogue}\n"
+    # pdb.set_trace()
     prompt += f"{episode['unit_center']}\n"
     prompt += f"{episode['phase_name']} {country1} 5 ANON 5min WTA two powers for {country2}:"
     return prompt
@@ -54,9 +65,12 @@ def extract_units_by_country(units_string, country):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir_path", default="/data/user_data/wenkail/", type=str, required=False, help="Choose the value model dir")
-    parser.add_argument("--res_path", default="data/formatted_episodes/formatted_episodes_for_random_sample_100_games.json", type=str, required=False, help="Choose the intent response")
-    parser.add_argument("--tgt_path", default="data/intent_response/intent_response_random_sample_100_games.json", type=str, required=False, help="Choose the intent response")
+    parser.add_argument("--res_path", default="data/formatted_episodes/taskeval_1757_intent_episode_llama3.json", type=str, required=False, help="The resource path for file")
+    parser.add_argument("--tgt_path", default="data/intent_response/taskeval_1757_intent_prediction_llama3.json", type=str, required=False, help="The target path for file")
     parser.add_argument("--intent_model_path", default="/data/user_data/wenkail/models/imitation_intent.opt", type=str, required=False, help="Choose the env model")
+    parser.add_argument("--split_begin", type=int, required=True, help="The begin index of the sub samples")
+    parser.add_argument("--split_end", type=int_or_none, required=True, help="The end index of the sub samples")
+    parser.add_argument("--end_turn", type=int_or_none, required=False, help = "The end index of the sub dialogue")
 
     args = parser.parse_args()
 
@@ -64,27 +78,33 @@ def main():
     # countries = ["England", "Germany"]
     with open(args.res_path, 'r') as f:
         formatted_episodes = json.load(f)
-    # pdb.set_trace()
 
-    intent_responses = []
+    # pdb.set_trace()
     intent_agent = get_intent_agent(args.dir_path, args.intent_model_path)
 
-    for episode in tqdm(formatted_episodes):
-        response = {}
-        countries = get_countries_from_agent(episode["agents"])
-        response["game_id"] = episode["game_id"]
-        response["phase_name"] = episode["phase_name"]
-        response["env_uuid"] = episode["env_uuid"]
-        response["countries"] = countries
-        response[f"{countries[0]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[0])
-        response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
-        response[f"{countries[0]}_response"] = get_intent_response(intent_agent,generate_whole_prompt(episode, countries[0], countries[1]))
-        response[f"{countries[1]}_response"] = get_intent_response(intent_agent,generate_whole_prompt(episode, countries[1], countries[0]))
-        response[f"{countries[0]}_response"].pop("metrics")
-        response[f"{countries[1]}_response"].pop("metrics")
-        intent_responses.append(response)
-    
-    json.dump(intent_responses, open(args.tgt_path, 'w'))
+    split_formatted_episodes = formatted_episodes[args.split_begin: args.split_end]
+    with open(args.tgt_path, 'a') as f:
+        for episode in tqdm(split_formatted_episodes):
+            response = {}
+            countries = get_countries_from_agent(episode["agents"])
+            response["game_id"] = episode["game_id"]
+            response["phase_name"] = episode["phase_name"]
+            response["env_uuid"] = episode["env_uuid"]
+            response["countries"] = countries
+            response[f"{countries[0]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[0])
+            response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
+            response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn))
+            response[f"{countries[1]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[1], countries[0], args.end_turn))
+            response["intent_dialogue"] = episode["intent_dialogue"]
+
+            response[f"{countries[0]}_response"].pop("metrics", None)
+            response[f"{countries[1]}_response"].pop("metrics", None)
+
+            json.dump(response, f)
+            f.write('\n')
+
+    print(f"Additional data successfully appended to {args.tgt_path}")
+
 
     
 if __name__ == "__main__":

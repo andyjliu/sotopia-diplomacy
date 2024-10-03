@@ -5,7 +5,7 @@ conda activate sotopia
 # python generate_episode.py --model gpt-4-turbo --tag gpt-4-analysis --sample_size 10 --sub_sample 
 # python generate_episode.py --epi_tag te_n_with_previous_llama3_70b --split_begin=0 --split_end=26
 # python generate_episode.py --epi_tag te_n_with_previous_llama3_70b --split_begin=26 --split_end=53
-python generate_episode.py --epi_tag taskeval_fewshot
+python generate_episode.py --epi_tag taskeval_fewshot_plausible_parse
 #  --env_tag tv3
 # --split_begin=53 --split_end=80
 # python generate_episode.py --epi_tag te_n_with_previous_llama3_70b --split_begin=80 --split_end None

@@ -36,10 +36,13 @@ def cutoff_dialogue(dialogue, end_turn):
     result = '\n'.join([f"{turn[0]} {turn[1]} -> {turn[2]}: {turn[3].strip()}" for turn in filtered_turns])
     return result
 
-def generate_whole_prompt(episode, country1, country2, end_turn):
+def generate_whole_prompt(episode, country1, country2, end_turn, cut):
     prompt = ""
     prompt += f"{episode['phase_name']}\n"
-    cuttoffed_dialogue = cutoff_dialogue(episode['intent_dialogue'], end_turn)
+    if cut:
+        cuttoffed_dialogue = cutoff_dialogue(episode['intent_dialogue'], end_turn)
+    else:
+        cuttoffed_dialogue = episode['intent_dialogue']
     prompt += f"{cuttoffed_dialogue}\n"
     # pdb.set_trace()
     prompt += f"{episode['unit_center']}\n"
@@ -71,6 +74,7 @@ def main():
     parser.add_argument("--split_begin", type=int, required=True, help="The begin index of the sub samples")
     parser.add_argument("--split_end", type=int_or_none, required=True, help="The end index of the sub samples")
     parser.add_argument("--end_turn", type=int_or_none, required=False, help = "The end index of the sub dialogue")
+    parser.add_argument("--cut", action='store_true', help="Whether use the actual move")
 
     args = parser.parse_args()
 
@@ -93,8 +97,8 @@ def main():
             response["countries"] = countries
             response[f"{countries[0]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[0])
             response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
-            response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn))
-            response[f"{countries[1]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[1], countries[0], args.end_turn))
+            response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn, args.cut))
+            response[f"{countries[1]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[1], countries[0], args.end_turn, args.cut))
             response["intent_dialogue"] = episode["intent_dialogue"]
 
             response[f"{countries[0]}_response"].pop("metrics", None)

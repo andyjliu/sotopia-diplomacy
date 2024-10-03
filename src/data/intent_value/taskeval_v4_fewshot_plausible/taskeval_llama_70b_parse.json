@@ -1,0 +1,476 @@
+[
+    {
+        "game_id": "109742",
+        "phase_name": "S1903M",
+        "env_uuid": "01J92MBNG61S5TN7559PFBASFS",
+        "Turkey_original_predict": "A CON BUL; A RUM UKR; A SEV MOS; F BLA RUM; F EAS S F SMY AEG; F SMY AEG",
+        "Germany_original_predict": "A BEL H; A PRU LVN; A RUH HOL; A WAR MOS; F DEN SKA; F KIE DEN; F SWE S F DEN SKA",
+        "Turkey_units": "F BLA, F EAS, A RUM, A SEV, A CON, F SMY",
+        "Germany_units": "F DEN, A BEL, A PRU, A RUH, A WAR, F SWE, F KIE, A MUN",
+        "intent_dialogue": "0 TURKEY -> GERMANY: Hello, Germany. As Turkey, my goal is to control 18 or more supply centers by the end of the game. I'd like to discuss potential alliances and moves that can benefit both our countries. Specifically, I'm interested in exploring opportunities in the Balkans and Eastern Europe. What are your thoughts, and how can we work together?\n1 GERMANY -> TURKEY: Hello Turkey, I'm Germany from Germany. I understand your goal to control 18 or more supply centers by the end of the game. I'm open to discussing potential alliances and moves that can benefit both our countries. Specifically, I'm interested in exploring opportunities in the Balkans and Eastern Europe. I notice that you have a unit in RUM, which could be a potential threat to my unit in WAR. Would you be willing to move your unit in RUM to UKR, allowing me to move my unit in WAR to MOS, and potentially creating a mutual benefit for both our countries?\n2 TURKEY -> GERMANY: I understand your concern about the unit in RUM, Germany. I'm willing to move it to UKR if you agree to support my move to SEV. This way, we can create a mutual benefit and strengthen our positions in the region. What do you think?\n3 GERMANY -> TURKEY: I agree to support your move to SEV if you move your unit in RUM to UKR. This way, we can create a mutual benefit and strengthen our positions in the region. Let's work together to achieve our goals.\n4 TURKEY -> GERMANY: I appreciate your willingness to cooperate, Germany. Let's finalize the agreement. I'll move my unit in RUM to UKR, and you'll support my move to SEV. This way, we can ensure a mutual benefit and strengthen our positions in the region.\n5 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's make sure to follow through on our commitments and continue to work together to achieve our goals.\n6 TURKEY -> GERMANY: I'm glad we could come to an agreement, Germany. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe.\n7 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I think we should also discuss potential moves in the North, such as moving my unit in FIN to STP, and supporting your move to MOS. What do you think?\n8 TURKEY -> GERMANY: I think that's a great idea, Germany. Moving your unit in FIN to STP and supporting my move to MOS could create a strong alliance between our countries. Let's work together to achieve our goals in the region.\n9 GERMANY -> TURKEY: I think we should also discuss potential moves in the South, such as moving your unit in AEG to ION, and supporting my move to GRE. What do you think?\n10 TURKEY -> GERMANY: I think that's a great idea, Germany. Moving your unit in FIN to STP and supporting my move to MOS could create a strong alliance between our countries. Let's work together to achieve our goals in the region. Additionally, moving my unit in AEG to ION and supporting your move to GRE could further solidify our alliance. What do you think?\n11 GERMANY -> TURKEY: I think our alliance is shaping up well, Turkey. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in KIE to DEN, and supporting your move to BUL. What do you think?\n12 TURKEY -> GERMANY: I'm glad we're making progress, Germany. I think our alliance is shaping up well. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in SMY to EAS, and supporting your move to HOL. What do you think?\n13 GERMANY -> TURKEY: I think our alliance is shaping up well, Turkey. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in MUN to SIL, and supporting your move to RUM. What do you think?\n14 TURKEY -> GERMANY: I'm glad we're making progress, Germany. I think our alliance is shaping up well. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in CON to BUL, and supporting your move to HOL. What do you think?\n15 GERMANY -> TURKEY: I think our alliance is shaping up well, Turkey. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in BER to PRU, and supporting your move to NAP. What do you think?\n16 TURKEY -> GERMANY: I'm glad we're making progress, Germany. I think our alliance is shaping up well. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in ANK to ARM, and supporting your move to LVN. What do you think?\n17 GERMANY -> TURKEY: I'm glad we're making progress, Turkey. Let's continue to work together to achieve our goals in the Balkans and Eastern Europe. I'm interested in exploring opportunities to move my unit in LVN to WAR, and supporting your move to SEV. What do you think?\n18 TURKEY -> GERMANY: I think we've made good progress, Germany. Let's finalize our agreements and work together to achieve our goals in the Balkans and Eastern Europe. I'm looking forward to our continued cooperation.\n19 GERMANY -> TURKEY: I'm glad we've made good progress, Turkey. I think we can finalize our agreements and work together to achieve our goals in the Balkans and Eastern Europe. I'm looking forward to our continued cooperation.\n20 TURKEY -> GERMANY: I'm glad we've made good progress, Germany. I think we can finalize our agreements and work together to achieve our goals in the Balkans and Eastern Europe. I'm looking forward to our continued cooperation.",
+        "Turkey_actual_movement": [
+            "A SEV - MOS",
+            "A CON - SEV VIA",
+            "F SMY - AEG",
+            "F EAS - ION",
+            "A RUM S A BUD",
+            "F BLA C A CON - SEV"
+        ],
+        "Turkey_parse_predict": [
+            "A SEV - MOS",
+            "A CON - BUL",
+            "F SMY - AEG",
+            "F EAS S F SMY - AEG",
+            "A RUM - UKR",
+            "F BLA - RUM"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.048135221004486084,
+                -0.049501549801789224,
+                -0.04696139693260193,
+                0.19076287746429443,
+                -0.06060371035709977,
+                -0.006556670763529837,
+                0.020995736122131348
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.020995736122131348
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.19076287746429443
+            ]
+        },
+        "Germany_actual_movement": [
+            "A WAR S A GAL",
+            "A PRU - LVN",
+            "F SWE S F DEN - SKA",
+            "A BEL S A PIC",
+            "A RUH - HOL",
+            "F DEN - SKA",
+            "A MUN S A TYR",
+            "F KIE - DEN"
+        ],
+        "Germany_parse_predict": [
+            "A WAR - MOS",
+            "A PRU - LVN",
+            "F SWE S F DEN - SKA",
+            "A BEL H",
+            "A RUH - HOL",
+            "F DEN - SKA",
+            "A MUN S A TYR",
+            "F KIE - DEN"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.016589820384979248,
+                -0.049202960915863514,
+                -0.07301367819309235,
+                0.2118070125579834,
+                -0.06068766489624977,
+                -0.006442629324737936,
+                -0.005870163440704346
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.2118070125579834
+            ],
+            "TURKEY": [
+                "TURKEY",
+                -0.005870163440704346
+            ]
+        }
+    },
+    {
+        "game_id": "84898",
+        "phase_name": "S1903M",
+        "env_uuid": "01J92MBP9NMC0MW5XB77N431PB",
+        "Russia_original_predict": "A MOS WAR; A STP MOS; A SIL BER; F BAL S A SIL BER; F RUM H",
+        "England_original_predict": "A FIN SWE; F HOL BEL; F EDI NTH; F KIE S A SIL BER; F LON ENG",
+        "Russia_units": "F RUM, A STP, A MOS, F BAL, A BUD, A SIL",
+        "England_units": "F NWY, A FIN, F KIE, F HOL, F EDI, F LON",
+        "intent_dialogue": "0 RUSSIA -> ENGLAND: Hello, England. I'm Russia, representing Russia. As we begin this game of Diplomacy, I'd like to discuss potential alliances and mutually beneficial moves that can help us both achieve our goals. What are your thoughts on our current board position and how we can work together to gain an advantage?\n1 ENGLAND -> RUSSIA: Hello Russia. I'm England, representing England. I appreciate your willingness to discuss potential alliances. Our current board position shows that we have a mutual interest in maintaining a balance of power in Europe. I propose that we work together to limit the growth of other powers, specifically Germany and France. In this turn, I'm considering moving my army from LVN to WAR or supporting your move from MOS to WAR. What are your thoughts on this proposal? \n2 RUSSIA -> ENGLAND: I appreciate your willingness to cooperate, England. Moving your army from LVN to WAR or supporting my move from MOS to WAR would be beneficial for both of us. However, I'd like to propose an alternative: what if we work together to take down Germany? We could move my army from MOS to BER and your army from NWY to SWE, creating a strong front against Germany. This would give us a strategic advantage and limit Germany's growth. What are your thoughts on this proposal?\n3 ENGLAND -> RUSSIA: I appreciate your willingness to cooperate, Russia. While I understand the benefits of taking down Germany, I'm concerned about the potential risks and consequences of such a move. I'd like to propose a compromise: what if we work together to limit the growth of France instead? We could move my army from HOL to BEL and your army from MOS to WAR, creating a strong front against France. This would give us a strategic advantage and limit France's growth. What are your thoughts on this proposal?\n4 RUSSIA -> ENGLAND: I understand your concerns about taking down Germany, but I believe it's a strategic opportunity we shouldn't miss. If we work together, we can limit Germany's growth and create a strong front against them. I propose we move my army from MOS to BER and your army from NWY to SWE. This would give us a significant advantage and limit Germany's expansion. What are your thoughts on this revised proposal?\n5 ENGLAND -> RUSSIA: I understand your persistence in taking down Germany, Russia. However, I still believe that limiting France's growth is a more strategic move for us. I propose we finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Let's work together to achieve this goal.\n6 RUSSIA -> ENGLAND: I understand your concerns, England. However, I believe it's time for us to make a decision. Let's finalize our agreement to move my army from MOS to BER and your army from NWY to SWE. This will give us a significant advantage and limit Germany's expansion. Shall we proceed with this plan?\n7 ENGLAND -> RUSSIA: I appreciate your persistence, Russia. I still believe that limiting France's growth is a more strategic move for us. However, I'm willing to compromise and meet you halfway. Let's finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?\n8 RUSSIA -> ENGLAND: I understand your willingness to compromise, England. Let's finalize our agreement to move my army from MOS to BER and your army from NWY to SWE. This will give us a significant advantage and limit Germany's expansion. Shall we proceed with this plan?\n9 ENGLAND -> RUSSIA: I appreciate your willingness to compromise, Russia. Let's finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?\n10 RUSSIA -> ENGLAND: I think we've discussed our plans extensively, England. Let's finalize our agreement to move my army from MOS to BER and your army from NWY to SWE. This will give us a significant advantage and limit Germany's expansion. Shall we proceed with this plan?\n11 ENGLAND -> RUSSIA: I think we've discussed our plans extensively, Russia. I'm willing to finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?\n12 RUSSIA -> ENGLAND: I think we've discussed our plans extensively, England. Let's finalize our agreement to move my army from MOS to BER and your army from NWY to SWE. This will give us a significant advantage and limit Germany's expansion. Shall we proceed with this plan?\n13 ENGLAND -> RUSSIA: I think we've discussed our plans extensively, Russia. I'm willing to finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?\n14 RUSSIA -> ENGLAND: I think we've discussed our plans extensively, England. I'm willing to finalize our agreement to move my army from MOS to BER and your army from NWY to SWE. This will give us a significant advantage\n15 ENGLAND -> RUSSIA: I'm willing to finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?\n16 ENGLAND -> RUSSIA: I'm willing to finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?\n17 ENGLAND -> RUSSIA: I think we've discussed our plans extensively, Russia. I'm willing to finalize our agreement to move my army from HOL to BEL and your army from MOS to WAR. This will give us a strong front against France and limit their expansion. Shall we proceed with this plan?",
+        "Russia_actual_movement": [
+            "A MOS S A STP",
+            "F BAL - BER",
+            "A BUD S F RUM",
+            "F RUM H",
+            "A STP H",
+            "A SIL - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A MOS - WAR",
+            "F BAL S A SIL - BER",
+            "A BUD S F RUM",
+            "F RUM H",
+            "A STP - MOS",
+            "A SIL - BER"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.0025146412663161755,
+                0.41198408603668213,
+                -0.1586313545703888,
+                -0.0155482740374282,
+                -0.2307409020140767,
+                -0.09403090504929423,
+                0.08948199450969696
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.09403090504929423
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.41198408603668213
+            ]
+        },
+        "England_actual_movement": [
+            "F LON H",
+            "F EDI - NTH",
+            "F HOL - KIE",
+            "F KIE - BER",
+            "F NWY S A FIN - STP",
+            "A FIN - STP"
+        ],
+        "England_parse_predict": [
+            "F LON - ENG",
+            "F EDI - NTH",
+            "F HOL - BEL",
+            "F KIE S A SIL - BER",
+            "F NWY S A FIN - STP",
+            "A FIN - SWE"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.0017349898116663098,
+                0.0804540365934372,
+                -0.14162680506706238,
+                -0.01290755532681942,
+                0.09829705953598022,
+                0.025602661073207855,
+                -0.048084408044815063
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.0804540365934372
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.025602661073207855
+            ]
+        }
+    },
+    {
+        "game_id": "74152",
+        "phase_name": "F1904M",
+        "env_uuid": "01J92MBS3R38CRNTHYEZDQXC7X",
+        "Turkey_original_predict": "A CON BUL; A MOS H; A SEV RUM; F AEG S A CON BUL; F BLA S A SEV RUM; F EAS S F AEG",
+        "Germany_original_predict": "A NWY STP; A GAL S A HOL VIE; A HOL VIE VIA; A MUN TYR; A SIL BOH; A UKR WAR; F FIN S A NWY STP; F SWE NWY; F SWE NWY",
+        "Turkey_units": "A MOS, A CON, F AEG, F BLA, A SEV, F EAS",
+        "Germany_units": "A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL",
+        "intent_dialogue": "0 TURKEY -> GERMANY: Good day, Germany. I am Turkey, the representative of Turkey. I hope our conversation will be beneficial to both our countries. I'd like to discuss potential alliances and mutual benefits. Perhaps we can discuss ways to support each other in our expansion goals?\n1 GERMANY -> TURKEY: Good day, Turkey. I'm Germany, the representative of Germany. I'm happy to discuss potential alliances and mutual benefits. Considering our current positions, I think it would be beneficial for both of us to focus on our eastern fronts. Perhaps we could discuss ways to support each other in our expansion goals, especially in regards to Russia and Italy?\n2 TURKEY -> GERMANY: I appreciate your willingness to discuss potential alliances, Germany. I agree that focusing on our eastern fronts could be beneficial. Perhaps we could discuss a potential joint effort to take down Italy. What are your thoughts on this matter?\n3 GERMANY -> TURKEY: I think a joint effort to take down Italy could be beneficial, but I'd like to discuss the specifics of how we can support each other. Perhaps we could coordinate our movements to ensure we're not stepping on each other's toes. For example, I could move my army in Hol to Vie, and you could move your army in Gre to Alb, supporting my move. What do you think?\n4 TURKEY -> GERMANY: I think that's a great idea, Germany. Coordinating our movements will definitely help us achieve our goals. However, I'd like to propose a slight modification. Instead of moving my army in Gre to Alb, what if I move it to Tri, supporting your move to Vie? This way, we can ensure a stronger presence in the region and increase the pressure on Italy. What do you think?\n5 GERMANY -> TURKEY: I think that's a great plan, Turkey. Moving your army in Gre to Tri and supporting my move to Vie will definitely put pressure on Italy. Let's make sure to coordinate our next moves to maximize our gains. Perhaps we could discuss a potential move against Russia as well?\n6 TURKEY -> GERMANY: I completely agree with your proposal, Germany. Let's finalize our plans and make sure to coordinate our next moves to maximize our gains. Perhaps we could discuss a potential move against Russia as well, and how we can support each other in that front.\n7 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Hol to Vie, and I expect you to move your army in Gre to Tri, supporting my move. Let's keep in touch and discuss our next moves to maximize our gains.\n8 TURKEY -> GERMANY: I'm glad we could come to an agreement, Germany. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Gre to Tri, supporting your move to Vie. Let's keep in touch and discuss our next moves to maximize our gains.\n9 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Hol to Vie, and I expect you to move your army in Gre to Tri, supporting my move. Let's keep in touch and discuss our next moves to maximize our gains.\n10 TURKEY -> GERMANY: I'm glad we could come to an agreement, Germany. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Gre to Tri, supporting your move to Vie. Let's keep in touch and discuss our next moves to maximize our gains.\n11 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Hol to Vie, and I expect you to move your army in Gre to Tri, supporting my move. Let's keep in touch and discuss our next moves to maximize our gains.\n12 TURKEY -> GERMANY: I'm glad we could come to an agreement, Germany. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Gre to Tri, supporting your move to Vie. Let's keep in touch and discuss our next moves to maximize our gains.\n13 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Hol to Vie, and I expect you to move your army in Gre to Tri, supporting my move. Let's keep in touch and discuss our next moves to maximize our gains.\n14 TURKEY -> GERMANY: I'm glad we could come to an agreement, Germany. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Gre to Tri, supporting your move to Vie. Let's keep in touch and discuss our next moves to maximize our gains.\n15 GERMANY -> TURKEY: I'm glad we could come to an agreement, Turkey. Let's finalize our plans and ensure a successful joint effort against Italy. I'll make sure to move my army in Hol to Vie, and I expect you to move your army in Gre to Tri, supporting my move. Let's keep in touch and discuss our next moves to maximize our gains.\n16 TURKEY -> GERMANY: I'm glad we could come to an agreement, Germany. Let's finalize our plans and ensure a successful joint effort against Italy.\n17 GERMANY -> TURKEY: I'm",
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Turkey_parse_predict": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S A CON - BUL",
+            "F BLA S A SEV - RUM",
+            "A MOS H",
+            "F EAS S F AEG"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.00010734959505498409,
+                -0.00015526189235970378,
+                -0.012297600507736206,
+                0.22984492778778076,
+                -0.3519020713865757,
+                -0.0010094628087244928,
+                0.13562674447894096
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.13562674447894096
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.22984492778778076
+            ]
+        },
+        "Germany_actual_movement": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany_parse_predict": [
+            "A MUN - TYR",
+            "A GAL S A HOL - VIE",
+            "A HOL - VIE VIA",
+            "A UKR - WAR",
+            "F SWE - NWY",
+            "A SIL - BOH",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                0.00023340253392234445,
+                -0.0002839223307091743,
+                0.042108386754989624,
+                0.14002852141857147,
+                -0.2810724377632141,
+                -0.000212379964068532,
+                0.09919847175478935
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.14002852141857147
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.09919847175478935
+            ]
+        }
+    },
+    {
+        "game_id": "3516",
+        "phase_name": "S1905M",
+        "env_uuid": "01J92MBTR1AADEQ5SHFR1YXDFG",
+        "Germany_original_predict": "A BUR MAR; A GAL WAR; A PIC PAR; A SPA S A BUR MAR; A VIE BUD; A WAR MOS; F BAL BOT; F KIE HOL; F SWE NWY",
+        "Russia_original_predict": "A STP MOS; A UKR S A STP MOS; F BOT STP/SC; F SEV RUM",
+        "Germany_units": "F BAL, A BUR, A SPA, A PIC, A DEN, F KIE",
+        "Russia_units": "F SEV, F BOT, A STP, A UKR",
+        "intent_dialogue": "0 GERMANY -> RUSSIA: Hello Russia, I'm Germany from Germany. I'd like to discuss the possibility of a mutual agreement that could benefit both our countries. Perhaps we could work together to limit the growth of other powers and secure a strong alliance.\n1 RUSSIA -> GERMANY: Hello Germany, I'm Russia from Russia. I'm interested in exploring the possibility of a mutual agreement. What specific benefits do you propose we could gain from working together?\n2 GERMANY -> RUSSIA: I propose we work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss specific army movements that could be made this turn to our mutual benefit.\n3 RUSSIA -> GERMANY: I agree that working together to limit the growth of Austria and Italy could be beneficial. However, I would like to discuss specific details of the army movements. Would you be willing to support my move to SWE with your unit in HOL, in exchange for my support in WAR?\n4 GERMANY -> RUSSIA: I can support your move to SWE with my unit in HOL, but I would like to request that you support my move toWAR in return. This way, we can both benefit from our mutual agreement.\n5 RUSSIA -> GERMANY: I agree to support your move to WAR in return. Let's finalize the agreement and make the moves this turn.\n6 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. I'll make sure to support your move to SWE with my unit in HOL, and I appreciate your support in WAR. Let's make the moves and secure our alliance.\n7 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's make sure to follow through on our promises and maintain a strong alliance throughout the game.\n8 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions.\n9 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n10 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n11 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n12 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n13 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n14 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n15 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n16 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n17 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's continue to work together to limit the growth of Austria and Italy, and secure a strong alliance in the region. Perhaps we could discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n18 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's finalize the details of our alliance and ensure a strong partnership throughout the game.\n19 RUSSIA -> GERMANY: I'm glad we could come to an agreement, Germany. Let's finalize the details of our alliance and ensure a strong partnership throughout the game. I propose we discuss further moves to solidify our positions and ensure a strong partnership throughout the game.\n20 GERMANY -> RUSSIA: I'm glad we could come to an agreement, Russia. Let's finalize the details of our alliance and ensure a strong partnership throughout the game. I propose we discuss further moves to solidify our positions and ensure a strong partnership throughout the game.",
+        "Germany_actual_movement": [
+            "A DEN S F BOT - SWE",
+            "A PIC - BEL",
+            "A SPA - GAS",
+            "A BUR S A PIC - BEL",
+            "F BAL - KIE",
+            "F KIE - HEL"
+        ],
+        "Germany_parse_predict": [
+            "A DEN S F BOT - SWE",
+            "A PIC - PAR",
+            "A SPA S A BUR - MAR",
+            "A BUR - MAR",
+            "F BAL - BOT",
+            "F KIE - HOL"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.008000746369361877,
+                0.07063949108123779,
+                0.010107830166816711,
+                -0.11000309139490128,
+                -0.006295830011367798,
+                0.004965096712112427,
+                0.0385872945189476
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.11000309139490128
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.004965096712112427
+            ]
+        },
+        "Russia_actual_movement": [
+            "F BOT - SWE",
+            "F SEV S A BUL - RUM",
+            "A UKR - GAL",
+            "A STP - NWY"
+        ],
+        "Russia_parse_predict": [
+            "F BOT - STP/SC",
+            "F SEV - RUM",
+            "A UKR S A STP - MOS",
+            "A STP - MOS"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                0.019932545721530914,
+                0.14378699660301208,
+                -0.020536081865429878,
+                -0.13006404787302017,
+                0.05331701040267944,
+                -0.03919573128223419,
+                -0.027240656316280365
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.03919573128223419
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.13006404787302017
+            ]
+        }
+    },
+    {
+        "game_id": "52118",
+        "phase_name": "S1903M",
+        "env_uuid": "01J92MBSBKQ5GVPJQMJ4YV5NNF",
+        "Italy_original_predict": "A TYR TRI; A VEN S A TYR TRI; F ADR S A TYR TRI; F ION GRE",
+        "Russia_original_predict": "A GAL BUD; A MOS STP; A VIE S A GAL BUD; F RUM SEV",
+        "Italy_units": "A TYR, A VEN, F ION, F ADR",
+        "Russia_units": "A MOS, A GAL, A VIE, A UKR",
+        "intent_dialogue": "0 ITALY -> RUSSIA: Hello Russia, I'm Italy from Italy. I'd like to discuss potential mutually beneficial moves that can help both of our countries. Are there any specific areas on the board where we can cooperate?\n1 RUSSIA -> ITALY: Hello Italy, I'm Russia from Russia. I appreciate your willingness to cooperate. I'm interested in exploring possibilities for mutual benefit. Currently, I'm considering moves that can help me secure supply centers in the north. Would you be open to discussing potential army movements that could benefit both our countries?\n2 ITALY -> RUSSIA: I see your interest in the north, and I'm open to discussing potential army movements that could benefit both our countries. How about we consider a joint move to secure the Baltic Sea region? Perhaps we could coordinate our armies to move into Prussia and Livonia, creating a strong buffer zone between us and Germany.\n3 RUSSIA -> ITALY: I appreciate your willingness to cooperate, Italy. A joint move to secure the Baltic Sea region sounds like an interesting idea. However, I'd like to explore other options as well. Would you be open to discussing a potential move into Austria, securing supply centers in the south? Perhaps we could coordinate our armies to move into Trieste and Budapest, creating a strong foothold in the region.\n4 ITALY -> RUSSIA: I understand your interest in exploring other options, Russia. However, I'd like to reiterate the benefits of a joint move into the Baltic Sea region. It would create a strong buffer zone between us and Germany, and potentially open up opportunities for future expansion. Would you be willing to reconsider this option and discuss the specifics of the army movements involved?\n5 RUSSIA -> ITALY: I understand your concerns about the Baltic Sea region, Italy. However, I believe a joint move into Austria could be beneficial for both our countries. Would you be open to discussing the specifics of the army movements involved, such as A BOH S A WAR - SIL or A WAR - SIL?\n6 ITALY -> RUSSIA: I'm open to discussing the specifics of the army movements involved, such as A MAR S F LYO - SPA or F TUN S F TYS - WES. Let's explore how we can coordinate our armies to secure supply centers in the south.\n7 RUSSIA -> ITALY: I agree that a joint move into Austria could be beneficial for both our countries. Let's discuss the specifics of the army movements involved, such as A BOH S A WAR - SIL or A WAR - SIL. I'm open to coordinating our armies to secure supply centers in the south.\n8 ITALY -> RUSSIA: Let's finalize the specifics of the army movements involved, such as A MAR S F LYO - SPA or F TUN S F TYS - WES. I'm open to coordinating our armies to secure supply centers in the south.\n9 RUSSIA -> ITALY: I'm glad we could come to an understanding, Italy. Let's finalize the specifics of the army movements involved, such as A BOH S A WAR - SIL or A WAR - SIL. I'm open to coordinating our armies to secure supply centers in the south. Shall we agree on the moves and make them official?\n10 ITALY -> RUSSIA: I'm glad we could come to an understanding, Russia. Let's finalize the specifics of the army movements involved, such as A MAR S F LYO - SPA or F TUN S F TYS - WES. I'm open to coordinating our armies to secure supply centers in the south. Shall we agree on the moves and make them official?\n11 RUSSIA -> ITALY: I'm glad we could come to an understanding, Italy. I think we've discussed all the possible moves that can benefit both our countries. Shall we agree on the moves and make them official? Perhaps we can discuss further in the next turn to ensure our mutual success.\n12 ITALY -> RUSSIA: I'm glad we could come to an understanding, Russia. I think we've discussed all the possible moves that can benefit both our countries. Let's agree on the moves and make them official. Perhaps we can discuss further in the next turn to ensure our mutual success.\n13 RUSSIA -> ITALY: I'm glad we could come to an understanding, Italy. I think we've discussed all the possible moves that can benefit both our countries. Shall we agree on the moves and make them official? Perhaps we can discuss further in the next turn to ensure our mutual success.\n14 ITALY -> RUSSIA: I'm glad we could come to an understanding, Russia. I think we've discussed all the possible moves that can benefit both our countries. Let's agree on the moves and make them official. Perhaps we can discuss further in the next turn to ensure our mutual success.\n15 RUSSIA -> ITALY: I'm glad we could come to an understanding, Italy. I think we've discussed all the possible moves that can benefit both our countries. Shall we agree on the moves and make them official? Perhaps we can discuss further in the next turn to ensure our mutual success.\n16 ITALY -> RUSSIA: I'm glad we could come to an understanding, Russia. I think we've discussed all the possible moves that can benefit both our countries. Let's agree on the moves and make them official. Perhaps we can discuss further in the next turn to ensure our mutual success.\n17 RUSSIA -> ITALY: I'm glad we could come to an understanding, Italy. I think we've discussed all the possible moves that can benefit both our countries. Shall we agree on the moves and make them official? Perhaps we can discuss further in the next turn to ensure our mutual success.\n18 ITALY -> RUSSIA: I'm glad we could come to an understanding, Russia. I think we've discussed all the possible moves that can benefit both our countries. Let's agree on the moves and make them official. Perhaps we can discuss further in the next turn to ensure our mutual success.\n19 RUSSIA -> ITALY: I'm glad we could come to an understanding, Italy. I think we've discussed all the possible moves that can benefit both our countries. Shall we agree on the moves and make them official? Perhaps we can discuss further in the next turn to ensure our mutual success.\n20 ITALY -> RUSSIA: I'm glad we could come to an understanding, Russia. I think we've discussed all the possible moves that can benefit both our countries. Let's agree on the moves and make them official. Perhaps we can discuss further in the next turn to ensure our mutual success.",
+        "Italy_actual_movement": [
+            "F ADR - ALB",
+            "F ION S F ADR - ALB",
+            "A VEN S A TYR - TRI",
+            "A TYR - TRI"
+        ],
+        "Italy_parse_predict": [
+            "F ADR S A TYR - TRI",
+            "F ION - GRE",
+            "A VEN S A TYR - TRI",
+            "A TYR - TRI"
+        ],
+        "Italy": {
+            "whole_task_eval": [
+                -0.031168075278401375,
+                -0.03862164914608002,
+                -0.01580435037612915,
+                -0.007603465113788843,
+                0.1916971653699875,
+                0.1558403018862009,
+                -0.2543399855494499
+            ],
+            "ITALY": [
+                "ITALY",
+                0.1916971653699875
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.1558403018862009
+            ]
+        },
+        "Russia_actual_movement": [
+            "A MOS S A UKR",
+            "A GAL S A VIE - BUD",
+            "A VIE - BUD",
+            "A UKR H"
+        ],
+        "Russia_parse_predict": [
+            "A MOS - STP",
+            "A GAL - BUD",
+            "A VIE S A GAL - BUD",
+            "A UKR H"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.03210932505317032,
+                -0.0854496881365776,
+                0.040420860052108765,
+                -0.009315562434494495,
+                0.12131711840629578,
+                0.17584123648703098,
+                -0.21070455014705658
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.17584123648703098
+            ],
+            "ITALY": [
+                "ITALY",
+                0.12131711840629578
+            ]
+        }
+    },
+    {
+        "game_id": "82362",
+        "phase_name": "F1903M",
+        "env_uuid": "01J92MBNJR4EYW8QN2NGCDK3NE",
+        "Germany_original_predict": "A HOL S A PIC BEL; A MUN BOH; F DEN H; F SWE S F DEN",
+        "France_original_predict": "A BUR S A PIC BEL; A LVP EDI; A MAR PIE; A PIC BEL; F MAO WES",
+        "Germany_units": "A RUH, A HOL, A MUN, F SWE, F DEN, A KIE",
+        "France_units": "A BUR, A MAR, A PIC, A LVP, F MAO",
+        "intent_dialogue": "0 GERMANY -> FRANCE: Hello France, I'm Germany playing as Germany. I'd like to discuss a potential alliance that could benefit both our countries. Are you open to negotiations?\n1 FRANCE -> GERMANY: Bonjour Germany, I'm France playing as France. I'm open to negotiations, but I'd like to discuss how an alliance could benefit France's board position. What specific moves do you propose we make this turn to achieve our mutual goals?\n2 GERMANY -> FRANCE: I understand your concerns, France. I propose that we work together to take down Austria and Italy. With our combined strength, we can easily take control of their centers. In return, I ask that you support my move to take Munich from Austria. This will give me a strong foothold in the region and allow us to coordinate our efforts more effectively.\n3 FRANCE -> GERMANY: I'm willing to work with you, Germany, but I need to see more concrete benefits for France. How about we discuss a joint attack on Italy instead, and you support my move to take Belgium?\n4 GERMANY -> FRANCE: I agree that a joint attack on Italy is a good idea, but I still need to take Munich from Austria to secure my position. How about we compromise and you support my move to take Munich, and in return, I'll support your move to take Belgium? This way, we both get what we want.\n5 FRANCE -> GERMANY: I agree to your proposal, Germany. Let's work together to take down Italy and Austria. I'll support your move to take Munich, and in return, you'll support my move to take Belgium. This way, we both get what we want. Let's make it happen!\n6 GERMANY -> FRANCE: Let's finalize our agreement and make the necessary moves. I'll move my army to Munich, and you'll move your army to Belgium. We'll work together to take down Italy and Austria.\n7 FRANCE -> GERMANY: I'm glad we've come to an agreement, Germany. Let's finalize our plans and make the necessary moves. I'll support your move to take Munich, and you'll support my move to take Belgium. This way, we both get what we want. Let's make it happen!\n8 GERMANY -> FRANCE: I'm glad we've come to an agreement, France. Now that we have a clear plan, let's make sure to coordinate our moves and provide each other with the necessary support. I'll move my army to Munich, and you'll move your army to Belgium. Let's take down Italy and Austria together!\n9 FRANCE -> GERMANY: I'm glad we've come to an agreement, Germany. Let's make sure to follow through on our plans and provide each other with the necessary support. I'll make sure to move my army to Belgium, and you'll move your army to Munich. Let's take down Italy and Austria together!\n10 GERMANY -> FRANCE: I'm glad we've come to an agreement, France. Let's make sure to follow through on our plans and provide each other with the necessary support. I'll move my army to Munich, and you'll move your army to Belgium. Let's take down Italy and Austria together! Now that we have a clear plan, I think it's a good idea to discuss our long-term goals and how we can continue to work together to achieve them.\n11 FRANCE -> GERMANY: I'm glad we've come to an agreement, Germany. Let's make sure to follow through on our plans and provide each other with the necessary support. I'll make sure to move my army to Belgium, and you'll move your army to Munich. Let's take down Italy and Austria together! Now that we have a clear plan, I think it's a good idea to discuss our long-term goals and how we can continue to work together to achieve them.\n12 GERMANY -> FRANCE: I'm glad we've come to an agreement, France. Let's make sure to follow through on our plans and provide each other with the necessary support. I'll move my army to Munich, and you'll move your army to Belgium. Let's take down Italy and Austria together! Now that we have a clear plan, I think it's a good idea to discuss our long-term goals and how we can continue to work together to achieve them. Perhaps we can discuss a potential alliance with Russia to further secure our positions.\n13 FRANCE -> GERMANY: I'm glad we've come to an agreement, Germany. Let's make sure to follow through on our plans and provide each other with the necessary support. I'll make sure to move my army to Belgium, and you'll move your army to Munich. Let's take down Italy and Austria together! Now that we have a clear plan, I think it's a good idea to discuss our long-term goals and how we can continue to work together to achieve them. Perhaps we can discuss a potential alliance with Russia to further secure our positions.\n14 GERMANY -> FRANCE: I'm glad we've come to an agreement, France. Let's make sure to follow through on our plans and provide each other with the necessary support. I'll move my army to Munich, and you'll move your army to Belgium. Let's take down Italy and Austria together! Perhaps we can also discuss ways to improve our alliance and secure our positions in the long run.",
+        "Germany_actual_movement": [
+            "A MUN S A KIE - RUH",
+            "F DEN S F SWE",
+            "A HOL S A RUH - BEL",
+            "A RUH - BEL",
+            "F SWE S F DEN",
+            "A KIE - RUH"
+        ],
+        "Germany_parse_predict": [
+            "A MUN - BOH",
+            "F DEN H",
+            "A HOL S A PIC - BEL",
+            "A RUH - BEL",
+            "F SWE S F DEN",
+            "A KIE - RUH"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                0.0005239335587248206,
+                -0.0013738966081291437,
+                0.09224463254213333,
+                0.12272584438323975,
+                -0.43986526131629944,
+                -0.021828841418027878,
+                0.2475736876949668
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.12272584438323975
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.09224463254213333
+            ]
+        },
+        "France_actual_movement": [
+            "A LVP H",
+            "A MAR - GAS",
+            "F MAO - ENG",
+            "A PIC - BRE",
+            "A BUR S A RUH - BEL"
+        ],
+        "France_parse_predict": [
+            "A LVP - EDI",
+            "A MAR - PIE",
+            "F MAO - WES",
+            "A PIC - BEL",
+            "A BUR S A PIC - BEL"
+        ],
+        "France": {
+            "whole_task_eval": [
+                0.000631987932138145,
+                0.003961424808949232,
+                -0.0662293154746294,
+                0.15423667430877686,
+                -0.3962906002998352,
+                -0.022459179162979126,
+                0.3261489709839225
+            ],
+            "FRANCE": [
+                "FRANCE",
+                -0.0662293154746294
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.15423667430877686
+            ]
+        }
+    }
+]

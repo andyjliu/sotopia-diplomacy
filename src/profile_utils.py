@@ -59,7 +59,27 @@ def store_env_profile_with_previous_plausible(game_id, game_phase, countries, ta
         agent_powers = countries,
         env_tag = tag
     )
+    
+def store_env_profile_with_actual_moves(game_id, game_phase, countries, tag, game_dir):
+    # pdb.set_trace()
+    scenario, agent_goals = Template.get_previous_scenario_fewshot_actual_moves(game_phase, countries, game_id, game_dir)
+    add_env_profile(
+        game_id = game_id,
+        phase_name = game_phase['name'],
+        scenario=scenario,
+        agent_goals = [social_goal for social_goal in agent_goals],
+        agent_powers = countries,
+        env_tag = tag
+    )
 
+def get_actual_moves(game_dir, game_id, phase, country):
+    upper_country = country.upper()
+    current_phase = None
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)        
+    import pdb
+    pdb.set_trace()
+    
 def read_games_from_folder(game_folder):
     games = []
     for root, dirs, files in os.walk(game_folder):

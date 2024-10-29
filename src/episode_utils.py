@@ -128,13 +128,13 @@ def get_phases_from_envs(games_dir, envs):
         with open(file_path, 'r') as f:
             games.append(json.load(f))
 
+
     for env in tqdm(envs):
         for game in games:
             if game['id'] == env.game_id:
                 for phase in game['phases']:
                     if phase['name'] == env.phase_name:
                         phases.append(phase)
-    
     return phases
 
 

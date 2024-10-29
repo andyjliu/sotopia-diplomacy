@@ -17,6 +17,7 @@ from fairdiplomacy import pydipcc
 import sys
 import json
 import inspect
+import pdb
 from tqdm import tqdm
 
 DEFAULT_CFG: Dict[str, Any] = dict(
@@ -31,7 +32,7 @@ DEFAULT_CFG: Dict[str, Any] = dict(
 def main():
     game_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
     dir_path = "/data/user_data/wenkail/"
-    with open("choice_phase_list.json", 'r') as f:
+    with open("choice_cooperate_phase_list.json", 'r') as f:
         data = json.load(f)
 
     # Definition of Agents Configs
@@ -43,12 +44,17 @@ def main():
         base_strategy_model=base_strategy
     )
     new_data = []
+    num = 0
     for g in tqdm(data):
+        if g['is_cooperate'] == 'no':
+            continue
         countries = [i.upper() for i in g['countries']]
         game_file_path = f"{game_dir}{g['game_id']}.json"
         pydipcc_game = pydipcc.Game.from_json(open(game_file_path, 'r').read())
         plausible_moves_c1 = order_sampler.sample_orders(pydipcc_game, agent_power=countries[0], extra_plausible_orders=None) 
         plausible_moves_c2 = order_sampler.sample_orders(pydipcc_game, agent_power=countries[1], extra_plausible_orders=None) 
+        if plausible_moves_c1[f"{countries[0]}"] == {(): 1.0} or plausible_moves_c2[f"{countries[1]}"] == {(): 1.0}:
+            continue
         game = {}
         game['game_id'] = g['game_id']
         game['phase'] = g['phase']
@@ -57,10 +63,12 @@ def main():
         game['c1_plausible_move'] = {str(key): value for key, value in plausible_moves_c1[f"{countries[0]}"].items()}
         game['c2_plausible_move'] = {str(key): value for key, value in plausible_moves_c2[f"{countries[1]}"].items()}
         new_data.append(game)
+        num += 1
 
     # import pdb
     # pdb.set_trace()
-    with open('choice_pahse_list_with_plausible_moves_v2.json', 'w') as f:
+    print(num)
+    with open('choice_pahses_list_with_cooperate_plausible_moves.json', 'w') as f:
         json.dump(new_data, f, indent=2)
 
 if __name__ == "__main__":

@@ -2,9 +2,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-FORMAT_EPISODE_PATH="data/formatted_episodes/taskeval_v4_fewshot_plausible/taskeval_actual_movement_v2.json"
-INTENT_RESPONSE_PATH="data/intent_response/taskeval_v4_fewshot_plausible/taskeval_actual_movement_v2.jsonl"
-INTENT_VALUE_PATH="data/intent_value/taskeval_v4_fewshot_plausible/taskeval_actual_movement_v2.json"
+FORMAT_EPISODE_PATH="data/formatted_episodes/taskeval_v6/taskeval_actual_movement_coop_flausible.json"
+INTENT_RESPONSE_PATH="data/intent_response/taskeval_v6/taskeval_actual_movement_coop_flausible.jsonl"
+INTENT_VALUE_PATH="data/intent_value/taskeval_v6/taskeval_actual_movement_coop_flausible.json"
 
 source ~/.bashrc
 
@@ -12,13 +12,13 @@ source ~/.bashrc
 conda activate sotopia
 
 # echo "Running add_actual_intent_episode.py ..."
-# python add_actual_intent_episode.py --env_tag taskeval_fewshot_plausible --tgt_path=$FORMAT_EPISODE_PATH
+CUDA_VISIBLE_DEVICES=1 python get_actual_intent_episode.py --env_tag coop_with_flausible_v3 --tgt_path=$FORMAT_EPISODE_PATH
 
 echo "Running intent_prediction.py ..."
-python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=0 --split_end=450 --human
-python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=450 --split_end=900 --human
-python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=900 --split_end=1350 --human
-python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=1350 --split_end None --human
+CUDA_VISIBLE_DEVICES=1 python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=0 --split_end None
+# python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=200 --split_end=300
+# python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=900 --split_end=1350
+# python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=1350 --split_end None
 
 # echo "Activating diplomacy_cicero environment..."
 conda activate diplomacy_cicero

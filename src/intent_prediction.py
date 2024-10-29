@@ -87,6 +87,10 @@ def main():
     intent_agent = get_intent_agent(args.dir_path, args.intent_model_path)
 
     split_formatted_episodes = formatted_episodes[args.split_begin: args.split_end]
+
+    if not os.path.exists(os.path.dirname(args.tgt_path)):
+        os.makedirs(os.path.dirname(args.tgt_path))
+        
     with open(args.tgt_path, 'a') as f:
         for episode in tqdm(split_formatted_episodes):
             response = {}

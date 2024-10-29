@@ -7,7 +7,7 @@ import os
 sys.path.append("/home/wenkail/diplomacy/sotopia-diplomacy/src")
 from tqdm import tqdm
 from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
-from profile_utils import store_env_profile_with_previous_plausible
+from profile_utils import store_env_profile_with_previous_plausible, store_env_profile_with_previous
 import argparse
 from tqdm import tqdm
 import os
@@ -36,18 +36,38 @@ def add_env_profiles(games_dir, games_phases, tag, game_dir):
         game = json.load(open(games_dir + game_phases['game_id'] + '.json'))
         for phase in game['phases']:
             if phase['name'] == game_phases['phase']:
+                # pdb.set_trace()
+                store_env_profile_with_previous(game_phases['game_id'], phase, game_phases['countries'], tag, game_dir)
+
+def add_env_profiles_with_plausible(games_dir, games_phases, tag, game_dir):
+    for game_phases in tqdm(games_phases, desc="Processing games"):
+        # TODO: Get game here
+        # pdb.set_trace()
+        game = json.load(open(games_dir + game_phases['game_id'] + '.json'))
+        for phase in game['phases']:
+            if phase['name'] == game_phases['phase']:
                 parse_c1_plausible_move = parse_game_phases(game_phases['c1_plausible_move'])
                 parse_c2_plausible_move = parse_game_phases(game_phases['c2_plausible_move'])
                 # pdb.set_trace()
                 store_env_profile_with_previous_plausible(game_phases['game_id'], phase, game_phases['countries'], tag, game_dir, parse_c1_plausible_move, parse_c2_plausible_move)
 
 def main():
-    file = "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/choice_pahse_list_with_plausible_moves.json"
-    with open(file, 'r') as f:
-        choice_phases_list_plausible = json.load(f)
+    parser = argparse.ArgumentParser()
+    parser.add_argument("--choice_file", default= "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/choice_phases_list_with_cooperate_plausible_moves.json", type=str, required=False, help="The choice files")
+    parser.add_argument("--tag", default="coop_with_flausible_v3", type=str, required=False, help="The tag name")
+    parser.add_argument("--with_plausible", action="store_true", help="Whether with plausible moves")
+    args = parser.parse_args()
+
+    with open(args.choice_file, 'r') as f:
+        choice_phases_list = json.load(f)
+
     games_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
-    tag = "taskeval_fewshot_plausible_v2"
-    add_env_profiles(games_dir, choice_phases_list_plausible, tag, games_dir)
+    print(args.with_plausible)
+    if args.with_plausible:
+        add_env_profiles_with_plausible(games_dir, choice_phases_list, args.tag, games_dir)
+    else:
+        add_env_profiles(games_dir, choice_phases_list, args.tag, games_dir)
+
 
 if __name__ == "__main__":
     main()

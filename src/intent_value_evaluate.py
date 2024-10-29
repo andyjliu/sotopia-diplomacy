@@ -3,6 +3,7 @@ import random
 from rich import print
 import sys
 from tqdm import tqdm
+import os
 from evaluate_utils import (
     get_intent_agent,
     get_predict_value,
@@ -79,6 +80,8 @@ def main():
             #     countries_value.append(country_value_dict)
             
             
+    if not os.path.exists(os.path.dirname(args.tgt_path)):
+        os.makedirs(os.path.dirname(args.tgt_path))
 
     json.dump(countries_value, open(args.tgt_path, 'w'), indent = 4)
 

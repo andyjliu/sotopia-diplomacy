@@ -49,7 +49,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir_path", default="/data/user_data/wenkail/", type=str, required=False, help="Choose the value model dir")
     parser.add_argument("--tag", type=str, required=True, help = "Choose a tag for access the database")
-    parser.add_argument("--tgt_path", default="data/formatted_episodes/taskeval_1757_intent_episode_llama3.json", type=str, required=False, help="Store formatted intent episode")
+    parser.add_argument("--tgt_path", default="", type=str, required=False, help="Store formatted intent episode")
     args = parser.parse_args()
 
     episodes = get_episodes(args.tag)

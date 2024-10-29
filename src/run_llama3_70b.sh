@@ -12,7 +12,7 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
     --chat-template "chat_templates/llama3.jinja" \
-    --tensor-parallel-size=2 \
+    --tensor-parallel-size=4 \
     --max-num-batched-tokens=8192 \
     --dtype bfloat16 \
     --gpu-memory-utilization 0.9 \

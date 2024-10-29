@@ -5,6 +5,7 @@ import json
 import pdb
 from typing import Any
 import argparse
+import os
 from tqdm import tqdm
 sys.path.append("../")
 from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
@@ -38,7 +39,7 @@ def get_intent_dialogue(messages):
 
 def format_episode(envs, phases):
     game_phase_messages = []
-    for i in range(len(phases)):
+    for i in tqdm(range(len(phases)), desc = "Formatting Episodes: "):
         messages = get_actual_dialogue(envs[i], phases[i])
         if messages != []:
             # pdb.set_trace()
@@ -58,7 +59,7 @@ def main():
     parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
     # parser.add_argument("--src_epi_tag", type=str, required=True, help = "Choose a tag for access the database")
     parser.add_argument("--env_tag", type=str, required=True, help = "Choose a tag for access the database")
-    parser.add_argument("--tgt_path", default="data/formatted_episodes/taskeval_1757_intent_episode_.json", type=str, required=False, help="Store formatted intent episode")
+    parser.add_argument("--tgt_path", default="", type=str, required=False, help="Store formatted intent episode")
     args = parser.parse_args()
 
     all_epi_pks = list(EpisodeLog.all_pks())
@@ -82,7 +83,11 @@ def main():
     
     phases = get_phases_from_envs(args.games_dir, envs)
     intent_dialogue = format_episode(envs, phases)
+
     print(f"Intent Dialogue Length: {len(intent_dialogue)}")
+    if not os.path.exists(os.path.dirname(args.tgt_path)):
+        os.makedirs(os.path.dirname(args.tgt_path))
+        
     with open(args.tgt_path, 'w') as f:
         json.dump(intent_dialogue, f, indent = 4)
 

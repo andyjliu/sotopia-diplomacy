@@ -191,22 +191,22 @@ def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries):
             print(phase)
         else:
             previous_phase.append(phase)
-
+    if len(previous_phase) > 2:
+        previous_phase = previous_phase[-2:]
     dialogue_unit = ""
     for phase in previous_phase:
         dialogue_unit += f"{phase['name']}: \n"
         dialogue_unit += f"Dialogue Between Two Countries: \n"
         for message in phase['messages']:
-            if message['sender'] in countries and message['recipient'] in countries:
+            if message['sender'] in upper_countries and message['recipient'] in upper_countries:
                 clean_message = message['message'].replace("\n", " ")
                 dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
-
         dialogue_unit += f"Countries' Center in This Phase: \n"
         dialogue_unit += str(phase['state']['centers']) + "\n"
         dialogue_unit += f"Countries' Units in This Phase: \n"
         dialogue_unit += str(phase['state']['units']) + "\n"
         dialogue_unit += f"Countires' Order in This Phase: \n"
-        dialogue_unit += str(phase['orders'])
+        dialogue_unit += str(phase['orders']) + '\n'
 
     return dialogue_unit
             

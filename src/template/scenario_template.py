@@ -15,8 +15,8 @@ class Template:
         c2 = countries[1]
         prompt = Template.center_instruction + str(phase['state']['centers']) + Template.unit_instruction + str(phase['state']['units'])
         agent_goals_list = []
-        agent_goals_list.append(f"Negotiate with {c2} so that they will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Try to make your dialogue between {c2} within 10 turns.")
-        agent_goals_list.append(f"Negotiate with {c1} so that they will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Try to make your dialogue between {c1} within 10 turns.")
+        agent_goals_list.append(f"Negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Try to make your dialogue between {c2} within 10 turns.")
+        agent_goals_list.append(f"Negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Try to make your dialogue between {c1} within 10 turns.")
         return prompt, agent_goals_list
 
     @staticmethod
@@ -26,11 +26,12 @@ class Template:
         c2 = countries[1]
         prompt = f"{Template.previous_dialogue_instruction}: {c1} and {c2}: \n"
         prompt += get_previous_dialogue_unit(game_dir, game_id, phase, countries) + "\n"
-        prompt += Template.center_instruction + str(phase['state']['centers']) + Template.unit_instruction + str(phase['state']['units'])
+        prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
         agent_goals_list = []
-        agent_goals_list.append(f"Negotiate with {c2} so that they will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Please imitate the dialogue between two countries, conducting a multi-round conversation. Make sure your own dialogue between {c2} is within 5 turns.")
-        agent_goals_list.append(f"Negotiate with {c1} so that they will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Please imitate the dialogue between two countries, conducting a multi-round conversation. Make sure your own dialogue between {c1} is within 5 turns.")
-        
+        agent_goals_list.append(f"Negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Imitate the style and content of previous dialogues between the two countries, conducting a multi-round conversation. Make sure your own dialogue between {c2} is within 5 turns.")
+        agent_goals_list.append(f"Negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Imitate the style and content of previous dialogues between the two countries, conducting a multi-round conversation. Make sure your own dialogue between {c1} is within 5 turns.")
+        # import pdb
+        # pdb.set_trace()
         return prompt, agent_goals_list
 
     @staticmethod
@@ -42,11 +43,11 @@ class Template:
         c2 = countries[1]
         prompt = f"{Template.previous_dialogue_instruction}: {c1} and {c2}: \n"
         prompt += get_previous_dialogue_unit(game_dir, game_id, phase, countries) + "\n"
-        prompt += Template.center_instruction + str(phase['state']['centers']) + Template.unit_instruction + str(phase['state']['units'])
+        prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
   
         agent_goals_list = []
-        agent_goals_list.append(f"Negotiate with {c2} so that they will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Here are all your plausible movements: {c1_plausible_move}. Please imitate the dialogue between two countries, conducting a multi-round conversation. Make sure your own dialogue between {c2} is within 5 turns.")
-        agent_goals_list.append(f"Negotiate with {c1} so that they will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Here are all your plausible movements: {c2_plausible_move}. Please imitate the dialogue between two countries, conducting a multi-round conversation. Make sure your own dialogue between {c1} is within 5 turns.")
-        import pdb
-        pdb.set_trace()
+        agent_goals_list.append(f"Negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Here are all your plausible movements for this turn: {c1_plausible_move}. Imitate the style and content of previous dialogues between the two countries, conducting a multi-round conversation. Make sure your own dialogue between {c2} is within 5 turns.")
+        agent_goals_list.append(f"Negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. Here are all your plausible movements for this turn: {c2_plausible_move}. Imitate the style and content of previous dialogues between the two countries, conducting a multi-round conversation. Make sure your own dialogue between {c1} is within 5 turns.")
+        # import pdb
+        # pdb.set_trace()
         return prompt, agent_goals_list

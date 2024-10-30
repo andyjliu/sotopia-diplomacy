@@ -61,18 +61,17 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--choice_file", default= "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/choice_phases_list_with_cooperate_plausible_moves.json", type=str, required=False, help="The choice files")
     parser.add_argument("--tag", default="coop_with_flausible_v3", type=str, required=False, help="The tag name")
-    parser.add_argument("--with_plausible", action="store_true", help="Whether with plausible moves")
-    parser.add_argument("--with_actual", action="store_true", help="Whether with actual moves")
+    parser.add_argument("--with_plausible_move", action="store_true", help="Whether with plausible moves")
+    parser.add_argument("--with_actual_move", action="store_true", help="Whether with actual moves")
     args = parser.parse_args()
 
     with open(args.choice_file, 'r') as f:
         choice_phases_list = json.load(f)
 
     games_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
-    print(args.with_plausible)
-    if args.with_plausible:
+    if args.with_plausible_move:
         add_env_profiles_with_plausible(games_dir, choice_phases_list, args.tag, games_dir)
-    elif args.with_actual_moves:
+    elif args.with_actual_move:
         add_env_profiles_with_actual_moves(games_dir, choice_phases_list, args.tag, games_dir)
     else:
         add_env_profiles(games_dir, choice_phases_list, args.tag, games_dir)

@@ -72,13 +72,10 @@ def store_env_profile_with_actual_moves(game_id, game_phase, countries, tag, gam
         env_tag = tag
     )
 
-def get_actual_moves(game_dir, game_id, phase, country):
-    upper_country = country.upper()
-    current_phase = None
-    with open(game_dir + game_id + ".json") as f:
-        game = json.load(f)        
-    import pdb
-    pdb.set_trace()
+def get_actual_moves(phase, country):
+    # Upper country
+    uc = country.upper()
+    return phase['orders'][uc]
     
 def read_games_from_folder(game_folder):
     games = []

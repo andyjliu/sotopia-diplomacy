@@ -5,7 +5,7 @@ conda activate sotopia
 # python generate_episode.py --model gpt-4-turbo --tag gpt-4-analysis --sample_size 10 --sub_sample 
 # python generate_episode.py --epi_tag te_n_with_previous_llama3_70b --split_begin=0 --split_end=26
 # python generate_episode.py --epi_tag te_n_with_previous_llama3_70b --split_begin=26 --split_end=53
-python generate_episode.py --epi_tag coop_with_flausible_move_v4
+python generate_episode.py --epi_tag coop_with_actual_move_thres_0.02
 
 # Without fluasible Moves:
 # coop_without_flausible_move_v2

@@ -62,8 +62,6 @@ def extract_units_by_country(units_string, country):
         if entry.strip().startswith(country):
             return entry.split(":", 1)[1].strip()
     return None
-# units_string = 'AUSTRIA: A SER, A BUD, F GRE, A VIE, F NAP; ENGLAND: F LON, F NTH, A HOL, F IRI; FRANCE: F BRE, A SPA, A PAR, A BUR; GERMANY: A DEN, A BEL, A SIL, A RUH, F KIE; ITALY: A VEN, F MAO, F LYO, A MAR; RUSSIA: A WAR, F SWE, A NWY, A GAL, F BLA, A RUM, A UKR; TURKEY: A BUL, F CON, A ANK, F EAS'
-# country = 'ITALY'
 
 def main():
     parser = argparse.ArgumentParser()

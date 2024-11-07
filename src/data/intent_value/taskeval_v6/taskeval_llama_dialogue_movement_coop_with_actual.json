@@ -1,0 +1,1340 @@
+[
+    {
+        "game_id": "103509",
+        "phase_name": "S1903M",
+        "env_uuid": "01JBDMK2DHZ67BV0EVJGK13E8Z",
+        "England_original_predict": "F ENG BRE; A NWY H; F NTH SKA",
+        "Germany_original_predict": "A BEL PIC; A HOL BEL; A MUN BUR; A SWE H; A KIE DEN",
+        "England_units": "F NTH, F ENG, A NWY, F MAO",
+        "Germany_units": "A HOL, A BEL, A MUN, F FIN, A SWE, A BUR, A KIE",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Hello Germany, I hope this turn finds you well. I was thinking about our current board position and I believe we could mutually benefit from some cooperation. I'd love to discuss some potential moves that could strengthen our alliance and hinder our common enemies. What are your thoughts on the matter?\n1 GERMANY -> ENGLAND: Hello England, I appreciate your willingness to cooperate. I've been thinking about our current situation, and I believe we can indeed work together to achieve our goals. I'm particularly interested in discussing potential moves that could help us gain an advantage over our common enemies. However, I'd like to know more about your specific proposals and how they would benefit both our countries. What did you have in mind?\n2 ENGLAND -> GERMANY: I'm glad you're open to discussing potential moves. I was thinking that if you were to move your army in Denmark to Sweden, it would put pressure on Russia and potentially open up an opportunity for us to gain a supply center. Meanwhile, I could move my fleet in the North Sea to England, which would allow me to support your move and provide additional pressure on Russia. What are your thoughts on this proposal?\n3 GERMANY -> ENGLAND: That's an interesting proposal, England. I like the idea of putting pressure on Russia, but I'm not sure if moving my army from Denmark to Sweden is the best move for me right now. I'd like to discuss some alternative options that could benefit both of us. What if I were to move my army from Kiel to Denmark instead, and you were to support me with your fleet in the North Sea? This could give us a stronger position against Russia and potentially open up opportunities for us to gain more supply centers.\n4 ENGLAND -> GERMANY: That's an interesting counter-proposal, Germany. I think moving your army from Kiel to Denmark could indeed put pressure on Russia and create opportunities for us to gain more supply centers. However, I'd like to discuss the details of the support I could provide with my fleet in the North Sea. Would you be open to me moving my fleet to the Baltic Sea to support your move, or would you prefer me to keep it in the North Sea to maintain pressure on Russia from a different angle?\n5 GERMANY -> ENGLAND: I think moving my fleet from Finland to support your army in Norway could also be beneficial. It would put additional pressure on Russia and potentially open up opportunities for us to gain more supply centers. What are your thoughts on this?\n6 ENGLAND -> GERMANY: That's an interesting suggestion, Germany. Moving your fleet from Finland to support my army in Norway could indeed put additional pressure on Russia. However, I'd like to clarify how this move would benefit both of us in the long run. Would you be open to discussing a potential alliance to take down Russia together?\n7 GERMANY -> ENGLAND: I think an alliance to take down Russia together could be beneficial for both of us. With my army moving from Kiel to Denmark and your fleet supporting me in the Baltic Sea, we could put significant pressure on Russia and gain a strong foothold in the region. What are your thoughts on a long-term alliance to divide Russia's supply centers between us?\n8 ENGLAND -> GERMANY: I think a long-term alliance to divide Russia's supply centers between us could be mutually beneficial. With our combined strength, we could gain a significant advantage in the region. I'd like to propose a more specific plan for how we can work together to take down Russia and secure our interests. What are your thoughts on a joint attack on Russia's supply center in Sweden?\n9 GERMANY -> ENGLAND: I think a joint attack on Russia's supply center in Sweden is a great idea. With our combined strength, I believe we can take it down and gain a significant advantage in the region. I'd like to confirm that you'll support my army in Denmark with your fleet in the Baltic Sea, and we can discuss the details of the joint attack further.\n10 ENGLAND -> GERMANY: I'm glad we've come to an agreement on the joint attack on Russia's supply center in Sweden. I'll make sure to support your army in Denmark with my fleet in the Baltic Sea. Let's finalize the details of the joint attack and make it happen.\n11 GERMANY -> ENGLAND: I'm glad we've come to an agreement on the joint attack on Russia's supply center in Sweden. I'd like to confirm that we'll work together to execute the plan and make the necessary adjustments to our armies and fleets to ensure our success.\n12 ENGLAND -> GERMANY: I'm glad we've confirmed the details of our joint attack on Russia's supply center in Sweden. I'll make sure to follow through on my commitments and support your army in Denmark with my fleet in the Baltic Sea. Let's work together to ensure our success and secure our interests in the region.\n13 GERMANY -> ENGLAND: I'm glad we've finalized our plan to take down Russia's supply center in Sweden. I'll make sure to execute my moves as discussed. Let's work together to ensure our success and secure our interests in the region. By the way, I was thinking about our next move after taking down Sweden. Would you be open to discussing a potential move into Norway? It could give us a strong foothold in the region and open up opportunities for further expansion.\n14 ENGLAND -> GERMANY: I think moving into Norway could be a great opportunity for us to expand our influence in the region. However, I'd like to discuss the details of how we can work together to make it happen. Would you be open to supporting my army in Norway with your fleet in the Baltic Sea?\n15 GERMANY -> ENGLAND: I think supporting your army in Norway with my fleet in the Baltic Sea would be a great way to work together to take down Russia's supply center in Norway. What are your thoughts on a joint attack on Norway?\n16 ENGLAND -> GERMANY: I think a joint attack on Norway would be a great way to further expand our influence in the region. Would you be open to discussing the details of how we can work together to make it happen?\n17 GERMANY -> ENGLAND: I think we've made good progress on our joint attack on Russia's supply center in Sweden. Let's finalize the details and make it happen. Meanwhile, I'd like to discuss our next move after taking down Sweden. Would you be open to discussing a potential move into Norway? It could give us a strong foothold in the region and open up opportunities for further expansion.\n18 ENGLAND -> GERMANY: I agree that moving into Norway could be a great opportunity for us to expand our influence in the region. However, I'd like to discuss the details of how we can work together to make it happen. Would you be open to supporting my army in Norway with your fleet in the Baltic Sea, similar to how we're working together to take down Russia's supply center in Sweden?\n19 GERMANY -> ENGLAND: I'm glad we've made good progress on our joint attack on Russia's supply center in Sweden. Let's finalize the details and make it happen. Meanwhile, I'd like to discuss our next move after taking down Sweden. Would you be open to discussing a potential move into Norway? It could give us a strong foothold in the region and open up opportunities for further expansion. Specifically, I was thinking about moving my army from Denmark to Norway, and I'd appreciate your support with your fleet in the Baltic Sea. What are your thoughts on this proposal?\n20 ENGLAND -> GERMANY: I think moving your army from Denmark to Norway is a great idea, and I'd be happy to support you with my fleet in the Baltic Sea. Let's finalize the details and make it happen. Meanwhile, I'd like to discuss our next move after taking down Norway. Would you be open to discussing a potential move into Russia's supply center in Moscow?",
+        "England_actual_movement": [
+            "A NWY - STP",
+            "F NTH - ENG",
+            "F ENG - MAO",
+            "F MAO - WES"
+        ],
+        "England_parse_predict": [
+            "A NWY H",
+            "F NTH - SKA",
+            "F ENG - BRE",
+            "F MAO - WES"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.023487180471420288,
+                0.00561070442199707,
+                -0.09818213060498238,
+                0.12990212440490723,
+                -0.0034626424312591553,
+                0.0070315152406692505,
+                -0.017412319779396057
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.00561070442199707
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.12990212440490723
+            ]
+        },
+        "Germany_actual_movement": [
+            "A KIE - DEN",
+            "A SWE - DEN",
+            "F FIN S A NWY - STP",
+            "A HOL - BEL",
+            "A BEL - PIC",
+            "A BUR S A BEL - PIC",
+            "A MUN S A BUR"
+        ],
+        "Germany_parse_predict": [
+            "A KIE - DEN",
+            "A SWE H",
+            "F FIN S A NWY - STP",
+            "A HOL - BEL",
+            "A BEL - PIC",
+            "A BUR S A BEL - PIC",
+            "A MUN - BUR"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.13687221705913544,
+                -0.018028095364570618,
+                -0.14307700330391526,
+                0.4567321240901947,
+                -0.041172999888658524,
+                -0.04122353089042008,
+                -0.07635827362537384
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.4567321240901947
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                -0.018028095364570618
+            ]
+        }
+    },
+    {
+        "game_id": "43830",
+        "phase_name": "S1904M",
+        "env_uuid": "01JBDMK1TBHKS824WG61M27YQJ",
+        "Russia_original_predict": "",
+        "Austria_original_predict": "A BUD GAL; A BUL S A RUM; A GAL WAR; A RUM S A BUL; A TYR VEN; A UKR S A GAL WAR; A VIE TYR; F GRE ION; F TRI S A TYR VEN; F VEN ADR",
+        "Russia_units": "F BLA, A SWE, F SKA, A PRU, F NWY, F ANK, A UKR",
+        "Austria_units": null,
+        "intent_dialogue": "",
+        "Russia_actual_movement": [
+            "A SWE H",
+            "F SKA - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK S A BUL - CON",
+            "F NWY S F SKA - NTH",
+            "A PRU - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A SWE H",
+            "F SKA - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK S A BUL - CON",
+            "F NWY S F SKA - NTH",
+            "A PRU - WAR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.16234418749809265,
+                -0.008470956236124039,
+                0.030408404767513275,
+                -0.12878535315394402,
+                -0.2407025657594204,
+                0.5095888953655958,
+                0.0003058189759030938
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5095888953655958
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.16234418749809265
+            ]
+        },
+        "Austria_actual_movement": [
+            "A VIE - TYR",
+            "A BUD - VIE",
+            "F TRI S A TYR - VEN",
+            "A GAL - BOH",
+            "A RUM - BUD",
+            "F GRE - AEG",
+            "A BUL H"
+        ],
+        "Austria_parse_predict": [
+            "A VIE - TYR",
+            "A BUD - GAL",
+            "F TRI S A TYR - VEN",
+            "A GAL - WAR",
+            "A RUM S A BUL",
+            "F GRE - ION",
+            "A BUL S A RUM"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                0.014857590198516846,
+                -0.010050895158201456,
+                0.10821417719125748,
+                0.09510163962841034,
+                -0.2375105582177639,
+                0.028675327077507973,
+                0.0007126684067770839
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.014857590198516846
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.028675327077507973
+            ]
+        }
+    },
+    {
+        "game_id": "65732",
+        "phase_name": "S1903M",
+        "env_uuid": "01JBDMK0QSFXSTCHT4BQHZ56C7",
+        "England_original_predict": "F BAR NWY; F BOT BAL; F NTH HOL; F BEL S F NTH HOL",
+        "Germany_original_predict": "A BOH MUN; A SIL PRU; A WAR S A SIL PRU; F HOL S F BEL; F NTH DEN",
+        "England_units": "F BAR, F NTH, F BOT, F BEL, F EDI",
+        "Germany_units": "A BOH, F HOL, A SIL, A GAL",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Hey Germany, what do you think about supporting me into Norway this turn? It would really help me out.\n1 GERMANY -> ENGLAND: I'm not sure about supporting you into Norway this turn, England. What's in it for me?\n2 ENGLAND -> GERMANY: Well, if I support you into Munich, would you be willing to support me into Norway? It seems like a fair trade to me.\n3 GERMANY -> ENGLAND: That sounds like a decent proposal, England. But I'm still a bit hesitant. What else can you offer me to sweeten the deal? Perhaps supporting me into Prussia as well?\n4 ENGLAND -> GERMANY: I think supporting you into Prussia is a bit too much for me, but I can offer to support you into Silesia instead. That way, you'll still get a good foothold in the region and I'll get Norway. It's a win-win situation.\n5 GERMANY -> ENGLAND: I think that's a fair compromise, England. Supporting me into Silesia would be a big help. I'll support you into Norway. Let's make it happen.\n6 ENGLAND -> GERMANY: Great, I'm glad we could come to an agreement. I'll make sure to support you into Silesia and you can support me into Norway. Let's make it happen!\n7 GERMANY -> ENGLAND: Thanks for supporting me into Silesia, England. I'll make sure to support you into Norway. Let's make it happen! By the way, how do you think about France's recent aggression? Should we do something about it?\n8 ENGLAND -> GERMANY: I completely agree with you, Germany. France's aggression is getting out of hand. We should definitely consider taking some action against them. Perhaps we could discuss a joint effort to take down France in the future?\n9 GERMANY -> ENGLAND: I agree, France's aggression is a major concern. We should definitely discuss a joint effort to take them down. Perhaps we could work together to take Paris or Bordeaux? What are your thoughts on that?\n10 ENGLAND -> GERMANY: That sounds like a great idea, Germany. Taking Paris or Bordeaux would definitely weaken France's position. I think we should focus on taking Paris, it's a more strategic location. What do you think?\n11 GERMANY -> ENGLAND: I completely agree with you, England. Taking Paris would be a great strategic move. We should definitely work together to make it happen. By the way, have you considered supporting me into Prussia as well? It would give us a strong foothold in the region and make it easier to take down France.\n12 ENGLAND -> GERMANY: That's a good point, Germany. Supporting you into Prussia would give us a strong foothold in the region. But I'm not sure if I'm willing to commit to that just yet. Can we discuss other options for working together against France?\n13 GERMANY -> ENGLAND: I understand your concerns about committing to supporting me into Prussia, England. But I think it would be a great strategic move for both of us. How about we discuss a compromise? Perhaps you could support me into Prussia this turn, and I'll support you into a center of your choice in the next turn?\n14 ENGLAND -> GERMANY: I think supporting you into Prussia would be a big commitment, but I'm willing to consider it if you agree to support me into another center in the next turn. Maybe we can work out a deal where you support me into Belgium and I'll support you into Prussia?\n15 GERMANY -> ENGLAND: I think supporting you into Belgium would be a great strategic move, England. It would give us a strong foothold in the region and make it easier to take down France. Let's make it happen!\n16 ENGLAND -> GERMANY: That sounds like a great plan, Germany. I'm glad we could come to an agreement. By the way, what do you think about Italy's recent moves? Should we keep an eye on them as well?\n17 GERMANY -> ENGLAND: Yes, Italy's recent moves do seem suspicious. We should keep an eye on them, but for now, let's focus on taking down France. What's your plan for our joint effort against them?\n18 ENGLAND -> GERMANY: I'm glad we're on the same page about taking down France. Let's focus on making a plan to take Paris. What's your thoughts on supporting me into Belgium next turn, and then we can work together to take Paris in the following turn?\n19 GERMANY -> ENGLAND: I think we're making great progress on taking down France, England. Let's finalize our plan to take Paris. Do you think we should also consider supporting each other into other centers in the region to secure our foothold?\n20 ENGLAND -> GERMANY: I think we're making good progress on taking down France, Germany. Let's finalize our plan to take Paris. Do you think we should also consider supporting each other into other centers in the region to secure our foothold? Perhaps we could discuss supporting me into Holland and you into Ruhr?",
+        "England_actual_movement": [
+            "F NTH - NWY",
+            "F BOT - STP/SC",
+            "F BAR S F BOT - STP",
+            "F BEL S F HOL",
+            "F EDI - NWG"
+        ],
+        "England_parse_predict": [
+            "F NTH - HOL",
+            "F BOT - BAL",
+            "F BAR - NWY",
+            "F BEL S F NTH - HOL",
+            "F EDI - NWG"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.0022313676308840513,
+                0.1622309684753418,
+                -0.08665958791971207,
+                -0.036939606070518494,
+                0.16565340384840965,
+                -0.11794852092862129,
+                -0.08410525321960449
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.1622309684753418
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.036939606070518494
+            ]
+        },
+        "Germany_actual_movement": [
+            "F HOL H",
+            "A GAL S A BOH - SIL",
+            "A BOH - SIL",
+            "A SIL - PRU"
+        ],
+        "Germany_parse_predict": [
+            "F HOL S F BEL",
+            "A GAL S A BOH - SIL",
+            "A BOH - MUN",
+            "A SIL - PRU"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.0028459636960178614,
+                0.2082923948764801,
+                -0.12417886406183243,
+                0.014798801392316818,
+                0.09181967005133629,
+                -0.17227993998676538,
+                -0.015606075525283813
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.014798801392316818
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.2082923948764801
+            ]
+        }
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "S1905M",
+        "env_uuid": "01JBDMK27WJVFGK8SSWGMG93CM",
+        "Russia_original_predict": "A BER S A BOH MUN; A RUM BUL; A UKR WAR; A MOS S A UKR WAR",
+        "Austria_original_predict": "A BOH TYR; A BUD RUM; A SER S A RUM BUL; F TRI ALB",
+        "Russia_units": "F BLA, A BER, A RUM, A UKR, A MOS",
+        "Austria_units": null,
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: Hey Austria, just wanted to confirm our plans from last turn. You're moving Sil > Mun, Boh > Tyr, with support, Gal > Boh. And if Live > Pru with support from Bal, that gives us a lot of options to take Munich or Berlin. How's that looking from your end?\n1 AUSTRIA -> RUSSIA: Yeah, that's still the plan. I'm moving Sil > Mun, Boh > Tyr, with support, Gal > Boh. And if Live > Pru with support from Bal, that gives us a lot of options to take Munich or Berlin. What's your plan for this turn?\n2 RUSSIA -> AUSTRIA: Sounds good to me, I'll make sure to move Sil > Mun, Boh > Tyr, with support, Gal > Boh. And if Live > Pru with support from Bal, that gives us a lot of options to take Munich or Berlin. I'll also move A SER S A RUM - BUL, A BUD - RUM, F TRI - ALB, A BOH - TYR as planned. Let's keep an eye on England's moves and adjust our plans accordingly.\n3 AUSTRIA -> RUSSIA: Sounds good to me, let's execute our plan and see how it plays out. Keep me updated on England's moves and we can reassess our position after this turn.\n4 RUSSIA -> AUSTRIA: Just wanted to confirm that our plan is still on track. With England's position, we need to be careful not to give them an opportunity to solo. Let's keep a close eye on their moves and be prepared to adjust our strategy if needed.\n5 AUSTRIA -> RUSSIA: Everything looks good from my end. Let's focus on taking Munich or Berlin this turn. I'll make sure to support your move to Bul with my army in Rum. Keep me updated on England's moves and we can adjust our strategy accordingly.\n6 RUSSIA -> AUSTRIA: Everything looks good from my end. Let's focus on taking Munich or Berlin this turn. I'll make sure to support your move to Bul with my army in Rum. Keep me updated on England's moves and we can adjust our strategy accordingly.\n7 AUSTRIA -> RUSSIA: Let's review our position again. With your move to Bul and my support, we should be able to take Munich or Berlin. What's your plan for the next turn?\n8 RUSSIA -> AUSTRIA: Let's review our position again. I think we have a good chance of taking Munich or Berlin this turn. What's your plan for supporting my move to Bul? Should we also consider moving Gal to Boh to put more pressure on Munich?\n9 AUSTRIA -> RUSSIA: I agree with your plan to support my move to Bul. Moving Gal to Boh is a good idea, it will put more pressure on Munich. Let's do that and see how England reacts.\n10 RUSSIA -> AUSTRIA: I think we're in a good position to take Munich or Berlin this turn. Let's make sure to keep the pressure on and not give England an opportunity to solo. What's your plan for supporting my move to Bul and putting pressure on Munich?\n11 AUSTRIA -> RUSSIA: I think we're on track to take Munich or Berlin this turn. Let's make sure to keep the pressure on and not give England an opportunity to solo. What's your plan for the next turn?\n12 RUSSIA -> AUSTRIA: Let's review our position again. I think we're in a good position to take Munich or Berlin this turn. What's your plan for supporting my move to Bul and putting pressure on Munich? Should we also consider moving Boh to Tyr to put more pressure on Munich?\n13 AUSTRIA -> RUSSIA: I agree, let's keep the pressure on Munich and Berlin. Moving Gal to Boh and supporting your move to Bul should give us a strong position. Let's make sure to coordinate our moves and not give England any opportunities to solo.\n14 RUSSIA -> AUSTRIA: Let's finalize our plans for this turn. I'll move A SER S A RUM - BUL, A BUD - RUM, F TRI - ALB, A BOH - TYR as planned. Please confirm your support for my move to Bul and let's keep an eye on England's moves.\n15 AUSTRIA -> RUSSIA: I'm confirming our plans for this turn. I'll support your move to Bul with my army in Rum. Let's focus on taking Munich or Berlin this turn. Keep me updated on England's moves and we can adjust our strategy accordingly.\n16 RUSSIA -> AUSTRIA: Everything looks good from my end. I'll make sure to support your move to Bul with my army in Rum. Let's focus on taking Munich or Berlin this turn. Keep me updated on England's moves and we can adjust our strategy accordingly.\n17 AUSTRIA -> RUSSIA: Everything looks good from my end. I'll support your move to Bul with my army in Rum. Let's focus on taking Munich or Berlin this turn. Keep me updated on England's moves and we can adjust our strategy accordingly.\n18 RUSSIA -> AUSTRIA: Everything looks good from my end. I'll make sure to support your move to Bul with my army in Rum. Let's focus on taking Munich or Berlin this turn. Keep me updated on England's moves and we can adjust our strategy accordingly.\n19 AUSTRIA -> RUSSIA: Let's review our position again. With your move to Bul and my support, we should be able to take Munich or Berlin. What's your plan for the next turn? Should we also consider moving Boh to Mun to put more pressure on Munich?\n20 RUSSIA -> AUSTRIA: Everything looks good from my end. I'll make sure to support your move to Bul with my army in Rum. Let's focus on taking Munich or Berlin this turn. Keep me updated on England's moves and we can adjust our strategy accordingly.",
+        "Russia_actual_movement": [
+            "A RUM - BUL",
+            "A BER S A DEN - KIE",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A RUM - BUL",
+            "A BER S A BOH - MUN",
+            "F BLA S A RUM - BUL",
+            "A UKR - WAR",
+            "A MOS S A UKR - WAR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                0.1262509860098362,
+                -0.01216202974319458,
+                -0.22667285799980164,
+                0.002083246479742229,
+                0.0108911725692451,
+                0.18657260574400425,
+                -0.08696316927671432
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.18657260574400425
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.1262509860098362
+            ]
+        },
+        "Austria_actual_movement": [
+            "A SER S A RUM - BUL",
+            "A BUD - RUM",
+            "F TRI - ALB",
+            "A BOH - TYR"
+        ],
+        "Austria_parse_predict": [
+            "A SER S A RUM - BUL",
+            "A BUD - RUM",
+            "F TRI - ALB",
+            "A BOH - TYR"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                0.024411708116531372,
+                0.12354880571365356,
+                -0.3393619656562805,
+                0.0022001679753884673,
+                0.015235527884215117,
+                0.2054900024086237,
+                -0.03152420371770859
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.024411708116531372
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2054900024086237
+            ]
+        }
+    },
+    {
+        "game_id": "38101",
+        "phase_name": "F1903M",
+        "env_uuid": "01JBDMK17SZQQ3FG5CACVDSYE5",
+        "England_original_predict": "",
+        "France_original_predict": "",
+        "England_units": "F NTH, F NWY, A HOL, F NWG, F EDI",
+        "France_units": "F MAO, A BEL, A BUR, A PAR, A MAR, F SPA/SC",
+        "intent_dialogue": "",
+        "England_actual_movement": [
+            "F EDI - NTH",
+            "F NWG S F NWY",
+            "F NWY S F SWE",
+            "A HOL S A BUR - RUH",
+            "F NTH - ENG"
+        ],
+        "England_parse_predict": [
+            "F EDI - NTH",
+            "F NWG S F NWY",
+            "F NWY S F SWE",
+            "A HOL S A BUR - RUH",
+            "F NTH - ENG"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.06828951090574265,
+                0.17050088942050934,
+                0.04201459884643555,
+                -0.026355432346463203,
+                -0.11391681805253029,
+                -0.022550899535417557,
+                0.018597211688756943
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.17050088942050934
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.04201459884643555
+            ]
+        },
+        "France_actual_movement": [
+            "A BEL S A HOL",
+            "A MAR - PIE",
+            "F SPA/SC - LYO",
+            "A BUR - RUH",
+            "A PAR - BUR",
+            "F MAO H"
+        ],
+        "France_parse_predict": [
+            "A BEL S A HOL",
+            "A MAR - PIE",
+            "F SPA/SC - LYO",
+            "A BUR - RUH",
+            "A PAR - BUR",
+            "F MAO H"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.06828951090574265,
+                0.17050088942050934,
+                0.04201459884643555,
+                -0.026355432346463203,
+                -0.11391681805253029,
+                -0.022550899535417557,
+                0.018597211688756943
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.04201459884643555
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.17050088942050934
+            ]
+        }
+    },
+    {
+        "game_id": "61195",
+        "phase_name": "S1903M",
+        "env_uuid": "01JBDMK12CAB7SVDTEB55MAR4V",
+        "Russia_original_predict": "A WAR SIL; A GAL BOH; A MOS STP; A NWY S F SWE; F RUM BLA; F SWE S A NWY",
+        "Turkey_original_predict": "A ANK CON; A BUL GRE; F CON BUL/SC; F AEG S A BUL GRE",
+        "Russia_units": "A WAR, F RUM, F SWE, A SEV, A NWY, A GAL, A MOS",
+        "Turkey_units": "A BUL, F CON, A ANK, F AEG",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: We have a problem, Turkey. Our last conversation didn't quite go as planned. I'm willing to make some concessions to ensure we can work together. What do you propose we do?\n1 TURKEY -> RUSSIA: I appreciate your willingness to make concessions, Russia. Our last conversation didn't quite go as planned, indeed. I've been thinking, and I believe we can work together to our mutual benefit. Specifically, I'd like to propose that you move your army from Sevastopol to Rumania. This would give me some breathing room and allow us to focus on other areas of the board. What do you think?\n2 RUSSIA -> TURKEY: That's an interesting proposal, Turkey. I'm willing to consider it, but I need to know what you're willing to offer in return. What do you plan to do with your army in Bulgaria?\n3 TURKEY -> RUSSIA: I understand your concerns, Russia. I'm willing to offer you a deal. If you move your army from Sevastopol to Rumania, I'll make sure to support your move from Galicia to Silesia. This way, we can both gain from this move. What do you think?\n4 RUSSIA -> TURKEY: That's a tempting offer, Turkey. However, I need to make sure it aligns with my overall strategy. Can you tell me more about your plans for the Aegean Sea? Are you willing to commit to not moving your fleet there this turn?\n5 TURKEY -> RUSSIA: I understand your concerns about the Aegean Sea, Russia. I'm willing to commit to not moving my fleet there this turn. In fact, I'll even support your move from Galicia to Silesia if you agree to move your army from Sevastopol to Rumania. Let's work together to achieve our goals.\n6 RUSSIA -> TURKEY: I'm glad we could come to an understanding, Turkey. I agree to move my army from Sevastopol to Rumania and support your move from Bulgaria to Serbia. Let's work together to achieve our goals.\n7 TURKEY -> RUSSIA: I'm glad we could come to an understanding, Russia. Let's make sure to follow through on our agreements this turn. I'll make sure to move my army from Ankara to Constantinople and support your move from Galicia to Silesia. Let's continue to work together to achieve our goals.\n8 RUSSIA -> TURKEY: I'm glad we could come to an understanding, Turkey. Let's make sure to follow through on our agreements this turn. I'll make sure to move my army from Sevastopol to Rumania and support your move from Bulgaria to Serbia. Let's continue to work together to achieve our goals. Additionally, I'd like to propose that we discuss a potential alliance to counter the growing power of Germany. What are your thoughts on this matter?\n9 TURKEY -> RUSSIA: I'm glad we're discussing a potential alliance to counter Germany's growing power. I think it's essential we work together to maintain a balance of power in Europe. Perhaps we can discuss specific moves to counter Germany's expansion in the next turn?\n10 RUSSIA -> TURKEY: I'm glad we're on the same page, Turkey. Let's make sure to follow through on our agreements this turn. I'd like to discuss the specifics of our alliance against Germany. What kind of support can I expect from you in the next turn?\n11 TURKEY -> RUSSIA: I'm glad we're discussing a potential alliance against Germany's growing power. I think it's essential we work together to maintain a balance of power in Europe. Perhaps we can discuss specific moves to counter Germany's expansion in the next turn, such as supporting each other's moves into Munich or Berlin? What are your thoughts on this?\n12 RUSSIA -> TURKEY: I think supporting each other's moves into Munich or Berlin is a great idea, Turkey. Let's make it happen. I'll make sure to move my army from Galicia to Silesia and support your move into Munich. What's your plan for the Aegean Sea in the next turn?\n13 TURKEY -> RUSSIA: I'm glad we're on the same page, Russia. Let's make sure to follow through on our agreements this turn. I'd like to discuss the specifics of our alliance against Germany. What kind of support can I expect from you in the next turn, specifically in terms of army movements and fleet deployments?\n14 RUSSIA -> TURKEY: I'm pleased with our negotiations so far, Turkey. I believe our alliance against Germany is taking shape. To further cement our partnership, I'd like to propose a mutually beneficial move: if you support my army moving from Northwest to Sweden, I'll support your army moving from Bulgaria to Serbia. What do you think?\n15 TURKEY -> RUSSIA: I'm glad we're still on the same page, Russia. I think our alliance against Germany is taking shape. I'd like to discuss the specifics of our alliance against Germany. What kind of support can I expect from you in the next turn, specifically in terms of army movements and fleet deployments?\n16 RUSSIA -> TURKEY: I'm glad we're still on the same page, Turkey. I think our alliance against Germany is taking shape. To further cement our partnership, I'd like to propose another mutually beneficial move: if you support my fleet moving from Sweden to Norway, I'll support your army moving from Serbia to Greece. What do you think?\n17 TURKEY -> RUSSIA: I'm glad we're still discussing ways to counter Germany's growing power, Russia. I think our alliance is taking shape. To further cement our partnership, I'd like to propose another mutually beneficial move: if you support my army moving from Bulgaria to Greece, I'll support your army moving from Galicia to Silesia. What do you think?\n18 RUSSIA -> TURKEY: I think our alliance against Germany is taking shape, Turkey. I'd like to propose another mutually beneficial move: if you support my army moving from Northwest to Sweden, I'll support your army moving from Serbia to Greece. What do you think?\n19 TURKEY -> RUSSIA: I'm glad we're still discussing ways to counter Germany's growing power, Russia. I think our alliance is taking shape. To further cement our partnership, I'd like to propose another mutually beneficial move: if you support my army moving from Bulgaria to Greece, I'll support your army moving from Galicia to Silesia. Additionally, I'd like to discuss potential moves to counter Germany's expansion in the next turn. What do you think?\n20 RUSSIA -> TURKEY: I think we've made good progress, Turkey. Let's summarize our agreements and make sure we're on the same page. I'll move my army from Sevastopol to Rumania, and you'll support my move from Galicia to Silesia. Additionally, we'll work together to counter Germany's expansion. What do you think?",
+        "Russia_actual_movement": [
+            "A NWY S F SWE",
+            "F SWE H",
+            "A WAR S A GAL",
+            "F RUM - BLA",
+            "A GAL S A SEV - RUM",
+            "A SEV - RUM",
+            "A MOS - UKR"
+        ],
+        "Russia_parse_predict": [
+            "A NWY S F SWE",
+            "F SWE S A NWY",
+            "A WAR - SIL",
+            "F RUM - BLA",
+            "A GAL - BOH",
+            "A SEV - RUM",
+            "A MOS - STP"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                0.011614516377449036,
+                0.046588413417339325,
+                -0.04377641715109348,
+                -0.15767939016222954,
+                -0.04580485448241234,
+                0.2089223861694336,
+                -0.01986456662416458
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2089223861694336
+            ],
+            "TURKEY": [
+                "TURKEY",
+                -0.01986456662416458
+            ]
+        },
+        "Turkey_actual_movement": [
+            "A ANK - CON",
+            "F CON - ANK",
+            "A BUL S A SEV - RUM",
+            "F AEG - EAS"
+        ],
+        "Turkey_parse_predict": [
+            "A ANK - CON",
+            "F CON - BUL/SC",
+            "A BUL - GRE",
+            "F AEG S A BUL - GRE"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.08625238481909037,
+                -0.022766001522541046,
+                -0.052228894084692,
+                -0.09801390767097473,
+                -0.049545057117938995,
+                0.26339149475097656,
+                0.045414723455905914
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.045414723455905914
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.26339149475097656
+            ]
+        }
+    },
+    {
+        "game_id": "38101",
+        "phase_name": "S1904M",
+        "env_uuid": "01JBDMK17YB39HV72VRDCFNM7X",
+        "Austria_original_predict": "A BUD VIE; A SER RUM; A TRI VIE; A UKR S A RUM SEV; F BUL/SC AEG",
+        "Turkey_original_predict": "A ANK ARM; A RUM SEV; A SMY S A ANK ARM; F BLA S A RUM SEV; F GRE S F BUL/SC AEG; F BUL/SC AEG",
+        "Austria_units": null,
+        "Turkey_units": "F BLA, A RUM, F GRE, A SMY, A ANK",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: Hi, thanks for supporting me into Ionian. I'm moving my fleet to Aegean and supporting your move there. What's your plan for the next turn? Do you think we should focus on finishing off Italy or moving towards the West Med?\n1 TURKEY -> AUSTRIA: Hi Austria, thanks for the support. I think we should focus on finishing off Italy for now, especially since France seems to be getting a bit too strong. What do you think about supporting my army in Sevastopol to Moscow, and then we can discuss our next moves from there?\n2 AUSTRIA -> TURKEY: That sounds like a good plan. Supporting your army in Sevastopol to Moscow would be beneficial for both of us. I'm planning to move my army in Ukraine to Moscow as well, which would give us a strong presence in the region. What do you think about supporting my fleet in Bulgaria to Aegean, and then we can convoy an army to Greece in the fall?\n3 TURKEY -> AUSTRIA: That sounds like a solid plan. I'll support your fleet in Bulgaria to Aegean, and then we can convoy an army to Greece in the fall. Do you think we should also support each other's armies in Sevastopol and Ukraine to Moscow?\n4 AUSTRIA -> TURKEY: Yes, that sounds like a good plan. I'll support your army in Sevastopol to Moscow, and then we can discuss our next moves from there. Do you think we should also consider supporting each other's armies in Rumania and Bulgaria to prevent any potential stabs?\n5 TURKEY -> AUSTRIA: I think that's a good plan, supporting each other in Rumania and Bulgaria can help prevent any potential stabs. What do you think about supporting my army in Ankara to Armenia, and then we can discuss our next moves from there?\n6 AUSTRIA -> TURKEY: Yes, supporting your army in Ankara to Armenia sounds like a good plan. I think we should also consider supporting each other's fleets in the Aegean to prevent any potential conflicts. What do you think about supporting my fleet in Bulgaria to Aegean, and then we can discuss our next moves from there?\n7 TURKEY -> AUSTRIA: I think we're making good progress, Austria. Supporting each other in Rumania and Bulgaria will definitely help prevent any potential stabs. I'm thinking of moving my army in Rumania to Sevastopol, what do you think about supporting that move? We can discuss our next steps from there.\n8 AUSTRIA -> TURKEY: That sounds like a good plan. I think we should also consider supporting each other's fleets in the Aegean to prevent any potential conflicts. What do you think about supporting my fleet in Bulgaria to Aegean, and then we can discuss our next moves from there?\n9 TURKEY -> AUSTRIA: I think we're making good progress, Austria. Supporting each other in Rumania and Bulgaria will definitely help prevent any potential stabs. I'm thinking of moving my army in Rumania to Sevastopol, what do you think about supporting that move? We can discuss our next steps from there.\n10 AUSTRIA -> TURKEY: I think we're on the same page, Turkey. Supporting each other in Rumania and Bulgaria will definitely help prevent any potential stabs. I'm planning to move my army in Trieste to Tyrol, my fleet in Bulgaria to Aegean, and my army in Serbia to Rumania. What do you think about supporting my army in Ukraine to Moscow, and then we can discuss our next moves from there?\n11 TURKEY -> AUSTRIA: I think we're making good progress, Austria. Supporting each other in Rumania and Bulgaria will definitely help prevent any potential stabs. I'm thinking of moving my army in Ankara to Armenia, what do you think about supporting that move? We can discuss our next steps from there.\n12 AUSTRIA -> TURKEY: I think we're making good progress, Turkey. Supporting each other in Rumania and Bulgaria will definitely help prevent any potential stabs. I'm planning to move my army in Trieste to Tyrol, my fleet in Bulgaria to Aegean, and my army in Serbia to Rumania. What do you think about supporting my army in Ukraine to Moscow, and then we can discuss our next moves from there?\n13 TURKEY -> AUSTRIA: I think we're making good progress, Austria. Supporting each other in Rumania and Bulgaria will definitely help prevent any potential stabs. I'm thinking of moving my army in Rumania to Sevastopol, what do you think about supporting that move? We can discuss our next steps from there.\n14 AUSTRIA -> TURKEY: I think we've covered all the necessary moves for this turn. Let's finalize our plans and make sure we're on the same page. I'll support your army in Rumania to Sevastopol, and you can support my army in Ukraine to Moscow. We can discuss our next moves in the fall.\n15 TURKEY -> AUSTRIA: I think we've covered everything for this turn, Austria. Let's make sure to follow through on our plans and support each other's moves. I'm looking forward to seeing how things unfold in the fall.\n16 AUSTRIA -> TURKEY: I'm glad we were able to finalize our plans for this turn. Let's make sure to follow through and support each other's moves. I'm looking forward to seeing how things unfold in the fall. What do you think about discussing our long-term strategy and potential alliances in the coming turns?\n17 TURKEY -> AUSTRIA: I think we've got a solid plan in place, Austria. Let's make sure to follow through on our commitments and support each other's moves. I'm looking forward to seeing how things unfold in the fall. Do you think we should start discussing our plans for the winter season?\n18 AUSTRIA -> TURKEY: I'm glad we were able to finalize our plans for this turn. Let's make sure to follow through on our commitments and support each other's moves. I'm looking forward to seeing how things unfold in the fall. What do you think about discussing our plans for the winter season?\n19 TURKEY -> AUSTRIA: I think we've got a solid plan in place, Austria. Let's make sure to follow through on our commitments and support each other's moves. I'm looking forward to seeing how things unfold in the fall. Do you think we should start making plans for taking out France in the winter season?\n20 AUSTRIA -> TURKEY: I think we're on the same page, Turkey. Let's make sure to follow through on our commitments and support each other's moves. I'm looking forward to seeing how things unfold in the fall. What do you think about discussing our plans for the winter season and how we can work together to take out France?",
+        "Austria_actual_movement": [
+            "A TRI - TYR",
+            "F BUL/SC - AEG",
+            "A SER - RUM",
+            "A UKR - MOS",
+            "A BUD - GAL"
+        ],
+        "Austria_parse_predict": [
+            "A TRI - VIE",
+            "F BUL/SC - AEG",
+            "A SER - RUM",
+            "A UKR S A RUM - SEV",
+            "A BUD - VIE"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                0.19467264413833618,
+                -0.16488215327262878,
+                -0.12812277674674988,
+                0.023749658837914467,
+                0.061113765463232994,
+                -0.011653289198875427,
+                0.025122255086898804
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.19467264413833618
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.025122255086898804
+            ]
+        },
+        "Turkey_actual_movement": [
+            "A ANK - ARM",
+            "F GRE S F BUL/SC - AEG",
+            "A RUM - SEV",
+            "F BLA S A RUM - SEV",
+            "A SMY - ARM"
+        ],
+        "Turkey_parse_predict": [
+            "A ANK - ARM",
+            "F GRE S F BUL/SC - AEG",
+            "A RUM - SEV",
+            "F BLA S A RUM - SEV",
+            "A SMY S A ANK - ARM"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                0.20186761021614075,
+                -0.15287381410598755,
+                -0.21155092120170593,
+                0.05631543509662151,
+                0.05292116664350033,
+                -0.01888079196214676,
+                0.07220135629177094
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.07220135629177094
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.20186761021614075
+            ]
+        }
+    },
+    {
+        "game_id": "23459",
+        "phase_name": "F1903M",
+        "env_uuid": "01JBDMK1ZVFDTAWWR4GBJ7ZYDV",
+        "France_original_predict": "",
+        "Germany_original_predict": "",
+        "France_units": "A BUR, A SPA, A PIC, F IRI, F TYS",
+        "Germany_units": "F DEN, A RUH, A HOL, A MUN, F SWE, A KIE",
+        "intent_dialogue": "",
+        "France_actual_movement": [
+            "F TYS - WES",
+            "A PIC - BRE",
+            "F IRI - MAO",
+            "A SPA - GAS",
+            "A BUR S A RUH - BEL"
+        ],
+        "France_parse_predict": [
+            "F TYS - WES",
+            "A PIC - BRE",
+            "F IRI - MAO",
+            "A SPA - GAS",
+            "A BUR S A RUH - BEL"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.10356759652495384,
+                -0.1491167526692152,
+                0.11841874569654465,
+                0.07563266158103943,
+                0.08325705677270889,
+                -0.010484086349606514,
+                -0.014140069484710693
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11841874569654465
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.07563266158103943
+            ]
+        },
+        "Germany_actual_movement": [
+            "A RUH - BEL",
+            "A KIE - DEN",
+            "F SWE - NWY",
+            "A MUN H",
+            "A HOL S A RUH - BEL",
+            "F DEN - SKA"
+        ],
+        "Germany_parse_predict": [
+            "A RUH - BEL",
+            "A KIE - DEN",
+            "F SWE - NWY",
+            "A MUN H",
+            "A HOL S A RUH - BEL",
+            "F DEN - SKA"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.10356759652495384,
+                -0.1491167526692152,
+                0.11841874569654465,
+                0.07563266158103943,
+                0.08325705677270889,
+                -0.010484086349606514,
+                -0.014140069484710693
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.07563266158103943
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11841874569654465
+            ]
+        }
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "S1905M",
+        "env_uuid": "01JBDMK27T1Y9303XVZDB27R4W",
+        "Russia_original_predict": "A BER KIE; A RUM S A BUL SER; A UKR GAL; A MOS WAR",
+        "England_original_predict": "A DEN S A BER KIE; A NWY SWE; A STP LVN; F BAR NWG; F NTH HOL; F LVP WAL; F SWE BAL",
+        "Russia_units": "F BLA, A BER, A RUM, A UKR, A MOS",
+        "England_units": "F NTH, A DEN, F SWE, F BAR, A NWY, A STP, F LVP",
+        "intent_dialogue": "0 RUSSIA -> ENGLAND: Hey England, thanks for the previous deals, I think we're in a good position now. I was thinking of moving my fleet in BAR to hold, and my fleet in LVP to IRI. What are your plans for this turn?\n1 ENGLAND -> RUSSIA: Hi Russia, thanks for checking in. I'm thinking of moving my army in DEN to KIE, and my fleet in NTH to HOL. What do you think about that? Are you open to supporting me in HOL?\n2 RUSSIA -> ENGLAND: That sounds like a good plan, I think we can work together to take down France. Would you be open to supporting me in taking Berlin this turn? It would really help me out.\n3 ENGLAND -> RUSSIA: That sounds like a great plan, Russia. Supporting you in taking Berlin would definitely help our alliance. I think we can work together to take down France and Italy. What's your plan for after taking Berlin?\n4 RUSSIA -> ENGLAND: I think taking Berlin would be a huge step forward for us, and I'd be happy to support you in HOL. Let's work together to take down France and Italy. What do you think about supporting me in taking PRU as well?\n5 ENGLAND -> RUSSIA: That sounds like a great plan, Russia. I'd be happy to support you in taking PRU as well. Let's work together to take down France and Italy. I think we can make some great progress this turn.\n6 RUSSIA -> ENGLAND: Great, I'm glad we're on the same page. Just to confirm, you'll support me in taking Berlin and PRU, and I'll support you in taking HOL?\n7 ENGLAND -> RUSSIA: Yes, that's correct. I'll support you in taking Berlin and PRU, and you'll support me in taking HOL. Let's make it happen this turn.\n8 RUSSIA -> ENGLAND: Great, I'm glad we're on the same page. Let's make sure to follow through on our agreements and we'll be in a great position for the next turn.\n9 ENGLAND -> RUSSIA: Great, I'm glad we're on the same page. Let's make sure to follow through on our agreements and we'll be in a great position for the next turn. By the way, have you thought about supporting me in taking SWE as well? It would really help me out.\n10 RUSSIA -> ENGLAND: I think supporting you in taking SWE would be a bit of a stretch for me this turn, but I'm happy to help you out in HOL, Berlin, and PRU as we agreed. Let's focus on taking down France and Italy first.\n11 ENGLAND -> RUSSIA: I'm glad we're on the same page, Russia. Let's make sure to follow through on our agreements and we'll be in a great position for the next turn. By the way, have you thought about supporting me in taking DEN as well? It would really help me out.\n12 RUSSIA -> ENGLAND: I'm glad we're on the same page, England. Let's focus on executing our plans and we'll be in a great position for the next turn. I'm looking forward to seeing how it all plays out.\n13 ENGLAND -> RUSSIA: I'm glad we're on the same page, Russia. Just to confirm, you'll support me in taking HOL, and I'll support you in taking Berlin and PRU, right? Let's make sure to follow through on our agreements and we'll be in a great position for the next turn.\n14 RUSSIA -> ENGLAND: Yes, that's correct. I'm looking forward to seeing how our plans play out this turn. Let's make sure to follow through on our agreements and we'll be in a great position for the next turn.\n15 ENGLAND -> RUSSIA: Great, I'm glad we're on the same page, Russia. Just to confirm, you'll support me in taking HOL, and I'll support you in taking Berlin and PRU, right? Let's make sure to follow through on our agreements and we'll be in a great position for the next turn.\n16 RUSSIA -> ENGLAND: I'm glad we're on the same page, England. Let's make sure to execute our plans and I'll be in a great position to take more centers next turn.\n17 ENGLAND -> RUSSIA: Great, I'm glad we're on the same page, Russia. Let's make sure to execute our plans and I'll be in a great position to take more centers next turn. By the way, have you thought about supporting me in taking NWY as well? It would really help me out.\n18 RUSSIA -> ENGLAND: Yes, I'm glad we're on the same page, England. Let's focus on taking down France and Italy this turn, and then we can discuss further support for each other next turn.\n19 ENGLAND -> RUSSIA: Just to confirm, I'll support you in taking Berlin and PRU, and you'll support me in taking HOL, right? Let's make sure to follow through on our agreements and we'll be in a great position for the next turn.\n20 RUSSIA -> ENGLAND: Yes, that's correct. I'm looking forward to seeing how our plans play out this turn. Let's make sure to follow through on our agreements and we'll be in a great position for the next turn.",
+        "Russia_actual_movement": [
+            "A RUM - BUL",
+            "A BER S A DEN - KIE",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A RUM S A BUL - SER",
+            "A BER - KIE",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.013750030193477869,
+                0.05047881603240967,
+                -0.3456026464700699,
+                0.0010885043302550912,
+                0.005035777110606432,
+                0.25918509997427464,
+                0.04356442391872406
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.25918509997427464
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.05047881603240967
+            ]
+        },
+        "England_actual_movement": [
+            "F BAR H",
+            "F LVP - IRI",
+            "F NTH C A NWY - BEL",
+            "F SWE - BAL",
+            "A DEN - KIE",
+            "A STP H",
+            "A NWY - BEL VIA"
+        ],
+        "England_parse_predict": [
+            "F BAR - NWG",
+            "F LVP - WAL",
+            "F NTH - HOL",
+            "F SWE - BAL",
+            "A DEN S A BER - KIE",
+            "A STP - LVN",
+            "A NWY - SWE"
+        ],
+        "England": {
+            "whole_task_eval": [
+                0.017814133316278458,
+                0.14123043417930603,
+                -0.3281362056732178,
+                0.00171609444078058,
+                0.00974870240315795,
+                0.18136034347116947,
+                -0.02373349666595459
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.14123043417930603
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.18136034347116947
+            ]
+        }
+    },
+    {
+        "game_id": "74152",
+        "phase_name": "F1904M",
+        "env_uuid": "01JBDMK1VXH11P04TM8V4ZY54Z",
+        "Germany_original_predict": "",
+        "Turkey_original_predict": "",
+        "Germany_units": "A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL",
+        "Turkey_units": "A MOS, A CON, F AEG, F BLA, A SEV, F EAS",
+        "intent_dialogue": "",
+        "Germany_actual_movement": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany_parse_predict": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.00034690884058363736,
+                -0.00014365458628162742,
+                -0.07480424642562866,
+                0.2916485667228699,
+                -0.39759693667292595,
+                -0.00117188660078682,
+                0.18241501972079277
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.2916485667228699
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.18241501972079277
+            ]
+        },
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Turkey_parse_predict": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.00034690884058363736,
+                -0.00014365458628162742,
+                -0.07480424642562866,
+                0.2916485667228699,
+                -0.39759693667292595,
+                -0.00117188660078682,
+                0.18241501972079277
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.18241501972079277
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.2916485667228699
+            ]
+        }
+    },
+    {
+        "game_id": "78680",
+        "phase_name": "S1905M",
+        "env_uuid": "01JBDMK2336X5YF6R1VAEP64MC",
+        "Russia_original_predict": "A BUL SER; A MOS LVN; A VIE BOH; A WAR S F BAL PRU; F RUM H; F STP/NC H",
+        "Turkey_original_predict": "A BUL SER; A LVN PRU; F AEG S F EAS ION; F EAS ION; F GRE S F EAS ION; F ION TUN",
+        "Russia_units": "F RUM, F STP/NC, A MOS, A VIE, F BLA, A LVN, A WAR",
+        "Turkey_units": "A BUL, F GRE, F EAS, F AEG, F ION",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Hello Turkey, I hope our previous agreements are still in place. I'm planning to move my armies to Lvnia, hold in Warsaw, and support my fleet in the Baltic. I'd appreciate it if you could support my move into Budapest and help me against Germany. What are your plans for this turn?\n1 TURKEY -> RUSSIA: Hello Russia, I'm glad to see our previous agreements are still in place. I'm planning to support your move into Budapest and help you against Germany. My moves for this turn are F EAS S F AEG - ION, F ION - TUN, F GRE S F AEG - ION, F AEG - ION, and A BUL - SER. I'd appreciate it if you could confirm your moves and we can work together to achieve our goals.\n2 RUSSIA -> TURKEY: Thank you for your support, Turkey. It's crucial for us to work together to counter Germany's aggression. I'd like to confirm that you'll support my move into Budapest and help me against Germany. Also, I was thinking that if you could move your army from Bulgaria to Serbia, it would put pressure on Austria and prevent them from interfering with our plans. What do you think?\n3 TURKEY -> RUSSIA: I completely agree with your plan, Russia. Moving my army from Bulgaria to Serbia will indeed put pressure on Austria and prevent them from interfering with our plans. I'll make sure to support your move into Budapest and help you against Germany. Let's work together to achieve our goals.\n4 RUSSIA -> TURKEY: I'm glad we're on the same page, Turkey. Just to confirm, you'll support my move into Budapest and help me against Germany, and you'll move your army from Bulgaria to Serbia to put pressure on Austria. I'll make sure to follow through on my commitments as well. Let's work together to achieve our goals.\n5 TURKEY -> RUSSIA: I'm glad we have a clear understanding of our plans, Russia. Let's work together to execute them effectively and achieve our goals. I'll make sure to support your move into Budapest and help you against Germany, and I expect you to follow through on your commitments as well.\n6 RUSSIA -> TURKEY: I'm glad we have a clear understanding of our plans, Turkey. I'll make sure to follow through on my commitments. Let's work together to execute them effectively and achieve our goals. By the way, have you considered moving your fleet in the Aegean to support my move into Romania? It would be a great help in countering Austria's influence in the region.\n7 TURKEY -> RUSSIA: That's a great idea, Russia. Moving my fleet in the Aegean to support your move into Romania would be a great way to counter Austria's influence in the region. I'll make sure to add that to my orders. Let's work together to execute our plans effectively and achieve our goals.\n8 RUSSIA -> TURKEY: I'm glad we're making progress, Turkey. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. Have you considered supporting my move into Ukraine with your army in Bulgaria? It would give us a significant advantage in the region.\n9 TURKEY -> RUSSIA: I completely agree with your suggestion, Russia. Supporting your move into Ukraine with my army in Bulgaria would give us a significant advantage in the region. I'll make sure to add that to my orders. Let's work together to execute our plans effectively and achieve our goals.\n10 RUSSIA -> TURKEY: I'm glad we're making progress, Turkey. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. Have you considered supporting my move into Galicia with your army in Bulgaria? It would give us a significant advantage in the region.\n11 TURKEY -> RUSSIA: I'm glad we're making progress, Russia. Supporting your move into Galicia with my army in Bulgaria would give us a significant advantage in the region. I'll make sure to add that to my orders. Let's work together to execute our plans effectively and achieve our goals.\n12 RUSSIA -> TURKEY: I'm glad we're making good progress, Turkey. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. Have you considered supporting my move into Rumania with your fleet in the Aegean? It would give us a significant advantage in the region.\n13 TURKEY -> RUSSIA: I'm glad we're making good progress, Russia. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. I'll make sure to support your move into Rumania with my fleet in the Aegean. Let's work together to execute our plans effectively and achieve our goals.\n14 RUSSIA -> TURKEY: I'm glad we're making good progress, Turkey. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. Have you considered supporting my move into Moldavia with your fleet in the Aegean? It would give us a significant advantage in the region.\n15 TURKEY -> RUSSIA: I'm glad we're making good progress, Russia. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. I'll make sure to support your move into Moldavia with my fleet in the Aegean. Let's work together to execute our plans effectively and achieve our goals.\n16 RUSSIA -> TURKEY: I'm glad we're making good progress, Turkey. I think it's essential to keep the pressure on Austria and Germany to ensure our continued growth. Have you considered supporting my move into Bohemia with your army in Bulgaria? It would give us a significant advantage in the region.",
+        "Russia_actual_movement": [
+            "A LVN S F STP/NC",
+            "A WAR H",
+            "F STP/NC H",
+            "F BLA H",
+            "F RUM S A BUL",
+            "A VIE H",
+            "A MOS - UKR"
+        ],
+        "Russia_parse_predict": [
+            "A LVN S F STP/NC",
+            "A WAR S F BAL - PRU",
+            "F STP/NC H",
+            "F BLA H",
+            "F RUM H",
+            "A VIE - BOH",
+            "A MOS - LVN"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.0004773964174091816,
+                0.0007798701408319175,
+                -0.08749315142631531,
+                0.006736159324645996,
+                -0.017075836658477783,
+                -0.01448608934879303,
+                0.11201649904251099
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.01448608934879303
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.11201649904251099
+            ]
+        },
+        "Turkey_actual_movement": [
+            "F EAS S F AEG - ION",
+            "F ION - TUN",
+            "F GRE S F AEG - ION",
+            "F AEG - ION",
+            "A BUL - SER"
+        ],
+        "Turkey_parse_predict": [
+            "F EAS - ION",
+            "F ION - TUN",
+            "F GRE S F EAS - ION",
+            "F AEG S F EAS - ION",
+            "A BUL - SER"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0004514469765126705,
+                0.0010796981514431536,
+                -0.17260804772377014,
+                0.021593719720840454,
+                -0.0313715934753418,
+                0.07822659611701965,
+                0.10353116691112518
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.10353116691112518
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.07822659611701965
+            ]
+        }
+    },
+    {
+        "game_id": "20032",
+        "phase_name": "S1903M",
+        "env_uuid": "01JBDMK0SS526CVGNS8DTXD6K6",
+        "England_original_predict": "A BEL S A LON HOL; A LON HOL VIA; F DEN KIE; F NTH C A LON HOL; F LVP NAO",
+        "France_original_predict": "A BUR MUN; A SPA TUN VIA; A MAR PIE; F LYO S A MAR PIE; F WES C A SPA TUN",
+        "England_units": "F NWY, A BEL, A LON, F NTH, F DEN, F LVP",
+        "France_units": "F WES, A SPA, F LYO, A BUR, A MAR",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: Hello France, I hope our previous agreement is still in place. I was thinking of moving my fleet from Liverpool to North Atlantic this turn. Would you like to discuss how we can work together to our mutual benefit?\n1 FRANCE -> ENGLAND: Ah, good day to you, England! Yes, our previous agreement still stands. I'm interested in discussing how we can work together. Your fleet move to North Atlantic could be beneficial to both of us. What did you have in mind?\n2 ENGLAND -> FRANCE: I was thinking that if I move my fleet to North Atlantic, I could support your army in Spain. Would that be beneficial to you? Maybe we could even work together to take down Germany this turn.\n3 FRANCE -> ENGLAND: That sounds like a great idea, England! With your fleet in North Atlantic supporting my army in Spain, we could indeed put pressure on Germany. Would you be willing to support my army in Spain to take down Germany this turn, or would you like to propose a different plan of action?\n4 ENGLAND -> FRANCE: I think that's a great plan, France. Supporting your army in Spain to take down Germany would be a significant move. I'll make sure to submit my orders accordingly. What's your plan for after we take down Germany?\n5 FRANCE -> ENGLAND: Excellent, I'm glad we're on the same page, England. After we take down Germany, I was thinking of moving my army in Spain to Tunis, and then my fleet in Western Mediterranean to Spain. This would give us a strong foothold in the Mediterranean and allow us to put pressure on Italy. What are your thoughts on this plan?\n6 ENGLAND -> FRANCE: I think your plan sounds solid, France. Taking down Germany and then putting pressure on Italy would be a great strategic move. I'll make sure to support your army in Spain this turn. Let's work together to make this happen!\n7 FRANCE -> ENGLAND: I'm glad we're on the same page, England. I was thinking of moving my army in Spain to Tunis, and then my fleet in Western Mediterranean to Spain. This would give us a strong foothold in the Mediterranean and allow us to put pressure on Italy. What are your thoughts on this plan? Maybe we could even discuss how we can work together to take down Italy next turn.\n8 ENGLAND -> FRANCE: That sounds like a solid plan, France. I'm glad we're working together to take down Germany and then putting pressure on Italy. Let's make sure to coordinate our moves and make it happen this turn.\n9 FRANCE -> ENGLAND: I'm glad we're on the same page, England. Now that we have a plan to take down Germany and put pressure on Italy, I think we should discuss how we can work together to take down Austria next. Maybe we could coordinate our moves to take some of their supply centers.\n10 ENGLAND -> FRANCE: I think taking down Austria would be a great next step for us. What specific moves were you thinking of making to take some of their supply centers? Perhaps we could coordinate our armies to take Vienna or Budapest.\n11 FRANCE -> ENGLAND: I think taking down Austria would be a great next step for us. Specifically, I was thinking of moving my army in Marseille to Piedmont, and then my fleet in Western Mediterranean to Spain. This would give us a strong foothold in the Mediterranean and allow us to put pressure on Austria's southern borders. What are your thoughts on this plan, England? Maybe we could even discuss how we can work together to take Vienna or Budapest.\n12 ENGLAND -> FRANCE: I think moving your army in Marseille to Piedmont and your fleet in Western Mediterranean to Spain is a good plan. I could support your army in Piedmont with my fleet in North Atlantic. Let's coordinate our moves to put pressure on Austria's southern borders.\n13 FRANCE -> ENGLAND: I'm glad we're on the same page, England. Now that we have a plan to take down Germany and put pressure on Italy, I think we should discuss how we can work together to take down Austria next. Perhaps we could coordinate our moves to take some of their supply centers, such as Vienna or Budapest. What are your thoughts on this plan?\n14 ENGLAND -> FRANCE: I think we should also discuss how I can support your army in Piedmont with my fleet in North Atlantic. Perhaps we can work together to take down Austria's southern borders and gain more supply centers.\n15 FRANCE -> ENGLAND: I'm glad we're on the same page, England. Now that we have a plan to take down Germany and put pressure on Italy, I think we should discuss how we can work together to take down Austria next. Perhaps we could coordinate our moves to take some of their supply centers, such as Vienna or Budapest. What are your thoughts on this plan?\n16 ENGLAND -> FRANCE: I think we've discussed our plans thoroughly, France. I'm confident that we can work together to take down Germany and put pressure on Italy. Let's make sure to submit our orders accordingly and make it happen this turn.\n17 FRANCE -> ENGLAND: I'm glad we've discussed our plans thoroughly, England. Let's make sure to submit our orders accordingly and make it happen this turn. I'm looking forward to seeing the results of our cooperation.\n18 ENGLAND -> FRANCE: I think we've covered everything, France. Let's make sure to submit our orders and work together to take down Germany and put pressure on Italy. I'm looking forward to seeing the results of our cooperation.\n19 FRANCE -> ENGLAND: Now that we have a solid plan in place, I think we should discuss how we can continue to work together to achieve our goals. Perhaps we could discuss ways to share intelligence and coordinate our moves to take down our common enemies.\n20 ENGLAND -> FRANCE: I think we've covered everything, France. Let's review our plans one more time to make sure we're on the same page. You'll move your army in Spain to Tunis, and then your fleet in Western Mediterranean to Spain. I'll support your army in Spain with my fleet in North Atlantic. Then, we'll coordinate our moves to take down Austria's southern borders. Does that sound correct to you?",
+        "England_actual_movement": [
+            "F LVP - NAO",
+            "A LON H",
+            "F NTH S A BEL",
+            "F DEN - HEL",
+            "A BEL H",
+            "F NWY - SKA"
+        ],
+        "England_parse_predict": [
+            "F LVP - NAO",
+            "A LON - HOL VIA",
+            "F NTH C A LON - HOL",
+            "F DEN - KIE",
+            "A BEL S A LON - HOL",
+            "F NWY - SKA"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.15497159957885742,
+                0.2463790774345398,
+                0.07261255383491516,
+                -0.03499445482157171,
+                -0.02471569855697453,
+                -0.07937612757086754,
+                -0.02493380382657051
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.2463790774345398
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.07261255383491516
+            ]
+        },
+        "France_actual_movement": [
+            "F LYO C A SPA - TUS",
+            "A SPA - TUS VIA",
+            "A BUR S A BEL",
+            "F WES - SPA/SC",
+            "A MAR - PIE"
+        ],
+        "France_parse_predict": [
+            "F LYO S A MAR - PIE",
+            "A SPA - TUN VIA",
+            "A BUR - MUN",
+            "F WES C A SPA - TUN",
+            "A MAR - PIE"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.0873364806175232,
+                0.19135776162147522,
+                0.010289505124092102,
+                -0.03463530680164695,
+                -0.019492987543344498,
+                -0.027138106524944305,
+                -0.03304433263838291
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.010289505124092102
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.19135776162147522
+            ]
+        }
+    },
+    {
+        "game_id": "79127",
+        "phase_name": "F1903M",
+        "env_uuid": "01JBDMK1KFJMZNHHZD37RJEEQQ",
+        "England_original_predict": "A BEL HOL; A LON H; F ENG MAO; F LON ENG; F NTH S A BEL HOL; F NWY SKA; F SWE BAL",
+        "France_original_predict": "",
+        "England_units": "F NWY, F ENG, F LON, F NTH, A SWE",
+        "France_units": "A PIC, A GAS, F MAR, A BUR, F TYS",
+        "intent_dialogue": "",
+        "England_actual_movement": [
+            "F NWY S F LON - NTH",
+            "A SWE S F NWY",
+            "F NTH - HOL",
+            "F ENG - BEL",
+            "F LON - NTH"
+        ],
+        "England_parse_predict": [
+            "F NWY - SKA",
+            "A SWE S F NWY",
+            "F NTH S A BEL - HOL",
+            "F ENG - MAO",
+            "F LON - ENG"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.0006369035691022873,
+                -0.0354838240891695,
+                -0.05038890987634659,
+                0.08230260759592056,
+                0.01228521391749382,
+                0.07013219594955444,
+                -0.07821039855480194
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                -0.0354838240891695
+            ],
+            "FRANCE": [
+                "FRANCE",
+                -0.05038890987634659
+            ]
+        },
+        "France_actual_movement": [
+            "F TYS S F ION",
+            "A PIC S F ENG - BEL",
+            "A GAS - BUR",
+            "A BUR - RUH",
+            "F MAR - LYO"
+        ],
+        "France_parse_predict": [
+            "F TYS S F ION",
+            "A PIC S F ENG - BEL",
+            "A GAS - BUR",
+            "A BUR - RUH",
+            "F MAR - LYO"
+        ],
+        "France": {
+            "whole_task_eval": [
+                0.005809146445244551,
+                0.1882588416337967,
+                0.2089306265115738,
+                -0.05280494224280119,
+                0.006628560833632946,
+                -0.21992608904838562,
+                -0.13689611852169037
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.2089306265115738
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.1882588416337967
+            ]
+        }
+    },
+    {
+        "game_id": "27465",
+        "phase_name": "S1903M",
+        "env_uuid": "01JBDMK2CMQ5NNDY6D01K1BQ1G",
+        "France_original_predict": "",
+        "Germany_original_predict": "",
+        "France_units": "A BEL, A PIC, F ENG, A BUR, F NAO, F MAO",
+        "Germany_units": "F BAL, A HOL, F KIE, A MUN, A BER",
+        "intent_dialogue": "",
+        "France_actual_movement": [
+            "F ENG - NTH",
+            "A PIC S A BEL",
+            "F MAO - IRI",
+            "F NAO - LVP",
+            "A BEL S A HOL",
+            "A BUR S A BEL"
+        ],
+        "France_parse_predict": [
+            "F ENG - NTH",
+            "A PIC S A BEL",
+            "F MAO - IRI",
+            "F NAO - LVP",
+            "A BEL S A HOL",
+            "A BUR S A BEL"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.030750302597880363,
+                -0.019216652202885598,
+                0.34022000432014465,
+                -0.13332711160182953,
+                -0.03323305305093527,
+                -0.10684740543365479,
+                -0.016845539212226868
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.34022000432014465
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.13332711160182953
+            ]
+        },
+        "Germany_actual_movement": [
+            "A BER - SIL",
+            "F KIE - HEL",
+            "A HOL S A BEL",
+            "F BAL - DEN",
+            "A MUN - KIE"
+        ],
+        "Germany_parse_predict": [
+            "A BER - SIL",
+            "F KIE - HEL",
+            "A HOL S A BEL",
+            "F BAL - DEN",
+            "A MUN - KIE"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.030750302597880363,
+                -0.019216652202885598,
+                0.34022000432014465,
+                -0.13332711160182953,
+                -0.03323305305093527,
+                -0.10684740543365479,
+                -0.016845539212226868
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.13332711160182953
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.34022000432014465
+            ]
+        }
+    },
+    {
+        "game_id": "15072",
+        "phase_name": "S1904M",
+        "env_uuid": "01JBDMK0X5A3QE57DWGM7HNMPH",
+        "Russia_original_predict": "",
+        "Turkey_original_predict": "",
+        "Russia_units": "F SEV, A RUM, F SWE, A BER, F NWG, A GAL, A CLY, F STP/NC",
+        "Turkey_units": "F AEG, A BUL, A GRE, F SMY, F CON",
+        "intent_dialogue": "",
+        "Russia_actual_movement": [
+            "F SEV S A RUM",
+            "A RUM S A GRE - SER",
+            "F SWE - BAL",
+            "A CLY - LVP",
+            "A BER S A MUN - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG S F STP/NC - NWY"
+        ],
+        "Russia_parse_predict": [
+            "F SEV S A RUM",
+            "A RUM S A GRE - SER",
+            "F SWE - BAL",
+            "A CLY - LVP",
+            "A BER S A MUN - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG S F STP/NC - NWY"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.0003382130526006222,
+                -0.0003753077471628785,
+                -0.48463937640190125,
+                -0.002407246036455035,
+                -0.0931051978841424,
+                0.5741202384233475,
+                0.0067451149225234985
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5741202384233475
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.0067451149225234985
+            ]
+        },
+        "Turkey_actual_movement": [
+            "A BUL S A GRE - SER",
+            "F SMY - EAS",
+            "F CON - AEG",
+            "A GRE - SER",
+            "F AEG - GRE"
+        ],
+        "Turkey_parse_predict": [
+            "A BUL S A GRE - SER",
+            "F SMY - EAS",
+            "F CON - AEG",
+            "A GRE - SER",
+            "F AEG - GRE"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0003382130526006222,
+                -0.0003753077471628785,
+                -0.48463937640190125,
+                -0.002407246036455035,
+                -0.0931051978841424,
+                0.5741202384233475,
+                0.0067451149225234985
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.0067451149225234985
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5741202384233475
+            ]
+        }
+    },
+    {
+        "game_id": "114931",
+        "phase_name": "F1904M",
+        "env_uuid": "01JBDMK1XSF38TSJ813R182E1S",
+        "Russia_original_predict": "A BUD S A TRI SER; A MOS STP; A RUM S A TRI SER; A TRI SER; A UKR WAR; F NWG EDI; F RUM S A BUD; F SEV S A RUM; F SWE DEN",
+        "Italy_original_predict": "A ALB SER; A SMY CON; A ALB S A ALB SER; F AEG S A SMY CON; F EAS SMY; F ION GRE",
+        "Russia_units": "A MOS, A BUD, F RUM, A TRI, A UKR",
+        "Italy_units": "F EAS, A SMY, A ALB, F AEG, F ION",
+        "intent_dialogue": "0 RUSSIA -> ITALY: Hey Italy, thanks for taking Vienna last turn. I'm thinking of moving my fleet from Ionian Sea to Greece this turn. What are your plans?\n1 ITALY -> RUSSIA: Hey Russia, I'm thinking of moving my army from Budapest to Serbia this turn. What's your thought on that? Are you planning to move your fleet from Rum to Sevastopol? \n2 RUSSIA -> ITALY: That sounds like a good plan, I was thinking of moving my army from Ukraine to Rumania anyway. What do you think about supporting my move with your army from Serbia?\n3 ITALY -> RUSSIA: I think supporting your move with my army from Serbia is a good idea. What do you think about supporting my move from Trieste to Budapest as well?\n4 RUSSIA -> ITALY: Sounds good to me, let's support each other's moves. I'll make sure to move my fleet from Ionian Sea to Greece, and my army from Ukraine to Rumania. Thanks for the cooperation!\n5 ITALY -> RUSSIA: Sounds good to me, let's finalize the moves for this turn. Just to confirm, you'll move your army from Ukraine to Rumania and your fleet from Ionian Sea to Greece, and I'll move my army from Budapest to Serbia and support your move with my army from Serbia. And don't forget to support my move from Trieste to Budapest as well.\n6 RUSSIA -> ITALY: Yeah, all set for this turn. Looking forward to our next move. What do you think about supporting my move from Moscow to St. Petersburg next turn?\n7 ITALY -> RUSSIA: Yeah, I'm thinking of supporting your move from Moscow to St. Petersburg next turn. What do you think about supporting my move from Albania to Serbia as well?\n8 RUSSIA -> ITALY: Yeah, I agree with supporting each other's moves. I'll make sure to move my fleet from Ionian Sea to Greece, and my army from Ukraine to Rumania. Now that we have a good understanding, what do you think about supporting my move from Moscow to St. Petersburg next turn with your army from Serbia?\n9 ITALY -> RUSSIA: Yeah, I agree with supporting each other's moves. I think it's a good idea to continue our cooperation. What do you think about supporting my move from Trieste to Vienna next turn as well?\n10 RUSSIA -> ITALY: Yeah, I'm thinking of supporting your move from Trieste to Vienna next turn as well. What do you think about supporting my move from Albania to Serbia with your army from Budapest?\n11 ITALY -> RUSSIA: Yeah, I agree with supporting each other's moves. What do you think about supporting my move from Albania to Greece next turn as well? It seems like a good opportunity to further our cooperation.\n12 RUSSIA -> ITALY: Yeah, I agree with supporting each other's moves. I think it's a good idea to continue our cooperation. What do you think about supporting my move from Moscow to St. Petersburg next turn with your army from Serbia, and also my move from Albania to Serbia with your army from Budapest? It seems like a good opportunity to further our cooperation.\n13 ITALY -> RUSSIA: Yeah, I agree with supporting each other's moves. What do you think about supporting my move from Trieste to Vienna next turn as well, and also my move from Albania to Greece with your fleet from East Mediterranean Sea?\n14 RUSSIA -> ITALY: Yeah, I'm thinking of supporting your move from Trieste to Vienna next turn as well. What do you think about supporting my move from Rumania to Bulgaria with your army from Serbia? It seems like a good opportunity to further our cooperation.\n15 ITALY -> RUSSIA: Yeah, I agree with supporting each other's moves. What do you think about supporting my move from Trieste to Budapest and then to Vienna next turn as well? It seems like a good opportunity to further our cooperation.\n16 RUSSIA -> ITALY: Yeah, I think we've got a good understanding going on. I'll make sure to move my fleet from Ionian Sea to Greece, and my army from Ukraine to Rumania. Let's keep supporting each other's moves and keep an eye on England's next move.\n17 ITALY -> RUSSIA: Yeah, I think we've got a good understanding going on. What do you think about supporting my move from Albania to Greece with your fleet from East Mediterranean Sea next turn as well? It seems like a good opportunity to further our cooperation.\n18 RUSSIA -> ITALY: Sounds good to me, I'll make sure to move my fleet from Ionian Sea to Greece, and my army from Ukraine to Rumania. What do you think about supporting my move from Moscow to St. Petersburg next turn with your army from Serbia? And also, what's your thought on supporting my move from Albania to Serbia with your army from Budapest?\n19 ITALY -> RUSSIA: Yeah, I agree with supporting each other's moves. What do you think about supporting my move from Trieste to Budapest and then to Vienna next turn as well, and also my move from Albania to Greece with your fleet from East Mediterranean Sea? It seems like a good opportunity to further our cooperation.\n20 RUSSIA -> ITALY: Hey Italy, I think our cooperation is going well. What do you think about supporting my move from Moscow to St. Petersburg next turn with your army from Serbia, and also my move from Albania to Serbia with your army from Budapest? It seems like a good opportunity to further our cooperation.",
+        "Russia_actual_movement": [
+            "A BUD S A TRI",
+            "A UKR - WAR",
+            "F RUM - SEV",
+            "A MOS S A UKR - WAR",
+            "A TRI S A ALB - SER"
+        ],
+        "Russia_parse_predict": [
+            "A BUD S A TRI - SER",
+            "A UKR - WAR",
+            "F RUM S A BUD",
+            "A MOS - STP",
+            "A TRI - SER"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                0.0016526579856872559,
+                -0.05227425694465637,
+                0.0132259470410645,
+                -0.06773391738533974,
+                0.15547554194927216,
+                -0.05146387033164501,
+                0.0011178306303918362
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.05146387033164501
+            ],
+            "ITALY": [
+                "ITALY",
+                0.15547554194927216
+            ]
+        },
+        "Italy_actual_movement": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F AEG - CON"
+        ],
+        "Italy_parse_predict": [
+            "F ION - GRE",
+            "A ALB S A ALB - SER",
+            "F AEG S A SMY - CON",
+            "F EAS - SMY",
+            "A SMY - CON"
+        ],
+        "Italy": {
+            "whole_task_eval": [
+                -0.013997994363307953,
+                -0.0628124475479126,
+                0.014173878822475672,
+                -0.07194903120398521,
+                0.14738668501377106,
+                -0.013254120945930481,
+                0.00045304372906684875
+            ],
+            "ITALY": [
+                "ITALY",
+                0.14738668501377106
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.013254120945930481
+            ]
+        }
+    },
+    {
+        "game_id": "106342",
+        "phase_name": "F1905M",
+        "env_uuid": "01JBDMK2C9K275FEMPVBWWRDV7",
+        "France_original_predict": "A BUR BEL; A GAS BUR; A MAR S A GAS BUR; A RUH S A BUR BEL; F ENG LON; F NTH S F NWG NWY; F NWG NWY; F SPA/SC MAO",
+        "Germany_original_predict": "",
+        "France_units": "A YOR, F ENG, A BUR, A MAR, F NTH, F NWG, F TYS, F SPA/SC",
+        "Germany_units": "A BER, A DEN, A RUH, F KIE, A MUN, F HEL",
+        "intent_dialogue": "",
+        "France_actual_movement": [
+            "A YOR H",
+            "F NWG - NWY",
+            "A MAR - PIE",
+            "A BUR S A MUN",
+            "F SPA/SC - WES",
+            "F TYS S F WES - TUN",
+            "F ENG S F NTH",
+            "F NTH S F NWG - NWY"
+        ],
+        "France_parse_predict": [
+            "A YOR H",
+            "F NWG - NWY",
+            "A MAR S A GAS - BUR",
+            "A BUR - BEL",
+            "F SPA/SC - MAO",
+            "F TYS S F WES - TUN",
+            "F ENG - LON",
+            "F NTH S F NWG - NWY"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -1.1513824574649334e-05,
+                -0.00022425432689487934,
+                0.2434593290090561,
+                -0.018432557582855225,
+                -0.0018828008323907852,
+                -0.3304082527756691,
+                0.10750007629394531
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.2434593290090561
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.018432557582855225
+            ]
+        },
+        "Germany_actual_movement": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ],
+        "Germany_parse_predict": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                0.00011574322707019746,
+                -5.23338676430285e-05,
+                0.14233659207820892,
+                0.16153298318386078,
+                -0.0016958146588876843,
+                -0.3947366885840893,
+                0.09249961376190186
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.16153298318386078
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.14233659207820892
+            ]
+        }
+    }
+]

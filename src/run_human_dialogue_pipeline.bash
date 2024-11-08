@@ -2,9 +2,9 @@
 # Exit immediately if a command exits with a non-zero status
 set -e
 
-FORMAT_EPISODE_PATH="data/formatted_episodes/taskeval_v6/taskeval_actual_movement_coop_without_flausible.json"
-INTENT_RESPONSE_PATH="data/intent_response/taskeval_v6/taskeval_actual_movement_coop_without_flausible.jsonl"
-INTENT_VALUE_PATH="data/intent_value/taskeval_v6/taskeval_actual_movement_coop_without_flausible.json"
+FORMAT_EPISODE_PATH="data/formatted_episodes/taskeval_v7/taskeval_human_dialogue_coop.json"
+INTENT_RESPONSE_PATH="data/intent_response/taskeval_v7/taskeval_human_dialogue_coop.jsonl"
+INTENT_VALUE_PATH="data/intent_value/taskeval_v7/taskeval_human_dialogue_coop.json"
 
 source ~/.bashrc
 
@@ -12,7 +12,7 @@ source ~/.bashrc
 conda activate sotopia
 
 # echo "Running add_actual_intent_episode.py ..."
-CUDA_VISIBLE_DEVICES=0 python get_actual_intent_episode.py --env_tag coop_without_flausible_v2 --tgt_path=$FORMAT_EPISODE_PATH
+# CUDA_VISIBLE_DEVICES=0 python get_actual_intent_episode.py --env_tag coop_with_actual --tgt_path=$FORMAT_EPISODE_PATH
 
 echo "Running intent_prediction.py ..."
 CUDA_VISIBLE_DEVICES=0 python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=0 --split_end None

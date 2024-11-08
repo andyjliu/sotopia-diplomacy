@@ -1,0 +1,338 @@
+%
+1 Experience
+2 Agency
+3 PatientRelatedEmotions
+4 AgentRelatedEmotions
+5 MindOverall
+%
+
+Feel* 5 1
+Perceive* 5 1
+Perception 5 1
+Mood 5 1
+Pain 5 1
+Ache* 5 1
+Agony 5 1
+Discomfort 5 1
+Injur* 5 1
+Wound* 5 1
+Miser* 5 1
+Distress* 5 1
+Anguish* 5 1
+Anxiety 5 1
+Anxious 5 1
+Grief 5 1
+Sad* 5 1
+Devastated 5 1
+Suffer* 5 1
+Hurt* 5 1
+Emotion* 5 1
+Anger 5 1 4
+Angry 5 1 4
+Surprise* 5 1
+Disgust* 5 1 4
+Pleasure 5 1
+Amuse* 5 1
+Enjoy* 5 1
+Gratif* 5 1
+Passon* 5 1
+Purpose 5 2
+Plan* 5 2
+Prepare* 5 2
+Organize* 5 2
+Calculate* 5 2
+Concoct* 5 2
+Conspire* 5 2
+Contemplat* 5 2
+Devise* 5 2
+Formulate* 5 2
+Decisive 5 2
+Decide* 5 2
+Goal* 5 2
+Conscious* 5 2
+Attentive 5 2
+Aware* 5 2
+Cognizant 5 2
+Responsive 5 2
+Rational 5 2
+Responsible 5 2
+Deliberate 5 2
+Memory 5 2
+Memorize* 5 2
+Recall* 5 2
+Recollect* 5 2
+Forget* 5 2
+Forgot* 5 2
+Remembers 5 2
+Remembered 5 2
+Thought* 5 2
+Considerate 5 2
+Determined 5 2
+Judge* 5 2
+Realize* 5 2
+Understand* 5 2
+Conclude* 5 2
+Foresee* 5 2
+Comprehend* 5 2
+Think* 5 2
+Reason* 5 2
+Believe* 5 2
+Mental* 5 2
+Cerebral 5 2
+Intellect* 5 2
+Brain* 5 2
+Experience* 5 1
+Hunger 5 1
+Hungry 5 1
+Starved 5 1
+Rage 5 1 4
+Enrage* 5 1 4
+Bitter 5 1 4
+Irritated 5 1 4
+Mad 5 1 4
+Obsess* 5 1
+Upset 5 1
+Aggressive 5 1
+Agitated 5 1 4
+Desire* 5 1
+Ambition 5 1
+Appetite 5 1
+Aspir* 5 1
+Crav* 5 1
+Devot* 5 1
+Eager* 5 1
+Fascinat* 5 1
+Passion 5 1
+Greed* 5 1
+Lust* 5 1
+Inclination 5 1
+Admir* 5 1
+Affection 5 1
+Pride* 5 1
+Digni* 5 1
+Honor 5 1
+Self-esteem 5 1
+Temper 5 1
+Nostalgic 5 1
+Embarrass* 5 1
+Shame 5 1
+Ashamed 5 1
+Humble 5 1
+Distress* 5 1
+Humiliated 5 1
+Joy* 5 1
+Happy 5 1
+Delight* 5 1
+Elate* 5 1
+Satisfied 5 1
+Satisfaction 5 1
+Glad 5 1
+Content 5 1
+Pleased 5 1
+Agen* 5 2
+Control 5 2
+Competen* 5 2
+Intelligen* 5 2
+Self-control 5 2
+Discreet 5 2
+Discretion 5 2
+Restrain* 5 2
+Discipline* 5 2
+Moral* 5 2
+Benevolent 5 2
+Noble 5 2
+Principled 5 2
+Righteous 5 2
+Praiseworthy 5 2
+Fair 5 2
+Ethical 5 2
+Malevolent 5 2
+Unfair 5 2
+Corrupt 5 2
+Evil 5 2
+Unethical 5 2
+Impure 5 2
+Blameworthy 5 2
+Immoral 5 2
+Abus* 5 2
+Recogni* 5 2
+Accept* 5 2
+Communicat* 5 2
+Persuasive 5 2
+Free-will 5 2
+Prefer* 5 2
+Mind* 5 2
+Inten* 5 2
+Interested 5 1
+Absorbed 5 1
+Engrossed 5 1
+Keen 5 1
+Attracted 5 1
+Enticed 5 1
+Excited 5 1
+Thrilled 5 1
+Guilty 5 1
+Remorse* 5 1
+Sorry 5 1
+Regret* 5 1
+Scared 5 1
+Panic* 5 1
+Alarmed 5 1
+Horrified 5 1
+Terrified 5 1
+Worried 5 1
+Trembling 5 1
+Hostile 5 1
+Advers* 5 1
+Belligerent 5 1
+Nasty 5 1
+Hateful 5 1
+Unfriendly 5 1
+Argumentative 5 1
+Catty 5 1
+Unkind 5 1
+Enthusiastic 5 1
+Avid 5 1
+Earnest 5 1
+Proud 5 1
+Appreciative 5 1
+Illustrious 5 1
+Irritable 5 1
+Contentious 5 1
+Exasperated 5 1
+Annoyed 5 1
+Frustrated 5 1
+Grouchy 5 1
+Testy 5 1
+Brooding 5 1
+Moody 5 1
+Alert 5 1
+Observant 5 1
+Perceptive 5 1
+Wise 5 1
+Clever 5 1
+Inspired 5 1 4
+Motivated 5 1 4
+Motivation 5 1 4
+Jittery 5 1
+Uptight 5 1
+Antsy 5 1
+Apprehensive 5 1
+Afraid 5 1
+Suspicious 5 1
+Shocked 5 1
+Cheerful 5 1
+Jolly 5 1
+Joyful 5 1
+Jovial 5 1
+Optimist* 5 1
+Bashful 5 1
+Coy 5 1
+Self-conscious 5 1
+Reticent 5 1
+Blush* 5 1
+Modest 5 1
+Abashed 5 1
+Sluggish 5 1
+Apathetic 5 1
+Daring 5 1
+Audacious 5 1
+Courageous 5 1
+Strong 5 1
+Resilient 5 1
+Tenacious 5 1
+Dedicated 5 1
+Scornful 5 1
+Contemptuous 5 1
+Disdain* 5 1
+Sneering 5 1
+Cynical 5 1
+Arrogant 5 1
+Egotistic* 5 1
+Snooty 5 1
+Relaxed 5 1
+Serene 5 1
+Tranquil 5 1
+Poised 5 1
+Patien* 5 1
+Fear* 5 1
+Dread 5 1
+Calm 5 1
+Tired 5 1
+Amazed 5 1
+Astounded 5 1
+Perplexed* 5 1
+Dumbfounded 5 1
+Dazed 5 1
+Bewildered 5 1
+Timid 5 1
+Alert 5 1
+Bold 5 1
+Unafraid 5 1
+Brave 5 1
+Shy 5 1
+Nervous 5 1
+Lonely 5 1
+Lonesome 5 1
+Sleepy 5 1
+Lively 5 1
+Peppy 5 1
+At-ease 5 1
+Drowsy 5 1
+Downhearted 5 1
+Dejected 5 1
+Sorrow* 5 1
+Dismay* 5 1
+Dishearten* 5 1
+Sheepish 5 1
+Foolish 5 1
+Mortified 5 1
+Frightened 5 1
+Astonished 5 1
+Loathing 5 1 4
+Hatred 5 1 4
+Detest* 5 1 4
+Confident 5 1
+Hope* 5 1
+Energetic 5 1
+Concentrating 5 2
+Focused 5 2
+Dissatisfied 5 1
+Inspiration 5 1 4
+Elevation 5 1 4
+Exalted 5 1 4
+Awe 5 1 4
+Dazzl* 5 1 4
+Relie* 5 1 3
+Comfortable 5 1 3
+Solace 5 1 3
+Sympath* 5 1 3
+Compassion 5 1 3
+Empath* 5 1 3
+Concern* 5 1 3
+Care* 5 1 3
+Caring 5 1 3
+Value 5 2
+Appreciate 5 2
+Likes 5 2
+Dislikes 5 2
+Liking 5 2
+Disliking 5 2
+Impressed 5 2
+Unimpressed 5 2
+Love* 5 2
+Approve* 5 2
+Adore* 5 2
+Imagin* 5 2
+Envision* 5 2
+Envisage 5 2
+Visualiz* 5 2
+Conceive* 5 2
+Predict* 5 2
+Infer* 5 2
+Attitude* 5 2
+Notion 5 2
+Opinion 5 2
+Perspective 5 2
+Sentiment 5 2
+Mind* 5 2

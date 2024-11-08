@@ -101,7 +101,10 @@ def main():
             response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
             response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn, args.cut))
             response[f"{countries[1]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[1], countries[0], args.end_turn, args.cut))
-            response["intent_dialogue"] = episode["intent_dialogue"]
+            if args.cut:
+                response["intent_dialogue"] = cutoff_dialogue(episode['intent_dialogue'], args.end_turn)
+            else:
+                response["intent_dialogue"] = episode["intent_dialogue"]
 
             response[f"{countries[0]}_response"].pop("metrics", None)
             response[f"{countries[1]}_response"].pop("metrics", None)

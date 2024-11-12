@@ -128,7 +128,7 @@ def extract_all_features(text):
     return results
     
 
-with open("taskeval_llama_dialogue_coop_with_actual.json", 'r') as f:
+with open("taskeval_human_dialogue_coop.json", 'r') as f:
     episodes = json.load(f)
     
 epi_score_list = get_score_dict_from_dialogue(episodes)
@@ -137,6 +137,5 @@ for epi in tqdm(epi_score_list, desc="Extracting features"):
     features = extract_all_features(text)
     epi['features'] = features
 
-with open("taskeval_llama_dialogue_coop_with_actual_features.json", 'w') as f:
+with open("taskeval_human_dialogue_coop_features.json", 'w') as f:
     json.dump(epi_score_list, f)   
-    

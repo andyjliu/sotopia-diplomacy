@@ -32,6 +32,8 @@ def get_intent_agent(dir_path, intent_model_path):
 def cutoff_dialogue(dialogue, end_turn):
     pattern = r'(\d+)\s+([A-Z]+)\s+->\s+([A-Z]+):\s+(.*?)(?=\n\d+\s+[A-Z]+\s+->\s+[A-Z]+:|$)'
     matches = re.findall(pattern, dialogue, re.DOTALL)
+    if end_turn == 0:
+        return ""
     filtered_turns = [match for match in matches if 0 <= int(match[0]) <= end_turn]
     result = '\n'.join([f"{turn[0]} {turn[1]} -> {turn[2]}: {turn[3].strip()}" for turn in filtered_turns])
     return result

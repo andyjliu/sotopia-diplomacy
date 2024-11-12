@@ -12,7 +12,7 @@ source ~/.bashrc
 conda activate sotopia
 
 # echo "Running add_actual_intent_episode.py ..."
-CUDA_VISIBLE_DEVICES=0 python get_actual_intent_episode.py --env_tag coop_with_actual --tgt_path=$FORMAT_EPISODE_PATH
+# CUDA_VISIBLE_DEVICES=0 python get_actual_intent_episode.py --env_tag coop_with_actual --tgt_path=$FORMAT_EPISODE_PATH
 
 echo "Running intent_prediction.py ..."
 CUDA_VISIBLE_DEVICES=0 python intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=0 --end_turn=0 --split_end None --cut

@@ -4,7 +4,7 @@
 # conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/"
-LORA_DIR=""
+
 test -d "$MODEL_DIR"
 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=9570 \
@@ -13,7 +13,6 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --chat-template "chat_templates/llama3.jinja" \
     --tensor-parallel-size=4 \
     --max-num-batched-tokens=8192 \
-    --lora_modules=$LORA_DIR \
     --dtype bfloat16 \
     --gpu-memory-utilization 0.9 \
     --max-num-seqs 32

@@ -4,6 +4,7 @@
 # conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/"
+LORA_DIR=""
 test -d "$MODEL_DIR"
 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=9570 \

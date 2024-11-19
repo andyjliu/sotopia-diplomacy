@@ -377,8 +377,7 @@ def obtain_chain(
                 # model_name = "/compute/babel-8-11/jiaruil5/.cache/models--TechxGenus--Meta-Llama-3-70B-Instruct-GPTQ/snapshots/e147aa8799dd05d5077f60c79be0d972b002b3ac/",
                 temperature=temperature,
                 max_retries=max_retries,
-            )
-        
+            )       
         
         human_message_prompt = HumanMessagePromptTemplate(
             prompt=PromptTemplate(template=template, input_variables=input_variables)

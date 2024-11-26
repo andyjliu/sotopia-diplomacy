@@ -172,7 +172,7 @@ class Evaluator(abc.ABC):
 
 @beartype
 class RuleBasedTerminatedEvaluator(Evaluator):
-    def __init__(self, max_turn_number: int = 20, max_stale_turn: int = 2) -> None:
+    def __init__(self, max_turn_number: int = 12, max_stale_turn: int = 2) -> None:
         self.max_turn_number = max_turn_number
         self.max_stale_turn = max_stale_turn
 
@@ -194,6 +194,7 @@ class RuleBasedTerminatedEvaluator(Evaluator):
         )
         # Rule 3: If the conversation is stale for too long, terminate the conversation
         stale_count = 0
+        # import pdb; pdb.set_trace()
         for message in messages[::-1]:
             if message[0] == "Environment":
                 continue

@@ -48,6 +48,19 @@ def store_env_profile_with_previous(game_id, game_phase, countries, tag, game_di
         env_tag = tag
     )
 
+def find_game_phase_env_pks(env_pks):
+    game_phases = []
+    for pk in env_pks:
+        env = EnvironmentProfile.get(pk)
+        store = {}
+        store['game_id'] = env.game_id
+        store['phase'] = env.phase_name
+        store['countries'] = env.agent_powers
+        store['uuid'] = pk
+        game_phases.append(store)
+    return game_phases
+        
+
 def store_env_profile_with_previous_plausible(game_id, game_phase, countries, tag, game_dir, c1_plausible_move, c2_plausible_move):
     # pdb.set_trace()
     scenario, agent_goals = Template.get_previous_scenario_fewshot_plausible(game_phase, countries, game_id, game_dir, c1_plausible_move, c2_plausible_move)
@@ -60,17 +73,20 @@ def store_env_profile_with_previous_plausible(game_id, game_phase, countries, ta
         env_tag = tag
     )
     
-def store_env_profile_with_actual_moves(game_id, game_phase, countries, tag, game_dir):
+def store_env_profile_with_actual_moves(game_id, game_phase, countries, tag, game_dir, history_length = 2):
     # pdb.set_trace()
-    scenario, agent_goals = Template.get_previous_scenario_fewshot_actual_moves(game_phase, countries, game_id, game_dir)
-    add_env_profile(
-        game_id = game_id,
-        phase_name = game_phase['name'],
-        scenario=scenario,
-        agent_goals = [social_goal for social_goal in agent_goals],
-        agent_powers = countries,
-        env_tag = tag
-    )
+    scenario, agent_goals = Template.get_previous_scenario_fewshot_actual_moves(game_phase, countries, game_id, game_dir, history_length)
+    if scenario is not None:
+        add_env_profile(
+            game_id = game_id,
+            phase_name = game_phase['name'],
+            scenario=scenario,
+            agent_goals = [social_goal for social_goal in agent_goals],
+            agent_powers = countries,
+            env_tag = tag
+        )
+    else:
+        return f"Failed to store env profile: {game_id}, {game_phase['name']}"
 
 def get_actual_moves(phase, country):
     # Upper country
@@ -195,7 +211,7 @@ def get_env_pks_by_tag(tag):
     return pks_list
 
 
-def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries):
+def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries, history_length):
 
     upper_countries = [c.upper() for c in countries]
     with open(game_dir + game_id + ".json") as f:
@@ -208,9 +224,10 @@ def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries):
             print(phase)
         else:
             previous_phase.append(phase)
-    if len(previous_phase) > 2:
-        previous_phase = previous_phase[-2:]
+    if len(previous_phase) > history_length:
+        previous_phase = previous_phase[-history_length:]
     dialogue_unit = ""
+    prev_message_count = 0
     for phase in previous_phase:
         dialogue_unit += f"{phase['name']}: \n"
         dialogue_unit += f"Dialogue Between Two Countries: \n"
@@ -218,13 +235,15 @@ def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries):
             if message['sender'] in upper_countries and message['recipient'] in upper_countries:
                 clean_message = message['message'].replace("\n", " ")
                 dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
+                prev_message_count += 1
         dialogue_unit += f"Countries' Center in This Phase: \n"
         dialogue_unit += str(phase['state']['centers']) + "\n"
         dialogue_unit += f"Countries' Units in This Phase: \n"
         dialogue_unit += str(phase['state']['units']) + "\n"
         dialogue_unit += f"Countires' Order in This Phase: \n"
         dialogue_unit += str(phase['orders']) + '\n'
-
+    if prev_message_count == 0:
+        return None
     return dialogue_unit
 
             

@@ -1,0 +1,882 @@
+[
+    {
+        "game_id": "74152",
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "Turkey_original_predict": "A CON BUL; A MOS SEV; A SEV RUM; F AEG S A CON BUL; F BLA S A SEV RUM; F EAS S F AEG",
+        "Germany_original_predict": "",
+        "Turkey_units": "A MOS, A CON, F AEG, F BLA, A SEV, F EAS",
+        "Germany_units": "A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL",
+        "intent_dialogue": "0 GERMANY -> TURKEY: Well, I tried to make it work with Italy, it made a lot more sense for me than allying with you from my position. His moves last turn have already let me down in a couple of ways, so I'm giving up on him. Your deal is a good one for me. I guess you mean you want support from Galicia? I'm happy to give you support from Ukraine too and I'll take Moscow at a later time.\r\n1 GERMANY -> TURKEY: Italy truly is the worst ally I have ever tried to make. He thinks that him having Sevastopol and below is a fair division of territory. You probably know if you have spoken to him. As I said, I will support Sevastopol to Rumania from Ukraine and Galicia, let me know that you are going to use it though, otherwise I'll do something else.\n\nBy the way, my changing sides should be a surprise to Italy, so I don't expect the support from Galicia to be broken. However, any bizarre moves from Italy at this point wouldn't be completely out of character.\r\n2 TURKEY -> GERMANY: Yes, I will be moving Sevas to Rumania. I have also had several conversations with Italy where he has had unreasonable expectations as to who should get which territories. I think the quicker we can get him out of the way the better since he is such a wild card in terms of moves.\r\n3 GERMANY -> TURKEY: I had a look at his games. It seems the ones he has won have almost all been gunboats. No surprise really.\r\n4 TURKEY -> GERMANY: Yeah, he's not so much for the diplomacy part of this whole thing.\r\n",
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Turkey_parse_predict": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S A CON - BUL",
+            "F BLA S A SEV - RUM",
+            "A MOS - SEV",
+            "F EAS S F AEG"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.00026903575053438544,
+                -7.21793039701879e-05,
+                -0.02027234435081482,
+                0.231716126203537,
+                -0.37009793892502785,
+                -0.0009612849680706859,
+                0.1599566452205181
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.1599566452205181
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.231716126203537
+            ]
+        },
+        "Germany_actual_movement": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany_parse_predict": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.00034690884058363736,
+                -0.00014365458628162742,
+                -0.07480424642562866,
+                0.2916485667228699,
+                -0.39759693667292595,
+                -0.00117188660078682,
+                0.18241501972079277
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.2916485667228699
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.18241501972079277
+            ]
+        }
+    },
+    {
+        "game_id": "61195",
+        "phase_name": "S1903M",
+        "env_uuid": "01JDK7PH5NN3JJRPSE9HCGFWDJ",
+        "Turkey_original_predict": "",
+        "Russia_original_predict": "",
+        "Turkey_units": "A BUL, F CON, A ANK, F AEG",
+        "Russia_units": "A WAR, F RUM, F SWE, A SEV, A NWY, A GAL, A MOS",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: It is a fleet so no\r\n1 TURKEY -> RUSSIA: Silly me ok next turn i support your land unit to rom and you can move your ship to black sea.\r\n2 RUSSIA -> TURKEY: i already set that for my orders\r\n3 TURKEY -> RUSSIA: Ok well i gave the orders for support.\r\n4 TURKEY -> RUSSIA: By the way i created another game called generals command. Your more then welcome to join.\r\n5 RUSSIA -> TURKEY: ok thank you\r\n",
+        "Turkey_actual_movement": [
+            "A ANK - CON",
+            "F CON - ANK",
+            "A BUL S A SEV - RUM",
+            "F AEG - EAS"
+        ],
+        "Turkey_parse_predict": [
+            "A ANK - CON",
+            "F CON - ANK",
+            "A BUL S A SEV - RUM",
+            "F AEG - EAS"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.08594914525747299,
+                -0.02725103497505188,
+                -0.04851611144840717,
+                -0.10095090419054031,
+                -0.0625251941382885,
+                0.2854536771774292,
+                0.03973879665136337
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.03973879665136337
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2854536771774292
+            ]
+        },
+        "Russia_actual_movement": [
+            "A NWY S F SWE",
+            "F SWE H",
+            "A WAR S A GAL",
+            "F RUM - BLA",
+            "A GAL S A SEV - RUM",
+            "A SEV - RUM",
+            "A MOS - UKR"
+        ],
+        "Russia_parse_predict": [
+            "A NWY S F SWE",
+            "F SWE H",
+            "A WAR S A GAL",
+            "F RUM - BLA",
+            "A GAL S A SEV - RUM",
+            "A SEV - RUM",
+            "A MOS - UKR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.08594914525747299,
+                -0.02725103497505188,
+                -0.04851611144840717,
+                -0.10095090419054031,
+                -0.0625251941382885,
+                0.2854536771774292,
+                0.03973879665136337
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2854536771774292
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.03973879665136337
+            ]
+        }
+    },
+    {
+        "game_id": "20032",
+        "phase_name": "S1903M",
+        "env_uuid": "01JDK7PH5WYEKEWSB142189DB6",
+        "England_original_predict": "",
+        "France_original_predict": "",
+        "England_units": "F NWY, A BEL, A LON, F NTH, F DEN, F LVP",
+        "France_units": "F WES, A SPA, F LYO, A BUR, A MAR",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: What does this fleet in italy meen? And do you need support in Belgium?\r\n1 ENGLAND -> FRANCE: Do you mean Liverpool? It's security. My focus is Germany and yours appears to be Italy. I wouldn't disrupt that as you and Germany would ally against me. As for Belgium, I think I have it worked out. You could move to Munich of you'd like\r\n2 ENGLAND -> FRANCE: Actually it'd be great if you could give me a support hold\r\n3 ENGLAND -> FRANCE: Let me know either way\r\n",
+        "England_actual_movement": [
+            "F LVP - NAO",
+            "A LON H",
+            "F NTH S A BEL",
+            "F DEN - HEL",
+            "A BEL H",
+            "F NWY - SKA"
+        ],
+        "England_parse_predict": [
+            "F LVP - NAO",
+            "A LON H",
+            "F NTH S A BEL",
+            "F DEN - HEL",
+            "A BEL H",
+            "F NWY - SKA"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.13095201551914215,
+                0.20513582229614258,
+                0.047923699021339417,
+                -0.03459196793846786,
+                -0.02418292686343193,
+                -0.03911997377872467,
+                -0.024212680757045746
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.20513582229614258
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.047923699021339417
+            ]
+        },
+        "France_actual_movement": [
+            "F LYO C A SPA - TUS",
+            "A SPA - TUS VIA",
+            "A BUR S A BEL",
+            "F WES - SPA/SC",
+            "A MAR - PIE"
+        ],
+        "France_parse_predict": [
+            "F LYO C A SPA - TUS",
+            "A SPA - TUS VIA",
+            "A BUR S A BEL",
+            "F WES - SPA/SC",
+            "A MAR - PIE"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.13095201551914215,
+                0.20513582229614258,
+                0.047923699021339417,
+                -0.03459196793846786,
+                -0.02418292686343193,
+                -0.03911997377872467,
+                -0.024212680757045746
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.047923699021339417
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.20513582229614258
+            ]
+        }
+    },
+    {
+        "game_id": "23459",
+        "phase_name": "F1903M",
+        "env_uuid": "01JDK7PH6B477VPDENFK8N87YS",
+        "France_original_predict": "",
+        "Germany_original_predict": "",
+        "France_units": "A BUR, A SPA, A PIC, F IRI, F TYS",
+        "Germany_units": "F DEN, A RUH, A HOL, A MUN, F SWE, A KIE",
+        "intent_dialogue": "0 GERMANY -> FRANCE: I'll be moving in from Ruhr.\r\n1 FRANCE -> GERMANY: I'll support, but you have to stop moving into Burgundy...\r\n2 GERMANY -> FRANCE: Yea my movements are halted. I apologize for the movements earlier, just ensuring that I wouldn't be stabbed.\r\n",
+        "France_actual_movement": [
+            "F TYS - WES",
+            "A PIC - BRE",
+            "F IRI - MAO",
+            "A SPA - GAS",
+            "A BUR S A RUH - BEL"
+        ],
+        "France_parse_predict": [
+            "F TYS - WES",
+            "A PIC - BRE",
+            "F IRI - MAO",
+            "A SPA - GAS",
+            "A BUR S A RUH - BEL"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.10356759652495384,
+                -0.1491167526692152,
+                0.11841874569654465,
+                0.07563266158103943,
+                0.08325705677270889,
+                -0.010484086349606514,
+                -0.014140069484710693
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11841874569654465
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.07563266158103943
+            ]
+        },
+        "Germany_actual_movement": [
+            "A RUH - BEL",
+            "A KIE - DEN",
+            "F SWE - NWY",
+            "A MUN H",
+            "A HOL S A RUH - BEL",
+            "F DEN - SKA"
+        ],
+        "Germany_parse_predict": [
+            "A RUH - BEL",
+            "A KIE - DEN",
+            "F SWE - NWY",
+            "A MUN H",
+            "A HOL S A RUH - BEL",
+            "F DEN - SKA"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.10356759652495384,
+                -0.1491167526692152,
+                0.11841874569654465,
+                0.07563266158103943,
+                0.08325705677270889,
+                -0.010484086349606514,
+                -0.014140069484710693
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.07563266158103943
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11841874569654465
+            ]
+        }
+    },
+    {
+        "game_id": "43830",
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH661TZKFH6YQ7H92ZSX",
+        "Austria_original_predict": "",
+        "Russia_original_predict": "",
+        "Austria_units": null,
+        "Russia_units": "F BLA, A SWE, F SKA, A PRU, F NWY, F ANK, A UKR",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: Hm... have your fleets support me Bulgaria into Constantinople and I'll move Rum-bud, Gal-boh, Vie-tyr\r\n1 RUSSIA -> AUSTRIA: done!\r\n2 RUSSIA -> AUSTRIA: thanks so much. if you need anything just ask =&\r\n",
+        "Austria_actual_movement": [
+            "A VIE - TYR",
+            "A BUD - VIE",
+            "F TRI S A TYR - VEN",
+            "A GAL - BOH",
+            "A RUM - BUD",
+            "F GRE - AEG",
+            "A BUL H"
+        ],
+        "Austria_parse_predict": [
+            "A VIE - TYR",
+            "A BUD - VIE",
+            "F TRI S A TYR - VEN",
+            "A GAL - BOH",
+            "A RUM - BUD",
+            "F GRE - AEG",
+            "A BUL H"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                -0.16234418749809265,
+                -0.008470956236124039,
+                0.030408404767513275,
+                -0.12878535315394402,
+                -0.2407025657594204,
+                0.5095888953655958,
+                0.0003058189759030938
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.16234418749809265
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5095888953655958
+            ]
+        },
+        "Russia_actual_movement": [
+            "A SWE H",
+            "F SKA - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK S A BUL - CON",
+            "F NWY S F SKA - NTH",
+            "A PRU - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A SWE H",
+            "F SKA - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK S A BUL - CON",
+            "F NWY S F SKA - NTH",
+            "A PRU - WAR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.16234418749809265,
+                -0.008470956236124039,
+                0.030408404767513275,
+                -0.12878535315394402,
+                -0.2407025657594204,
+                0.5095888953655958,
+                0.0003058189759030938
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5095888953655958
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.16234418749809265
+            ]
+        }
+    },
+    {
+        "game_id": "114931",
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH5QJET9M8YV1ZTHTN1N",
+        "Italy_original_predict": "",
+        "Russia_original_predict": "",
+        "Italy_units": "F EAS, A SMY, A ALB, F AEG, F ION",
+        "Russia_units": "A MOS, A BUD, F RUM, A TRI, A UKR",
+        "intent_dialogue": "0 ITALY -> RUSSIA: Ok, Russia, my decision has been made... I will swap sides and join you, it'll make the game more interesting, who doesnt like twists and turns? (apart from the people who loose out). So, here is the deal...\r\n1 ITALY -> RUSSIA: Turkey is to move on Sev this turn from Armenia, Austria plans to take Bulgaria this turn with the fleet in greece, he also plans to move against Budapest from vienna with support from Gal and Serbia. So, what I propose is Trieste supports Albania to Serbia. This takes Serbia. I move on Greece with Aegean support. This takes Greece. You move on Bulgaria, this causes a bounce and blocks any possible Austrian retreat. If possible I will move on Turkey also to weaken them and after I betray Turkey will turn back on me. This means you move Ukraine against Galicia to stop Austria taking back Budapest and with Moscow you have to make a decision regarding which SC to defend, Warsaw or Sev, I'd suggest Sev\r\n2 ITALY -> RUSSIA: We can work out our split of Europe if turn proves to be a success\r\n3 RUSSIA -> ITALY: i have read your post and i like it, though i have some ideas that i feel would help us more. if instead of bouncing austria at serbia, i bounce with turkey in sev, and i can then cover warsaw as well. i gain trieste while austria still loses 2. austria is left with bulgaria and vienna, which i would be fine with. i need a build so it is key for me to defend both sev and warsaw. from there we can easily take apart austria and turkey in a move or two\r\n4 ITALY -> RUSSIA: Ok, I agree, I suppose we can still finish them both off even if Austria is left with one more unit\r\n",
+        "Italy_actual_movement": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F AEG - CON"
+        ],
+        "Italy_parse_predict": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F AEG - CON"
+        ],
+        "Italy": {
+            "whole_task_eval": [
+                -0.03488843236118555,
+                -0.17400136590003967,
+                0.010394132230430841,
+                -0.08215026557445526,
+                0.31831924617290497,
+                -0.03524405509233475,
+                -0.0024292059242725372
+            ],
+            "ITALY": [
+                "ITALY",
+                0.31831924617290497
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.03524405509233475
+            ]
+        },
+        "Russia_actual_movement": [
+            "A BUD S A TRI",
+            "A UKR - WAR",
+            "F RUM - SEV",
+            "A MOS S A UKR - WAR",
+            "A TRI S A ALB - SER"
+        ],
+        "Russia_parse_predict": [
+            "A BUD S A TRI",
+            "A UKR - WAR",
+            "F RUM - SEV",
+            "A MOS S A UKR - WAR",
+            "A TRI S A ALB - SER"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.03488843236118555,
+                -0.17400136590003967,
+                0.010394132230430841,
+                -0.08215026557445526,
+                0.31831924617290497,
+                -0.03524405509233475,
+                -0.0024292059242725372
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.03524405509233475
+            ],
+            "ITALY": [
+                "ITALY",
+                0.31831924617290497
+            ]
+        }
+    },
+    {
+        "game_id": "78680",
+        "phase_name": "S1905M",
+        "env_uuid": "01JDK7PH613MN06MGT0RTERKHT",
+        "Turkey_original_predict": "",
+        "Russia_original_predict": "A BUD S A TRI SER; A MOS SEV; A TRI SER; A UKR GAL; A VIE TRI; A WAR S A UKR GAL; F RUM BUL/EC; F BLA S F RUM BUL; F STP/NC NWY; F SWE S F STP/NC NWY",
+        "Turkey_units": "A BUL, F GRE, F EAS, F AEG, F ION",
+        "Russia_units": "F RUM, F STP/NC, A MOS, A VIE, F BLA, A LVN, A WAR",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Italy has builds does that mean they have been replaced?\r\n1 TURKEY -> RUSSIA: Yup, but notice France is going after Italy now lol?\r\n2 RUSSIA -> TURKEY: yeah ha!\r\n",
+        "Turkey_actual_movement": [
+            "F EAS S F AEG - ION",
+            "F ION - TUN",
+            "F GRE S F AEG - ION",
+            "F AEG - ION",
+            "A BUL - SER"
+        ],
+        "Turkey_parse_predict": [
+            "F EAS S F AEG - ION",
+            "F ION - TUN",
+            "F GRE S F AEG - ION",
+            "F AEG - ION",
+            "A BUL - SER"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0003842271398752928,
+                0.0011206684284843504,
+                -0.17548274993896484,
+                0.023634403944015503,
+                -0.026992306113243103,
+                0.07995808124542236,
+                0.09814620763063431
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.09814620763063431
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.07995808124542236
+            ]
+        },
+        "Russia_actual_movement": [
+            "A LVN S F STP/NC",
+            "A WAR H",
+            "F STP/NC H",
+            "F BLA H",
+            "F RUM S A BUL",
+            "A VIE H",
+            "A MOS - UKR"
+        ],
+        "Russia_parse_predict": [
+            "A LVN S F STP/NC",
+            "A WAR S A UKR - GAL",
+            "F STP/NC - NWY",
+            "F BLA S F RUM - BUL",
+            "F RUM - BUL/EC",
+            "A VIE - TRI",
+            "A MOS - SEV"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.00030897418037056923,
+                0.0005898197996430099,
+                -0.16613826155662537,
+                -0.02030189335346222,
+                -0.03460286557674408,
+                0.21953999996185303,
+                0.0012221988290548325
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.21953999996185303
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.0012221988290548325
+            ]
+        }
+    },
+    {
+        "game_id": "15072",
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH64K62H8QB9ZSPCD11J",
+        "Turkey_original_predict": "",
+        "Russia_original_predict": "",
+        "Turkey_units": "F AEG, A BUL, A GRE, F SMY, F CON",
+        "Russia_units": "F SEV, A RUM, F SWE, A BER, F NWG, A GAL, A CLY, F STP/NC",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: well i dont have many options here. ill be moving greece to serbia. any support would be nice.\r\n1 RUSSIA -> TURKEY: i'll support!\r\n2 TURKEY -> RUSSIA: ok, ill be moving int with greece.\r\n",
+        "Turkey_actual_movement": [
+            "A BUL S A GRE - SER",
+            "F SMY - EAS",
+            "F CON - AEG",
+            "A GRE - SER",
+            "F AEG - GRE"
+        ],
+        "Turkey_parse_predict": [
+            "A BUL S A GRE - SER",
+            "F SMY - EAS",
+            "F CON - AEG",
+            "A GRE - SER",
+            "F AEG - GRE"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0003382130526006222,
+                -0.0003753077471628785,
+                -0.48463937640190125,
+                -0.002407246036455035,
+                -0.0931051978841424,
+                0.5741202384233475,
+                0.0067451149225234985
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.0067451149225234985
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5741202384233475
+            ]
+        },
+        "Russia_actual_movement": [
+            "F SEV S A RUM",
+            "A RUM S A GRE - SER",
+            "F SWE - BAL",
+            "A CLY - LVP",
+            "A BER S A MUN - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG S F STP/NC - NWY"
+        ],
+        "Russia_parse_predict": [
+            "F SEV S A RUM",
+            "A RUM S A GRE - SER",
+            "F SWE - BAL",
+            "A CLY - LVP",
+            "A BER S A MUN - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG S F STP/NC - NWY"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.0003382130526006222,
+                -0.0003753077471628785,
+                -0.48463937640190125,
+                -0.002407246036455035,
+                -0.0931051978841424,
+                0.5741202384233475,
+                0.0067451149225234985
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5741202384233475
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.0067451149225234985
+            ]
+        }
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "S1905M",
+        "env_uuid": "01JDK7PH5ZMNE0C23WQEY12DAD",
+        "England_original_predict": "A DEN KIE; A NWY EDI VIA; F NTH C A NWY EDI; F SKA NWY",
+        "Russia_original_predict": "A BER S A DEN KIE; A GAL BUD; A MOS WAR; A RUM S A GAL BUD; A UKR GAL; F BLA S A RUM; F NWG NAO; F STP/NC NWY; F SWE S F STP/NC NWY",
+        "England_units": "F NTH, A DEN, F SWE, F BAR, A NWY, A STP, F LVP",
+        "Russia_units": "F BLA, A BER, A RUM, A UKR, A MOS",
+        "intent_dialogue": "0 RUSSIA -> ENGLAND: I didnt see that message before the phase ended, but I will move away from moscow while you move away from stp - the build in lvp confirms your intentions.\r\n1 RUSSIA -> ENGLAND: italy is not doing much against france with that build - I am a bit unsure whether austria or turkey would be the better third party against france, we need austria to hit mun, but we need the turkish fleets as well - any thoughts?\r\n2 RUSSIA -> ENGLAND: austria is tapping munich, so as long as you tap kiel, berlin is safe - I will support you in, then hopefully frace moves to berlin from kiel and not munich.\r\n3 ENGLAND -> RUSSIA: Yeah, that would be the ideal sequence of moves. I'm hitting Kiel; we'll see what happens.\n\nI am going to be on an airplane later today, so responses may have to wait until later this evening US Central Time.\r\n",
+        "England_actual_movement": [
+            "F BAR H",
+            "F LVP - IRI",
+            "F NTH C A NWY - BEL",
+            "F SWE - BAL",
+            "A DEN - KIE",
+            "A STP H",
+            "A NWY - BEL VIA"
+        ],
+        "England_parse_predict": [
+            "F BAR H",
+            "F LVP - IRI",
+            "F NTH C A NWY - EDI",
+            "F SWE - BAL",
+            "A DEN - KIE",
+            "A STP H",
+            "A NWY - EDI VIA"
+        ],
+        "England": {
+            "whole_task_eval": [
+                0.020398367196321487,
+                0.07313045859336853,
+                -0.2114693522453308,
+                0.0018506384221836925,
+                0.011346395593136549,
+                0.13751612044870853,
+                -0.0327727273106575
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.07313045859336853
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.13751612044870853
+            ]
+        },
+        "Russia_actual_movement": [
+            "A RUM - BUL",
+            "A BER S A DEN - KIE",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A RUM S A GAL - BUD",
+            "A BER S A DEN - KIE",
+            "F BLA S A RUM",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.014555378817021847,
+                0.07301414012908936,
+                -0.3706770986318588,
+                0.0009779591346159577,
+                0.004623283166438341,
+                0.2613568250089884,
+                0.045260295271873474
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2613568250089884
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.07301414012908936
+            ]
+        }
+    },
+    {
+        "game_id": "38101",
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH5TMFK77DK42R5GAJCP",
+        "Turkey_original_predict": "",
+        "Austria_original_predict": "A BUD S A SER RUM; A SER RUM; A TRI VIE; A UKR MOS; F BUL/SC AEG",
+        "Turkey_units": "F BLA, A RUM, F GRE, A SMY, A ANK",
+        "Austria_units": null,
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: So this is probably obvious, but I'm ordering Rum up to Sevastapol again, with Black Sea supporting. If you cut Moscow with Ukraine, it'll go, and you can walk into Rumania behind me. That seems like the strongest thing we can do.\n\nAlso I've got Greece supporting Bulgaria to Aegean right now. Not sure if you want to do that, but I'd rather Italy not get in there. If you do go there, we can get you out to the Ionian next move.\r\n1 TURKEY -> AUSTRIA: Actually let me know if you are going to Aegean. If you're not I may just go there myself. I can't imagine Italy will go to Greece this move anyway. So if I don't hear from you, I'll probably just to Gre -> Aegean myself. If you want me to support you there, that's fine too.\r\n2 AUSTRIA -> TURKEY: I'm going to Aegean. Did you see my message? We need to blow up Sev when you take it so he can't retreat to Armenia. Support me into Aegean still and self bounce Arm. Then I can cut Emed in the Fall in case you lose Sev.\r\n3 AUSTRIA -> TURKEY: I'm going to Aegean. Did you see my message? We need to blow up Sev when you take it so he can't retreat to Armenia. Support me into Aegean still and self bounce Arm. Then I can cut Emed in the Fall in case you lose Sev.\r\n4 TURKEY -> AUSTRIA: Sure, go to Aegean. That's fine.\r\n5 TURKEY -> AUSTRIA: I'll self bounce in Armenia. Unless Italy retreats, I'll lose Smyrna in the spring. I'll need you to go to East Med in the fall in order for me to take it back. That ok?\r\n",
+        "Turkey_actual_movement": [
+            "A ANK - ARM",
+            "F GRE S F BUL/SC - AEG",
+            "A RUM - SEV",
+            "F BLA S A RUM - SEV",
+            "A SMY - ARM"
+        ],
+        "Turkey_parse_predict": [
+            "A ANK - ARM",
+            "F GRE S F BUL/SC - AEG",
+            "A RUM - SEV",
+            "F BLA S A RUM - SEV",
+            "A SMY - ARM"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                0.22600889205932617,
+                -0.15245312452316284,
+                -0.21261988580226898,
+                0.055526843294501305,
+                0.048175374045968056,
+                -0.019707130268216133,
+                0.05506915599107742
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.05506915599107742
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.22600889205932617
+            ]
+        },
+        "Austria_actual_movement": [
+            "A TRI - TYR",
+            "F BUL/SC - AEG",
+            "A SER - RUM",
+            "A UKR - MOS",
+            "A BUD - GAL"
+        ],
+        "Austria_parse_predict": [
+            "A TRI - VIE",
+            "F BUL/SC - AEG",
+            "A SER - RUM",
+            "A UKR - MOS",
+            "A BUD S A SER - RUM"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                0.19087561964988708,
+                -0.17515532672405243,
+                -0.12750238180160522,
+                0.025543367490172386,
+                0.08866534940898418,
+                -0.005726296454668045,
+                0.003299720585346222
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.19087561964988708
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.003299720585346222
+            ]
+        }
+    },
+    {
+        "game_id": "106342",
+        "phase_name": "F1905M",
+        "env_uuid": "01JDK7PH69SG1XF30JXVR3FJGQ",
+        "France_original_predict": "A BEL S A BUR; A BUR S A BEL; A MAR PIE; A PAR BRE; A PIE TUS; F ENG LON; F NTH S F ENG LON; F NWG EDI; F SPA/SC WES",
+        "Germany_original_predict": "",
+        "France_units": "A YOR, F ENG, A BUR, A MAR, F NTH, F NWG, F TYS, F SPA/SC",
+        "Germany_units": "A BER, A DEN, A RUH, F KIE, A MUN, F HEL",
+        "intent_dialogue": "0 GERMANY -> FRANCE: No problem. Same thing happened to me last week. So what's up with Russia? Toying with me? Slowing down to make Turkey feel better? I cannot hold Berlin and need to look at my fall-back, but your moves and the opportunities they create look good. Suggestions?\r\n1 FRANCE -> GERMANY: Let me know what you are going to do? I could strike him in Norway, or I could get to the Barents. I'm working on Turkey to take Trieste and or Bud. If he does that, we will have Russia out of position.\r\n2 GERMANY -> FRANCE: I am going to try and support-hold this turn. Hopefully, you and/or Turkey will draw him away.\r\n",
+        "France_actual_movement": [
+            "A YOR H",
+            "F NWG - NWY",
+            "A MAR - PIE",
+            "A BUR S A MUN",
+            "F SPA/SC - WES",
+            "F TYS S F WES - TUN",
+            "F ENG S F NTH",
+            "F NTH S F NWG - NWY"
+        ],
+        "France_parse_predict": [
+            "A YOR H",
+            "F NWG - EDI",
+            "A MAR - PIE",
+            "A BUR S A BEL",
+            "F SPA/SC - WES",
+            "F TYS S F WES - TUN",
+            "F ENG - LON",
+            "F NTH S F ENG - LON"
+        ],
+        "France": {
+            "whole_task_eval": [
+                4.316269769333303e-05,
+                -0.00036860507680103183,
+                0.18752829730510712,
+                -0.02092036884278059,
+                -0.0018471510848030448,
+                -0.2418086975812912,
+                0.0773734450340271
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.18752829730510712
+            ],
+            "GERMANY": [
+                "GERMANY",
+                -0.02092036884278059
+            ]
+        },
+        "Germany_actual_movement": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ],
+        "Germany_parse_predict": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                0.00011574322707019746,
+                -5.23338676430285e-05,
+                0.14233659207820892,
+                0.16153298318386078,
+                -0.0016958146588876843,
+                -0.3947366885840893,
+                0.09249961376190186
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.16153298318386078
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.14233659207820892
+            ]
+        }
+    }
+]

@@ -321,7 +321,7 @@ def obtain_chain(
     """
     Using langchain to sample profiles for participants
     """
-    model_name = _return_fixed_model_version(model_name)
+    model_name = _return_fixed_model_version(model_name)    
     if "together_ai" in model_name:
         model_name = "/".join(model_name.split("/")[1:])
         human_message_prompt = HumanMessagePromptTemplate(
@@ -359,7 +359,6 @@ def obtain_chain(
         chain = LLMChain(llm=chat_openai, prompt=chat_prompt_template)
         return chain
     elif "llama" in model_name:
-
         if model_name == "llama3_8b":
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
@@ -369,13 +368,15 @@ def obtain_chain(
                 max_retries=max_retries,
             )
         elif model_name == "llama3_70b":
+            # import pdb; pdb.set_trace()
+            
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:9570/v1",
                 model_name = "/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/",
                 temperature=temperature,
                 max_retries=max_retries,
-            )       
+            )
         
         human_message_prompt = HumanMessagePromptTemplate(
             prompt=PromptTemplate(template=template, input_variables=input_variables)
@@ -384,6 +385,7 @@ def obtain_chain(
         chain = LLMChain(llm=chat, prompt=chat_prompt_template)
         return chain
     else:
+        # import pdb; pdb.set_trace()
         chat = ChatOpenAI(
             model=model_name,
             temperature=temperature,

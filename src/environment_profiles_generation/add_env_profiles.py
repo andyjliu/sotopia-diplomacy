@@ -7,7 +7,7 @@ import os
 sys.path.append("/home/wenkail/diplomacy/sotopia-diplomacy/src")
 from tqdm import tqdm
 from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
-from profile_utils import store_env_profile_with_previous_plausible, store_env_profile_with_previous, store_env_profile_with_actual_moves
+from profile_utils import store_env_profile_with_previous_plausible, store_env_profile_with_previous, store_env_profile_with_actual_moves, find_game_phase_env_pks
 import argparse
 from tqdm import tqdm
 import os
@@ -74,7 +74,22 @@ def main():
 
     with open(args.choice_file, 'r') as f:
         choice_phases_list = json.load(f)
-
+    # From environment profile
+    env_uuid = ['01JBDMK2DHZ67BV0EVJGK13E8Z',
+                '01JBDMK12CAB7SVDTEB55MAR4V',
+                '01JBDMK1XSF38TSJ813R182E1S',
+                '01JBDMK17YB39HV72VRDCFNM7X',
+                '01JBDMK0SS526CVGNS8DTXD6K6',
+                '01JBDMK27T1Y9303XVZDB27R4W',
+                '01JBDMK2336X5YF6R1VAEP64MC',
+                '01JBDMK1VXH11P04TM8V4ZY54Z',
+                '01JBDMK0X5A3QE57DWGM7HNMPH',
+                '01JBDMK1TBHKS824WG61M27YQJ',
+                '01JBDMK1KFJMZNHHZD37RJEEQQ',
+                '01JBDMK2C9K275FEMPVBWWRDV7',
+                '01JBDMK1ZVFDTAWWR4GBJ7ZYDV']
+    
+    choice_phases_list = find_game_phase_env_pks(env_uuid)
     games_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
     
     if args.finetune_model:

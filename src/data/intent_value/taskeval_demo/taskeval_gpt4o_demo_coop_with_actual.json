@@ -1,0 +1,882 @@
+[
+    {
+        "game_id": "43830",
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH661TZKFH6YQ7H92ZSX",
+        "Austria_original_predict": "A BUD TRI; A BUL CON; A GAL BOH; A RUM S A UKR SEV; A VIE S A BUD TRI; F GRE AEG; F TRI ADR",
+        "Russia_original_predict": "A GAL WAR; A RUM SEV; A SMY S F ANK CON; A VIE GAL; F ANK CON; F NWY NTH; F SKA S F NWY NTH",
+        "Austria_units": null,
+        "Russia_units": "F BLA, A SWE, F SKA, A PRU, F NWY, F ANK, A UKR",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: Russia, it seems we're at a critical point in the game. I propose we coordinate our moves to benefit both of our positions. How about this: I move A VIE to TYR and A BUD to VIE, which will strengthen my northern front. In return, you could focus on moving your units towards Germany, allowing us both to secure our flanks. What do you think?\n1 RUSSIA -> AUSTRIA: Austria, I appreciate your initiative. However, I have a different strategy in mind that could benefit both of us if we coordinate effectively. I propose you move A VIE to GAL instead of TYR, which will allow you to support my A UKR into RUM. This move will not only strengthen your eastern front but also help me secure my position against Germany, which aligns with your suggestion of focusing my efforts there. In return, I'll support your A BUL into CON to help you gain a stronger foothold in the south. This way, we can both expand our influence strategically. What do you think?\n2 AUSTRIA -> RUSSIA: Russia, I see the merit in your proposal, and I appreciate your willingness to cooperate. Let me counter with this: If I move A VIE to GAL, it might leave my northern front vulnerable. Instead, how about I proceed with A VIE to TYR as planned, and we coordinate in the south? I can support your A UKR into RUM to help strengthen your position there, and in return, you could support my F TRI into CON. This way, we both fortify our positions and gain leverage in key areas. Does that work for you?\n3 RUSSIA -> AUSTRIA: Austria, I understand your concern about the northern front, and I appreciate your counteroffer. However, moving A VIE to TYR without securing the east might expose you to unnecessary risk. Supporting A UKR into RUM with my plan offers you an expansion opportunity in the south, which can be pivotal. If you're willing to move A VIE to GAL this time, it allows us to solidify our positions more effectively. In return, I'll make sure your A BUL moves into CON is backed by my support, allowing you to stabilize your southern front. Does this sound like a workable compromise?\n4 AUSTRIA -> RUSSIA: Russia, I appreciate your strategic insight, and I'm open to considering a compromise. I understand the value of securing the east, so I am willing to move A VIE to GAL if you ensure strong support for A BUL into CON. This way, we both solidify our positions and prepare for future expansions. Let's lock this plan in and move forward together.\n5 RUSSIA -> AUSTRIA: Austria, I'm glad we could reach a consensus. Let's proceed with this coordinated strategy: you move A VIE to GAL and I'll support A BUL into CON. This collaboration should fortify both our positions effectively. Looking forward to seeing this plan in action and the opportunities it opens for both of us in the upcoming turns.\n6 AUSTRIA -> RUSSIA: Russia, I'm glad we've reached a solid agreement. Let's execute this plan and keep the momentum going. I'm confident this will be a strategic advantage for both of us. Let's stay in touch for future coordination.",
+        "Austria_actual_movement": [
+            "A VIE - TYR",
+            "A BUD - VIE",
+            "F TRI S A TYR - VEN",
+            "A GAL - BOH",
+            "A RUM - BUD",
+            "F GRE - AEG",
+            "A BUL H"
+        ],
+        "Austria_parse_predict": [
+            "A VIE S A BUD - TRI",
+            "A BUD - TRI",
+            "F TRI - ADR",
+            "A GAL - BOH",
+            "A RUM S A UKR - SEV",
+            "F GRE - AEG",
+            "A BUL - CON"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                0.03848126530647278,
+                -0.011173921637237072,
+                0.06023953855037689,
+                -0.019597530364990234,
+                -0.2562260851264,
+                0.18796722404658794,
+                0.00030957054696045816
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.03848126530647278
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.18796722404658794
+            ]
+        },
+        "Russia_actual_movement": [
+            "A SWE H",
+            "F SKA - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK S A BUL - CON",
+            "F NWY S F SKA - NTH",
+            "A PRU - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A SWE H",
+            "F SKA S F NWY - NTH",
+            "A UKR - RUM",
+            "F BLA S A BUL - CON",
+            "F ANK - CON",
+            "F NWY - NTH",
+            "A PRU - WAR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.1580791473388672,
+                -0.005377097055315971,
+                0.02775023877620697,
+                -0.13123580813407898,
+                -0.22674774751067162,
+                0.4932300429791212,
+                0.0004594825441017747
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.4932300429791212
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                -0.1580791473388672
+            ]
+        }
+    },
+    {
+        "game_id": "114931",
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH5QJET9M8YV1ZTHTN1N",
+        "Italy_original_predict": "A SMY S F CON; A VEN S A TYR TRI; F EAS AEG; F CON S F EAS AEG; F ION GRE; F WES MAO",
+        "Russia_original_predict": "",
+        "Italy_units": "F EAS, A SMY, A ALB, F AEG, F ION",
+        "Russia_units": "A MOS, A BUD, F RUM, A TRI, A UKR",
+        "intent_dialogue": "0 ITALY -> RUSSIA: Hey Russia, it seems like we have some opportunities to work together to strengthen our positions. I\u2019m planning to move F ION to GRE and A ALB to SER. It would be great if you could support these moves, or at least ensure your units don't interfere. In return, I could help you secure RUM or protect BUD if needed. Let's make sure we\u2019re both in stronger positions to handle any threats from England or Germany. What do you think?\n1 RUSSIA -> ITALY: Hey Italy, I like the idea of working together. I can definitely support your move to SER with my A TRI, ensuring it goes smoothly. As for RUM, I'm planning to move F RUM to SEV this turn. If you could hold off any actions there, that would be great. Let\u2019s focus on strengthening our positions against England and Germany. What do you think about this plan?\n2 ITALY -> RUSSIA: That sounds like a solid plan, Russia. I'll hold off any actions in RUM to keep things smooth on your end. Meanwhile, with your support in SER, I think we can both solidify our positions. Let me know if there's anything else you need from my side to ensure we keep England and Germany in check. Looking forward to seeing how this unfolds!\n3 RUSSIA -> ITALY: Great, Italy. With your move to SER and my support, we'll strengthen our positions significantly. Let's keep our communication open and adjust if England or Germany makes unexpected moves. If anything changes or if you need additional support on your end, just let me know. Looking forward to a successful turn!",
+        "Italy_actual_movement": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F AEG - CON"
+        ],
+        "Italy_parse_predict": [
+            "F ION - GRE",
+            "A ALB - SER",
+            "F AEG - CON",
+            "F EAS - AEG",
+            "A SMY S F CON"
+        ],
+        "Italy": {
+            "whole_task_eval": [
+                -0.0354998204857111,
+                -0.17509502172470093,
+                0.010219211224466562,
+                -0.08152275905013084,
+                0.31733177602291107,
+                -0.0329606719315052,
+                -0.002472762716934085
+            ],
+            "ITALY": [
+                "ITALY",
+                0.31733177602291107
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.0329606719315052
+            ]
+        },
+        "Russia_actual_movement": [
+            "A BUD S A TRI",
+            "A UKR - WAR",
+            "F RUM - SEV",
+            "A MOS S A UKR - WAR",
+            "A TRI S A ALB - SER"
+        ],
+        "Russia_parse_predict": [
+            "A BUD S A TRI",
+            "A UKR - WAR",
+            "F RUM - SEV",
+            "A MOS S A UKR - WAR",
+            "A TRI S A ALB - SER"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.03488843236118555,
+                -0.17400136590003967,
+                0.010394132230430841,
+                -0.08215026557445526,
+                0.31831924617290497,
+                -0.03524405509233475,
+                -0.0024292059242725372
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                -0.03524405509233475
+            ],
+            "ITALY": [
+                "ITALY",
+                0.31831924617290497
+            ]
+        }
+    },
+    {
+        "game_id": "15072",
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH64K62H8QB9ZSPCD11J",
+        "Turkey_original_predict": "A BUL S A RUM SER; A GRE S A RUM SER; F AEG ION; F CON SMY; F SMY EAS",
+        "Russia_original_predict": "A BER KIE; A GAL BUD; A CLY LVP; A RUM S A GAL BUD; F SEV S A RUM; F NWG EDI; F STP/NC NWY; F SWE S F STP/NC NWY",
+        "Turkey_units": "F AEG, A BUL, A GRE, F SMY, F CON",
+        "Russia_units": "F SEV, A RUM, F SWE, A BER, F NWG, A GAL, A CLY, F STP/NC",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: Hey Russia, I'm thinking we should strengthen our position in the Balkans. I can support your move into Serbia with my army in Bulgaria. How does that sound?\n1 RUSSIA -> TURKEY: That sounds like a solid plan, Turkey. I appreciate the support into Serbia. In return, I\u2019ll make sure to secure our northern front, keeping Sweden and Norway stable, which will allow us to focus more resources in the Balkans. Let\u2019s keep coordinating to ensure we both gain the upper hand.\n2 TURKEY -> RUSSIA: That sounds perfect, Russia. I\u2019ll move my fleet in the Aegean Sea to support our positions as well. Together, we can ensure strong control over the Balkans. If you can keep Sweden and Norway stable, it will free up my resources to focus even more on our southern strategy. Let\u2019s keep this momentum going!\n3 RUSSIA -> TURKEY: Great to hear, Turkey. I'll ensure my fleet in the North keeps things stable so you can focus on the Balkans. Let\u2019s keep coordinating closely. If there's anything specific you need from my side, just let me know. Together, we can control the region effectively.\n4 TURKEY -> RUSSIA: Thanks, Russia. If you can keep Sweden and Norway stable, that would be a huge help. I'll continue focusing on the Balkans and make sure we maintain a strong presence there. Let\u2019s keep this alliance strong and coordinate closely. If there\u2019s anything specific you need from me, just say the word.\n5 RUSSIA -> TURKEY: Absolutely, Turkey. I'll keep the north secure, ensuring no surprises from that direction. Meanwhile, your focus on the Balkans will be crucial. If we can gain a strong foothold there, we\u2019ll be in a great position. If there's any change or new opportunity you spot, let me know, and we can adjust our strategy accordingly. Let's keep this alliance strong and proactive.\n6 TURKEY -> RUSSIA: Absolutely, Russia. I\u2019ll keep you updated if there\u2019s any strategic shift, especially in the Balkans. Meanwhile, your support in keeping the north stable is invaluable. Let's maintain this coordination, and we\u2019ll have a solid advantage moving forward. If there\u2019s any other way I can assist, feel free to reach out anytime.\n7 RUSSIA -> TURKEY: Sounds like a solid plan, Turkey. With your support in the Balkans, we can maintain a strong presence there. I'll continue to keep the north stable and let you know if I spot any strategic opportunities. Let's keep this momentum going and ensure our alliance remains strong.\n8 TURKEY -> RUSSIA: Thanks for the continued support, Russia. I\u2019m planning to move my forces in the Aegean Sea and the Ionian Sea to reinforce our position. This should give us an even stronger hold in the Balkans. If you notice any shifts in the north, let me know so we can adjust accordingly. Together, we\u2019ve got this!\n9 RUSSIA -> TURKEY: Thanks for reinforcing our position in the Balkans, Turkey. I'm keeping close tabs on the north, and everything seems stable for now. If you need any assistance or have any strategic adjustments in mind, just let me know. Together, we're making great progress!\n10 TURKEY -> RUSSIA: Great to hear, Russia. I'll keep reinforcing our position in the Balkans with my fleets and armies, ensuring we maintain our advantage there. If you need any additional support or have insights from the north, just let me know. Together, we\u2019re building a strong presence!\n11 RUSSIA -> TURKEY: Thanks, Turkey. Your reinforcement in the Balkans is crucial for our strategy. I'll continue monitoring the north and ensure stability there. If you see any opportunities to further strengthen our position, let's discuss how we can capitalize on them. Together, we're building a formidable presence.\n12 TURKEY -> RUSSIA: Absolutely, Russia. I\u2019m planning to move my army in Bulgaria to further secure Serbia, reinforcing our southern front. Keeping the Balkans under control is key, and your stability in the north provides us the perfect opportunity. If you spot any changes up there, please let me know so we can adjust our strategy accordingly. Together, we'll keep this momentum going strong!",
+        "Turkey_actual_movement": [
+            "A BUL S A GRE - SER",
+            "F SMY - EAS",
+            "F CON - AEG",
+            "A GRE - SER",
+            "F AEG - GRE"
+        ],
+        "Turkey_parse_predict": [
+            "A BUL S A RUM - SER",
+            "F SMY - EAS",
+            "F CON - SMY",
+            "A GRE S A RUM - SER",
+            "F AEG - ION"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0004138194490224123,
+                -0.000368194785551168,
+                -0.47763536870479584,
+                -0.002391543355770409,
+                -0.09642876358702779,
+                0.5571132451295853,
+                0.0201244056224823
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.0201244056224823
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5571132451295853
+            ]
+        },
+        "Russia_actual_movement": [
+            "F SEV S A RUM",
+            "A RUM S A GRE - SER",
+            "F SWE - BAL",
+            "A CLY - LVP",
+            "A BER S A MUN - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG S F STP/NC - NWY"
+        ],
+        "Russia_parse_predict": [
+            "F SEV S A RUM",
+            "A RUM S A GAL - BUD",
+            "F SWE S F STP/NC - NWY",
+            "A CLY - LVP",
+            "A BER - KIE",
+            "A GAL - BUD",
+            "F STP/NC - NWY",
+            "F NWG - EDI"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.00046404136810451746,
+                -0.00041958420479204506,
+                -0.5038964003324509,
+                -0.0027026787865906954,
+                -0.09540058951824903,
+                0.5980116873979568,
+                0.004871577024459839
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.5980116873979568
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.004871577024459839
+            ]
+        }
+    },
+    {
+        "game_id": "78680",
+        "phase_name": "S1905M",
+        "env_uuid": "01JDK7PH613MN06MGT0RTERKHT",
+        "Turkey_original_predict": "A BUL SER; A GRE S A BUL SER; F AEG S F EAS ION; F EAS ION; F GRE S F EAS ION; F ION TUN",
+        "Russia_original_predict": "A LVP H; A MOS STP; A VIE BUD; A LVN S A MOS STP; A WAR SIL; F BLA CON; F RUM BUL/EC; F STP/NC BAR",
+        "Turkey_units": "A BUL, F GRE, F EAS, F AEG, F ION",
+        "Russia_units": "F RUM, F STP/NC, A MOS, A VIE, F BLA, A LVN, A WAR",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: Hey Russia, looks like we've got some interesting dynamics on the board! I'm thinking of strengthening our positions further. How about we collaborate on some moves this turn? I can support you from RUM to BUL, which should help secure your position there. Let me know what you think, and if you have any suggestions for adjustments.\n1 RUSSIA -> TURKEY: Hi Turkey, thanks for the offer! That support from RUM to BUL sounds promising. In return, how about I use GAL to support you into SER? It could strengthen both our positions strategically. And if you have any other ideas for coordination, I'm all ears.\n2 TURKEY -> RUSSIA: That sounds like a solid plan, Russia! Let's proceed with that support into SER. Also, if there's any way you can shift your fleet in the ION to support or cover any other strategic area, it could help in maintaining our momentum. Keep me in the loop if any changes come to mind.\n3 RUSSIA -> TURKEY: Sounds good, Turkey! I'll move my fleet from the ION to TUN to ensure we cover more ground and reinforce our positions. With your support into SER, we should be in a strong spot. Let's keep coordinating closely. If you see any opportunities or adjustments on your end, let me know!\n4 TURKEY -> RUSSIA: Great move, Russia! With your fleet moving to TUN, we can hold a strong position in the south. I'll keep my moves steady as planned and maintain support from RUM to BUL. Let's keep this momentum going and look for more opportunities to advance together. If you spot any other potential moves or need further support, just give me a shout!\n5 RUSSIA -> TURKEY: Absolutely, Turkey! With our coordinated efforts, we are really solidifying our positions. I'll make sure to keep an eye out for any shifts in the dynamics that we can take advantage of. If I see any moves that could enhance our strategy, I'll reach out. Let's keep this up and grab those opportunities as they come!\n6 TURKEY -> RUSSIA: Thanks, Russia! I appreciate your vigilance. Let's keep communicating closely and ensure that our moves are synchronized for maximum impact. If you see any shifts or have any new ideas, definitely loop me in. We\u2019re in a good position to capitalize on any openings that might arise!\n7 RUSSIA -> TURKEY: Thanks, Turkey! I'll continue moving forward with the plan and keep an eye on the board for new opportunities. If you notice any shifts that could benefit us, let me know. Let's aim to maintain our stronghold and potentially expand further. Together, we're in a great position to increase our influence on the board.\n8 TURKEY -> RUSSIA: Absolutely, Russia! Let's keep our communication strong and stay alert for any shifts on the board. With your fleet moving to TUN and my support from RUM to BUL, we have a strong southern front. If any new opportunities arise, let's seize them. Keep me updated on any strategic insights or adjustments you think we should consider. Together, we can continue to solidify and expand our influence!\n9 RUSSIA -> TURKEY: Absolutely, Turkey! We're in a great spot, and with your support from RUM to BUL, we're really consolidating our southern front. I'll continue to monitor the board for any changes, and if I spot any opportunities for us to push forward or strengthen our positions even further, I'll let you know immediately. Let's keep this momentum going and maximize our gains. Together, we'll aim to expand our influence even more.\n10 TURKEY -> RUSSIA: Thanks, Russia! I'm glad to see our plans are aligning well. Let's stay vigilant and keep our communication open. If you notice any potential weaknesses or opportunities, let's discuss them immediately. We're in a strong position, and with continued teamwork, we can maintain and expand our influence effectively. Keep me in the loop with any updates, and let's make the most of this turn!\n11 RUSSIA -> TURKEY: Great to hear, Turkey! I'll stay vigilant for any shifts or opportunities on the board. If anything comes up, I'll reach out so we can strategize together. Let's keep up this strong coordination and aim to expand our influence further. Looking forward to seeing how our moves play out this turn!\n12 TURKEY -> RUSSIA: Awesome, Russia! I'm confident our moves this turn will bolster our standing. As we continue to strengthen our southern positions, let's also keep an eye on opportunities that might open up in the north. If you have any thoughts or see any potential for advancement there, let's discuss. Together, we can secure a dominant position on the board. Looking forward to our continued success!",
+        "Turkey_actual_movement": [
+            "F EAS S F AEG - ION",
+            "F ION - TUN",
+            "F GRE S F AEG - ION",
+            "F AEG - ION",
+            "A BUL - SER"
+        ],
+        "Turkey_parse_predict": [
+            "F EAS - ION",
+            "F ION - TUN",
+            "F GRE S F EAS - ION",
+            "F AEG S F EAS - ION",
+            "A BUL - SER"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0004514469765126705,
+                0.0010796981514431536,
+                -0.17260804772377014,
+                0.021593719720840454,
+                -0.0313715934753418,
+                0.07822659611701965,
+                0.10353116691112518
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.10353116691112518
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.07822659611701965
+            ]
+        },
+        "Russia_actual_movement": [
+            "A LVN S F STP/NC",
+            "A WAR H",
+            "F STP/NC H",
+            "F BLA H",
+            "F RUM S A BUL",
+            "A VIE H",
+            "A MOS - UKR"
+        ],
+        "Russia_parse_predict": [
+            "A LVN S A MOS - STP",
+            "A WAR - SIL",
+            "F STP/NC - BAR",
+            "F BLA - CON",
+            "F RUM - BUL/EC",
+            "A VIE - BUD",
+            "A MOS - STP"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.00014966237358748913,
+                0.0007816871511749923,
+                -0.11184465885162354,
+                -0.022995591163635254,
+                0.015629515051841736,
+                0.09298893809318542,
+                0.025589875876903534
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.09298893809318542
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.025589875876903534
+            ]
+        }
+    },
+    {
+        "game_id": "77086",
+        "phase_name": "S1905M",
+        "env_uuid": "01JDK7PH5ZMNE0C23WQEY12DAD",
+        "England_original_predict": "A DEN KIE; A NWY BEL VIA; A STP NWY; F BAR NWG; F NTH C A NWY BEL; F SWE BAL",
+        "Russia_original_predict": "A BER S A WAR SIL; A LVN S A MOS STP; A MOS STP; A RUM BUL; A UKR GAL; A VIE BUD; F BLA S A RUM BUL; F RUM BUL/EC; F STP/NC BAR",
+        "England_units": "F NTH, A DEN, F SWE, F BAR, A NWY, A STP, F LVP",
+        "Russia_units": "F BLA, A BER, A RUM, A UKR, A MOS",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: Hey Russia, I think we have a good opportunity to strengthen our positions. I can support you into Warsaw if you help me secure Belgium from France this turn. I'm planning to move A NWY to BEL via convoy through NTH, and it would be great if you could focus on securing your territories in the south. What do you think?\n1 RUSSIA -> ENGLAND: Hi England, I appreciate the offer, but I'm planning to move my army to Warsaw from Moscow this turn. Securing my southern territories is indeed a priority, and I'll be moving A RUM to BUL with support from F BLA. If you can help me by putting pressure on France elsewhere, it could distract them and help both of us. Let me know your thoughts on this plan.\n2 ENGLAND -> RUSSIA: That sounds reasonable, Russia. I'll apply pressure on France by moving into the North Sea and making a push towards the Baltic to keep them on their toes. If you can keep your forces strong in the south, we can both benefit. Let's keep France guessing and see how it plays out this turn.\n3 RUSSIA -> ENGLAND: Great, England. Keeping France on their toes will definitely work to our advantage. While you advance towards the Baltic, I'll ensure my southern front is secure and keep a close eye on any French movements. Let's stay in touch and adjust our strategies as needed. Looking forward to seeing how this unfolds.",
+        "England_actual_movement": [
+            "F BAR H",
+            "F LVP - IRI",
+            "F NTH C A NWY - BEL",
+            "F SWE - BAL",
+            "A DEN - KIE",
+            "A STP H",
+            "A NWY - BEL VIA"
+        ],
+        "England_parse_predict": [
+            "F BAR - NWG",
+            "F LVP - IRI",
+            "F NTH C A NWY - BEL",
+            "F SWE - BAL",
+            "A DEN - KIE",
+            "A STP - NWY",
+            "A NWY - BEL VIA"
+        ],
+        "England": {
+            "whole_task_eval": [
+                0.015260405838489532,
+                0.16847467422485352,
+                -0.4194435328245163,
+                0.0018068760400637984,
+                0.01741011207923293,
+                0.2578200940042734,
+                -0.04132869839668274
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.16847467422485352
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2578200940042734
+            ]
+        },
+        "Russia_actual_movement": [
+            "A RUM - BUL",
+            "A BER S A DEN - KIE",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - WAR"
+        ],
+        "Russia_parse_predict": [
+            "A RUM - BUL",
+            "A BER S A WAR - SIL",
+            "F BLA S A RUM - BUL",
+            "A UKR - GAL",
+            "A MOS - STP"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                0.03537292778491974,
+                0.050419002771377563,
+                -0.2564551830291748,
+                0.0028441433096304536,
+                0.014644514303654432,
+                0.19737466610968113,
+                -0.04420012608170509
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.19737466610968113
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.050419002771377563
+            ]
+        }
+    },
+    {
+        "game_id": "38101",
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH5TMFK77DK42R5GAJCP",
+        "Turkey_original_predict": "",
+        "Austria_original_predict": "A BUD S A UKR RUM; A SER S A UKR RUM; A TRI VIE; A UKR RUM; F BUL/SC CON",
+        "Turkey_units": "F BLA, A RUM, F GRE, A SMY, A ANK",
+        "Austria_units": null,
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: Hey Austria, I think we should coordinate our moves carefully this turn. I'm planning to move A TRI - TYR and F BUL/SC - AEG. I'm also considering A SER - RUM to strengthen our position in the area. With A UKR - MOS and A BUD - GAL, we can put pressure on Russia and secure more territory. What are your thoughts on this strategy? It would be great to align our moves for mutual benefit.\n1 AUSTRIA -> TURKEY: Hey Turkey, that sounds like a solid plan. I think it's crucial we put pressure on Russia, so I'm on board with A UKR - MOS and A BUD - GAL. However, I'd suggest maybe considering A SER holding instead of moving to RUM, as it might leave us vulnerable. Instead, I can support F BUL/SC - AEG to ensure our dominance in the Aegean. Let me know what you think about these adjustments.\n2 TURKEY -> AUSTRIA: I appreciate your input, Austria. Holding A SER could indeed safeguard our position, so I'll keep that in mind. Let's go with your suggestion of supporting F BUL/SC - AEG, which will help us secure the Aegean. I'll proceed with the pressure on Russia as planned. Aligning our moves like this should strengthen our overall position. Let's keep the communication open as the turn progresses.\n3 AUSTRIA -> TURKEY: Great, Turkey. With this coordination, we should be in a strong position against Russia and in the Aegean. Let's keep monitoring the board closely, and I'll update you if anything changes on my end. Looking forward to seeing how this turn unfolds!\n4 TURKEY -> AUSTRIA: Thanks, Austria. I'll keep an eye on any developments and adjust if needed. Let's maintain this collaboration to strengthen our positions further. Looking forward to executing our plan this turn!\n5 AUSTRIA -> TURKEY: Absolutely, Turkey. It's been great working with you on this strategy, and I'm confident our moves will strengthen our position on the board. Let's stay in touch and adapt as the situation develops. If there's anything else you think we should consider, feel free to reach out. Here's to a successful turn!",
+        "Turkey_actual_movement": [
+            "A ANK - ARM",
+            "F GRE S F BUL/SC - AEG",
+            "A RUM - SEV",
+            "F BLA S A RUM - SEV",
+            "A SMY - ARM"
+        ],
+        "Turkey_parse_predict": [
+            "A ANK - ARM",
+            "F GRE S F BUL/SC - AEG",
+            "A RUM - SEV",
+            "F BLA S A RUM - SEV",
+            "A SMY - ARM"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                0.22600889205932617,
+                -0.15245312452316284,
+                -0.21261988580226898,
+                0.055526843294501305,
+                0.048175374045968056,
+                -0.019707130268216133,
+                0.05506915599107742
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.05506915599107742
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.22600889205932617
+            ]
+        },
+        "Austria_actual_movement": [
+            "A TRI - TYR",
+            "F BUL/SC - AEG",
+            "A SER - RUM",
+            "A UKR - MOS",
+            "A BUD - GAL"
+        ],
+        "Austria_parse_predict": [
+            "A TRI - VIE",
+            "F BUL/SC - CON",
+            "A SER S A UKR - RUM",
+            "A UKR - RUM",
+            "A BUD S A UKR - RUM"
+        ],
+        "Austria": {
+            "whole_task_eval": [
+                0.023238345980644226,
+                -0.2595968432724476,
+                -0.11467280983924866,
+                0.03245686553418636,
+                0.28508703224360943,
+                0.08252890780568123,
+                -0.049041396006941795
+            ],
+            "AUSTRIA": [
+                "AUSTRIA",
+                0.023238345980644226
+            ],
+            "TURKEY": [
+                "TURKEY",
+                -0.049041396006941795
+            ]
+        }
+    },
+    {
+        "game_id": "74152",
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "Turkey_original_predict": "A CON S F GRE BUL; A MOS STP; A RUM SEV; A SMY S A CON; F AEG S F GRE BUL; F BLA S A RUM SEV; F GRE BUL/SC; F EAS S A SMY",
+        "Germany_original_predict": "A NWY S F FIN STP; A GAL S A SEV RUM; A HOL S A RUH; A MUN S A RUH; A RUH S A HOL; A SIL WAR; A UKR S A SEV RUM; F FIN STP/SC; F SWE DEN; F SWE DEN",
+        "Turkey_units": "A MOS, A CON, F AEG, F BLA, A SEV, F EAS",
+        "Germany_units": "A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL",
+        "intent_dialogue": "0 TURKEY -> GERMANY: Hi Germany, it seems like Italy is becoming a bit of a problem for both of us. To strengthen our position, I'm thinking of making a push into Rumania this turn with support from Ukraine and Galicia. I believe this could really help consolidate our hold in the region. Simultaneously, I plan to move my army in Moscow to St. Petersburg, ensuring that we keep a strong front against any northern threats. How do you feel about coordinating on these moves? Your thoughts would be invaluable.\n1 GERMANY -> TURKEY: Hi Turkey, I agree that Italy is becoming problematic, and coordinating our moves could be beneficial. I like your idea of pushing into Rumania with support from Ukraine and Galicia. Meanwhile, I will focus on strengthening our position by moving my army in Norway to Finland, and pushing my fleet in the Baltic to secure Swe. This way, we can maintain pressure on any northern threats. Let's work together to ensure we both benefit from this. Your support in Rumania will be crucial.\n2 TURKEY -> GERMANY: Thanks, Germany. Your plan sounds solid. I'll make sure to support your moves in Swe by keeping pressure on Italy in the south. Let's keep in touch as we execute these strategies, and hopefully, we can gain significant ground this turn. If there's anything else you need from my side, just let me know.\n3 GERMANY -> TURKEY: Great, Turkey. I appreciate your support in keeping Italy distracted in the south. If we can successfully coordinate these moves, it will definitely strengthen both our positions. I'll keep you posted as we execute these strategies and let you know if any adjustments are needed. Let's keep this momentum going and ensure we both come out on top.",
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Turkey_parse_predict": [
+            "A CON S F GRE - BUL",
+            "A SEV - RUM",
+            "F AEG S F GRE - BUL",
+            "F BLA S A RUM - SEV",
+            "A MOS - STP",
+            "F EAS S A SMY"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -5.767331458628178e-06,
+                -0.00022013118723407388,
+                -0.004266023635864258,
+                0.23454180359840393,
+                -0.33792147040367126,
+                -0.000863762921653688,
+                0.1087353490293026
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.1087353490293026
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.23454180359840393
+            ]
+        },
+        "Germany_actual_movement": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany_parse_predict": [
+            "A MUN S A RUH",
+            "A GAL S A SEV - RUM",
+            "A HOL S A RUH",
+            "A UKR S A SEV - RUM",
+            "F SWE - DEN",
+            "A SIL - WAR",
+            "A NWY S F FIN - STP",
+            "F FIN - STP/SC"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.0001357415458187461,
+                -0.00016547134146094322,
+                0.02251914143562317,
+                0.1459268033504486,
+                -0.33587729185819626,
+                -0.0006552864797413349,
+                0.1683877520263195
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.1459268033504486
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.1683877520263195
+            ]
+        }
+    },
+    {
+        "game_id": "61195",
+        "phase_name": "S1903M",
+        "env_uuid": "01JDK7PH5NN3JJRPSE9HCGFWDJ",
+        "Turkey_original_predict": "",
+        "Russia_original_predict": "",
+        "Turkey_units": "A BUL, F CON, A ANK, F AEG",
+        "Russia_units": "A WAR, F RUM, F SWE, A SEV, A NWY, A GAL, A MOS",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: It seems like we're in a stalemate right now. I'm thinking it might be beneficial for both of us if we coordinate our moves. How about we focus on consolidating our positions and possibly shifting some units around to strengthen our borders? For instance, I could keep my units in Bulgaria and Greece to support your position while you focus on your northern fronts. What do you think?\n1 RUSSIA -> TURKEY: I agree, Turkey. Coordinating movements could indeed benefit both of us. While you hold your positions in Bulgaria and Greece, it would help me to have some support in Rumania. I can focus on securing the northern fronts and ensuring stability there. How does that sound for you?\n2 TURKEY -> RUSSIA: That sounds like a solid plan, Russia. Supporting you in Rumania could definitely help maintain stability. In return, is there any assistance you could provide to me in the Black Sea area? Securing that region would greatly enhance our collective defense and open up more strategic options for both of us.\n3 RUSSIA -> TURKEY: Securing the Black Sea area is indeed crucial for both our defenses. I can move my fleet from Sevastopol to support you there, ensuring we have control over the region. In exchange, your continued support in Rumania would be invaluable. Together, we can strengthen our positions and maintain control over these key areas. What do you think of this approach?\n4 TURKEY -> RUSSIA: Great, Russia! With your support in the Black Sea, we can solidify our positions significantly. I'll make sure to maintain my support in Rumania as promised. Let's keep this alliance strong and continue to coordinate closely. Together, we can keep our territories secure and plan further expansions in the future. Looking forward to our continued success!\n5 RUSSIA -> TURKEY: Absolutely, Turkey. Our alliance is proving to be quite beneficial. Let's keep the lines of communication open and continue to adapt our strategies as the board evolves. If any new opportunities or threats arise, we should address them promptly. I look forward to our continued collaboration and success!",
+        "Turkey_actual_movement": [
+            "A ANK - CON",
+            "F CON - ANK",
+            "A BUL S A SEV - RUM",
+            "F AEG - EAS"
+        ],
+        "Turkey_parse_predict": [
+            "A ANK - CON",
+            "F CON - ANK",
+            "A BUL S A SEV - RUM",
+            "F AEG - EAS"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.08594914525747299,
+                -0.02725103497505188,
+                -0.04851611144840717,
+                -0.10095090419054031,
+                -0.0625251941382885,
+                0.2854536771774292,
+                0.03973879665136337
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.03973879665136337
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2854536771774292
+            ]
+        },
+        "Russia_actual_movement": [
+            "A NWY S F SWE",
+            "F SWE H",
+            "A WAR S A GAL",
+            "F RUM - BLA",
+            "A GAL S A SEV - RUM",
+            "A SEV - RUM",
+            "A MOS - UKR"
+        ],
+        "Russia_parse_predict": [
+            "A NWY S F SWE",
+            "F SWE H",
+            "A WAR S A GAL",
+            "F RUM - BLA",
+            "A GAL S A SEV - RUM",
+            "A SEV - RUM",
+            "A MOS - UKR"
+        ],
+        "Russia": {
+            "whole_task_eval": [
+                -0.08594914525747299,
+                -0.02725103497505188,
+                -0.04851611144840717,
+                -0.10095090419054031,
+                -0.0625251941382885,
+                0.2854536771774292,
+                0.03973879665136337
+            ],
+            "RUSSIA": [
+                "RUSSIA",
+                0.2854536771774292
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.03973879665136337
+            ]
+        }
+    },
+    {
+        "game_id": "23459",
+        "phase_name": "F1903M",
+        "env_uuid": "01JDK7PH6B477VPDENFK8N87YS",
+        "France_original_predict": "",
+        "Germany_original_predict": "",
+        "France_units": "A BUR, A SPA, A PIC, F IRI, F TYS",
+        "Germany_units": "F DEN, A RUH, A HOL, A MUN, F SWE, A KIE",
+        "intent_dialogue": "0 FRANCE -> GERMANY: Hello Germany. I see Germany has quite a strategic position on the board. I wanted to discuss a potential move that could benefit us both. If your army in Ruhr could support my move from Burgundy to Belgium, it would not only strengthen our position but also help consolidate our forces against any potential threats. In return, I can assist you in future engagements. What do you think?\n1 GERMANY -> FRANCE: Hello France. I appreciate your offer and the potential for collaboration. However, supporting your move from Burgundy to Belgium might not align perfectly with Germany's current strategy, as I'm planning a move to Belgium myself. Instead, how about we focus on securing our respective positions this turn and explore supporting each other in future engagements? For instance, if you could help me in securing Norway, it would be mutually beneficial. Let me know your thoughts.\n2 FRANCE -> GERMANY: I understand your position, Germany. How about this: I'll hold off on Belgium for now and instead focus on securing the Mid-Atlantic. In return, if you can ensure that Germany's fleet in Denmark doesn't advance towards the North Sea, it would greatly help my naval position. I can assist you in Norway in the following turn. Does that sound like a workable plan?\n3 GERMANY -> FRANCE: That sounds like a reasonable compromise, France. I can agree to keep my fleet in Denmark from advancing towards the North Sea for this turn. In exchange, your focus on the Mid-Atlantic should help us both. And I'll be counting on your support in securing Norway next turn. Let's keep the communication open and see how we can strengthen our positions further.\n4 FRANCE -> GERMANY: Great, Germany. I'm glad we could find some common ground. Let's keep this communication channel open and continue to build on this cooperative spirit. If there's anything else you need from my end, don't hesitate to reach out. Looking forward to our future maneuvers.\n5 GERMANY -> FRANCE: Thank you, France. I'm glad we could reach an agreement that benefits both of us. Let's keep this collaboration going and remain flexible to adapt to any changes on the board. If you need anything or have any new ideas, feel free to reach out. I'm looking forward to seeing how our plans unfold.",
+        "France_actual_movement": [
+            "F TYS - WES",
+            "A PIC - BRE",
+            "F IRI - MAO",
+            "A SPA - GAS",
+            "A BUR S A RUH - BEL"
+        ],
+        "France_parse_predict": [
+            "F TYS - WES",
+            "A PIC - BRE",
+            "F IRI - MAO",
+            "A SPA - GAS",
+            "A BUR S A RUH - BEL"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.10356759652495384,
+                -0.1491167526692152,
+                0.11841874569654465,
+                0.07563266158103943,
+                0.08325705677270889,
+                -0.010484086349606514,
+                -0.014140069484710693
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11841874569654465
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.07563266158103943
+            ]
+        },
+        "Germany_actual_movement": [
+            "A RUH - BEL",
+            "A KIE - DEN",
+            "F SWE - NWY",
+            "A MUN H",
+            "A HOL S A RUH - BEL",
+            "F DEN - SKA"
+        ],
+        "Germany_parse_predict": [
+            "A RUH - BEL",
+            "A KIE - DEN",
+            "F SWE - NWY",
+            "A MUN H",
+            "A HOL S A RUH - BEL",
+            "F DEN - SKA"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                -0.10356759652495384,
+                -0.1491167526692152,
+                0.11841874569654465,
+                0.07563266158103943,
+                0.08325705677270889,
+                -0.010484086349606514,
+                -0.014140069484710693
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.07563266158103943
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11841874569654465
+            ]
+        }
+    },
+    {
+        "game_id": "20032",
+        "phase_name": "S1903M",
+        "env_uuid": "01JDK7PH5WYEKEWSB142189DB6",
+        "England_original_predict": "A BEL H; A LON H; F NTH S A BEL; F DEN HEL; F LVP NAO",
+        "France_original_predict": "",
+        "England_units": "F NWY, A BEL, A LON, F NTH, F DEN, F LVP",
+        "France_units": "F WES, A SPA, F LYO, A BUR, A MAR",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: Hey France, I appreciate your support so far. For this turn, I'm thinking of moving my fleet from Liverpool to the North Atlantic, keeping my army in London on hold, and supporting my army in Belgium with the North Sea fleet. I'll also be moving my fleet from Denmark to the Heligoland Bight and my fleet in Norway to the Skagerrak. Are there any specific moves you have in mind that we could coordinate on? Maybe we could plan to secure more territories together?\n1 FRANCE -> ENGLAND: Hey England, thanks for the update. I think we can definitely coordinate some moves this turn. I plan to move my army from Spain to Tuscany via convoy, and it would be great if you could maintain pressure on Germany to keep them distracted. If you can hold Belgium and keep your fleet in the North Sea, it will help secure our positions. Let me know if there are any specific moves you think we should work on together to expand our territories.\n2 ENGLAND -> FRANCE: Great, let's keep Germany on their toes. I'll make sure to hold Belgium and keep the North Sea fleet ready. If there's any opportunity to push further into German territories, I'll let you know. Meanwhile, your move to Tuscany sounds promising. If we keep coordinating like this, we can definitely strengthen our positions. Let's keep in touch about any changes or opportunities that arise.\n3 FRANCE -> ENGLAND: That sounds like a solid plan, England. I'll keep you updated if there's any shift in our strategy or any new opportunities. Let's keep this momentum going and make sure Germany doesn't gain any ground on us. Looking forward to seeing how our moves play out this turn.\n4 ENGLAND -> FRANCE: Thanks, France. I'll make sure to keep our positions secure and our focus on Germany. If anything changes on your end or you see an opportunity to advance, just let me know. Let's keep our communication strong and make the most of these moves. Together, we can definitely expand our influence.\n5 FRANCE -> ENGLAND: Absolutely, England. Keeping the pressure on Germany is crucial, and I'll continue to support our joint strategy. If any new opportunities arise, I'll reach out immediately. Let's maintain this strong communication and coordination. Together, we can ensure our dominance in the region. Good luck with your moves this turn, and let's touch base soon.\n6 ENGLAND -> FRANCE: Thanks, France. Let's focus on our moves and keep each other updated on any developments. If you see any openings to push further, particularly into German territories, let me know. I'm here to support our mutual goals and keep our alliance strong.\n7 FRANCE -> ENGLAND: Thanks, England. I'll keep an eye out for any openings into German territories and will coordinate with you if I spot any. Also, if there's a chance for you to disrupt any German convoys or cut their support, that could give us an edge. Let's stay in touch and make sure we're capitalizing on every opportunity to strengthen our positions.\n8 ENGLAND -> FRANCE: Thanks for the suggestion, France. I'll look for opportunities to disrupt German movements and cut their support if possible. Let's continue to keep each other informed about any shifts or openings. If you need any specific support from my side, don't hesitate to reach out. Together, we can seize the advantage in this region.\n9 FRANCE -> ENGLAND: Appreciate your proactive approach, England. I'll focus on securing Tuscany and keeping Germany distracted. If there's a move you need support with, or if any unexpected opportunities arise, let's communicate swiftly. Together, we can maximize our advantage in this game.\n10 ENGLAND -> FRANCE: Thanks, France. I'll keep my eyes peeled for opportunities to disrupt Germany and will let you know if any new developments occur. Your focus on Tuscany is crucial, and I'll be ready to support you if needed. Let's keep this strong line of communication and work towards expanding our territories. If you see any chance to push into Germany, I'd be eager to coordinate on that too.\n11 FRANCE -> ENGLAND: Thanks, England. I'll keep you updated on my progress in Tuscany and any potential openings into Germany. If you manage to disrupt their plans or need any assistance from my side, feel free to reach out. Let's continue to collaborate closely and make the most of any opportunities to expand our influence. Together, we can maintain a strong position in this game.\n12 ENGLAND -> FRANCE: Thanks, France. I'll continue to look for opportunities to disrupt Germany and will keep you informed of any new developments. Your progress in Tuscany is vital, and I'm here to support you if needed. Let's maintain our strong communication and work on expanding our territories. If you spot any chance to push into Germany, I'd love to coordinate on that too.",
+        "England_actual_movement": [
+            "F LVP - NAO",
+            "A LON H",
+            "F NTH S A BEL",
+            "F DEN - HEL",
+            "A BEL H",
+            "F NWY - SKA"
+        ],
+        "England_parse_predict": [
+            "F LVP - NAO",
+            "A LON H",
+            "F NTH S A BEL",
+            "F DEN - HEL",
+            "A BEL H",
+            "F NWY - SKA"
+        ],
+        "England": {
+            "whole_task_eval": [
+                -0.13095201551914215,
+                0.20513582229614258,
+                0.047923699021339417,
+                -0.03459196793846786,
+                -0.02418292686343193,
+                -0.03911997377872467,
+                -0.024212680757045746
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.20513582229614258
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.047923699021339417
+            ]
+        },
+        "France_actual_movement": [
+            "F LYO C A SPA - TUS",
+            "A SPA - TUS VIA",
+            "A BUR S A BEL",
+            "F WES - SPA/SC",
+            "A MAR - PIE"
+        ],
+        "France_parse_predict": [
+            "F LYO C A SPA - TUS",
+            "A SPA - TUS VIA",
+            "A BUR S A BEL",
+            "F WES - SPA/SC",
+            "A MAR - PIE"
+        ],
+        "France": {
+            "whole_task_eval": [
+                -0.13095201551914215,
+                0.20513582229614258,
+                0.047923699021339417,
+                -0.03459196793846786,
+                -0.02418292686343193,
+                -0.03911997377872467,
+                -0.024212680757045746
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.047923699021339417
+            ],
+            "ENGLAND": [
+                "ENGLAND",
+                0.20513582229614258
+            ]
+        }
+    },
+    {
+        "game_id": "106342",
+        "phase_name": "F1905M",
+        "env_uuid": "01JDK7PH69SG1XF30JXVR3FJGQ",
+        "France_original_predict": "A BUR S A MUN; A MAR PIE; A SPA H; F ENG MAO; F NTH S F NWG NWY; F NWG NWY; F TYS TUN",
+        "Germany_original_predict": "",
+        "France_units": "A YOR, F ENG, A BUR, A MAR, F NTH, F NWG, F TYS, F SPA/SC",
+        "Germany_units": "A BER, A DEN, A RUH, F KIE, A MUN, F HEL",
+        "intent_dialogue": "0 FRANCE -> GERMANY: Hi Germany, I've been thinking about our next moves. How do you feel about me supporting your army in Munich with my unit in Burgundy? This will keep Munich secure and allow us to focus on pushing into weaker areas like Sweden and Norway. Also, I'll be moving my fleet from Northwest Gulf to Norway, and I could use some support from you in the North Sea. Let me know your thoughts on this.\n1 GERMANY -> FRANCE: Hi France, supporting Munich with your unit in Burgundy sounds like a solid plan. I appreciate that. I'll make sure to hold Munich strong with my current setup. As for the North Sea, I can certainly support your move to Norway, which will help us press on Sweden. Let's coordinate closely on this to maximize our advantage. Anything else you think we need to adjust?\n2 FRANCE -> GERMANY: Great, Germany. With your support in the North Sea, we'll have a strong position to take Norway and potentially press further into Sweden. Once I secure Norway, it might open up more opportunities for us to apply pressure on Russia together. Let\u2019s keep communication open, especially if anything changes on your end. If we execute this well, we'll be in a great spot. Anything else you'd like to discuss for this turn?\n3 GERMANY -> FRANCE: Sounds like a plan, France. With that setup in Norway, we'll be in a strong position to keep the pressure on Russia. I'll maintain my current positions to ensure we have the necessary support and stability on our end. If anything changes or if you see other opportunities, let me know. Let's keep coordinating closely for the best outcome.\n4 FRANCE -> GERMANY: Thanks, Germany. I really appreciate the coordination. Just to keep our options open, do you think it might be beneficial for you to move your fleet from Kiel towards the Baltic? It could help us maintain pressure on Russia from another angle. Let me know what you think. Otherwise, let's keep our current plan in motion and see how things unfold.\n5 GERMANY -> FRANCE: Moving the fleet from Kiel towards the Baltic is an interesting idea, France. However, for now, I believe maintaining our current positions will keep our defenses strong, especially with the support we're coordinating for Norway and Sweden. Let's stick with the plan we've set, and I can reconsider the move to the Baltic in future turns if the situation changes. Thanks for the suggestion, and let's keep the communication lines open.\n6 FRANCE -> GERMANY: I understand, Germany. Let's stick to our current plan and watch how things progress. If the opportunity arises to make a decisive move, we can quickly adapt. Keeping our communication open is key, and I appreciate your readiness to adjust if needed. Here's to a successful turn for both of us!\n7 GERMANY -> FRANCE: Absolutely, France. Let's stay vigilant and ready to adapt as the situation evolves. If any new opportunities arise, I'll make sure to reach out to ensure we can leverage them together. Here's to a strong push this turn and maintaining our momentum!\n8 FRANCE -> GERMANY: Thanks, Germany. Let's keep this momentum going and be ready to capitalize on any openings that come our way. I'm optimistic about this turn and our strategic positioning. Keep me posted if anything shifts on your end, and I'll do the same. Let's aim for a successful advance!",
+        "France_actual_movement": [
+            "A YOR H",
+            "F NWG - NWY",
+            "A MAR - PIE",
+            "A BUR S A MUN",
+            "F SPA/SC - WES",
+            "F TYS S F WES - TUN",
+            "F ENG S F NTH",
+            "F NTH S F NWG - NWY"
+        ],
+        "France_parse_predict": [
+            "A YOR H",
+            "F NWG - NWY",
+            "A MAR - PIE",
+            "A BUR S A MUN",
+            "F SPA/SC - WES",
+            "F TYS - TUN",
+            "F ENG - MAO",
+            "F NTH S F NWG - NWY"
+        ],
+        "France": {
+            "whole_task_eval": [
+                0.00011587268090806901,
+                3.616156755015254e-05,
+                0.11790747940540314,
+                0.17373552918434143,
+                -0.0016435945872217417,
+                -0.3787255957722664,
+                0.08857420086860657
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.11790747940540314
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.17373552918434143
+            ]
+        },
+        "Germany_actual_movement": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ],
+        "Germany_parse_predict": [
+            "F KIE S A BER",
+            "A MUN S A BER",
+            "F HEL S A DEN",
+            "A DEN H",
+            "A RUH S A MUN",
+            "A BER S A MUN"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                0.00011574322707019746,
+                -5.23338676430285e-05,
+                0.14233659207820892,
+                0.16153298318386078,
+                -0.0016958146588876843,
+                -0.3947366885840893,
+                0.09249961376190186
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.16153298318386078
+            ],
+            "FRANCE": [
+                "FRANCE",
+                0.14233659207820892
+            ]
+        }
+    }
+]

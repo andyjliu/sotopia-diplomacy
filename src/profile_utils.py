@@ -226,4 +226,34 @@ def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries):
         dialogue_unit += str(phase['orders']) + '\n'
 
     return dialogue_unit
+
+            
+
+def get_previous_phase_finetune_format(game_dir, game_id, phase_name, countries):
+
+    upper_countries = [c.upper() for c in countries]
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)
+    
+    previous_phase = []
+
+    for phase in game['phases']:
+        if phase['name'] == phase_name:
+            print(phase)
+        else:
+            previous_phase.append(phase)
+    previous_phase = previous_phase[-1:]
+    dialogue_unit = ""
+    for phase in previous_phase:
+        dialogue_unit += f"{phase['name']}: \n"
+        dialogue_unit += f"Dialogue Between Two Countries: \n"
+        dialogue_unit += f"This is the information of the countries centers: \n"
+        dialogue_unit += str(phase['state']['centers']) + "\n"
+        dialogue_unit += f"This is the information of the countries units: \n"
+        dialogue_unit += str(phase['state']['units']) + "\n"
+        for message in phase['messages']:
+            if message['sender'] in upper_countries and message['recipient'] in upper_countries:
+                clean_message = message['message'].replace("\n", " ")
+                dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
+    return dialogue_unit
             

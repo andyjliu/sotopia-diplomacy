@@ -1,7 +1,8 @@
 # llama3 70b instruct
 # CUDA_VISIBLE_DEVICES=0,1,2,3 bash run_llama3_70b.sh > logs/stdout_llama3_70b.txt 2> logs/stderr_llama3_70b.txt
-# source ~/.bashrc
-# conda activate inf
+
+source ~/.bashrc
+conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/"
 

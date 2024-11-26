@@ -364,7 +364,7 @@ def obtain_chain(
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:3639/v1",
-                model_name = "/data/user_data/wenkail/.cache/models--meta-llama--Meta-Llama-3-8B-Instruct/snapshots/e1945c40cd546c78e41f1151f4db032b271faeaa",
+                model_name = "/data/models/huggingface/meta-llama/Meta-Llama-3-8B-Instruct/",
                 temperature=temperature,
                 max_retries=max_retries,
             )
@@ -373,8 +373,6 @@ def obtain_chain(
                 openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:9570/v1",
                 model_name = "/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/",
-                
-                # model_name = "/compute/babel-8-11/jiaruil5/.cache/models--TechxGenus--Meta-Llama-3-70B-Instruct-GPTQ/snapshots/e147aa8799dd05d5077f60c79be0d972b002b3ac/",
                 temperature=temperature,
                 max_retries=max_retries,
             )       

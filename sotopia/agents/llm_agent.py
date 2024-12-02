@@ -171,7 +171,6 @@ class HumanAgent(BaseAgent[Observation, AgentAction]):
         print("Available actions:")
         for i, action in enumerate(obs.available_actions):
             print(f"{i}: {action}")
-
         action_type = obs.available_actions[int(input("Action type: "))]
         argument = input("Argument: ")
 
@@ -179,23 +178,28 @@ class HumanAgent(BaseAgent[Observation, AgentAction]):
 
     async def aact(self, obs: Observation) -> AgentAction:
         self.recv_message("Environment", obs)
-        if self.frozen_action is not None:
-            # move = await ainput(
+        # if self.frozen_action is not None:
+        #     # move = await ainput(
                 
-            # )
-            # if move == "exit":
-            #     return AgentAction(action_type="leave", argument="")
-            if self.frozen_action in ["speak", "non-verbal communication"]:
-                argument = await ainput()
-            if argument == "exit":
-                return AgentAction(action_type="leave", argument="")
-            return AgentAction(action_type=self.frozen_action, argument=argument)
+        #     # )
+        #     # if move == "exit":
+        #     #     return AgentAction(action_type="leave", argument="")
+        #     if self.frozen_action in ["speak", "non-verbal communication"]:
+        #         argument = await ainput()
+        #         return AgentAction(action_type=self.frozen_action, argument=argument)
+        #     if argument == "exit":
+        #         return AgentAction(action_type="leave", argument="")
         
-        print("Available actions:")
-        for i, action in enumerate(iterable=obs.available_actions):
-            print(f"{i}: {action}")
+        # import pdb; pdb.set_trace()
+        obs.available_actions = [action for action in obs.available_actions if action in ['leave', 'speak']]
+        # if obs.available_actions != ["none"]:
+        if obs.available_actions != []:
+            print("Available actions:")
+            for i, action in enumerate(iterable=obs.available_actions):
+                print(f"{i}: {action}")
 
-        if obs.available_actions != ["none"]:
+        # if obs.available_actions != ["none"]:
+        if obs.available_actions != []:
             action_type_number = await ainput(
                 "Action type (Please only input the number): "
             )
@@ -209,6 +213,7 @@ class HumanAgent(BaseAgent[Observation, AgentAction]):
                 action_type_number = int(action_type_number)  # type: ignore
             assert isinstance(action_type_number, int), "Please input a number."
             action_type = obs.available_actions[action_type_number]
+            # import pdb; pdb.set_trace()
         else:
             action_type = "none"
         if action_type in ["speak", "non-verbal communication"]:

@@ -6,7 +6,7 @@ from typing import Literal, Sequence, Type, cast
 import gin
 import rich
 from beartype import beartype
-
+import pdb
 from sotopia.agents import (
     Agents,
     HumanAgent,
@@ -166,12 +166,14 @@ async def arun_one_episode(
             info,
         ) = await env.astep(agent_messages)
         
-        print(f"Environment message: {environment_messages[agent_name].last_turn}")
-    
+        
+        # pdb.set_trace()
         for a in agent_list:
             if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
-                print("Leave your message:")
-                
+                print("Agent message: ", agent_messages[a.agent_name].argument)
+                # print("Leave your message:")
+            elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
+                print("Human message: ", agent_messages[a.agent_name].argument)
         messages.append(
             [
                 ("Environment", agent_name, environment_messages[agent_name])
@@ -184,7 +186,10 @@ async def arun_one_episode(
             " ".join(info[agent_name]["comments"] for agent_name in env.agents)
         )
         done = all(terminated.values())
-
+        # pdb.set_trace()
+        # print(f"Agent's response: {environment_messages[agent_name].last_turn}")
+        
+    
     # TODO: clean up this part
     epilog = EpisodeLog(
         environment=env.profile.pk,
@@ -228,7 +233,6 @@ async def run_async_server(
     tag: str | None = None,
     push_to_db: bool = True,
     using_async: bool = True,
-    frozen_action = None,
 ) -> list[list[tuple[str, str, Message]]]:
     """
     Doc incomplete

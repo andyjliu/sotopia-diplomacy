@@ -150,14 +150,14 @@ async def arun_one_episode(
                     actions[idx] = AgentAction(action_type="none", argument="")
                 else:
                     print("Current action taken: ", actions[idx])
-
+        for i in range(len(actions)):
+            if actions[i].action_type != "none":
+                action_from_agent_type = i
         # actions = cast(list[AgentAction], actions)
-        for idx, agent_name in enumerate(env.agents):
+        for idx, agent_name in enumerate(iterable=env.agents):
             agent_messages[agent_name] = actions[idx]
 
             messages[-1].append((agent_name, "Environment", agent_messages[agent_name]))
-
-        # send agent messages to environment
         (
             environment_messages,
             rewards_in_turn,
@@ -165,13 +165,19 @@ async def arun_one_episode(
             ___,
             info,
         ) = await env.astep(agent_messages)
+        
+        print(f"Environment message: {environment_messages[agent_name].last_turn}")
+    
+        for a in agent_list:
+            if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
+                print("Leave your message:")
+                
         messages.append(
             [
                 ("Environment", agent_name, environment_messages[agent_name])
                 for agent_name in env.agents
             ]
         )
-        # print("Environment message: ", environment_messages)
         # exit(0)
         rewards.append([rewards_in_turn[agent_name] for agent_name in env.agents])
         reasons.append(
@@ -222,6 +228,7 @@ async def run_async_server(
     tag: str | None = None,
     push_to_db: bool = True,
     using_async: bool = True,
+    frozen_action = None,
 ) -> list[list[tuple[str, str, Message]]]:
     """
     Doc incomplete
@@ -293,7 +300,7 @@ async def run_async_server(
             script_like=script_like,
             json_in_script=json_in_script,
             tag=tag,
-            push_to_db=push_to_db,
+            push_to_db=push_to_db
         )
         for env_agent_combo in env_agent_combo_iter
     ]
@@ -340,7 +347,7 @@ async def arun_one_script(
 
     evaluator = ReachGoalLLMEvaluator(model_name="gpt-4")
     response = unweighted_aggregate_evaluate(
-        list(
+        responses=list(
             itertools.chain(
                 *await asyncio.gather(
                     *[

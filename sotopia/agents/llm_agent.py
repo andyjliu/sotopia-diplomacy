@@ -141,13 +141,16 @@ class HumanAgent(BaseAgent[Observation, AgentAction]):
         agent_name: str | None = None,
         uuid_str: str | None = None,
         agent_profile: AgentProfile | None = None,
+        frozen_action: str | None = None,
     ) -> None:
         super().__init__(
             agent_name=agent_name,
             uuid_str=uuid_str,
-            agent_profile=agent_profile,
+            agent_profile=agent_profile
         )
         self.model_name: LLM_Name = "human"
+        self.frozen_action=frozen_action
+        
 
     @property
     def goal(self) -> str:
@@ -162,7 +165,9 @@ class HumanAgent(BaseAgent[Observation, AgentAction]):
 
     def act(self, obs: Observation) -> AgentAction:
         self.recv_message("Environment", obs)
-
+        if self.frozen_action is not None:
+            argument = input("Argument: ")
+            return AgentAction(action_type=self.frozen_action, argument=argument)
         print("Available actions:")
         for i, action in enumerate(obs.available_actions):
             print(f"{i}: {action}")
@@ -174,9 +179,20 @@ class HumanAgent(BaseAgent[Observation, AgentAction]):
 
     async def aact(self, obs: Observation) -> AgentAction:
         self.recv_message("Environment", obs)
-
+        if self.frozen_action is not None:
+            # move = await ainput(
+                
+            # )
+            # if move == "exit":
+            #     return AgentAction(action_type="leave", argument="")
+            if self.frozen_action in ["speak", "non-verbal communication"]:
+                argument = await ainput()
+            if argument == "exit":
+                return AgentAction(action_type="leave", argument="")
+            return AgentAction(action_type=self.frozen_action, argument=argument)
+        
         print("Available actions:")
-        for i, action in enumerate(obs.available_actions):
+        for i, action in enumerate(iterable=obs.available_actions):
             print(f"{i}: {action}")
 
         if obs.available_actions != ["none"]:

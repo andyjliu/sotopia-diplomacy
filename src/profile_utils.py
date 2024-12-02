@@ -218,10 +218,11 @@ def get_previous_dialogue_unit(game_dir, game_id, phase_name, countries, history
         game = json.load(f)
     
     previous_phase = []
-
+    
+    # TODO: Change this into getting the privous two phases, not the last two phases now.
     for phase in game['phases']:
         if phase['name'] == phase_name:
-            print(phase)
+            break
         else:
             previous_phase.append(phase)
     if len(previous_phase) > history_length:

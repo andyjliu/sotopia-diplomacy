@@ -4,9 +4,9 @@ set -e
 
 # Here the parse means the v2
 DIALOGUE_END_INDEX=0
-FORMAT_EPISODE_PATH="data/formatted_episodes/taskeval_demo/taskeval_gpt4o_demo_coop_with_actual.json"
-INTENT_RESPONSE_PATH="data/intent_response/taskeval_demo/taskeval_gpt4o_demo_coop_with_actual.jsonl"
-INTENT_VALUE_PATH="data/intent_value/taskeval_demo/taskeval_gpt4o_demo_coop_with_actual.json"
+FORMAT_EPISODE_PATH="data/formatted_episodes/taskeval_demo/taskeval_gpt4o_demo_coop_with_actual_v2.json"
+INTENT_RESPONSE_PATH="data/intent_response/taskeval_demo/taskeval_gpt4o_demo_coop_with_actual_v2.jsonl"
+INTENT_VALUE_PATH="data/intent_value/taskeval_demo/taskeval_gpt4o_demo_coop_with_actual_v2.json"
 
 source ~/.bashrc
 

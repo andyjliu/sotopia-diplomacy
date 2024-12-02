@@ -124,8 +124,7 @@ async def episode_generation(tag, env_agent_combo_list: List[EnvAgentCombo[Obser
                 # tag="whole", # First generation results
                 tag=tag,
                 push_to_db=True,
-                using_async=True,
-                frozen_action=frozen_action
+                using_async=True
             )
             logging.info(f"Finished a run_async_server")
         except Exception as e:
@@ -134,8 +133,8 @@ async def episode_generation(tag, env_agent_combo_list: List[EnvAgentCombo[Obser
 async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--game_dir", default="/data/user_data/wenkail/", type=str, required=False, help="Choose the value model dir")
-    parser.add_argument("--env_model", default="llama3_70b", type=str, required=False, help="The env model")
-    parser.add_argument("--agent_model", default="llama3_70b", type=str, required=False, help="The agent model")
+    parser.add_argument("--env_model", default="gpt-4o-mini", type=str, required=False, help="The env model")
+    parser.add_argument("--agent_model", default="gpt-4o-mini", type=str, required=False, help="The agent model")
     parser.add_argument("--env_tag", type=str, required=False, help="The env tag")
     parser.add_argument("--game_id", type=str, required=False, help="The game id")
     parser.add_argument("--c1", type=str, required=False, help="The first country")

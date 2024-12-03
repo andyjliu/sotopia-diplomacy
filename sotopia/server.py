@@ -135,6 +135,8 @@ async def arun_one_episode(
         if type(a) == HumanAgent:
             rich.print(f"You play as agent: {name}")
             rich.print(f"The country you play as: {a.profile.country}")
+            background = env.background.scenario.split('\n\n')[-1]
+            rich.print(f"Background: {background}")
             rich.print(f"Your goal: {a.goal}")
     while not done:
         # gather agent messages
@@ -195,8 +197,6 @@ async def arun_one_episode(
             " ".join(info[agent_name]["comments"] for agent_name in env.agents)
         )
         done = all(terminated.values())
-        # pdb.set_trace()
-        # print(f"Agent's response: {environment_messages[agent_name].last_turn}")
         
     
     # TODO: clean up this part

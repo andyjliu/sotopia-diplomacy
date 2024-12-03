@@ -131,6 +131,11 @@ async def arun_one_episode(
         agents[agent_name].goal = env.profile.agent_goals[index]
     rewards: list[list[float]] = []
     reasons: list[str] = []
+    for name, a in agents.items():
+        if type(a) == HumanAgent:
+            rich.print(f"You play as agent: {name}")
+            rich.print(f"The country you play as: {a.profile.country}")
+            rich.print(f"Your goal: {a.goal}")
     while not done:
         # gather agent messages
         agent_messages: dict[str, AgentAction] = dict()
@@ -170,10 +175,14 @@ async def arun_one_episode(
         # pdb.set_trace()
         for a in agent_list:
             if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
-                print("Agent message: ", agent_messages[a.agent_name].argument)
+                print("\033[35mAgent message:\033[0m")
+                print(f"\033[35m{agent_messages[a.agent_name].argument}\033[0m")
+                print()
                 # print("Leave your message:")
             elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
-                print("Human message: ", agent_messages[a.agent_name].argument)
+                print("\033[34mHuman message:\033[0m") 
+                print(f"\033[34m{agent_messages[a.agent_name].argument}\033[0m")
+                print()
         messages.append(
             [
                 ("Environment", agent_name, environment_messages[agent_name])

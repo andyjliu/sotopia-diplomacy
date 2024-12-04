@@ -527,7 +527,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
             },
         }
         if response.terminated:
-            print(f"Here is the terminal evaluators: {self.terminal_evaluators}")
+            # print(f"Here is the terminal evaluators: {self.terminal_evaluators}")
             info["rewards_prompt"] = {
                 "overall_prompt": self.terminal_evaluators[0].prompt  # type: ignore
             }

@@ -60,20 +60,25 @@ def process_conversation_to_intent(text):
     
     formatted_messages = []
     message_count = 0
+    # import pdb; pdb.set_trace()
     
     for turn in turns:
         match = re.match(r'(\w+) said: "(.*?)"$', turn.strip(), re.DOTALL)
         if match:
             speaker, message = match.groups()
-            recipient = next(city for city in cities if city != speaker)
-            
+            try:
+                recipient = next(city for city in cities if city != speaker)
+            except StopIteration:
+                print(cities)
+                rich.print(turns)
+                print(f"Error: Speaker: {speaker} \nCould not find recipient for message: {message}")
             formatted_message = f"{message_count} {speaker.upper()} -> {recipient.upper()}: {message}"
             formatted_messages.append(formatted_message)
             message_count += 1
     
     return "\n".join(formatted_messages)
 
-import re
+
 
 def get_country_from_name(name, profiles):
     for profile in profiles:

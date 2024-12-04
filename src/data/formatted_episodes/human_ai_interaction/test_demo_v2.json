@@ -1,0 +1,13 @@
+[
+    {
+        "game_id": "74152",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "intent_dialogue": "0 TURKEY -> GERMANY: How is your day\n1 GERMANY -> TURKEY: Hi Turkey, it's going well, thanks! I'm strategizing for the next moves. How about you? By the way, I think we should discuss some strategic positions. I'm considering moving my units to strengthen our stance against Italy and France. What do you think about supporting some movements to secure our borders? I'm open to suggestions.\n2 TURKEY -> GERMANY: I am also open to it\n3 GERMANY -> TURKEY: Great to hear you're open to it! I'm thinking we should focus on creating a stronger front. If you could support my move from Sevastopol to Rumania, it would help us push back against Italy. Meanwhile, I can ensure my units in Norway and Sweden are well-positioned to deter any French advances. Let me know if there's anything specific you'd like assistance with or if you have other thoughts on coordinating our efforts.",
+        "unit_center": "units: AUSTRIA: ; ENGLAND: F STP/NC, F IRI; FRANCE: A BEL, F NTH, A BRE, A MAR, F WAL, F ENG, A PIC; GERMANY: A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL; ITALY: A VIE, F ION, A SER, F GRE, F NAP, A RUM, A TYR, A TRI, A VEN; RUSSIA: ; TURKEY: A MOS, A CON, F AEG, F BLA, A SEV, F EAS\ncenters: AUSTRIA: ; ENGLAND: EDI, LON, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, LVP; GERMANY: BER, KIE, MUN, DEN, HOL, WAR, SWE, NWY; ITALY: NAP, ROM, VEN, VIE, TUN, BUD, TRI, SER, GRE; RUSSIA: ; TURKEY: ANK, CON, SMY, BUL, MOS, SEV, RUM"
+    }
+]

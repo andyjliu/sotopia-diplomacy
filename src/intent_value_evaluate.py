@@ -38,9 +38,13 @@ def main():
         with open(args.res_path, 'r') as f:
             for line in f:
                 intent_response.append(json.loads(line))
+                
+    if type(intent_response) != list:
+        intent_response = [intent_response]
         
     countries_value = []
-    for episode in tqdm(intent_response, desc = "Processing Intent Response: "):
+    # for episode in tqdm(intent_response, desc = "Processing Intent Response: "):
+    for episode in intent_response:
         countries = []
         if episode['phase_name'].endswith("M"):
             countries = episode['countries']

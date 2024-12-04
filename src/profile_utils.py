@@ -201,7 +201,8 @@ def get_env_pk(game_phase):
 def get_env_pks_by_tag(tag):
     all_task_pks = list(EnvironmentProfile.all_pks())
     pks_list = []
-    for pk in tqdm(all_task_pks, desc = "Processing env profile dictionary"):
+    # for pk in tqdm(all_task_pks, desc = "Processing env profile dictionary"):
+    for pk in all_task_pks:
         env = EnvironmentProfile.get(pk)
         if env.env_tag == tag:
             pk_with_countries = {}

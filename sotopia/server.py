@@ -149,6 +149,7 @@ async def arun_one_episode(
                 for agent_name in env.agents
             ]
         )
+        action_from_agent_type = None
         if script_like:
             # manually mask one message
             agent_mask = env.action_mask
@@ -160,7 +161,7 @@ async def arun_one_episode(
                 else:
                     print("Current action taken: ", actions[idx])
         for i in range(len(actions)):
-            if actions[i].action_type != "none":
+            if actions[i].action_type != "none" and actions[i].action_type != "leave":
                 action_from_agent_type = i
         # actions = cast(list[AgentAction], actions)
         for idx, agent_name in enumerate(iterable=env.agents):
@@ -177,17 +178,18 @@ async def arun_one_episode(
         
         
         # pdb.set_trace()
-        for a in agent_list:
-            if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
-                rich.print()
-                rich.print("[bold blue]Agent message:[/bold blue]")
-                rich.print(f"[blue]{agent_messages[a.agent_name].argument}[/blue]")
-                rich.print()
-                # print("Leave your message:")
-            elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
-                rich.print()
-                rich.print("[bold purple]Human message:[/bold purple]") 
-                rich.print(f"[purple]{agent_messages[a.agent_name].argument}[/purple]")
+        if action_from_agent_type is not None:
+            for a in agent_list:
+                if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
+                    rich.print()
+                    rich.print("[bold blue]Agent message:[/bold blue]")
+                    rich.print(f"[blue]{agent_messages[a.agent_name].argument}[/blue]")
+                    rich.print()
+                    # print("Leave your message:")
+                elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
+                    rich.print()
+                    rich.print("[bold purple]Human message:[/bold purple]") 
+                    rich.print(f"[purple]{agent_messages[a.agent_name].argument}[/purple]")
         messages.append(
             [
                 ("Environment", agent_name, environment_messages[agent_name])

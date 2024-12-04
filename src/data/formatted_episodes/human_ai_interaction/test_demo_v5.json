@@ -1,0 +1,13 @@
+[
+    {
+        "game_id": "74152",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "intent_dialogue": "0 TURKEY -> GERMANY: How are you!\n1 GERMANY -> TURKEY: Hello! I'm doing well, thank you. How about you? By the way, I think we should discuss our current strategies. With the situation on the board, it might be beneficial if we coordinate some moves to strengthen our positions. What are your thoughts on the current dynamics, particularly with Italy and France?\n2 TURKEY -> GERMANY: Are you good at playing this?\n3 GERMANY -> TURKEY: I'd like to think I'm pretty decent at it! It's all about strategy and negotiation, isn't it? Speaking of which, what do you think is the best way forward with Italy? I believe if we can make some effective moves, especially against Italy, we can both strengthen our positions immensely. Do you have any particular moves in mind that could benefit us both?",
+        "unit_center": "units: AUSTRIA: ; ENGLAND: F STP/NC, F IRI; FRANCE: A BEL, F NTH, A BRE, A MAR, F WAL, F ENG, A PIC; GERMANY: A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL; ITALY: A VIE, F ION, A SER, F GRE, F NAP, A RUM, A TYR, A TRI, A VEN; RUSSIA: ; TURKEY: A MOS, A CON, F AEG, F BLA, A SEV, F EAS\ncenters: AUSTRIA: ; ENGLAND: EDI, LON, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, LVP; GERMANY: BER, KIE, MUN, DEN, HOL, WAR, SWE, NWY; ITALY: NAP, ROM, VEN, VIE, TUN, BUD, TRI, SER, GRE; RUSSIA: ; TURKEY: ANK, CON, SMY, BUL, MOS, SEV, RUM"
+    }
+]

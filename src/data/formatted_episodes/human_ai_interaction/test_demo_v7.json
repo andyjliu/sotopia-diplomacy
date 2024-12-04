@@ -1,0 +1,13 @@
+[
+    {
+        "game_id": "74152",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "intent_dialogue": "0 TURKEY -> GERMANY: Hey!\n1 GERMANY -> TURKEY: Hello! Let's discuss our next moves. I'm considering moving my units strategically to strengthen our position. How do you see the current board and what moves are you planning?\n2 TURKEY -> GERMANY: have no idea\n3 GERMANY -> TURKEY: Let's focus on how we can coordinate to maximize gains. I plan to move my army from Moscow to Sevastopol and support from other units. If you have no specific moves in mind, perhaps we can discuss how you could assist in securing central Europe or pressuring Italy. Any thoughts?",
+        "unit_center": "units: AUSTRIA: ; ENGLAND: F STP/NC, F IRI; FRANCE: A BEL, F NTH, A BRE, A MAR, F WAL, F ENG, A PIC; GERMANY: A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL; ITALY: A VIE, F ION, A SER, F GRE, F NAP, A RUM, A TYR, A TRI, A VEN; RUSSIA: ; TURKEY: A MOS, A CON, F AEG, F BLA, A SEV, F EAS\ncenters: AUSTRIA: ; ENGLAND: EDI, LON, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, LVP; GERMANY: BER, KIE, MUN, DEN, HOL, WAR, SWE, NWY; ITALY: NAP, ROM, VEN, VIE, TUN, BUD, TRI, SER, GRE; RUSSIA: ; TURKEY: ANK, CON, SMY, BUL, MOS, SEV, RUM"
+    }
+]

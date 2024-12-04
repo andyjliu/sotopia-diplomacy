@@ -3,7 +3,7 @@
 set -e
 
 # Here the parse means the v2
-EPI_TAG="test_demo_v4"
+EPI_TAG="test_demo_v7"
 FORMAT_EPISODE_PATH="data/formatted_episodes/human_ai_interaction/${EPI_TAG}.json"
 INTENT_RESPONSE_PATH="data/intent_response/human_ai_interaction/${EPI_TAG}.json"
 INTENT_VALUE_PATH="data/intent_value/human_ai_interaction/${EPI_TAG}.json"

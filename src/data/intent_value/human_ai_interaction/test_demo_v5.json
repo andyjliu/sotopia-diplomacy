@@ -1,0 +1,86 @@
+[
+    {
+        "game_id": "74152",
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "Turkey_original_predict": "A CON BUL; A MOS WAR; A SEV RUM; F AEG S A CON BUL; F BLA S A SEV RUM; F EAS S F AEG",
+        "Germany_original_predict": "",
+        "Turkey_units": "A MOS, A CON, F AEG, F BLA, A SEV, F EAS",
+        "Germany_units": "A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL",
+        "intent_dialogue": "0 TURKEY -> GERMANY: How are you!\n1 GERMANY -> TURKEY: Hello! I'm doing well, thank you. How about you? By the way, I think we should discuss our current strategies. With the situation on the board, it might be beneficial if we coordinate some moves to strengthen our positions. What are your thoughts on the current dynamics, particularly with Italy and France?\n2 TURKEY -> GERMANY: Are you good at playing this?\n3 GERMANY -> TURKEY: I'd like to think I'm pretty decent at it! It's all about strategy and negotiation, isn't it? Speaking of which, what do you think is the best way forward with Italy? I believe if we can make some effective moves, especially against Italy, we can both strengthen our positions immensely. Do you have any particular moves in mind that could benefit us both?",
+        "Turkey_actual_movement": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S F EAS - ION",
+            "F BLA S A CON - BUL",
+            "A MOS - SEV",
+            "F EAS - ION"
+        ],
+        "Turkey_parse_predict": [
+            "A CON - BUL",
+            "A SEV - RUM",
+            "F AEG S A CON - BUL",
+            "F BLA S A SEV - RUM",
+            "A MOS - WAR",
+            "F EAS S F AEG"
+        ],
+        "Turkey": {
+            "whole_task_eval": [
+                -0.0024069705395959318,
+                -0.0016887661768123507,
+                -0.0007996559143066406,
+                0.18097689002752304,
+                -0.22444112598896027,
+                0.004438923846464604,
+                0.04392072930932045
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.04392072930932045
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.18097689002752304
+            ]
+        },
+        "Germany_actual_movement": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany_parse_predict": [
+            "A MUN - TYR",
+            "A GAL S A SEV - RUM",
+            "A HOL - KIE",
+            "A UKR S A SEV - RUM",
+            "F SWE - NWY",
+            "A SIL - WAR",
+            "A NWY - STP",
+            "F FIN S A NWY - STP"
+        ],
+        "Germany": {
+            "whole_task_eval": [
+                0.00853042327798903,
+                -0.0010498607298359275,
+                -0.11905443668365479,
+                0.16850188374519348,
+                -0.251596063375473,
+                -0.0037490472313947976,
+                0.19841713458299637
+            ],
+            "GERMANY": [
+                "GERMANY",
+                0.16850188374519348
+            ],
+            "TURKEY": [
+                "TURKEY",
+                0.19841713458299637
+            ]
+        }
+    }
+]

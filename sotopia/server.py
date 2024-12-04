@@ -133,11 +133,13 @@ async def arun_one_episode(
     reasons: list[str] = []
     for name, a in agents.items():
         if type(a) == HumanAgent:
-            rich.print(f"You play as agent: {name}")
-            rich.print(f"The country you play as: {a.profile.country}")
+            _ , other_agent = [(n, agent) for n, agent in agents.items() if n != name][0]
+            rich.print(f"[bold]You play as agent:[/bold] [bold purple]{name}[/bold purple]")
+            rich.print(f"[bold]The country you play as:[/bold] [bold purple]{a.profile.country}[/bold purple]")
+            rich.print(f"[bold]The other agent you are negotiating with play as:[/bold] [bold red]{other_agent.profile.country}[/bold red]")
             background = env.background.scenario.split('\n\n')[-1]
-            rich.print(f"Background: {background}")
-            rich.print(f"Your goal: {a.goal}")
+            rich.print(f"[bold]Background:[/bold]\n{background}")
+            rich.print(f"[bold]Your goal:[/bold]\n{a.goal}")
     while not done:
         # gather agent messages
         agent_messages: dict[str, AgentAction] = dict()
@@ -177,14 +179,15 @@ async def arun_one_episode(
         # pdb.set_trace()
         for a in agent_list:
             if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
-                print("\033[35mAgent message:\033[0m")
-                print(f"\033[35m{agent_messages[a.agent_name].argument}\033[0m")
-                print()
+                rich.print()
+                rich.print("[bold blue]Agent message:[/bold blue]")
+                rich.print(f"[blue]{agent_messages[a.agent_name].argument}[/blue]")
+                rich.print()
                 # print("Leave your message:")
             elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
-                print("\033[34mHuman message:\033[0m") 
-                print(f"\033[34m{agent_messages[a.agent_name].argument}\033[0m")
-                print()
+                rich.print()
+                rich.print("[bold purple]Human message:[/bold purple]") 
+                rich.print(f"[purple]{agent_messages[a.agent_name].argument}[/purple]")
         messages.append(
             [
                 ("Environment", agent_name, environment_messages[agent_name])
@@ -213,13 +216,14 @@ async def arun_one_episode(
         rewards=[info[agent_name]["complete_rating"] for agent_name in env.agents],
         rewards_prompt=info["rewards_prompt"]["overall_prompt"],
     )
-    rich.print(epilog.rewards_prompt)
+    # rich.print(epilog.rewards_prompt)
     agent_profiles, conversation = epilog.render_for_humans()
-    for agent_profile in agent_profiles:
-        rich.print(agent_profile)
-    for message in conversation:
-        rich.print(message)
-
+    # for agent_profile in agent_profiles:
+    #     rich.print(agent_profile)
+    # for message in conversation:
+    #     rich.print(message)
+    rich.print(conversation[-2].split(";")[0])
+    rich.print(conversation[-1])
     if push_to_db:
         try:
             epilog.save()

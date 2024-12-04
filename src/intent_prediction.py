@@ -92,7 +92,8 @@ def main():
         os.makedirs(os.path.dirname(args.tgt_path))
         
     with open(args.tgt_path, 'a') as f:
-        for episode in tqdm(split_formatted_episodes):
+        # for episode in tqdm(split_formatted_episodes):
+        for episode in split_formatted_episodes:
             response = {}
             countries = get_countries_from_agent(episode["agents"])
             response["game_id"] = episode["game_id"]
@@ -114,7 +115,7 @@ def main():
             json.dump(response, f)
             f.write('\n')
 
-    print(f"Additional data successfully appended to {args.tgt_path}")
+    # print(f"Additional data successfully appended to {args.tgt_path}")
 
 
     

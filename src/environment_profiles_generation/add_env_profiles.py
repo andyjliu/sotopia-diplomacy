@@ -7,7 +7,7 @@ import os
 sys.path.append("/home/wenkail/diplomacy/sotopia-diplomacy/src")
 from tqdm import tqdm
 from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
-from profile_utils import store_env_profile_with_previous_plausible, store_env_profile_with_previous, store_env_profile_with_actual_moves, find_game_phase_env_pks
+from profile_utils import store_env_profile_with_previous_plausible, store_env_profile_with_previous, store_env_profile_with_actual_moves, find_game_phase_env_pks, store_env_profile_with_finetune_format
 import argparse
 from tqdm import tqdm
 import os
@@ -62,7 +62,7 @@ def add_env_profiles_finetune_model(games_dir, games_phases, tag, game_dir):
         game = json.load(open(games_dir + game_phases['game_id'] + '.json'))
         for phase in game['phases']:
             if phase['name'] == game_phases['phase']:
-                store_env_profile_with_previous(game_phases['game_id'], phase, game_phases['countries'], tag, game_dir)
+                store_env_profile_with_finetune_format(game_phases['game_id'], phase, game_phases['countries'], tag, game_dir)
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--choice_file", default= "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/choice_phases_list_with_cooperate_plausible_moves.json", type=str, required=False, help="The choice files")
@@ -74,22 +74,8 @@ def main():
 
     with open(args.choice_file, 'r') as f:
         choice_phases_list = json.load(f)
-    # From environment profile
-    env_uuid = ['01JBDMK2DHZ67BV0EVJGK13E8Z',
-                '01JBDMK12CAB7SVDTEB55MAR4V',
-                '01JBDMK1XSF38TSJ813R182E1S',
-                '01JBDMK17YB39HV72VRDCFNM7X',
-                '01JBDMK0SS526CVGNS8DTXD6K6',
-                '01JBDMK27T1Y9303XVZDB27R4W',
-                '01JBDMK2336X5YF6R1VAEP64MC',
-                '01JBDMK1VXH11P04TM8V4ZY54Z',
-                '01JBDMK0X5A3QE57DWGM7HNMPH',
-                '01JBDMK1TBHKS824WG61M27YQJ',
-                '01JBDMK1KFJMZNHHZD37RJEEQQ',
-                '01JBDMK2C9K275FEMPVBWWRDV7',
-                '01JBDMK1ZVFDTAWWR4GBJ7ZYDV']
     
-    choice_phases_list = find_game_phase_env_pks(env_uuid)
+    # choice_phases_list = find_game_phase_env_pks(env_uuid)
     games_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
     
     if args.finetune_model:

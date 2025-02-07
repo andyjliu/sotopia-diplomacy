@@ -47,6 +47,17 @@ def store_env_profile_with_previous(game_id, game_phase, countries, tag, game_di
         agent_powers = countries,
         env_tag = tag
     )
+    
+def store_env_profile_with_finetune_format(game_id, game_phase, countries, tag, game_dir):
+    scenario, agent_goals = Template.get_finetune_scenario(game_phase, countries, game_id, game_dir)
+    add_env_profile(
+        game_id = game_id,
+        phase_name = game_phase['name'],
+        scenario=scenario,
+        agent_goals = [social_goal for social_goal in agent_goals],
+        agent_powers = countries,
+        env_tag = tag
+    )
 
 def find_game_phase_env_pks(env_pks):
     game_phases = []
@@ -278,3 +289,55 @@ def get_previous_phase_finetune_format(game_dir, game_id, phase_name, countries)
                 dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
     return dialogue_unit
             
+
+def get_full_finetune_format(game_dir, game_id, phase_name, countries):
+    
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)
+    
+    upper_countries = [c.upper() for c in countries]
+    
+    center_info = ""
+    unit_info = ""
+    order_info = ""
+    for phase in game['phases']:
+        if phase['name'] == phase_name:
+            for key, value in phase['state']['centers'].items():
+                center_str = ", ".join(value)
+                center_info += f"{key}: {center_str}; "
+            for key, value in phase['state']['units'].items():
+                unit_str = ", ".join(value)
+                unit_info += f"{key}: {unit_str}; "
+            for key, value in phase['state']['orders'].items():
+                order_str = ", ".join(value)
+                order_info += f"{key}: {order_str}; "
+    prompt = ""
+    prompt += f"{phase_name}\n\n"
+    
+    prompt += f"Here is the countries' cneters, units and the previous dialogue between the two countries: {countries[0]} and {countries[1]}.\n\n"
+    
+    prompt += f"This is the information of the countries' centers: {center_info}\n\n"
+    
+    prompt += f"This is the information of the countries' units: {unit_info}\n\n"
+    
+    prompt += f"This is the intent movement of the countries: {order_info}\n\n"
+    
+    previous_phase = []
+
+    for phase in game['phases']:
+        if phase['name'] == phase_name:
+            print(phase)
+        else:
+            previous_phase.append(phase)
+    previous_phase = previous_phase[-1:]
+    dialogue_unit = ""
+    for phase in previous_phase:
+        dialogue_unit += f"Here is the previous dialogue between you and the other country: \n"
+        for message in phase['messages']:
+            if message['sender'] in upper_countries and message['recipient'] in upper_countries:
+                clean_message = message['message'].replace("\n", " ")
+                dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
+                
+    prompt += dialogue_unit
+    
+    return prompt

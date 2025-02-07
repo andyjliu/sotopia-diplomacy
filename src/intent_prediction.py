@@ -93,7 +93,7 @@ def main():
         
     with open(args.tgt_path, 'a') as f:
         # for episode in tqdm(split_formatted_episodes):
-        for episode in split_formatted_episodes:
+        for episode in tqdm(split_formatted_episodes):
             response = {}
             countries = get_countries_from_agent(episode["agents"])
             response["game_id"] = episode["game_id"]

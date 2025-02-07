@@ -3,8 +3,9 @@ source ~/.bashrc
 conda activate sotopia
 # [llama3-70b-analysis, gpt-4-analysis, specific_human_anno_llama3_70b, specific_human_anno_gpt_4, specific_human_anno_gpt_4_new]
 
-python generate_episode.py --epi_tag demo_llama --env_tag demo_v2 --model llama3_70b
-python generate_episode.py --epi_tag demo_gpt_4o --env_tag demo_v2 --model gpt-4o
+# llama3_8b_test
+python ../generate_episode.py --epi_tag llama3_8b_finetune_v3 --env_tag finetune --model llama3_8b --split_begin=0 --split_end 114
+# python generate_episode.py --epi_tag demo_gpt_4o --env_tag demo_v2 --model gpt-4o
 # gpt-4o-mini
 # llama3_70b
 

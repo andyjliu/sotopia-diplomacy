@@ -1,0 +1,123 @@
+[
+    {
+        "game_id": "15072",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH64K62H8QB9ZSPCD11J",
+        "intent_dialogue": "",
+        "unit_center": "units: AUSTRIA: A SER; ENGLAND: F SKA, F NTH; FRANCE: A MUN, A PIC, A BUR, F IRI, A BEL, F LON, F BRE, F MAR; GERMANY: F DEN, A HOL, A KIE; ITALY: F ION, F ADR, A VIE, A BUD, A TRI, A ALB, A VEN; RUSSIA: F SEV, A RUM, F SWE, A BER, F NWG, A GAL, A CLY, F STP/NC; TURKEY: F AEG, A BUL, A GRE, F SMY, F CON\ncenters: AUSTRIA: SER; ENGLAND: EDI, LVP; FRANCE: BRE, MAR, PAR, POR, SPA, MUN, LON, BEL; GERMANY: KIE, DEN, HOL; ITALY: NAP, ROM, VEN, TRI, TUN, VIE, BUD; RUSSIA: MOS, SEV, STP, WAR, RUM, SWE, NWY, BER; TURKEY: ANK, CON, SMY, BUL, GRE"
+    },
+    {
+        "game_id": "38101",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CBF8PXWR60KZ499KE"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH5TMFK77DK42R5GAJCP",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: I'm glad you're planning to move some units this turn. I noticed that you're moving A RUM - SEV and F BLA S A RUM - SEV. Can you tell me more about your strategy behind this move? Are you looking to take advantage of the situation in the Balkans or is there another reason for this move?\n1 TURKEY -> AUSTRIA: I'm glad you're interested in my moves. I'm not moving A RUM - SEV and F BLA S A RUM - SEV, but rather A TRI - TYR, F BUL/SC - AEG, A SER - RUM, A UKR - MOS, and A BUD - GAL. These moves are designed to set me up for future success and gain some strategic advantages. I'm open to discussing my strategy and seeing if we can find a mutually beneficial arrangement.\n2 AUSTRIA -> TURKEY: I'm glad you're planning to make some moves this turn. I think we should focus on supporting each other in the Balkans. How do you think we can work together to take advantage of the situation there?\n3 AUSTRIA -> TURKEY: I'm glad we're discussing our moves. I think your plan to set up your board for future success is a good one. How do you think we can work together to take advantage of the situation in the Balkans? I'm considering supporting you in your moves if it benefits my position as well.\n4 TURKEY -> AUSTRIA: I'm interested in working together in the Balkans. Your plan to set up your board for future success makes sense, but I think we can do even better if we coordinate our moves. I'd like to propose an alliance with Austria and see if we can work together to take out Italy and then focus on the Balkans. What do you think?",
+        "unit_center": "units: AUSTRIA: A SER, A TRI, A BUD, F BUL/SC, A UKR; ENGLAND: F NWY, A HOL, F NWG, F EDI, F ENG; FRANCE: F MAO, A BEL, A BUR, A PAR, A PIE, F LYO; GERMANY: F DEN, A MUN, A KIE, A RUH; ITALY: A VEN, F EAS, F ION, A SYR; RUSSIA: F SEV, A STP, F SWE, A MOS, A GAL; TURKEY: F BLA, A RUM, F GRE, A SMY, A ANK\ncenters: AUSTRIA: BUD, TRI, VIE, SER, BUL; ENGLAND: EDI, LON, LVP, HOL, NWY; FRANCE: BRE, MAR, PAR, POR, SPA, BEL; GERMANY: BER, KIE, MUN, DEN; ITALY: NAP, ROM, VEN, TUN; RUSSIA: MOS, SEV, STP, WAR, SWE; TURKEY: ANK, CON, SMY, GRE, RUM"
+    },
+    {
+        "game_id": "43830",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6CBF8PXWR60KZ499KE"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JDK7PH661TZKFH6YQ7H92ZSX",
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: So, Russia, it seems like you're planning to make some moves this turn. I'm interested in discussing the feasibility of some of those moves with you. Specifically, I'd like to know more about the reasoning behind 'A VIE - TYR'. Do you think that's a good use of a unit, or is there something else you'd rather do with it?\n1 AUSTRIA -> RUSSIA: I'm glad you're interested in discussing my moves, Russia. I have to say, I'm a bit surprised you're questioning my reasoning behind 'A VIE - TYR'. To be honest, I'm not planning to make that move. I think you'll find that my actual moves will be more focused on supporting my positions in the Balkans and the Mediterranean. I'd be happy to discuss those in more detail if you're interested.\n2 RUSSIA -> AUSTRIA: I'm glad you clarified your intentions, Austria. It sounds like you're looking to focus on the Balkans and Mediterranean this turn. That makes sense, given your board position. I'm curious to know more about your plans in those regions. Are you looking to build up your army in the Balkans or create some sort of strategic alliance with another power?\n3 AUSTRIA -> RUSSIA: I'm happy to discuss my plans in the Balkans and Mediterranean, Russia. As for building up my army in the Balkans, I think it's a good idea to support my positions there. I have a unit in Bulgaria that can help me defend against any potential threats. In the Mediterranean, I'm looking to create some sort of strategic alliance with Italy to block any potential French or English movements.",
+        "unit_center": "units: AUSTRIA: F TRI, A BUL, A BUD, F GRE, A GAL, A RUM, A VIE; ENGLAND: F LON, A EDI, F NTH; FRANCE: A GAS, F ENG, A MAR, A WAL, A TYR; GERMANY: F HOL, A DEN, F HEL, A BEL, A BER, A KIE; ITALY: A VEN, A SMY, F TYS, F CON, F WES, A ROM; RUSSIA: F BLA, A SWE, F SKA, A PRU, F NWY, F ANK, A UKR; TURKEY: \ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER, BUL, RUM; ENGLAND: EDI, LON, LVP; FRANCE: BRE, MAR, PAR, POR, SPA; GERMANY: BER, KIE, MUN, BEL, DEN, HOL; ITALY: NAP, ROM, VEN, TUN, SMY, CON; RUSSIA: MOS, SEV, STP, WAR, NWY, SWE, ANK; TURKEY: "
+    },
+    {
+        "game_id": "78680",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JDK7PH613MN06MGT0RTERKHT",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Turkey, I'm glad we're having this conversation. I'm interested in hearing your thoughts on the moves I've planned for this turn. Specifically, I'm planning to move A LVN S F STP/NC, A WAR H, F STP/NC H, F BLA H, F RUM S A BUL, A VIE H, and A MOS - UKR. Do you think these moves will benefit our alliance and put pressure on Germany?\n1 TURKEY -> RUSSIA: I appreciate your moves, Russia. However, I'm not sure about the move A LVN S F STP/NC. I think it's better to focus on supporting Russia's push into Livonia. I'd like to propose a different move for you: A MOS S F RUM - VIE, which can help us block Germany's potential advance into Russia. What do you think?\n2 RUSSIA -> TURKEY: Turkey, I appreciate your suggestion. However, I'm concerned about Germany's potential advance into Russia and I think A LVN S F STP/NC can help block their advance. Additionally, I'd like to clarify that my original move A WAR H is to prepare for the possibility of a German attack. A MOS S F RUM - VIE is a good idea, but I think we should also consider supporting Russia's push into Livonia by moving F STP/NC H. What do you think about these moves?\n3 TURKEY -> RUSSIA: I appreciate Russia's willingness to discuss potential moves. Based on our previous conversation, I'd like to propose the following moves: ['F EAS S F AEG - ION', 'F ION - TUN', 'F GRE S F AEG - ION', 'F AEG - ION', 'A BUL - SER']. I believe these moves will help to strengthen our position and put pressure on Germany. Additionally, I'd like to inquire about Russia's plans for this turn and see if we can work together to achieve our goals.\n4 RUSSIA -> TURKEY: Turkey, I appreciate your proposed moves, but I'm concerned about the potential vulnerability of your position in the Balkans. I think it would be beneficial for us to support each other's moves, especially since Germany is moving aggressively. I'd like to propose a different move for you: F EAS S F AEG - ION, which can help secure your position and prevent Germany from advancing. Additionally, I think we should also consider supporting our joint push into Livonia by moving F STP/NC H. What do you think about these moves?",
+        "unit_center": "units: AUSTRIA: ; ENGLAND: F BAL; FRANCE: F ENG, A BEL, F EDI, F IRI, A LON, A GAS, F MAR, A PAR; GERMANY: A HOL, F NWY, A FIN, A PRU, A KIE, F DEN, A BOH; ITALY: A TRI, A VEN, A SER, F ROM, F NAP; RUSSIA: F RUM, F STP/NC, A MOS, A VIE, F BLA, A LVN, A WAR; TURKEY: A BUL, F GRE, F EAS, F AEG, F ION\ncenters: AUSTRIA: ; ENGLAND: LVP; FRANCE: BRE, MAR, PAR, BEL, POR, SPA, EDI, LON; GERMANY: BER, KIE, MUN, DEN, HOL, SWE, NWY; ITALY: NAP, ROM, TUN, TRI, VEN, SER; RUSSIA: MOS, SEV, STP, WAR, BUD, RUM, VIE; TURKEY: ANK, CON, SMY, BUL, GRE"
+    },
+    {
+        "game_id": "77086",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JDK7PH5ZMNE0C23WQEY12DAD",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: I'm glad we've come to an agreement on PRU. Now, let's discuss my next moves. I was thinking of moving A BEL S F NTH - HOL and F IRI S F NAO - MAO. What are your thoughts on these moves?\n1 RUSSIA -> ENGLAND: I think your moves will benefit us both. By moving A BEL S F NTH - HOL and F IRI S F NAO - MAO, you'll be able to gain some ground in the North Sea and potentially cut off some of England's supply lines. In return, I'll be able to focus on my own goals and secure some key positions on the board.",
+        "unit_center": "units: AUSTRIA: A SER, A BOH, A BUD, F TRI; ENGLAND: F NTH, A DEN, F SWE, F BAR, A NWY, A STP, F LVP; FRANCE: A MUN, A RUH, F WES, A KIE, F MAO, A PIE, F NAF, F TYS, F MAR; GERMANY: ; ITALY: F ADR, A GRE, F ION, A VEN, A NAP; RUSSIA: F BLA, A BER, A RUM, A UKR, A MOS; TURKEY: F CON, F AEG, A BUL, F SMY\ncenters: AUSTRIA: BUD, VIE, TRI, SER; ENGLAND: EDI, LON, LVP, NWY, DEN, STP, SWE; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, MUN, HOL, KIE; GERMANY: ; ITALY: NAP, ROM, VEN, TUN, GRE; RUSSIA: MOS, SEV, WAR, BER, RUM; TURKEY: ANK, CON, SMY, BUL"
+    },
+    {
+        "game_id": "20032",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JDK7PH5WYEKEWSB142189DB6",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: Tell me how my fleet might best serve you\n1 ENGLAND -> FRANCE: Tell me about your planned movements for this turn and how they might impact our positions on the board.\n2 FRANCE -> ENGLAND: I've planned several moves for this turn: ['F LVP - NAO', 'A LON H', 'F NTH S A BEL', 'F DEN - HEL', 'A BEL H', 'F NWY - SKA']. I'd like to discuss the impact of these moves on our positions on the board and see if we can work together to benefit our board positions.",
+        "unit_center": "units: AUSTRIA: A SER, A BUD, A RUM, A BUL, F ION, F TRI; ENGLAND: F NWY, A BEL, A LON, F NTH, F DEN, F LVP; FRANCE: F WES, A SPA, F LYO, A BUR, A MAR; GERMANY: A KIE, A HOL, F BAL, A RUH; ITALY: A PIE, F TUN, A NAF, F TYS; RUSSIA: A UKR, F SEV, F SWE, A SIL, F STP/SC; TURKEY: F BLA, A ARM, F AEG, A GRE\ncenters: AUSTRIA: BUD, TRI, VIE, SER, BUL, RUM; ENGLAND: EDI, LON, LVP, BEL, NWY, DEN; FRANCE: BRE, MAR, PAR, POR, SPA; GERMANY: BER, KIE, MUN, HOL; ITALY: NAP, ROM, VEN, TUN; RUSSIA: MOS, SEV, STP, WAR, SWE; TURKEY: ANK, CON, SMY, GRE"
+    },
+    {
+        "game_id": "114931",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH5QJET9M8YV1ZTHTN1N",
+        "intent_dialogue": "0 RUSSIA -> ITALY: Hey Italy, I'm happy to discuss our next moves. I'd like to propose a few movements this turn that could benefit both of our boards. Take a look at my proposed moves: ['F ION - GRE', 'A ALB - SER', 'F AEG - CON', 'F EAS - AEG', 'A SMY S F AEG - CON']. What do you think about these moves? Do you see any potential benefits or drawbacks? Let's discuss.\n1 ITALY -> RUSSIA: Hmm, interesting moves you have there Russia. I'm not sure about F ION - GRE, as it would give you control over Greece. I'm still considering taking Vienna, so I'll need to think about the consequences of that. A ALB - SER is an interesting move, but I think I'll have to prioritize my own board position tonight. F AEG - CON could be a good move if you're looking to expand your influence on the Black Sea. And F EAS - AEG is a bit unclear to me, could you explain the reasoning behind that one?\n2 RUSSIA -> ITALY: I understand your concerns, Italy. F ION - GRE is indeed a crucial move for me, as it would grant me control over Greece. I'm willing to reconsider it if it would harm our potential partnership. However, I believe A ALB - SER and F AEG - CON are vital for my board position. F EAS - AEG is a supporting move to help secure the Black Sea region. What do you think about these moves in the context of your own board position and goals? Are there any potential benefits or drawbacks you see?",
+        "unit_center": "units: AUSTRIA: A SER, F GRE, A VIE, A GAL; ENGLAND: F ENG, A PIC, F STP/NC, F SKA, A LVN, A BEL, F IRI; FRANCE: A BUR, A BRE, A GAS, F SPA/NC, A RUH; GERMANY: A BER, F HOL, A MUN, A PAR; ITALY: F EAS, A SMY, A ALB, F AEG, F ION; RUSSIA: A MOS, A BUD, F RUM, A TRI, A UKR; TURKEY: F CON, F ANK, A ARM\ncenters: AUSTRIA: TRI, VIE, GRE, SER; ENGLAND: EDI, LON, LVP, DEN, NWY, STP, SWE; FRANCE: BRE, MAR, PAR, POR, SPA, BEL; GERMANY: BER, KIE, HOL, MUN; ITALY: NAP, ROM, VEN, TUN, SMY; RUSSIA: MOS, SEV, WAR, RUM, BUD; TURKEY: ANK, CON, BUL"
+    },
+    {
+        "game_id": "61195",
+        "agents": [
+            "01J38VTZ6D2WFQGZF9CCNK3258",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JDK7PH5NN3JJRPSE9HCGFWDJ",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Hello, Turkey. I'm Russia. I have a problem and I would like to discuss some possible solutions with you. I've been thinking about my moves for this turn and I have a few that I think could be beneficial for both of us. For example, I was thinking of moving A NWY S F SWE, F SWE H, A WAR S A GAL, F RUM - BLA, A GAL S A SEV - RUM, A SEV - RUM, A MOS - UKR. I'd love to hear your thoughts on these moves and see if we can come to an agreement on how to proceed.\n1 TURKEY -> RUSSIA: Hello Russia, thank you for reaching out. I appreciate your willingness to discuss potential solutions to the problem. I've taken a look at your proposed moves, and I think A NWY S F SWE and A WAR S A GAL could be beneficial for both of us. However, I'm a bit concerned about A GAL S A SEV - RUM, as it could potentially put my units in danger. Could you tell me more about your reasoning behind that move?\n2 RUSSIA -> TURKEY: I understand your concerns about A GAL S A SEV - RUM, and I can see how it might put your units in danger. However, I believe the benefits of this move outweigh the risks. I'm willing to work with you to find an alternative solution that still achieves my goals. Can we discuss possible alternatives for that move, or is there another move you'd like to propose in its place?\n3 TURKEY -> RUSSIA: I understand your concerns, Russia. I'm willing to work with you to find an alternative solution that still achieves your goals. Before we proceed, I'd like to share my own moves for this turn. I'm planning to move A ANK - CON, F CON - ANK, A BUL S A SEV - RUM, and F AEG - EAS. Do you see any potential issues with these moves, or would you like to propose any adjustments?\n4 RUSSIA -> TURKEY: I'm glad we're discussing possible solutions, Turkey. I understand your concerns about A GAL S A SEV - RUM, and I'm willing to work with you to find an alternative solution. I've been thinking about your moves, and I think A BUL S A SEV - RUM could be a great opportunity for us to cooperate. How do you feel about moving A BUL S A SEV - RUM instead?\n5 TURKEY -> RUSSIA: I appreciate your willingness to work with me, Russia. I think moving A BUL S A SEV - RUM instead of A GAL S A SEV - RUM is a great idea. It aligns with my goals and could potentially benefit both of our boards. Let's discuss the details of this move and see if we can come to an agreement on how to proceed.\n6 RUSSIA -> TURKEY: I think moving A BUL S A SEV - RUM instead of A GAL S A SEV - RUM is a great idea, Turkey. It aligns with my goals and could potentially benefit both of our boards. Let's discuss the details of this move and see if we can come to an agreement on how to proceed.",
+        "unit_center": "units: AUSTRIA: A SER, A BUD, F GRE, F ION, A VIE; ENGLAND: F LON, F NTH, A HOL, F LVP; FRANCE: F BRE, A MAR, A SPA, A PAR; GERMANY: A DEN, A BEL, A SIL, A RUH, F BAL; ITALY: A PIE, A VEN, F MAO, F LYO; RUSSIA: A WAR, F RUM, F SWE, A SEV, A NWY, A GAL, A MOS; TURKEY: A BUL, F CON, A ANK, F AEG\ncenters: AUSTRIA: BUD, TRI, VIE, GRE, SER; ENGLAND: EDI, LON, LVP, HOL; FRANCE: BRE, MAR, PAR, POR, SPA; GERMANY: BER, KIE, MUN, BEL, DEN; ITALY: NAP, ROM, VEN, TUN; RUSSIA: MOS, SEV, STP, WAR, RUM, SWE, NWY; TURKEY: ANK, CON, SMY, BUL"
+    },
+    {
+        "game_id": "74152",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JDK7PH62X67VGB267HQQ612H",
+        "intent_dialogue": "",
+        "unit_center": "units: AUSTRIA: ; ENGLAND: F STP/NC, F IRI; FRANCE: A BEL, F NTH, A BRE, A MAR, F WAL, F ENG, A PIC; GERMANY: A NWY, A HOL, A GAL, A MUN, F FIN, F SWE, A UKR, A SIL; ITALY: A VIE, F ION, A SER, F GRE, F NAP, A RUM, A TYR, A TRI, A VEN; RUSSIA: ; TURKEY: A MOS, A CON, F AEG, F BLA, A SEV, F EAS\ncenters: AUSTRIA: ; ENGLAND: EDI, LON, STP; FRANCE: BRE, MAR, PAR, POR, SPA, BEL, LVP; GERMANY: BER, KIE, MUN, DEN, HOL, WAR, SWE, NWY; ITALY: NAP, ROM, VEN, VIE, TUN, BUD, TRI, SER, GRE; RUSSIA: ; TURKEY: ANK, CON, SMY, BUL, MOS, SEV, RUM"
+    },
+    {
+        "game_id": "23459",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JDK7PH6B477VPDENFK8N87YS",
+        "intent_dialogue": "",
+        "unit_center": "units: AUSTRIA: A GAL, A BUD, F TRI; ENGLAND: F NTH, A LVP, A STP, F BAR, F ENG; FRANCE: A BUR, A SPA, A PIC, F IRI, F TYS; GERMANY: F DEN, A RUH, A HOL, A MUN, F SWE, A KIE; ITALY: F TUN, A ROM, A VEN; RUSSIA: F FIN, A RUM, A SMY, A WAR; TURKEY: A BUL, F CON, F BLA, A SER\ncenters: AUSTRIA: BUD, TRI, VIE; ENGLAND: EDI, LON, LVP, STP, NWY; FRANCE: BRE, MAR, PAR, POR, SPA; GERMANY: BER, KIE, MUN, DEN, HOL, SWE; ITALY: NAP, ROM, VEN; RUSSIA: MOS, SEV, WAR, RUM, SMY, SER; TURKEY: ANK, CON, BUL, GRE"
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JDK7PH69SG1XF30JXVR3FJGQ",
+        "intent_dialogue": "0 FRANCE -> GERMANY: Wonder why Turkey moved Smy - Con? Trying to bury the hatchet with R...?\n1 GERMANY -> FRANCE: I agree with you on picking someone and staying with it. I do that all the time and more times than not it works for me. Turkey is not very smart. I hate to say that, but he had SEV this turn if he only played the game right. He must be a newbie. We have Russia right where we want him. I'd like for you to hit Sweden this turn. If so, I'm in Norway and you will be in Sweden next year.\n2 FRANCE -> GERMANY: Thanks, but you're good for now. I'll let you know when I am going to move Mun forward. You can then maybe relocate to beautiful downtown Paris.\n3 GERMANY -> FRANCE: Sounds good. Let me know if you want me to move back BUR, since the Russian threat has been avoided.\n4 FRANCE -> GERMANY: I will do Berlin into the Baltic. Good luck!\n5 GERMANY -> FRANCE: Germany will support your moves this turn. I think we can both benefit from our positions. What do you think about moving your army in Norway to attack Sweden?",
+        "unit_center": "units: AUSTRIA: ; ENGLAND: ; FRANCE: A YOR, F ENG, A BUR, A MAR, F NTH, F NWG, F TYS, F SPA/SC; GERMANY: A BER, A DEN, A RUH, F KIE, A MUN, F HEL; ITALY: F WES, A TUS, F ROM; RUSSIA: F SWE, F RUM, A VEN, A SIL, A LVN, F BAL, A PRU, F SKA, A BOH, A TYR, F NWY; TURKEY: A SER, F EAS, F ION, A ALB, F APU, A NAP\ncenters: AUSTRIA: ; ENGLAND: ; FRANCE: BRE, MAR, PAR, POR, SPA, EDI, LVP, LON; GERMANY: BER, KIE, MUN, BEL, HOL, DEN; ITALY: ROM, TUN, NAP; RUSSIA: MOS, SEV, STP, WAR, RUM, SWE, BUD, VIE, NWY, TRI, VEN; TURKEY: ANK, CON, SMY, BUL, GRE, SER"
+    }
+]

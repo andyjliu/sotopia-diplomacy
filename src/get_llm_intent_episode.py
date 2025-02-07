@@ -61,7 +61,7 @@ def main():
         formatted_episode.pop('env')
         formatted_episode.pop('dialogue')
         intent_episodes.append(formatted_episode)
-
+    print(len(formatted_episodes))
     with open(args.tgt_path, 'w') as f:
         json.dump(formatted_episodes, f, indent = 4)
 

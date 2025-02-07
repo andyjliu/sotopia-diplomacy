@@ -8,7 +8,7 @@ class Template:
 
     unit_instruction = '''This is the information of the countries' units, and you will playing as the given country as you act: \n units: '''
 
-    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues. \n'''
+    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues. \n\n'''
     @staticmethod
     def get_format_scenario_template_goals(phase, countries, game_id):
         c1 = countries[0]
@@ -82,6 +82,20 @@ class Template:
         prompt = f"{Template.previous_dialogue_instruction}: {c1} and {c2}: \n"
         prompt += get_previous_phase_finetune_format(game_dir, game_id, phase, countries) + "\n"
         prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
+        agent_goals_list = []
+        agent_goals_list.append(f"Negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. {Template.finetune_instruction}")
+        agent_goals_list.append(f"Negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. {Template.finetune_instruction}")
+        return prompt, agent_goals_list
+    
+    @staticmethod
+    def get_finetune_scenario(phase, countries, game_id, game_dir):
+        from profile_utils import get_full_finetune_format
+        c1 = countries[0]
+        c2 = countries[1]
+        # prompt = f"{Template.previous_dialogue_instruction}: {c1} and {c2}: \n"
+        prompt = f"{Template.finetune_instruction}"
+        prompt += get_full_finetune_format(game_dir, game_id, phase, countries)
+        # prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
         agent_goals_list = []
         agent_goals_list.append(f"Negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. {Template.finetune_instruction}")
         agent_goals_list.append(f"Negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. {Template.finetune_instruction}")

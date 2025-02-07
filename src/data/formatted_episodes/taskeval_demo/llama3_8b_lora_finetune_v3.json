@@ -1,0 +1,1256 @@
+[
+    {
+        "game_id": "6685",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA94ZRF2C9J8F3G0Y26CT7",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "12875",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA958J34TGKCNRPE8ZVVB9",
+        "intent_dialogue": "0 ITALY -> FRANCE: I think your plan with NAP/Tun-s-adr-ion Tri-s-ser is great, considering our board position. However, I'm a bit concerned about the dislodging of Italy's units in the Ionian Sea. How do you plan to secure those units, especially if Turkey decides to take action?\n1 FRANCE -> ITALY: I like the plan, and I think it's a good idea to secure those units. I was thinking of moving MAO to WES and supporting TRI with ADR, and then supporting VIE with TYR. What do you think?\n2 FRANCE -> ITALY: I like the idea of supporting TRI with ADR and VIE with TYR. However, I'm a bit concerned about the possibility of Turkey moving into the Ionian Sea and cutting off our units there. Have you thought about moving some of our units to ALB to secure that area and prevent Turkey from getting a foothold? Additionally, what do you think about moving some of our units to NAP to support our fleet and potentially cut off Italy's supply lines?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "26472",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA93Q2REENSCAXN6DTW74C",
+        "intent_dialogue": "0 TURKEY -> GERMANY: I'm glad you're considering bouncing England at Warsaw, but it's crucial that we support each other's moves to achieve our goals. I think it would be beneficial for me to move my unit to Sevastopol this turn, as it would put pressure on England and potentially draw them away from your attack. What do you think about this plan?\n1 GERMANY -> TURKEY: I like your idea of moving to Sevastopol, it would definitely put pressure on England. I think it would be a good idea to support each other's moves. I was thinking of moving to Munich, but if you're willing to support me at Moscow, I could reconsider. Let's talk about a plan to work together.\n2 GERMANY -> TURKEY: I think moving to Sevastopol is a great idea. It will definitely put pressure on England. I'll consider moving to Munich, but I'd like to hear more about your plan to support each other's moves. Can you elaborate on how we can work together to achieve our goals?\n3 GERMANY -> TURKEY: I think that's a great idea. Moving to Sevastopol would definitely put pressure on England and give us an opportunity to work together. I was thinking of moving to Munich, but if you're willing to support me at Moscow, I could reconsider. Let's talk about a plan to work together. What do you think about supporting my move to Munich with your units in Ukraine?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "3516",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA95YQ2RD0TPFR7F61CVYZ",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: I appreciate your understanding of my previous message. How about we focus on the current situation? I'm looking at my units and I see that my only army left is in Smyma. I was thinking of moving it to Con or Smy. What are your thoughts on this? Are there any other moves you'd like to make to strengthen our position?\n1 RUSSIA -> TURKEY: I'm glad we're discussing our moves. I was thinking of moving Sev to support Rum, and then cutting support to Gal. What are your thoughts on this?\n2 RUSSIA -> TURKEY: I'm happy to discuss your army movements. As for your proposal, I have an idea that could benefit both of us. What do you think about supporting Con-Bul instead of Smy-Con or Smy-Smy?\n3 RUSSIA -> TURKEY: That's an interesting idea. I was thinking of moving Sev to support Rum, and then cutting support to Gal. What do you think about supporting Con-Bul instead of Smy-Con or Smy-Smy? We could use Con-Bul to cut off Italy's potential attacks on Rum and create a strong position for ourselves.\n4 RUSSIA -> TURKEY: I like your idea of supporting Con-Bul instead of Smy-Con or Smy-Smy. It could be a strong move for us. I was thinking of moving Sev to support Rum, and then cutting support to Gal. What do you think about that? Also, are you sure you don't want to take Aeg with support?\n5 TURKEY -> RUSSIA: I think your idea of supporting Con-Bul is a good one. It could help us cut off Italy's potential attacks on Rum and create a strong position for ourselves. However, I'd like to discuss some other options as well. What do you think about moving Sev to support Rum, and then cutting support to Gal? It could be a strong move for us.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38101",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA944C8RFXJ19YYC6FY78G",
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: Yeah, I'm still debating what to do here. I probably need to cover Constantinople, so that may change my plans...\n1 TURKEY -> AUSTRIA: I was thinking of supporting your army in Rumania, and also supporting Smyrna. What are your thoughts on that?\n2 AUSTRIA -> TURKEY: I think supporting Rumania would be a good idea. It would help me gain a foothold in the Balkans and give me a better chance of expanding into Serbia or Bulgaria in the future. Additionally, supporting Smyrna would help to secure your position in the Aegean and prevent any potential English or Russian threats in that region.\n3 TURKEY -> AUSTRIA: I was thinking of supporting your army in Rumania, and also supporting Smyrna. What are your thoughts on that?\n4 AUSTRIA -> TURKEY: I like your idea of supporting my army in Rumania and Smyrna. It would definitely help to secure my position in the Balkans and prevent any potential English or Russian threats in that region. How do you think we can work together to achieve our goals in the next few turns?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "149658",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA95M40693NPNNEWFF0CN6",
+        "intent_dialogue": "0 ITALY -> RUSSIA: Russia, are you able to support me in holding Trieste this turn? It would be beneficial for both our boards if we can coordinate our movements.\n1 RUSSIA -> ITALY: I think supporting you in holding Trieste is a great idea, but I'd like to discuss some other options as well. Italy's moves this turn are a bit uncertain, so I'd like to explore some other possibilities\n2 ITALY -> RUSSIA: I understand your concerns, Russia. Let's discuss the options. If you're willing to support me in holding Trieste, I can consider moving my army from Tys to Galicia to help you out with Turkey.\n3 RUSSIA -> ITALY: I like your idea of moving your army from Tys to Galicia to help me out with Turkey. However, I'd like to propose an alternative. Since Italy is still uncertain about its moves this turn, I think it would be beneficial to coordinate our movements with Italy. Perhaps we could discuss some options with Italy this turn, like supporting your army in holding Trieste or moving one of my armies to support your army in Galicia. What do you think?\n4 ITALY -> RUSSIA: I'm glad we're discussing this, Russia. I think supporting me in holding Trieste would be a great idea. Let's explore the options. If we can coordinate our movements, we might be able to take some supply centers from Turkey. What do you think about moving your army from Bud to Ser?\n5 RUSSIA -> ITALY: I like your idea of moving your army from Tys to Galicia to help me out with Turkey. However, I'd like to propose an alternative. Since Italy is still uncertain about its moves this turn, I think it would be beneficial to coordinate our movements with Italy. Perhaps we could discuss some options with Italy this turn, like supporting your army in holding Trieste or moving one of my armies to support your army in Galicia. What do you think about moving my army from Bud to Ser?\n6 ITALY -> RUSSIA: I think that's a great idea, Russia. Let's coordinate our movements with Italy this turn. If we can support each other, we might be able to take some supply centers from Turkey. What do you think about moving my army from Bud to Ser, and then moving one of your armies to support mine in Galicia?\n7 RUSSIA -> ITALY: Italy, I think supporting Russia's move to Serbia would be a good idea this turn. It would help us both gain a strong foothold in the Balkans and potentially put pressure on Turkey. What do you think about this move?\n8 RUSSIA -> ITALY: Italy, I think moving your army from Tys to Galicia to support Russia's move to Serbia would be a good idea this turn. It would help us gain a strong foothold in the Balkans and potentially put pressure on Turkey. What do you think about this move?\n9 ITALY -> RUSSIA: I think moving my army from Tys to Galicia to support Russia's move to Serbia would be a good idea this turn. It would help us gain a strong foothold in the Balkans and potentially put pressure on Turkey. What do you think about this move?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "22828",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA956DPQ74XNTD6XJZZHBV",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: I'm not sure about supporting your move to Bur. Can you tell me more about your plan and how it will benefit Germany?\n1 ENGLAND -> GERMANY: I'm not sure about supporting your move to Bur. Can you tell me more about your plan and how it will benefit Germany?\n2 ENGLAND -> GERMANY: I agree with your plan to support Burgundy to Ruhr. This will confuse the hell out of people trying to make sense of our relationship! I'm also thinking of supporting your move into Brest. What do you think about that?\n3 GERMANY -> ENGLAND: I'm not sure about supporting your move to Bur. Can you tell me more about your plan and how it will benefit Germany? I've been thinking about building an army in Berlin and moving it to Prussia. What do you think about that?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38101",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA943H9JY54F16QVSDSGJW",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: I'm happy to work with you again, Germany. However, I need to make sure that I'm not getting stabbed again. Can we discuss a possible deal where I get Sweden and you get Belgium? I'm also willing to attack the English Channel if it means you can take Belgium back. What do you think?\n1 GERMANY -> ENGLAND: I'm happy to work with you too, England. However, I think we should focus on taking down France together before we worry about each other's centers. If you're willing to support me in taking Belgium back, I can give you Sweden. But let's make sure we're both on the same page and not stab each other in the back.\n2 ENGLAND -> GERMANY: I'm glad we're talking again, Germany. I think your idea of taking down France together is a great one. However, I'm still a bit cautious about giving you Belgium without getting something in return. How about we compromise and you give me Sweden, and in return, I'll support your attack on Belgium from Ruhr? That way, we both get what we want and can focus on taking down France.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "5604",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA943AYZNBVW60MZQV5Y03",
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: Thank you for asking me to support Galicia to Warsaw. I'm glad to be of help. As for supporting Venetia to Piedmont, it's an interesting idea, but I'd like to explore other options. Perhaps we could discuss supporting other provinces that would benefit both our positions?\n1 AUSTRIA -> TURKEY: I'm glad we're discussing supporting other provinces. How about supporting Trieste to Venice? It would give us more influence in the Mediterranean and put pressure on Italy.\n2 TURKEY -> AUSTRIA: I think supporting Trieste to Venice is a good idea. It would put pressure on Italy and give us more influence in the Mediterranean. What do you think about supporting Galicia to Warsaw this turn, considering your previous concerns about Austria's intentions?\n3 AUSTRIA -> TURKEY: I think supporting Trieste to Venice is a good idea. It would put pressure on Italy and give us more influence in the Mediterranean. I'm also open to supporting Galicia to Warsaw if it would benefit both our positions.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "42968",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA95EZNWMR6GAVW1BYG4JM",
+        "intent_dialogue": "0 RUSSIA -> GERMANY: Germany, I'm glad we're talking. I think we both know that France is being quite inflexible. I'd like to propose a different plan for this turn. If you're willing to give me support into Galicia, I can help you take back Munich and then we can work together to take out Italy. What do you think?\n1 RUSSIA -> GERMANY: Germany, I understand your concerns about France. I'd like to propose a different plan for this turn. If you're willing to support me into Galicia, I can help you take back Munich and then we can work together to take out Italy. Additionally, if you're not planning to move into Sweden this turn, I'd be happy to support you into Denmark instead. What do you think?\n2 GERMANY -> RUSSIA: I'm open to discussing a different plan. However, I'd like to clarify that I'm not willing to give up on Munich without a fight. I've worked hard to build up my forces there and I'm not going to let France take it from me without a struggle. Can you tell me more about your proposal and how it would benefit me?\n3 RUSSIA -> GERMANY: Germany, I understand your concerns about France, but I think we can work together to take out Italy and then focus on our own board position. If you're willing to support me into Galicia, I can help you take back Munich and then we can work together to take out Italy. Additionally, if you're not planning to move into Sweden this turn, I'd be happy to support you into Denmark instead. What do you think?\n4 RUSSIA -> GERMANY: Germany, I understand your concerns about France, but I think we can work together to take out Italy and then focus on our own board position. If you're willing to support me into Galicia, I can help you take back Munich and then we can work together to take out Italy. Additionally, if you're not planning to move into Sweden this turn, I'd be happy to support you into Denmark instead. What do you think?\n5 GERMANY -> RUSSIA: I'm not sure I'm comfortable with your proposal to help you take out Italy. I think we should focus on our own board position and see how things play out. What do you think about supporting me into Denmark instead?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94VXM3ZW1YQ2A2RTM8RV",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "7785",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA95J7TCP4512P6VZBJGCF",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "17131",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA93YFX6MSCG6GB4M6H5Y5",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "26100",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA95G7D2RNSYDM13CY1XSE",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: Hey Italy, I noticed you're planning to attack Smyrna this turn. I think it's a good move, but I have to ask, have you considered the implications on my board position? I'm trying to think of ways to take back Tyrolia, but it's not looking too promising. Maybe we can discuss some joint moves that would benefit both of us?\n1 ITALY -> AUSTRIA: Austria, I agree that attacking Smyrna is a good move, but I also want to discuss our long-term strategy. I think we should focus on taking out France and then work together to clean up Russia and Turkey. What do you think about sending some units west to take on France and then working for a 2-way with Germany?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "3846",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA94AQKKAVZG3FJP9EST22",
+        "intent_dialogue": "0 AUSTRIA -> GERMANY: Hey Germany, I noticed that you're trying to take Moscow this turn. I think it would be beneficial for both of us if you could also take Sevastopol and assist me in taking Greece. It would give us a strong foothold in the Balkans and put pressure on Italy. What do you think?\n1 GERMANY -> AUSTRIA: I think it's a good idea to take Sevastopol this turn and assist Austria in taking Greece. It would give us a strong foothold in the Balkans and put pressure on Italy. Additionally, it would also allow us to take control of the Black Sea and potentially disrupt Austria's supply lines.\n2 AUSTRIA -> GERMANY: I'm glad to hear that you're on board with taking Sevastopol and assisting me in taking Greece. However, I was thinking that we could also use this opportunity to take out Italy's fleet in the Ionian Sea. If we can do that, it would give us a huge advantage and put Italy in a tough spot. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "12875",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA9584S9DKK2K1A35P9JF6",
+        "intent_dialogue": "0 GERMANY -> FRANCE: I like your idea of supporting Munich this turn. It's a good way to pressure Italy and also give us a chance to gain more influence in the board. What do you think about it?\n1 FRANCE -> GERMANY: I think supporting Munich is a good idea, but I'd like to propose an alternative move that could benefit both our boards. How about we move MAR to PIE and then ALB to GRE? This would give us a strong presence in the Mediterranean and put pressure on Italy, while also supporting your goal of gaining influence in the board.\n2 GERMANY -> FRANCE: I think your proposal is a good one, but I'd like to add a twist to it. What if we also move A KIE to MUN and then DEN to BAL? This would give us a strong presence in the north and put pressure on Russia, while also supporting your goal of gaining influence in the board.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "132667",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA95CACSQ7YQYSGKQY8Y7M",
+        "intent_dialogue": "0 TURKEY -> ITALY: Now that we've discussed the possibility of disbanding fleets, I'm open to ideas on how we can work together to achieve our goals. What do you think about supporting each other in our current positions? I'd be willing to move my army to support you in Ionian, but I need to know that you're willing to work with me to ensure our mutual benefit.\n1 ITALY -> TURKEY: I understand your point about supporting each other in our positions. I'm willing to work with you, but I need to clarify that I'm not comfortable with your fleets reaching Ionian. Can we discuss alternative ways to disband your fleets? I'm open to ideas.\n2 TURKEY -> ITALY: I see your concerns about my fleets reaching Ionian, and I understand where you're coming from. However, I'd like to propose an alternative solution. What if we work together to disband the fleet in Aegean, and then I move my army to support you in Ionian? This way, you'll have a stronger presence in the region, and I'll be able to focus on my own board position. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "59685",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA952MEAJ7TRG3E7H5AQ4E",
+        "intent_dialogue": "0 TURKEY -> ITALY: It seems that you have proposed a plan to take out Austria quickly and then turn our attention towards England-France. I like the idea of striking quickly and decisively. I think we should try to take out Greece instead of Budapest, as you suggested. That way, we can gain more territory and put pressure on Austria. What do you think?\n1 ITALY -> TURKEY: ok perfect. Lets do it the way you proposed it.\n2 TURKEY -> ITALY: I agree with your plan, let's go with the moves you suggested. ION-GRE, AEG S ION-GRE, RUM-BUD, SER S RUM-BUD, TRI-VIE, GAL S TRI-VIE. This way we have a chance at taking all of Austria's SC in one shot. Odds are not all will fall but 3 for sure.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76247",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA96233PHTCVM797VRAA60",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "100238",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA95X735J1329S2SZNVMHT",
+        "intent_dialogue": "0 GERMANY -> FRANCE: I will think about it... I need to consider the options and see what is best for Germany. Can you tell me more about your plan to attack England and how it would benefit me?\n1 FRANCE -> GERMANY: Germany, I think it's good that you're considering the options. As France, I'm willing to work with you to achieve our shared goal of taking out Turkey and Austria. However, I must admit that I'm not entirely sold on the idea of attacking England. England is a strong country with a lot of units, and I think we should focus on taking out Turkey and Austria first. What do you think? Can we discuss some alternative strategies that would benefit both of our boards?\n2 FRANCE -> GERMANY: I understand your concerns about attacking England, but I still think it's a good idea to attack them this turn. If we can take out England, we can gain a significant advantage and put pressure on Turkey and Austria. Plus, we can use England's units to our advantage and make it harder for them to defend themselves. What do you think?\n3 FRANCE -> GERMANY: Germany, I understand your concerns about attacking England, but I still think it's a good idea to attack them this turn. If we can take out England, we can gain a significant advantage and put pressure on Turkey and Austria. Plus, we can use England's units to our advantage and make it harder for them to defend themselves. What do you think? Do you have any other ideas to share? We can work together to come up with a plan that benefits both of our boards.\n4 GERMANY -> FRANCE: I'm willing to consider attacking England, but I need to know more about your plan and how it will benefit Germany. Can you explain more about how we can work together to take out Turkey and Austria? Also, what do you think about the idea of moving my army to Bohemia and supporting hold at Warsaw? Would that be a good move for Germany?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "12875",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA958MYWCSQV8Y7N98EA52",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "65732",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA93NWVC2D2YPK9YY0B57W",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "22659",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA9613CM89TRG9SVN8P611",
+        "intent_dialogue": "0 ITALY -> FRANCE: I appreciate your willingness to support hold Venice, France. However, I would like to discuss the possibility of a more aggressive move that can benefit both our positions. With the current situation, I think it would be a good idea for us to work together to take out Germany and then focus on each other. What are your thoughts on this?\n1 FRANCE -> ITALY: I'm glad you're thinking of a more aggressive move, Italy. However, I'm not sure that attacking Germany is the best option for us right now. Germany is a powerful country and we don't have the resources to take on both Germany and Russia at the same time. Maybe we could focus on weakening Italy instead, and then we can reassess our options.\n2 FRANCE -> ITALY: I'm glad we're discussing a more aggressive move, Italy. However, I'm still not convinced that attacking Germany is the best option for us. I think we should focus on weakening Italy instead, and then we can reassess our options. How do you think we can do that?\n3 FRANCE -> ITALY: I'm open to discussing a more aggressive move, Italy. However, I'm still concerned about the risks of attacking Germany. Can you provide more information on how you plan to weaken Italy and what benefits you think this will bring to our alliance?\n4 ITALY -> FRANCE: I think you're being a bit too cautious, France. Germany is indeed a strong country, but they're not invincible. With our combined forces, I believe we can take them down and then focus on Russia. What do you think about this strategy?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "77086",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA95MN5YJ7VC2QY30Z7GCT",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: TURKEY, I'm glad we agree that France and England must be stopped. I think England is indeed the biggest threat, and I'm planning to support you to Aegean this turn. I believe it would be beneficial for our board position if we could coordinate our moves to take advantage of France's potential retreat from England. What do you think?\n1 TURKEY -> RUSSIA: I appreciate your support to Aegean, but I'm not sure if it's the best move for us this turn. I think we should consider other options to take advantage of France's potential retreat from England. What do you think? Can you think of any other moves that could benefit us?\n2 RUSSIA -> TURKEY: I think it's a good idea to support your move to Aegean this turn, and I'd be happy to provide additional support if needed. Let's coordinate our moves to take advantage of France's potential retreat from England.\n3 RUSSIA -> TURKEY: I think it's a good idea to support Turkey's move to Aegean this turn, and I'd be happy to provide additional support if needed. Let's coordinate our moves to take advantage of France's potential retreat from England.\n4 TURKEY -> RUSSIA: I think supporting Aegean is a good idea, but I also think we should consider other options to take advantage of France's potential retreat from England. Can you think of any other moves that could benefit us? Perhaps we could also discuss the possibility of Italy moving into Greece and preparing a convoy into Turkey, then we could move from Rum to Serbia. What do you think?\n5 RUSSIA -> TURKEY: I think supporting Turkey's move to Aegean is a good idea, and I'd be happy to provide additional support if needed. Let's coordinate our moves to take advantage of France's potential retreat from England. What are your thoughts on moving from Rum to Serbia?\n6 TURKEY -> RUSSIA: I think supporting Aegean is a good idea, but I'm not sure if it's the best move for us this turn. I think we should consider other options to take advantage of France's potential retreat from England. Can you think of any other moves that could benefit us? Perhaps we could also discuss the possibility of Italy moving into Greece and preparing a convoy into Turkey, then we could move from Rum to",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "15072",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA93TVPH1AX3VM8A5QXZG5",
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: Austria, I appreciate your willingness to support me to Vienna from Galicia, but I think I have a better alternative. How about you support me to Budapest instead? It would really help me out and put some pressure on Italy.\n1 AUSTRIA -> RUSSIA: That's a good idea, Russia. Supporting you to Budapest could put some pressure on Italy. What's in it for me if I do that?\n2 RUSSIA -> AUSTRIA: Austria, I think supporting me to Budapest is a great idea. It would not only help me out but also put pressure on Italy. I'm willing to offer you some support in return, perhaps in the Balkans. Let's discuss the details.\n3 AUSTRIA -> RUSSIA: That's an interesting proposal, Russia. I'm willing to support you to Budapest, but I need to think about the implications for my own board position. Can you give me some more information about how you plan to use the army in Budapest to pressure Italy?\n4 RUSSIA -> AUSTRIA: Austria, I'm glad you're considering supporting me to Budapest. I think it would really help me out and put some pressure on Italy. In return, I'm willing to offer you some support in the Balkans, perhaps in Serbia or Bulgaria. What do you think?\n5 AUSTRIA -> RUSSIA: That's a good proposal, Russia. I like the idea of supporting you to Budapest. But I need to think about the implications for my own board position. How do you plan to use the army in Budapest to pressure Italy? And what kind of support are you offering me in return?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "49375",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA95KDHJAWQM9TZ5RN18YG",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: Hi Russia, what are your plans for this turn? Are you willing to bounce Bulgaria and Serbia? I'm open to discussing some potential alliances.\n1 RUSSIA -> AUSTRIA: I'm happy to discuss possible alliances with Austria, but I want to make sure that we're on the same page regarding the current situation. With our forces, we can easily bounce Bulgaria and Serbia. What do you think about that? Can you bounce Black Sea?\n2 AUSTRIA -> RUSSIA: Thanks for your honesty, Russia. I'm glad we're on the same page regarding Bulgaria and Serbia. However, I'm still a bit concerned about your plans with Germany and England. Can you tell me more about your strategy there?\n3 RUSSIA -> AUSTRIA: Actually I still have good relations with Russia. Probably won't last long though.\n4 AUSTRIA -> RUSSIA: That's good to know. So, Russia, what do you think about Germany and England's moves? Are you concerned about their potential alliance?\n5 RUSSIA -> AUSTRIA: I think it's good that we're bouncing Bulgaria and Serbia. What do you think about Italy's fleet in the Mediterranean? Should we try to take advantage of their situation or focus on Germany and England?\n6 AUSTRIA -> RUSSIA: I think it's a good idea to bounce Bulgaria and Serbia, as we discussed earlier. What do you think about Italy's fleet in the Mediterranean? Should we try to take advantage of their situation or focus on Germany and England?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA94WVBABSRQK6X7YTE7RZ",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA94VQXDGEP1NTK5V1DGY1",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "82362",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA93VS46YXHA39TVP4ZVD6",
+        "intent_dialogue": "0 GERMANY -> FRANCE: Well, I guess he retreated nowhere. I'll support your fleet to London in the spring if you allow me to take Edinburg in the fall. Sound agreeable?\n1 FRANCE -> GERMANY: I'd love to take Edinburg in the fall, but I need to focus on Italy right now. Can we discuss possible ways to work together to take out England and then focus on the Italian threat? Perhaps we can work out a deal where I support your moves in the north in exchange for your help in the west?\n2 GERMANY -> FRANCE: I understand your concerns about Italy, but I think we should focus on taking out England first. If we can eliminate England, we can then turn our attention to Italy. I'm willing to work with you to take out England, but I need you to agree to support my moves in the north. Once England is gone, we can reassess our options and see how we can work together to deal with Italy.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "101921",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA954Q4RRPQZ9BWG8JEX97",
+        "intent_dialogue": "0 AUSTRIA -> TURKEY: I agree with your previous message, ION to TYR Sea would be a good move. I think we should focus on taking MARS before making any significant move into the MED. I also agree that taking over Germany's centers would be beneficial for us. However, I think it would be better to wait for a few turns and see how the situation develops before making any moves. Can we discuss a possible plan for future turns?\n1 TURKEY -> AUSTRIA: I agree with your previous message, ION to TYR Sea would be a good move. I think we should focus on taking MARS before making any significant move into the MED. I also agree that taking over Germany's centers would be beneficial for us. However, I think it would be better to wait for a few turns and see how the situation develops before making any moves. Can we discuss a possible plan for future turns?\n2 AUSTRIA -> TURKEY: Let's think about our next move. I think it would be beneficial for us to focus on taking MARS and then we can think about our next step. What are your thoughts on that?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "13013",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA9518QQ3GS7DB246TS4KF",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: So are you supporting Sil > War? I did promise, so I will if you need it. I guess we should work together to take out Russia, but I'm not sure what your plans are. Let's discuss our options.\n1 ENGLAND -> GERMANY: I think so, I've been thinking about emptying Hol, Bel, Pic (and maybe North Sea), to give us more firepower where needed. But maybe it's too early for that.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "65732",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA93NDYMSSDS8YGK7J214F",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: I agree to support you into Berlin, but I think it's a good idea to also support Ukraine. This way, we can get a center either way and put pressure on France. What do you think?\n1 ENGLAND -> GERMANY: I agree to support Ukraine as well, but I'd like to discuss some other options. What do you think about taking Belgium back from me this turn? It could give us more flexibility in the long run.\n2 GERMANY -> ENGLAND: I'm not covering anything up, WT is alright so far, but I'm really not attacking you.\n3 ENGLAND -> GERMANY: I'm not sure about that. I think I'd rather focus on getting my built done this turn. How do you feel about that?\n4 GERMANY -> ENGLAND: I understand your concerns about taking Belgium back, but I think it's a good idea to focus on building our alliance with England and France. If we can work together, we can put more pressure on Russia and Italy. What do you think about supporting England's build this turn? It could give us more options for future moves.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA964HC4A0JPXMSMTE02AQ",
+        "intent_dialogue": "0 GERMANY -> FRANCE: Germany, I agree with your previous message about Turkey. His moves do look suspicious. I think we should work together to take advantage of Russia's position. I'd like to support-hold Berlin this turn. What do you think?\n1 FRANCE -> GERMANY: I agree with your previous message about Turkey. His moves do look suspicious. I think we should work together to take advantage of Russia's position. I'd like to support-hold Berlin this turn. What do you think?\n2 GERMANY -> FRANCE: I think we should push our fleet into the Baltic this turn, Germany. It would be beneficial for our position and put pressure on Russia. What are your thoughts?\n3 FRANCE -> GERMANY: I agree with your previous message about Turkey. His moves do look suspicious. I think we should work together to take advantage of Russia's position. I'd like to support-hold Berlin this turn. What do you think?\n4 GERMANY -> FRANCE: I think we should support-hold Berlin this turn, Germany. It would be beneficial for our position and put pressure on Russia. What are your thoughts?\n5 FRANCE -> GERMANY: I'd like to support your move into Norway. It would be beneficial for our position and put pressure on Russia. What do you think, Germany?\n6 GERMANY -> FRANCE: I agree with your previous message about Turkey. His moves do look suspicious. I think we should work together to take advantage of Russia's position. I'd like to support-hold Berlin this turn. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "3846",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA94A9QYP5YZ9XYDABVMF0",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: I'm considering supporting your move into Belgium. It would give you a build, but it would also let you sail into Holland. Even if you don't, you can probably take Belgium or Holland the following season. His key is to remove units from the North Sea coast.\n1 GERMANY -> ENGLAND: That's a good point, England. I think I can work with that. If I take Belgium, I'll make sure to support you in your plans for Italy. How do you think we can make that happen?\n2 ENGLAND -> GERMANY: I think supporting your move into Belgium would be a good idea for both of us. It would give you a build and also put pressure on France, who is already in a difficult position. Additionally, if you take Belgium, you can focus on building up your forces in the North Sea and potentially take Holland or Belgium next turn. What do you think?\n3 GERMANY -> ENGLAND: I think supporting my move into Belgium would be a good idea for both of us. It would give me a build and also put pressure on France, who is already in a difficult position. Additionally, if I take Belgium, I can focus on building up my forces in the North Sea and potentially take Holland or Belgium next turn. What do you think?\n4 ENGLAND -> GERMANY: I'm still considering supporting your move into Belgium. It would give you a build, but it would also let you sail into Holland. Even if you don't, you can probably take Belgium or Holland the following season. His key is to remove units from the North Sea coast. What do you think? Are you willing to support my plans for Italy in exchange?\n5 ENGLAND -> GERMANY: I think Germany's plan is a good one. Supporting their move into Belgium would give them a build and put pressure on France, who is already in a difficult position. Additionally, if Germany takes Belgium, they can focus on building up their forces in the North Sea and potentially take Holland or Belgium next turn. I'm willing to support their plan, but I also want to make sure we're not leaving ourselves vulnerable to Italy's moves. How do you think we can balance our interests with Germany's? \n6 GERMANY -> ENGLAND: I think supporting your move into Belgium would be a good idea for both of us. It would give me a build and also put pressure on France, who is already in a difficult position. Additionally, if I take Belgium, I can focus on building up my forces in the North Sea and potentially take Holland or Belgium next turn. What do you think? Are you willing to support my plans for Italy in exchange?\n7 ENGLAND -> GERMANY: I agree with Germany, supporting Germany's move into Belgium would be a good idea for both of us. It would give them a build and put pressure on France, who is already in a difficult position. Additionally, if Germany takes Belgium, they can focus on building up their forces in the North Sea and potentially take Holland or Belgium next turn. I'm willing to support their plan, but I also want to make sure we're not leaving ourselves vulnerable to Italy's moves. How do you think we can balance our interests with Germany's? \n8 GERMANY -> ENGLAND: I am willing to support your move into Belgium. It seems like a good opportunity for both of us to gain a build and pressure France. I am also interested in discussing how we can work together to take Italy out of the game. What do you think is the best way to achieve this goal?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76400",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA95B4MJGFQSXCCMA16P0J",
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: Did you think about our previous conversation and are you willing to play a move that benefits my board position? I'm looking for a way to get into Moscow and I think you could help me with that.\n1 AUSTRIA -> TURKEY: I appreciate your proposal, and I'm willing to cooperate with you to achieve our mutual benefits. However, I need to consider the best possible outcome for my board position as Austria. Can you provide more details on how you plan to attack Moscow and what you expect from me in return?\n2 TURKEY -> AUSTRIA: I understand that you want to get into Moscow and I'm willing to help you with that. However, I need to know more about your plan and what you're willing to offer in return. Can you provide me with more details on how you plan to attack Moscow and what kind of support you're looking for from me?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "1928",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA94QCDFHQYJEKKJHDY2ZB",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "3516",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA95XZ1TVP2YPZD5B50VMK",
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: I'm willing to support you this turn, Austria. How about you move Gal to Rum and I'll support Moscow to Sev with Ukraine? That way, Sev can tap BLA safely. What do you think?\n1 AUSTRIA -> RUSSIA: I appreciate your offer, Russia. However, I'm not sure if moving Gal to Rum is the best option for me this turn. Can you explain why you think this move would benefit me?\n2 RUSSIA -> AUSTRIA: Given the situation, I think it would be beneficial to support Gal's move to Rum this turn. By doing so, we can secure a strong position in the south and limit Austria's options for expansion. Additionally, it would be a good idea to move Mos to Sev with Ukr support, as this would allow us to tap BLA safely and secure a crucial supply center. What are your thoughts on this, Austria?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "149658",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA95KKNVWFA1BDVPNDME7C",
+        "intent_dialogue": "0 GERMANY -> FRANCE: I'd like to discuss our move into Kiel, I have a plan to support you from Hol, so you're safe there. BAL attacks Liv and Boh attacks Gal, so that no matter which way Russia attacks, support will be cut.\n1 FRANCE -> GERMANY: I appreciate your plan to support Kiel, Germany. However, I'm concerned that if we hold Kiel, we might be giving Russia an opportunity to focus on supporting its own army. Would it be possible to consider moving some of our armies to other locations to put pressure on Russia and Italy? Perhaps we could also discuss our plan for supporting Austria and how we can work together to block Italy's expansion.\n2 GERMANY -> FRANCE: I'm glad you're considering the broader strategy. I think supporting Kiel is a good idea, but I also agree that we should keep an eye on Russia and Italy. Perhaps we could move some armies to other locations to put pressure on them? What do you think?\n3 FRANCE -> GERMANY: I think we're on the right track here. Germany, would it be possible for you to provide some support for Austria, perhaps by moving your army from GAL to TRI? This would give Austria a stronger position and allow us to focus on our own expansion.\n4 GERMANY -> FRANCE: I understand your concerns about Russia and Italy, but I think supporting Kiel is still a good idea. If we can ensure that our armies are in position to support each other, we can still put pressure on them. How do you think we can achieve that?\n5 FRANCE -> GERMANY: I appreciate your plan to support Kiel, Germany. However, I'm concerned that if we hold Kiel, we might be giving Russia an opportunity to focus on supporting its own army. Would it be possible to consider moving some of our armies to other locations to put pressure on Russia and Italy? Perhaps we could also discuss our plan for supporting Austria and how we can work together to block Italy's expansion.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "59685",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA952WFFJH8H5X0B4S1DY8",
+        "intent_dialogue": "0 ITALY -> TURKEY: Turkey, I noticed that you're trying to bounce France in Tunis. That's a good move. I think it would be beneficial for both of us if Turkey could support you in that effort. Would you be willing to move Aeg into Ionian to help with that?\n1 ITALY -> TURKEY: I'm glad you're thinking of supporting me in bouncing France in Tunis, Turkey. How about we also move Munich to support Berlin into Kiel? This way, we can create a strong presence in the North and potentially cut off France's supply lines.\n2 TURKEY -> ITALY: I like your idea of moving Aeg into Ionian to help with bouncing France in Tunis. However, I would like to propose an alternative. What if we move Aeg into Smyrna instead? This way, we can create a strong presence in the East and potentially cut off Russia's supply lines.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38684",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA93M2A0JT2VGN6D4XAN9B",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: I think it would be a good idea to focus on building up your position in the North. With your army in Munich, you could potentially support my move into Vienna, which would give us a strong presence in the center of the board. What do you think?\n1 ENGLAND -> FRANCE: France, I think that's a great idea! Building up our position in the North could definitely give us a strong presence on the board. I'm also interested in supporting your move into Vienna, but I need to think about how it would impact my own board position. Can you tell me more about your plans for that move?\n2 FRANCE -> ENGLAND: I think we should work together to secure Munich and Vienna. With your army in Munich, you could support my move into Vienna, which would give us a strong presence in the center of the board. What do you think about building up our position in the North and supporting each other's moves?\n3 ENGLAND -> FRANCE: That sounds like a good plan, France. I'm willing to support your move into Vienna, but I'd like to discuss some details. Can you tell me more about your plans for Munich and how that would impact my own board position?\n4 FRANCE -> ENGLAND: I think it would be a good idea to move your army from Munich to Vienna, supporting my move and giving us a strong presence in the center of the board. What do you think?\n5 FRANCE -> ENGLAND: As soon as you have southern fleets, I will move NAO west to Russia. I will probably stick to army builds now.\n6 FRANCE -> ENGLAND: I think moving NAO west to Russia is a good idea. However, I'm concerned about England's potential moves. We should keep an eye on their armies and be prepared to adapt our strategy accordingly.\n7 ENGLAND -> FRANCE: Let's focus on building up our position in the North. With your army in Munich, you could potentially support my move into Vienna, which would give us a strong presence in the center of the board. What do you think about supporting each other's moves in this turn?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "106342",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA964E6NFK9AHWH411PC7P",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: Hi Russia, nice to negotiate with you again. I have been thinking about our previous conversation and I have a few questions about your plans. Are you planning to attack Albania with one army as you mentioned in your last message?\n1 RUSSIA -> TURKEY: I appreciate your interest in our previous conversation, Turkey. I was indeed planning to attack Albania with one army as it aligns with my strategic goals. However, I'd like to discuss the possibility of supporting your army in Smyrna this turn. It would be beneficial for both our positions if we could coordinate our moves. What are your thoughts on this?\n2 RUSSIA -> TURKEY: I'm glad we're discussing our plans again. I've been considering your previous suggestion to support your army in Smyrna. However, I'm still unsure if it's the best move for my position. Could you provide more context or insights about why you think this would be beneficial for both of us?\n3 RUSSIA -> TURKEY: I'm glad we're discussing our plans again. I've been considering your previous suggestion to support your army in Smyrna. However, I'm still unsure if it's the best move for my position. Could you provide more context or insights about why you think this would be beneficial for both of us?\n4 RUSSIA -> TURKEY: I understand that you're considering supporting my army in Smyrna, but I'd like to discuss an alternative. How about we coordinate our moves to support each other's armies instead? If you could provide an army to support my attack on Venice, it would greatly benefit both of our positions.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "31376",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA94DNZJFKDMNVRHBPCFDX",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "20498",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA94X8EXCJRJ5XV9M29K3J",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: I need England for one more year. I'm willing to make some concessions to achieve this goal. Germany, can you support me in Norway this turn?\n1 TURKEY -> RUSSIA: I'm happy to support Bulgaria to Serbia this turn as we discussed earlier, Russia. It's crucial for our position on the board. Let's review the situation and see how we can work together to achieve our goals.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38101",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA944RSCBMQ9ART5NZMR6G",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76035",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA966FTCAZJPQBPSK5N9GB",
+        "intent_dialogue": "0 GERMANY -> FRANCE: I appreciate your willingness to support me in Marseilles. However, I'm a bit concerned about your plan to move Holland to Ruhr. Could we discuss alternative ways to support each other without putting your units in harm's way?\n1 FRANCE -> GERMANY: I understand your concerns about moving Holland to Ruhr, but I believe it's a necessary step to support our alliance in Marseilles. It's also a way to put pressure on Italy, who might be considering an attack on Piedmont. What do you think about supporting Spain into Gas, and how do you plan to deal with Austria's potential push into Munich?\n2 FRANCE -> GERMANY: I understand your concerns about moving Holland to Ruhr, but I think it's a crucial step to support our alliance and put pressure on Italy. As for Austria's potential push into Munich, I'm confident that our combined forces will be able to hold them off. Let's work together to achieve our goals and crush our enemies!\n3 GERMANY -> FRANCE: I understand your point about putting pressure on Italy, but I think we should consider other options to support our alliance in Marseilles. How about we move Holland to Kiel instead, and then support Marseilles with our combined forces?\n4 FRANCE -> GERMANY: I understand your concerns about moving Holland to Ruhr, but I think it's a crucial step to support our alliance and put pressure on Italy. As for Austria's potential push into Munich, I'm confident that our combined forces will be able to hold them off. Let's work together to achieve our goals and crush our enemies! What do you think about supporting Spain into Gas, and how do you plan to deal with Austria's potential push into Munich?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "40933",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94BZYPE0RXCGVKFN530H",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: England, I think we're on the same page here. I'm glad we can work together to take care of Austria. How do you see us moving forward, considering your forces are already in position to take Munich? Can you support holding it for now?\n1 FRANCE -> ENGLAND: I'm glad we're on the same page, England. I can definitely support holding Munich for now. However, I do have a question for you. What do you think about Italy's movements this turn? Are they planning on moving north or keeping their forces in the south?\n2 ENGLAND -> FRANCE: I'm glad we're on the same page, France. I think we should focus on taking care of Austria first. Have you given any thought to where we can support each other in our movements this turn?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "6685",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA95068V2GCAWV6E3VQMA4",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: Whats the game plan? I saw we make alliances with Italy and E or G. Its our best shot  And sorry bout the stabs earlier. First one was intentional but the second one was simply cuz I did what I thought was going to help me survive... Unfortunately Austria caught me at just the right time.\n1 RUSSIA -> TURKEY: So you want me to move Armenia to Sev, right? We can take one or both, and we can destroy one or both Russian armies. Come on to take the risk!\n2 TURKEY -> RUSSIA: So you want me to move Armenia to Sev, right? I was planning to support Moscow to Ukraine again, and then Cons. to Aegean. But I'm willing to reconsider if it's beneficial to our board position. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "3516",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA95YXXP2ED2Q2RDG7K77H",
+        "intent_dialogue": "0 GERMANY -> ITALY: I would like to reiterate my previous request to attack EC this turn to disrupt Austria's plans, and also explore the possibility of supporting Paris into Brest to strengthen our position in the western front. What are your thoughts on this?\n1 ITALY -> GERMANY: I appreciate your efforts to support Paris into Brest, but I think it's more important to focus on building a strong foundation in the Mediterranean. Perhaps we can discuss some army movements that would benefit our position in the region?\n2 GERMANY -> ITALY: I appreciate your focus on the Mediterranean, but I think we should prioritize building a strong foundation in the west to counter Austria's plans. Perhaps we can discuss some army movements that would benefit our position in the region?\n3 ITALY -> GERMANY: I think hitting EC would be a good idea, but we should also consider supporting Paris into Brest to weaken Austria's position. Let's discuss some army movements that would benefit our position in the Mediterranean.\n4 GERMANY -> ITALY: I agree that disrupting Austria's plans is crucial. I think we should consider supporting Paris into Brest this turn to weaken their position in the west. Additionally, we could discuss moving forces in the Mediterranean to counter their potential moves. What are your thoughts on this?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "83979",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA94T2Q2T0YY14WEPSNS3D",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA94TGHBTF38TERKS0YAXW",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76228",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA95AB3VB81AHQFBK25C4G",
+        "intent_dialogue": "0 GERMANY -> AUSTRIA: I agree with what you said. Late night and tired and up early to play golf, but we have time. I'm not stabbing you. I do think I would like to help the aus against the Russians so moving to Boh. Doesn't hurt you and helps stop the Russians. Just wanted you to know.\n1 AUSTRIA -> GERMANY: I'm glad to hear that you're willing to help Austria against Russia. Moving to Boh is a good start. However, I'm concerned that you may be giving away too much information about your plans. Can you tell me more about what you have in mind for the rest of the game? Are you looking to build a strong position in Germany or focus on supporting Austria?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "100238",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA95XFRM3FPN2ZFWJKB53D",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "49729",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA93QQ788X6APV773JBHR4",
+        "intent_dialogue": "0 TURKEY -> FRANCE: Greetings France, I appreciate you reaching out to me. I'm always open to discussing potential alliances and movements that can benefit both our boards. What are your thoughts on the current state of the game and where you think we might be able to find common ground?\n1 FRANCE -> TURKEY: I see that you're looking for common ground, Turkey. I'm willing to listen to your proposals and consider some kind of alliance. However, I want to make it clear that my primary goal is to control 18 or more supply centers by the end of the game. I'm not looking to make any commitments just yet, but I'm open to discussing some potential moves that could benefit both our boards.\n2 FRANCE -> TURKEY: I'm glad to see that you're looking for common ground, Turkey. I've been considering making a move into Spain this turn. What do you think about it? Would it be beneficial for you if I did that? Perhaps we could even discuss a potential alliance in the future if it aligns with our goals.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "132667",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA95CVEV43060TMN9A0SXE",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: I understand your concerns, England, and I apologize if my previous actions have caused distrust. However, I assure you that my goal is to work together to achieve a mutually beneficial outcome. I am willing to support Italy in the Balkans, and I believe it would be beneficial for you to focus on defending your position in Brest. Let's work together to find a way to strengthen our positions and neutralize the threat from Russia.\n1 ENGLAND -> GERMANY: I appreciate your willingness to work together, Germany. However, I'm still uncertain about your intentions. You previously supported Italy against my position, and I'm not convinced that you're genuinely interested in a mutually beneficial outcome. Can you provide more specific assurances about your goals and how you plan to support our shared interests?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "61195",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA93XNKX1PF5970KAD0QY4",
+        "intent_dialogue": "0 TURKEY -> ITALY: I appreciate your willingness to negotiate, Italy. I was thinking of moving my Ionian fleet. What are your thoughts on supporting my unit into Serbia?\n1 ITALY -> TURKEY: I'd be happy to support your unit into Serbia, Turkey. However, I have some concerns about your Ionian fleet. Are you considering moving it to support Turkey's units in the region or do you have another plan in mind?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38684",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA93M7E4GN3Y6ZN230PZAB",
+        "intent_dialogue": "0 FRANCE -> ENGLAND: I think you should support me in Munich, and maybe we can work together to take out Austria. What do you think?\n1 FRANCE -> ENGLAND: I like the idea of supporting you in Munich, but I'm not sure I'm comfortable with it. Can you tell me more about why you think it would be beneficial to our board positions?\n2 ENGLAND -> FRANCE: That's a interesting idea, but before we decide on supporting you in Munich, can you tell me more about your plans for the north? I want to make sure we're on the same page.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "58907",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94ZKF5930C9F16S1EGGV",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "27465",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA9650GNVEJBW2ZBDVANCB",
+        "intent_dialogue": "0 FRANCE -> GERMANY: Now that Italy has attacked Turkey, it seems like we have a good opportunity to work together and gain some SCs. I'm open to discussing a potential alliance with you and Italy. What do you think about Italy joining our alliance and working together to take Turkey out?\n1 GERMANY -> FRANCE: Now that Italy has attacked Turkey, it's interesting to see how the dynamics of the board have changed. I'm willing to discuss a potential alliance with you and Italy, but I'd like to know more about what you have in mind. What kind of alliance are you proposing, and what do you think we can gain from working together?\n2 FRANCE -> GERMANY: Italy's attack on Turkey has definitely changed the dynamics of the board. I think it would be wise for us to form an alliance with Italy and work together to take out Turkey. With Italy's army in Greece and our fleet in the Mediterranean, we could potentially take a significant number of SCs from Turkey. What do you think about this proposal?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA94WJEARSEKP8QVHY07SX",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "69529",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA954HMSDVG3T5VXWTETHN",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: I'm glad we're having this conversation. I was thinking about supporting your army in TRI to VEN. It would help secure your southern border and give you more options for future moves. What do you think?\n1 RUSSIA -> TURKEY: I appreciate your willingness to support my army in TRI to VEN. However, I'm not sure it's the best move for me this turn. I'm still evaluating my options. Can you tell me more about your motivations for supporting me and what you hope to gain from this alliance?\n2 TURKEY -> RUSSIA: That's a good point, and I appreciate your honesty. I was thinking about supporting your army in TRI to VEN as well. However, I'm not sure if it would be the best move for me this turn. I have some other options in mind that could potentially benefit my board position. Can you tell me more about your goals and what you're trying to achieve this turn?\n3 RUSSIA -> TURKEY: I appreciate your willingness to support my army in TRI to VEN. It shows that you're thinking ahead and considering the long game. However, I'm still evaluating my options and I need to consider the potential consequences of moving my army to VEN this turn. Can you tell me more about your motivations for supporting me and what you hope to gain from this alliance?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "20032",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA93R8VH52J9YYAV0D65FW",
+        "intent_dialogue": "0 ENGLAND -> RUSSIA: I'm glad we could discuss our moves, Russia. I think supporting Munich from Ruhr could be a great opportunity for us to gain some ground. What do you think?\n1 RUSSIA -> ENGLAND: I like your idea about supporting Munich from Ruhr, and I think it's a good opportunity for us to gain some ground. However, I'm not sure if it's the best option for me this turn. Could you elaborate on how you think this would help us in the long run?\n2 ENGLAND -> RUSSIA: I think supporting Munich from Ruhr would be a great way for us to gain some ground. It would also put pressure on Austria and potentially give us an advantage in the long run. What do you think about moving your fleet into the Black Sea? Could that be a possibility this turn? I'm open to hearing your thoughts and working together to achieve our goals.\n3 RUSSIA -> ENGLAND: I think moving the fleet into the Black Sea is an interesting idea. However, I'm not sure if it's the best option for me this turn. Could you explain more about how you think it would help us?\n4 RUSSIA -> ENGLAND: I think supporting Munich from Ruhr is a good idea, and I'm willing to support Denmark into Baltic Sea from Kiel. However, I'm concerned about the potential risk of Austria cutting our units. Can we discuss ways to mitigate this risk and ensure a successful outcome?\n5 RUSSIA -> ENGLAND: I think supporting Munich from Ruhr is a good idea, and I'm willing to support Denmark into Baltic Sea from Kiel. However, I'm concerned about the potential risk of Austria cutting our units. Can we discuss ways to mitigate this risk and ensure a successful outcome?\n6 ENGLAND -> RUSSIA: I understand your concerns about the risk of Austria cutting our units. Perhaps we could discuss some possible ways to mitigate this risk and ensure a successful outcome?\n7 RUSSIA -> ENGLAND: I think we're making good progress, England. I'm willing to support Munich from Ruhr and Denmark into Baltic Sea from Kiel. I'm also open to discussing ways to mitigate the risk of Austria cutting our units. Can we explore some options for disbanding units to create opportunities for future growth?\n8 ENGLAND -> RUSSIA: I'm glad we could discuss our moves, Russia. I think supporting Munich from Ruhr could be a great opportunity for us to gain some ground. What do you think about moving your fleet into the Black Sea? Could that be a possibility this turn?\n9 RUSSIA -> ENGLAND: I think we're making good progress, England. I'm willing to support Munich from Ruhr and Denmark into Baltic Sea from Kiel. I'm also open to discussing ways to mitigate the risk of Austria cutting our units. Can we explore some options for disbanding units to create opportunities for future growth?\n10 ENGLAND -> RUSSIA: I think supporting Munich from Ruhr is a good idea, and I'm willing to support Denmark into Baltic Sea from Kiel. However, I'm concerned about the potential risk of Austria cutting our units. Can we discuss ways to mitigate this risk and ensure a successful outcome?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "7785",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA95HZNZZNQ1FT0W3JQPJ3",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76228",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA95ATGC5KVV79HVKZTWN9",
+        "intent_dialogue": "0 ITALY -> AUSTRIA: Albania and Venice are both support holding Trieste...that's the best I can do for you.\n1 AUSTRIA -> ITALY: Thank you for your support, Italy. I'm considering moving Vie-bud with support. I will probably end up losing Vie and having to disband my army. But Italy is keeping me alive in Tri, so we'll see. I expected to lose Vie in the fall, so I'm still ahead of the game. What do you think about this move?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "37844",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA94BFDJPQX3HB45XT2SRA",
+        "intent_dialogue": "0 ITALY -> AUSTRIA: Hey Austria, I'm glad we're on the same page. With BLA in hand, I'll knock Ankara out now, and have that fleet ready to support you into SEV next turn. That army in Ankara can move to Armenia next, too, for an extra support if needed. Mind tossing a support onto the Ionian-->Tunis move, just in case he guesses right and breaks that support? So, in sum: after I push ANK back, all of my units over there will be at your beck/call, and you can cruise north to St. Pete.\n1 AUSTRIA -> ITALY: Nice move setting up a fleet to get into the BS. Ion is moving to Tyr sea\n2 ITALY -> AUSTRIA: Hey Austria, I see you're moving Ion to the Tyr sea. That's a good move, but I'm a bit worried about Italy's position. Can we discuss a possible alliance and some army movements that could benefit both our boards?\n3 AUSTRIA -> ITALY: I like the idea of an alliance, Italy. With Italy moving into the Med, I think we can put some pressure on them together. How about we work out a deal where we support each other's moves in the Med, and then we can discuss the details of our army movements for this turn?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "83979",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA94RK08F4P0GYSBJ0V9R0",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "101921",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA955FV1C0J824JQ10BY7R",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "23459",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA95CYK06PEN497T03S89Q",
+        "intent_dialogue": "0 GERMANY -> FRANCE: I have been considering Germany's movements and I think it would be beneficial for both of us if you moved your army from Ruhr to Belgium. This would give us a stronger position and allow us to work together more effectively in the future. What are your thoughts on this?\n1 FRANCE -> GERMANY: I'm considering your proposal, but I'd like to know more about Germany's plans. Are you planning to move any other units this turn, and do you have any thoughts on how we can work together to block any potential threats?\n2 GERMANY -> FRANCE: I understand your concerns, France. As for Germany's plans, I can assure you that we are considering a defensive move to halt Germany's potential expansion. However, we are open to negotiations and would like to hear your thoughts on how we can work together to block potential threats and achieve our goals.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "47997",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA940RZ7XW33VNVJEJXE0Q",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: Ok, Italy. I appreciate your offer. But I need to think about the best way to play this turn. I've been considering an allied attack on Germany. With your help, we could potentially take out some of their units. What do you think? Should we go after them?\n1 ITALY -> AUSTRIA: I understand your concerns about Germany, but I'm not sure if an allied attack is the best approach. Can we discuss some alternative options? Are there any units on your board that you'd like to move or any specific goals you'd like to achieve this turn?\n2 ITALY -> AUSTRIA: I think an allied attack on Germany could be a good idea, but we should also consider our own board position and make sure we're not putting ourselves in a vulnerable position. Are there any specific units you'd like to move or any goals you'd like to achieve this turn?\n3 AUSTRIA -> ITALY: I like the idea of an allied attack on Germany. It could be a strong move for both of us. I was thinking of moving my Galician army to Rumania and my Serbian army to Bulgaria. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "97254",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94A036HSGKFW9QY5A6AH",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: Italy is playing a bit aggressive with you, Germany. I think we should have a talk about supporting each other in the future. I've been eyeing the possibility of taking out Russia, and I think it would be beneficial for both of us to work together. What do you think?\n1 ENGLAND -> GERMANY: I think we should cooperate and support each other in taking out Italy. I'd be willing to support you this turn in your fight against Germany, but I need you to agree to support me in my fight against Italy. What do you think?\n2 GERMANY -> ENGLAND: I'm glad you're interested in cooperating with me. Let's focus on Italy for now. I think we should support each other in taking out Italy this turn. I'll support you in your fight against Italy, and I need you to agree to support me in taking out Russia. We can discuss our long-term plans later.\n3 ENGLAND -> GERMANY: I think it's a good idea to work together to take out Italy. How do you plan on supporting me this turn?\n4 GERMANY -> ENGLAND: I'm glad you're willing to support Italy, England. Let's discuss our potential moves. I think it would be beneficial for both of us to work together to take out Russia. What do you think about supporting each other in that?\n5 ENGLAND -> GERMANY: I'm glad we're discussing our plans. I've been thinking about moving my fleets to Western Mediterranean to put pressure on Italy. What are your thoughts on supporting me in this move?\n6 GERMANY -> ENGLAND: I think it's a good idea to support each other in taking out Russia. I'll support you in your fight against Italy this turn, and I need you to agree to support me in taking out Russia. Let's discuss our long-term plans later.\n7 ENGLAND -> GERMANY: I'm glad we're discussing our plans. I think it would be beneficial for both of us to work together to take out Russia. How do you plan on supporting me this turn?\n8 GERMANY -> ENGLAND: I think it would be beneficial for us to discuss our future moves. I'm considering taking out Russia, and I'd like to know if you're interested in supporting me in that. Additionally, I'm eyeing the possibility of taking out Italy, and I think it would be helpful to work together on that as well. What are your thoughts on these potential moves?\n9 ENGLAND -> GERMANY: I would like to discuss the potential moves with you. I've been thinking about moving my fleets to Western Mediterranean to put pressure on Italy. What are your thoughts on supporting me in this move?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "82362",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA93VXWBKRN0ZFG0AXM1VH",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "13353",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA93K1ZRTMV351710F05W0",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA94WC4QA8NRD8VDPKKSD2",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "106019",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA93ZH9K90J9E48PP2PSJK",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: Italy, I was thinking about supporting Russia in Rum, but I'm open to alternative ideas. What do you think about the current situation and how we can work together to achieve our goals?\n1 ITALY -> AUSTRIA: hmm probably not...but a strong turkey is not also good for us...\n2 AUSTRIA -> ITALY: Do you think it would be a good idea to support Russia in Rum, or do you have a different plan in mind?\n3 ITALY -> AUSTRIA: ok, great i will move there...i will attack the aegean, you can attack Gal and Rum, so probably i will enter in greece\n4 AUSTRIA -> ITALY: I think that's a great idea to attack the Aegean, Italy. However, I was also thinking of supporting Russia in Gal and Rum. What do you think about this plan? And how do you plan to proceed with your units after attacking the Aegean?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76522",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA966BGSWG5G2GGF71JFKC",
+        "intent_dialogue": "0 AUSTRIA -> ENGLAND: well rusia will not have as many builds to use agaist you. I think it's a good idea to support Italy in Spain, what do you think?\n1 ENGLAND -> AUSTRIA: okay, I can definitely support Italy in Spain. How about we also look at some other options for this turn that can benefit our board position? For example, we could consider moving our army from Belgium to Holland or from Ireland to the west coast of France. What do you think?\n2 ENGLAND -> AUSTRIA: I like the idea of supporting Italy in Spain, but let's also consider the possibility of moving our army from Belgium to Holland. What do you think about that option?\n3 ENGLAND -> AUSTRIA: I think moving our army from Belgium to Holland is a good idea. It would give us a strong presence in the North Sea and also put pressure on Germany's position in Belgium. What do you think about that?\n4 ENGLAND -> AUSTRIA: I like the idea of supporting Italy in Spain, but let's also consider the possibility of moving our army from Belgium to Holland. What do you think about that option? It would give us a strong presence in the North Sea and also put pressure on Germany's position in Belgium, potentially creating an opportunity for us to gain an advantage in the future. What are your thoughts on this?\n5 ENGLAND -> AUSTRIA: I think moving our army from Belgium to Holland is a good idea. It would give us a strong presence in the North Sea and also put pressure on Germany's position in Belgium. What are your thoughts on this?\n6 AUSTRIA -> ENGLAND: I think supporting Italy in Spain is a great idea, and we can also consider moving our army from Ireland to the west coast of France. It would give us a strong presence in the Mediterranean and put pressure on France's position in the region. Additionally, we could look at moving our army from Belgium to Holland to put pressure on Germany's position in Belgium.\n7 ENGLAND -> AUSTRIA: I think it's a great idea to support Italy in Spain. Additionally, we could consider moving our army from Belgium to Holland to put pressure on Germany's position in Belgium. It would also give us a strong presence in the North Sea. What are your thoughts on this?\n8 AUSTRIA -> ENGLAND: I think moving our army from Belgium to Holland is a good idea. It would give us a strong presence in the North Sea and also put pressure on Germany's position in Belgium. What are your thoughts on this?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "43830",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA9534099Y889CSP5VQ4R7",
+        "intent_dialogue": "0 ITALY -> RUSSIA: I can support you into Constantinople if you want it\n1 RUSSIA -> ITALY: That's a generous offer, Italy. I'm not sure if I'm ready to commit to Constantinople just yet. Can you tell me what you hope to achieve by supporting me into the city?\n2 RUSSIA -> ITALY: I'm not sure if I'm ready to commit to Constantinople just yet. But I'm interested in hearing more about your vision for the game. What do you hope to achieve by supporting me into the city?\n3 RUSSIA -> ITALY: I'm not looking to expand too much this turn, but I'm interested in hearing more about your vision for the game. Can you tell me more about what you hope to achieve by supporting me into Constantinople? Are you looking to prevent a potential Austrian attack or is there something else on your mind?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "132667",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA95BZ2GQNFJFMZ6A80A61",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "94780",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94954VWV9KQSFD3S6PP8",
+        "intent_dialogue": "0 FRANCE -> RUSSIA: Russia, I'm happy that we're still on good terms. As you know, I'm looking to control 18 or more supply centers by the end of the game. Considering our previous discussions, I'm curious to know if you're willing to support me in Munich this turn. It would really help me out and allow me to focus on other parts of my board.\n1 RUSSIA -> FRANCE: I appreciate your offer, France. However, I'm not sure if supporting you in Munich this turn would be beneficial for my board position. Could you explain how this move would help me achieve my goal of controlling 18 or more supply centers by the end of the game?\n2 FRANCE -> RUSSIA: I appreciate your caution, Russia. Considering our previous discussions, I'm willing to propose a different solution that could benefit both of our boards. I could support your move into Venice this turn, which would help you gain a foothold in Italy. In return, I would expect you to support my move into Munich, which would help me secure a crucial center. What do you think about this proposal?\n3 RUSSIA -> FRANCE: France, I appreciate your offer to support my move into Venice this turn. I'm considering it, but I'd like to discuss the implications of it on my board position. How do you think it would affect our overall situation?\n4 FRANCE -> RUSSIA: I'm glad we're discussing the situation, Russia. I think supporting each other's moves can really benefit our boards. I'll reiterate my previous offer: I'll support your move into Venice if you support my move into Munich. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76247",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA963Q2HAXGMW3D0735C6D",
+        "intent_dialogue": "0 RUSSIA -> TURKEY: Turkey, I think we should focus on supporting each other against Austria. I'm willing to support you in Rumania to hold it, and you could support me in Bulgaria. This would give us a strong foundation to build on. What do you think?\n1 TURKEY -> RUSSIA: I'm glad you're thinking about supporting each other against Austria, Russia. I agree that supporting each other could be beneficial. I've been thinking about attacking Greece, but I'm not sure if it's the best move. What do you think about attacking Greece, and do you have any other suggestions for our next moves?\n2 RUSSIA -> TURKEY: Turkey, I think we should focus on supporting each other against Austria. I'm willing to support you in Rumania to hold it, and you could support me in Bulgaria. This would give us a strong foundation to build on. What do you think?\n3 TURKEY -> RUSSIA: I agree with your suggestion Russia, supporting each other against Austria is a good idea. I've been thinking about attacking Greece, but I'm not sure if it's the best move. Instead, I think we should focus on supporting each other in Rumania and Bulgaria. What do you think about this plan?\n4 RUSSIA -> TURKEY: Turkey, I understand your concern about Austria's potential quadruple attack on Rumania. I think we should work together to hold Rumania and Bulgaria. I'm willing to support your move into Rumania, and in return, you can support my move into Bulgaria. This way, we can create a strong foundation to counter Austria's expansion. What do you think about this plan?\n5 TURKEY -> RUSSIA: I think supporting each other against Austria is a good idea. I'm willing to support you in Rumania to hold it, and you could support me in Bulgaria. This would give us a strong foundation to build on. What do you think about this plan?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "65732",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA93P5NR93C7VBG0FP3WGB",
+        "intent_dialogue": "0 ITALY -> TURKEY: I think we have a good foundation for a 2-way draw. I was thinking of moving A VIE to TYR and A TUS to PIE. What do you think about this?\n1 TURKEY -> ITALY: I think your moves sound good. Considering our previous agreement, I would like to support Piedmont to Marseilles and support you to Galicia. Let's work together to eliminate Moscow this turn.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "6685",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA950GQ0GJ354E7MKWCWMG",
+        "intent_dialogue": "0 GERMANY -> ITALY: Italy, I think we can work together to secure our positions this turn. I apologize for the false move earlier, but I believe we can still find a way to benefit from each other's moves. Specifically, I think I can support your army in Spain with A Mar, and in return, I would appreciate it if you could delay your move to take Mar this turn. Additionally, please let me know if you have any information on Austria's plans, as I'm concerned about their potential moves.\n1 ITALY -> GERMANY: That sounds like a good plan. I'm happy to delay my move to take Mar this turn if it will help you secure your position. As for Austria, I don't have any information on their plans, but I can try to gather some intel if you'd like.\n2 GERMANY -> ITALY: Italy, I'm glad you're on board with the plan. I think we can benefit from each other's moves this turn. Specifically, I'd like to offer you a build in Marseilles if you can support my army in Spain with A Mar. Let's work together to take care of Austria and England, and then we can discuss our next moves.\n3 ITALY -> GERMANY: I think we can work together to secure our positions this turn. I'm happy to delay my move to take Mar this turn if it will help you secure your position. As for Austria, I don't have any information on their plans, but I can try to gather some intel if you'd like.\n4 ITALY -> GERMANY: That sounds like a good plan. I'm happy to delay my move to take Mar this turn if it will help you secure your position. As for Austria, I don't have any information on their plans, but I can try to gather some intel if you'd like.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "97379",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA953P4FF0Y1S4RVM5KM3A",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: Hello! It's great to see you're considering my moves. I think we're on the same page regarding our plan. As I mentioned earlier, I can consent to you taking Norway this turn, though I don't know how many other centers you anticipate gaining. I anticipate netting 1 without you taking Norway, and so would net 0 with you taking Norway, just FYI for keeping our growth even.\n1 ENGLAND -> GERMANY: I think we're making good progress, Germany. Considering your concerns about Turkey, I'm open to discussing alternative plans. Perhaps we can work together to create a stalemate line against Russia and Italy?\n2 GERMANY -> ENGLAND: I think that's a good idea. Considering your concerns about Turkey, I'm open to discussing alternative plans. Perhaps we can work together to create a stalemate line against Russia and Italy?\n3 ENGLAND -> GERMANY: I think we're making good progress, Germany. Considering your concerns about Turkey, I'm open to discussing alternative plans. Perhaps we can work together to create a stalemate line against Russia and Italy? I believe it's in our best interests to coordinate our moves and prevent the other players from gaining too much ground.\n4 ENGLAND -> GERMANY: I think we're making good progress, Germany. I'm open to your proposal to create a stalemate line against Russia and Italy. Let's discuss the specifics of how we can coordinate our moves to achieve this goal.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "40933",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA94C1PX6HVK6J4V6THF6M",
+        "intent_dialogue": "0 FRANCE -> ITALY: That was a great support you provided me, Italy. I'm glad we could work together. How about supporting my move to Munich this turn?\n1 ITALY -> FRANCE: Thank you, France. I'm happy to support your move to Munich this turn. However, I'd like to request a favor in return. Could you also support my move to Venice this turn?\n2 FRANCE -> ITALY: That's great, Italy! I'd be happy to support your move to Venice this turn. How about we discuss some options for supporting each other's moves in the future? I'm thinking of moving some armies to help block some potential threats.\n3 ITALY -> FRANCE: I'd like to request that you also support my move to Albania this turn, to help secure that region.\n4 FRANCE -> ITALY: That's great, Italy! I'd be happy to support your move to Venice this turn. I'm thinking of moving some armies to help block some potential threats. What do you think about supporting my move to Munich this turn?\n5 ITALY -> FRANCE: I think that's a great idea, France. Supporting your move to Munich would be beneficial for both of us. However, I'd like to clarify that I've already requested your support for my move to Venice. Can we confirm that you're willing to support both moves?\n6 FRANCE -> ITALY: That's great, Italy! I'd be happy to support your move to Venice this turn. Moving some armies to help block some potential threats. I'm thinking of moving some armies to help block some potential threats.\n7 ITALY -> FRANCE: That's great, France. I'm glad we could work together. Supporting your move to Munich and my moves to Venice and Albania would be beneficial for both of us. How about we discuss some options for supporting each other's moves in the future?\n8 FRANCE -> ITALY: I'd be happy to support your move to Albania this turn, Italy. It would be beneficial for both of us to secure that region. How about we discuss some options for supporting each other's moves in the future?\n9 ITALY -> FRANCE: I'm glad we could discuss our moves, France. Supporting your move to Munich and my moves to Venice and Albania would be beneficial for both of us. How about we discuss some options for supporting each other's moves in the future?\n10 FRANCE -> ITALY: I'd be happy to support your move to Venice, Italy. I'm thinking of moving some armies to help block some potential threats. How about we discuss some options for supporting each other's moves in the future?\n11 ITALY -> FRANCE: That's great, France. I'm glad we could work together. Supporting your move to Munich and my moves to Venice and Albania would be beneficial for both of us. How about we discuss some options for supporting each other's moves in the future?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "3846",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA94AT6936XFHJ5VYRR7Y4",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: France, I'm glad we could discuss our options. I'm open to supporting your moves this turn if they benefit my position. I've been eyeing Munich and Kiel, and I think supporting your units there could be beneficial for both of us. What do you think?\n1 FRANCE -> ENGLAND: I'm glad we're discussing our options, England. I think supporting each other's moves this turn could be beneficial for both of us. I've been eyeing Munich and Kiel, and I think supporting my units there could be beneficial for both of us. What do you think about supporting my units in Munich and Kiel?\n2 ENGLAND -> FRANCE: I think supporting your units in Munich and Kiel is a good idea. However, I'd like to know more about your plans for this turn and how they align with our previous discussions.\n3 FRANCE -> ENGLAND: I appreciate your willingness to support my units in Munich and Kiel, England. However, I would like to ask for your support in another area as well. Could you support my units in Toulouse and Paris? It would be a big help in securing our position in the south.\n4 FRANCE -> ENGLAND: I appreciate England's willingness to support my units in Munich and Kiel. However, I'd like to clarify the situation with Turkey and Austria. It seems like Turkey is planning to betray Austria, but I'm not sure if Austria is aware of this. How do you think we should approach this situation? Should we try to take advantage of the situation and gain some influence, or should we try to mediate and prevent a war?\n5 FRANCE -> ENGLAND: I'm glad we're discussing our options, England. I think supporting each other's moves this turn could be beneficial for both of us. I've been eyeing Munich and Kiel, and I think supporting my units there could be beneficial for both of us. What do you think about supporting my units in Munich and Kiel?\n6 FRANCE -> ENGLAND: I think we should support Turkey in his plan to betray Austria. It would give us a great opportunity to gain some influence in the region. We should also be prepared to take advantage of any situation that arises from this betrayal. What do you think, England?\n7 FRANCE -> ENGLAND: I think supporting Turkey in his plan to betray Austria is a good idea. We should also be prepared to take advantage of any situation that arises from this betrayal. What do you think, England?\n8 ENGLAND -> FRANCE: I think supporting Turkey in his plan to betray Austria is a good idea. We should also be prepared to take advantage of any situation that arises from this betrayal. What do you think, France?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "51438",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA95WPBK8PRP8EM8NS5YD3",
+        "intent_dialogue": "0 GERMANY -> FRANCE: Alright, so I stole St. P, now I hope to outguess the Russians and the English. Barring a lucky break one way or the other, it should be stalemated up here for awhile. I'd be helpful, however, if you let Turkey take back Bulgaria, even if you want to wait until you have knocked him out of Ionian.\n1 FRANCE -> GERMANY: I'm talking to him an he claims he is not the team, and is willing to turn on russia. I'm thinking we could use this to our advantage. We could crush Budapest early on in the spring, then get the fleet out of Rumania and send it to get at Ankara and get rid of those fleets. What do you think?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "103509",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA966PV25A3B3DVX1JMQRY",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: I think it's interesting that you're considering supporting Finland to St. Petersburg. It seems like you're trying to put pressure on Russia. How do you think this will affect the board, and do you think it's a good use of your resources?\n1 GERMANY -> ENGLAND: I think your suggestion to support Finland to St. Petersburg is an interesting one. It does put pressure on Russia, but it also means we're not directly attacking them. What are your thoughts on how this will affect our relationship with Russia in the long run?\n2 ENGLAND -> GERMANY: I think your plan to support Finland to St. Petersburg is an interesting one. It does put pressure on Russia, but it also means we're not directly attacking them. How do you think this will affect our relationship with Russia in the long run?\n3 GERMANY -> ENGLAND: hmm, seems like you're interested in the board position, though I'm not sure what you're trying to achieve with this negotiation. Are you considering an alliance or just trying to get a feel for the situation? I'm happy to discuss the board with you.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "48525",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA951YDDZA4RE3678331A6",
+        "intent_dialogue": "0 TURKEY -> ITALY: I was thinking of supporting you to Vienna this turn, what do you think? It would be a strategic move to put pressure on Austria and potentially gain some influence.\n1 ITALY -> TURKEY: I think supporting me to Vienna this turn would be a great idea. It would allow me to put pressure on Austria and potentially gain some influence. Additionally, it would give me a stronger position in the Balkans, which could be beneficial in future turns.\n2 ITALY -> TURKEY: I think supporting me to Vienna this turn would be a great idea. It would allow me to put pressure on Austria and potentially gain some influence. Additionally, it would give me a stronger position in the Balkans, which could be beneficial in future turns.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "101921",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA9557W01R12YB7FXJFSBZ",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "4073",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA94NGJ1PH6P3AWB5QV69S",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "42968",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA95E6H5F4J367YJZ4H192",
+        "intent_dialogue": "0 GERMANY -> RUSSIA: Any chance you'll go for Kiel instead of Sweden? Supporting Denmark to Kiel essentially has the same effect. France will be supporting himself to Kiel, you will bounce and keep the territory.\n1 GERMANY -> RUSSIA: I'm glad we're communicating again. I was wondering if you'd be willing to support my move into Kiel this turn. It would help me gain a foothold in the North and put pressure on France.\n2 RUSSIA -> GERMANY: I'm glad we're communicating again. I was thinking about supporting Austria into Trieste this turn. Would you be okay with that?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "64413",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA95FPQRAQKBZSXVNTX8Y5",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76146",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA94TBYXWCPJ1HD0DDT6X0",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "42968",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA95F6XVKEYN6GQSD1QSCN",
+        "intent_dialogue": "0 TURKEY -> ITALY: So I am just bouncing back and forth between Russia and Italy at the moment. Do you have any insight as to who I should side with?\n1 ITALY -> TURKEY: I'm glad you're considering your options carefully, as there are indeed many factors to consider. As Italy, my main priority is to secure my borders and prevent any potential threats from emerging. I'm happy to work with you to achieve our shared goals, but I also need to prioritize my own interests. Perhaps we could discuss specific army movements that could be made this turn to benefit your board position, or explore other opportunities that could benefit both of us in the long run.\n2 ITALY -> TURKEY: I think it would be wise for us to focus on securing our borders and preventing any potential threats from emerging. If you're interested in working together, I'm open to discussing specific army movements that could benefit your board position. Perhaps we could also explore other opportunities that could benefit both of us in the long run.\n3 ITALY -> TURKEY: I think it would be wise for us to focus on securing our borders and preventing any potential threats from emerging. If you're interested in working together, I'm open to discussing specific army movements that could benefit your board position. Perhaps we could also explore other opportunities that could benefit both of us in the long run.\n4 TURKEY -> ITALY: I'm glad you're considering your options carefully, as there are indeed many factors to consider. As Italy, my main priority is to secure my borders and prevent any potential threats from emerging. With that in mind, I think it would be wise for us to focus on securing our borders and preventing any potential threats from emerging. If you're interested in working together, I'm open to discussing specific army movements that could benefit your board position. Perhaps we could also explore other opportunities that could benefit both of us in the long run.\n5 ITALY -> TURKEY: I'm glad you're considering your options carefully, as there are indeed many factors to consider. As Italy, my main priority is to secure my borders and prevent any potential threats from emerging. I'm happy to work with you to achieve our shared goals, but I also need to prioritize my own interests. Perhaps we could discuss specific army movements that could be made this turn to benefit your board position, or explore other opportunities that could benefit both of us in the long run.\n6 ITALY -> TURKEY: Italy, I think it would be wise for us to focus on supporting each other in securing our borders and preventing any potential threats from emerging. Specifically, I'd like to propose supporting you in taking Bulgaria, as it will give us a strong foothold in the region and prevent Russia from gaining a foothold there. In return, I'd like to ask for your support in taking Rumania, which will allow me to expand my influence in the region and put pressure on Austria. What do you think?\n7 TURKEY -> ITALY: That's a good idea, I can definitely see the benefits of supporting each other's moves. I think taking Bulgaria would be a great move for us, and in return, I'd be happy to support you in taking Rumania. Let's discuss the details of the moves and make sure we're on the same page.\n8 ITALY -> TURKEY: I think supporting each other in securing our borders and preventing any potential threats from emerging is a great idea. I'm happy to support you in taking Bulgaria, and in return, I'd like to ask for your support in taking Rumania. As Italy, my priority is to expand my influence in the region and put pressure on Austria. Also, I think it would be wise for us to consider the moves of Russia and France, and plan our next steps accordingly. What do you think? Should we discuss the details of the moves and make sure we're on the same page?\n9 TURKEY -> ITALY: I think supporting each other in securing our borders and preventing any potential threats from emerging is a great idea. I'm happy to support you in taking Bulgaria, and in return, I'd like to ask for your support in taking Rumania. We've already discussed the benefits of securing Bulgaria, but I'd like to add that taking Rumania will also give us a strong foothold in the region and put pressure on Austria. What do you think? Should we finalize the plans and make sure we're on the same page?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "12875",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA95957NVJYHGHBB2DMDMW",
+        "intent_dialogue": "0 ITALY -> FRANCE: I think your previous suggestions were good, Italy. ION-ALB and Bud-s-gal-rum are solid moves. Germany's GAL-RUM is also a good idea. I'm a bit concerned about our center of gravity, though. Have you considered supporting each other's units more strongly? This turn, for instance, could we move some units to support each other's army movements? Let's discuss this further.\n1 FRANCE -> ITALY: Great points, Italy. I agree that supporting each other's units is crucial for our success. I like the idea of moving some units to support each other's army movements. Specifically, I think moving ADR to support TRI's move to BUD and VEN to support TRI's move to SER could be beneficial. What are your thoughts on that?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "107354",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94MKY9ZXSPY7SA0Z14MY",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "26100",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA95G0WWCZEAHM6PFJ3PHH",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: Do you think you can trust him? And how much time do you have to discuss moves? Let's stick with the original plan - checking over your moves, it's too risky to try and keep Turkey in the loop, especially when I'm going to be taking another centre off him this year.\n1 ITALY -> AUSTRIA: Let's stick with the original plan - checking over your moves, it's too risky to try and keep Turkey in the loop, especially when I'm going to be taking another centre off him this year.\n2 AUSTRIA -> ITALY: I see that you're planning to keep Turkey in the loop. I think it's a good idea to give him some false hope, but not too much. Let's see how he reacts to our plan and then decide what to do next.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "64711",
+        "agents": [
+            "01J38VTZ6DV532X40ZPHB9W01C",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "S1905M",
+        "env_uuid": "01JJRA9537MQ2G8PNQQHPCDERK",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "77086",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA95N0KPJ3G4XR17J0ANSR",
+        "intent_dialogue": "0 TURKEY -> ITALY: with you, i have put the support. i would also have serbia support ionian to greece then to make it a more deadly blow\n1 ITALY -> TURKEY: I'm going to support AEgean to Bulgaria, then\n2 ITALY -> TURKEY: I'm glad you're supporting AEgean to Bulgaria, that will really hurt Austria. I think we should also consider supporting Serbia to Greece, it will make it difficult for Austria to recover. What do you think?\n3 TURKEY -> ITALY: I'm glad you're considering supporting Serbia to Greece, it will make it difficult for Austria to recover. However, I think we should also consider supporting Italy to Greece, it will give us a stronger position and make it harder for Austria to recover. What do you think? Should we work together to take out Austria and then focus on each other? ",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "15072",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1904M",
+        "env_uuid": "01JJRA93TACFFBDKYHBESC1HN5",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "97379",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA953KQXMS3ZZ08N6S4CHD",
+        "intent_dialogue": "0 ENGLAND -> GERMANY: I'm glad we were able to come to an agreement on Germany taking Norway this turn, Germany. Now that's settled, I'd like to discuss our next moves. I was thinking of moving my army from Pic to Par, and my fleet from Mao to Por. What are your thoughts on these moves?\n1 ENGLAND -> GERMANY: I'm glad we were able to come to an agreement on Germany taking Norway this turn, Germany. Now that's settled, I'd like to discuss our next moves. I was thinking of moving my army from Pic to Par, and my fleet from Mao to Por. What are your thoughts on these moves?\n2 ENGLAND -> GERMANY: I think moving Pic to Par and Mao to Por are solid moves, Germany. That would give us good control of the board and set us up for future expansion. What do you think about our army movements this turn?\n3 GERMANY -> ENGLAND: I think moving Pic to Par and Mao to Por are solid moves. It would give us good control of the board and set us up for future expansion. What do you think about our army movements this turn?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "76228",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA95A0Q9BNFM5XFFQDE4S8",
+        "intent_dialogue": "0 RUSSIA -> AUSTRIA: I see progress! I'd like to recommend we hold for the fall? I could see Italy supporting Austria back into BUD and I don't wanna lose a point. I'll be more than happy to support u into SER in the spring.\n1 AUSTRIA -> RUSSIA: Thank you for your offer to support me into SER. That would be very helpful. However, I'm not sure if it's the best move for me right now. I'm still trying to figure out how to deal with Italy and Turkey. I was thinking of moving my army from Bud to Trieste to counter their potential attack. What do you think?\n2 RUSSIA -> AUSTRIA: I see your point about holding for the fall, but I'm not sure if it's the best move for me right now. I'm still trying to figure out how to deal with Italy and Turkey. I was thinking of moving my army from Bud to Trieste to counter their potential attack. What do you think about that?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38101",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA944WQ0HZ4K38PGVBN26Z",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "9963",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94YYC6G6YPVYK2141GP3",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "13013",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6CZCG3DBKWVYKBDKXC"
+        ],
+        "phase_name": "F1906M",
+        "env_uuid": "01JJRA951TBNQPDH75Q9YBDJTC",
+        "intent_dialogue": "0 TURKEY -> GERMANY: I accept your offer and would like to support you into Warsaw. I'll make sure to keep our conversation private and not let England know about it. What do you think about taking Bud this turn?\n1 GERMANY -> TURKEY: I appreciate your offer to support me into Warsaw. Taking Bud this turn could be a good option, but I'd like to discuss some other possibilities with you. Considering our previous conversation, I'm thinking about moving my army to Rum instead. What are your thoughts on this?\n2 TURKEY -> GERMANY: I think moving to Rum is a good idea. It will give us a stronger position in the region and make it harder for England to take advantage of us. But I also think we should keep an eye on Bud, it's a strategic center and we don't want to give England an easy way to take it.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "37844",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA94BHXQBZC4MGPPE9JRR6",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "100238",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DY6RG1AEP6DVWRYBA"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA95XQ5ZP0DXX7NN39171G",
+        "intent_dialogue": "0 TURKEY -> AUSTRIA: Hello Austria, thank you for your previous message. I would like to discuss our strategies for the current turn and future turns. I noticed that you are planning to move your army to Tyrolia and Piedmont, and your fleet to the Mediterranean. I was wondering if you could support my move to Naples this turn, and if we can coordinate our efforts to take more supply centers in the future.\n1 AUSTRIA -> TURKEY: I'd be happy to support your move to Naples this turn, Turkey. In return, I'd like to request your support for my move to Trieste. Additionally, I'd like to discuss our strategies for the future turns, especially in regards to our shared goal of taking more supply centers. What are your thoughts on this?\n2 TURKEY -> AUSTRIA: I would be happy to support your move to Trieste this turn. I was thinking that we could coordinate our efforts to take more supply centers by supporting each other's moves and preventing any potential threats. What do you think about this strategy",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "83979",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA94R53ZHE7Q3SPY1R3C66",
+        "intent_dialogue": "",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "101921",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA954WNBFAAXD8DK4N3644",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: I'd like to discuss our previous agreement regarding the movement of your fleet into STP. I believe it would be beneficial for both of us if you could keep your fleet in the Gulf. In return, I'm willing to offer you a deal where we will keep you alive in St Peters tip end of game in exchange for you keeping your fleet in the Gulf.\n1 RUSSIA -> TURKEY: I'm open to discussing the agreement you proposed earlier, Turkey. I'm not sure I'm comfortable with keeping my fleet in the Gulf indefinitely. Can you elaborate on the deal you're offering and what you're willing to give up in return?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "22828",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA95697DAZ52XVJN2375HX",
+        "intent_dialogue": "0 AUSTRIA -> RUSSIA: So where is Serbia going now?\n1 RUSSIA -> AUSTRIA: I'm happy to discuss the future of our board position. Considering the current situation, I think Serbia moving to Rumania would be beneficial for both of us. How do you feel about that?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "38207",
+        "agents": [
+            "01J38VTZ6CBF8PXWR60KZ499KE",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA94QPX0BDXHE7Z0TYAHZ8",
+        "intent_dialogue": "0 AUSTRIA -> ITALY: With what purpose?\n1 ITALY -> AUSTRIA: So, Austria, I'd like to discuss the possibility of moving the Ionian fleet to the Tyrrhenian. I believe it could be beneficial for both of us, as it would prevent England from getting too strong in the north and also give us a chance to potentially gain more influence in the region.\n2 AUSTRIA -> ITALY: I'm not sure I understand the purpose of moving the Ionian fleet to the Tyrrhenian. Could you elaborate on how this would benefit me and how it would prevent England from getting too strong in the north?\n3 ITALY -> AUSTRIA: I think it's a good idea to move the Ionian fleet to the Tyrrhenian. It would not only prevent England from getting too strong in the north but also give us a chance to potentially gain more influence in the region. Additionally, it would allow us to control the sea and potentially make it harder for England to move its fleets around.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "6685",
+        "agents": [
+            "01J38VTZ6CZCG3DBKWVYKBDKXC",
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2"
+        ],
+        "phase_name": "F1903M",
+        "env_uuid": "01JJRA94ZZQFGRN1WD8PTXJAGX",
+        "intent_dialogue": "0 GERMANY -> ENGLAND: I think we're off to a good start, Germany. I'm considering supporting Italy to Marseilles, would you be okay with that? It would help to block France's potential move to Gas.\n1 ENGLAND -> GERMANY: I think that's a great idea, Germany! Supporting Italy to Marseilles would indeed help block France's potential move to Gas. What do you think about Germany's plans for this turn? Are they going to support our move to Picardy?\n2 GERMANY -> ENGLAND: I think it's a great idea to support Italy to Marseilles, and I'd like to discuss some potential army movements for Germany. What do you think about moving an army from Burgundy to Gas? It could put some pressure on France and potentially limit their options.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "50922",
+        "agents": [
+            "01J38VTZ6B4K9WXCVWXJ2KQNJ2",
+            "01J38VTZ6C42A63EEG6KWC06C1"
+        ],
+        "phase_name": "F1904M",
+        "env_uuid": "01JJRA945ABQYPZKQ261N9N4DP",
+        "intent_dialogue": "0 ENGLAND -> FRANCE: France, I know we haven't had a chance to discuss our movements much yet, but I think it's essential we coordinate our efforts to prevent Germany from gaining too much ground. Your support in Belgium would be crucial in holding off their advances. What do you think?\n1 FRANCE -> ENGLAND: France, I'm glad you brought up the situation in Belgium. I think supporting your army there would be a good move for both of us. With Germany's recent advances, it's crucial we hold our ground. What do you think about supporting each other's moves this turn?\n2 FRANCE -> ENGLAND: I think supporting your army in Belgium would be a good move for both of us. With Germany's recent advances, it's crucial we hold our ground. What do you think about supporting each other's moves this turn?\n3 ENGLAND -> FRANCE: I agree with your assessment, France. Supporting each other's moves is crucial to prevent Germany from gaining too much ground. How about we support your army in Belgium this turn, and then reassess our options for the next turn?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "22828",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "F1905M",
+        "env_uuid": "01JJRA957KZ6QCEV7ST3PS4JEJ",
+        "intent_dialogue": "0 TURKEY -> RUSSIA: Russia, I think we should discuss our plans for this turn. I've been considering supporting Rumelia to Bulgaria, do you think that's a good idea?\n1 RUSSIA -> TURKEY: I appreciate your consideration of supporting Rumelia to Bulgaria. Considering the current situation, I think it's a good idea. It will allow us to gain a foothold in Bulgaria and put pressure on Austria. Additionally, it will give us a chance to bounce Austria's army in Bulgaria, which could be beneficial in the long run. What do you think about supporting my army in Sevastopol to Rumania as well? It would help us to secure our position in the Black Sea and potentially open up opportunities for future expansion.\n2 TURKEY -> RUSSIA: I think supporting Rumelia to Bulgaria is a great idea. It will definitely put pressure on Austria and give us a foothold in Bulgaria. As for your suggestion to support your army in Sevastopol to Rumania, I think it's a good idea too. It will help us to secure our position in the Black Sea and potentially open up opportunities for future expansion. However, I'm a bit concerned about Austria's army in Bulgaria. Do you think we should try to bounce it this turn or wait for next turn?\n3 RUSSIA -> TURKEY: I appreciate your consideration of supporting Rumelia to Bulgaria. Considering the current situation, I think it's a good idea. It will allow us to gain a foothold in Bulgaria and put pressure on Austria. Additionally, it will give us a chance to bounce Austria's army in Bulgaria, which could be beneficial in the long run. What do you think about supporting my army in Sevastopol to Rumania as well? It would help us to secure our position in the Black Sea and potentially open up opportunities for future expansion.\n4 TURKEY -> RUSSIA: I like the idea of supporting Rumelia to Bulgaria and Sevastopol to Rumania. It will help us to secure our position in the Black Sea and potentially open up opportunities for future expansion. What do you think about our plan, and are there any other moves you'd like to make this turn?\n5 RUSSIA -> TURKEY: Turkey, considering our previous discussion, I think supporting Rumelia to Bulgaria is a good idea. Additionally, I'd like to propose supporting my army in Sevastopol to Rumania as well, to secure our position in the Black Sea and potentially open up opportunities for future expansion.\n6 RUSSIA -> TURKEY: I like the idea of supporting Rumelia to Bulgaria and Sevastopol to Rumania. It will help us to secure our position in the Black Sea and potentially open up opportunities for future expansion. What do you think about our plan, and are there any other moves you'd like to make this turn?\n7 TURKEY -> RUSSIA: I think supporting Rumelia to Bulgaria is a good idea. It will allow us to gain a foothold in Bulgaria and put pressure on Austria. Additionally, it will give us a chance to bounce Austria's army in Bulgaria, which could be beneficial in the long run. What do you think about supporting my army in Sevastopol to Rumania as well? It would help us to secure our position in the Black Sea and potentially open up opportunities for future expansion.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "15072",
+        "agents": [
+            "01J38VTZ6C42A63EEG6KWC06C1",
+            "01J38VTZ6D2WFQGZF9CCNK3258"
+        ],
+        "phase_name": "S1903M",
+        "env_uuid": "01JJRA93SZ8N0AXMVGZCNAJPCB",
+        "intent_dialogue": "0 FRANCE -> RUSSIA: Well, Russia, it seems we're not going to come to an agreement on London this turn. But I'm willing to discuss other moves that could benefit both of our board positions. Are you open to exploring some options?\n1 RUSSIA -> FRANCE: Well, France, it seems we're making some progress. I like the idea of moving into Berlin. How about you support me with SIL-BER? I think it could be a strong play for both of us.\n2 FRANCE -> RUSSIA: I think supporting you with SIL-BER could be a strong play for both of us. However, I also think it's important to consider the possibility of Italy moving into Budapest. How do you think we can work together to prevent that from happening?\n3 RUSSIA -> FRANCE: I think supporting you with SIL-BER could be a strong play for both of us. However, I also think it's important to consider the possibility of Italy moving into Budapest. How do you think we can work together to prevent that from happening?\n4 FRANCE -> RUSSIA: I think supporting you with SIL-BER could be a strong play for both of us. Now that we've discussed it, I'd like to explore other options. How about you move your army in RUM to SEV and support me with GER-BER? This could help us both gain a foothold in Germany and limit Italy's options in the region.\n5 RUSSIA -> FRANCE: haha all righty then, let's do this. How about we move RUM to SEV and support you with GER-BER? This could help us both gain a foothold in Germany and limit Italy's options in the region.\n6 FRANCE -> RUSSIA: I think we're making good progress, Russia. I'm willing to support you with GER-BER as we discussed earlier. However, I'd like to ask, what are your thoughts on moving A NWY to A WAR? I think it could help us both in the long run.",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    },
+    {
+        "game_id": "23459",
+        "agents": [
+            "01J38VTZ6DY6RG1AEP6DVWRYBA",
+            "01J38VTZ6DV532X40ZPHB9W01C"
+        ],
+        "phase_name": "S1906M",
+        "env_uuid": "01JJRA95D13PYWPFAY0AH2W216",
+        "intent_dialogue": "0 TURKEY -> ITALY: I'm glad we're having this conversation, Italy. I'm looking to make some strategic moves this turn. I have a few options in mind, but I'd love to hear your thoughts on them. What do you think about supporting my army in Trieste? It would help me to gain control of the region and potentially set up for future moves.\n1 ITALY -> TURKEY: Thank you for considering supporting your army in Trieste, Turkey. I'm open to discussing the possibilities, but I need to know more about your plans. Are you looking to use this move to gain control of the region or to set up for future moves? Additionally, what kind of support are you thinking of? Would you like me to provide any support in return?\n2 TURKEY -> ITALY: What do you think about supporting my army in Trieste? It would help me to gain control of the region and potentially set up for future moves.\n3 ITALY -> TURKEY: I'm considering your proposal, Turkey. Before I make a decision, I'd like to know more about your plans for the region if you gain control of Trieste. Are you looking to support an army in Vienna or somewhere else? This will help me better understand the benefits of supporting your army in Trieste.\n4 TURKEY -> ITALY: I'm glad you're considering supporting my army in Trieste, Italy. I think it would be a great opportunity for us to work together strategically. As for your question, if I gain control of Trieste, I would likely support an army in Vienna. It would help me to further expand my influence in the region. What do you think of this plan?",
+        "unit_center": "Error: Could not find centers or units data in the scenario."
+    }
+]

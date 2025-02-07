@@ -119,21 +119,6 @@ async def main():
  
     uuid_dict_list = get_env_pks_by_tag(args.env_tag)
     uuid_list = [uuid_dict['uuid'] for uuid_dict in uuid_dict_list][args.split_begin: args.split_end]
-
-    # The uuid here is with plausible
-    # uuid_list = ['01JBDMK2DHZ67BV0EVJGK13E8Z',
-    #             '01JBDMK12CAB7SVDTEB55MAR4V',
-    #             '01JBDMK1XSF38TSJ813R182E1S',
-    #             '01JBDMK17YB39HV72VRDCFNM7X',
-    #             '01JBDMK0SS526CVGNS8DTXD6K6',
-    #             '01JBDMK27T1Y9303XVZDB27R4W',
-    #             '01JBDMK2336X5YF6R1VAEP64MC',
-    #             '01JBDMK1VXH11P04TM8V4ZY54Z',
-    #             '01JBDMK0X5A3QE57DWGM7HNMPH',
-    #             '01JBDMK1TBHKS824WG61M27YQJ',
-    #             '01JBDMK1KFJMZNHHZD37RJEEQQ',
-    #             '01JBDMK2C9K275FEMPVBWWRDV7',
-    #             '01JBDMK1ZVFDTAWWR4GBJ7ZYDV']
     
     print(f"Length of uuid: {len(uuid_list)}")
     uuid_list = uuid_list[args.split_begin: args.split_end]

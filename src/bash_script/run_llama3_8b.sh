@@ -10,8 +10,11 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3639 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
-    --chat-template "chat_templates/llama3.jinja" \
+    --chat-template "../chat_templates/llama3.jinja" \
     --tensor-parallel-size=1 \
+    --gpu-memory-utilization=0.9 \
+    --dtype bfloat16 \
+    --max-num-seqs 32 \
     --max-num-batched-tokens=8192
 
     # 3636

@@ -61,6 +61,8 @@ def process_conversation_to_intent(text):
     formatted_messages = []
     message_count = 0
     # import pdb; pdb.set_trace()
+    if len(cities) != 2:
+        return ""
     
     for turn in turns:
         match = re.match(r'(\w+) said: "(.*?)"$', turn.strip(), re.DOTALL)
@@ -71,7 +73,8 @@ def process_conversation_to_intent(text):
             except StopIteration:
                 print(cities)
                 rich.print(turns)
-                print(f"Error: Speaker: {speaker} \nCould not find recipient for message: {message}")
+                print(f"Error:\nSpeaker: {speaker} \nCould not find recipient for message:\n{message}")
+                print(f"cities: {cities}\nspeaker: {speaker}")
             formatted_message = f"{message_count} {speaker.upper()} -> {recipient.upper()}: {message}"
             formatted_messages.append(formatted_message)
             message_count += 1

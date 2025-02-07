@@ -178,18 +178,18 @@ async def arun_one_episode(
         
         
         # pdb.set_trace()
-        if action_from_agent_type is not None:
-            for a in agent_list:
-                if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
-                    rich.print()
-                    rich.print("[bold blue]Agent message:[/bold blue]")
-                    rich.print(f"[blue]{agent_messages[a.agent_name].argument}[/blue]")
-                    rich.print()
-                    # print("Leave your message:")
-                elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
-                    rich.print()
-                    rich.print("[bold purple]Human message:[/bold purple]") 
-                    rich.print(f"[purple]{agent_messages[a.agent_name].argument}[/purple]")
+        # if action_from_agent_type is not None:
+        #     for a in agent_list:
+        #         if a.agent_name == env.agents[action_from_agent_type] and type(a) == LLMAgent:
+        #             rich.print()
+        #             rich.print("[bold blue]Agent message:[/bold blue]")
+        #             rich.print(f"[blue]{agent_messages[a.agent_name].argument}[/blue]")
+        #             rich.print()
+        #             # print("Leave your message:")
+        #         elif a.agent_name == env.agents[action_from_agent_type] and type(a) == HumanAgent:
+        #             rich.print()
+        #             rich.print("[bold purple]Human message:[/bold purple]") 
+        #             rich.print(f"[purple]{agent_messages[a.agent_name].argument}[/purple]")
         messages.append(
             [
                 ("Environment", agent_name, environment_messages[agent_name])
@@ -218,14 +218,14 @@ async def arun_one_episode(
         rewards=[info[agent_name]["complete_rating"] for agent_name in env.agents],
         rewards_prompt=info["rewards_prompt"]["overall_prompt"],
     )
-    # rich.print(epilog.rewards_prompt)
-    agent_profiles, conversation = epilog.render_for_humans()
+    rich.print(epilog.rewards_prompt)
+    # agent_profiles, conversation = epilog.render_for_humans()
     # for agent_profile in agent_profiles:
     #     rich.print(agent_profile)
     # for message in conversation:
     #     rich.print(message)
-    rich.print(conversation[-2].split(";")[0])
-    rich.print(conversation[-1])
+    # rich.print(conversation[-2].split(";")[0])
+    # rich.print(conversation[-1])
     if push_to_db:
         try:
             epilog.save()

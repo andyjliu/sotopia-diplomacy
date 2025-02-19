@@ -73,7 +73,7 @@ def create_env_agent_combo(env_model: str, agent_model: str, env_uuid: str, agen
             RuleBasedTerminatedEvaluator()
         ],
         terminal_evaluators=[
-            ReachGoalLLMEvaluator(env_model),
+            ReachGoalLLMEvaluator(agent_model),
         ],
         uuid_str=env_uuid,
     )
@@ -139,8 +139,9 @@ async def main():
 
     # "llama3_70b"
     model = args.model    
+    agent_model = "gpt-4o-mini"
     for i in range(len(uuid_list)):
-        env_agent_combo_list.append(create_env_agent_combo(model, model, uuid_list[i], agents_list[i]))
+        env_agent_combo_list.append(create_env_agent_combo(model, agent_model, uuid_list[i], agents_list[i]))
 
     await episode_generation(args.epi_tag, env_agent_combo_list)
 

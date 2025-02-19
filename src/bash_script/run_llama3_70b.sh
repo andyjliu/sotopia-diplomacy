@@ -4,7 +4,7 @@
 source ~/.bashrc
 conda activate inf
 
-MODEL_DIR="/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/"
+MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-70B-Instruct/"
 
 test -d "$MODEL_DIR"
 python -O -u -m vllm.entrypoints.openai.api_server \
@@ -13,10 +13,8 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --tokenizer=$MODEL_DIR \
     --chat-template "chat_templates/llama3.jinja" \
     --tensor-parallel-size=4 \
-    --max-num-batched-tokens=8192 \
     --dtype bfloat16 \
-    --gpu-memory-utilization 0.9 \
-    --max-num-seqs 32
+    --gpu-memory-utilization 0.9 
 
 # sources: https://github.com/vllm-project/vllm/pull/2249
 

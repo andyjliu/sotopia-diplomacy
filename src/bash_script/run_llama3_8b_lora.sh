@@ -4,8 +4,8 @@
 source ~/.bashrc
 conda activate inf
 
-MODEL_DIR="/data/models/huggingface/meta-llama/Meta-Llama-3-8B-Instruct/"
-LORA_DIR="name=/data/user_data/wenkail/sotopia_diplomacy/8b_sft_lora_checkpoints_1e-4_v2/checkpoint-3517/"
+MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
+LORA_DIR="name=/data/user_data/wenkail/sotopia_diplomacy/filtered_3.1_8b_sft_lora_checkpoints_1e-4/checkpoint-2344/"
 test -d "$MODEL_DIR"
 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3639 \
@@ -15,9 +15,7 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --chat-template "../chat_templates/llama3.jinja" \
     --tensor-parallel-size=1 \
     --gpu-memory-utilization=0.9 \
-    --dtype bfloat16 \
-    --max-num-seqs 32 \
-    --max-num-batched-tokens=8192
+    --dtype bfloat16 
 
     # 3636
     # 3640

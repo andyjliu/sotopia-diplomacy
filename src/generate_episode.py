@@ -90,7 +90,6 @@ async def episode_generation(tag, env_agent_combo_list: List[EnvAgentCombo[Obser
                 omniscient=False,
                 script_like=False,
                 json_in_script=False,
-                # tag="whole", # First generation results
                 tag=tag,
                 push_to_db=True,
                 using_async=True

@@ -100,6 +100,8 @@ def main():
             response["phase_name"] = episode["phase_name"]
             response["env_uuid"] = episode["env_uuid"]
             response["countries"] = countries
+            response['reasoning'] = episode['reasoning']
+            response['rewards'] = episode['rewards']
             response[f"{countries[0]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[0])
             response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
             response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn, args.cut))

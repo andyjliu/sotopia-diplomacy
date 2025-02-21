@@ -14,8 +14,6 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --tensor-parallel-size=1 \
     --gpu-memory-utilization=0.9 \
     --dtype bfloat16 \
-    --max-num-seqs 32 \
-    --max-num-batched-tokens=8192
 
     # 3636
     # 3640

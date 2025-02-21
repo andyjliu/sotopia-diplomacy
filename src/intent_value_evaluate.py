@@ -62,6 +62,8 @@ def main():
             country_value_dict[f"{c1}_units"] = episode[f"{c1}_units"]
             country_value_dict[f"{c2}_units"] = episode[f"{c2}_units"]
             country_value_dict["intent_dialogue"] = episode["intent_dialogue"]
+            country_value_dict['reasoning'] = episode['reasoning']
+            country_value_dict['rewards'] = episode['rewards']
 
             if args.task_eval:
                 country_value_dict[f"{c1}_actual_movement"], country_value_dict[f"{c1}_parse_predict"], country_value_dict[c1] = get_task_eval(game_file_path, episode['phase_name'], c1, c2, predict1, args.move)

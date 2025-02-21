@@ -37,6 +37,13 @@ def format_episode(episodes):
         episode['dialogue'] = replace_names_with_countries(process_conversation(episode["episode"].messages), agent_profiles)
         episode['intent_dialogue'] = process_conversation_to_intent(episode['dialogue'])
         episode['unit_center'] = format_diplomacy_data(episode["env"].scenario)
+        episode['reasoning']  = episode['episode'].reasoning
+        agents = episode['env'].agent_powers
+        rewards = episode['episode'].rewards
+        rewards_info = ""
+        for i in range(len(agents)):
+            rewards_info += f"{agents[i]}: {rewards[i]}\n"
+        episode['rewards'] = rewards_info
         new_episodes.append(episode)
     return new_episodes
 

@@ -203,7 +203,7 @@ async def arun_one_episode(
         )
         done = all(terminated.values())
         
-    
+    # pdb.set_trace()
     # TODO: clean up this part
     epilog = EpisodeLog(
         environment=env.profile.pk,
@@ -219,13 +219,13 @@ async def arun_one_episode(
         rewards_prompt=info["rewards_prompt"]["overall_prompt"],
     )
     rich.print(epilog.rewards_prompt)
-    # agent_profiles, conversation = epilog.render_for_humans()
-    # for agent_profile in agent_profiles:
-    #     rich.print(agent_profile)
-    # for message in conversation:
-    #     rich.print(message)
-    # rich.print(conversation[-2].split(";")[0])
-    # rich.print(conversation[-1])
+    agent_profiles, conversation = epilog.render_for_humans()
+    for agent_profile in agent_profiles:
+        rich.print(agent_profile)
+    for message in conversation:
+        rich.print(message)
+    rich.print(conversation[-2].split(";")[0])
+    rich.print(conversation[-1])
     if push_to_db:
         try:
             epilog.save()

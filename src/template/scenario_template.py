@@ -8,7 +8,7 @@ class Template:
 
     unit_instruction = '''This is the information of the countries' units, and you will playing as the given country as you act: \n units: '''
 
-    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues. \n\n'''
+    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues. Please use English. \n\n'''
     @staticmethod
     def get_format_scenario_template_goals(phase, countries, game_id):
         c1 = countries[0]

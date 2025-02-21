@@ -11,10 +11,11 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --port=9570 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
-    --chat-template "chat_templates/llama3.jinja" \
+    --chat-template "../chat_templates/llama3.jinja" \
     --tensor-parallel-size=4 \
     --dtype bfloat16 \
-    --gpu-memory-utilization 0.9 
+    --gpu-memory-utilization 0.98 \
+    --max-model-len 115824 \
 
 # sources: https://github.com/vllm-project/vllm/pull/2249
 

@@ -4,9 +4,9 @@ set -e
 
 # Here the parse means the v2
 DIALOGUE_END_INDEX=0
-FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_demo/llama3_8b_lora_finetune_v3.json"
-INTENT_RESPONSE_PATH="../data/intent_response/taskeval_demo/llama3_8b_lora_finetune_v3.jsonl"
-INTENT_VALUE_PATH="../data/intent_value/taskeval_demo/llama3_8b_lora_finetune_v3.json"
+FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negotiate/llama3.1_70b.json"
+INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negotiate/llama3.1_70b.jsonl"
+INTENT_VALUE_PATH="../data/intent_value/taskeval_negotiate/llama3.1_70b.json"
 
 source ~/.bashrc
 
@@ -15,7 +15,7 @@ conda activate sotopia
 
 echo "Running get_intent_episode.py ..."
 
-CUDA_VISIBLE_DEVICES=1  python ../get_llm_intent_episode.py --tag llama3_8b_lora_finetune_v3 --tgt_path=$FORMAT_EPISODE_PATH
+CUDA_VISIBLE_DEVICES=1 python ../get_llm_intent_episode.py --tag llama3.170b_v1 --tgt_path=$FORMAT_EPISODE_PATH
 # python get_llm_intent_episode.py --tag demo_llama --tgt_path=$FORMAT_EPISODE_PATH
 
 # python get_llm_intent_episode.py --tag coop_without_flausible_move_v2 --tgt_path=$FORMAT_EPISODE_PATH
@@ -30,7 +30,7 @@ echo "Activating diplomacy_cicero environment..."
 conda activate diplomacy_cicero
 
 echo "Running intent_value_evaluate.py ..."
-CUDA_VISIBLE_DEVICES=1  python ../intent_value_evaluate.py --task_eval --move --res_path=$INTENT_RESPONSE_PATH --tgt_path=$INTENT_VALUE_PATH
+CUDA_VISIBLE_DEVICES=1 python ../intent_value_evaluate.py --task_eval --move --res_path=$INTENT_RESPONSE_PATH --tgt_path=$INTENT_VALUE_PATH
 
 echo "Script execution completed."
 

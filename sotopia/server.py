@@ -201,6 +201,7 @@ async def arun_one_episode(
         reasons.append(
             " ".join(info[agent_name]["comments"] for agent_name in env.agents)
         )
+        
         done = all(terminated.values())
         
     # pdb.set_trace()

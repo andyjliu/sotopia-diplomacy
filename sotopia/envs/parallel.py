@@ -469,7 +469,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
             self.recv_message(agent, action)
 
         response = unweighted_aggregate_evaluate(
-            list(
+            responses=list(
                 itertools.chain(
                     *await asyncio.gather(
                         *[
@@ -486,7 +486,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
 
         if response.terminated:
             terminal_response = unweighted_aggregate_evaluate(
-                list(
+                responses=list(
                     itertools.chain(
                         *await asyncio.gather(
                             *[
@@ -507,7 +507,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
                 response.comments += terminal_response.comments
             elif terminal_response.comments:
                 response.comments = terminal_response.comments
-
+        # import pdb; pdb.set_trace()
         self.action_mask = [False for _ in self.agents]
         if self.action_order == "round-robin":
             self.action_mask[self.turn_number % len(self.action_mask)] = True

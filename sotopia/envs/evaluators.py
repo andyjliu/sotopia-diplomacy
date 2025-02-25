@@ -303,7 +303,7 @@ class EvaluationBySocialDimensions(BaseModel):
         "pathos_sharing_personal_info", "pathos_general_banter",
         "pathos_reassurance", "pathos_greet_thank_compliment", "pathos_apology"
     )
-    def score_must_be_between_zero_and_five(cls, v: tuple[str, int]) -> tuple[str, int]:
+    def zero_to_five_validator(cls, v: tuple[str, int]) -> tuple[str, int]:
         """
         Ensures the subcategory score is strictly within [0, 5].
         Raises a ValueError if it is not.
@@ -405,7 +405,7 @@ class Evaluator(abc.ABC):
 
 @beartype
 class RuleBasedTerminatedEvaluator(Evaluator):
-    def __init__(self, max_turn_number: int = 12, max_stale_turn: int = 2) -> None:
+    def __init__(self, max_turn_number: int = 20, max_stale_turn: int = 2) -> None:
         self.max_turn_number = max_turn_number
         self.max_stale_turn = max_stale_turn
 
@@ -583,7 +583,7 @@ def _reduce(
 def unweighted_aggregate_evaluate(
     responses: list[tuple[str, tuple[tuple[str, int | float | bool], str]]],
 ) -> ScriptEnvironmentResponse:
-    """
+    """ 
     Aggregate the responses from the environment
 
     Args:
@@ -634,6 +634,7 @@ def unweighted_aggregate_evaluate(
         and environment_responses[0]["terminated"]
     ):
         log.debug(f"[green] The conversation is terminated. {response}")
+    # import pdb; pdb.set_trace()
     return ScriptEnvironmentResponse(
         terminated=environment_responses[0]["terminated"]
         if "terminated" in environment_responses[0]

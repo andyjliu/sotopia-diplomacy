@@ -6,7 +6,7 @@ conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
 test -d "$MODEL_DIR"
-CUDA_VISIBLE_DEVICES=4 python -O -u -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES=0 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3638 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
@@ -14,6 +14,7 @@ CUDA_VISIBLE_DEVICES=4 python -O -u -m vllm.entrypoints.openai.api_server \
     --tensor-parallel-size=1 \
     --gpu-memory-utilization=0.9 \
     --dtype bfloat16 \
+    --max-model-len 115824 \
 
     # 3636
     # 3640

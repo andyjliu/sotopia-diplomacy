@@ -139,7 +139,6 @@ async def main():
     agent_model = args.agent_model
     for i in range(len(uuid_list)):
         env_agent_combo_list.append(create_env_agent_combo(model, agent_model, uuid_list[i], agents_list[i]))
-
     await episode_generation(args.epi_tag, env_agent_combo_list)
 
 if __name__ == "__main__":

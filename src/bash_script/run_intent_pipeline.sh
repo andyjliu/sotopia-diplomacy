@@ -4,9 +4,9 @@ set -e
 
 # Here the parse means the v2
 DIALOGUE_END_INDEX=0
-FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negotiate/llama3.1_8b_lora.json"
-INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negotiate/llama3.1_8b_lora.jsonl"
-INTENT_VALUE_PATH="../data/intent_value/taskeval_negotiate/llama3.1_8b_lora.json"
+FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negotiate/llama3.1_8b.json"
+INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negotiate/llama3.1_8b.jsonl"
+INTENT_VALUE_PATH="../data/intent_value/taskeval_negotiate/llama3.1_8b.json"
 
 source ~/.bashrc
 
@@ -15,7 +15,7 @@ conda activate sotopia
 
 echo "Running get_intent_episode.py ..."
 
-CUDA_VISIBLE_DEVICES=0 python ../get_llm_intent_episode.py --tag llama3.18b_lora --tgt_path=$FORMAT_EPISODE_PATH
+CUDA_VISIBLE_DEVICES=0 python ../get_llm_intent_episode.py --tag llama3.18b --tgt_path=$FORMAT_EPISODE_PATH
 # python get_llm_intent_episode.py --tag demo_llama --tgt_path=$FORMAT_EPISODE_PATH
 
 # python get_llm_intent_episode.py --tag coop_without_flausible_move_v2 --tgt_path=$FORMAT_EPISODE_PATH

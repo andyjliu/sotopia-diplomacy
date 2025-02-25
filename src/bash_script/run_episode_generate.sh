@@ -10,8 +10,12 @@ conda activate sotopia
 # 3. 
 # python generate_episode.py --epi_tag llama3.18b --env_tag finetune_format --model llama3_8b --split_begin=0 --split_end None
 # 4. 
-python generate_episode.py --epi_tag llama3.170b_v1 --env_tag finetune_format --model llama3_70b --split_begin=0 --split_end None
+# python generate_episode.py --epi_tag llama3.170b_v1 --env_tag finetune_format --model llama3_70b --split_begin=0 --split_end None
 
+# Compare with/without finetune in Negotiation Evaluation
+1. python generate_episode.py --epi_tag llama_3.1_8b_negoation_eval --env_tag finetune_format --model llama3_8b --split_begin=0 --split_end None
+2. python generate_episode.py --epi_tag llama_3.1_8b_lora_negoation_eval --env_tag finetune_format --model llama3_8b --split_begin=0 --split_end None
+3. python generate_episode.py --epi_tag llama_3.1_70n_negoation_eval --env_tag finetune_format --model llama3_70b --split_begin=0 --split_end None
 
 
 

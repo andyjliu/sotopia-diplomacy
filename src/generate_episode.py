@@ -138,7 +138,8 @@ async def main():
 
     # "llama3_70b"
     model = args.model    
-    agent_model = "gpt-4o-mini"
+    # agent_model = "gpt-4o-mini"
+    agent_model = args.agent_model
     for i in range(len(uuid_list)):
         env_agent_combo_list.append(create_env_agent_combo(model, agent_model, uuid_list[i], agents_list[i]))
 

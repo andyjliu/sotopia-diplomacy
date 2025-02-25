@@ -362,6 +362,14 @@ def obtain_chain(
         if model_name == "llama3_8b":
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
+                openai_api_base = "http://127.0.0.1:3638/v1",
+                model_name = "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/",
+                temperature=temperature,
+                max_retries=max_retries,
+            )
+        elif model_name == "llama3_8b_lora":
+            chat = ChatVLLMOpenAI(
+                openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:3639/v1",
                 model_name = "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/",
                 temperature=temperature,
@@ -369,7 +377,6 @@ def obtain_chain(
             )
         elif model_name == "llama3_70b":
             # import pdb; pdb.set_trace()
-            
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:9570/v1",

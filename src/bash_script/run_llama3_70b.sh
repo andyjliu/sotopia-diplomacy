@@ -7,7 +7,7 @@ conda activate inf
 MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-70B-Instruct/"
 
 test -d "$MODEL_DIR"
-python -O -u -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES=0,1,2,3 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=9570 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \

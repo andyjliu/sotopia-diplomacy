@@ -106,7 +106,6 @@ async def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
     parser.add_argument("--model", default="llama3_70b", type=str, required=False, help="Choose the env model")
-    parser.add_argument("--env_model", default="llama3_70b", type=str, required=False, help="Choose the env model")
     parser.add_argument("--agent_model", default="llama3_70b", type=str, required=False, help="Choose the agent model")
     parser.add_argument("--env_tag", type=str, required=False, help="Choose a environment tag for getting the choosen environment")
     parser.add_argument("--epi_tag", type=str, required=True, help = "Choose a tag for access the database")
@@ -136,9 +135,7 @@ async def main():
     
     env_agent_combo_list = []
 
-    # "llama3_70b"
-    model = args.model    
-    # agent_model = "gpt-4o-mini"
+    model = args.model
     agent_model = args.agent_model
     for i in range(len(uuid_list)):
         env_agent_combo_list.append(create_env_agent_combo(model, agent_model, uuid_list[i], agents_list[i]))

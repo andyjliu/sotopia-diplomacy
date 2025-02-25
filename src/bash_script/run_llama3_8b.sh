@@ -6,8 +6,8 @@ conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
 test -d "$MODEL_DIR"
-python -O -u -m vllm.entrypoints.openai.api_server \
-    --port=3639 \
+CUDA_VISIBLE_DEVICES=4 python -O -u -m vllm.entrypoints.openai.api_server \
+    --port=3638 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
     --chat-template "../chat_templates/llama3.jinja" \

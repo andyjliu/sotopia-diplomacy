@@ -130,14 +130,14 @@ log = logging.getLogger("evaluators")
 #         return v
 
 
-class EvaluationBySocialDimensionsSubCategory(BaseModel):
+class EvaluationBySocialDimensions(BaseModel):
     """
     This model breaks down the original Ethos, Logos, and Pathos evaluations
     into more detailed subcategories. Each field is a tuple (analysis: str, score: int).
-    
+
     Rules:
       - The 'analysis' is a concise explanation of how the text/agent performs in this subcategory.
-      - The 'score' is an integer between 0 and 5 (inclusive).
+      - The 'score' is an integer in the valid range indicated at the end of each description.
     """
 
     # ----------------------------------------------------------------
@@ -149,7 +149,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_speakers_plans>\n"
             "Focuses on whether the speaker clearly and credibly states their plans. "
-            "Are these plans relevant to the recipient or the ongoing situation?"
+            "Are these plans relevant to the recipient or the ongoing situation?\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     ethos_speakers_thoughts: tuple[str, int] = Field(
@@ -157,7 +158,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_speakers_thoughts>\n"
             "Focuses on whether the speaker shares relevant, strategic thoughts that "
-            "demonstrate understanding or insight into the current context."
+            "demonstrate understanding or insight into the current context.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     ethos_speakers_goals: tuple[str, int] = Field(
@@ -165,7 +167,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_speakers_goals>\n"
             "Focuses on whether the speaker clarifies their underlying objectives "
-            "in a way that builds credibility and trust."
+            "in a way that builds credibility and trust.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
 
@@ -175,7 +178,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_recipients_proposal>\n"
             "Focuses on whether the recipient proposes a clear plan of action "
-            "that aligns with or responds to the speaker's statement."
+            "that aligns with or responds to the speaker's statement.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     ethos_recipients_counter_offer: tuple[str, int] = Field(
@@ -183,7 +187,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_recipients_counter_offer>\n"
             "Focuses on whether the recipient makes a counter-offer or alternative suggestion, "
-            "and whether it is clear, constructive, and trustworthy."
+            "and whether it is clear, constructive, and trustworthy.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     ethos_recipients_seek_clarification: tuple[str, int] = Field(
@@ -191,7 +196,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_recipients_seek_clarification>\n"
             "Focuses on whether the recipient seeks clarification effectively, "
-            "indicating they want to understand before proceeding."
+            "indicating they want to understand before proceeding.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
 
@@ -201,7 +207,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<ethos_other_players_sharing_info>\n"
             "Focuses on how the speaker conveys or clarifies third-party (other players') actions, "
-            "intentions, or statements, in a credible manner."
+            "intentions, or statements, in a credible manner.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
 
@@ -213,7 +220,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         ...,
         description=(
             "<logos_speculation>\n"
-            "Evaluates logical speculation or predictions about other players’ motives and next steps."
+            "Evaluates logical speculation or predictions about other players’ motives and next steps.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     # 2) Justification
@@ -221,7 +229,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         ...,
         description=(
             "<logos_justification>\n"
-            "Evaluates the coherence and rationale behind the speaker's own moves or requests."
+            "Evaluates the coherence and rationale behind the speaker's own moves or requests.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     # 3) Hindsight
@@ -230,7 +239,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<logos_hindsight>\n"
             "Evaluates how the speaker reflects on past actions, what lessons they draw, "
-            "and how they use this to inform future decisions."
+            "and how they use this to inform future decisions.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
 
@@ -243,7 +253,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<pathos_sharing_personal_info>\n"
             "Focuses on whether the speaker reveals personal thoughts, feelings, or experiences "
-            "in a way that fosters connection."
+            "in a way that fosters connection.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     # 2) General banter
@@ -251,7 +262,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         ...,
         description=(
             "<pathos_general_banter>\n"
-            "Focuses on light-hearted conversation, humor, or informal chat that builds rapport."
+            "Focuses on light-hearted conversation, humor, or informal chat that builds rapport.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     # 3) Reassurance
@@ -260,7 +272,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         description=(
             "<pathos_reassurance>\n"
             "Focuses on how the speaker reassures or comforts the recipient, "
-            "indicating understanding or support."
+            "indicating understanding or support.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     # 4) Greet, thank, or compliment
@@ -268,7 +281,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         ...,
         description=(
             "<pathos_greet_thank_compliment>\n"
-            "Evaluates friendly gestures such as greetings, expressions of gratitude, or compliments."
+            "Evaluates friendly gestures such as greetings, expressions of gratitude, or compliments.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
     # 5) Apology
@@ -276,7 +290,8 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         ...,
         description=(
             "<pathos_apology>\n"
-            "Evaluates the effectiveness and sincerity of apologies or acknowledgements of fault."
+            "Evaluates the effectiveness and sincerity of apologies or acknowledgements of fault.\n\n"
+            "Output an integer score ranging from 0 and 5 in the 'score' field."
         )
     )
 
@@ -288,9 +303,14 @@ class EvaluationBySocialDimensionsSubCategory(BaseModel):
         "pathos_sharing_personal_info", "pathos_general_banter",
         "pathos_reassurance", "pathos_greet_thank_compliment", "pathos_apology"
     )
-    def score_between_zero_and_five(cls, v: tuple[str, int]) -> tuple[str, int]:
+    def score_must_be_between_zero_and_five(cls, v: tuple[str, int]) -> tuple[str, int]:
+        """
+        Ensures the subcategory score is strictly within [0, 5].
+        Raises a ValueError if it is not.
+        """
         assert v[1] >= 0 and v[1] <= 5
         return v
+
 
 
 class EvaluationBySocialDimensionsPlus(BaseModel):

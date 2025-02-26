@@ -93,7 +93,7 @@ class Template:
         c1 = countries[0]
         c2 = countries[1]
         # prompt = f"{Template.previous_dialogue_instruction}: {c1} and {c2}: \n"
-        prompt = f"{Template.finetune_instruction}"
+        prompt = Template.finetune_instruction
         prompt += get_full_finetune_format(game_dir, game_id, phase, countries)
         # prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
         agent_goals_list = []

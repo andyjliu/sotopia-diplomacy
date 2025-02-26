@@ -7,7 +7,7 @@ conda activate inf
 MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
 LORA_DIR="name=/data/user_data/wenkail/sotopia_diplomacy/filtered_3.1_8b_sft_lora_checkpoints_1e-4/checkpoint-2344/"
 test -d "$MODEL_DIR"
-CUDA_VISIBLE_DEVICES=1 python -O -u -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES=5 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3639 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \

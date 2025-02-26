@@ -290,54 +290,107 @@ def get_previous_phase_finetune_format(game_dir, game_id, phase_name, countries)
     return dialogue_unit
             
 
-def get_full_finetune_format(game_dir, game_id, phase_name, countries):
+def get_full_finetune_format(game_dir, game_id, current_phase, countries):
     
+    phase_name = current_phase['name']
     with open(game_dir + game_id + ".json") as f:
         game = json.load(f)
     
     upper_countries = [c.upper() for c in countries]
     
-    center_info = ""
-    unit_info = ""
-    order_info = ""
-    for phase in game['phases']:
-        if phase['name'] == phase_name:
-            for key, value in phase['state']['centers'].items():
-                center_str = ", ".join(value)
-                center_info += f"{key}: {center_str}; "
-            for key, value in phase['state']['units'].items():
-                unit_str = ", ".join(value)
-                unit_info += f"{key}: {unit_str}; "
-            for key, value in phase['state']['orders'].items():
-                order_str = ", ".join(value)
-                order_info += f"{key}: {order_str}; "
-    prompt = ""
-    prompt += f"{phase_name}\n\n"
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)
     
-    prompt += f"Here is the countries' cneters, units and the previous dialogue between the two countries: {countries[0]} and {countries[1]}.\n\n"
-    
-    prompt += f"This is the information of the countries' centers: {center_info}\n\n"
-    
-    prompt += f"This is the information of the countries' units: {unit_info}\n\n"
-    
-    prompt += f"This is the intent movement of the countries: {order_info}\n\n"
-    
+    # Add Previous Phase
     previous_phase = []
-
     for phase in game['phases']:
         if phase['name'] == phase_name:
             print(phase)
         else:
             previous_phase.append(phase)
-    previous_phase = previous_phase[-1:]
-    dialogue_unit = ""
-    for phase in previous_phase:
-        dialogue_unit += f"Here is the previous dialogue between you and the other country: \n"
-        for message in phase['messages']:
-            if message['sender'] in upper_countries and message['recipient'] in upper_countries:
-                clean_message = message['message'].replace("\n", " ")
-                dialogue_unit += f"{message['sender']} to {message['recipient']}: {clean_message}\n"
-                
-    prompt += dialogue_unit
+
+    # Recent game and center information
+    center_info = ""
+    unit_info = ""
+    order_info = ""
+    current_order_info = ""
+    c1, c2 = countries
+    for phase in game['phases']:
+        if phase['name'] == phase_name:
+            for key, value in phase['state']['centers'].items():
+                center_str = ", ".join(value)
+                center_info += f"{key}: {center_str}\n"
+            for key, value in phase['state']['units'].items():
+                unit_str = ", ".join(value)
+                unit_info += f"{key}: {unit_str}\n"
+            for key, value in phase['orders'].items():
+                if key in [c1.upper(), c2.upper()]: 
+                    order_str = ", ".join(value)
+                    current_order_info += f"{key}: {order_str}\n"
+
+    dialogue_history = get_previous_dialogue(game_dir, game_id, current_phase, countries)
+    order_history = get_previous_orders(game_dir, game_id, current_phase)
+    prompt = ""
+    prompt += f"You are in Phase: {phase_name}\n\n"
+    
+    prompt += f"The dialogue are between the two countries: {c1} and {c2}\n\n"
+    
+    prompt += f"The previous turn dialogue history is:\n{dialogue_history}\n\n"
+    
+    prompt += f"The previous order history is:\n{order_history}\n\n"
+    
+    prompt += f"This is the information of the game state:\nCenters:\n{center_info}\n\nUnits:\n{unit_info}\n\nPlanned orders:\n{current_order_info}\n\n"
     
     return prompt
+
+def get_previous_dialogue(game_dir, game_id, phase, countries):
+    
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)
+    
+    previous_phase = []
+    
+    # TODO: Change this into getting the privous two phases, not the last two phases now.
+    for p in game['phases']:
+        if p['name'] == phase['name']:
+            break
+        else:
+            previous_phase.append(p)
+    
+    upper_countries = [c.upper() for c in countries]
+    
+    previous_dialogue = ""
+    for pp in previous_phase:
+        current_phase = pp['name']
+        message_list = [f"{msg['sender']} to {msg['recipient']}: {msg['message']}" for msg in pp['messages'] if msg['sender'].upper() in upper_countries and msg['recipient'].upper() in upper_countries]
+        if message_list == []:
+            continue
+        message = "\n".join(message_list)
+        whole_message = f"Phase: {current_phase}\n{message}\n"
+        previous_dialogue += whole_message
+       
+    return previous_dialogue
+
+def get_previous_orders(game_dir, game_id, phase):
+    with open(game_dir + game_id + ".json") as f:
+        game = json.load(f)
+    
+    previous_phase = []
+    for p in game['phases']:
+        if p['name'] == phase['name']:
+            break
+        else:
+            previous_phase.append(p)
+
+    order_history = ""
+    for pp in previous_phase:
+        order_history += pp['name']
+        order_history += "\n"
+        order_info = ""
+        for key, value in pp['orders'].items():
+            if value != []:
+                order_str = ", ".join(value)
+                order_info += f"{key}: {order_str}\n"
+        order_history += order_info
+        
+    return order_history

@@ -119,7 +119,7 @@ log = logging.getLogger("evaluators")
 #             "2. Does the agent use humor, compliments, or apologies appropriately?\n"
 #             "3. Does the agent make the recipient feel valued or reassured?\n\n"
 #             "Analyze the naturalness and effectiveness of the emotional appeal. "
-#             "Output your reasoning process to the 'pathos' field (string). "
+#             "Output your reasoning process to the 'pathos' field (string)."
 #             "Assign an integer score (0-10) in the 'score' field, where a higher score reflects stronger emotional connection and rapport-building."
 #         )
 #     )
@@ -130,187 +130,258 @@ log = logging.getLogger("evaluators")
 #         return v
 
 
-class EvaluationBySocialDimensions(BaseModel):
-    """
-    This model breaks down the original Ethos, Logos, and Pathos evaluations
-    into more detailed subcategories. Each field is a tuple (analysis: str, score: int).
+# class EvaluationBySocialDimensions(BaseModel):
+#     """
+#     This model breaks down the original Ethos, Logos, and Pathos evaluations
+#     into more detailed subcategories. Each field is a tuple (analysis: str, score: int).
 
-    Rules:
-      - The 'analysis' is a concise explanation of how the text/agent performs in this subcategory.
-      - The 'score' is an integer in the valid range indicated at the end of each description.
-    """
+#     Rules:
+#       - The 'analysis' is a concise explanation of how the text/agent performs in this subcategory.
+#       - The 'score' is an integer in the valid range indicated at the end of each description.
+#     """
 
-    # ----------------------------------------------------------------
-    #  ETHOS SUBCATEGORIES
-    # ----------------------------------------------------------------
-    # 1) Speaker’s move: Plans / Thoughts / Goals
-    ethos_speakers_plans: tuple[str, int] = Field(
+#     # ----------------------------------------------------------------
+#     #  ETHOS SUBCATEGORIES
+#     # ----------------------------------------------------------------
+#     # 1) Speaker’s move: Plans / Thoughts / Goals
+#     ethos_speakers_plans: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_speakers_plans>\n"
+#             "Focuses on whether the speaker clearly and credibly states their plans. "
+#             "Are these plans relevant to the recipient or the ongoing situation?\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     ethos_speakers_thoughts: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_speakers_thoughts>\n"
+#             "Focuses on whether the speaker shares relevant, strategic thoughts that "
+#             "demonstrate understanding or insight into the current context.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     ethos_speakers_goals: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_speakers_goals>\n"
+#             "Focuses on whether the speaker clarifies their underlying objectives "
+#             "in a way that builds credibility and trust.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+
+#     # 2) Recipient’s move: Propose action / Counter-offer / Seek clarification
+#     ethos_recipients_proposal: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_recipients_proposal>\n"
+#             "Focuses on whether the recipient proposes a clear plan of action "
+#             "that aligns with or responds to the speaker's statement.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     ethos_recipients_counter_offer: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_recipients_counter_offer>\n"
+#             "Focuses on whether the recipient makes a counter-offer or alternative suggestion, "
+#             "and whether it is clear, constructive, and trustworthy.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     ethos_recipients_seek_clarification: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_recipients_seek_clarification>\n"
+#             "Focuses on whether the recipient seeks clarification effectively, "
+#             "indicating they want to understand before proceeding.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+
+#     # 3) Other player’s move: Sharing information
+#     ethos_other_players_sharing_info: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<ethos_other_players_sharing_info>\n"
+#             "Focuses on how the speaker conveys or clarifies third-party (other players') actions, "
+#             "intentions, or statements, in a credible manner.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+
+#     # ----------------------------------------------------------------
+#     #  LOGOS SUBCATEGORIES
+#     # ----------------------------------------------------------------
+#     # 1) Speculation
+#     logos_speculation: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<logos_speculation>\n"
+#             "Evaluates logical speculation or predictions about other players’ motives and next steps.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     # 2) Justification
+#     logos_justification: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<logos_justification>\n"
+#             "Evaluates the coherence and rationale behind the speaker's own moves or requests.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     # 3) Hindsight
+#     logos_hindsight: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<logos_hindsight>\n"
+#             "Evaluates how the speaker reflects on past actions, what lessons they draw, "
+#             "and how they use this to inform future decisions.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+
+#     # ----------------------------------------------------------------
+#     #  PATHOS SUBCATEGORIES
+#     # ----------------------------------------------------------------
+#     # 1) Sharing personal information
+#     pathos_sharing_personal_info: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<pathos_sharing_personal_info>\n"
+#             "Focuses on whether the speaker reveals personal thoughts, feelings, or experiences "
+#             "in a way that fosters connection.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     # 2) General banter
+#     pathos_general_banter: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<pathos_general_banter>\n"
+#             "Focuses on light-hearted conversation, humor, or informal chat that builds rapport.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     # 3) Reassurance
+#     pathos_reassurance: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<pathos_reassurance>\n"
+#             "Focuses on how the speaker reassures or comforts the recipient, "
+#             "indicating understanding or support.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     # 4) Greet, thank, or compliment
+#     pathos_greet_thank_compliment: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<pathos_greet_thank_compliment>\n"
+#             "Evaluates friendly gestures such as greetings, expressions of gratitude, or compliments.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+#     # 5) Apology
+#     pathos_apology: tuple[str, int] = Field(
+#         ...,
+#         description=(
+#             "<pathos_apology>\n"
+#             "Evaluates the effectiveness and sincerity of apologies or acknowledgements of fault.\n\n"
+#             "Output an integer score ranging from 0 and 5 in the 'score' field."
+#         )
+#     )
+
+#     @validator(
+#         "ethos_speakers_plans", "ethos_speakers_thoughts", "ethos_speakers_goals",
+#         "ethos_recipients_proposal", "ethos_recipients_counter_offer", "ethos_recipients_seek_clarification",
+#         "ethos_other_players_sharing_info",
+#         "logos_speculation", "logos_justification", "logos_hindsight",
+#         "pathos_sharing_personal_info", "pathos_general_banter",
+#         "pathos_reassurance", "pathos_greet_thank_compliment", "pathos_apology"
+#     )
+#     def zero_to_five_validator(cls, v: tuple[str, int]) -> tuple[str, int]:
+#         """
+#         Ensures the subcategory score is strictly within [0, 5].
+#         Raises a ValueError if it is not.
+#         """
+#         assert v[1] >= 0 and v[1] <= 5
+#         return v
+
+
+from pydantic import BaseModel, Field, validator
+
+class EvaluationBySocialDimensionsPlus(BaseModel):
+    ethos: tuple[str, int] = Field(
         ...,
         description=(
-            "<ethos_speakers_plans>\n"
-            "Focuses on whether the speaker clearly and credibly states their plans. "
-            "Are these plans relevant to the recipient or the ongoing situation?\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
+            "Start the analysis with the tag <ethos>. "
+            "Ethos measures the credibility, reliability, and trustworthiness demonstrated in the agent’s communication.\n\n"
+            "Key Points:\n"
+            " - How well the agent establishes character or credentials.\n"
+            " - Whether it appears knowledgeable and honest.\n\n"
+            "Reasoning Prompts:\n"
+            " - Does the agent present itself as credible and trustworthy?\n"
+            " - Does it strategically share relevant credentials or evidence to build trust?\n"
+            " - Is the information consistent and reliable?\n\n"
+            "Scoring Breakdown (0-10):\n"
+            " - Untrustworthy (0-2): Communication lacks credibility, undermines trust, contradictory or unverifiable.\n"
+            " - Moderately Credible (3-5): Shows some credibility, mostly correct and consistent, minor inconsistencies.\n"
+            " - Highly Credible (6-8): Demonstrates clear reliability; supports statements with facts and credentials.\n"
+            " - Authoritative (9-10): Extremely credible, expert-level, transparent evidence, highly consistent and factual.\n\n"
+            "Output your reasoning to the string portion, then an integer score (0-10) in the tuple."
         )
     )
-    ethos_speakers_thoughts: tuple[str, int] = Field(
+    logos: tuple[str, int] = Field(
         ...,
         description=(
-            "<ethos_speakers_thoughts>\n"
-            "Focuses on whether the speaker shares relevant, strategic thoughts that "
-            "demonstrate understanding or insight into the current context.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
+            "Start the analysis with the tag <logos>. "
+            "Logos evaluates the logical coherence, reasoning quality, and analytical depth.\n\n"
+            "Key Points:\n"
+            " - Use of facts, evidence, and clear reasoning.\n"
+            " - Justification for actions or predictions.\n\n"
+            "Reasoning Prompts:\n"
+            " - Is the agent's argument logically sound and well-structured?\n"
+            " - Does the agent justify decisions or predictions with evidence?\n"
+            " - Any logical fallacies or unsupported claims?\n\n"
+            "Scoring Breakdown (0-10):\n"
+            " - Fallacious (0-1): Very poor, riddled with errors, lacks supporting evidence.\n"
+            " - Weakly Reasoned (2-3): Attempts logic but with gaps or shaky support.\n"
+            " - Moderately Logical (4-5): Mostly coherent with some evidence, but limited sophistication.\n"
+            " - Highly Rational (6-7): Strong logical structure, consistent evidence, convincing justifications.\n"
+            " - Expertly Analytical (8-10): Exceptionally thorough, robust evidence, near-flawless logic.\n\n"
+            "Output your reasoning to the string portion, then an integer score (0-10) in the tuple."
         )
     )
-    ethos_speakers_goals: tuple[str, int] = Field(
+    pathos: tuple[str, int] = Field(
         ...,
         description=(
-            "<ethos_speakers_goals>\n"
-            "Focuses on whether the speaker clarifies their underlying objectives "
-            "in a way that builds credibility and trust.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
+            "Start the analysis with the tag <pathos>. "
+            "Pathos assesses emotional appeal and level of audience engagement.\n\n"
+            "Key Points:\n"
+            " - Tone, empathy, reassurance, humor, or warmth.\n"
+            " - Connection with audience's feelings.\n\n"
+            "Reasoning Prompts:\n"
+            " - Does the agent use an appropriate tone and emotional cues?\n"
+            " - How engaging or comforting is the agent's communication?\n"
+            " - Does it make the audience feel understood or valued?\n\n"
+            "Scoring Breakdown (0-10):\n"
+            " - Cold/Distant (0-2): Emotionally flat, no attempt at friendliness, robotic or indifferent.\n"
+            " - Mildly Engaging (3-5): Basic warmth/politeness, limited emotional resonance.\n"
+            " - Emotionally Compelling (6-8): Strong emotional connection with empathy/humor.\n"
+            " - Deeply Persuasive (9-10): Profound emotional impact, highly engaging, inspires trust or action.\n\n"
+            "Output your reasoning to the string portion, then an integer score (0-10) in the tuple."
         )
     )
 
-    # 2) Recipient’s move: Propose action / Counter-offer / Seek clarification
-    ethos_recipients_proposal: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<ethos_recipients_proposal>\n"
-            "Focuses on whether the recipient proposes a clear plan of action "
-            "that aligns with or responds to the speaker's statement.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    ethos_recipients_counter_offer: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<ethos_recipients_counter_offer>\n"
-            "Focuses on whether the recipient makes a counter-offer or alternative suggestion, "
-            "and whether it is clear, constructive, and trustworthy.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    ethos_recipients_seek_clarification: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<ethos_recipients_seek_clarification>\n"
-            "Focuses on whether the recipient seeks clarification effectively, "
-            "indicating they want to understand before proceeding.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-
-    # 3) Other player’s move: Sharing information
-    ethos_other_players_sharing_info: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<ethos_other_players_sharing_info>\n"
-            "Focuses on how the speaker conveys or clarifies third-party (other players') actions, "
-            "intentions, or statements, in a credible manner.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-
-    # ----------------------------------------------------------------
-    #  LOGOS SUBCATEGORIES
-    # ----------------------------------------------------------------
-    # 1) Speculation
-    logos_speculation: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<logos_speculation>\n"
-            "Evaluates logical speculation or predictions about other players’ motives and next steps.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    # 2) Justification
-    logos_justification: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<logos_justification>\n"
-            "Evaluates the coherence and rationale behind the speaker's own moves or requests.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    # 3) Hindsight
-    logos_hindsight: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<logos_hindsight>\n"
-            "Evaluates how the speaker reflects on past actions, what lessons they draw, "
-            "and how they use this to inform future decisions.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-
-    # ----------------------------------------------------------------
-    #  PATHOS SUBCATEGORIES
-    # ----------------------------------------------------------------
-    # 1) Sharing personal information
-    pathos_sharing_personal_info: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<pathos_sharing_personal_info>\n"
-            "Focuses on whether the speaker reveals personal thoughts, feelings, or experiences "
-            "in a way that fosters connection.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    # 2) General banter
-    pathos_general_banter: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<pathos_general_banter>\n"
-            "Focuses on light-hearted conversation, humor, or informal chat that builds rapport.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    # 3) Reassurance
-    pathos_reassurance: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<pathos_reassurance>\n"
-            "Focuses on how the speaker reassures or comforts the recipient, "
-            "indicating understanding or support.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    # 4) Greet, thank, or compliment
-    pathos_greet_thank_compliment: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<pathos_greet_thank_compliment>\n"
-            "Evaluates friendly gestures such as greetings, expressions of gratitude, or compliments.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-    # 5) Apology
-    pathos_apology: tuple[str, int] = Field(
-        ...,
-        description=(
-            "<pathos_apology>\n"
-            "Evaluates the effectiveness and sincerity of apologies or acknowledgements of fault.\n\n"
-            "Output an integer score ranging from 0 and 5 in the 'score' field."
-        )
-    )
-
-    @validator(
-        "ethos_speakers_plans", "ethos_speakers_thoughts", "ethos_speakers_goals",
-        "ethos_recipients_proposal", "ethos_recipients_counter_offer", "ethos_recipients_seek_clarification",
-        "ethos_other_players_sharing_info",
-        "logos_speculation", "logos_justification", "logos_hindsight",
-        "pathos_sharing_personal_info", "pathos_general_banter",
-        "pathos_reassurance", "pathos_greet_thank_compliment", "pathos_apology"
-    )
-    def zero_to_five_validator(cls, v: tuple[str, int]) -> tuple[str, int]:
-        """
-        Ensures the subcategory score is strictly within [0, 5].
-        Raises a ValueError if it is not.
-        """
-        assert v[1] >= 0 and v[1] <= 5
+    @validator("ethos", "logos", "pathos")
+    def zero_to_ten_validator(cls, v: tuple[str, int]) -> tuple[str, int]:
+        if not (0 <= v[1] <= 10):
+            raise ValueError("Score must be an integer in the range [0, 10].")
         return v
-
 
 
 class EvaluationBySocialDimensionsPlus(BaseModel):

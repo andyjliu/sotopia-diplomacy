@@ -292,6 +292,13 @@ def get_actual_value(game_file_path, phase_name, c1, c2):
         return countries_value
     return None
 
+def safe_set_orders(cf, power, orders):
+    try:
+        cf.set_orders(power, orders)
+    except ValueError as e:
+        print(f"Set {power}'s orders face error: {e}")
+    return cf
+
 
 # TODO: Finished Task Eval by tonight
 def get_task_eval(game_file_path, phase_name, c1, c2, c1_predicted_moves, move):
@@ -308,7 +315,7 @@ def get_task_eval(game_file_path, phase_name, c1, c2, c1_predicted_moves, move):
         new_c1_predicted_moves = parse_predicted_moves(c1_predicted_moves, actual_movement)
         prev_values = value_model.get_values(c1_predicted_cf, has_press=True, agent_power=c1)
         if move:
-            c1_predicted_cf.set_orders(c1, new_c1_predicted_moves)
+            c1_predicted_cf = safe_set_orders(c1_predicted_cf, c1, new_c1_predicted_moves)
             for power in country_list:
                 if power not in [c1]:
                     c1_predicted_cf.set_orders(power, phase['orders'][power])

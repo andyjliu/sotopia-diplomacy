@@ -13,9 +13,9 @@ conda activate sotopia
 # python generate_episode.py --epi_tag llama3.170b_v1 --env_tag finetune_format --model llama3_70b --split_begin=0 --split_end None
 
 # Compare with/without finetune in Negotiation Evaluation Version 2
-1. python generate_episode.py --epi_tag 8b_negoeval_subsample_v2 --env_tag finetune_format_with_previous --model llama3_8b --agent_model=gpt-4o-mini --split_begin=0 --split_end None
-2. python generate_episode.py --epi_tag 8b_lora_negoeval_subsample_v2 --env_tag finetune_format_with_previous --model llama3_8b_lora --agent_model=gpt-4o-mini --split_begin=0 --split_end None
-3. python generate_episode.py --epi_tag 70b_negoeval_subsample_v2 --env_tag finetune_format_with_previous --model llama3_70b --agent_model=gpt-4o-mini --split_begin=0 --split_end None
+1. python generate_episode.py --epi_tag llama_8b_negoeval_plus --env_tag finetune_format_with_previous --model llama3_8b --agent_model=llama3_70b --split_begin=0 --split_end None
+2. python generate_episode.py --epi_tag llama_8b_lora_negoeval_plus --env_tag finetune_format_with_previous --model llama3_8b_lora --agent_model=llama3_70b --split_begin=0 --split_end None
+3. python generate_episode.py --epi_tag 70b_negoeval_subsample_v2 --env_tag finetune_format_with_previous --model llama3_70b --agent_model=llama3_70b --split_begin=0 --split_end None
 
 
 # Test

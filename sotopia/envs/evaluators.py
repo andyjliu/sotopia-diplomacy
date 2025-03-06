@@ -312,9 +312,7 @@ log = logging.getLogger("evaluators")
 #         return v
 
 
-from pydantic import BaseModel, Field, validator
-
-class EvaluationBySocialDimensionsPlus(BaseModel):
+class EvaluationBySocialDimensions(BaseModel):
     ethos: tuple[str, int] = Field(
         ...,
         description=(

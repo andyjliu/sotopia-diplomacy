@@ -4,25 +4,25 @@ set -e
 
 # Here the parse means the v2
 DIALOGUE_END_INDEX=0
-FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negotiate/8b_negoeval_subsample_v2.json"
-INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negotiate/8b_negoeval_subsample_v2.jsonl"
-INTENT_VALUE_PATH="../data/intent_value/taskeval_negotiate/8b_negoeval_subsample_v2.json"
+FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negoeval/llama_8b_negoeval_plus.json"
+INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negoeval/llama_8b_negoeval_plus.jsonl"
+INTENT_VALUE_PATH="../data/intent_value/taskeval_negoeval/llama_8b_negoeval_plus.json"
 
 source ~/.bashrc
 
-# echo "Activating sotopia environment..."
-# conda activate sotopia
+echo "Activating sotopia environment..."
+conda activate sotopia
 
-# echo "Running get_intent_episode.py ..."
+echo "Running get_intent_episode.py ..."
 
-# CUDA_VISIBLE_DEVICES=5 python ../get_llm_intent_episode.py --tag 8b_negoeval_subsample_v2 --tgt_path=$FORMAT_EPISODE_PATH
-# # python get_llm_intent_episode.py --tag demo_llama --tgt_path=$FORMAT_EPISODE_PATH
+CUDA_VISIBLE_DEVICES=5 python ../get_llm_intent_episode.py --tag llama_8b_negoeval_plus --tgt_path=$FORMAT_EPISODE_PATH
+# python get_llm_intent_episode.py --tag demo_llama --tgt_path=$FORMAT_EPISODE_PATH
 
 # # python get_llm_intent_episode.py --tag coop_without_flausible_move_v2 --tgt_path=$FORMAT_EPISODE_PATH
 # # python add_actual_intent_episode.py --env_tag te_1757_with_previous --tgt_path=$FORMAT_EPISODE_PATH
 
-# echo "Running intent_prediction.py ..."
-# CUDA_VISIBLE_DEVICES=5 python ../intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=0 --split_end None
+echo "Running intent_prediction.py ..."
+CUDA_VISIBLE_DEVICES=5 python ../intent_prediction.py --res_path=$FORMAT_EPISODE_PATH --tgt_path=$INTENT_RESPONSE_PATH --split_begin=0 --split_end None
 
 # # --split_begin=0 --end_turn=$DIALOGUE_END_INDEX --split_end None --cut
 

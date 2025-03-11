@@ -4,9 +4,9 @@ set -e
 
 # Here the parse means the v2
 DIALOGUE_END_INDEX=0
-FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negoeval/llama_8b_lora_negoeval_plus.json"
-INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negoeval/llama_8b_lora_negoeval_plus.jsonl"
-INTENT_VALUE_PATH="../data/intent_value/taskeval_negoeval/llama_8b_lora_negoeval_plus.json"
+FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negoeval/llama_8b_lora_negoeval_plus_without_backfilling.json"
+INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negoeval/llama_8b_lora_negoeval_plus_without_backfilling.jsonl"
+INTENT_VALUE_PATH="../data/intent_value/taskeval_negoeval/llama_8b_lora_negoeval_plus_without_backfilling.json"
 
 source ~/.bashrc
 

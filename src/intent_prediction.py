@@ -74,7 +74,7 @@ def main():
     parser.add_argument("--split_begin", type=int, required=True, help="The begin index of the sub samples")
     parser.add_argument("--split_end", type=int_or_none, required=True, help="The end index of the sub samples")
     parser.add_argument("--end_turn", type=int_or_none, required=False, help = "The end index of the sub dialogue")
-    parser.add_argument("--cut", action='store_true', help="Whether use the actual move")
+    parser.add_argument("--cut", action='store_true', help="Whether do cut")
 
     args = parser.parse_args()
 
@@ -93,7 +93,7 @@ def main():
         
     with open(args.tgt_path, 'a') as f:
         # for episode in tqdm(split_formatted_episodes):
-        for episode in tqdm(split_formatted_episodes):
+        for episode in tqdm(split_formatted_episodes, desc=f"Processing Episodes ({args.end_turn} cut): "):
             response = {}
             countries = get_countries_from_agent(episode["agents"])
             response["game_id"] = episode["game_id"]
@@ -118,10 +118,6 @@ def main():
 
             json.dump(response, f)
             f.write('\n')
-
-    # print(f"Additional data successfully appended to {args.tgt_path}")
-
-
     
 if __name__ == "__main__":
     main()

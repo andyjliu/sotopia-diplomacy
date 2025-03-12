@@ -1,14 +1,14 @@
 #!/bin/bash
 
 # 固定的路径
-FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negoeval/llama_8b_negoeval_plus.json"
+FORMAT_EPISODE_PATH="../data/formatted_episodes/taskeval_negoeval/llama_8b_lora_negoeval_plus.json"
 
 source ~/.bashrc
 echo "Activating sotopia environment for get_intent_episode..."
 conda activate sotopia
 
 echo "Running get_intent_episode.py ..."
-python ../get_llm_intent_episode.py --tag llama_8b_negoeval_plus --tgt_path=$FORMAT_EPISODE_PATH
+python ../get_llm_intent_episode.py --tag llama_8b_lora_negoeval_plus --tgt_path=$FORMAT_EPISODE_PATH
 
 # 定义 DIALOGUE_END_INDEX 数组
 DIALOGUE_END_INDEX_ARRAY=(4 6 8 10 14 18)
@@ -22,8 +22,8 @@ for DIALOGUE_END_INDEX in "${DIALOGUE_END_INDEX_ARRAY[@]}"; do
     ((i++))
     
     # 根据当前 DIALOGUE_END_INDEX 生成目标文件路径，在原文件名末尾添加后缀
-    INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negoeval/llama_8b_negoeval_plus_cut_${DIALOGUE_END_INDEX}.jsonl"
-    INTENT_VALUE_PATH="../data/intent_value/taskeval_negoeval/llama_8b_negoeval_plus/llama_8b_negoeval_plus_cut_${DIALOGUE_END_INDEX}.json"
+    INTENT_RESPONSE_PATH="../data/intent_response/taskeval_negoeval/llama_8b_lora_negoeval_plus_cut_${DIALOGUE_END_INDEX}.jsonl"
+    INTENT_VALUE_PATH="../data/intent_value/taskeval_negoeval/llama_8b_lora_negoeval_plus/llama_8b_lora_negoeval_plus_cut_${DIALOGUE_END_INDEX}.json"
 
     # 并行运行 intent_prediction（使用 sotopia 环境）
     (

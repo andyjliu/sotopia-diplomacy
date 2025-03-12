@@ -92,13 +92,16 @@ def parse_predicted_moves(pred, act):
 
             else:
                 pass # couldn't find move, fill with actual move
-
-        # else:
-        #     # find equivalent move in act
-        #     for move in act:
-        #         if unit == ' '.join(move.split(' ')[:2]):
-        #             pred_list.append(move)
-        #             break
+            
+        # ```` Here is for backfilling the actual move
+        else:
+            # find equivalent move in act
+            for move in act:
+                if unit == ' '.join(move.split(' ')[:2]):
+                    pred_list.append(move)
+                    break
+        #  ````
+        
     return(pred_list)
 
 def get_pydipcc_game(game_file_path):

@@ -109,19 +109,113 @@ def replace_names_with_countries(text, profiles):
 
 
 # TODO: Should be modified after can gain the real data from redis
-def format_diplomacy_data(scenario):
-    # pdb.set_trace()
-    centers_match = re.search(r"centers: (\{.*?\})", scenario)
-    units_match = re.search(r"units: (\{.*?\})", scenario)
-    if not centers_match or not units_match:
-        return "Error: Could not find centers or units data in the scenario."
-    centers = json.loads(centers_match.group(1).replace("'", '"'))
-    units = json.loads(units_match.group(1).replace("'", '"'))
-    def format_country_data(data, separator):
-        return '; '.join([f"{country}: {separator.join(items)}" for country, items in data.items()])
-    units_formatted = format_country_data(units, ', ')
-    centers_formatted = format_country_data(centers, ', ')
-    return f"units: {units_formatted}\ncenters: {centers_formatted}"
+# def format_diplomacy_data(scenario):
+#     # pdb.set_trace()
+#     centers_match = re.search(r"centers: (\{.*?\})", scenario)
+#     units_match = re.search(r"units: (\{.*?\})", scenario)
+#     import pdb; pdb.set_trace()
+#     if not centers_match or not units_match:
+#         return "Error: Could not find centers or units data in the scenario."
+#     centers = json.loads(centers_match.group(1).replace("'", '"'))
+#     units = json.loads(units_match.group(1).replace("'", '"'))
+#     def format_country_data(data, separator):
+#         return '; '.join([f"{country}: {separator.join(items)}" for country, items in data.items()])
+#     units_formatted = format_country_data(units, ', ')
+#     centers_formatted = format_country_data(centers, ', ')
+#     return f"units: {units_formatted}\ncenters: {centers_formatted}"
+
+def format_diplomacy_data(scenario_text):
+    """
+    从给定的 Diplomacy 场面文本中，解析出Centers和Units的信息，
+    并返回形如：
+        centers: XX
+        units: XX
+    的最终字符串。
+    """
+
+    # ------------------------------------------------------
+    # 1) 分别获取 Centers 块 和 Units 块（包含换行）
+    #    注意要用 re.DOTALL 可以让 '.' 匹配到换行符
+    # ------------------------------------------------------
+    centers_pattern = r"Centers:\s*(.*?)\n\n\s*Units:"
+    units_pattern   = r"Units:\s*(.*)"
+
+    centers_block_match = re.search(centers_pattern, scenario_text, re.DOTALL)
+    units_block_match   = re.search(units_pattern, scenario_text, re.DOTALL)
+
+    if not centers_block_match or not units_block_match:
+        return "无法找到 Centers 或 Units 区块，请检查输入格式。"
+
+    centers_block = centers_block_match.group(1).strip()
+    units_block   = units_block_match.group(1).strip()
+
+    # ------------------------------------------------------
+    # 2) 分别解析 Centers 块 和 Units 块
+    # ------------------------------------------------------
+    # 解析后打算用两个字典来存储，比如：
+    # centers_dict = {
+    #     "AUSTRIA": ["BUD", "TRI", "VIE", ...],
+    #     "ENGLAND": ["EDI", "LON", "LVP", ...],
+    #     ...
+    # }
+    # units_dict = {
+    #     "AUSTRIA": ["A SER", "A TYR", "A RUM", ...],
+    #     "ENGLAND": ["F NWY", "F DEN", "A LON", ...],
+    #     ...
+    # }
+    centers_dict = {}
+    units_dict = {}
+
+    # 解析 centers_block
+    # 每一行格式类似： AUSTRIA: BUD, TRI, VIE, SER, ...
+    for line in centers_block.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        # 先按冒号分为两部分 [国家, 剩余部分]
+        country, centers_str = line.split(":", 1)
+        country = country.strip()
+        centers_str = centers_str.strip()
+        # 再按逗号分割
+        centers_list = [x.strip() for x in centers_str.split(",")]
+        centers_dict[country] = centers_list
+
+    # 解析 units_block
+    for line in units_block.splitlines():
+        line = line.strip()
+        if not line:
+            continue
+        # 先按冒号分为两部分 [国家, 剩余部分]
+        country, units_str = line.split(":", 1)
+        country = country.strip()
+        units_str = units_str.strip()
+        # 再按逗号分割
+        units_list = [x.strip() for x in units_str.split(",")]
+        units_dict[country] = units_list
+
+    # ------------------------------------------------------
+    # 3) 将 centers_dict 和 units_dict 整理回你想要的格式
+    #    例如：
+    #    centers: AUSTRIA: BUD, TRI, VIE; ENGLAND: EDI, LON, LVP; ...
+    #    units:   AUSTRIA: A BUD, A VIE, F TRI; ENGLAND: A LVP, ...
+    # ------------------------------------------------------
+    # 拼出 centers 的字符串
+    centers_parts = []
+    for country, centers_list in centers_dict.items():
+        centers_str = ", ".join(centers_list)
+        centers_parts.append(f"{country}: {centers_str}")
+    centers_result = "; ".join(centers_parts)
+
+    # 拼出 units 的字符串
+    units_parts = []
+    for country, units_list in units_dict.items():
+        units_str = ", ".join(units_list)
+        units_parts.append(f"{country}: {units_str}")
+    units_result = "; ".join(units_parts)
+
+    # 最终结果
+    final_output = f"centers: {centers_result}\nunits: {units_result}"
+    return final_output
 
 def get_phases_from_envs(games_dir, envs):
     file_paths = []

@@ -13,7 +13,7 @@ from langchain.output_parsers import PydanticOutputParser
 from pydantic import BaseModel, Field, validator
 from beartype import beartype
 
-logging.basicConfig(level=logging.DEBUG)
+logging.basicConfig(level=logging.ERROR)
 log = logging.getLogger(__name__)
 
 
@@ -375,7 +375,7 @@ def main():
     # 打开输出文件（.jsonl格式），准备逐条写出
     with open(args.output, "w", encoding="utf-8") as fout:
         # 遍历每条数据
-        for item in tqdm(data):
+        for item in tqdm(data[:300]):
             raw_dialogue = item.get("intent_dialogue", "")
             if not raw_dialogue:
                 # 如果没对话文本，可根据需求选择跳过或写出空结果
@@ -451,4 +451,6 @@ def main():
     
 if __name__ == "__main__":
     main()
-    # python negoeval_for_actual.py --input data/intent_value/taskeval_negoeval/actual_movement.json --model gpt-4o --output data/intent_value/taskeval_negoeval/actual_movement_with_negoeval.jsonl
+    
+    
+# python negoeval_for_actual.py --input data/intent_value/taskeval_negoeval/intent_human_movement_v2.json --model gpt-4o --output data/intent_value/taskeval_negoeval/intent_human_movement_with_negoeval_v2.jsonl

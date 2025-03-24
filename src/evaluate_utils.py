@@ -94,12 +94,12 @@ def parse_predicted_moves(pred, act):
                 pass # couldn't find move, fill with actual move
             
         # ```` Here is for backfilling the actual move
-        else:
-            # find equivalent move in act
-            for move in act:
-                if unit == ' '.join(move.split(' ')[:2]):
-                    pred_list.append(move)
-                    break
+        # else:
+        #     # find equivalent move in act
+        #     for move in act:
+        #         if unit == ' '.join(move.split(' ')[:2]):
+        #             pred_list.append(move)
+        #             break
         #  ````
         
     return(pred_list)
@@ -317,6 +317,7 @@ def get_task_eval(game_file_path, phase_name, c1, c2, c1_predicted_moves, move):
         actual_movement = phase['orders'][c1]
         new_c1_predicted_moves = parse_predicted_moves(c1_predicted_moves, actual_movement)
         prev_values = value_model.get_values(c1_predicted_cf, has_press=True, agent_power=c1)
+        # Use the predicted moves
         if move:
             c1_predicted_cf = safe_set_orders(c1_predicted_cf, c1, new_c1_predicted_moves)
             for power in country_list:
@@ -328,8 +329,9 @@ def get_task_eval(game_file_path, phase_name, c1, c2, c1_predicted_moves, move):
             pred_values = value_model.forward_values([c1_predicted_cf], has_press=True, agent_power=c1)
             prev_values = prev_values.tolist()
             pred_values = pred_values.tolist()[0]
+        # Use the actual movement
         else:
-            c1_predicted_cf.set_orders(c1, new_c1_predicted_moves)
+            # c1_predicted_cf.set_orders(c1, new_c1_predicted_moves)
             for power in country_list:
                 c1_predicted_cf.set_orders(power, phase['orders'][power])
             c1_predicted_cf.process()

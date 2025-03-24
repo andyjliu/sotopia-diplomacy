@@ -42,7 +42,6 @@ def format_episode(envs, phases):
     for i in tqdm(range(len(phases)), desc = "Formatting Episodes: "):
         messages = get_actual_dialogue(envs[i], phases[i])
         if messages != []:
-            # pdb.set_trace()
             store = {}
             store['game_id'] = envs[i].game_id
             store['agents'] = get_agents(envs[i].agent_powers)

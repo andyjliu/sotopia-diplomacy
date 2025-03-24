@@ -48,7 +48,7 @@ def generate_whole_prompt(episode, country1, country2, end_turn, cut):
     prompt += f"{cuttoffed_dialogue}\n"
     # pdb.set_trace()
     prompt += f"{episode['unit_center']}\n"
-    prompt += f"{episode['phase_name']} {country1} 5 ANON 5min WTA two powers for {country2}:"
+    prompt += f"{episode['phase_name']} {country1} -> {country2} 5 ANON 5min WTA:"
     # pdb.set_trace()
     return prompt
 
@@ -80,11 +80,12 @@ def main():
 
     args = parser.parse_args()
 
-    # TODO: Replace Hard Code country into agents match
-    # countries = ["England", "Germany"]
+    # Data Preparation
     with open(args.res_path, 'r') as f:
         formatted_episodes = json.load(f)
 
+    uuid_list = ['01JN071F99MA59436Q6XNK5N6A']
+    
     # pdb.set_trace()
     intent_agent = get_intent_agent(args.dir_path, args.intent_model_path)
 
@@ -94,33 +95,33 @@ def main():
         os.makedirs(os.path.dirname(args.tgt_path))
         
     with open(args.tgt_path, 'a') as f:
-        # for episode in tqdm(split_formatted_episodes):
         for episode in tqdm(split_formatted_episodes, desc=f"Processing Episodes ({args.end_turn} cut): "):
-            response = {}
-            countries = get_countries_from_agent(episode["agents"])
-            response["game_id"] = episode["game_id"]
-            response["phase_name"] = episode["phase_name"]
-            response["env_uuid"] = episode["env_uuid"]
-            response["countries"] = countries
-            if "reasoning" in episode:
-                response['reasoning'] = episode['reasoning']
-            if "rewards" in episode:
-                response['rewards'] = episode['rewards']
-            response[f"{countries[0]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[0])
-            response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
-            # pdb.set_trace()
-            response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn, args.cut))
-            response[f"{countries[1]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[1], countries[0], args.end_turn, args.cut))
-            # import pdb; pdb.set_trace()
-            if args.cut:
-                response["intent_dialogue"] = cutoff_dialogue(episode['intent_dialogue'], args.end_turn)
-            else:
-                response["intent_dialogue"] = episode["intent_dialogue"]
-            response[f"{countries[0]}_response"].pop("metrics", None)
-            response[f"{countries[1]}_response"].pop("metrics", None)
+            if episode['env_uuid'] in uuid_list:
+                response = {}
+                countries = get_countries_from_agent(episode["agents"])
+                response["game_id"] = episode["game_id"]
+                response["phase_name"] = episode["phase_name"]
+                response["env_uuid"] = episode["env_uuid"]
+                response["countries"] = countries
+                if "reasoning" in episode:
+                    response['reasoning'] = episode['reasoning']
+                if "rewards" in episode:
+                    response['rewards'] = episode['rewards']
+                response[f"{countries[0]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[0])
+                response[f"{countries[1]}_units"] = extract_units_by_country(episode['unit_center'].split('\n')[0], countries[1])
+                # pdb.set_trace()
+                response[f"{countries[0]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[0], countries[1], args.end_turn, args.cut))
+                response[f"{countries[1]}_response"] = get_intent_response(intent_agent, generate_whole_prompt(episode, countries[1], countries[0], args.end_turn, args.cut))
+                # import pdb; pdb.set_trace()
+                if args.cut:
+                    response["intent_dialogue"] = cutoff_dialogue(episode['intent_dialogue'], args.end_turn)
+                else:
+                    response["intent_dialogue"] = episode["intent_dialogue"]
+                response[f"{countries[0]}_response"].pop("metrics", None)
+                response[f"{countries[1]}_response"].pop("metrics", None)
 
-            json.dump(response, f)
-            f.write('\n')
+                json.dump(response, f)
+                f.write('\n')
     
 if __name__ == "__main__":
     main()

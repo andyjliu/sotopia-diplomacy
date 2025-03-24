@@ -44,7 +44,7 @@ def main():
         
     countries_value = []
     # for episode in tqdm(intent_response, desc = "Processing Intent Response: "):
-    for episode in intent_response:
+    for episode in tqdm(intent_response, desc = "Processing Intent Response: "):
         countries = []
         if episode['phase_name'].endswith("M"):
             countries = episode['countries']
@@ -71,7 +71,7 @@ def main():
                 country_value_dict[f"{c1}_actual_movement"], country_value_dict[f"{c1}_parse_predict"], country_value_dict[c1] = get_task_eval(game_file_path, episode['phase_name'], c1, c2, predict1, args.move)
                 country_value_dict[f"{c2}_actual_movement"], country_value_dict[f"{c2}_parse_predict"], country_value_dict[c2] = get_task_eval(game_file_path, episode['phase_name'], c2, c1, predict2, args.move)
                 countries_value.append(country_value_dict)
-
+            # pdb.set_trace()
             # if args.pred_move:
             #     country_value_dict[f"{c1}_parse_predict"], country_value_dict[c1] = get_one_predict_value(game_file_path, episode['phase_name'], c1, c2, predict1, move=args.pred_move)
             #     country_value_dict[f"{c2}_parse_predict"], country_value_dict[c2] = get_one_predict_value(game_file_path, episode['phase_name'], c2, c1, predict2, move=args.pred_move)

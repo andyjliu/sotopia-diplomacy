@@ -65,19 +65,32 @@ def add_env_profiles_finetune_model(games_dir, games_phases, tag, game_dir):
                 store_env_profile_with_finetune_format(game_phases['game_id'], phase, game_phases['countries'], tag, game_dir)
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--choice_file", default= "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/choice_phases_list_with_cooperate_plausible_moves.json", type=str, required=False, help="The choice files")
+    parser.add_argument("--choice_file", default= "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/whole_choice_cooperate_phase_list.json", type=str, required=False, help="The choice files")
     parser.add_argument("--tag", default="coop_with_flausible_v3", type=str, required=False, help="The tag name")
     parser.add_argument("--with_plausible_move", action="store_true", help="Whether with plausible moves")
     parser.add_argument("--with_actual_move", action="store_true", help="Whether with actual moves")
     parser.add_argument("--finetune_model", action="store_true", help="Whether with finetune model")
+    parser.add_argument("--sample_size", type=int, default=None, help="Number of samples to use")
+    parser.add_argument("--seed", type=int, default=42, help="Random seed for sampling")
     args = parser.parse_args()
 
     with open(args.choice_file, 'r') as f:
         choice_phases_list = json.load(f)
+        
+    print(f"There are {len(choice_phases_list)} phases...")
+    choice_phases_list = [i for i in choice_phases_list if i['is_cooperate'] == 'yes']
+    
+    print(f"After filtering cooperate phases, there are {len(choice_phases_list)} cooperate phases...")
+    
+    # Random sampling with seed
+    if args.sample_size is not None and args.sample_size < len(choice_phases_list):
+        random.seed(args.seed)
+        choice_phases_list = random.sample(choice_phases_list, args.sample_size)
+        print(f"Randomly sampled {args.sample_size} phases with seed {args.seed}")
     
     # choice_phases_list = find_game_phase_env_pks(env_uuid)
-    games_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
-    
+    games_dir = "/data/user_data/wenkail/sotopia_diplomacy/clean_global_whole_games/"
+
     if args.finetune_model:
         add_env_profiles_finetune_model(games_dir, choice_phases_list, args.tag, games_dir)
     elif args.with_plausible_move:
@@ -90,3 +103,5 @@ def main():
 
 if __name__ == "__main__":
     main()
+
+# python add_env_profiles.py --finetune_model  --tag whole_finetune_format_without_diplomacy_background --sample_size 1000 --seed 42

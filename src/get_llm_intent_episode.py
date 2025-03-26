@@ -21,7 +21,6 @@ def get_episodes(tag):
     for pk in all_task_pks:
         episo = EpisodeLog.get(pk)
         if episo.tag == tag:
-            # pdb.set_trace()
             env = get_game_phase_env_from_episode(episo)
             episodelogs.append({"game_id": env.game_id, "agents": episo.agents, "phase_name": env.phase_name, "env_uuid": env.pk, "env": env, "episode": episo})
     return episodelogs

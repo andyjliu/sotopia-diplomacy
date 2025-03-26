@@ -12,33 +12,32 @@ import pdb
 
 api_key = os.getenv("OPENAI_API_KEY")   
 
+# def traverse_files_with_oswalk(directory):
 
-def traverse_files_with_oswalk(directory):
+#     file_paths = []
+#     for root, dirs, files in os.walk(directory):
+#         for file in files:
+#             file_path = os.path.join(root, file)
+#             file_paths.append(file_path)
+#     return file_paths
 
-    file_paths = []
-    for root, dirs, files in os.walk(directory):
-        for file in files:
-            file_path = os.path.join(root, file)
-            file_paths.append(file_path)
-    return file_paths
-
-def read_file(paths):
-    count_dict = {}
-    for path in paths:
-        with open(path, 'r') as f:
-            valid_records = []
-            for line in f:
-                try:
-                    record = json.loads(line)
-                except json.JSONDecodeError:
-                    continue
-                # Skip records with reasoning equal to "error"
-                if record.get("reasoning") == "error":
-                    continue
-                valid_records.append(record)
-            if valid_records:
-                count_dict[os.path.splitext(os.path.basename(path))[0]] = valid_records
-    return count_dict
+# def read_file(paths):
+#     count_dict = {}
+#     for path in paths:
+#         with open(path, 'r') as f:
+#             valid_records = []
+#             for line in f:
+#                 try:
+#                     record = json.loads(line)
+#                 except json.JSONDecodeError:
+#                     continue
+#                 # Skip records with reasoning equal to "error"
+#                 if record.get("reasoning") == "error":
+#                     continue
+#                 valid_records.append(record)
+#             if valid_records:
+#                 count_dict[os.path.splitext(os.path.basename(path))[0]] = valid_records
+#     return count_dict
 
 class BaseAnalyzer:
     def __init__(self, args):

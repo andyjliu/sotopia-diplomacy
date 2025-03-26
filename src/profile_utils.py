@@ -50,6 +50,7 @@ def store_env_profile_with_previous(game_id, game_phase, countries, tag, game_di
     
 def store_env_profile_with_finetune_format(game_id, game_phase, countries, tag, game_dir):
     scenario, agent_goals = Template.get_finetune_scenario(game_phase, countries, game_id, game_dir)
+    # import pdb; pdb.set_trace() 
     add_env_profile(
         game_id = game_id,
         phase_name = game_phase['name'],
@@ -271,7 +272,8 @@ def get_previous_phase_finetune_format(game_dir, game_id, phase_name, countries)
 
     for phase in game['phases']:
         if phase['name'] == phase_name:
-            print(phase)
+            # print(phase)
+            continue
         else:
             previous_phase.append(phase)
     previous_phase = previous_phase[-1:]
@@ -305,7 +307,8 @@ def get_full_finetune_format(game_dir, game_id, current_phase, countries):
     previous_phase = []
     for phase in game['phases']:
         if phase['name'] == phase_name:
-            print(phase)
+            # print(phase)
+            continue
         else:
             previous_phase.append(phase)
 
@@ -313,7 +316,8 @@ def get_full_finetune_format(game_dir, game_id, current_phase, countries):
     center_info = ""
     unit_info = ""
     order_info = ""
-    current_order_info = ""
+    c1_planned_order = ""
+    c2_planned_order = ""
     c1, c2 = countries
     for phase in game['phases']:
         if phase['name'] == phase_name:
@@ -324,9 +328,12 @@ def get_full_finetune_format(game_dir, game_id, current_phase, countries):
                 unit_str = ", ".join(value)
                 unit_info += f"{key}: {unit_str}\n"
             for key, value in phase['orders'].items():
-                if key in [c1.upper(), c2.upper()]: 
-                    order_str = ", ".join(value)
-                    current_order_info += f"{key}: {order_str}\n"
+                if key == c1.upper(): 
+                    order_str = " ".join(value)
+                    c1_planned_order = order_str
+                elif key == c2.upper():
+                    order_str = " ".join(value)
+                    c2_planned_order = order_str
 
     dialogue_history = get_previous_dialogue(game_dir, game_id, current_phase, countries)
     order_history = get_previous_orders(game_dir, game_id, current_phase)
@@ -339,9 +346,9 @@ def get_full_finetune_format(game_dir, game_id, current_phase, countries):
     
     prompt += f"The previous order history is:\n{order_history}\n\n"
     
-    prompt += f"This is the information of the game state:\nCenters:\n{center_info}\n\nUnits:\n{unit_info}\n\nPlanned orders:\n{current_order_info}\n\n"
+    prompt += f"This is the information of the current game state:\nCenters:\n{center_info}\n\nUnits:\n{unit_info}\n\n"
     
-    return prompt
+    return prompt, c1_planned_order, c2_planned_order
 
 def get_previous_dialogue(game_dir, game_id, phase, countries):
     

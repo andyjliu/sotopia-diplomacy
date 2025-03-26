@@ -20,7 +20,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--res_path", default="data/intent_response/taskeval_1757_intent_prediction_gpt4.json", type=str, required=False, help="Choose the intent response")
     parser.add_argument("--tgt_path", default="data/intent_value/taskeval_1757_intent_prediction_gpt4.json", type=str, required=False, help="Choose the intent response")
-    parser.add_argument("--game_dir", default="/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/", type=str, required=False, help="Choose the game direction")
+    parser.add_argument("--game_dir", default="/data/user_data/wenkail/sotopia_diplomacy/clean_global_whole_games/", type=str, required=False, help="Choose the game direction")
     # parser.add_argument("--pred_move", action='store_true', help="Whether the intent model will move, give is move")
     # parser.add_argument("--prev", action='store_true', help="Whether consider the previous state")
     # parser.add_argument("--actual_move", action='store_true', help="Whether consider the actual movement")
@@ -37,7 +37,11 @@ def main():
         intent_response = []
         with open(args.res_path, 'r') as f:
             for line in f:
-                intent_response.append(json.loads(line))
+                try:
+                    intent_response.append(json.loads(line))
+                except json.JSONDecodeError as e:
+                    print(f"Error decoding JSON on line: {line}")
+                    continue
                 
     if type(intent_response) != list:
         intent_response = [intent_response]

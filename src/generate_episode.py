@@ -104,7 +104,8 @@ async def main():
     logging.info("Starting the program")
     
     parser = argparse.ArgumentParser()
-    parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
+    parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/clean_global_whole_games", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
+    parser.add_argument("--picked_envs", default="", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
     parser.add_argument("--model", default="llama3_70b", type=str, required=False, help="Choose the env model")
     parser.add_argument("--agent_model", default="llama3_70b", type=str, required=False, help="Choose the agent model")
     parser.add_argument("--env_tag", type=str, required=False, help="Choose a environment tag for getting the choosen environment")
@@ -114,9 +115,12 @@ async def main():
     args = parser.parse_args()
 
     valid_countries = ['Austria', 'England', 'France', 'Germany', 'Italy', 'Russia', 'Turkey']
- 
-    uuid_dict_list = get_env_pks_by_tag(args.env_tag)
-    uuid_list = [uuid_dict['uuid'] for uuid_dict in uuid_dict_list][args.split_begin: args.split_end]
+    if args.picked_envs == "":
+        uuid_dict_list = get_env_pks_by_tag(args.env_tag)
+        uuid_list = [uuid_dict['uuid'] for uuid_dict in uuid_dict_list][args.split_begin: args.split_end]
+    else:
+        with open(args.picked_envs, 'r') as f:
+            uuid_list = [line.strip() for line in f.readlines()]
     
     print(f"Length of uuid: {len(uuid_list)}")
     uuid_list = uuid_list[args.split_begin: args.split_end]

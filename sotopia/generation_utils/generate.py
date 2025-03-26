@@ -610,12 +610,12 @@ async def agenerate_action(
             template = """
                 Now you are a famous playwright, your task is to continue writing one turn for agent {agent} under a given background and history to help {agent} reach social goal. Please continue the script based on the previous turns. You can only generate one turn at a time.
                 You can find {agent}'s background and goal in the 'Here is the context of the interaction' field.
-                You should try your best to achieve {agent}'s goal in a way that align with their character traits.
-                Additionally, maintaining the conversation's naturalness and realism is essential (e.g., do not repeat what other people has already said before).
+                You should try your best to achieve {agent}'s goal in a way that align with their character traits, and do not share the details of your goal with other agents.
+                Additionally, maintaining the conversation's naturalness and realism is essential (e.g., do not repeat what people has already said before).
                 {history}.
                 The script has proceeded to Turn #{turn_number}. Current available action types are
                 {action_list}.
-                Note: The script can be ended if 1. one agent have achieved social goals, 2. this conversation makes the agent uncomfortable, 3. the agent find it uninteresting/you lose your patience, 4. or for other reasons you think it should stop.
+                Note: The script can be ended if 1. one agent have achieved social goals, 2. this conversation makes the agent uncomfortable, 3. the agent find it uninteresting/you lose your patience, 4. The conversation is in a repetitive loop, 5. or for other reasons you think it should stop.
 
                 Please only generate a JSON string including the action type and the argument.
                 Your action should follow the given format:
@@ -626,13 +626,13 @@ async def agenerate_action(
             template = """
                 Imagine you are {agent}, your task is to act/speak as {agent} would, keeping in mind {agent}'s social goal.
                 You can find {agent}'s goal (or background) in the 'Here is the context of the interaction' field.
-                Note that {agent}'s goal is only visible to you.
+                Note that {agent}'s goal is only visible to you and do not share the details with other agents.
                 You should try your best to achieve {agent}'s goal in a way that align with their character traits.
-                Additionally, maintaining the conversation's naturalness and realism is essential (e.g., do not repeat what other people has already said before).
+                Additionally, maintaining the conversation's naturalness and realism is essential (e.g., do not repeat what people has already said before).
                 {history}.
                 You are at Turn #{turn_number}. Your available action types are
                 {action_list}.
-                Note: You can "leave" this conversation if 1. you have achieved your social goals, 2. this conversation makes you uncomfortable, 3. you find it uninteresting/you lose your patience, 4. or for other reasons you want to leave.
+                Note: You can "leave" this conversation if 1. you have achieved your social goals, 2. this conversation makes you uncomfortable, 3. you find it uninteresting/you lose your patience, 4. The conversation is in a repetitive loop, 5. or for other reasons you want to leave.
 
                 Please only generate a JSON string including the action type and the argument.
                 Your action should follow the given format:

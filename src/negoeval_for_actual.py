@@ -26,67 +26,63 @@ log = logging.getLogger(__name__)
 class EvaluationBySocialDimensions(BaseModel):
     ethos: tuple[str, int] = Field(
         ...,
-        description=(
-            "Start the analysis with the tag <ethos>. "
-            "Ethos measures the credibility, reliability, and trustworthiness demonstrated in the agent’s communication.\n\n"
-            "Key Points:\n"
-            " - How well the agent establishes character or credentials.\n"
-            " - Whether it appears knowledgeable and honest.\n\n"
-            "Reasoning Prompts:\n"
-            " - Does the agent present itself as credible and trustworthy?\n"
-            " - Does it strategically share relevant credentials or evidence to build trust?\n"
-            " - Is the information consistent and reliable?\n\n"
+        description=
+            "Ethos\n"
+            "- Does this utterance convey the speaker's plans? (e.g. I'm attempting to make that deal with Russia now)\n"
+            "- Does this utterance convey the speaker's thoughts? (e.g. I think me and England are really on the same page at this point)\n"
+            "- Does this utterance convey the speaker's goals? (e.g. I am committed to supporting Munich holding)\n"
+            "- Does this utterance share information about other player moves on the board? (e.g., France held out for a long time)\n"
+            "- Does this utterance propose a plan of action? (e.g., make sure you don't move Munich so it can take my support)\n"
+            "- Does this utterance have a counter-offer? (e.g., Well, are you willing to humor my question about the Aegean, anyway?)\n"
+            "- Does this utterance seek clarification? (e.g., are you willing to tell me what your plans are for the Tri unit?)\n\n"
             "Scoring Breakdown (0-10):\n"
-            " - Untrustworthy (0-2): Communication lacks credibility, undermines trust, contradictory or unverifiable.\n"
-            " - Moderately Credible (3-5): Shows some credibility, mostly correct and consistent, minor inconsistencies.\n"
-            " - Highly Credible (6-8): Demonstrates clear reliability; supports statements with facts and credentials.\n"
-            " - Authoritative (9-10): Extremely credible, expert-level, transparent evidence, highly consistent and factual.\n\n"
+            " - Minimal Ethos (0-2): Lacks clarity in conveying plans, thoughts, or goals.\n"
+            " - Basic Ethos (3-5): Conveys some plans or thoughts but lacks depth.\n"
+            " - Strong Ethos (6-8): Clearly conveys plans, thoughts, and goals with some strategic sharing.\n"
+            " - Exemplary Ethos (9-10): Highly effective in conveying plans, thoughts, and goals with strategic clarity.\n\n"
             "Output your reasoning to the string portion, then an integer score (0-10) in the tuple."
-        )
+        
     )
     logos: tuple[str, int] = Field(
         ...,
-        description=(
-            "Start the analysis with the tag <logos>. "
-            "Logos evaluates the logical coherence, reasoning quality, and analytical depth.\n\n"
-            "Key Points:\n"
-            " - Use of facts, evidence, and clear reasoning.\n"
-            " - Justification for actions or predictions.\n\n"
-            "Reasoning Prompts:\n"
-            " - Is the agent's argument logically sound and well-structured?\n"
-            " - Does the agent justify decisions or predictions with evidence?\n"
-            " - Any logical fallacies or unsupported claims?\n\n"
+        description=
+            "Logos\n"
+            "- Does this sentence have justification? (e.g., if you took Marseilles, I would be stronger against England)\n"
+            "- Does this sentence have an if-then or if-else logic flow? (e.g., if you took Marseilles, I would be stronger against England)\n"
+            "- Does this sentence show reflection upon hindsights? (e.g., You could have advised me that supporting Mun-Bur was more important than Kie-Ruh)\n\n"
             "Scoring Breakdown (0-10):\n"
-            " - Fallacious (0-1): Very poor, riddled with errors, lacks supporting evidence.\n"
-            " - Weakly Reasoned (2-3): Attempts logic but with gaps or shaky support.\n"
-            " - Moderately Logical (4-5): Mostly coherent with some evidence, but limited sophistication.\n"
-            " - Highly Rational (6-7): Strong logical structure, consistent evidence, convincing justifications.\n"
-            " - Expertly Analytical (8-10): Exceptionally thorough, robust evidence, near-flawless logic.\n\n"
+            " - Illogical (0-2): Lacks logical coherence or justification.\n"
+            " - Basic Logic (3-5): Some logical structure but with gaps.\n"
+            " - Strong Logic (6-8): Well-structured logic with clear justification.\n"
+            " - Exemplary Logic (9-10): Exceptionally coherent and justified with robust logical flow.\n\n"
             "Output your reasoning to the string portion, then an integer score (0-10) in the tuple."
-        )
+        
     )
     pathos: tuple[str, int] = Field(
         ...,
-        description=(
-            "Start the analysis with the tag <pathos>. "
-            "Pathos assesses emotional appeal and level of audience engagement.\n\n"
-            "Key Points:\n"
-            " - Tone, empathy, reassurance, humor, or warmth.\n"
-            " - Connection with audience's feelings.\n\n"
-            "Reasoning Prompts:\n"
-            " - Does the agent use an appropriate tone and emotional cues?\n"
-            " - How engaging or comforting is the agent's communication?\n"
-            " - Does it make the audience feel understood or valued?\n\n"
+        description=
+            "Pathos\n"
+            "- Does this utterance share personal information?\n"
+            "- Does this utterance reassure the recipient? (e.g., you are my favorite)\n"
+            "- Does this utterance compliment or thank the recipient? (e.g., Thanks!)\n"
+            "- Does this utterance have an apology? (e.g., Ha! So sorry!!)\n\n"
             "Scoring Breakdown (0-10):\n"
-            " - Cold/Distant (0-2): Emotionally flat, no attempt at friendliness, robotic or indifferent.\n"
-            " - Mildly Engaging (3-5): Basic warmth/politeness, limited emotional resonance.\n"
-            " - Emotionally Compelling (6-8): Strong emotional connection with empathy/humor.\n"
-            " - Deeply Persuasive (9-10): Profound emotional impact, highly engaging, inspires trust or action.\n\n"
+            " - Emotionally Flat (0-2): Lacks emotional engagement or warmth.\n"
+            " - Basic Engagement (3-5): Some emotional cues but limited resonance.\n"
+            " - Strong Engagement (6-8): Engages emotionally with warmth and empathy.\n"
+            " - Exemplary Engagement (9-10): Deeply engaging with profound emotional impact.\n\n"
             "Output your reasoning to the string portion, then an integer score (0-10) in the tuple."
-        )
+        
+    )
+    goal: tuple[str, int] = Field(
+        ...,
+        description="Please first reiterate agent's social goals. "
+        "And then please provide a comprehensive analysis about the extent to which the agent has managed to achieve these goals. "
+        "In the 'reasoning' field, provide a comprehensive account of the logic or thought process that led you to your conclusion. Further, provide an integer score ranging from 0 and 10 in the 'score' field. 0 represents minimal goals achievement, 10 represents complete goal achievement, and a higher score indicates that the agent is making progress towards their social goals. Almost Not Finishing Any Goal (0-3): Scores from 0 to 3 indicate almost not finishing any goal, suggesting a minimal level of goal achievement. This range signifies either no progress or only a very rudimentary level of advancement towards the completion of set goals. Finishing Less Than 50% of Goals (4-6): A score between 4 and 6 suggests finishing less than 50% of the goals, indicating a moderate level of goal completion. This range represents partial success, with some goals being met while a significant portion remains unachieved. Finishing More Than 50%, But Not All Goals (7-8): Scores in the 7 to 8 range indicate finishing more than 50% but not all of the goals. This suggests a high level of achievement, where the majority of set goals are met, but some goals still remain incomplete. Finishing All Goals (9-10): A score between 9 and 10 signifies finishing all goals, representing the highest level of achievement in goal completion. This range indicates that all set objectives have been met, signifying complete success in achieving the targeted goals.",
     )
 
-    @validator("ethos", "logos", "pathos")
+
+    @validator("ethos", "logos", "pathos", "goal")
     def zero_to_ten_validator(cls, v: tuple[str, int]) -> tuple[str, int]:
         if not (0 <= v[1] <= 10):
             raise ValueError("Score must be an integer in the range [0, 10].")
@@ -100,7 +96,8 @@ class EnvResponse(BaseModel):
       "agent_1_evaluation": {
         "ethos": [<reasoning string>, <score 0-10>],
         "logos": [<reasoning string>, <score 0-10>],
-        "pathos": [<reasoning string>, <score 0-10>]
+        "pathos": [<reasoning string>, <score 0-10>],
+        "goal": [<reasoning string>, <score 0-10>]
       },
       "agent_2_evaluation": {
         ...
@@ -207,12 +204,14 @@ def unweighted_aggregate_evaluate(
     result_list.append(("agent_1", (("ethos", a1.ethos[1]), a1.ethos[0])))
     result_list.append(("agent_1", (("logos", a1.logos[1]), a1.logos[0])))
     result_list.append(("agent_1", (("pathos", a1.pathos[1]), a1.pathos[0])))
+    result_list.append(("agent_1", (("goal", a1.goal[1]), a1.goal[0])))
 
     # agent_2
     a2 = env_response.agent_2_evaluation
     result_list.append(("agent_2", (("ethos", a2.ethos[1]), a2.ethos[0])))
     result_list.append(("agent_2", (("logos", a2.logos[1]), a2.logos[0])))
     result_list.append(("agent_2", (("pathos", a2.pathos[1]), a2.pathos[0])))
+    result_list.append(("agent_2", (("goal", a2.goal[1]), a2.goal[0])))
 
     # now group by agent
     grouped = defaultdict(list)
@@ -353,6 +352,7 @@ def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--input", type=str, required=True, help="Path to input JSON file.")
     parser.add_argument("--output", type=str, required=True, help="Path to output JSON file (jsonl).")
+    parser.add_argument("--envs_file", type=str, required=False, help="Path to envs file.")
     parser.add_argument("--model", type=str, default="gpt-4", help="OpenAI model name (e.g. gpt-4).")
     args = parser.parse_args()
 
@@ -362,6 +362,12 @@ def main():
     with open(args.input, "r", encoding="utf-8") as f:
         data = json.load(f)
 
+    if args.envs_file:
+        with open(args.envs_file, "r", encoding="utf-8") as f:
+            envs = f.read().splitlines()
+            
+    match_data = [i for i in data if i['env_uuid'] in envs]
+    
     # 如果 input JSON 就是一个list，那我们逐条处理:
     if not isinstance(data, list) or len(data) == 0:
         raise ValueError("Input JSON must be a non-empty list.")
@@ -375,7 +381,7 @@ def main():
     # 打开输出文件（.jsonl格式），准备逐条写出
     with open(args.output, "w", encoding="utf-8") as fout:
         # 遍历每条数据
-        for item in tqdm(data[:300]):
+        for item in tqdm(match_data):
             raw_dialogue = item.get("intent_dialogue", "")
             if not raw_dialogue:
                 # 如果没对话文本，可根据需求选择跳过或写出空结果
@@ -423,7 +429,7 @@ def main():
                 agent_name_1 = reverse_mapping.get("agent_1", "agent_1")
                 agent_results[agent_name_1] = {
                     "overall_score": final_result.p1_rate[0],
-                    "detailed_scores": final_result.p1_rate[1],  # ethos, logos, pathos
+                    "detailed_scores": final_result.p1_rate[1],  # ethos, logos, pathos, goal
                 }
             if final_result.p2_rate is not None:
                 agent_name_2 = reverse_mapping.get("agent_2", "agent_2")
@@ -453,4 +459,4 @@ if __name__ == "__main__":
     main()
     
     
-# python negoeval_for_actual.py --input data/intent_value/taskeval_negoeval/intent_human_movement_v2.json --model gpt-4o --output data/intent_value/taskeval_negoeval/intent_human_movement_with_negoeval_v2.jsonl
+# python negoeval_for_actual.py --input data/intent_value/taskeval_negoeval_whole_finetune/intent_human_dialogue.json --model gpt-4o-mini --output data/intent_value/taskeval_negoeval_whole_finetune/intent_human_dialogue_negoeval.jsonl --envs_file data/intent_value/taskeval_negoeval_whole_finetune/envs_matched.txt

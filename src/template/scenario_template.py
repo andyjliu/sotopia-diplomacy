@@ -8,7 +8,18 @@ class Template:
 
     unit_instruction = '''This is the information of the countries' units, and you will playing as the given country as you act: \n units: '''
 
-    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues. Please use English. \n\n'''
+    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues and please use English. \n'''
+    
+    background_instruction = '''You are in a diplomacy game, and you will play the role of the given country. \n\n'''
+    
+    diplomacy_intro = '''Diplomacy is played on a detailed map representing Europe at the start of the 20th century, divided into clearly defined territories and seas.  Each territory is categorized as either a land province or a sea zone, with some land territories bordering seas along their coasts.  Certain provinces contain cities designated as supply centers, and these are essential to expanding and maintaining your forces.  Each nation begins with several units—either armies or fleets—placed in their respective home territories.
+
+An army unit can occupy and move through land provinces only, advancing into adjacent territories connected by a direct border.  Fleet units can occupy and move through sea territories as well as coastal land provinces that have accessible coastlines.  Movement between territories happens simultaneously for all players after each negotiation period, making planning and coordination essential.  Territories are considered adjacent if they directly touch each other along borders or, for coastal provinces and sea areas, if they share an accessible coastline.  Units can move into empty adjacent provinces or challenge opposing units for control by having numerical superiority through support orders from adjacent friendly units.
+
+To play Diplomacy effectively, each player simultaneously writes down secret orders for their armies and fleets each turn.  Possible orders include move, hold position, or provide support to another unit moving into or holding a territory.  After all orders are revealed simultaneously, conflicts are resolved by numerical superiority determined by counting supporting units.  Capturing new supply centers increases your unit count, allowing you to build more units during designated build phases.  Players negotiate extensively to create alliances, promise support, and strategically coordinate attacks or defenses, but ultimately, trust can be fleeting as betrayals and shifting alliances are central to gameplay.
+
+'''
+    
     @staticmethod
     def get_format_scenario_template_goals(phase, countries, game_id):
         c1 = countries[0]
@@ -93,10 +104,11 @@ class Template:
         c1 = countries[0]
         c2 = countries[1]
         # prompt = f"{Template.previous_dialogue_instruction}: {c1} and {c2}: \n"
-        prompt = Template.finetune_instruction
-        prompt += get_full_finetune_format(game_dir, game_id, phase, countries)
+        prompt = Template.background_instruction
+        finetune_prompt, c1_planned_order, c2_planned_order = get_full_finetune_format(game_dir, game_id, phase, countries)
+        prompt += finetune_prompt
         # prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
         agent_goals_list = []
-        agent_goals_list.append(f"Negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. {Template.finetune_instruction}")
-        agent_goals_list.append(f"Negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific army movements that can be made this turn for your benefit if any exist. {Template.finetune_instruction}")
+        agent_goals_list.append(f"You are play as {c1}, and you will negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific planned movements that can be made this turn for your benefit, here is your planned movements: {c1_planned_order}. Focus not only on your long-term goals but also on the specific actions you want to achieve in this current turn. Be clear about your immediate tactical objectives while maintaining your strategic position. {Template.finetune_instruction}")
+        agent_goals_list.append(f"You are play as {c2}, and you will negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific planned movements that can be made this turn for your benefit, here is your planned movements: {c2_planned_order}. Focus not only on your long-term goals but also on the specific actions you want to achieve in this current turn. Be clear about your immediate tactical objectives while maintaining your strategic position. {Template.finetune_instruction}")
         return prompt, agent_goals_list

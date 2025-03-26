@@ -46,10 +46,8 @@ def generate_whole_prompt(episode, country1, country2, end_turn, cut):
     else:
         cuttoffed_dialogue = episode['intent_dialogue']
     prompt += f"{cuttoffed_dialogue}\n"
-    # pdb.set_trace()
     prompt += f"{episode['unit_center']}\n"
     prompt += f"{episode['phase_name']} {country1} 5 ANON 5min WTA two powers for {country2}:"
-    # pdb.set_trace()
     return prompt
 
 def get_intent_response(intent_agent, prompt):
@@ -70,8 +68,8 @@ def extract_units_by_country(units_string, country):
 def main():
     parser = argparse.ArgumentParser()
     parser.add_argument("--dir_path", default="/data/user_data/wenkail/", type=str, required=False, help="Choose the value model dir")
-    parser.add_argument("--res_path", default="data/formatted_episodes/taskeval_1757_intent_episode_llama3.json", type=str, required=False, help="The resource path for file")
-    parser.add_argument("--tgt_path", default="data/intent_response/taskeval_1757_intent_prediction_llama3.json", type=str, required=False, help="The target path for file")
+    parser.add_argument("--res_path", default="", type=str, required=True, help="The resource path for file")
+    parser.add_argument("--tgt_path", default="", type=str, required=True, help="The target path for file")
     parser.add_argument("--intent_model_path", default="/data/user_data/wenkail/models/imitation_intent.opt", type=str, required=False, help="Choose the env model")
     parser.add_argument("--split_begin", type=int, required=True, help="The begin index of the sub samples")
     parser.add_argument("--split_end", type=int_or_none, required=True, help="The end index of the sub samples")

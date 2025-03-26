@@ -172,26 +172,36 @@ def format_diplomacy_data(scenario_text):
         line = line.strip()
         if not line:
             continue
-        # 先按冒号分为两部分 [国家, 剩余部分]
-        country, centers_str = line.split(":", 1)
-        country = country.strip()
-        centers_str = centers_str.strip()
-        # 再按逗号分割
-        centers_list = [x.strip() for x in centers_str.split(",")]
-        centers_dict[country] = centers_list
+        try:
+            # 先按冒号分为两部分 [国家, 剩余部分]
+            country, centers_str = line.split(":", 1)
+            country = country.strip()
+            centers_str = centers_str.strip()
+            # 再按逗号分割
+            centers_list = [x.strip() for x in centers_str.split(",")]
+            centers_dict[country] = centers_list
+        except ValueError:
+            import pdb; pdb.set_trace()
+            print(f"Error parsing centers line: {line}")
+            continue
 
     # 解析 units_block
     for line in units_block.splitlines():
         line = line.strip()
         if not line:
             continue
-        # 先按冒号分为两部分 [国家, 剩余部分]
-        country, units_str = line.split(":", 1)
-        country = country.strip()
-        units_str = units_str.strip()
-        # 再按逗号分割
-        units_list = [x.strip() for x in units_str.split(",")]
-        units_dict[country] = units_list
+        try:
+            # 先按冒号分为两部分 [国家, 剩余部分]
+            country, units_str = line.split(":", 1)
+            country = country.strip()
+            units_str = units_str.strip()
+            # 再按逗号分割
+            units_list = [x.strip() for x in units_str.split(",")]
+            units_dict[country] = units_list
+        except ValueError:
+            # import pdb; pdb.set_trace()
+            print(f"Error parsing units line: {line}")
+            continue
 
     # ------------------------------------------------------
     # 3) 将 centers_dict 和 units_dict 整理回你想要的格式

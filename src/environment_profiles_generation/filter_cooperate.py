@@ -27,30 +27,6 @@ def complete_support(phase):
                     complete_support_two_country.append([country, supported_country])
     return complete_support_two_country
 
-def complete_support(phase):
-    orders = phase['orders']
-    complete_support_two_country = []
-    for country, country_orders in orders.items():
-        for order in country_orders:
-            if ' S ' in order:
-                parts = order.split(' S ')
-                supporting_unit = parts[0]
-                supported_action = parts[1]
-                supported_unit = supported_action.split(' - ')[0]
-                for c, u in phase['state']['units'].items():
-                    if supported_unit in u:
-                        supported_country = c
-                # complete_support_order.append({
-                #     'supporting_country': country,
-                #     'supporting_unit': supporting_unit,
-                #     'order': order,
-                #     'supported_unit': supported_unit,
-                #     'supported_country': supported_country
-                # })
-                if country != supported_country:
-                    complete_support_two_country.append([country, supported_country])
-    return complete_support_two_country
-
 def is_country_pair(country_pair, country_pairs_list):
     target_set = set(country_pair)
     for pair in country_pairs_list:
@@ -79,8 +55,8 @@ def is_cooperate(game_dir, message_choice):
 
 
 def main():
-    game_dir = "/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100/"
-    message_choice_phase_file = "choice_phase_list.json"
+    game_dir = "/data/user_data/wenkail/sotopia_diplomacy/clean_global_whole_games/"
+    message_choice_phase_file = "whole_choice_phase_list.json"
     with open(message_choice_phase_file, 'r') as f:
         mc = json.load(f)
 
@@ -88,7 +64,7 @@ def main():
     for m in tqdm(mc):
         new_mc.append(is_cooperate(game_dir, m))
 
-    target_file = "choice_cooperate_phase_lis.json"
+    target_file = "whole_choice_cooperate_phase_list.json"
     with open(target_file, "w") as f:
         json.dump(new_mc, f, indent=2)
 

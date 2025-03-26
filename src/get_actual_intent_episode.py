@@ -55,8 +55,7 @@ def format_episode(envs, phases):
 
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/whole_filter_games_100", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
-    # parser.add_argument("--src_epi_tag", type=str, required=True, help = "Choose a tag for access the database")
+    parser.add_argument("--games_dir", default="/data/user_data/wenkail/sotopia_diplomacy/clean_global_whole_games", type=str, required=False, help="Choose the evaluate model, the name can be seen in config")
     parser.add_argument("--env_tag", type=str, required=True, help = "Choose a tag for access the database")
     parser.add_argument("--tgt_path", default="", type=str, required=False, help="Store formatted intent episode")
     args = parser.parse_args()

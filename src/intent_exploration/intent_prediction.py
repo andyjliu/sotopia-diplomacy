@@ -2,6 +2,7 @@ import argparse
 import random
 from rich import print
 import sys
+sys.path.append('../../')
 sys.path.append('../')
 # print(sys.path)
 from tqdm import tqdm
@@ -47,8 +48,7 @@ def generate_whole_prompt(episode, country1, country2, end_turn, cut):
         cuttoffed_dialogue = episode['intent_dialogue']
     prompt += f"{cuttoffed_dialogue}\n"
     prompt += f"{episode['unit_center']}\n"
-    # prompt += f"{episode['phase_name']} {country1} 5 ANON 5min WTA two powers for {country2}:"
-    prompt += f"{episode['phase_name']} {country1} -> {country2} 5 ANON 5min WTA:"
+    prompt += f"{episode['phase_name']} {country1} -> {country2}: 5 ANON 5min WTA:"
     return prompt
 
 def get_intent_response(intent_agent, prompt):

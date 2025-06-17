@@ -4,17 +4,23 @@
 source ~/.bashrc
 conda activate inf
 
-MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
+# The baseline model
+# MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
+
+# The negotiation model
+MODEL_DIR="/compute/babel-14-33/wenkail/checkpoints/llama3_8b_full_sft/checkpoint-1500/"
 test -d "$MODEL_DIR"
 CUDA_VISIBLE_DEVICES=0,1 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3638 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
-    --chat-template "../chat_templates/llama3.jinja" \
     --tensor-parallel-size=2 \
     --gpu-memory-utilization=0.9 \
     --dtype bfloat16 \
     --max-model-len 115824 \
+    --chat-template "../chat_templates/llama3.jinja"
 
     # 3636
     # 3640
+
+    # --chat-template "../chat_templates/llama3.jinja" \

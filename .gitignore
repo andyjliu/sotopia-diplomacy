@@ -161,5 +161,6 @@ backup/*
 node_modules/*
 docs/.next/*
 docs/node_modules/*
-
+human_data_exploration/checkpoints/*
+human_data_exploration/wandb/*
 redis-data/*

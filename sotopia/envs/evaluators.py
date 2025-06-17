@@ -89,7 +89,7 @@ log = logging.getLogger("evaluators")
 #             "Key Questions:\n"
 #             "1. Does the agent provide clear, relevant, and strategic details about their own plans or goals?\n"
 #             "2. Does the agent propose actionable steps for the recipient?\n"
-#             "3. Does the agent correctly convey or clarify others’ actions or intentions?\n\n"
+#             "3. Does the agent correctly convey or clarify others' actions or intentions?\n\n"
 #             "Analyze the relevance and credibility of the shared information. "
 #             "Output your reasoning process to the 'ethos' field (string). "
 #             "Assign an integer score (0-10) in the 'score' field, where a higher score reflects stronger ethos-building."
@@ -143,7 +143,7 @@ log = logging.getLogger("evaluators")
 #     # ----------------------------------------------------------------
 #     #  ETHOS SUBCATEGORIES
 #     # ----------------------------------------------------------------
-#     # 1) Speaker’s move: Plans / Thoughts / Goals
+#     # 1) Speaker's move: Plans / Thoughts / Goals
 #     ethos_speakers_plans: tuple[str, int] = Field(
 #         ...,
 #         description=(
@@ -172,7 +172,7 @@ log = logging.getLogger("evaluators")
 #         )
 #     )
 
-#     # 2) Recipient’s move: Propose action / Counter-offer / Seek clarification
+#     # 2) Recipient's move: Propose action / Counter-offer / Seek clarification
 #     ethos_recipients_proposal: tuple[str, int] = Field(
 #         ...,
 #         description=(
@@ -201,7 +201,7 @@ log = logging.getLogger("evaluators")
 #         )
 #     )
 
-#     # 3) Other player’s move: Sharing information
+#     # 3) Other player's move: Sharing information
 #     ethos_other_players_sharing_info: tuple[str, int] = Field(
 #         ...,
 #         description=(
@@ -220,7 +220,7 @@ log = logging.getLogger("evaluators")
 #         ...,
 #         description=(
 #             "<logos_speculation>\n"
-#             "Evaluates logical speculation or predictions about other players’ motives and next steps.\n\n"
+#             "Evaluates logical speculation or predictions about other players' motives and next steps.\n\n"
 #             "Output an integer score ranging from 0 and 5 in the 'score' field."
 #         )
 #     )
@@ -503,6 +503,7 @@ class RuleBasedTerminatedEvaluator(Evaluator):
                 break
             if stale_count > self.max_stale_turn:
                 break
+            # print(f"[DEBUG] turn_number={turn_number}, stale_count={stale_count}")
         stale_too_long = stale_count > self.max_stale_turn
         terminated = conversation_too_long or p1_leaving or p2_leaving or stale_too_long
         reasons_for_termination = (
@@ -511,6 +512,7 @@ class RuleBasedTerminatedEvaluator(Evaluator):
             f"{'Agent 2 is leaving; ' if p2_leaving else ''}"
             f"{'The conversation stales for too long; ' if stale_too_long else ''}"
         )
+        
         return [
             (
                 "environment",
@@ -662,6 +664,9 @@ def unweighted_aggregate_evaluate(
         assert response[0] == "environment" or response[0].startswith("agent")
         responses_dict[response[0]].append(response[1])
 
+    # print(f"[DEBUG] All responses: {responses}")
+    # print(f"[DEBUG] Environment responses: {responses_dict.get('environment', [])}")
+
     environment_responses: tuple[dict[str, float | int | bool], str] = ({}, "")
     agent_1_responses: tuple[dict[str, float | int | bool], str] = ({}, "")
     agent_2_responses: tuple[dict[str, float | int | bool], str] = ({}, "")
@@ -694,6 +699,7 @@ def unweighted_aggregate_evaluate(
             else ""
         )
     )
+    # print(f"[DEBUG] environment_responses: {environment_responses}")
     if (
         "terminated" in environment_responses[0]
         and environment_responses[0]["terminated"]

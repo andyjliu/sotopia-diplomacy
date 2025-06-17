@@ -261,6 +261,8 @@ async def run_async_server(
     Note: env_agent_combo_list is optional. When it defaults to [], sampler is used
     else the sampler is not used. Please pass in BaseSampler or simply not specify it when using this option.
     """
+    
+    # rich.print("[cyan]run_async_server: start[/cyan]")
     assert not (push_to_db and tag is None), "please provide a tag when push to db"
     assert (
         model_dict or env_agent_combo_list
@@ -272,6 +274,7 @@ async def run_async_server(
     def get_agent_class(
         model_name: str,
     ) -> Type[BaseAgent[Observation, AgentAction]]:
+        # rich.print(f"[cyan]run_async_server: get_agent_class({model_name})[/cyan]")
         if model_name == "human":
             return HumanAgent
         elif model_name == "redis":
@@ -282,11 +285,13 @@ async def run_async_server(
             return LLMAgent
 
     if env_agent_combo_list:
+        # rich.print("[cyan]run_async_server: using env_agent_combo_list[/cyan]")
         assert (
             type(sampler) is BaseSampler
         ), "No sampler should be used when `env_agent_combo_list` is not empty"
         env_agent_combo_iter = iter(env_agent_combo_list)
     else:
+        # rich.print("[cyan]run_async_server: using sampler to generate env_agent_combo_iter[/cyan]")
         env_params = {
             "model_name": model_dict["env"],
             "action_order": action_order,
@@ -312,6 +317,7 @@ async def run_async_server(
                 for model_name in agents_model_dict.values()
             ],
         )
+    # rich.print("[cyan]run_async_server: creating episode_futures[/cyan]")
     episode_futures = [
         arun_one_episode(
             env=env_agent_combo[0],
@@ -325,12 +331,16 @@ async def run_async_server(
         for env_agent_combo in env_agent_combo_iter
     ]
 
+    # rich.print(f"[cyan]run_async_server: running {len(episode_futures)} episode_futures (using_async={using_async})[/cyan]")
+    # rich.print(f"[DEBUG] episode_futures: {episode_futures}")
+    # import pdb; pdb.set_trace()
     batch_results = (
         await asyncio.gather(*episode_futures)
         if using_async
         else [await i for i in episode_futures]
     )
 
+    # rich.print(f"[DEBUG] run_async_server: finished, returning batch_results: {batch_results}")
     return cast(list[list[tuple[str, str, Message]]], batch_results)
 
 
@@ -418,8 +428,10 @@ async def arun_one_script(
     if push_to_db:
         try:
             epilog.save()
+            print("Episode log saved successfully")
         except Exception as e:
             logging.error(f"Failed to save episode log: {e}")
+            print(f"Failed to save episode log: {e}")
     # flatten nested list messages
     return list(itertools.chain(*messages))
 

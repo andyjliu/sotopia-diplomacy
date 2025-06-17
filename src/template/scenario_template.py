@@ -8,7 +8,7 @@ class Template:
 
     unit_instruction = '''This is the information of the countries' units, and you will playing as the given country as you act: \n units: '''
 
-    finetune_instruction = '''Engage in negotiations with the other countries, emulating the dialogue style from the previous dialogues and please use English. \n'''
+    finetune_instruction = '''You are playing diplomacy game, you will negotiate with the other player so that it will play moves that are beneficial to your board position, either this turn or in future turns.\n'''
     
     background_instruction = '''You are in a diplomacy game, and you will play the role of the given country. \n\n'''
     
@@ -109,6 +109,8 @@ To play Diplomacy effectively, each player simultaneously writes down secret ord
         prompt += finetune_prompt
         # prompt += Template.center_instruction + str(phase['state']['centers']) + '\n' + Template.unit_instruction + str(phase['state']['units'])
         agent_goals_list = []
-        agent_goals_list.append(f"You are play as {c1}, and you will negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific planned movements that can be made this turn for your benefit, here is your planned movements: {c1_planned_order}. Focus not only on your long-term goals but also on the specific actions you want to achieve in this current turn. Be clear about your immediate tactical objectives while maintaining your strategic position. {Template.finetune_instruction}")
-        agent_goals_list.append(f"You are play as {c2}, and you will negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific planned movements that can be made this turn for your benefit, here is your planned movements: {c2_planned_order}. Focus not only on your long-term goals but also on the specific actions you want to achieve in this current turn. Be clear about your immediate tactical objectives while maintaining your strategic position. {Template.finetune_instruction}")
+        # agent_goals_list.append(f"You are play as {c1}, and you will negotiate with {c2} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific planned movements that can be made this turn for your benefit, here is your planned movements: {c1_planned_order}. Focus not only on your long-term goals but also on the specific actions you want to achieve in this current turn. Be clear about your immediate tactical objectives while maintaining your strategic position. {Template.finetune_instruction}")
+        # agent_goals_list.append(f"You are play as {c2}, and you will negotiate with {c1} so that it will play moves that are beneficial to your board position, either this turn or in future turns. Discuss specific planned movements that can be made this turn for your benefit, here is your planned movements: {c2_planned_order}. Focus not only on your long-term goals but also on the specific actions you want to achieve in this current turn. Be clear about your immediate tactical objectives while maintaining your strategic position. {Template.finetune_instruction}")
+        agent_goals_list.append(f"You are play as {c1}. {Template.finetune_instruction}")
+        agent_goals_list.append(f"You are play as {c2}. {Template.finetune_instruction}")
         return prompt, agent_goals_list

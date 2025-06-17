@@ -4,7 +4,7 @@ import sys
 import json
 from collections import Counter
 import os
-sys.path.append("/home/wenkail/diplomacy/sotopia-diplomacy/src")
+sys.path.append("/data/user_data/wenkail/sotopia_diplomacy/diplomacy/sotopia-diplomacy/src")
 from tqdm import tqdm
 from sotopia.database import AgentProfile, EpisodeLog, EnvironmentProfile
 from profile_utils import store_env_profile_with_previous_plausible, store_env_profile_with_previous, store_env_profile_with_actual_moves, find_game_phase_env_pks, store_env_profile_with_finetune_format
@@ -65,7 +65,7 @@ def add_env_profiles_finetune_model(games_dir, games_phases, tag, game_dir):
                 store_env_profile_with_finetune_format(game_phases['game_id'], phase, game_phases['countries'], tag, game_dir)
 def main():
     parser = argparse.ArgumentParser()
-    parser.add_argument("--choice_file", default= "/home/wenkail/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/whole_choice_cooperate_phase_list.json", type=str, required=False, help="The choice files")
+    parser.add_argument("--choice_file", default= "/data/user_data/wenkail/sotopia_diplomacy/diplomacy/sotopia-diplomacy/src/environment_profiles_generation/whole_choice_cooperate_phase_list.json", type=str, required=False, help="The choice files")
     parser.add_argument("--tag", default="coop_with_flausible_v3", type=str, required=False, help="The tag name")
     parser.add_argument("--with_plausible_move", action="store_true", help="Whether with plausible moves")
     parser.add_argument("--with_actual_move", action="store_true", help="Whether with actual moves")
@@ -104,4 +104,4 @@ def main():
 if __name__ == "__main__":
     main()
 
-# python add_env_profiles.py --finetune_model  --tag whole_finetune_format_without_diplomacy_background --sample_size 1000 --seed 42
+# python add_env_profiles.py --finetune_model  --tag finetune_format_latest --sample_size 1000 --seed 42

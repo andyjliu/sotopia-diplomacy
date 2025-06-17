@@ -444,7 +444,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
     ]:
         # Time step ++
         self.turn_number += 1
-
+        
         # For action sampled from action space, it needs to be converted into AgentAction
         complied_actions: dict[str, AgentAction] = {}
         for key in actions.keys():
@@ -467,7 +467,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
         )
         for agent, action in complied_actions.items():
             self.recv_message(agent, action)
-
+        # print(f"[DEBUG] self.terminal_evaluators={self.terminal_evaluators}")
         response = unweighted_aggregate_evaluate(
             responses=list(
                 itertools.chain(
@@ -483,7 +483,6 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
                 )
             )
         )
-
         if response.terminated:
             terminal_response = unweighted_aggregate_evaluate(
                 responses=list(
@@ -500,6 +499,7 @@ class ParallelSotopiaEnv(ParallelEnv[str, Observation, AgentAction], MessengerMi
                     )
                 )
             )
+            
             # incorporate terminal response into response
             response.p1_rate = response.p1_rate or terminal_response.p1_rate
             response.p2_rate = response.p2_rate or terminal_response.p2_rate

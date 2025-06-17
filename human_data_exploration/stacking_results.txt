@@ -1,0 +1,103 @@
+cuML未安装，部分模型无法使用GPU加速。
+开始训练融合模型…（如卡住可尝试重启kernel，或减少数据量/模型复杂度）
+Stacking fit: 进度条显示每个一级模型的训练进度
+convergence after 28 epochs took 0 seconds
+[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+[LightGBM] [Info] Number of positive: 8712, number of negative: 15211
+[LightGBM] [Info] Total Bins 16
+[LightGBM] [Info] Number of data points in the train set: 23923, number of used features: 8
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.364168 -> initscore=-0.557317
+[LightGBM] [Info] Start training from score -0.557317
+convergence after 28 epochs took 0 seconds
+[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+[LightGBM] [Info] Number of positive: 8712, number of negative: 15211
+[LightGBM] [Info] Total Bins 16
+[LightGBM] [Info] Number of data points in the train set: 23923, number of used features: 8
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.364168 -> initscore=-0.557317
+[LightGBM] [Info] Start training from score -0.557317
+convergence after 28 epochs took 0 seconds
+convergence after 32 epochs took 0 seconds
+convergence after 38 epochs took 1 seconds
+[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+[LightGBM] [Info] Number of positive: 5808, number of negative: 10140
+[LightGBM] [Info] Total Bins 16
+[LightGBM] [Info] Number of data points in the train set: 15948, number of used features: 8
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.364184 -> initscore=-0.557252
+[LightGBM] [Info] Start training from score -0.557252
+[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+[LightGBM] [Info] Number of positive: 5808, number of negative: 10141
+[LightGBM] [Info] Total Bins 16
+[LightGBM] [Info] Number of data points in the train set: 15949, number of used features: 8
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.364161 -> initscore=-0.557350
+[LightGBM] [Info] Start training from score -0.557350
+[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+[LightGBM] [Info] Number of positive: 5808, number of negative: 10141
+[LightGBM] [Info] Total Bins 16
+[LightGBM] [Info] Number of data points in the train set: 15949, number of used features: 8
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.364161 -> initscore=-0.557350
+[LightGBM] [Info] Start training from score -0.557350
+Stacking AUC = 0.7320
+Stacking F1 = 0.5218
+Stacking Accuracy = 0.6832
+Stacking Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.73      0.80      0.76      3803
+           1       0.58      0.47      0.52      2178
+
+    accuracy                           0.68      5981
+   macro avg       0.65      0.64      0.64      5981
+weighted avg       0.67      0.68      0.68      5981
+
+单模型AUC/F1对比（带进度条）:
+ bnb AUC = 0.7279 | F1 = 0.5874 | Acc = 0.6710
+ bnb Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.77      0.69      0.73      3803
+           1       0.54      0.64      0.59      2178
+
+    accuracy                           0.67      5981
+   macro avg       0.66      0.67      0.66      5981
+weighted avg       0.69      0.67      0.68      5981
+
+convergence after 28 epochs took 1 seconds
+  lr AUC = 0.7329 | F1 = 0.5044 | Acc = 0.6807
+  lr Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.81      0.76      3803
+           1       0.58      0.45      0.50      2178
+
+    accuracy                           0.68      5981
+   macro avg       0.65      0.63      0.63      5981
+weighted avg       0.67      0.68      0.67      5981
+
+  rf AUC = 0.7299 | F1 = 0.5338 | Acc = 0.6840
+  rf Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.73      0.79      0.76      3803
+           1       0.58      0.50      0.53      2178
+
+    accuracy                           0.68      5981
+   macro avg       0.65      0.64      0.65      5981
+weighted avg       0.68      0.68      0.68      5981
+
+[LightGBM] [Warning] Found whitespace in feature_names, replace with underlines
+[LightGBM] [Info] Number of positive: 8712, number of negative: 15211
+[LightGBM] [Info] Total Bins 16
+[LightGBM] [Info] Number of data points in the train set: 23923, number of used features: 8
+[LightGBM] [Info] [binary:BoostFromScore]: pavg=0.364168 -> initscore=-0.557317
+[LightGBM] [Info] Start training from score -0.557317
+ lgb AUC = 0.7307 | F1 = 0.5162 | Acc = 0.6828
+ lgb Classification Report:
+              precision    recall  f1-score   support
+
+           0       0.72      0.81      0.76      3803
+           1       0.58      0.46      0.52      2178
+
+    accuracy                           0.68      5981
+   macro avg       0.65      0.64      0.64      5981
+weighted avg       0.67      0.68      0.67      5981
+

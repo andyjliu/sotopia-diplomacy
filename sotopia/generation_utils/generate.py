@@ -363,7 +363,8 @@ def obtain_chain(
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:3638/v1",
-                model_name = "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/",
+                # model_name = "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/",
+                model_name = "/compute/babel-14-33/wenkail/checkpoints/llama3_8b_full_sft/checkpoint-1500/",
                 temperature=temperature,
                 max_retries=max_retries,
             )

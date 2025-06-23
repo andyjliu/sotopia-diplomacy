@@ -1,4 +1,4 @@
-class Template:
+class InstructionPrompt:
     
     high_level_instruction = '''These are statements taken from people’s conversations during Diplomacy games played online. Diplomacy is a game about pre-World War 1 Europe. It usually has seven players: England, France, Germany, Italy, Austria-Hungary, Russia, and Turkey.
 
@@ -155,19 +155,26 @@ Examples:
 - "And anything that's bad for Russia right now is good for Austria."
 '''
 
-    def get_format_question_answer(statement):
-        prompt = f'''Please answer "YES" if you're really confident about your answer. A single statement can have a "YES" for more than one question. Underlined words suggest what to look out for, but there will be other signals too. Carefully read the statement and answer the questions one by one. Please only give me the answer with the question number and only answer YES/NO for each question (total 8 questions) without any other text or explanation.
+    def final_prompt(self, statement):
+        prompt = ''
+        prompt += self.high_level_instruction
+        prompt += self.overview
+        prompt += self.steps
+        prompt += self.rules_tips
+        prompt += self.question_answer
+        prompt += f'''Please answer "YES" if you're really confident about your answer. A single statement can have a "YES" for more than one question. Underlined words suggest what to look out for, but there will be other signals too. Carefully read the statement and answer the questions one by one. Please only give me the answer with the question number and only answer YES/NO for each question (total 8 questions) without any other text or explanation.
 
 The final format should be like:
 ```
-1. Yes
-2. No
+1. YES
+2. NO
 ...
 ...
 ```
 
 Here is the statement:
-"{statement}"
+
+{statement}
 
     '''
-    
+        return prompt

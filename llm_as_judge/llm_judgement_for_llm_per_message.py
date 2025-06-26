@@ -66,13 +66,12 @@ def process_single_result(result):
         return None
 
 class Evaluate:
-    def __init__(self, model, output_file):
+    def __init__(self, model):
         self.model = model
-        self.output_file = output_file
-        if "Llama" in model or "Qwen" in model:
+        if "llama" in model.lower() or "qwen" in model.lower():
             self.client = OpenAI(
                 api_key = "EMPTY",
-                base_url = "http://127.0.0.1:3638/v1",
+                base_url = "http://127.0.0.1:3640/v1",
                 )
         else:
             self.client = OpenAI(api_key=api_key)
@@ -161,17 +160,17 @@ def compute_consistency(multi_responses):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default="/data/models/huggingface/meta-llama/Llama-3.1-70B-Instruct/")
-    parser.add_argument("--output_file", type=str, default="annotation_data/o3_judge_new_sample.jsonl")
-    parser.add_argument("--epi_tag", type=str, default="llama_8b_sft_lora_finetune_format_v2")
+    parser.add_argument("--output_file", type=str, required=False, help="Output file for raw results")
+    parser.add_argument("--epi_tag", type=str, required=True, help="Episode tag")
     parser.add_argument("--process", action="store_true", help="Whether to process llm_response and output processed json")
-    parser.add_argument("--processed_output_file", type=str, default="annotation_data/o3_judge_processed.json", help="Output file for processed results")
+    parser.add_argument("--processed_output_file", type=str, required=True, help="Output file for processed results")
     parser.add_argument("--consistency", action="store_true", help="Whether to run multi-trial consistency experiments")
     parser.add_argument("--num_trials", type=int, default=5, help="Number of trials per temperature for consistency")
     parser.add_argument("--temperatures", type=str, default="0.2,0.5,0.7,1.0", help="Comma separated list of temperatures")
     args = parser.parse_args()
 
     instruction_prompt = InstructionPrompt()
-    evaluate = Evaluate(args.model, args.output_file)
+    evaluate = Evaluate(args.model)
     all_epi_pks = list(EpisodeLog.all_pks())
     epis = []
     for pk in tqdm(all_epi_pks):
@@ -229,13 +228,11 @@ if __name__ == "__main__":
     else:
         # 直接对每一条生成的result进行处理并写入jsonl
         if args.process:
-            output_file = args.processed_output_file
-            # os.makedirs(os.path.dirname(output_file), exist_ok=True)
             num_processed = 0
             example_printed = False
-            with open(output_file, 'w', encoding='utf-8') as f:
-                for epi in tqdm(epis, desc="Main Progress"):
-                    for i in tqdm(range(1, len(epi.messages)), desc="Epi Progress"):
+            with open(args.processed_output_file, 'w', encoding='utf-8') as f:
+                for epi in tqdm(epis, desc=f"Main Progress on {args.epi_tag} Results"):
+                    for i in tqdm(range(1, len(epi.messages)), desc=f"Epi Progress on {args.epi_tag} Results"):
                         input_text = epi.messages[i][0][2]
                         result = {}
                         prompt = instruction_prompt.final_prompt(input_text)
@@ -256,8 +253,8 @@ if __name__ == "__main__":
                 print(f"\nTotal processed items: {num_processed}")
         else:
             results = []
-            for epi in tqdm(epis, desc="Main Progress"):
-                for i in tqdm(range(1, len(epi.messages)), desc="Epi Progress"):
+            for epi in tqdm(epis, desc=f"Main Progress on {args.epi_tag} Results"):
+                for i in tqdm(range(1, len(epi.messages)), desc=f"Epi Progress on {args.epi_tag} Results"):
                     input_text = epi.messages[i][0][2]
                     result = {}
                     prompt = instruction_prompt.final_prompt(input_text)
@@ -275,3 +272,9 @@ if __name__ == "__main__":
 # python llm_judgement_for_llm.py --model /compute/babel-14-33/wenkail/Qwen3-8B/ --epi_tag llama_8b_sft_lora_finetune_format_v2 --process --processed_output_file llama_8b_sft_lora_finetune_format_v2_qwen3_8b_judgement.jsonl
 
 # python llm_judgement_for_llm.py --model /compute/babel-14-33/wenkail/Qwen3-8B/ --epi_tag llama_8b_finetune_format_v2 --process --processed_output_file llama_8b_finetune_format_v2_qwen3_8b_judgement.jsonl
+
+# python llm_judgement_for_llm_per_message.py --model /compute/babel-14-33/wenkail/Qwen3-8B/ --epi_tag qwen3_8b_finetune_format_v6 --process --processed_output_file qwen3_8b_finetune_format_v6_llama3_8b_judgement.jsonl
+
+# python llm_judgement_for_llm_per_message.py --model /compute/babel-14-33/wenkail/Qwen3-8B/ --epi_tag llama_8b_finetune_format_v6 --process --processed_output_file llama_8b_finetune_format_v6_llama3_8b_judgement.jsonl
+
+# python llm_judgement_for_llm_per_message.py --model /compute/babel-14-33/wenkail/Qwen3-8B/ --epi_tag r1_distill_llama3_8b_finetune_format_v6 --process --processed_output_file r1_distill_llama3_8b_finetune_format_v6_llama3_8b_judgement.jsonl

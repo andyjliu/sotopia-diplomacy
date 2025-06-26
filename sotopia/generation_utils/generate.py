@@ -358,13 +358,13 @@ def obtain_chain(
         )
         chain = LLMChain(llm=chat_openai, prompt=chat_prompt_template)
         return chain
-    elif "llama" in model_name:
+    elif "llama" in model_name.lower() or "qwen" in model_name.lower():
         if model_name == "llama3_8b":
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",
                 openai_api_base = "http://127.0.0.1:3638/v1",
-                # model_name = "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/",
-                model_name = "/compute/babel-14-33/wenkail/checkpoints/llama3_8b_full_sft/checkpoint-1500/",
+                model_name = "/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/",
+                # model_name = "/compute/babel-14-33/wenkail/checkpoints/llama3_8b_full_sft/checkpoint-1500/",
                 temperature=temperature,
                 max_retries=max_retries,
             )
@@ -385,7 +385,22 @@ def obtain_chain(
                 temperature=temperature,
                 max_retries=max_retries,
             )
-        
+        elif model_name == "qwen3_8b":
+            chat = ChatVLLMOpenAI(
+                openai_api_key = "EMPTY",
+                openai_api_base = "http://127.0.0.1:3640/v1",
+                model_name = "/compute/babel-14-33/wenkail/Qwen3-8B/",
+                temperature=temperature,
+                max_retries=max_retries,
+            )
+        elif model_name == "r1_distill_llama3_8b":
+            chat = ChatVLLMOpenAI(
+                openai_api_key = "EMPTY",
+                openai_api_base = "http://127.0.0.1:3642/v1",
+                model_name = "/compute/babel-14-33/wenkail/DeepSeek-R1-Distill-Llama-8B/",
+                temperature=temperature,
+                max_retries=max_retries,
+            )
         human_message_prompt = HumanMessagePromptTemplate(
             prompt=PromptTemplate(template=template, input_variables=input_variables)
         )

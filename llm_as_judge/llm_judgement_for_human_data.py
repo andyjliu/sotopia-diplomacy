@@ -75,13 +75,30 @@ class Evaluate:
     def __init__(self, model, output_file):
         self.model = model
         self.output_file = output_file
-        if "Llama" in model or "Qwen" in model:
+        if 'r1' in model.lower():
             self.client = OpenAI(
                 api_key = "EMPTY",
-                base_url = "http://127.0.0.1:9570/v1",
+                base_url = "http://127.0.0.1:3642/v1",
                 )
         else:
-            self.client = OpenAI(api_key=api_key)
+            if "llama" in model.lower():
+                if "70b" in model.lower():
+                    self.client = OpenAI(
+                        api_key = "EMPTY",
+                        base_url = "http://127.0.0.1:9570/v1",
+                        )
+                elif "8b" in model.lower():
+                    self.client = OpenAI(
+                        api_key = "EMPTY",
+                        base_url = "http://127.0.0.1:3638/v1",
+                        )
+            elif "qwen" in model.lower():
+                self.client = OpenAI(
+                    api_key = "EMPTY",
+                    base_url = "http://127.0.0.1:3640/v1",
+                    )
+            else:
+                self.client = OpenAI(api_key=api_key)
 
     def call_llm(
         self,
@@ -167,10 +184,10 @@ def compute_consistency(multi_responses):
 if __name__ == "__main__":
     parser = argparse.ArgumentParser()
     parser.add_argument("--model", type=str, default="/data/models/huggingface/meta-llama/Llama-3.1-70B-Instruct/")
-    parser.add_argument("--output_file", type=str, default="annotation_data/o3_judge_new_sample.jsonl")
-    parser.add_argument("--input_file", type=str, default="annotation_data/wenkai_subsample_expert_annotation_4_n_each_feature.csv")
+    parser.add_argument("--output_file", type=str, default="expert_annotation/llama3_70b_judge_new_sample.jsonl")
+    parser.add_argument("--input_file", type=str, default="expert_annotation/wenkai_subsample_expert_annotation_4_n_each_feature.csv")
     parser.add_argument("--process", action="store_true", help="Whether to process llm_response and output processed json")
-    parser.add_argument("--processed_output_file", type=str, default="annotation_data/o3_judge_processed.json", help="Output file for processed results")
+    parser.add_argument("--processed_output_file", type=str, required=True, help="Output file for processed results")
     parser.add_argument("--consistency", action="store_true", help="Whether to run multi-trial consistency experiments")
     parser.add_argument("--num_trials", type=int, default=5, help="Number of trials per temperature for consistency")
     parser.add_argument("--temperatures", type=str, default="0.2,0.5,0.7,1.0", help="Comma separated list of temperatures")

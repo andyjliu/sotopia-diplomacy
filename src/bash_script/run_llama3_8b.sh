@@ -6,12 +6,12 @@ conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-8B-Instruct/"
 test -d "$MODEL_DIR"
-CUDA_VISIBLE_DEVICES=0,1 python -O -u -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES=0 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3638 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
     --chat-template "../chat_templates/llama3.jinja" \
-    --tensor-parallel-size=2 \
+    --tensor-parallel-size=1 \
     --gpu-memory-utilization=0.9 \
     --dtype bfloat16 \
     --max-model-len 115824 \

@@ -26,27 +26,10 @@ wait
 
 # python generate_episode.py --epi_tag llama_8b_finetune_format_v2 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=0 --split_end None
 
-# python generate_episode.py --epi_tag llama_8b_sft_lora_finetune_format_v2 --env_tag finetune_format_latest --model llama3_8b_lora --split_begin=0 --split_end None
 
-# Test
-# python generate_episode.py --epi_tag test_new_finetune --env_tag test_new_finetune --model gpt-4o-mini --agent_model=gpt-4o-mini --split_begin=0 --split_end None
+# New generation
+# python generate_episode.py --epi_tag qwen3_8b_finetune_format_v6 --env_tag finetune_format_latest --model qwen3_8b --split_begin=0 --agent_model=qwen3_8b --split_end None
 
+# python generate_episode.py --epi_tag llama_8b_finetune_format_v6 --env_tag finetune_format_latest --model llama3_8b --split_begin=0 --agent_model=llama3_8b --split_end None
 
-# python generate_episode.py --epi_tag demo_gpt_4o --env_tag demo_v2 --model gpt-4o
-
-# --env_tag test_finetune_v2 
-
-# Without fluasible Moves:
-# coop_without_flausible_move_v2
-
-# --env_tag tv3
-# --split_begin=53 --split_end=80
-# python generate_episode.py --epi_tag te_n_with_previous_llama3_70b --split_begin=80 --split_end None
-
-# --model gpt-4-turbo
-
-# python generate_episode.py --epi_tag new_taskeval_llama3_within_10_turns --split_begin=0 --split_end None 
-
-# --model gpt-4-turbo
-
-# --env_tag ntaske
+# python generate_episode.py --epi_tag r1_distill_llama3_8b_finetune_format_v6 --env_tag finetune_format_latest --model r1_distill_llama3_8b --split_begin=0 --agent_model=r1_distill_llama3_8b --split_end None

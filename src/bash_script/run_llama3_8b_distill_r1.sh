@@ -1,5 +1,5 @@
 # llama3 8b distill r1
-# CUDA_VISIBLE_DEVICES=1 bash run_llama3_8b_distill_r1.sh
+# CUDA_VISIBLE_DEVICES=3 bash run_llama3_8b_distill_r1.sh
 
 source ~/.bashrc
 conda activate inf

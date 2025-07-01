@@ -6,7 +6,7 @@ conda activate inf
 
 MODEL_DIR="/compute/babel-14-33/wenkail/Qwen3-8B/"
 test -d "$MODEL_DIR"
-CUDA_VISIBLE_DEVICES=0,1 python -O -u -m vllm.entrypoints.openai.api_server \
+CUDA_VISIBLE_DEVICES=2 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=3638 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \

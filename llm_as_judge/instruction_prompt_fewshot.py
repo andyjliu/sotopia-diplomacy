@@ -1,4 +1,19 @@
-class InstructionPrompt:
+class InstructionPromptFewShot:
+    
+    fewshot_examples = [
+    {
+        "text": "I really don't think an attack from Gascony would be an issue, but I understand that your trust in France is much lower than mine.",
+        "labels": ["YES", "YES", "YES", "NO", "NO", "YES", "YES", "NO"]
+    },
+    {
+        "text": "Either way, telling me that is not good news for me",
+        "labels": ["NO", "NO", "NO", "NO", "NO", "YES", "NO", "YES"]
+    },
+    {
+        "text": "I don't have much info right now unfortunately.",
+        "labels": ["NO", "NO", "NO", "YES", "NO", "YES", "NO", "NO"]
+    }
+]
     
     high_level_instruction = '''These are statements taken from people’s conversations during Diplomacy games played online. Diplomacy is a game about pre-World War 1 Europe. It usually has seven players: England, France, Germany, Italy, Austria-Hungary, Russia, and Turkey.
 
@@ -162,7 +177,13 @@ Examples:
         prompt += self.steps
         prompt += self.rules_tips
         prompt += self.question_answer
-        prompt += f'''Please answer "YES" if you're really confident about your answer. A single statement can have a "YES" for more than one question. Underlined words suggest what to look out for, but there will be other signals too. Carefully read the statement and answer the questions one by one. Please only give me the answer with the question number and only answer YES/NO for each question (total 8 questions) without any other text or explanation. Please make sure your thinking chain is in <think> ... </think> tag. Please think about it step by step.
+        prompt += f'''Please answer "YES" if you're really confident about your answer. A single statement can have a "YES" for more than one question. Underlined words suggest what to look out for, but there will be other signals too. Carefully read the statement and answer the questions one by one. Please only give me the answer with the question number and only answer YES/NO for each question (total 8 questions) without any other text or explanation.\n\nHere are some examples:\n\n"""\n'''
+        for ex in self.fewshot_examples:
+            prompt += f"""Statement:
+{ex['text']}
+""" + "\n".join(f"{idx}. {ans}" for idx, ans in enumerate(ex["labels"], start=1)) + "\n\n"
+        prompt += '"""\n\n'
+        prompt += f'''Please make sure your thinking chain is in <think> ... </think> tag, think about it step by step.
 
 The final format should be like:
 ```

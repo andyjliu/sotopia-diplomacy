@@ -393,6 +393,14 @@ def obtain_chain(
                 temperature=temperature,
                 max_retries=max_retries,
             )
+        elif model_name == "qwen3_8b_lora":
+            chat = ChatVLLMOpenAI(
+                openai_api_key = "EMPTY",
+                openai_api_base = "http://127.0.0.1:3641/v1",
+                model_name = "/compute/babel-14-33/wenkail/Qwen3-8B/",
+                temperature=temperature,
+                max_retries=max_retries,
+            )
         elif model_name == "r1_distill_llama3_8b":
             chat = ChatVLLMOpenAI(
                 openai_api_key = "EMPTY",

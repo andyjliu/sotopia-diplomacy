@@ -1,0 +1,35 @@
+[
+  {
+    "Input.full_text": "I really don't think an attack from Gascony would be an issue, but I understand that your trust in France is much lower than mine.",
+    "1gamemove.yes": 1,
+    "2reasoning.yes": 1,
+    "3rapport.yes": 1,
+    "3a_apologies.yes": 0,
+    "3a_compliment.yes": 0,
+    "3a_personalthoughts.yes": 1,
+    "3a_reassurance.yes": 1,
+    "4shareinformation.yes": 0
+  },
+  {
+    "Input.full_text": "Either way, telling me that is not good news for me",
+    "1gamemove.yes": 0,
+    "2reasoning.yes": 0,
+    "3rapport.yes": 0,
+    "3a_apologies.yes": 0,
+    "3a_compliment.yes": 0,
+    "3a_personalthoughts.yes": 1,
+    "3a_reassurance.yes": 0,
+    "4shareinformation.yes": 1
+  },
+  {
+    "Input.full_text": "I don't have much info right now unfortunately.",
+    "1gamemove.yes": 0,
+    "2reasoning.yes": 0,
+    "3rapport.yes": 0,
+    "3a_apologies.yes": 1,
+    "3a_compliment.yes": 0,
+    "3a_personalthoughts.yes": 1,
+    "3a_reassurance.yes": 0,
+    "4shareinformation.yes": 0
+  }
+]

@@ -4,20 +4,20 @@
 source ~/.bashrc
 conda activate inf
 
-MODEL_DIR="/data/models/huggingface/meta-llama/Meta-Llama-3-70B-Instruct/"
-LORA_DIR=""
+MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-70B-Instruct/"
+LORA_DIR="name=/compute/babel-14-33/wenkail/checkpoints/llama3_70b_lora_sft_ds3_full/checkpoint-500/"
 test -d "$MODEL_DIR"
 python -O -u -m vllm.entrypoints.openai.api_server \
-    --port=9570 \
+    --port=9571 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
-    --chat-template "chat_templates/llama3.jinja" \
-    --tensor-parallel-size=4 \
     --lora_modules=$LORA_DIR \
-    --max-num-batched-tokens=8192 \
+    --enable-lora \
+    --max-lora-rank 32 \
+    --tensor-parallel-size=4 \
     --dtype bfloat16 \
-    --gpu-memory-utilization 0.9 \
-    --max-num-seqs 32
+    --gpu-memory-utilization=0.95 \
+    --max-model-len 115824
 
 # sources: https://github.com/vllm-project/vllm/pull/2249
 

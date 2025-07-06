@@ -1,8 +1,8 @@
 import asyncio
 import argparse
-from typing import List, Literal
+from typing import List, Literal, Set
 from sotopia.agents import LLMAgent, BaseAgent
-from sotopia.database import AgentProfile, EnvironmentProfile
+from sotopia.database import AgentProfile, EnvironmentProfile, EpisodeLog
 from sotopia.envs import ParallelSotopiaEnv
 from sotopia.messages import AgentAction, Observation
 from sotopia.envs.evaluators import RuleBasedTerminatedEvaluator, ReachGoalLLMEvaluator
@@ -19,6 +19,18 @@ def int_or_none(value):
         return int(value)
     except ValueError:
         raise argparse.ArgumentTypeError(f"Invalid int value: '{value}'")
+
+def get_existing_env_uuids(epi_tag: str) -> Set[str]:
+    """
+    根据epi_tag获取已经生成好的episode对应的environment UUID集合
+    """
+    existing_env_uuids = set()
+    all_episode_pks = list(EpisodeLog.all_pks())
+    for pk in all_episode_pks:
+        episode = EpisodeLog.get(pk)
+        if episode.tag == epi_tag:
+            existing_env_uuids.add(episode.environment)
+    return existing_env_uuids
 
 def get_agents(args, countries):
     agents_list = []
@@ -84,6 +96,10 @@ async def main():
     parser.add_argument("--split_end", type=int_or_none, default=None, required=False)
     args = parser.parse_args()
 
+    # 获取已经生成好的episode对应的environment UUID集合
+    existing_env_uuids = get_existing_env_uuids(args.epi_tag)
+    print(f"Found {len(existing_env_uuids)} existing episodes for tag '{args.epi_tag}', will skip their environments.")
+
     if args.picked_envs == "":
         uuid_dict_list = get_env_pks_by_tag(args.env_tag)
         uuid_list = [uuid_dict['uuid'] for uuid_dict in uuid_dict_list][args.split_begin: args.split_end]
@@ -91,6 +107,13 @@ async def main():
         with open(args.picked_envs, 'r') as f:
             uuid_list = [line.strip() for line in f.readlines()]
     uuid_list = uuid_list[args.split_begin: args.split_end]
+
+    # 过滤掉已经生成过episode的environment
+    original_count = len(uuid_list)
+    uuid_list = [uuid for uuid in uuid_list if uuid not in existing_env_uuids]
+    skipped_count = original_count - len(uuid_list)
+    print(f"Skipped {skipped_count} environments that already have episodes generated.")
+    print(f"Remaining environments to process: {len(uuid_list)}")
 
     agents_list = []
     for idx, uuid in enumerate(tqdm(uuid_list, desc="Getting agents", unit="env")):

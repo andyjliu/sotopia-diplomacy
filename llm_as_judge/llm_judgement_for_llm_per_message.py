@@ -18,7 +18,7 @@ import os
 import re
 import sys
 from collections import Counter, defaultdict
-from typing import Dict, Literal, Sequence
+from typing import Dict, Literal, Sequence, Set, Tuple
 
 import pandas as pd
 from openai import OpenAI
@@ -78,7 +78,7 @@ _LINE_RE = re.compile(r"(\d+)\.\s*(yes|no)", flags=re.IGNORECASE)
 def parse_llm_response_structured(resp: str) -> Dict[str, int]:
     """
     ① 若出现 </think>，仅取其后的内容；
-    ② 解析 1–8 行 “n. yes/no”；
+    ② 解析 1–8 行 "n. yes/no"；
     ③ 使用 Pydantic 校验并返回 0/1 int-dict。
     """
     # (1) strip CoT
@@ -141,11 +141,15 @@ class Evaluate:
         return resp.choices[0].message.content.strip()
 
     # -------- call + parse (with retry) -------- #
-    def call_llm_and_parse(self, prompt: str, *, max_retries: int = 1000, temperature: float = 1) -> Dict[str, int]:
+    def call_llm_and_parse(self, prompt: str, *, max_retries: int = 1000, temperature: float = 1) -> Tuple[Dict[str, int], str]:
+        """
+        调用LLM并解析响应，返回解析结果和原始响应
+        """
         for attempt in range(max_retries):
             raw = self.call_llm(prompt, temperature=temperature)
             try:
-                return parse_llm_response_structured(raw)
+                parsed = parse_llm_response_structured(raw)
+                return parsed, raw
             except (ValueError, ValidationError) as e:
                 print(f"[Attempt {attempt+1}/{max_retries}] parse failed: {e}. Retrying…")
         raise RuntimeError("Failed to obtain valid 8-dim yes/no response")
@@ -187,38 +191,111 @@ def compute_consistency(multi_responses: Dict[float, Sequence[str]]):
 
 
 # --------------------------------------------------------------------------- #
-#                              5.  Main routine                               #
+#                        5.  Utility: Load existing results                   #
+# --------------------------------------------------------------------------- #
+
+
+def load_existing_epi_pks(output_file: str) -> Set[str]:
+    """
+    从已存在的output文件中加载已处理的epi_pk集合
+    """
+    existing_pks = set()
+    if os.path.exists(output_file):
+        try:
+            with open(output_file, "r", encoding="utf-8") as f:
+                for line in f:
+                    if line.strip():
+                        record = json.loads(line)
+                        if "epi_pk" in record:
+                            existing_pks.add(record["epi_pk"])
+        except (json.JSONDecodeError, IOError) as e:
+            print(f"Warning: Failed to load existing results from {output_file}: {e}")
+    return existing_pks
+
+
+# --------------------------------------------------------------------------- #
+#                              6.  Main routine                               #
 # --------------------------------------------------------------------------- #
 
 
 def run_process_mode(args, episodes, ip: InstructionPrompt, evaluator: Evaluate):
-    # os.makedirs(os.path.dirname(args.processed_output_file), exist_ok=True)
+    # 加载已存在的结果
+    existing_pks = load_existing_epi_pks(args.processed_output_file)
+    
+    # 统计过滤结果
+    total_episodes = len(episodes)
+    filtered_episodes = [epi for epi in episodes if epi.pk not in existing_pks]
+    num_already_processed = len(existing_pks)
+    num_to_process = len(filtered_episodes)
+    
+    print(f"Total episodes for tag '{args.epi_tag}': {total_episodes}")
+    print(f"Episodes already processed: {num_already_processed}")
+    print(f"Episodes to process: {num_to_process}")
+    print(f"Filtered out: {num_already_processed} episodes")
+    
+    # 确保输出目录存在
+    os.makedirs(os.path.dirname(args.processed_output_file), exist_ok=True)
+    
     num_ok = 0
-    with open(args.processed_output_file, "w", encoding="utf-8") as fout:
-        for epi in tqdm(episodes, desc=f"Main Progress on {args.epi_tag}"):
+    processed_epis_in_session = set()  # 追踪本次运行中已处理的episode
+    
+    with open(args.processed_output_file, "a", encoding="utf-8") as fout:  # 使用 append 模式
+        for epi in tqdm(filtered_episodes, desc=f"Main Progress on {args.epi_tag}"):
+            # 确保每个episode在本次运行中只处理一次
+            if epi.pk in processed_epis_in_session:
+                continue
+                
             for turn in range(1, len(epi.messages)):
                 user_msg = epi.messages[turn][0][2]
                 prompt = ip.final_prompt(user_msg)
                 try:
-                    parsed = evaluator.call_llm_and_parse(prompt, max_retries=1000)
+                    parsed, raw_response = evaluator.call_llm_and_parse(prompt, max_retries=1000)
                 except RuntimeError:
                     continue  # skip
                 record = {
                     "epi_pk": epi.pk,
+                    'env_pk': epi.environment,
                     "turn_idx": turn - 1,
                     "epi_tag": epi.tag,
                     "epi_messages": user_msg,
+                    "llm_raw_response": raw_response,
                     **parsed,
                 }
                 fout.write(json.dumps(record, ensure_ascii=False) + "\n")
                 num_ok += 1
+            
+            # 标记该episode已在本次运行中处理
+            processed_epis_in_session.add(epi.pk)
+    
     print(f"\nTotal processed items: {num_ok}")
+    print(f"Episodes processed in this session: {len(processed_epis_in_session)}")
 
 
 def run_consistency_mode(args, episodes, ip: InstructionPrompt, evaluator: Evaluate):
+    # 对于consistency模式，也可以检查已存在的结果
+    out_path = args.output_file.replace(".jsonl", "_consistency.jsonl")
+    existing_pks = load_existing_epi_pks(out_path)
+    
+    # 统计过滤结果
+    total_episodes = len(episodes)
+    filtered_episodes = [epi for epi in episodes if epi.pk not in existing_pks]
+    num_already_processed = len(existing_pks)
+    num_to_process = len(filtered_episodes)
+    
+    print(f"Total episodes for tag '{args.epi_tag}': {total_episodes}")
+    print(f"Episodes already processed for consistency: {num_already_processed}")
+    print(f"Episodes to process for consistency: {num_to_process}")
+    print(f"Filtered out: {num_already_processed} episodes")
+    
     temps = [float(t) for t in args.temperatures.split(",")]
     all_out = []
-    for epi in tqdm(episodes, desc="Consistency eval"):
+    processed_epis_in_session = set()  # 追踪本次运行中已处理的episode
+    
+    for epi in tqdm(filtered_episodes, desc="Consistency eval"):
+        # 确保每个episode在本次运行中只处理一次
+        if epi.pk in processed_epis_in_session:
+            continue
+            
         for turn in range(1, len(epi.messages)):
             prompt = ip.final_prompt(epi.messages[turn][0][2])
             multi = {}
@@ -233,12 +310,19 @@ def run_consistency_mode(args, episodes, ip: InstructionPrompt, evaluator: Evalu
             row["llm_multi_responses"] = labelled
             row["llm_consistency"] = {str(k): v for k, v in cons.items()}
             all_out.append(row)
+        
+        # 标记该episode已在本次运行中处理
+        processed_epis_in_session.add(epi.pk)
 
-    out_path = args.output_file.replace(".jsonl", "_consistency.jsonl")
-    with open(out_path, "w", encoding="utf-8") as f:
-        for row in all_out:
-            f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    # 如果有新结果，追加到文件
+    if all_out:
+        with open(out_path, "a", encoding="utf-8") as f:  # 使用 append 模式
+            for row in all_out:
+                f.write(json.dumps(row, ensure_ascii=False) + "\n")
+    
     print(f"Consistency results saved to {out_path}")
+    print(f"New consistency results: {len(all_out)}")
+    print(f"Episodes processed in this session: {len(processed_epis_in_session)}")
 
 
 def main():

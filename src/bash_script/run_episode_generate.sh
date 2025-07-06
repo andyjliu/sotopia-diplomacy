@@ -36,4 +36,10 @@ wait
 
 # python generate_episode.py --epi_tag r1_distill_llama3_8b_finetune_format_v6 --env_tag finetune_format_latest --model r1_distill_llama3_8b --split_begin=0 --agent_model=r1_distill_llama3_8b --split_end None
 
-# python generate_episode.py --epi_tag qwen3_8b_lora_finetune_format_v6 --env_tag finetune_format_latest --model qwen3_8b_lora --split_begin=0 --agent_model=qwen3_8b_lora --split_end None
+# python generate_episode.py --epi_tag llama_70b_finetune_format_v6 --env_tag finetune_format_latest --model llama3_70b --split_begin=0 --split_end None
+
+# python generate_episode.py --epi_tag llama_70b_lora_finetune_format_v6_1 --env_tag finetune_format_latest --model llama3_70b_lora --split_begin=0 --split_end None
+
+
+# Should be run to add the results:
+# llama_8b_finetune_format_v6, llama_8b_lora_finetune_format_v6

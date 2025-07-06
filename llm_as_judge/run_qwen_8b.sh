@@ -6,11 +6,11 @@ conda activate inf
 
 MODEL_DIR="/compute/babel-14-33/wenkail/Qwen3-8B/"
 test -d "$MODEL_DIR"
-CUDA_VISIBLE_DEVICES=2 python -O -u -m vllm.entrypoints.openai.api_server \
-    --port=3638 \
+CUDA_VISIBLE_DEVICES=0 python -O -u -m vllm.entrypoints.openai.api_server \
+    --port=3640 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
-    --gpu-memory-utilization=0.9 \
+    --gpu-memory-utilization=0.95 \
     --dtype bfloat16 \
     --max-model-len 40960
 

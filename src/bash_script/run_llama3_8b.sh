@@ -12,7 +12,7 @@ CUDA_VISIBLE_DEVICES=1 python -O -u -m vllm.entrypoints.openai.api_server \
     --tokenizer=$MODEL_DIR \
     --chat-template "../chat_templates/llama3.jinja" \
     --tensor-parallel-size=1 \
-    --gpu-memory-utilization=0.9 \
+    --gpu-memory-utilization=0.95 \
     --dtype bfloat16 \
     --max-model-len 115824 \
 

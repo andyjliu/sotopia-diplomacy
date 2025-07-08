@@ -16,30 +16,41 @@ conda activate sotopia
 # python generate_episode.py --epi_tag llama_8b_negoeval_v2_whole_v4 --env_tag whole_finetune_format_without_diplomacy_background --model llama3_8b --agent_model=gpt-4o-mini --split_begin=0 --split_end None --picked_envs /home/wenkail/diplomacy/sotopia-diplomacy/src/data/intent_value/taskeval_negoeval_whole_finetune/envs.txt
 # 2. python generate_episode.py --epi_tag llama_8b_lora_negoeval_whole --env_tag whole_finetune_format_without_diplomacy_background --model llama3_8b_lora --agent_model=llama3_70b --split_begin=0 --split_end None
 # python generate_episode.py --epi_tag llama_70b_negoeval_v2_whole_v4 --env_tag whole_finetune_format_without_diplomacy_background --model llama3_70b --agent_model=gpt-4o-mini --split_begin=0 --split_end None --picked_envs /home/wenkail/diplomacy/sotopia-diplomacy/src/data/intent_value/taskeval_negoeval_whole_finetune/envs.txt
-python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=0 --split_end 250 &
-python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=250 --split_end 500 &
-python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=500 --split_end 750 &
-python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=750 --split_end None &
-wait
+# python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=0 --split_end 250 &
+# python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=250 --split_end 500 &
+# python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=500 --split_end 750 &
+# python ../generate_episode.py --epi_tag llama_8b_sft_finetune_v3 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=750 --split_end None &
+# wait
 
 # python generate_episode.py --epi_tag llama_8b_sft_finetune_format_v2 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=0 --split_end None
 
 # python generate_episode.py --epi_tag llama_8b_finetune_format_v2 --env_tag finetune_format_latest --model llama3_8b --agent_model=llama3_8b --split_begin=0 --split_end None
 
 
-# New generation
+# New generation -- Final version
+
+# Qwen 8b
 # python generate_episode.py --epi_tag qwen3_8b_finetune_format_v6 --env_tag finetune_format_latest --model qwen3_8b --split_begin=0 --agent_model=qwen3_8b --split_end None
 
+# Llama 8b
 # python generate_episode.py --epi_tag llama_8b_finetune_format_v6 --env_tag finetune_format_latest --model llama3_8b --split_begin=0 --agent_model=llama3_8b --split_end None
-
+# python generate_episode.py --epi_tag llama_8b_sft_full_finetune_format_v6 --env_tag finetune_format_latest --model llama3_8b_sft_full --split_begin=0 --agent_model=llama3_8b_sft_full --split_end None
 # python generate_episode.py --epi_tag llama_8b_lora_finetune_format_v6 --env_tag finetune_format_latest --model llama3_8b_lora --split_begin=0 --agent_model=llama3_8b_lora --split_end None
 
+# R1 Distill Llama 8b
 # python generate_episode.py --epi_tag r1_distill_llama3_8b_finetune_format_v6 --env_tag finetune_format_latest --model r1_distill_llama3_8b --split_begin=0 --agent_model=r1_distill_llama3_8b --split_end None
+# python generate_episode.py --epi_tag r1_distill_llama3_8b_lora_finetune_format_v6 --env_tag finetune_format_latest --model r1_distill_llama3_8b_lora --split_begin=0 --agent_model=r1_distill_llama3_8b_lora --split_end None
 
+# Llama 70b
 # python generate_episode.py --epi_tag llama_70b_finetune_format_v6 --env_tag finetune_format_latest --model llama3_70b --split_begin=0 --split_end None
+# python generate_episode.py --epi_tag llama_70b_lora_finetune_format_v6 --env_tag finetune_format_latest --model llama3_70b_lora --split_begin=0 --split_end None
 
-# python generate_episode.py --epi_tag llama_70b_lora_finetune_format_v6_1 --env_tag finetune_format_latest --model llama3_70b_lora --split_begin=0 --split_end None
-
+# Magistral 2506 24B
+# python generate_episode.py --epi_tag magistral_2506_24b_finetune_format_v6 --env_tag finetune_format_latest --model magistral_2506_24b --split_begin=0 --split_end None
 
 # Should be run to add the results:
 # llama_8b_finetune_format_v6, llama_8b_lora_finetune_format_v6
+
+
+# Test
+# python generate_episode.py --epi_tag test_llama3_70b --env_tag finetune_format_latest --model llama3_70b --split_begin=0 --split_end None

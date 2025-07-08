@@ -10,16 +10,10 @@ conda activate inf
 # The negotiation model
 MODEL_DIR="/compute/babel-14-33/wenkail/checkpoints/llama3_8b_full_sft/checkpoint-1500/"
 test -d "$MODEL_DIR"
-CUDA_VISIBLE_DEVICES=3 python -O -u -m vllm.entrypoints.openai.api_server \
-    --port=3638 \
+python -O -u -m vllm.entrypoints.openai.api_server \
+    --port=3637 \
     --model=$MODEL_DIR \
     --tokenizer=$MODEL_DIR \
     --tensor-parallel-size=1 \
     --gpu-memory-utilization=0.95 \
-    --dtype bfloat16 \
-    --max-model-len 115824 \
-
-    # 3636
-    # 3640
-
-    # --chat-template "../chat_templates/llama3.jinja" \
+    --dtype bfloat16

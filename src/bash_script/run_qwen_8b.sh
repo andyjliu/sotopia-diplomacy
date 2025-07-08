@@ -1,5 +1,5 @@
 # Qwen 8b
-# CUDA_VISIBLE_DEVICES=2 bash run_qwen_8b.sh
+# CUDA_VISIBLE_DEVICES=1 bash run_qwen_8b.sh
 
 source ~/.bashrc
 conda activate inf
@@ -14,6 +14,3 @@ python -O -u -m vllm.entrypoints.openai.api_server \
     --gpu-memory-utilization=0.9 \
     --dtype bfloat16 \
     --max-model-len 40960
-
-    # 3636
-    # 3640

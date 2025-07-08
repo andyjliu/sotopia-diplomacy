@@ -5,7 +5,7 @@ source ~/.bashrc
 conda activate inf
 
 MODEL_DIR="/data/models/huggingface/meta-llama/Llama-3.1-70B-Instruct/"
-LORA_DIR="name=/compute/babel-14-33/wenkail/checkpoints/llama3_70b_lora_sft_ds3_full/checkpoint-500/"
+LORA_DIR="name=/compute/babel-14-33/wenkail/checkpoints/llama3_70b_lora_sft_ds3_full_800/checkpoint-800"
 test -d "$MODEL_DIR"
 python -O -u -m vllm.entrypoints.openai.api_server \
     --port=9571 \
@@ -21,3 +21,5 @@ python -O -u -m vllm.entrypoints.openai.api_server \
 
 # sources: https://github.com/vllm-project/vllm/pull/2249
 
+
+# huggingface-cli download google/gemma-3n-E4B-it --local-dir ./gemma-3n-E4B
